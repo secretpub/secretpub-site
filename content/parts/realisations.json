@@ -166,7 +166,7 @@
       {
         "cat": "goodies",
         "sub": "totebags",
-        "cap": "Tote bags & mugs",
+        "cap": "Tote bags et mugs",
         "catLabel": "Goodies",
         "dotClass": "goodies",
         "mainPhoto": { "src": "", "alt": "Tote bags et mugs" },
@@ -242,7 +242,7 @@
         "cat": "goodies",
         "sub": "gourdes",
         "extra": true,
-        "cap": "Gourdes & mugs",
+        "cap": "Gourdes et mugs",
         "catLabel": "Goodies",
         "dotClass": "goodies",
         "mainPhoto": { "src": "", "alt": "Gourdes personnalisées" },

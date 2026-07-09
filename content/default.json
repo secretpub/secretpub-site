@@ -619,7 +619,7 @@
       {
         "featured": true,
         "badge": "Le plus demandé",
-        "chipLabelHtml": "Réseau &amp; franchise",
+        "chipLabelHtml": "Réseau et franchise",
         "chipIconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"5\" r=\"2.3\"/><circle cx=\"5\" cy=\"18.5\" r=\"2.3\"/><circle cx=\"19\" cy=\"18.5\" r=\"2.3\"/><path d=\"M12 7.3v3.4M11 11.4 6.4 16.6M13 11.4l4.6 5.2\"/></svg>",
         "title": "Franchise, réseau, promoteur",
         "desc": "La cohérence de votre marque sur tous vos sites, sans y passer vos semaines. Vos équipes commandent, le siège pilote.",
@@ -924,7 +924,7 @@
       {
         "cat": "goodies",
         "sub": "totebags",
-        "cap": "Tote bags & mugs",
+        "cap": "Tote bags et mugs",
         "catLabel": "Goodies",
         "dotClass": "goodies",
         "mainPhoto": {
@@ -1054,7 +1054,7 @@
         "cat": "goodies",
         "sub": "gourdes",
         "extra": true,
-        "cap": "Gourdes & mugs",
+        "cap": "Gourdes et mugs",
         "catLabel": "Goodies",
         "dotClass": "goodies",
         "mainPhoto": {
