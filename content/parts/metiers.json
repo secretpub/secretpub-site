@@ -1,0 +1,61 @@
+{
+  "metiersSocle": {
+    "num": "01",
+    "title": "Nos métiers socles",
+    "tagHtml": "La <b>signalétique</b> vous expose, le <b>print</b> vous raconte, le <b>textile</b> vous incarne.",
+    "items": [
+      {
+        "cat": "signa",
+        "title": "Signalétique",
+        "descHtml": "Enseignes, totems, oriflammes et stands garantis extérieur. De l'étude à la pose, on rend votre point de vente visible de loin.",
+        "linkLabel": "Voir nos réalisations signalétique",
+        "img": "/assets/signaletique-products-opt.png",
+        "alt": "Réalisations signalétique SecretPub : enseigne ronde, kakémono roll-up, oriflamme et stand pliant noirs floqués SecretPub",
+        "reverse": false
+      },
+      {
+        "cat": "print",
+        "title": "Print",
+        "descHtml": "Cartes, brochures, affiches, PLV et grand format. Couleurs calibrées, finitions soignées et BAT sous 24 h, à vos quantités réelles.",
+        "linkLabel": "Voir nos réalisations print",
+        "img": "/assets/print-products-opt.png",
+        "alt": "Réalisations print SecretPub : brochures, supports imprimés et cartes de visite à la charte SecretPub",
+        "reverse": true
+      },
+      {
+        "cat": "textile",
+        "title": "Textile",
+        "descHtml": "Broderie, flocage et sérigraphie sur des textiles pros qui tiennent au lavage. Du t-shirt à la tenue complète du réseau.",
+        "linkLabel": "Voir nos réalisations textile",
+        "img": "/assets/textile-products-opt.png",
+        "alt": "Réalisations textile SecretPub : t-shirts, polo, casquette et bodywarmer noirs brodés SecretPub",
+        "reverse": false
+      }
+    ]
+  },
+  "metiersComplement": {
+    "num": "02",
+    "title": "La touche qui fait la différence",
+    "tagHtml": "Le <b>packaging</b> et les <b>goodies</b> font circuler votre image, entre toutes les mains.",
+    "items": [
+      {
+        "cat": "goodies",
+        "title": "Goodies",
+        "descHtml": "Tote bags, mugs, gourdes, stylos… Des objets utiles, donc gardés et vus longtemps, qui font voyager votre marque.",
+        "linkLabel": "Voir nos goodies",
+        "img": "/assets/goodies-products-opt.png",
+        "alt": "Goodies SecretPub : mug, désodorisant voiture, stylo et tote bag personnalisés SecretPub",
+        "reverse": true
+      },
+      {
+        "cat": "packaging",
+        "title": "Packaging",
+        "descHtml": "Boîtes, étuis et emballages sur-mesure, du kraft au premium. Parfait pour donner vie à votre restaurant : simple, efficace, mémorable dès le premier contact.",
+        "linkLabel": "Voir nos packagings",
+        "img": "/assets/packaging-products-opt.png",
+        "alt": "Packaging SecretPub : sac, boîte, gobelet et papier de soie personnalisés SecretPub",
+        "reverse": false
+      }
+    ]
+  }
+}

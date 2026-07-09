@@ -1,0 +1,70 @@
+<!-- POUR QUI (vert pâle) -->
+<section class="section pourqui grainy" id="pourqui" data-screen-label="Pour qui">
+  <div class="wrap">
+    <div class="section-head reveal center">
+      <span class="eyebrow">{{secteurs.eyebrow}}</span>
+      <h2 class="pq-h2"><span class="pq-h2-big">{{secteurs.title}}</span></h2>
+    </div>
+
+    <div class="sectors" id="sectors">
+      <div class="sectors-track sectors-fan" style="padding: 3px 0px 0px">
+        <div class="fan-left">
+          <span class="fan-eyebrow">Quel que soit votre métier</span>
+          <div class="fan-menu">
+            <div class="fan-gauge" aria-hidden="true"><span class="fan-gauge-fill"></span></div>
+            <ol class="fan-index">
+              {{#secteurs.items}}
+              <li data-s="{{i}}"><span class="fi-n">{{n}}</span><span class="fi-t">{{title}}</span></li>
+              {{/secteurs.items}}
+            </ol>
+          </div>
+        </div>
+        <div class="fan-right">
+          <div class="fan-stage">
+            {{#secteurs.items}}
+            <figure class="sector" data-i="{{i}}">
+              <img class="ph" src="{{img}}" alt="{{alt}}" loading="lazy" />
+            </figure>
+            {{/secteurs.items}}
+          </div>
+          <div class="fan-caption">
+            {{#secteurs.items}}
+            <div class="fan-title" data-i="{{i}}"><span class="ft-k">Détails</span><p>{{{detailsHtml}}}</p></div>
+            {{/secteurs.items}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head reveal center pq-second-head">
+      <h2 class="pq-h2"><span class="pq-h2-big">{{secteurs.heading2}}</span></h2>
+    </div>
+
+    <div class="pq-grid">
+      {{#pourqui.cards}}
+      <div class="pq-card{{#featured}} featured{{/featured}} reveal">
+        {{#featured}}<span class="pq-badge">{{badge}}</span>{{/featured}}
+        <div class="pq-media">
+          <img class="ph" src="{{img}}" alt="{{alt}}" loading="lazy" />
+          <span class="pq-chip"><span class="pq-chip-ic">{{{chipIconHtml}}}</span>{{{chipLabelHtml}}}</span>
+        </div>
+        <div class="pq-body">
+          <h3>{{title}}</h3>
+          <p>{{desc}}</p>
+          <ul class="pq-list">
+            {{#list}}
+            <li><span class="pqc">✓</span> {{.}}</li>
+            {{/list}}
+          </ul>
+          <div class="pq-actions">
+            {{#ctas}}
+            {{#primary}}<a class="pq-cta" href="{{href}}">{{label}} <span class="arr">→</span></a>{{/primary}}
+            {{#ghost}}<a class="pq-cta2" href="{{href}}" target="_blank" rel="noopener">{{label}} <span class="ext" aria-hidden="true">↗</span></a>{{/ghost}}
+            {{/ctas}}
+          </div>
+        </div>
+      </div>
+      {{/pourqui.cards}}
+    </div>
+  </div>
+</section>

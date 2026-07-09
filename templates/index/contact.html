@@ -1,0 +1,76 @@
+<!-- CONTACT (vert profond) -->
+<section class="section contact grainy" id="contact" data-screen-label="Contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{contact.eyebrow}}</span>
+      <h2>{{contact.title}}</h2>
+      <p class="lead">{{contact.lead}}</p>
+    </div>
+    <div class="contact-grid">
+      <form class="cform reveal" id="cform" novalidate="">
+        <label>Nom
+          <input type="text" name="nom" required="" autocomplete="name" placeholder="Votre nom" />
+        </label>
+        <label>Société
+          <input type="text" name="societe" required="" autocomplete="organization" placeholder="Votre société" />
+        </label>
+        <label>Email
+          <input type="email" name="email" required="" autocomplete="email" placeholder="vous@societe.fr" />
+        </label>
+        <label>Téléphone
+          <input type="tel" name="tel" autocomplete="tel" placeholder="06 00 00 00 00" />
+        </label>
+        <label class="cf-multi">Votre besoin <span class="cf-hint">(plusieurs choix possibles)</span>
+          <div class="need-chips" role="group" aria-label="Votre besoin">
+            {{#contact.needOptions}}
+            <label class="need-chip"><input type="checkbox" name="besoin" value="{{.}}" /><span>{{.}}</span></label>
+            {{/contact.needOptions}}
+          </div>
+        </label>
+        <label>Type d'activité
+          <select name="activite">
+            <option value="">Choisir</option>
+            {{#contact.activityOptions}}
+            <option>{{.}}</option>
+            {{/contact.activityOptions}}
+          </select>
+        </label>
+        <label>Nombre d'établissements
+          <select name="sites" required="">
+            <option value="">Choisir</option>
+            {{#contact.sitesOptions}}
+            <option>{{.}}</option>
+            {{/contact.sitesOptions}}
+          </select>
+        </label>
+        <label class="full">Votre projet en quelques mots
+          <textarea name="message" placeholder="Exemple : remplacement de notre enseigne et tenues pour 10 salariés"></textarea>
+        </label>
+        <a href="#contact" class="cform-deep-link full">{{contact.deepLinkLabel}}</a>
+        <div class="full">
+          <button type="submit" class="btn btn-primary btn-lg full-btn">{{contact.submitLabel}} <span class="arr">→</span></button>
+        </div>
+        <p class="cform-ok">{{contact.okMessage}}</p>
+      </form>
+      <aside class="contact-info reveal">
+        <div class="ci-call">
+          <div class="ci-l">{{contact.callTitle}}</div>
+          <a class="ci-phone" href="{{meta.phoneHref}}">{{meta.phoneDisplay}}</a>
+          <div class="ci-sub">{{contact.callSub}}</div>
+        </div>
+        <div class="ci-block">
+          <div class="ci-l">{{contact.officeLabel}}</div>
+          <div class="ci-v ci-v-lg">{{contact.officeValue}}</div>
+        </div>
+        <div class="ci-block">
+          <div class="ci-l">{{contact.emailLabel}}</div>
+          <div class="ci-v ci-v-lg"><a href="mailto:{{meta.email}}">{{meta.email}}</a></div>
+        </div>
+        <div class="ci-block">
+          <div class="ci-l">{{contact.zoneLabel}}</div>
+          <div class="ci-v">{{{contact.zoneValueHtml}}}</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>

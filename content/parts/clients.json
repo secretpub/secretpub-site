@@ -1,0 +1,20 @@
+{
+  "clients": {
+    "label": "Ils nous font confiance",
+    "logos": [
+      { "src": "/assets/logos/ct/hh3.png", "alt": "Client H et H", "size": "sq" },
+      { "src": "/assets/logos/ct/glastint.png", "alt": "Client Glastint", "size": "" },
+      { "src": "/assets/logos/ct/leclerc2.png", "alt": "Client E.Leclerc", "size": "" },
+      { "src": "/assets/logos/ct/avia.png", "alt": "Client Avia", "size": "lg" },
+      { "src": "/assets/logos/ct/chamas.png", "alt": "Client Chamas Tacos", "size": "sq" },
+      { "src": "/assets/logos/ct/auchan2.png", "alt": "Client Auchan", "size": "" },
+      { "src": "/assets/logos/ct/stressless2.png", "alt": "Client Stressless", "size": "xl" },
+      { "src": "/assets/logos/ct/cuisinella2.png", "alt": "Client Cuisinella", "size": "lg" },
+      { "src": "/assets/logos/ct/aviva2.png", "alt": "Client Aviva Cuisines", "size": "lg" },
+      { "src": "/assets/logos/ct/euro-parebrise-2.png", "alt": "Client 0 Euro Pare-Brise", "size": "lg" },
+      { "src": "/assets/logos/ct/manhattan.png", "alt": "Client Manhattan Hot Dog", "size": "lg" },
+      { "src": "/assets/logos/ct/bigm2.png", "alt": "Client Big M", "size": "" },
+      { "src": "/assets/logos/ct/ikami2.png", "alt": "Client Ikami", "size": "lg" }
+    ]
+  }
+}

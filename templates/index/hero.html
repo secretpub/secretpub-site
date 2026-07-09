@@ -1,0 +1,30 @@
+<!-- HERO (carrousel plein écran, photo de fond PC) -->
+<section class="hero-carousel" id="top" data-screen-label="Hero">
+  <div class="hc-slides" id="heroSlides">
+{{#hero.slides}}
+    <div class="{{slideClass}}">
+      <div class="hslide-bg"><img class="ph" src="{{image}}" alt="{{alt}}"{{#priority}} fetchpriority="high"{{/priority}}{{^priority}} loading="lazy"{{/priority}} /></div>
+      <div class="wrap hslide-inner">
+        <div class="hslide-copy">
+          <span class="eyebrow">{{eyebrow}}</span>
+          <h1>{{{titleHtml}}}</h1>
+          <p class="hslide-sub">{{sub}}</p>
+          <div class="hslide-actions">
+{{#actions}}
+            <a href="{{href}}" class="{{class}}">{{label}}{{#arrow}} <span class="arr">→</span>{{/arrow}}</a>
+{{/actions}}
+          </div>
+        </div>
+      </div>
+    </div>
+{{/hero.slides}}
+  </div>
+
+  <button class="hc-arrow prev" id="hcPrev" aria-label="Slide précédent">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <button class="hc-arrow next" id="hcNext" aria-label="Slide suivant">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+  </button>
+  <div class="hc-dots" id="hcDots" role="tablist" aria-label="Sélection du slide"></div>
+</section>

@@ -1,0 +1,22 @@
+<!-- FAQ (blanc) -->
+<section class="section faq" id="faq" data-screen-label="Questions">
+  <div class="wrap">
+    <div class="faq-leaves" id="faqLeaves" aria-hidden="true">
+      <img class="leaf leaf-bot" src="/assets/leaf-bot.png" alt="" />
+      <img class="leaf leaf-mid" src="/assets/leaf-mid.png" alt="" />
+      <img class="leaf leaf-top" src="/assets/leaf-top.png" alt="" />
+    </div>
+    <div class="section-head reveal">
+      <span class="eyebrow">{{faq.eyebrow}}</span>
+      <h2>{{faq.title}}</h2>
+    </div>
+    <div class="faq-list reveal">
+      {{#faq.items}}
+      <details>
+        <summary>{{q}}</summary>
+        <p class="faq-a">{{a}}</p>
+      </details>
+      {{/faq.items}}
+    </div>
+  </div>
+</section>

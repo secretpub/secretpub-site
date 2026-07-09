@@ -1,0 +1,28 @@
+{
+  "faq": {
+    "eyebrow": "Vos questions",
+    "title": "Ce que nos clients demandent avant de signer.",
+    "items": [
+      {
+        "q": "Quels sont vos délais ?",
+        "a": "Un devis clair sous 48 h ouvrées, un BAT sous 24 h après validation, et une date de livraison annoncée dès la commande, et tenue."
+      },
+      {
+        "q": "Intervenez-vous en dehors de la Drôme ?",
+        "a": "Oui. Basés à Valence, nous équipons des points de vente dans toute la France, notamment pour les réseaux multi-sites."
+      },
+      {
+        "q": "Gérez-vous plusieurs établissements à la fois ?",
+        "a": "C'est notre spécialité. Ouvertures, mises à niveau de charte, campagnes réseau : un seul interlocuteur coordonne l'ensemble."
+      },
+      {
+        "q": "Faites-vous la pose ?",
+        "a": "Oui. La pose et le contrôle final font partie de la prestation, réalisés par des équipes habilitées."
+      },
+      {
+        "q": "Travaillez-vous avec les petites structures ?",
+        "a": "Oui. Un commerce indépendant reçoit le même soin qu'un réseau national."
+      }
+    ]
+  }
+}

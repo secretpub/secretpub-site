@@ -1,0 +1,53 @@
+{
+  "footer": {
+    "about": "Un seul partenaire, pour tout ce qui porte votre image. Conception, production et pose réunies, partout en France.",
+    "columns": [
+      {
+        "title": "Métiers",
+        "links": [
+          { "label": "Signalétique", "href": "#metiers" },
+          { "label": "Print", "href": "#metiers" },
+          { "label": "Textile", "href": "#metiers" },
+          { "label": "Goodies", "href": "#metiers" },
+          { "label": "Packaging", "href": "#metiers" },
+          { "label": "Pose / Installation", "href": "#methode" },
+          { "label": "Prestation graphique", "href": "#contact" },
+          { "label": "Réalisations", "href": "#realisations" }
+        ]
+      },
+      {
+        "title": "Société",
+        "links": [
+          { "label": "Méthode", "href": "#methode" },
+          { "label": "Questions fréquentes", "href": "#faq" }
+        ]
+      },
+      {
+        "title": "Contact",
+        "links": [
+          { "label": "09 83 80 93 12", "href": "tel:+33983809312" },
+          { "label": "contact@secretpub.fr", "href": "mailto:contact@secretpub.fr" },
+          { "label": "31 Rue Jean Jullien Davin, 26000 Valence", "href": "#contact" }
+        ]
+      }
+    ],
+    "copyright": "© 2026 SecretPub · Tous droits réservés · Mentions légales",
+    "socials": [
+      {
+        "href": "https://www.instagram.com/_secretpub/",
+        "label": "Instagram",
+        "iconHtml": "<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5\"></rect><circle cx=\"12\" cy=\"12\" r=\"4\"></circle><circle cx=\"17.5\" cy=\"6.5\" r=\"1\" fill=\"currentColor\" stroke=\"none\"></circle></svg>"
+      },
+      {
+        "href": "https://www.linkedin.com/company/secret-pub/",
+        "label": "LinkedIn",
+        "iconHtml": "<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.5 8h4V24h-4zM8 8h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4 0 4.8 2.6 4.8 6V24h-4v-7c0-1.7 0-3.8-2.3-3.8s-2.7 1.8-2.7 3.7V24H8z\"></path></svg>"
+      },
+      {
+        "href": "https://www.facebook.com/agencesecretpub",
+        "label": "Facebook",
+        "iconHtml": "<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z\"></path></svg>"
+      }
+    ]
+  }
+}

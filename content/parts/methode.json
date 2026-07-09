@@ -1,0 +1,29 @@
+{
+  "methode": {
+    "eyebrow": "Méthode",
+    "title": "4 étapes, zéro surprise.",
+    "steps": [
+      {
+        "n": "1",
+        "title": "Étude",
+        "descHtml": "On part de vos plans, de vos photos et de vos contraintes réelles. Pas de devis au doigt mouillé."
+      },
+      {
+        "n": "2",
+        "title": "Proposition et BAT",
+        "descHtml": "Vous voyez exactement ce qui sera produit. Rien ne part sans votre validation."
+      },
+      {
+        "n": "3",
+        "title": "Production et réalisation",
+        "descHtml": "Profitez de plus de 10 ans d'expertise : un savoir-faire rodé qui vous garantit un résultat fiable, à chaque commande."
+      },
+      {
+        "n": "4",
+        "title": "Pose et contrôle",
+        "descHtml": "Des équipes habilitées posent, photographient et vérifient. Le chantier est terminé quand c'est impeccable."
+      }
+    ],
+    "note": "Du commerce indépendant au réseau de 90 points de vente, la méthode ne change jamais : étude rigoureuse, BAT validé, production maîtrisée, pose contrôlée. La même exigence à chaque chantier. C'est ce qui fait la satisfaction de nos clients."
+  }
+}

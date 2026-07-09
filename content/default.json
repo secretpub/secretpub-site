@@ -1,0 +1,1277 @@
+{
+  "clients": {
+    "label": "Ils nous font confiance",
+    "logos": [
+      {
+        "src": "/assets/logos/ct/hh3.png",
+        "alt": "Client H et H",
+        "size": "sq"
+      },
+      {
+        "src": "/assets/logos/ct/glastint.png",
+        "alt": "Client Glastint",
+        "size": ""
+      },
+      {
+        "src": "/assets/logos/ct/leclerc2.png",
+        "alt": "Client E.Leclerc",
+        "size": ""
+      },
+      {
+        "src": "/assets/logos/ct/avia.png",
+        "alt": "Client Avia",
+        "size": "lg"
+      },
+      {
+        "src": "/assets/logos/ct/chamas.png",
+        "alt": "Client Chamas Tacos",
+        "size": "sq"
+      },
+      {
+        "src": "/assets/logos/ct/auchan2.png",
+        "alt": "Client Auchan",
+        "size": ""
+      },
+      {
+        "src": "/assets/logos/ct/stressless2.png",
+        "alt": "Client Stressless",
+        "size": "xl"
+      },
+      {
+        "src": "/assets/logos/ct/cuisinella2.png",
+        "alt": "Client Cuisinella",
+        "size": "lg"
+      },
+      {
+        "src": "/assets/logos/ct/aviva2.png",
+        "alt": "Client Aviva Cuisines",
+        "size": "lg"
+      },
+      {
+        "src": "/assets/logos/ct/euro-parebrise-2.png",
+        "alt": "Client 0 Euro Pare-Brise",
+        "size": "lg"
+      },
+      {
+        "src": "/assets/logos/ct/manhattan.png",
+        "alt": "Client Manhattan Hot Dog",
+        "size": "lg"
+      },
+      {
+        "src": "/assets/logos/ct/bigm2.png",
+        "alt": "Client Big M",
+        "size": ""
+      },
+      {
+        "src": "/assets/logos/ct/ikami2.png",
+        "alt": "Client Ikami",
+        "size": "lg"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Parlons de votre projet.",
+    "lead": "Un projet ponctuel ou tout un réseau à équiper : présentez-nous votre besoin, un interlocuteur dédié vous recontacte sous 24 heures. Jamais un robot.",
+    "needOptions": [
+      "Signalétique",
+      "Print",
+      "Textile",
+      "Goodies",
+      "Packaging",
+      "Pose / Installation",
+      "Prestation graphique"
+    ],
+    "activityOptions": [
+      "Commerce / Distribution",
+      "Restauration / Hôtellerie",
+      "BTP / Construction",
+      "Beauté / Esthétique",
+      "Santé / Médical",
+      "Industrie",
+      "Services / Tertiaire",
+      "Sport / Loisirs",
+      "Automobile",
+      "Immobilier",
+      "Autre"
+    ],
+    "sitesOptions": [
+      "1 établissement",
+      "2 à 10 établissements",
+      "Plus de 10 établissements"
+    ],
+    "deepLinkLabel": "J'ai un projet plus précis : accéder à un formulaire détaillé →",
+    "submitLabel": "Envoyer ma demande",
+    "okMessage": "Merci, votre demande est bien notée. Un chargé de projet vous recontacte sous 48 heures ouvrées.",
+    "callTitle": "Un projet pressant ?",
+    "callSub": "Du lundi au vendredi, 9h à 18h. Un interlocuteur dédié, pas un robot.",
+    "officeLabel": "Bureaux",
+    "officeValue": "31 Rue Jean Jullien Davin, 26000 Valence · sur rendez-vous",
+    "emailLabel": "Email",
+    "zoneLabel": "Zone d'intervention",
+    "zoneValueHtml": "Valence et la Drôme en proximité. Pose et livraison partout en France <span class=\"fr-flag\" aria-hidden=\"true\"><span></span><span></span><span></span></span>."
+  },
+  "espace": {
+    "crumb": "Votre espace de commande",
+    "eyebrow": "La technologie SecretPub",
+    "titleHtml": "Votre espace de commande SecretPub. La commande de vos supports, enfin simple.",
+    "sub": "Un espace à vos couleurs qui réunit signalétique, print et textile. Vos produits validés, vos tarifs, votre historique. Recommander prend deux minutes.",
+    "heroActions": [
+      {
+        "class": "btn btn-pp btn-lg",
+        "href": "#demo",
+        "label": "Demander une démo",
+        "arrow": true
+      },
+      {
+        "class": "btn btn-ghost btn-lg",
+        "href": "#versions",
+        "label": "Voir les deux versions",
+        "arrow": false
+      }
+    ],
+    "principle": {
+      "eyebrow": "Le principe",
+      "title": "Vos supports validés, toujours prêts à recommander.",
+      "leadHtml": "Cartes de visite d'un nouveau salarié, tenues pour un saisonnier, affiches d'une opération commerciale : ces commandes reviennent sans cesse. Votre espace de commande les réduit à quelques clics, sans brief, sans fichier à renvoyer, sans risque d'erreur de charte.",
+      "note": "Votre espace prend les couleurs de votre marque. Sa seule signature, c'est la vôtre : le logo SecretPub reste discret, en bas, comme garant de la production."
+    },
+    "shots": [
+      {
+        "title": "Le catalogue",
+        "desc": "Tous vos supports validés, classés par métier, avec vos visuels et vos prix.",
+        "src": ""
+      },
+      {
+        "title": "La commande",
+        "desc": "Quantités, personnalisation par site, validation : trois étapes et c'est en production.",
+        "src": ""
+      },
+      {
+        "title": "Le reorder",
+        "desc": "Recommander à l'identique une commande passée, en un clic, depuis l'historique.",
+        "src": ""
+      },
+      {
+        "title": "Les campagnes",
+        "desc": "Pour les réseaux : une pré-commande nationale ouverte à tous les sites, suivie depuis le siège.",
+        "src": ""
+      }
+    ],
+    "versionsTitle": "Un espace de commande, à votre échelle.",
+    "versions": [
+      {
+        "tag": "Version point de vente",
+        "title": "Pour un commerce, un restaurant, une PME",
+        "desc": "L'essentiel, sans complexité. Vos supports validés, prêts à recommander.",
+        "featured": false,
+        "list": [
+          "Vos supports à votre charte, validés une fois",
+          "Recommande en quelques clics, sans nouveau brief",
+          "Vos prix et votre historique au même endroit",
+          "Les trois métiers réunis : signalétique, print, textile",
+          "Fichiers et bons à tirer archivés"
+        ]
+      },
+      {
+        "tag": "Version réseau",
+        "title": "Pour une franchise ou un réseau",
+        "desc": "Tout l'espace point de vente, plus le pilotage. Chaque site commande, le siège garde la main.",
+        "featured": true,
+        "list": [
+          "Un espace par point de vente, personnalisation encadrée",
+          "Validation et vision globale côté siège",
+          "Tarifs groupés à l'échelle du réseau",
+          "Campagnes de pré-commande nationales"
+        ]
+      }
+    ],
+    "versionsNote": "Même espace. Vous démarrez en version point de vente, et si vous ouvrez d'autres sites, vous passez à la version réseau sans rien réapprendre.",
+    "cta": {
+      "title": "Activez votre espace de commande.",
+      "body": "Une démonstration de 30 minutes suffit pour voir ce que votre espace change à votre quotidien.",
+      "primaryLabel": "Demander une démo",
+      "primaryHref": "/#contact",
+      "phoneLabel": "09 83 80 93 12"
+    }
+  },
+  "faq": {
+    "eyebrow": "Vos questions",
+    "title": "Ce que nos clients demandent avant de signer.",
+    "items": [
+      {
+        "q": "Quels sont vos délais ?",
+        "a": "Un devis clair sous 48 h ouvrées, un BAT sous 24 h après validation, et une date de livraison annoncée dès la commande, et tenue."
+      },
+      {
+        "q": "Intervenez-vous en dehors de la Drôme ?",
+        "a": "Oui. Basés à Valence, nous équipons des points de vente dans toute la France, notamment pour les réseaux multi-sites."
+      },
+      {
+        "q": "Gérez-vous plusieurs établissements à la fois ?",
+        "a": "C'est notre spécialité. Ouvertures, mises à niveau de charte, campagnes réseau : un seul interlocuteur coordonne l'ensemble."
+      },
+      {
+        "q": "Faites-vous la pose ?",
+        "a": "Oui. La pose et le contrôle final font partie de la prestation, réalisés par des équipes habilitées."
+      },
+      {
+        "q": "Travaillez-vous avec les petites structures ?",
+        "a": "Oui. Un commerce indépendant reçoit le même soin qu'un réseau national."
+      }
+    ]
+  },
+  "footer": {
+    "about": "Un seul partenaire, pour tout ce qui porte votre image. Conception, production et pose réunies, partout en France.",
+    "columns": [
+      {
+        "title": "Métiers",
+        "links": [
+          {
+            "label": "Signalétique",
+            "href": "#metiers"
+          },
+          {
+            "label": "Print",
+            "href": "#metiers"
+          },
+          {
+            "label": "Textile",
+            "href": "#metiers"
+          },
+          {
+            "label": "Goodies",
+            "href": "#metiers"
+          },
+          {
+            "label": "Packaging",
+            "href": "#metiers"
+          },
+          {
+            "label": "Pose / Installation",
+            "href": "#methode"
+          },
+          {
+            "label": "Prestation graphique",
+            "href": "#contact"
+          },
+          {
+            "label": "Réalisations",
+            "href": "#realisations"
+          }
+        ]
+      },
+      {
+        "title": "Société",
+        "links": [
+          {
+            "label": "Méthode",
+            "href": "#methode"
+          },
+          {
+            "label": "Questions fréquentes",
+            "href": "#faq"
+          }
+        ]
+      },
+      {
+        "title": "Contact",
+        "links": [
+          {
+            "label": "09 83 80 93 12",
+            "href": "tel:+33983809312"
+          },
+          {
+            "label": "contact@secretpub.fr",
+            "href": "mailto:contact@secretpub.fr"
+          },
+          {
+            "label": "31 Rue Jean Jullien Davin, 26000 Valence",
+            "href": "#contact"
+          }
+        ]
+      }
+    ],
+    "copyright": "© 2026 SecretPub · Tous droits réservés · Mentions légales",
+    "socials": [
+      {
+        "href": "https://www.instagram.com/_secretpub/",
+        "label": "Instagram",
+        "iconHtml": "<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5\"></rect><circle cx=\"12\" cy=\"12\" r=\"4\"></circle><circle cx=\"17.5\" cy=\"6.5\" r=\"1\" fill=\"currentColor\" stroke=\"none\"></circle></svg>"
+      },
+      {
+        "href": "https://www.linkedin.com/company/secret-pub/",
+        "label": "LinkedIn",
+        "iconHtml": "<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.5 8h4V24h-4zM8 8h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4 0 4.8 2.6 4.8 6V24h-4v-7c0-1.7 0-3.8-2.3-3.8s-2.7 1.8-2.7 3.7V24H8z\"></path></svg>"
+      },
+      {
+        "href": "https://www.facebook.com/agencesecretpub",
+        "label": "Facebook",
+        "iconHtml": "<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z\"></path></svg>"
+      }
+    ]
+  },
+  "france": {
+    "eyebrow": "Couverture nationale",
+    "title": "Partout en France, comme à Valence.",
+    "lead": "Envois, conditionnement, distribution et pose : nous gérons toute la logistique de votre communication physique, site par site, dans toute la France.",
+    "services": [
+      {
+        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 6h11v9H2z\"/><path d=\"M13 9h4l3 3v3h-7z\"/><circle cx=\"6.5\" cy=\"18\" r=\"1.6\"/><circle cx=\"17\" cy=\"18\" r=\"1.6\"/></svg>",
+        "title": "Envois",
+        "desc": "Expéditions suivies, partout en France."
+      },
+      {
+        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 8 12 3 3 8l9 5 9-5z\"/><path d=\"M3 8v8l9 5 9-5V8\"/><path d=\"M12 13v8\"/></svg>",
+        "title": "Conditionnement",
+        "desc": "Colisage prêt à poser, site par site."
+      },
+      {
+        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"6\" cy=\"19\" r=\"2\"/><circle cx=\"18\" cy=\"5\" r=\"2\"/><path d=\"M8 19h7a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h7\"/></svg>",
+        "title": "Distribution",
+        "desc": "Tournées coordonnées, multi-sites."
+      },
+      {
+        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8 6.2 21l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.1-2.1z\"/></svg>",
+        "title": "Pose",
+        "desc": "Équipes habilitées sur tout le territoire."
+      }
+    ],
+    "stats": [
+      {
+        "n": "24h",
+        "label": "délai de réponse"
+      },
+      {
+        "n": "5 régions",
+        "label": "livrées en continu"
+      }
+    ]
+  },
+  "meta": {
+    "siteName": "SecretPub",
+    "title": "SecretPub Valence : signalétique, print et textile pour les professionnels",
+    "description": "SecretPub conçoit, produit et pose toute votre communication physique : enseignes et signalétique, imprimerie, textile personnalisé. Production maîtrisée de bout en bout, à Valence et partout en France.",
+    "ogImage": "/assets/logo-full.png",
+    "catalogueUrl": "https://secretpub-catalogue.vercel.app/catalogue",
+    "phoneDisplay": "09 83 80 93 12",
+    "phoneHref": "tel:+33983809312",
+    "email": "contact@secretpub.fr",
+    "addressLine": "31 Rue Jean Jullien Davin, 26000 Valence",
+    "googleReviewUrl": "https://share.google/icRvqS7HRzNh8U7oh"
+  },
+  "nav": [
+    {
+      "label": "Métiers",
+      "href": "#metiers"
+    },
+    {
+      "label": "Réalisations",
+      "href": "#realisations"
+    },
+    {
+      "label": "Pour qui",
+      "href": "#pourqui"
+    },
+    {
+      "label": "Méthode",
+      "href": "#methode"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    }
+  ],
+  "headerCtaLabel": "Demander un devis",
+  "hero": {
+    "slides": [
+      {
+        "slideClass": "hslide is-active",
+        "eyebrow": "Signalétique, print et textile",
+        "titleHtml": "Toute votre <span class=\"mark\">communication physique</span>. Un seul partenaire.",
+        "sub": "Enseignes, imprimés, textile, objets publicitaires : SecretPub conçoit, produit et pose tout ce qui porte votre image. Pour votre point de vente comme pour votre réseau de 90 établissements.",
+        "image": "/assets/hero-showroom-opt.jpg",
+        "alt": "Showroom SecretPub : print, signalétique et textile à votre image",
+        "priority": true,
+        "actions": [
+          {
+            "class": "btn btn-primary btn-lg",
+            "href": "#contact",
+            "label": "Demander un devis",
+            "arrow": true
+          },
+          {
+            "class": "btn btn-ghost-hero btn-lg",
+            "href": "#realisations",
+            "label": "Voir nos réalisations",
+            "arrow": false
+          }
+        ]
+      },
+      {
+        "slideClass": "hslide pp",
+        "eyebrow": "La technologie SecretPub",
+        "titleHtml": "Votre espace de commande SecretPub. Vos commandes en <span class=\"mark\">deux minutes</span>.",
+        "sub": "Un espace de commande à votre charte qui réunit tous vos besoins de supports marketing. Vos produits validés, vos tarifs, votre historique. Vous recommandez en quelques clics.",
+        "image": "/assets/hero-espace-commande-opt.jpg",
+        "alt": "L'espace de commande SecretPub sur ordinateur et mobile : catalogue produits à votre charte",
+        "priority": false,
+        "actions": [
+          {
+            "class": "btn btn-pp btn-lg",
+            "href": "/espace-de-commande",
+            "label": "Découvrir votre espace de commande",
+            "arrow": true
+          }
+        ]
+      },
+      {
+        "slideClass": "hslide",
+        "eyebrow": "Logistique intégrée",
+        "titleHtml": "On livre, on conditionne, on <span class=\"mark\">pose</span>. Partout en France.",
+        "sub": "Colis préparés site par site, expéditions suivies et pose sur place : votre communication arrive prête, au bon endroit, au bon moment.",
+        "image": "/assets/hero-logistique-opt.jpg",
+        "alt": "Camion SecretPub chargé de colis, livraison et logistique partout en France",
+        "priority": false,
+        "actions": [
+          {
+            "class": "btn btn-primary btn-lg",
+            "href": "#france",
+            "label": "Notre couverture nationale",
+            "arrow": true
+          }
+        ]
+      }
+    ]
+  },
+  "methode": {
+    "eyebrow": "Méthode",
+    "title": "4 étapes, zéro surprise.",
+    "steps": [
+      {
+        "n": "1",
+        "title": "Étude",
+        "descHtml": "On part de vos plans, de vos photos et de vos contraintes réelles. Pas de devis au doigt mouillé."
+      },
+      {
+        "n": "2",
+        "title": "Proposition et BAT",
+        "descHtml": "Vous voyez exactement ce qui sera produit. Rien ne part sans votre validation."
+      },
+      {
+        "n": "3",
+        "title": "Production et réalisation",
+        "descHtml": "Profitez de plus de 10 ans d'expertise : un savoir-faire rodé qui vous garantit un résultat fiable, à chaque commande."
+      },
+      {
+        "n": "4",
+        "title": "Pose et contrôle",
+        "descHtml": "Des équipes habilitées posent, photographient et vérifient. Le chantier est terminé quand c'est impeccable."
+      }
+    ],
+    "note": "Du commerce indépendant au réseau de 90 points de vente, la méthode ne change jamais : étude rigoureuse, BAT validé, production maîtrisée, pose contrôlée. La même exigence à chaque chantier. C'est ce qui fait la satisfaction de nos clients."
+  },
+  "metiersSocle": {
+    "num": "01",
+    "title": "Nos métiers socles",
+    "tagHtml": "La <b>signalétique</b> vous expose, le <b>print</b> vous raconte, le <b>textile</b> vous incarne.",
+    "items": [
+      {
+        "cat": "signa",
+        "title": "Signalétique",
+        "descHtml": "Enseignes, totems, oriflammes et stands garantis extérieur. De l'étude à la pose, on rend votre point de vente visible de loin.",
+        "linkLabel": "Voir nos réalisations signalétique",
+        "img": "/assets/signaletique-products-opt.png",
+        "alt": "Réalisations signalétique SecretPub : enseigne ronde, kakémono roll-up, oriflamme et stand pliant noirs floqués SecretPub",
+        "reverse": false
+      },
+      {
+        "cat": "print",
+        "title": "Print",
+        "descHtml": "Cartes, brochures, affiches, PLV et grand format. Couleurs calibrées, finitions soignées et BAT sous 24 h, à vos quantités réelles.",
+        "linkLabel": "Voir nos réalisations print",
+        "img": "/assets/print-products-opt.png",
+        "alt": "Réalisations print SecretPub : brochures, supports imprimés et cartes de visite à la charte SecretPub",
+        "reverse": true
+      },
+      {
+        "cat": "textile",
+        "title": "Textile",
+        "descHtml": "Broderie, flocage et sérigraphie sur des textiles pros qui tiennent au lavage. Du t-shirt à la tenue complète du réseau.",
+        "linkLabel": "Voir nos réalisations textile",
+        "img": "/assets/textile-products-opt.png",
+        "alt": "Réalisations textile SecretPub : t-shirts, polo, casquette et bodywarmer noirs brodés SecretPub",
+        "reverse": false
+      }
+    ]
+  },
+  "metiersComplement": {
+    "num": "02",
+    "title": "La touche qui fait la différence",
+    "tagHtml": "Le <b>packaging</b> et les <b>goodies</b> font circuler votre image, entre toutes les mains.",
+    "items": [
+      {
+        "cat": "goodies",
+        "title": "Goodies",
+        "descHtml": "Tote bags, mugs, gourdes, stylos… Des objets utiles, donc gardés et vus longtemps, qui font voyager votre marque.",
+        "linkLabel": "Voir nos goodies",
+        "img": "/assets/goodies-products-opt.png",
+        "alt": "Goodies SecretPub : mug, désodorisant voiture, stylo et tote bag personnalisés SecretPub",
+        "reverse": true
+      },
+      {
+        "cat": "packaging",
+        "title": "Packaging",
+        "descHtml": "Boîtes, étuis et emballages sur-mesure, du kraft au premium. Parfait pour donner vie à votre restaurant : simple, efficace, mémorable dès le premier contact.",
+        "linkLabel": "Voir nos packagings",
+        "img": "/assets/packaging-products-opt.png",
+        "alt": "Packaging SecretPub : sac, boîte, gobelet et papier de soie personnalisés SecretPub",
+        "reverse": false
+      }
+    ]
+  },
+  "secteurs": {
+    "eyebrow": "Pour qui",
+    "title": "Tous les secteurs, un seul partenaire.",
+    "heading2": "À chaque profil, sa solution.",
+    "items": [
+      {
+        "i": "0",
+        "n": "01",
+        "title": "Restauration",
+        "img": "/assets/secteur-restauration-opt.jpg",
+        "alt": "Inspiration Restauration : enseigne, menus, PLV, tenues",
+        "detailsHtml": "Enseigne · menus · packaging · tenues d'équipe"
+      },
+      {
+        "i": "1",
+        "n": "02",
+        "title": "Promoteur immobilier",
+        "img": "/assets/secteur-immobilier-opt.jpg",
+        "alt": "Inspiration Promoteur immobilier : panneaux de programme, palissades, signalétique",
+        "detailsHtml": "Panneaux de programme · palissades · kakémonos · bâches · signalétique de livraison"
+      },
+      {
+        "i": "2",
+        "n": "03",
+        "title": "BTP et rénovation",
+        "img": "/assets/secteur-btp-opt.jpg",
+        "alt": "Inspiration BTP : panneaux de chantier, véhicules, EPI",
+        "detailsHtml": "Panneaux de chantier · bâche échafaudage · signalétique · tenues d'équipe · totem"
+      },
+      {
+        "i": "3",
+        "n": "04",
+        "title": "Automobile",
+        "img": "/assets/secteur-automobile-opt.jpg",
+        "alt": "Inspiration Automobile : totems, habillage vitrine, tenues atelier",
+        "detailsHtml": "Habillage façade · drapeaux oriflammes · sent-bons voiture · tenues d'équipe · tapis d'entrée"
+      },
+      {
+        "i": "4",
+        "n": "05",
+        "title": "Club de sport",
+        "img": "/assets/secteur-sport-opt.jpg",
+        "alt": "Inspiration Club de sport : maillots, banderoles, signalétique",
+        "detailsHtml": "Maillots personnalisés · banderoles · drapeaux oriflammes · tonnelle · goodies"
+      },
+      {
+        "i": "5",
+        "n": "06",
+        "title": "Beauté et esthétique",
+        "img": "/assets/secteur-esthetique-opt.jpg",
+        "alt": "Inspiration Esthétique : enseigne lumineuse, vitrophanie, packaging",
+        "detailsHtml": "Enseigne · vitrophanie · cartes de fidélité · dépliants · décoration intérieure"
+      }
+    ]
+  },
+  "pourqui": {
+    "cards": [
+      {
+        "featured": false,
+        "chipLabelHtml": "Établissement unique",
+        "chipIconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3.5 9 5 4h14l1.5 5\"/><path d=\"M4.5 9.5V20h15V9.5\"/><path d=\"M3.5 9h17\"/><path d=\"M9.5 20v-5h5v5\"/></svg>",
+        "title": "Commerçant, restaurateur, PME",
+        "desc": "Une enseigne qui dure, des imprimés soignés, des tenues à votre image. Un seul interlocuteur, de l'étude à la pose.",
+        "img": "/assets/hero-showroom-opt.jpg",
+        "alt": "Photo établissement unique",
+        "list": [
+          "Un seul interlocuteur dédié",
+          "Enseigne, print, textile, packaging et goodies réunis",
+          "Vos récurrents commandés sur votre espace, à votre charte",
+          "Réponses sous 24 h"
+        ],
+        "ctas": [
+          {
+            "label": "Demander un devis",
+            "href": "#contact",
+            "type": "primary",
+            "primary": true
+          },
+          {
+            "label": "Voir le catalogue",
+            "href": "https://secretpub-catalogue.vercel.app/catalogue",
+            "type": "ghost",
+            "ghost": true
+          }
+        ]
+      },
+      {
+        "featured": true,
+        "badge": "Le plus demandé",
+        "chipLabelHtml": "Réseau &amp; franchise",
+        "chipIconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"5\" r=\"2.3\"/><circle cx=\"5\" cy=\"18.5\" r=\"2.3\"/><circle cx=\"19\" cy=\"18.5\" r=\"2.3\"/><path d=\"M12 7.3v3.4M11 11.4 6.4 16.6M13 11.4l4.6 5.2\"/></svg>",
+        "title": "Franchise, réseau, promoteur",
+        "desc": "La cohérence de votre marque sur tous vos sites, sans y passer vos semaines. Vos équipes commandent, le siège pilote.",
+        "img": "/assets/hero-logistique-opt.jpg",
+        "alt": "Photo réseau / franchise",
+        "list": [
+          "Charte respectée partout",
+          "Vos équipes commandent sur leur espace, le siège pilote",
+          "Tarifs groupés négociés une fois",
+          "Vision globale des commandes"
+        ],
+        "ctas": [
+          {
+            "label": "Réserver ma place",
+            "href": "#liste-attente",
+            "type": "primary",
+            "primary": true
+          },
+          {
+            "label": "Voir le catalogue",
+            "href": "https://secretpub-catalogue.vercel.app/catalogue",
+            "type": "ghost",
+            "ghost": true
+          }
+        ]
+      }
+    ]
+  },
+  "realisations": {
+    "eyebrow": "Réalisations",
+    "title": "La preuve par le travail livré.",
+    "filters": [
+      {
+        "label": "Tout",
+        "key": "tout",
+        "on": true
+      },
+      {
+        "label": "Signalétique",
+        "key": "signa"
+      },
+      {
+        "label": "Print",
+        "key": "print"
+      },
+      {
+        "label": "Textile",
+        "key": "textile"
+      },
+      {
+        "label": "Goodies",
+        "key": "goodies"
+      },
+      {
+        "label": "Packaging",
+        "key": "packaging"
+      }
+    ],
+    "testimonials": [
+      {
+        "starsHtml": "★★★★★",
+        "quote": "Enseigne, vitrine et tenues livrées et posées dans les délais, sans une fausse note. Un seul interlocuteur pour tout, c'est un vrai confort.",
+        "name": "Julien M.",
+        "co": "Restaurant Le Comptoir · Valence"
+      },
+      {
+        "starsHtml": "★★★★★",
+        "quote": "Le déploiement de nos 12 points de vente a été d'une fluidité rare. Charte respectée partout, zéro mauvaise surprise.",
+        "name": "Sophie D.",
+        "co": "Réseau de franchises · Lyon"
+      },
+      {
+        "starsHtml": "★★★★★",
+        "quote": "Réactivité, conseil et qualité d'impression au rendez-vous. Nos PLV sont nettes et nos couleurs enfin fidèles à la marque.",
+        "name": "Karim B.",
+        "co": "Cuisinella · Décines"
+      }
+    ],
+    "items": [
+      {
+        "cat": "signa",
+        "sub": "facade",
+        "soc": "Pickup La Poste",
+        "desc": "Habillage complet d'un relais Pickup : pose d'adhésif imprimé et de vinyle adhésif monochrome découpé à la forme.",
+        "cap": "Habillage Pickup",
+        "catLabel": "Signalétique",
+        "dotClass": "signa",
+        "mainPhoto": {
+          "src": "/assets/realisations/pickup-1.jpg",
+          "alt": "Enseigne posée"
+        },
+        "extraPhotos": [
+          {
+            "src": "/assets/realisations/pickup-2.jpg",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "/assets/realisations/pickup-3.jpg",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      },
+      {
+        "cat": "signa",
+        "sub": "facade",
+        "soc": "Boufi",
+        "desc": "Habillage complet de la façade Boufi : caisson en tôle aluminium sur toute la façade, lettres boîtiers lumineuses, caisson full plexi 5 faces, lettres PVC peintes, tapis d'entrée personnalisé, décoration intérieure et caisson lumineux intérieur.",
+        "cap": "Habillage de façade",
+        "catLabel": "Signalétique",
+        "dotClass": "signa",
+        "mainPhoto": {
+          "src": "/assets/realisations/boufi-1.jpg",
+          "alt": "Habillage de façade"
+        },
+        "extraPhotos": [
+          {
+            "src": "/assets/realisations/boufi-2.jpg",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "/assets/realisations/boufi-3.jpg",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      },
+      {
+        "cat": "signa",
+        "sub": "enseignes",
+        "soc": "NS Store",
+        "desc": "Enseignes lumineuses pour la devanture NS Store : caissons lumineux avec lettres plexi relief et vitrophanie sur-mesure sur les vitrines cintrées.",
+        "cap": "Enseignes lumineuses",
+        "catLabel": "Signalétique",
+        "dotClass": "signa",
+        "mainPhoto": {
+          "src": "/assets/realisations/nsstore-1.jpg",
+          "alt": "Enseignes lumineuses"
+        },
+        "extraPhotos": [
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      },
+      {
+        "cat": "print",
+        "sub": "brochures",
+        "cap": "Édition et brochures",
+        "catLabel": "Print",
+        "dotClass": "print",
+        "mainPhoto": {
+          "src": "",
+          "alt": "Brochures livrées"
+        },
+        "extraPhotos": [
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      },
+      {
+        "cat": "textile",
+        "sub": "vetements",
+        "soc": "Batiman",
+        "desc": "Sweats personnalisés pour les équipes Batiman : marquage cœur et grand dos, pour un rendu net et durable qui affiche la marque sur tous les chantiers.",
+        "cap": "Textile personnalisé",
+        "catLabel": "Textile",
+        "dotClass": "textile",
+        "mainPhoto": {
+          "src": "/assets/realisations/batiman-textile.jpg",
+          "alt": "Textile personnalisé"
+        },
+        "extraPhotos": [
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      },
+      {
+        "cat": "goodies",
+        "sub": "objets",
+        "cap": "Objets publicitaires",
+        "catLabel": "Goodies",
+        "dotClass": "goodies",
+        "mainPhoto": {
+          "src": "",
+          "alt": "Objets publicitaires"
+        },
+        "extraPhotos": [
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      },
+      {
+        "cat": "signa",
+        "sub": "baches",
+        "soc": "Ameliora",
+        "desc": "Bâche échafaudage grand format imprimée et posée sur façade en travaux : visibilité maximale pour le client pendant toute la durée du chantier.",
+        "cap": "Bâches échafaudage",
+        "catLabel": "Signalétique",
+        "dotClass": "signa",
+        "mainPhoto": {
+          "src": "/assets/realisations/ameliora-bache.jpg",
+          "alt": "Bâche échafaudage"
+        },
+        "extraPhotos": [
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      },
+      {
+        "cat": "packaging",
+        "sub": "sacs",
+        "soc": "Istanbul Kebab",
+        "desc": "Sacs papier kraft personnalisés, imprimés au logo du restaurant : un emballage à emporter solide et à l'image de l'enseigne.",
+        "cap": "Sacs papier kraft",
+        "catLabel": "Packaging",
+        "dotClass": "packaging",
+        "mainPhoto": {
+          "src": "/assets/realisations/istanbul-sacs.jpg",
+          "alt": "Sacs papier kraft"
+        },
+        "extraPhotos": [
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      },
+      {
+        "cat": "print",
+        "sub": "plv",
+        "cap": "PLV et grand format",
+        "catLabel": "Print",
+        "dotClass": "print",
+        "mainPhoto": {
+          "src": "",
+          "alt": "PLV en magasin"
+        },
+        "extraPhotos": [
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      },
+      {
+        "cat": "textile",
+        "sub": "dotation",
+        "cap": "Dotation réseau",
+        "catLabel": "Textile",
+        "dotClass": "textile",
+        "mainPhoto": {
+          "src": "",
+          "alt": "Série textile réseau"
+        },
+        "extraPhotos": [
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      },
+      {
+        "cat": "goodies",
+        "sub": "totebags",
+        "cap": "Tote bags & mugs",
+        "catLabel": "Goodies",
+        "dotClass": "goodies",
+        "mainPhoto": {
+          "src": "",
+          "alt": "Tote bags et mugs"
+        },
+        "extraPhotos": [
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      },
+      {
+        "cat": "packaging",
+        "sub": "emballage",
+        "cap": "Emballage sur-mesure",
+        "catLabel": "Packaging",
+        "dotClass": "packaging",
+        "mainPhoto": {
+          "src": "",
+          "alt": "Emballage sur-mesure"
+        },
+        "extraPhotos": [
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      },
+      {
+        "cat": "signa",
+        "sub": "vehicule",
+        "cap": "Marquage véhicule",
+        "catLabel": "Signalétique",
+        "dotClass": "signa",
+        "mainPhoto": {
+          "src": "",
+          "alt": "Véhicule marqué"
+        },
+        "extraPhotos": [
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      },
+      {
+        "cat": "print",
+        "sub": "cartes",
+        "extra": true,
+        "cap": "Cartes de visite",
+        "catLabel": "Print",
+        "dotClass": "print",
+        "mainPhoto": {
+          "src": "",
+          "alt": "Cartes de visite"
+        },
+        "extraPhotos": [
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      },
+      {
+        "cat": "textile",
+        "sub": "casquettes",
+        "extra": true,
+        "cap": "Casquettes brodées",
+        "catLabel": "Textile",
+        "dotClass": "textile",
+        "mainPhoto": {
+          "src": "",
+          "alt": "Casquettes brodées"
+        },
+        "extraPhotos": [
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      },
+      {
+        "cat": "packaging",
+        "sub": "pochettes",
+        "extra": true,
+        "cap": "Pochettes kraft",
+        "catLabel": "Packaging",
+        "dotClass": "packaging",
+        "mainPhoto": {
+          "src": "",
+          "alt": "Pochettes kraft"
+        },
+        "extraPhotos": [
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      },
+      {
+        "cat": "goodies",
+        "sub": "gourdes",
+        "extra": true,
+        "cap": "Gourdes & mugs",
+        "catLabel": "Goodies",
+        "dotClass": "goodies",
+        "mainPhoto": {
+          "src": "",
+          "alt": "Gourdes personnalisées"
+        },
+        "extraPhotos": [
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      },
+      {
+        "cat": "print",
+        "sub": "kakemonos",
+        "extra": true,
+        "cap": "Kakémonos roll-up",
+        "catLabel": "Print",
+        "dotClass": "print",
+        "mainPhoto": {
+          "src": "",
+          "alt": "Kakémonos roll-up"
+        },
+        "extraPhotos": [
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
+        ]
+      }
+    ],
+    "ctaText": "Vous cherchez un exemple précis pour votre secteur ?",
+    "ctaLabel": "Demander plus d'exemples",
+    "ctaHref": "#contact"
+  },
+  "reseaux": {
+    "crumb": "Réseaux et franchises",
+    "titleHtml": "Vous gérez un réseau. Nous gérons toute votre communication physique.",
+    "sub": "Signalétique, print et textile pour chaque point de vente, commandés sur une plateforme à votre charte. Le siège garde le contrôle, les sites gagnent du temps, la marque reste cohérente partout.",
+    "heroActions": [
+      {
+        "label": "Demander une démo réseau",
+        "href": "#demo",
+        "class": "btn btn-primary btn-lg",
+        "arrow": true
+      },
+      {
+        "label": "Voir la plateforme",
+        "href": "/espace-de-commande",
+        "class": "btn btn-ghost btn-lg"
+      }
+    ],
+    "pain": {
+      "eyebrow": "Le problème",
+      "title": "L'approvisionnement d'un réseau, aujourd'hui.",
+      "leadHtml": "Douze établissements, douze façons de commander, quatre prestataires différents et une charte qui s'érode à chaque ouverture. C'est le quotidien de la plupart des réseaux.",
+      "items": [
+        {
+          "title": "Des commandes dispersées",
+          "desc": "Chaque site commande dans son coin, chez des prestataires différents, à des prix différents. Personne n'a la vision globale."
+        },
+        {
+          "title": "Une charte qui dérive",
+          "desc": "Un vert qui n'est pas le bon, un logo étiré, une typo remplacée : à chaque commande locale, votre marque s'use un peu."
+        },
+        {
+          "title": "Du temps perdu au siège",
+          "desc": "Valider des fichiers, relancer des fournisseurs, répondre aux sites : la communication physique devient un travail à plein temps."
+        },
+        {
+          "title": "Des prestataires multiples",
+          "desc": "Un fournisseur pour les enseignes, un pour le print, un pour le textile. Trois contacts, trois factures, trois niveaux de qualité."
+        }
+      ]
+    },
+    "solution": {
+      "eyebrow": "La solution SecretPub",
+      "title": "Un seul partenaire et un seul outil.",
+      "leadHtml": "Votre espace de commande SecretPub donne à chaque établissement un espace à votre charte : produits pré-validés par le siège, tarifs groupés négociés une fois, livraison au bon endroit. Vous gardez le contrôle, vos équipes gagnent du temps.",
+      "cards": [
+        {
+          "tag": "Côté points de vente",
+          "title": "Commander juste, sans effort",
+          "list": [
+            "Catalogue à la charte : impossible de commander faux",
+            "Supports personnalisés par site (adresse, équipe, ville)",
+            "Commande en quelques clics, livraison sur site"
+          ],
+          "featured": false
+        },
+        {
+          "tag": "Côté siège",
+          "title": "Piloter sans micro-gérer",
+          "list": [
+            "Validation des supports une seule fois, en amont",
+            "Vision globale des commandes de tout le réseau",
+            "Tarifs groupés négociés à l'échelle du réseau",
+            "Campagnes de pré-commande pour les opérations nationales"
+          ],
+          "featured": true
+        }
+      ],
+      "shotSrc": "",
+      "shotCaption": "La console réseau de votre espace de commande, à votre charte."
+    },
+    "benefices": {
+      "eyebrow": "Ce que votre réseau y gagne",
+      "title": "Des bénéfices qui se mesurent.",
+      "items": [
+        {
+          "title": "Cohérence garantie",
+          "desc": "Cohérence de marque garantie sur tous les sites. Votre marque est identique à Valence, Dijon ou Béziers."
+        },
+        {
+          "title": "Temps retrouvé",
+          "desc": "Des heures gagnées chaque mois sur les commandes : le siège valide une fois, le réseau commande toute l'année."
+        },
+        {
+          "title": "Un seul interlocuteur",
+          "desc": "Un interlocuteur unique pour les trois métiers. Un contact, une facturation, un niveau de qualité constant."
+        },
+        {
+          "title": "Vision globale",
+          "desc": "Une vision globale des dépenses du réseau, site par site, métier par métier."
+        }
+      ],
+      "case": {
+        "tag": "Cas client",
+        "title": "Un réseau national équipé de bout en bout.",
+        "body": "Un groupe de restauration multi-site nous confie l'équipement complet de ses ouvertures, de l'enseigne aux tenues, partout en France. Chaque site commande sur son espace dédié, le siège suit tout depuis sa console.",
+        "stats": [
+          {
+            "n": "90+",
+            "label": "points de vente servis"
+          },
+          {
+            "n": "3",
+            "label": "métiers sur une seule plateforme"
+          }
+        ],
+        "imgSrc": ""
+      }
+    },
+    "cta": {
+      "title": "Voyez la plateforme avec vos couleurs.",
+      "body": "En 30 minutes, nous vous montrons un espace de commande configuré pour un réseau comme le vôtre.",
+      "primaryLabel": "Demander une démo réseau",
+      "primaryHref": "/#contact",
+      "phoneLabel": "09 83 80 93 12"
+    }
+  },
+  "trust": {
+    "items": [
+      {
+        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"8\" r=\"5\"/><path d=\"M8.5 12.5 7 22l5-3 5 3-1.5-9.5\"/></svg>",
+        "valuePrefix": "+",
+        "value": "10",
+        "from": "0",
+        "unit": "ans",
+        "unitSpace": true,
+        "label": "d'expérience"
+      },
+      {
+        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3 2 8l10 5 10-5-10-5z\"/><path d=\"M2 13l10 5 10-5\"/><path d=\"M2 18l10 5 10-5\"/></svg>",
+        "valuePrefix": "+",
+        "value": "3000",
+        "from": "0",
+        "label": "projets livrés"
+      },
+      {
+        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 2.5l2.9 5.9 6.5.95-4.7 4.58 1.1 6.47L12 17.9 6.1 20.9l1.1-6.47L2.5 9.85l6.5-.95z\"/></svg>",
+        "value": "5,0",
+        "href": "https://share.google/icRvqS7HRzNh8U7oh",
+        "stars": true,
+        "starsHtml": "<span class=\"ti-stars\" aria-hidden=\"true\">★★★★★</span>",
+        "label": "avis Google"
+      },
+      {
+        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7v5l3 2\"/></svg>",
+        "value": "24",
+        "from": "0",
+        "unit": " h",
+        "unitSpace": false,
+        "label": "délai de réponse"
+      }
+    ]
+  },
+  "waitlist": {
+    "pill": "10 places limitées · jusqu'à -20% sur le catalogue",
+    "titleHtml": "L'offre réseaux ouvre bientôt.<br />Réservez votre place.",
+    "body": "Un espace de commande à votre charte pour tous vos points de vente, des tarifs groupés et un seul interlocuteur pour toute votre communication physique. Les 10 premiers réseaux inscrits bénéficient de tarifs préférentiels, jusqu'à -20% sur tout le catalogue. Inscrivez-vous à la liste d'attente : on vous contacte dès qu'une place se libère.",
+    "image": "/assets/plugprint-console-2-opt.png",
+    "imageAlt": "Aperçu de la console réseau de votre espace de commande, à votre charte",
+    "caption": "Un aperçu de votre console réseau, à votre charte.",
+    "emailPlaceholder": "Votre email professionnel",
+    "submitLabel": "Rejoindre la liste",
+    "confirm": "Merci, votre place est réservée. On revient vers vous très vite.",
+    "fine": "Sans engagement. Priorité donnée dans l'ordre d'inscription.",
+    "count": "4",
+    "countLabel": "réseaux déjà inscrits",
+    "promoValue": "-20%",
+    "promoLabel": "sur tout le catalogue",
+    "scarcityWidth": "40%",
+    "scarcityLabel": "Places limitées <strong>· 6 restantes sur 10</strong>",
+    "perks": [
+      "Jusqu'à -20% sur tout le catalogue",
+      "Tarifs préférentiels garantis",
+      "Onboarding prioritaire et espace à votre charte"
+    ]
+  }
+}

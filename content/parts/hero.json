@@ -1,0 +1,63 @@
+{
+  "hero": {
+    "slides": [
+      {
+        "slideClass": "hslide is-active",
+        "eyebrow": "Signalétique, print et textile",
+        "titleHtml": "Toute votre <span class=\"mark\">communication physique</span>. Un seul partenaire.",
+        "sub": "Enseignes, imprimés, textile, objets publicitaires : SecretPub conçoit, produit et pose tout ce qui porte votre image. Pour votre point de vente comme pour votre réseau de 90 établissements.",
+        "image": "/assets/hero-showroom-opt.jpg",
+        "alt": "Showroom SecretPub : print, signalétique et textile à votre image",
+        "priority": true,
+        "actions": [
+          {
+            "class": "btn btn-primary btn-lg",
+            "href": "#contact",
+            "label": "Demander un devis",
+            "arrow": true
+          },
+          {
+            "class": "btn btn-ghost-hero btn-lg",
+            "href": "#realisations",
+            "label": "Voir nos réalisations",
+            "arrow": false
+          }
+        ]
+      },
+      {
+        "slideClass": "hslide pp",
+        "eyebrow": "La technologie SecretPub",
+        "titleHtml": "Votre espace de commande SecretPub. Vos commandes en <span class=\"mark\">deux minutes</span>.",
+        "sub": "Un espace de commande à votre charte qui réunit tous vos besoins de supports marketing. Vos produits validés, vos tarifs, votre historique. Vous recommandez en quelques clics.",
+        "image": "/assets/hero-espace-commande-opt.jpg",
+        "alt": "L'espace de commande SecretPub sur ordinateur et mobile : catalogue produits à votre charte",
+        "priority": false,
+        "actions": [
+          {
+            "class": "btn btn-pp btn-lg",
+            "href": "/espace-de-commande",
+            "label": "Découvrir votre espace de commande",
+            "arrow": true
+          }
+        ]
+      },
+      {
+        "slideClass": "hslide",
+        "eyebrow": "Logistique intégrée",
+        "titleHtml": "On livre, on conditionne, on <span class=\"mark\">pose</span>. Partout en France.",
+        "sub": "Colis préparés site par site, expéditions suivies et pose sur place : votre communication arrive prête, au bon endroit, au bon moment.",
+        "image": "/assets/hero-logistique-opt.jpg",
+        "alt": "Camion SecretPub chargé de colis, livraison et logistique partout en France",
+        "priority": false,
+        "actions": [
+          {
+            "class": "btn btn-primary btn-lg",
+            "href": "#france",
+            "label": "Notre couverture nationale",
+            "arrow": true
+          }
+        ]
+      }
+    ]
+  }
+}

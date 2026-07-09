@@ -1,0 +1,53 @@
+<!-- RÉALISATIONS (crème, galerie à faire glisser) -->
+<section class="section real" id="realisations" data-screen-label="Réalisations">
+  <div class="wrap">
+    <div class="real-head reveal">
+      <div class="rh-left">
+        <div class="rh-head">
+          <div class="rh-grid" aria-hidden="true"></div>
+          <div class="fusion" id="fusionTrack" aria-hidden="true"><span class="fusion-line"></span><span class="fusion-dot"></span></div>
+          <span class="eyebrow">{{realisations.eyebrow}}</span>
+          <h2 class="rh-ignite">{{realisations.title}}</h2>
+        </div>
+        <div class="filters" id="filters" role="group" aria-label="Filtrer les réalisations">
+          {{#realisations.filters}}<button{{#on}} class="on"{{/on}} data-filter="{{key}}">{{label}}</button>{{/realisations.filters}}
+        </div>
+        <div class="subfilters" id="subfilters" role="group" aria-label="Sous-catégories" hidden=""></div>
+      </div>
+      <div class="testi" id="testi">
+        <div class="testi-track" id="testiTrack">
+          {{#realisations.testimonials}}<figure class="testi-card">
+            <div class="testi-stars" aria-hidden="true">{{{starsHtml}}}</div>
+            <blockquote>{{quote}}</blockquote>
+            <figcaption><span class="testi-name">{{name}}</span><span class="testi-co">{{co}}</span></figcaption>
+          </figure>
+          {{/realisations.testimonials}}
+        </div>
+        <button type="button" class="testi-arrow side prev" id="testiPrev" aria-label="Témoignage précédent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button type="button" class="testi-arrow side next" id="testiNext" aria-label="Témoignage suivant"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+        <div class="testi-dots" id="testiDots" hidden></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="real-grid" id="realGrid">
+      {{#realisations.items}}<a class="real-item{{#extra}} extra{{/extra}}" data-cat="{{cat}}" data-sub="{{sub}}"{{#soc}} data-soc="{{soc}}"{{/soc}}{{#desc}} data-desc="{{desc}}"{{/desc}}>
+        <div class="real-card">
+          {{#mainPhoto.src}}<img class="ph ri-main" src="{{mainPhoto.src}}" alt="{{mainPhoto.alt}}" loading="lazy" />{{/mainPhoto.src}}{{^mainPhoto.src}}<span class="ph ri-main" aria-hidden="true"></span>{{/mainPhoto.src}}
+          <div class="ri-extra" hidden="">{{#extraPhotos}}<img class="ph" src="{{src}}" alt="{{alt}}" loading="lazy" />{{/extraPhotos}}</div>
+          <span class="ri-arrow" aria-hidden="true">↗</span>
+          <div class="ri-overlay">
+            <span class="ri-cap">{{cap}}</span>
+            <span class="ri-cat"><i class="ri-dot {{dotClass}}" aria-hidden="true"></i>{{catLabel}}</span>
+          </div>
+        </div>
+      </a>
+      {{/realisations.items}}
+    </div>
+    <div class="real-pager" id="realPager"></div>
+    <div class="real-cta-line reveal">
+      <span class="rcl-txt">{{realisations.ctaText}}</span>
+      <a class="rm-btn ghost" href="{{realisations.ctaHref}}">{{realisations.ctaLabel}} <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,96 @@
+<!-- PARTOUT EN FRANCE (carte animée) -->
+<section class="section france" id="france" data-screen-label="Partout en France">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{france.eyebrow}}</span>
+      <h2>{{france.title}}</h2>
+      <p class="lead">{{france.lead}}</p>
+    </div>
+    <div class="france-grid">
+      <div class="reveal">
+        <div class="fr-services">
+          {{#france.services}}
+          <div class="fr-service"><span class="fs-c">{{{iconHtml}}}</span><div><div class="fs-t">{{title}}</div><div class="fs-d">{{desc}}</div></div></div>
+          {{/france.services}}
+        </div>
+        <div class="fr-stat">
+          {{#france.stats}}
+          <div><div class="n">{{n}}</div><div class="l">{{label}}</div></div>
+          {{/france.stats}}
+        </div>
+      </div>
+      <div class="france-map reveal" id="franceMap" role="img" aria-label="Carte de France : villes livrées et posées par SecretPub">
+        <svg viewBox="0 0 500 520" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="fmapFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#54c24f" stop-opacity="0.55"/>
+              <stop offset="0.55" stop-color="#40ab3f" stop-opacity="0.3"/>
+              <stop offset="1" stop-color="#2f9438" stop-opacity="0.14"/>
+            </linearGradient>
+          </defs>
+          <path class="fmap-shape" d="M277 39 L300 59 L354 97 L401 114 L467 136 L449 203 L431 210 L402 270 L427 287 L417 332 L440 390 L395 417 L377 409 L321 404 L299 438 L304 450 L245 440 L140 406 L147 400 L160 344 L158 300 L161 272 L140 256 L126 219 L96 209 L40 182 L47 162 L107 155 L133 153 L146 143 L145 105 L158 121 L202 112 L235 91 L252 53 Z" />
+          <path class="fmap-shape" d="M488 432 C494 428, 500 433, 500 444 L496 486 C494 500, 485 500, 482 488 L480 448 C480 438, 483 433, 488 432 Z" />
+          <g class="fmap-routes">
+            <path class="fmap-route" style="--d: 300" d="M361 331 C330 270, 300 200, 280 152" />
+            <path class="fmap-route" style="--d: 420" d="M361 331 C340 230, 320 130, 296 76" />
+            <path class="fmap-route" style="--d: 540" d="M361 331 C420 280, 450 210, 453 164" />
+            <path class="fmap-route" style="--d: 660" d="M361 331 C400 350, 425 375, 438 388" />
+            <path class="fmap-route" style="--d: 780" d="M361 331 C368 360, 374 390, 377 404" />
+            <path class="fmap-route" style="--d: 900" d="M361 331 C300 333, 230 333, 186 335" />
+            <path class="fmap-route" style="--d: 1020" d="M361 331 C320 360, 280 388, 252 392" />
+            <path class="fmap-route" style="--d: 1140" d="M361 331 C290 300, 200 250, 154 224" />
+          </g>
+          <g>
+            <circle class="fmap-dot minor" style="--d: 560" cx="320" cy="180" r="4" />
+            <circle class="fmap-dot minor" style="--d: 620" cx="250" cy="230" r="4" />
+            <circle class="fmap-dot minor" style="--d: 680" cx="300" cy="270" r="4" />
+            <circle class="fmap-dot minor" style="--d: 740" cx="220" cy="290" r="4" />
+            <circle class="fmap-dot minor" style="--d: 800" cx="360" cy="250" r="4" />
+            <circle class="fmap-dot minor" style="--d: 860" cx="200" cy="185" r="4" />
+            <circle class="fmap-dot minor" style="--d: 920" cx="290" cy="112" r="4" />
+            <circle class="fmap-dot minor" style="--d: 980" cx="182" cy="288" r="4" />
+            <circle class="fmap-dot minor" style="--d: 1040" cx="393" cy="262" r="4" />
+            <circle class="fmap-dot minor" style="--d: 1100" cx="252" cy="360" r="4" />
+            <circle class="fmap-dot minor" style="--d: 1160" cx="330" cy="372" r="4" />
+            <circle class="fmap-dot minor" style="--d: 1220" cx="332" cy="228" r="4" />
+          </g>
+          <g>
+            <circle class="fmap-halo" style="--d: 300" cx="280" cy="148" r="9" />
+            <circle class="fmap-dot" style="--d: 300" cx="280" cy="148" r="6.5" />
+            <text class="fmap-label" style="--d: 340" x="292" y="144">Paris</text>
+            <circle class="fmap-halo" style="--d: 420" cx="296" cy="72" r="9" />
+            <circle class="fmap-dot" style="--d: 420" cx="296" cy="72" r="5.5" />
+            <text class="fmap-label" style="--d: 460" x="308" y="68">Lille</text>
+            <circle class="fmap-halo" style="--d: 540" cx="453" cy="160" r="9" />
+            <circle class="fmap-dot" style="--d: 540" cx="453" cy="160" r="5.5" />
+            <text class="fmap-label" style="--d: 580" x="378" y="150">Strasbourg</text>
+            <circle class="fmap-halo" style="--d: 240" cx="359" cy="291" r="9" />
+            <circle class="fmap-dot" style="--d: 240" cx="359" cy="291" r="5.5" />
+            <text class="fmap-label" style="--d: 280" x="372" y="287">Lyon</text>
+            <circle class="fmap-halo" style="--d: 780" cx="377" cy="406" r="9" />
+            <circle class="fmap-dot" style="--d: 780" cx="377" cy="406" r="6" />
+            <text class="fmap-label" style="--d: 820" x="356" y="424">Marseille</text>
+            <circle class="fmap-halo" style="--d: 660" cx="440" cy="390" r="9" />
+            <circle class="fmap-dot" style="--d: 660" cx="440" cy="390" r="5.5" />
+            <text class="fmap-label" style="--d: 700" x="426" y="382">Nice</text>
+            <circle class="fmap-halo" style="--d: 900" cx="180" cy="335" r="9" />
+            <circle class="fmap-dot" style="--d: 900" cx="180" cy="335" r="5.5" />
+            <text class="fmap-label" style="--d: 940" x="106" y="331">Bordeaux</text>
+            <circle class="fmap-halo" style="--d: 1020" cx="247" cy="394" r="9" />
+            <circle class="fmap-dot" style="--d: 1020" cx="247" cy="394" r="5.5" />
+            <text class="fmap-label" style="--d: 1060" x="205" y="412">Toulouse</text>
+            <circle class="fmap-halo" style="--d: 1140" cx="148" cy="221" r="9" />
+            <circle class="fmap-dot" style="--d: 1140" cx="148" cy="221" r="5.5" />
+            <text class="fmap-label" style="--d: 1180" x="74" y="217">Nantes</text>
+            <g class="fmap-hq" style="--d: 80">
+              <circle class="fmap-hq-ring" cx="361" cy="331" r="13" />
+              <circle class="fmap-dot" cx="361" cy="331" r="8" />
+            </g>
+            <text class="fmap-label hq" style="--d: 120" x="377" y="337">Valence · siège</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+</section>

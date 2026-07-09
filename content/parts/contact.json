@@ -1,0 +1,44 @@
+{
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Parlons de votre projet.",
+    "lead": "Un projet ponctuel ou tout un réseau à équiper : présentez-nous votre besoin, un interlocuteur dédié vous recontacte sous 24 heures. Jamais un robot.",
+    "needOptions": [
+      "Signalétique",
+      "Print",
+      "Textile",
+      "Goodies",
+      "Packaging",
+      "Pose / Installation",
+      "Prestation graphique"
+    ],
+    "activityOptions": [
+      "Commerce / Distribution",
+      "Restauration / Hôtellerie",
+      "BTP / Construction",
+      "Beauté / Esthétique",
+      "Santé / Médical",
+      "Industrie",
+      "Services / Tertiaire",
+      "Sport / Loisirs",
+      "Automobile",
+      "Immobilier",
+      "Autre"
+    ],
+    "sitesOptions": [
+      "1 établissement",
+      "2 à 10 établissements",
+      "Plus de 10 établissements"
+    ],
+    "deepLinkLabel": "J'ai un projet plus précis : accéder à un formulaire détaillé →",
+    "submitLabel": "Envoyer ma demande",
+    "okMessage": "Merci, votre demande est bien notée. Un chargé de projet vous recontacte sous 48 heures ouvrées.",
+    "callTitle": "Un projet pressant ?",
+    "callSub": "Du lundi au vendredi, 9h à 18h. Un interlocuteur dédié, pas un robot.",
+    "officeLabel": "Bureaux",
+    "officeValue": "31 Rue Jean Jullien Davin, 26000 Valence · sur rendez-vous",
+    "emailLabel": "Email",
+    "zoneLabel": "Zone d'intervention",
+    "zoneValueHtml": "Valence et la Drôme en proximité. Pose et livraison partout en France <span class=\"fr-flag\" aria-hidden=\"true\"><span></span><span></span><span></span></span>."
+  }
+}

@@ -1,0 +1,22 @@
+<!-- MÉTHODE (blanc, numéros géants) -->
+<section class="section methode" id="methode" data-screen-label="Méthode">
+  <div class="wrap">
+    <div class="section-head reveal center">
+      <span class="eyebrow">{{methode.eyebrow}}</span>
+      <h2>{{methode.title}}</h2>
+    </div>
+    <div class="steps" id="methodeSteps">
+      <div class="steps-line" aria-hidden="true"><i></i></div>
+      {{#methode.steps}}
+      <div class="step">
+        <span class="step-badge">{{n}}</span>
+        <div class="step-card">
+          <h3>{{{title}}}</h3>
+          <p>{{{descHtml}}}</p>
+        </div>
+      </div>
+      {{/methode.steps}}
+    </div>
+    <p class="methode-note reveal">{{methode.note}}</p>
+  </div>
+</section>

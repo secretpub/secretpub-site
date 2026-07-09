@@ -1,0 +1,76 @@
+{
+  "espace": {
+    "crumb": "Votre espace de commande",
+    "eyebrow": "La technologie SecretPub",
+    "titleHtml": "Votre espace de commande SecretPub. La commande de vos supports, enfin simple.",
+    "sub": "Un espace à vos couleurs qui réunit signalétique, print et textile. Vos produits validés, vos tarifs, votre historique. Recommander prend deux minutes.",
+    "heroActions": [
+      { "class": "btn btn-pp btn-lg", "href": "#demo", "label": "Demander une démo", "arrow": true },
+      { "class": "btn btn-ghost btn-lg", "href": "#versions", "label": "Voir les deux versions", "arrow": false }
+    ],
+    "principle": {
+      "eyebrow": "Le principe",
+      "title": "Vos supports validés, toujours prêts à recommander.",
+      "leadHtml": "Cartes de visite d'un nouveau salarié, tenues pour un saisonnier, affiches d'une opération commerciale : ces commandes reviennent sans cesse. Votre espace de commande les réduit à quelques clics, sans brief, sans fichier à renvoyer, sans risque d'erreur de charte.",
+      "note": "Votre espace prend les couleurs de votre marque. Sa seule signature, c'est la vôtre : le logo SecretPub reste discret, en bas, comme garant de la production."
+    },
+    "shots": [
+      {
+        "title": "Le catalogue",
+        "desc": "Tous vos supports validés, classés par métier, avec vos visuels et vos prix.",
+        "src": ""
+      },
+      {
+        "title": "La commande",
+        "desc": "Quantités, personnalisation par site, validation : trois étapes et c'est en production.",
+        "src": ""
+      },
+      {
+        "title": "Le reorder",
+        "desc": "Recommander à l'identique une commande passée, en un clic, depuis l'historique.",
+        "src": ""
+      },
+      {
+        "title": "Les campagnes",
+        "desc": "Pour les réseaux : une pré-commande nationale ouverte à tous les sites, suivie depuis le siège.",
+        "src": ""
+      }
+    ],
+    "versionsTitle": "Un espace de commande, à votre échelle.",
+    "versions": [
+      {
+        "tag": "Version point de vente",
+        "title": "Pour un commerce, un restaurant, une PME",
+        "desc": "L'essentiel, sans complexité. Vos supports validés, prêts à recommander.",
+        "featured": false,
+        "list": [
+          "Vos supports à votre charte, validés une fois",
+          "Recommande en quelques clics, sans nouveau brief",
+          "Vos prix et votre historique au même endroit",
+          "Les trois métiers réunis : signalétique, print, textile",
+          "Fichiers et bons à tirer archivés"
+        ]
+      },
+      {
+        "tag": "Version réseau",
+        "title": "Pour une franchise ou un réseau",
+        "desc": "Tout l'espace point de vente, plus le pilotage. Chaque site commande, le siège garde la main.",
+        "featured": true,
+        "list": [
+          "Un espace par point de vente, personnalisation encadrée",
+          "Validation et vision globale côté siège",
+          "Tarifs groupés à l'échelle du réseau",
+          "Campagnes de pré-commande nationales"
+        ]
+      }
+    ],
+    "versionsNote": "Même espace. Vous démarrez en version point de vente, et si vous ouvrez d'autres sites, vous passez à la version réseau sans rien réapprendre.",
+    "cta": {
+      "title": "Activez votre espace de commande.",
+      "body": "Une démonstration de 30 minutes suffit pour voir ce que votre espace change à votre quotidien.",
+      "primaryLabel": "Demander une démo",
+      "primaryHref": "/#contact",
+      "phoneLabel": "09 83 80 93 12"
+    }
+  }
+}

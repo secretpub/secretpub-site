@@ -1,0 +1,48 @@
+<!-- LISTE D'ATTENTE RÉSEAUX -->
+<section class="section waitlist grainy" id="liste-attente" data-screen-label="Liste d'attente réseaux">
+  <div class="wrap">
+    <div class="wl-card reveal">
+      <div class="wl-left">
+        <span class="wl-pill"><span class="wl-dot"></span>{{waitlist.pill}}</span>
+        <h2>{{{waitlist.titleHtml}}}</h2>
+        <p>{{waitlist.body}}</p>
+        <figure class="wl-shot">
+          <img class="ph" src="{{waitlist.image}}" alt="{{waitlist.imageAlt}}" loading="lazy" />
+          <figcaption>{{waitlist.caption}}</figcaption>
+        </figure>
+        <form class="wl-form" id="wlForm">
+          <input type="email" name="wl-email" placeholder="{{waitlist.emailPlaceholder}}" required="" aria-label="{{waitlist.emailPlaceholder}}" />
+          <button type="submit" class="btn btn-primary btn-lg">{{waitlist.submitLabel}} <span class="arr">→</span></button>
+        </form>
+        <p class="wl-confirm" id="wlConfirm" hidden="">{{waitlist.confirm}}</p>
+        <p class="wl-fine">{{waitlist.fine}}</p>
+      </div>
+      <div class="wl-right">
+        <div class="wl-stat">
+          <div class="wl-avatars">
+            <div class="wl-av-stack">
+              <span class="wl-av a1"></span>
+              <span class="wl-av a2"></span>
+              <span class="wl-av a3"></span>
+              <span class="wl-av a4"></span>
+              <span class="wl-av wl-av-you"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </div>
+            <span class="wl-av-label">Vous&nbsp;?</span>
+          </div>
+          <div class="wl-num"><span data-count="{{waitlist.count}}">0</span></div>
+          <div class="wl-lab">{{waitlist.countLabel}}</div>
+          <div class="wl-promo"><span class="wl-promo-n">{{waitlist.promoValue}}</span><span class="wl-promo-l">{{waitlist.promoLabel}}</span></div>
+        </div>
+        <div class="wl-scarcity">
+          <div class="wl-bar"><i style="width: {{waitlist.scarcityWidth}};"></i></div>
+          <div class="wl-scarcity-lab">{{{waitlist.scarcityLabel}}}</div>
+        </div>
+        <ul class="wl-perks">
+          {{#waitlist.perks}}
+          <li><span class="pqc">✓</span> {{.}}</li>
+          {{/waitlist.perks}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+<!-- LOGOS CLIENTS (bandeau noir, marquee) -->
+<section class="clients" aria-label="Ils nous font confiance" data-screen-label="Clients">
+  <div class="wrap"><span class="cl-label">{{clients.label}}</span></div>
+  <div class="lmarquee">
+    <div class="lrow">
+      <div class="ltrack ltrack-single">
+        {{#clients.logos}}
+        <div class="lchip {{size}}"><img src="{{{src}}}" alt="{{alt}}" loading="lazy" /></div>
+        {{/clients.logos}}
+        {{#clients.logos}}
+        <div class="lchip {{size}}" aria-hidden="true"><img src="{{{src}}}" alt="" loading="lazy" /></div>
+        {{/clients.logos}}
+      </div>
+    </div>
+  </div>
+</section>

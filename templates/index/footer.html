@@ -1,0 +1,26 @@
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="brand" href="/"><img src="/assets/logo-full.png" alt="Logo SecretPub" /></a>
+        <p class="about">{{footer.about}}</p>
+      </div>
+      {{#footer.columns}}
+      <div class="foot-col">
+        <h5>{{title}}</h5>
+        {{#links}}
+        <a href="{{href}}">{{label}}</a>
+        {{/links}}
+      </div>
+      {{/footer.columns}}
+    </div>
+    <div class="footer-bottom">
+      <div>{{footer.copyright}}</div>
+      <div class="socials">
+        {{#footer.socials}}
+        <a href="{{href}}" target="_blank" rel="noopener" aria-label="{{label}}">{{{iconHtml}}}</a>
+        {{/footer.socials}}
+      </div>
+    </div>
+  </div>
+</footer>

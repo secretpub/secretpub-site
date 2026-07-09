@@ -1,0 +1,120 @@
+{
+  "secteurs": {
+    "eyebrow": "Pour qui",
+    "title": "Tous les secteurs, un seul partenaire.",
+    "heading2": "À chaque profil, sa solution.",
+    "items": [
+      {
+        "i": "0",
+        "n": "01",
+        "title": "Restauration",
+        "img": "/assets/secteur-restauration-opt.jpg",
+        "alt": "Inspiration Restauration : enseigne, menus, PLV, tenues",
+        "detailsHtml": "Enseigne · menus · packaging · tenues d'équipe"
+      },
+      {
+        "i": "1",
+        "n": "02",
+        "title": "Promoteur immobilier",
+        "img": "/assets/secteur-immobilier-opt.jpg",
+        "alt": "Inspiration Promoteur immobilier : panneaux de programme, palissades, signalétique",
+        "detailsHtml": "Panneaux de programme · palissades · kakémonos · bâches · signalétique de livraison"
+      },
+      {
+        "i": "2",
+        "n": "03",
+        "title": "BTP et rénovation",
+        "img": "/assets/secteur-btp-opt.jpg",
+        "alt": "Inspiration BTP : panneaux de chantier, véhicules, EPI",
+        "detailsHtml": "Panneaux de chantier · bâche échafaudage · signalétique · tenues d'équipe · totem"
+      },
+      {
+        "i": "3",
+        "n": "04",
+        "title": "Automobile",
+        "img": "/assets/secteur-automobile-opt.jpg",
+        "alt": "Inspiration Automobile : totems, habillage vitrine, tenues atelier",
+        "detailsHtml": "Habillage façade · drapeaux oriflammes · sent-bons voiture · tenues d'équipe · tapis d'entrée"
+      },
+      {
+        "i": "4",
+        "n": "05",
+        "title": "Club de sport",
+        "img": "/assets/secteur-sport-opt.jpg",
+        "alt": "Inspiration Club de sport : maillots, banderoles, signalétique",
+        "detailsHtml": "Maillots personnalisés · banderoles · drapeaux oriflammes · tonnelle · goodies"
+      },
+      {
+        "i": "5",
+        "n": "06",
+        "title": "Beauté et esthétique",
+        "img": "/assets/secteur-esthetique-opt.jpg",
+        "alt": "Inspiration Esthétique : enseigne lumineuse, vitrophanie, packaging",
+        "detailsHtml": "Enseigne · vitrophanie · cartes de fidélité · dépliants · décoration intérieure"
+      }
+    ]
+  },
+  "pourqui": {
+    "cards": [
+      {
+        "featured": false,
+        "chipLabelHtml": "Établissement unique",
+        "chipIconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3.5 9 5 4h14l1.5 5\"/><path d=\"M4.5 9.5V20h15V9.5\"/><path d=\"M3.5 9h17\"/><path d=\"M9.5 20v-5h5v5\"/></svg>",
+        "title": "Commerçant, restaurateur, PME",
+        "desc": "Une enseigne qui dure, des imprimés soignés, des tenues à votre image. Un seul interlocuteur, de l'étude à la pose.",
+        "img": "/assets/hero-showroom-opt.jpg",
+        "alt": "Photo établissement unique",
+        "list": [
+          "Un seul interlocuteur dédié",
+          "Enseigne, print, textile, packaging et goodies réunis",
+          "Vos récurrents commandés sur votre espace, à votre charte",
+          "Réponses sous 24 h"
+        ],
+        "ctas": [
+          {
+            "label": "Demander un devis",
+            "href": "#contact",
+            "type": "primary",
+            "primary": true
+          },
+          {
+            "label": "Voir le catalogue",
+            "href": "https://secretpub-catalogue.vercel.app/catalogue",
+            "type": "ghost",
+            "ghost": true
+          }
+        ]
+      },
+      {
+        "featured": true,
+        "badge": "Le plus demandé",
+        "chipLabelHtml": "Réseau &amp; franchise",
+        "chipIconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"5\" r=\"2.3\"/><circle cx=\"5\" cy=\"18.5\" r=\"2.3\"/><circle cx=\"19\" cy=\"18.5\" r=\"2.3\"/><path d=\"M12 7.3v3.4M11 11.4 6.4 16.6M13 11.4l4.6 5.2\"/></svg>",
+        "title": "Franchise, réseau, promoteur",
+        "desc": "La cohérence de votre marque sur tous vos sites, sans y passer vos semaines. Vos équipes commandent, le siège pilote.",
+        "img": "/assets/hero-logistique-opt.jpg",
+        "alt": "Photo réseau / franchise",
+        "list": [
+          "Charte respectée partout",
+          "Vos équipes commandent sur leur espace, le siège pilote",
+          "Tarifs groupés négociés une fois",
+          "Vision globale des commandes"
+        ],
+        "ctas": [
+          {
+            "label": "Réserver ma place",
+            "href": "#liste-attente",
+            "type": "primary",
+            "primary": true
+          },
+          {
+            "label": "Voir le catalogue",
+            "href": "https://secretpub-catalogue.vercel.app/catalogue",
+            "type": "ghost",
+            "ghost": true
+          }
+        ]
+      }
+    ]
+  }
+}

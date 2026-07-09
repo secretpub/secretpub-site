@@ -1,0 +1,28 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="SecretPub, retour à l'accueil">
+      <img src="/assets/logo-full.png" alt="Logo SecretPub, signalétique, print et textile à Valence" />
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      {{#nav}}
+      <div class="nav-item"><a href="{{href}}">{{label}}</a></div>
+      {{/nav}}
+    </nav>
+    <div class="header-cta">
+      <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-glow">Catalogue <span class="ext" aria-hidden="true">↗</span></a>
+      <a href="#contact" class="btn btn-primary">{{headerCtaLabel}}</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="menu-close" id="menuClose" aria-label="Fermer le menu">×</button>
+  {{#nav}}
+  <a href="{{href}}">{{label}}</a>
+  {{/nav}}
+  <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-glow">Catalogue <span class="ext" aria-hidden="true">↗</span></a>
+  <a href="#contact" class="btn btn-primary">{{headerCtaLabel}}</a>
+</div>

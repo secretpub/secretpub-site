@@ -1,0 +1,132 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="SecretPub, retour à l'accueil">
+      <img src="/assets/logo-full.png" alt="Logo SecretPub, signalétique, print et textile à Valence" />
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <div class="nav-item"><a href="/#metiers">Métiers</a></div>
+      <div class="nav-item"><a href="/#realisations">Réalisations</a></div>
+      <div class="nav-item"><a href="/#pourqui">Pour qui</a></div>
+      <div class="nav-item"><a href="/#methode">Méthode</a></div>
+      <div class="nav-item"><a href="/#contact">Contact</a></div>
+    </nav>
+    <div class="header-cta">
+      <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-glow">Catalogue <span class="ext" aria-hidden="true">↗</span></a>
+      <a href="/#contact" class="btn btn-primary">Demander une démo</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="menu-close" id="menuClose" aria-label="Fermer le menu">×</button>
+  <a href="/#metiers">Métiers</a>
+  <a href="/#realisations">Réalisations</a>
+  <a href="/#pourqui">Pour qui</a>
+  <a href="/#methode">Méthode</a>
+  <a href="/#contact">Contact</a>
+  <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-glow">Catalogue <span class="ext" aria-hidden="true">↗</span></a>
+  <a href="/#contact" class="btn btn-primary">Demander une démo</a>
+</div>
+
+<!-- HERO -->
+<section class="page-hero" data-screen-label="Hero espace de commande">
+  <div class="wrap">
+    <nav class="crumb" aria-label="Fil d'Ariane"><a href="/">Accueil</a> <span>/</span> <span>{{espace.crumb}}</span></nav>
+    <span class="eyebrow" style="margin-top: 22px;">{{espace.eyebrow}}</span>
+    <h1>{{{espace.titleHtml}}}</h1>
+    <p class="hero-sub">{{espace.sub}}</p>
+    <div class="hero-actions">
+      {{#espace.heroActions}}
+      <a href="{{href}}" class="{{class}}">{{label}}{{#arrow}} <span class="arr">→</span>{{/arrow}}</a>
+      {{/espace.heroActions}}
+    </div>
+  </div>
+</section>
+
+<!-- LE PRINCIPE -->
+<section class="section" data-screen-label="Le principe">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{espace.principle.eyebrow}}</span>
+      <h2>{{espace.principle.title}}</h2>
+      <p class="lead">{{{espace.principle.leadHtml}}}</p>
+    </div>
+    <div class="shots-grid">
+      {{#espace.shots}}
+      <div class="shot reveal">
+        {{#src}}<img class="ph" src="{{src}}" alt="{{title}}" loading="lazy"/>{{/src}}{{^src}}<span class="ph" aria-hidden="true" style="display:block;width:100%;aspect-ratio:16/10;border-radius:12px;"></span>{{/src}}
+        <p class="sh-t">{{title}}</p>
+        <p class="sh-d">{{desc}}</p>
+      </div>
+      {{/espace.shots}}
+    </div>
+    <p class="lead" style="text-align:center; max-width:60ch; margin:clamp(28px,3vw,40px) auto 0;">{{espace.principle.note}}</p>
+  </div>
+</section>
+
+<!-- LES DEUX VERSIONS -->
+<section class="section" id="versions" data-screen-label="Les deux versions">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Deux versions</span>
+      <h2>{{espace.versionsTitle}}</h2>
+    </div>
+    <div class="plug-grid">
+      {{#espace.versions}}
+      <div class="plug-card{{#featured}} featured{{/featured}} reveal">
+        <span class="pc-tag">{{tag}}</span>
+        <h3>{{title}}</h3>
+        <p>{{desc}}</p>
+        <ul>
+          {{#list}}
+          <li>{{.}}</li>
+          {{/list}}
+        </ul>
+      </div>
+      {{/espace.versions}}
+    </div>
+    <p class="versions-note" style="text-align:center; margin-top:18px;">{{espace.versionsNote}}</p>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-band grainy pp" id="demo" data-screen-label="CTA démo">
+  <div class="wrap">
+    <h2>{{espace.cta.title}}</h2>
+    <p>{{espace.cta.body}}</p>
+    <div class="hero-actions">
+      <a href="{{espace.cta.primaryHref}}" class="btn btn-white btn-lg">{{espace.cta.primaryLabel}} <span class="arr">→</span></a>
+      <a href="{{meta.phoneHref}}" class="btn btn-ghost btn-lg">{{espace.cta.phoneLabel}}</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="brand" href="/"><img src="/assets/logo-full.png" alt="Logo SecretPub" /></a>
+        <p class="about">{{footer.about}}</p>
+      </div>
+      {{#footer.columns}}
+      <div class="foot-col">
+        <h5>{{title}}</h5>
+        {{#links}}
+        <a href="{{href}}">{{label}}</a>
+        {{/links}}
+      </div>
+      {{/footer.columns}}
+    </div>
+    <div class="footer-bottom">
+      <div>{{footer.copyright}}</div>
+      <div class="socials">
+        {{#footer.socials}}
+        <a href="{{href}}" target="_blank" rel="noopener" aria-label="{{label}}">{{{iconHtml}}}</a>
+        {{/footer.socials}}
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,170 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="SecretPub, retour à l'accueil">
+      <img src="/assets/logo-full.png" alt="Logo SecretPub, signalétique, print et textile à Valence" />
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <div class="nav-item"><a href="/#metiers">Métiers</a></div>
+      <div class="nav-item"><a href="/reseaux-franchises" data-page="/reseaux-franchises">Réseaux et franchises</a></div>
+      <div class="nav-item"><a href="/#realisations">Réalisations</a></div>
+      <div class="nav-item"><a href="/#pourqui">Pour qui</a></div>
+      <div class="nav-item"><a href="/#methode">Méthode</a></div>
+      <div class="nav-item"><a href="/#contact">Contact</a></div>
+    </nav>
+    <div class="header-cta">
+      <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-glow">Catalogue <span class="ext" aria-hidden="true">↗</span></a>
+      <a href="/#contact" class="btn btn-primary">Parler à un expert réseau</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="menu-close" id="menuClose" aria-label="Fermer le menu">×</button>
+  <a href="/#metiers">Métiers</a>
+  <a href="/reseaux-franchises">Réseaux et franchises</a>
+  <a href="/#realisations">Réalisations</a>
+  <a href="/#pourqui">Pour qui</a>
+  <a href="/#methode">Méthode</a>
+  <a href="/#contact">Contact</a>
+  <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-glow">Catalogue <span class="ext" aria-hidden="true">↗</span></a>
+  <a href="/#contact" class="btn btn-primary">Parler à un expert réseau</a>
+</div>
+
+<!-- HERO -->
+<section class="page-hero" data-screen-label="Hero réseaux">
+  <div class="wrap">
+    <nav class="crumb" aria-label="Fil d'Ariane"><a href="/">Accueil</a> <span>/</span> <span>{{reseaux.crumb}}</span></nav>
+    <h1>{{{reseaux.titleHtml}}}</h1>
+    <p class="hero-sub">{{reseaux.sub}}</p>
+    <div class="hero-actions">
+{{#reseaux.heroActions}}
+      <a href="{{href}}" class="{{class}}">{{label}}{{#arrow}} <span class="arr">→</span>{{/arrow}}</a>
+{{/reseaux.heroActions}}
+    </div>
+  </div>
+</section>
+
+<!-- LA DOULEUR -->
+<section class="section" data-screen-label="La douleur">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{reseaux.pain.eyebrow}}</span>
+      <h2>{{reseaux.pain.title}}</h2>
+      <p class="lead">{{{reseaux.pain.leadHtml}}}</p>
+    </div>
+    <div class="pain-grid">
+{{#reseaux.pain.items}}
+      <div class="pain reveal">
+        <h3>{{title}}</h3>
+        <p>{{desc}}</p>
+      </div>
+{{/reseaux.pain.items}}
+    </div>
+  </div>
+</section>
+
+<!-- LA SOLUTION -->
+<section class="section plug" data-screen-label="La solution">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{reseaux.solution.eyebrow}}</span>
+      <h2>{{reseaux.solution.title}}</h2>
+      <p class="lead">{{{reseaux.solution.leadHtml}}}</p>
+    </div>
+    <div class="plug-grid">
+{{#reseaux.solution.cards}}
+      <div class="plug-card{{#featured}} featured{{/featured}} reveal">
+        <span class="pc-tag">{{tag}}</span>
+        <h3>{{title}}</h3>
+        <ul>
+{{#list}}
+          <li>{{.}}</li>
+{{/list}}
+        </ul>
+      </div>
+{{/reseaux.solution.cards}}
+    </div>
+    <div class="plug-shot reveal">
+{{#reseaux.solution.shotSrc}}
+      <img class="ph" src="{{reseaux.solution.shotSrc}}" alt="{{reseaux.solution.shotCaption}}" loading="lazy" />
+{{/reseaux.solution.shotSrc}}
+      <p class="ps-cap">{{reseaux.solution.shotCaption}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- BÉNÉFICES -->
+<section class="section" data-screen-label="Bénéfices">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{reseaux.benefices.eyebrow}}</span>
+      <h2>{{reseaux.benefices.title}}</h2>
+    </div>
+    <div class="benef-grid">
+{{#reseaux.benefices.items}}
+      <div class="benef reveal">
+        <h3>{{title}}</h3>
+        <p>{{desc}}</p>
+      </div>
+{{/reseaux.benefices.items}}
+    </div>
+
+    <div class="case reveal">
+      <div>
+        <span class="case-tag">{{reseaux.benefices.case.tag}}</span>
+        <h3>{{reseaux.benefices.case.title}}</h3>
+        <p>{{reseaux.benefices.case.body}}</p>
+        <div class="case-stats">
+{{#reseaux.benefices.case.stats}}
+          <div class="cs"><div class="n">{{n}}</div><div class="l">{{label}}</div></div>
+{{/reseaux.benefices.case.stats}}
+        </div>
+      </div>
+{{#reseaux.benefices.case.imgSrc}}
+      <img class="ph" src="{{reseaux.benefices.case.imgSrc}}" alt="{{reseaux.benefices.case.title}}" loading="lazy" />
+{{/reseaux.benefices.case.imgSrc}}
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-band grainy" id="demo" data-screen-label="CTA démo">
+  <div class="wrap">
+    <h2>{{reseaux.cta.title}}</h2>
+    <p>{{reseaux.cta.body}}</p>
+    <div class="hero-actions">
+      <a href="{{reseaux.cta.primaryHref}}" class="btn btn-primary btn-lg">{{reseaux.cta.primaryLabel}} <span class="arr">→</span></a>
+      <a href="{{meta.phoneHref}}" class="btn btn-ghost btn-lg">{{reseaux.cta.phoneLabel}}</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="brand" href="/"><img src="/assets/logo-full.png" alt="Logo SecretPub" /></a>
+        <p class="about">{{footer.about}}</p>
+      </div>
+      {{#footer.columns}}
+      <div class="foot-col">
+        <h5>{{title}}</h5>
+        {{#links}}
+        <a href="{{href}}">{{label}}</a>
+        {{/links}}
+      </div>
+      {{/footer.columns}}
+    </div>
+    <div class="footer-bottom">
+      <div>{{footer.copyright}}</div>
+      <div class="socials">
+        {{#footer.socials}}
+        <a href="{{href}}" target="_blank" rel="noopener" aria-label="{{label}}">{{{iconHtml}}}</a>
+        {{/footer.socials}}
+      </div>
+    </div>
+  </div>
+</footer>

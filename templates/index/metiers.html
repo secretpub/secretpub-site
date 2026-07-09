@@ -1,0 +1,52 @@
+<!-- NOS MÉTIERS (blanc) -->
+<section class="section metiers" id="metiers" data-screen-label="Métiers">
+  <div class="wrap">
+    <div class="socle-banner reveal">
+      <div class="sb-head">
+        <span class="sb-num">{{metiersSocle.num}}</span>
+        <h2 class="sb-title">{{metiersSocle.title}}</h2>
+      </div>
+      <p class="sb-tag">{{{metiersSocle.tagHtml}}}</p>
+    </div>
+
+    <div class="metiers-flow" id="flow01">
+      <div class="flow-rail" aria-hidden="true"><span class="flow-rail-fill"></span><span class="flow-dot"></span></div>
+    {{#metiersSocle.items}}
+    <div class="ms-showcase {{#reverse}}reverse {{/reverse}}reveal spotlight">
+      <div class="msc-copy">
+        <h3 class="msc-title">{{title}}</h3>
+        <p class="msc-desc">{{{descHtml}}}</p>
+        <a class="msc-link" href="#realisations" data-cat="{{cat}}">{{linkLabel}} <span class="arr">→</span></a>
+      </div>
+      <div class="msc-visual">
+        <img class="ph" src="{{img}}" alt="{{alt}}" loading="lazy" />
+      </div>
+    </div>
+    {{/metiersSocle.items}}
+    </div>
+
+    <div class="socle-banner finishing reveal">
+      <div class="sb-head">
+        <span class="sb-num">{{metiersComplement.num}}</span>
+        <h2 class="sb-title">{{metiersComplement.title}}</h2>
+      </div>
+      <p class="sb-tag">{{{metiersComplement.tagHtml}}}</p>
+    </div>
+
+    <div class="metiers-flow" id="flow02">
+      <div class="flow-rail" aria-hidden="true"><span class="flow-rail-fill"></span><span class="flow-dot"></span></div>
+    {{#metiersComplement.items}}
+    <div class="ms-showcase {{#reverse}}reverse {{/reverse}}reveal spotlight">
+      <div class="msc-copy">
+        <h3 class="msc-title">{{title}}</h3>
+        <p class="msc-desc">{{{descHtml}}}</p>
+        <a class="msc-link" href="#realisations" data-cat="{{cat}}">{{linkLabel}} <span class="arr">→</span></a>
+      </div>
+      <div class="msc-visual">
+        <img class="ph" src="{{img}}" alt="{{alt}}" loading="lazy" />
+      </div>
+    </div>
+    {{/metiersComplement.items}}
+    </div>
+  </div>
+</section>

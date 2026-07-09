@@ -1,0 +1,23 @@
+<!-- BANDEAU PREUVE (vert vif) -->
+<section class="trust grainy" aria-label="Chiffres clés" data-screen-label="Preuve">
+  <div class="wrap">
+    <div class="trust-grid">
+      {{#trust.items}}
+      {{#href}}
+      <a class="trust-item ti-link" href="{{href}}" target="_blank" rel="noopener">
+        <span class="ti-ic">{{{iconHtml}}}</span>
+        <div class="n">{{valuePrefix}}{{#from}}<span data-count="{{value}}" data-from="{{from}}">{{value}}</span>{{/from}}{{^from}}{{value}}{{/from}}{{#unit}}{{#unitSpace}} {{/unitSpace}}<span class="unit">{{unit}}</span>{{/unit}}</div>
+        <div class="l">{{#stars}}{{{starsHtml}}} {{/stars}}{{label}}</div>
+      </a>
+      {{/href}}
+      {{^href}}
+      <div class="trust-item">
+        <span class="ti-ic">{{{iconHtml}}}</span>
+        <div class="n">{{valuePrefix}}{{#from}}<span data-count="{{value}}" data-from="{{from}}">{{value}}</span>{{/from}}{{^from}}{{value}}{{/from}}{{#unit}}{{#unitSpace}} {{/unitSpace}}<span class="unit">{{unit}}</span>{{/unit}}</div>
+        <div class="l">{{#stars}}{{{starsHtml}}} {{/stars}}{{label}}</div>
+      </div>
+      {{/href}}
+      {{/trust.items}}
+    </div>
+  </div>
+</section>

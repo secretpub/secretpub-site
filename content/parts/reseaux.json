@@ -1,0 +1,103 @@
+{
+  "reseaux": {
+    "crumb": "Réseaux et franchises",
+    "titleHtml": "Vous gérez un réseau. Nous gérons toute votre communication physique.",
+    "sub": "Signalétique, print et textile pour chaque point de vente, commandés sur une plateforme à votre charte. Le siège garde le contrôle, les sites gagnent du temps, la marque reste cohérente partout.",
+    "heroActions": [
+      { "label": "Demander une démo réseau", "href": "#demo", "class": "btn btn-primary btn-lg", "arrow": true },
+      { "label": "Voir la plateforme", "href": "/espace-de-commande", "class": "btn btn-ghost btn-lg" }
+    ],
+    "pain": {
+      "eyebrow": "Le problème",
+      "title": "L'approvisionnement d'un réseau, aujourd'hui.",
+      "leadHtml": "Douze établissements, douze façons de commander, quatre prestataires différents et une charte qui s'érode à chaque ouverture. C'est le quotidien de la plupart des réseaux.",
+      "items": [
+        {
+          "title": "Des commandes dispersées",
+          "desc": "Chaque site commande dans son coin, chez des prestataires différents, à des prix différents. Personne n'a la vision globale."
+        },
+        {
+          "title": "Une charte qui dérive",
+          "desc": "Un vert qui n'est pas le bon, un logo étiré, une typo remplacée : à chaque commande locale, votre marque s'use un peu."
+        },
+        {
+          "title": "Du temps perdu au siège",
+          "desc": "Valider des fichiers, relancer des fournisseurs, répondre aux sites : la communication physique devient un travail à plein temps."
+        },
+        {
+          "title": "Des prestataires multiples",
+          "desc": "Un fournisseur pour les enseignes, un pour le print, un pour le textile. Trois contacts, trois factures, trois niveaux de qualité."
+        }
+      ]
+    },
+    "solution": {
+      "eyebrow": "La solution SecretPub",
+      "title": "Un seul partenaire et un seul outil.",
+      "leadHtml": "Votre espace de commande SecretPub donne à chaque établissement un espace à votre charte : produits pré-validés par le siège, tarifs groupés négociés une fois, livraison au bon endroit. Vous gardez le contrôle, vos équipes gagnent du temps.",
+      "cards": [
+        {
+          "tag": "Côté points de vente",
+          "title": "Commander juste, sans effort",
+          "list": [
+            "Catalogue à la charte : impossible de commander faux",
+            "Supports personnalisés par site (adresse, équipe, ville)",
+            "Commande en quelques clics, livraison sur site"
+          ],
+          "featured": false
+        },
+        {
+          "tag": "Côté siège",
+          "title": "Piloter sans micro-gérer",
+          "list": [
+            "Validation des supports une seule fois, en amont",
+            "Vision globale des commandes de tout le réseau",
+            "Tarifs groupés négociés à l'échelle du réseau",
+            "Campagnes de pré-commande pour les opérations nationales"
+          ],
+          "featured": true
+        }
+      ],
+      "shotSrc": "",
+      "shotCaption": "La console réseau de votre espace de commande, à votre charte."
+    },
+    "benefices": {
+      "eyebrow": "Ce que votre réseau y gagne",
+      "title": "Des bénéfices qui se mesurent.",
+      "items": [
+        {
+          "title": "Cohérence garantie",
+          "desc": "Cohérence de marque garantie sur tous les sites. Votre marque est identique à Valence, Dijon ou Béziers."
+        },
+        {
+          "title": "Temps retrouvé",
+          "desc": "Des heures gagnées chaque mois sur les commandes : le siège valide une fois, le réseau commande toute l'année."
+        },
+        {
+          "title": "Un seul interlocuteur",
+          "desc": "Un interlocuteur unique pour les trois métiers. Un contact, une facturation, un niveau de qualité constant."
+        },
+        {
+          "title": "Vision globale",
+          "desc": "Une vision globale des dépenses du réseau, site par site, métier par métier."
+        }
+      ],
+      "case": {
+        "tag": "Cas client",
+        "title": "Un réseau national équipé de bout en bout.",
+        "body": "Un groupe de restauration multi-site nous confie l'équipement complet de ses ouvertures, de l'enseigne aux tenues, partout en France. Chaque site commande sur son espace dédié, le siège suit tout depuis sa console.",
+        "stats": [
+          { "n": "90+", "label": "points de vente servis" },
+          { "n": "3", "label": "métiers sur une seule plateforme" }
+        ],
+        "imgSrc": ""
+      }
+    },
+    "cta": {
+      "title": "Voyez la plateforme avec vos couleurs.",
+      "body": "En 30 minutes, nous vous montrons un espace de commande configuré pour un réseau comme le vôtre.",
+      "primaryLabel": "Demander une démo réseau",
+      "primaryHref": "/#contact",
+      "phoneLabel": "09 83 80 93 12"
+    }
+  }
+}
