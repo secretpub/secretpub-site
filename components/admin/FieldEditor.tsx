@@ -214,6 +214,78 @@ function blankLike(v: unknown): unknown {
   return "";
 }
 
+function stripHtml(s: string) {
+  return s.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+}
+function trunc(s: string, n = 48) {
+  return s.length > n ? s.slice(0, n).trimEnd() + "…" : s;
+}
+// Aperçu texte d'un élément (pour le résumé fermé).
+function previewOf(item: any): string {
+  if (typeof item === "string") return trunc(stripHtml(item));
+  if (!isPlainObject(item)) return "";
+  const pick = [
+    "cap", "title", "titleHtml", "name", "q", "label", "value",
+    "chipLabel", "chipLabelHtml", "alt", "desc", "eyebrow",
+  ];
+  for (const k of pick) {
+    const v = item[k];
+    if (typeof v === "string" && v.trim()) return trunc(stripHtml(v));
+  }
+  for (const k of Object.keys(item)) {
+    const v = item[k];
+    if (typeof v === "string" && v.trim()) return trunc(stripHtml(v));
+  }
+  return "";
+}
+// Miniature d'un élément (logo, réalisation…).
+function firstImageOf(item: any): string {
+  if (!isPlainObject(item)) return "";
+  for (const k of ["src", "image", "img", "logo", "photo"]) {
+    if (typeof item[k] === "string" && looksLikeImage(item[k])) return item[k];
+  }
+  if (isPlainObject(item.mainPhoto) && typeof item.mainPhoto.src === "string")
+    return item.mainPhoto.src;
+  return "";
+}
+
+// Carte repliable : fermée par défaut, on clique l'en-tête pour l'ouvrir.
+function CollapsibleItem({
+  title,
+  preview,
+  thumb,
+  controls,
+  children,
+}: {
+  title: string;
+  preview: string;
+  thumb: string;
+  controls: React.ReactNode;
+  children: React.ReactNode;
+}) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className={"fe-item" + (open ? " open" : "")}>
+      <div className="fe-item-head" onClick={() => setOpen((o) => !o)}>
+        <span className="fe-caret">{open ? "▾" : "▸"}</span>
+        {thumb ? (
+          <span className="fe-item-thumb">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={thumb} alt="" />
+          </span>
+        ) : null}
+        <span className="fe-item-t">{title}</span>
+        {preview ? <span className="fe-item-prev">— {preview}</span> : null}
+        <span style={{ marginLeft: "auto" }} />
+        <div className="fe-item-ctl" onClick={(e) => e.stopPropagation()}>
+          {controls}
+        </div>
+      </div>
+      {open && <div className="fe-item-body">{children}</div>}
+    </div>
+  );
+}
+
 function ImageField({
   value,
   onChange,
@@ -372,28 +444,21 @@ function ObjectEditor({
   top?: boolean;
 }) {
   const keys = objectKeys(value);
-  const body = (
-    <div className={top ? undefined : "fe-body"}>
-      {keys.map((ck) => (
-        <FieldEditor
-          key={ck}
-          fieldKey={ck}
-          value={value[ck]}
-          path={[...path, ck]}
-          setAt={setAt}
-        />
-      ))}
-    </div>
-  );
-  if (top) return body;
+  const body = keys.map((ck) => (
+    <FieldEditor
+      key={ck}
+      fieldKey={ck}
+      value={value[ck]}
+      path={[...path, ck]}
+      setAt={setAt}
+    />
+  ));
+  if (top) return <>{body}</>;
   return (
-    <details className="fe-group" open>
-      <summary>
-        {describe(String(fieldKey), path).label}
-        <span className="fe-count">{keys.length} champs</span>
-      </summary>
+    <div className="fe-subgroup">
+      <div className="fe-subhead">{describe(String(fieldKey), path).label}</div>
       {body}
-    </details>
+    </div>
   );
 }
 
@@ -426,58 +491,53 @@ function ArrayEditor({
     [c[i], c[j]] = [c[j], c[i]];
     set(c);
   };
-  const inner = (
+  const ctl = (i: number) => (
+    <>
+      <button className="adm-btn sm ghost" type="button" onClick={() => move(i, -1)} disabled={i === 0} title="Monter">↑</button>
+      <button className="adm-btn sm ghost" type="button" onClick={() => move(i, 1)} disabled={i === arr.length - 1} title="Descendre">↓</button>
+      <button className="adm-btn sm danger" type="button" onClick={() => removeAt(i)} title="Supprimer">✕</button>
+    </>
+  );
+  const list = (
     <div className="fe-array">
       {arr.map((item, i) =>
         scalar ? (
-          <div
-            key={i}
-            style={{ display: "flex", gap: 6, alignItems: "center", margin: "6px 0" }}
-          >
+          <div key={i} className="fe-scalar-row">
             <div style={{ flex: 1 }}>
               <ScalarField fieldKey={i} value={item} path={[...path, i]} setAt={setAt} hideLabel />
             </div>
-            <button className="adm-btn sm ghost" type="button" onClick={() => move(i, -1)} disabled={i === 0}>↑</button>
-            <button className="adm-btn sm ghost" type="button" onClick={() => move(i, 1)} disabled={i === arr.length - 1}>↓</button>
-            <button className="adm-btn sm danger" type="button" onClick={() => removeAt(i)}>✕</button>
+            {ctl(i)}
           </div>
         ) : (
-          <div className="fe-item" key={i}>
-            <div className="fe-item-head">
-              <span className="fe-item-t">
-                {itemName} #{i + 1}
-              </span>
-              <span className="sp" style={{ marginLeft: "auto" }} />
-              <button className="adm-btn sm ghost" type="button" onClick={() => move(i, -1)} disabled={i === 0}>↑</button>
-              <button className="adm-btn sm ghost" type="button" onClick={() => move(i, 1)} disabled={i === arr.length - 1}>↓</button>
-              <button className="adm-btn sm danger" type="button" onClick={() => removeAt(i)}>Supprimer</button>
-            </div>
-            <div className="fe-item-body">
-              {isPlainObject(item) ? (
-                objectKeys(item).map((ck) => (
+          <CollapsibleItem
+            key={i}
+            title={`${itemName} #${i + 1}`}
+            preview={previewOf(item)}
+            thumb={firstImageOf(item)}
+            controls={ctl(i)}
+          >
+            {isPlainObject(item)
+              ? objectKeys(item).map((ck) => (
                   <FieldEditor key={ck} fieldKey={ck} value={item[ck]} path={[...path, i, ck]} setAt={setAt} />
                 ))
-              ) : (
-                <ScalarField fieldKey={i} value={item} path={[...path, i]} setAt={setAt} hideLabel />
-              )}
-            </div>
-          </div>
+              : <ScalarField fieldKey={i} value={item} path={[...path, i]} setAt={setAt} hideLabel />}
+          </CollapsibleItem>
         ),
       )}
-      <button className="adm-btn sm" type="button" onClick={add}>
+      <button className="adm-btn sm fe-add" type="button" onClick={add}>
         + Ajouter {itemName.toLowerCase()}
       </button>
     </div>
   );
-  if (top) return inner;
+  if (top) return list;
   return (
-    <details className="fe-group" open>
-      <summary>
+    <div className="fe-subgroup">
+      <div className="fe-subhead">
         {groupLabel(key, path)}
         <span className="fe-count">{arr.length} élément{arr.length > 1 ? "s" : ""}</span>
-      </summary>
-      <div className="fe-body">{inner}</div>
-    </details>
+      </div>
+      {list}
+    </div>
   );
 }
 
