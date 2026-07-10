@@ -29,6 +29,179 @@ function labelize(k: string | number): string {
     .replace(/^\w/, (c) => c.toUpperCase())
     .trim();
 }
+
+// ── Libellés lisibles + explications (le cœur de l'amélioration UX) ──
+type Descr = { label: string; hint?: string };
+const D = (label: string, hint?: string): Descr => ({ label, hint });
+
+// Champs purement techniques : masqués (leur valeur est conservée à l'enregistrement).
+const HIDDEN = new Set(["slideClass", "i"]);
+
+// Clé "parent.clé" prioritaire, sinon "clé", sinon joli libellé auto.
+const DESCR: Record<string, Descr> = {
+  // génériques
+  eyebrow: D("Sur-titre", "Petit texte au-dessus du titre."),
+  title: D("Titre"),
+  titleHtml: D("Titre", 'Peut contenir du HTML (ex. <span class="mark">mot</span> pour le surlignage vert).'),
+  heading2: D("Deuxième titre"),
+  sub: D("Sous-titre"),
+  desc: D("Description"),
+  descHtml: D("Description", "Peut contenir du HTML."),
+  tagHtml: D("Accroche", "Peut contenir du HTML (ex. <b>mot</b>)."),
+  lead: D("Chapô", "Paragraphe d'introduction."),
+  body: D("Texte"),
+  note: D("Note"),
+  label: D("Texte affiché"),
+  href: D("Lien", "URL complète, ancre #section, tel: ou mailto:."),
+  alt: D("Texte alternatif", "Décrit l'image (SEO et accessibilité)."),
+  src: D("Image"),
+  image: D("Image"),
+  img: D("Image"),
+  value: D("Valeur"),
+  caption: D("Légende"),
+  iconHtml: D("Icône (SVG)", "Code de l'icône — technique, à ne modifier qu'en connaissance de cause."),
+  starsHtml: D("Étoiles", "Technique (les ★)."),
+  headerCtaLabel: D("Bouton en-tête", "Texte du bouton vert en haut (ex. Demander un devis)."),
+  // meta
+  "meta.siteName": D("Nom du site"),
+  "meta.title": D("Titre SEO", "Affiché dans l'onglet du navigateur et sur Google."),
+  "meta.description": D("Description SEO", "Résumé affiché sous le titre sur Google (~150 caractères)."),
+  "meta.ogImage": D("Image de partage", "Image affichée quand on partage le lien sur les réseaux."),
+  "meta.catalogueUrl": D("Lien du catalogue"),
+  "meta.phoneDisplay": D("Téléphone affiché"),
+  "meta.phoneHref": D("Téléphone (lien)", "Format tel:+33… pour le clic-pour-appeler."),
+  "meta.email": D("Email"),
+  "meta.addressLine": D("Adresse"),
+  "meta.googleReviewUrl": D("Lien avis Google"),
+  // hero
+  "slides.sub": D("Accroche", "Le paragraphe sous le grand titre."),
+  "slides.priority": D("Chargement prioritaire", "À cocher pour la 1re diapositive uniquement."),
+  "actions.class": D("Style du bouton", "Technique (classe CSS)."),
+  "actions.arrow": D("Flèche →", "Afficher la petite flèche sur le bouton."),
+  // trust (chiffres)
+  "items.value": D("Chiffre", "Ex. 10, 3000, 24…"),
+  "items.unit": D("Unité", "Ex. ans, h… (vide si aucune)."),
+  "items.valuePrefix": D("Préfixe", "Ex. « + » devant le chiffre (vide si aucun)."),
+  "items.from": D("Départ du compteur", "Laisse 0 pour l'animation de 0 à la valeur."),
+  "items.stars": D("Afficher les étoiles"),
+  // réalisations
+  "items.cat": D("Catégorie (filtre)", "signa, print, textile, goodies ou packaging — sert au filtre du site."),
+  "items.sub": D("Sous-catégorie", "Clé de sous-filtre (ex. brochures, enseignes)."),
+  "items.cap": D("Titre affiché", "Le titre visible sur la vignette."),
+  "items.catLabel": D("Libellé catégorie", "Texte affiché (ex. Print, Signalétique)."),
+  "items.dotClass": D("Couleur de la pastille", "signa / print / textile / goodies / packaging."),
+  "items.soc": D("Société (client)"),
+  "items.desc": D("Description"),
+  "items.extra": D("Masqué au départ", "Visible seulement après « voir plus »."),
+  mainPhoto: D("Photo principale"),
+  extraPhotos: D("Photos supplémentaires"),
+  // secteurs
+  "items.n": D("Numéro", "Ex. 01, 02…"),
+  "items.detailsHtml": D("Détails", "Liste séparée par « · »."),
+  // pour qui
+  "cards.featured": D("Carte mise en avant"),
+  "cards.badge": D("Badge", "Ex. « Le plus demandé » (vide si aucun)."),
+  "cards.chipLabel": D("Étiquette"),
+  "cards.chipLabelHtml": D("Étiquette"),
+  "cards.chipIconHtml": D("Icône étiquette (SVG)", "Technique."),
+  "cards.list": D("Points clés"),
+  "ctas.type": D("Style", "primary (vert plein) ou ghost (contour)."),
+  // méthode
+  "steps.n": D("Numéro", "Ex. 1, 2, 3, 4."),
+  // france
+  "stats.n": D("Chiffre"),
+  // waitlist
+  "waitlist.titleHtml": D("Titre", "Peut contenir du HTML."),
+  "waitlist.count": D("Nombre d'inscrits affiché"),
+  "waitlist.promoValue": D("Réduction", "Ex. -20%."),
+  "waitlist.scarcityWidth": D("Remplissage de la jauge", "En %, ex. 40%."),
+  "waitlist.emailPlaceholder": D("Texte du champ email"),
+  "waitlist.submitLabel": D("Texte du bouton"),
+  "waitlist.confirm": D("Message de confirmation"),
+  "waitlist.fine": D("Mention (petit texte)"),
+  "waitlist.perks": D("Avantages"),
+  // contact
+  "contact.needOptions": D("Options « Votre besoin »"),
+  "contact.activityOptions": D("Options « Type d'activité »"),
+  "contact.sitesOptions": D("Options « Nombre d'établissements »"),
+  "contact.deepLinkLabel": D("Lien secondaire"),
+  "contact.submitLabel": D("Texte du bouton d'envoi"),
+  "contact.okMessage": D("Message après envoi"),
+  "contact.callTitle": D("Titre bloc téléphone"),
+  "contact.callSub": D("Sous-texte téléphone"),
+  "contact.officeValue": D("Adresse (bureaux)"),
+  "contact.zoneValue": D("Zone d'intervention"),
+  // footer
+  "footer.about": D("Texte de présentation"),
+  "footer.copyright": D("Mention copyright"),
+};
+
+// Libellés des tableaux (groupe) et de leurs éléments (singulier), par "parent.clé".
+const GROUP: Record<string, string> = {
+  nav: "Liens du menu",
+  "hero.slides": "Diapositives du carrousel",
+  "trust.items": "Chiffres clés",
+  "clients.logos": "Logos clients",
+  "realisations.filters": "Filtres",
+  "realisations.items": "Réalisations",
+  "realisations.testimonials": "Témoignages",
+  "secteurs.items": "Secteurs",
+  "pourqui.cards": "Cartes",
+  "methode.steps": "Étapes",
+  "france.services": "Services",
+  "france.stats": "Statistiques",
+  "faq.items": "Questions",
+  "footer.columns": "Colonnes de liens",
+  "footer.socials": "Réseaux sociaux",
+  "metiersSocle.items": "Métiers",
+  "metiersComplement.items": "Métiers",
+};
+const ITEM: Record<string, string> = {
+  nav: "Lien",
+  "hero.slides": "Diapositive",
+  "trust.items": "Chiffre",
+  "clients.logos": "Logo",
+  "realisations.filters": "Filtre",
+  "realisations.items": "Réalisation",
+  "realisations.testimonials": "Témoignage",
+  "secteurs.items": "Secteur",
+  "pourqui.cards": "Carte",
+  "methode.steps": "Étape",
+  "france.services": "Service",
+  "france.stats": "Statistique",
+  "faq.items": "Question",
+  "footer.columns": "Colonne",
+  "footer.socials": "Réseau",
+  "metiersSocle.items": "Métier",
+  "metiersComplement.items": "Métier",
+  list: "Point",
+  perks: "Avantage",
+  needOptions: "Option",
+  activityOptions: "Option",
+  sitesOptions: "Option",
+  actions: "Bouton",
+  ctas: "Bouton",
+};
+
+function parentOf(path: (string | number)[]): string {
+  for (let i = path.length - 2; i >= 0; i--) {
+    if (typeof path[i] === "string") return path[i] as string;
+  }
+  return "";
+}
+function describe(key: string, path: (string | number)[]): Descr {
+  const p = parentOf(path);
+  return DESCR[`${p}.${key}`] || DESCR[key] || { label: labelize(key) };
+}
+function groupLabel(key: string, path: (string | number)[]): string {
+  const p = parentOf(path);
+  return GROUP[`${p}.${key}`] || GROUP[key] || labelize(key);
+}
+function itemLabel(key: string, path: (string | number)[]): string {
+  const p = parentOf(path);
+  return ITEM[`${p}.${key}`] || ITEM[key] || labelize(key).replace(/s$/, "");
+}
+
 function blankLike(v: unknown): unknown {
   if (Array.isArray(v)) return [];
   if (isPlainObject(v)) {
@@ -110,35 +283,40 @@ function ImageField({
 }
 
 function ScalarField({
-  k,
+  fieldKey,
   value,
   path,
   setAt,
   hideLabel,
 }: {
-  k: string | number;
+  fieldKey: string | number;
   value: unknown;
   path: (string | number)[];
   setAt: SetAt;
   hideLabel?: boolean;
 }) {
-  const key = String(k);
+  const key = String(fieldKey);
+  const { label, hint } = describe(key, path);
   if (typeof value === "boolean") {
     return (
-      <label className="fe-check">
-        <input
-          type="checkbox"
-          checked={value}
-          onChange={(e) => setAt(path, e.target.checked)}
-        />
-        {labelize(key)}
-      </label>
+      <div className="fe-row">
+        <label className="fe-check">
+          <input
+            type="checkbox"
+            checked={value}
+            onChange={(e) => setAt(path, e.target.checked)}
+          />
+          {label}
+        </label>
+        {hint && <div className="fe-hint">{hint}</div>}
+      </div>
     );
   }
   if (typeof value === "number") {
     return (
       <div className="fe-row">
-        {!hideLabel && <label className="fe-label">{labelize(key)}</label>}
+        {!hideLabel && <label className="fe-label">{label}</label>}
+        {!hideLabel && hint && <div className="fe-hint">{hint}</div>}
         <input
           className="fe-input"
           type="number"
@@ -154,12 +332,8 @@ function ScalarField({
   const isLong = str.length > 70 || str.includes("\n") || isHtml;
   return (
     <div className="fe-row">
-      {!hideLabel && (
-        <label className="fe-label">
-          {labelize(key)}
-          {isHtml ? " (HTML)" : ""}
-        </label>
-      )}
+      {!hideLabel && <label className="fe-label">{label}</label>}
+      {!hideLabel && hint && <div className="fe-hint">{hint}</div>}
       {isImg ? (
         <ImageField value={str} onChange={(v) => setAt(path, v)} />
       ) : isLong ? (
@@ -180,26 +354,30 @@ function ScalarField({
   );
 }
 
+function objectKeys(v: Record<string, any>) {
+  return Object.keys(v).filter((k) => !HIDDEN.has(k));
+}
+
 function ObjectEditor({
-  k,
+  fieldKey,
   value,
   path,
   setAt,
   top,
 }: {
-  k: string | number;
+  fieldKey: string | number;
   value: Record<string, any>;
   path: (string | number)[];
   setAt: SetAt;
   top?: boolean;
 }) {
-  const keys = Object.keys(value);
+  const keys = objectKeys(value);
   const body = (
     <div className={top ? undefined : "fe-body"}>
       {keys.map((ck) => (
         <FieldEditor
           key={ck}
-          k={ck}
+          fieldKey={ck}
           value={value[ck]}
           path={[...path, ck]}
           setAt={setAt}
@@ -211,7 +389,7 @@ function ObjectEditor({
   return (
     <details className="fe-group" open>
       <summary>
-        {labelize(k)}
+        {describe(String(fieldKey), path).label}
         <span className="fe-count">{keys.length} champs</span>
       </summary>
       {body}
@@ -220,22 +398,26 @@ function ObjectEditor({
 }
 
 function ArrayEditor({
-  k,
+  fieldKey,
   value,
   path,
   setAt,
   top,
 }: {
-  k: string | number;
+  fieldKey: string | number;
   value: any[];
   path: (string | number)[];
   setAt: SetAt;
   top?: boolean;
 }) {
   const arr = value;
-  const scalar = arr.length > 0 && !isPlainObject(arr[0]) && !Array.isArray(arr[0]);
+  const key = String(fieldKey);
+  const scalar =
+    arr.length > 0 && !isPlainObject(arr[0]) && !Array.isArray(arr[0]);
+  const itemName = itemLabel(key, path);
   const set = (a: unknown[]) => setAt(path, a);
-  const add = () => set([...arr, arr.length ? blankLike(arr[arr.length - 1]) : ""]);
+  const add = () =>
+    set([...arr, arr.length ? blankLike(arr[arr.length - 1]) : ""]);
   const removeAt = (i: number) => set(arr.filter((_, j) => j !== i));
   const move = (i: number, d: number) => {
     const j = i + d;
@@ -253,7 +435,7 @@ function ArrayEditor({
             style={{ display: "flex", gap: 6, alignItems: "center", margin: "6px 0" }}
           >
             <div style={{ flex: 1 }}>
-              <ScalarField k={i} value={item} path={[...path, i]} setAt={setAt} hideLabel />
+              <ScalarField fieldKey={i} value={item} path={[...path, i]} setAt={setAt} hideLabel />
             </div>
             <button className="adm-btn sm ghost" type="button" onClick={() => move(i, -1)} disabled={i === 0}>↑</button>
             <button className="adm-btn sm ghost" type="button" onClick={() => move(i, 1)} disabled={i === arr.length - 1}>↓</button>
@@ -263,7 +445,7 @@ function ArrayEditor({
           <div className="fe-item" key={i}>
             <div className="fe-item-head">
               <span className="fe-item-t">
-                {labelize(k)} #{i + 1}
+                {itemName} #{i + 1}
               </span>
               <span className="sp" style={{ marginLeft: "auto" }} />
               <button className="adm-btn sm ghost" type="button" onClick={() => move(i, -1)} disabled={i === 0}>↑</button>
@@ -272,18 +454,18 @@ function ArrayEditor({
             </div>
             <div className="fe-item-body">
               {isPlainObject(item) ? (
-                Object.keys(item).map((ck) => (
-                  <FieldEditor key={ck} k={ck} value={item[ck]} path={[...path, i, ck]} setAt={setAt} />
+                objectKeys(item).map((ck) => (
+                  <FieldEditor key={ck} fieldKey={ck} value={item[ck]} path={[...path, i, ck]} setAt={setAt} />
                 ))
               ) : (
-                <ScalarField k={i} value={item} path={[...path, i]} setAt={setAt} hideLabel />
+                <ScalarField fieldKey={i} value={item} path={[...path, i]} setAt={setAt} hideLabel />
               )}
             </div>
           </div>
         ),
       )}
       <button className="adm-btn sm" type="button" onClick={add}>
-        + Ajouter
+        + Ajouter {itemName.toLowerCase()}
       </button>
     </div>
   );
@@ -291,8 +473,8 @@ function ArrayEditor({
   return (
     <details className="fe-group" open>
       <summary>
-        {labelize(k)}
-        <span className="fe-count">{arr.length} éléments</span>
+        {groupLabel(key, path)}
+        <span className="fe-count">{arr.length} élément{arr.length > 1 ? "s" : ""}</span>
       </summary>
       <div className="fe-body">{inner}</div>
     </details>
@@ -300,21 +482,22 @@ function ArrayEditor({
 }
 
 export function FieldEditor({
-  k,
+  fieldKey,
   value,
   path,
   setAt,
   top,
 }: {
-  k: string | number;
+  fieldKey: string | number;
   value: unknown;
   path: (string | number)[];
   setAt: SetAt;
   top?: boolean;
 }) {
+  if (HIDDEN.has(String(fieldKey))) return null;
   if (Array.isArray(value))
-    return <ArrayEditor k={k} value={value} path={path} setAt={setAt} top={top} />;
+    return <ArrayEditor fieldKey={fieldKey} value={value} path={path} setAt={setAt} top={top} />;
   if (isPlainObject(value))
-    return <ObjectEditor k={k} value={value} path={path} setAt={setAt} top={top} />;
-  return <ScalarField k={k} value={value} path={path} setAt={setAt} />;
+    return <ObjectEditor fieldKey={fieldKey} value={value} path={path} setAt={setAt} top={top} />;
+  return <ScalarField fieldKey={fieldKey} value={value} path={path} setAt={setAt} />;
 }

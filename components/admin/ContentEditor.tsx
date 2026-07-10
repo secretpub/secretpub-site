@@ -105,7 +105,7 @@ export default function ContentEditor({ initial }: { initial: SiteContent }) {
           Modifiez le contenu ci-dessous. Les images se téléversent directement.
           « Enregistrer » publie sur le site en direct.
         </p>
-        <FieldEditor k={sel} value={content[sel]} path={[sel]} setAt={setAt} top />
+        <FieldEditor fieldKey={sel} value={content[sel]} path={[sel]} setAt={setAt} top />
       </main>
       <div className="adm-savebar">
         <span
