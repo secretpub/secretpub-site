@@ -401,19 +401,26 @@ body.menu-open { overflow: hidden; }
 .hc-dots button.on { width: 32px; background: #fff; }
 
 @media (max-width: 880px) {
-  /* PC uniquement pour la photo plein écran : sur mobile, hero clair sobre */
+  /* Hero mobile : copie claire, puis le visuel empilé en dessous (image entière, carte arrondie) */
   .hero-carousel { height: auto; min-height: 0; max-height: none; background: var(--paper); }
   .hslide { position: static; opacity: 1; visibility: visible; display: none; }
-  .hslide.is-active { display: block; }
-  .hslide-bg, .hslide::after { display: none; }
-  .hslide-inner { padding-block: 44px 30px; }
+  .hslide.is-active { display: flex; flex-direction: column; }
+  .hslide::after { display: none; }
+  .hslide-inner { order: 1; display: block; height: auto; padding: 40px var(--gutter) 12px; }
   .hslide-copy { max-width: none; color: var(--ink); }
   .hslide-copy .eyebrow { color: var(--green-deep); }
   .hslide-copy h1 { color: var(--ink); }
   .hslide-sub { color: var(--muted); }
   .hslide .btn-ghost-hero { border-color: var(--line-strong); color: var(--ink); }
+  .hslide-bg {
+    display: block; position: static; inset: auto; z-index: 0; order: 2;
+    width: auto; margin: 6px var(--gutter) 4px;
+    aspect-ratio: 16 / 11; border-radius: 18px; overflow: hidden;
+    box-shadow: 0 20px 44px -24px rgba(11,13,12,0.45);
+  }
+  .hslide-bg img { width: 100%; height: 100%; object-fit: cover; }
   .hc-arrow { display: none; }
-  .hc-dots { position: static; transform: none; justify-content: center; padding-bottom: 30px; margin-top: 4px; }
+  .hc-dots { position: static; transform: none; justify-content: center; padding-bottom: 30px; margin-top: 14px; }
   .hc-dots button { background: rgba(11,13,12,0.22); }
   .hc-dots button.on { background: var(--green); }
 }
@@ -691,7 +698,9 @@ body.loaded .mark { background-size: 100% 100%; }
 .ms-showcase:hover .msc-visual img { transform: scale(1.04); }
 .msc-link .arr { transition: transform 0.25s ease; display: inline-block; }
 .ms-showcase:hover .msc-link .arr { transform: translateX(6px); }
-.msc-visual image-slot, .msc-visual img.ph { display: block; width: 100%; aspect-ratio: 16 / 9; }
+.msc-visual image-slot { display: block; width: 100%; aspect-ratio: 16 / 9; }
+/* Montages produits métiers : image ENTIÈRE (jamais recadrée), ratio naturel, quelle que soit la largeur */
+.msc-visual img.ph { display: block; width: 100%; height: auto; aspect-ratio: auto; object-fit: contain; background: transparent; }
 /* Bloc métiers complémentaires (distinct des 3 socles) */
 .metiers-extra {
   margin-top: clamp(48px, 6vw, 80px);
@@ -709,7 +718,7 @@ body.loaded .mark { background-size: 100% 100%; }
 .ms-showcase.complement { margin-top: clamp(24px, 3vw, 40px); align-items: center; }
 .ms-showcase.complement + .ms-showcase.complement { padding-top: clamp(24px, 3vw, 40px); border-top: 1px solid var(--line); }
 .ms-showcase.complement .msc-title { font-size: clamp(26px, 3.2vw, 38px); }
-.ms-showcase.complement .msc-visual image-slot, .ms-showcase.complement .msc-visual img.ph { aspect-ratio: 16 / 9; }
+.ms-showcase.complement .msc-visual image-slot { aspect-ratio: 16 / 9; }
 .msc-title { font-family: var(--display); font-weight: 800; font-size: clamp(28px, 3.6vw, 44px); letter-spacing: -0.03em; line-height: 1; margin-top: 12px; }
 .msc-desc { color: var(--muted); font-size: 15.5px; line-height: 1.55; margin-top: 14px; max-width: 42ch; }
 .msc-link { display: inline-flex; align-items: center; gap: 9px; margin-top: 24px; font-family: var(--display); font-weight: 700; font-size: 15.5px; color: var(--green-deep); }
@@ -1996,8 +2005,5 @@ img, svg, image-slot, video { max-width: 100%; }
 * { min-width: 0; }
 .wrap, section { max-width: 100%; }
 
-/* Largeur verrouillée sur très grands écrans (mobile/tablette intacts) */
-@media (min-width: 1600px) {
-  html { background: #0b0d0c; }
-  body { max-width: 1600px; margin-inline: auto; box-shadow: 0 0 120px rgba(0,0,0,0.5); }
-}
+/* Plein écran sur grands moniteurs : pas de cadre noir. Le contenu reste
+   centré via .wrap (max-width 1200px) ; les sections pleine largeur s'étendent. */
