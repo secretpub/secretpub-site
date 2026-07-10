@@ -702,11 +702,11 @@
       {
         "cat": "signa",
         "sub": "facade",
-        "soc": "Pickup La Poste",
-        "desc": "Habillage complet d'un relais Pickup : pose d'adhésif imprimé et de vinyle adhésif monochrome découpé à la forme.",
         "cap": "Habillage Pickup",
         "catLabel": "Signalétique",
         "dotClass": "signa",
+        "soc": "Pickup La Poste",
+        "desc": "Habillage complet d'un relais Pickup : pose d'adhésif imprimé et de vinyle adhésif monochrome découpé à la forme.",
         "mainPhoto": {
           "src": "/assets/realisations/pickup-1.jpg",
           "alt": "Enseigne posée"
@@ -725,11 +725,11 @@
       {
         "cat": "signa",
         "sub": "facade",
-        "soc": "Boufi",
-        "desc": "Habillage complet de la façade Boufi : caisson en tôle aluminium sur toute la façade, lettres boîtiers lumineuses, caisson full plexi 5 faces, lettres PVC peintes, tapis d'entrée personnalisé, décoration intérieure et caisson lumineux intérieur.",
         "cap": "Habillage de façade",
         "catLabel": "Signalétique",
         "dotClass": "signa",
+        "soc": "Boufi",
+        "desc": "Habillage complet de la façade Boufi : caisson en tôle aluminium sur toute la façade, lettres boîtiers lumineuses, caisson full plexi 5 faces, lettres PVC peintes, tapis d'entrée personnalisé, décoration intérieure et caisson lumineux intérieur.",
         "mainPhoto": {
           "src": "/assets/realisations/boufi-1.jpg",
           "alt": "Habillage de façade"
@@ -748,11 +748,11 @@
       {
         "cat": "signa",
         "sub": "enseignes",
-        "soc": "NS Store",
-        "desc": "Enseignes lumineuses pour la devanture NS Store : caissons lumineux avec lettres plexi relief et vitrophanie sur-mesure sur les vitrines cintrées.",
         "cap": "Enseignes lumineuses",
         "catLabel": "Signalétique",
         "dotClass": "signa",
+        "soc": "NS Store",
+        "desc": "Enseignes lumineuses pour la devanture NS Store : caissons lumineux avec lettres plexi relief et vitrophanie sur-mesure sur les vitrines cintrées.",
         "mainPhoto": {
           "src": "/assets/realisations/nsstore-1.jpg",
           "alt": "Enseignes lumineuses"
@@ -774,6 +774,8 @@
         "cap": "Édition et brochures",
         "catLabel": "Print",
         "dotClass": "print",
+        "soc": "",
+        "desc": "",
         "mainPhoto": {
           "src": "",
           "alt": "Brochures livrées"
@@ -792,11 +794,11 @@
       {
         "cat": "textile",
         "sub": "vetements",
-        "soc": "Batiman",
-        "desc": "Sweats personnalisés pour les équipes Batiman : marquage cœur et grand dos, pour un rendu net et durable qui affiche la marque sur tous les chantiers.",
         "cap": "Textile personnalisé",
         "catLabel": "Textile",
         "dotClass": "textile",
+        "soc": "Batiman",
+        "desc": "Sweats personnalisés pour les équipes Batiman : marquage cœur et grand dos, pour un rendu net et durable qui affiche la marque sur tous les chantiers.",
         "mainPhoto": {
           "src": "/assets/realisations/batiman-textile.jpg",
           "alt": "Textile personnalisé"
@@ -818,6 +820,8 @@
         "cap": "Objets publicitaires",
         "catLabel": "Goodies",
         "dotClass": "goodies",
+        "soc": "",
+        "desc": "",
         "mainPhoto": {
           "src": "",
           "alt": "Objets publicitaires"
@@ -836,11 +840,11 @@
       {
         "cat": "signa",
         "sub": "baches",
-        "soc": "Ameliora",
-        "desc": "Bâche échafaudage grand format imprimée et posée sur façade en travaux : visibilité maximale pour le client pendant toute la durée du chantier.",
         "cap": "Bâches échafaudage",
         "catLabel": "Signalétique",
         "dotClass": "signa",
+        "soc": "Ameliora",
+        "desc": "Bâche échafaudage grand format imprimée et posée sur façade en travaux : visibilité maximale pour le client pendant toute la durée du chantier.",
         "mainPhoto": {
           "src": "/assets/realisations/ameliora-bache.jpg",
           "alt": "Bâche échafaudage"
@@ -859,11 +863,11 @@
       {
         "cat": "packaging",
         "sub": "sacs",
-        "soc": "Istanbul Kebab",
-        "desc": "Sacs papier kraft personnalisés, imprimés au logo du restaurant : un emballage à emporter solide et à l'image de l'enseigne.",
         "cap": "Sacs papier kraft",
         "catLabel": "Packaging",
         "dotClass": "packaging",
+        "soc": "Istanbul Kebab",
+        "desc": "Sacs papier kraft personnalisés, imprimés au logo du restaurant : un emballage à emporter solide et à l'image de l'enseigne.",
         "mainPhoto": {
           "src": "/assets/realisations/istanbul-sacs.jpg",
           "alt": "Sacs papier kraft"
@@ -885,6 +889,8 @@
         "cap": "PLV et grand format",
         "catLabel": "Print",
         "dotClass": "print",
+        "soc": "",
+        "desc": "",
         "mainPhoto": {
           "src": "",
           "alt": "PLV en magasin"
@@ -906,6 +912,8 @@
         "cap": "Dotation réseau",
         "catLabel": "Textile",
         "dotClass": "textile",
+        "soc": "",
+        "desc": "",
         "mainPhoto": {
           "src": "",
           "alt": "Série textile réseau"
@@ -927,6 +935,8 @@
         "cap": "Tote bags et mugs",
         "catLabel": "Goodies",
         "dotClass": "goodies",
+        "soc": "",
+        "desc": "",
         "mainPhoto": {
           "src": "",
           "alt": "Tote bags et mugs"
@@ -948,6 +958,8 @@
         "cap": "Emballage sur-mesure",
         "catLabel": "Packaging",
         "dotClass": "packaging",
+        "soc": "",
+        "desc": "",
         "mainPhoto": {
           "src": "",
           "alt": "Emballage sur-mesure"
@@ -969,6 +981,8 @@
         "cap": "Marquage véhicule",
         "catLabel": "Signalétique",
         "dotClass": "signa",
+        "soc": "",
+        "desc": "",
         "mainPhoto": {
           "src": "",
           "alt": "Véhicule marqué"
@@ -987,10 +1001,12 @@
       {
         "cat": "print",
         "sub": "cartes",
-        "extra": true,
         "cap": "Cartes de visite",
         "catLabel": "Print",
         "dotClass": "print",
+        "soc": "",
+        "desc": "",
+        "extra": true,
         "mainPhoto": {
           "src": "",
           "alt": "Cartes de visite"
@@ -1009,10 +1025,12 @@
       {
         "cat": "textile",
         "sub": "casquettes",
-        "extra": true,
         "cap": "Casquettes brodées",
         "catLabel": "Textile",
         "dotClass": "textile",
+        "soc": "",
+        "desc": "",
+        "extra": true,
         "mainPhoto": {
           "src": "",
           "alt": "Casquettes brodées"
@@ -1031,10 +1049,12 @@
       {
         "cat": "packaging",
         "sub": "pochettes",
-        "extra": true,
         "cap": "Pochettes kraft",
         "catLabel": "Packaging",
         "dotClass": "packaging",
+        "soc": "",
+        "desc": "",
+        "extra": true,
         "mainPhoto": {
           "src": "",
           "alt": "Pochettes kraft"
@@ -1053,10 +1073,12 @@
       {
         "cat": "goodies",
         "sub": "gourdes",
-        "extra": true,
         "cap": "Gourdes et mugs",
         "catLabel": "Goodies",
         "dotClass": "goodies",
+        "soc": "",
+        "desc": "",
+        "extra": true,
         "mainPhoto": {
           "src": "",
           "alt": "Gourdes personnalisées"
@@ -1075,10 +1097,12 @@
       {
         "cat": "print",
         "sub": "kakemonos",
-        "extra": true,
         "cap": "Kakémonos roll-up",
         "catLabel": "Print",
         "dotClass": "print",
+        "soc": "",
+        "desc": "",
+        "extra": true,
         "mainPhoto": {
           "src": "",
           "alt": "Kakémonos roll-up"

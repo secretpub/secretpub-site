@@ -3,12 +3,31 @@
     "eyebrow": "Réalisations",
     "title": "La preuve par le travail livré.",
     "filters": [
-      { "label": "Tout", "key": "tout", "on": true },
-      { "label": "Signalétique", "key": "signa" },
-      { "label": "Print", "key": "print" },
-      { "label": "Textile", "key": "textile" },
-      { "label": "Goodies", "key": "goodies" },
-      { "label": "Packaging", "key": "packaging" }
+      {
+        "label": "Tout",
+        "key": "tout",
+        "on": true
+      },
+      {
+        "label": "Signalétique",
+        "key": "signa"
+      },
+      {
+        "label": "Print",
+        "key": "print"
+      },
+      {
+        "label": "Textile",
+        "key": "textile"
+      },
+      {
+        "label": "Goodies",
+        "key": "goodies"
+      },
+      {
+        "label": "Packaging",
+        "key": "packaging"
+      }
     ],
     "testimonials": [
       {
@@ -34,43 +53,70 @@
       {
         "cat": "signa",
         "sub": "facade",
-        "soc": "Pickup La Poste",
-        "desc": "Habillage complet d'un relais Pickup : pose d'adhésif imprimé et de vinyle adhésif monochrome découpé à la forme.",
         "cap": "Habillage Pickup",
         "catLabel": "Signalétique",
         "dotClass": "signa",
-        "mainPhoto": { "src": "/assets/realisations/pickup-1.jpg", "alt": "Enseigne posée" },
+        "soc": "Pickup La Poste",
+        "desc": "Habillage complet d'un relais Pickup : pose d'adhésif imprimé et de vinyle adhésif monochrome découpé à la forme.",
+        "mainPhoto": {
+          "src": "/assets/realisations/pickup-1.jpg",
+          "alt": "Enseigne posée"
+        },
         "extraPhotos": [
-          { "src": "/assets/realisations/pickup-2.jpg", "alt": "Photo 2 du projet" },
-          { "src": "/assets/realisations/pickup-3.jpg", "alt": "Photo 3 du projet" }
+          {
+            "src": "/assets/realisations/pickup-2.jpg",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "/assets/realisations/pickup-3.jpg",
+            "alt": "Photo 3 du projet"
+          }
         ]
       },
       {
         "cat": "signa",
         "sub": "facade",
-        "soc": "Boufi",
-        "desc": "Habillage complet de la façade Boufi : caisson en tôle aluminium sur toute la façade, lettres boîtiers lumineuses, caisson full plexi 5 faces, lettres PVC peintes, tapis d'entrée personnalisé, décoration intérieure et caisson lumineux intérieur.",
         "cap": "Habillage de façade",
         "catLabel": "Signalétique",
         "dotClass": "signa",
-        "mainPhoto": { "src": "/assets/realisations/boufi-1.jpg", "alt": "Habillage de façade" },
+        "soc": "Boufi",
+        "desc": "Habillage complet de la façade Boufi : caisson en tôle aluminium sur toute la façade, lettres boîtiers lumineuses, caisson full plexi 5 faces, lettres PVC peintes, tapis d'entrée personnalisé, décoration intérieure et caisson lumineux intérieur.",
+        "mainPhoto": {
+          "src": "/assets/realisations/boufi-1.jpg",
+          "alt": "Habillage de façade"
+        },
         "extraPhotos": [
-          { "src": "/assets/realisations/boufi-2.jpg", "alt": "Photo 2 du projet" },
-          { "src": "/assets/realisations/boufi-3.jpg", "alt": "Photo 3 du projet" }
+          {
+            "src": "/assets/realisations/boufi-2.jpg",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "/assets/realisations/boufi-3.jpg",
+            "alt": "Photo 3 du projet"
+          }
         ]
       },
       {
         "cat": "signa",
         "sub": "enseignes",
-        "soc": "NS Store",
-        "desc": "Enseignes lumineuses pour la devanture NS Store : caissons lumineux avec lettres plexi relief et vitrophanie sur-mesure sur les vitrines cintrées.",
         "cap": "Enseignes lumineuses",
         "catLabel": "Signalétique",
         "dotClass": "signa",
-        "mainPhoto": { "src": "/assets/realisations/nsstore-1.jpg", "alt": "Enseignes lumineuses" },
+        "soc": "NS Store",
+        "desc": "Enseignes lumineuses pour la devanture NS Store : caissons lumineux avec lettres plexi relief et vitrophanie sur-mesure sur les vitrines cintrées.",
+        "mainPhoto": {
+          "src": "/assets/realisations/nsstore-1.jpg",
+          "alt": "Enseignes lumineuses"
+        },
         "extraPhotos": [
-          { "src": "", "alt": "Photo 2 du projet" },
-          { "src": "", "alt": "Photo 3 du projet" }
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
         ]
       },
       {
@@ -79,24 +125,44 @@
         "cap": "Édition et brochures",
         "catLabel": "Print",
         "dotClass": "print",
-        "mainPhoto": { "src": "", "alt": "Brochures livrées" },
+        "soc": "",
+        "desc": "",
+        "mainPhoto": {
+          "src": "",
+          "alt": "Brochures livrées"
+        },
         "extraPhotos": [
-          { "src": "", "alt": "Photo 2 du projet" },
-          { "src": "", "alt": "Photo 3 du projet" }
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
         ]
       },
       {
         "cat": "textile",
         "sub": "vetements",
-        "soc": "Batiman",
-        "desc": "Sweats personnalisés pour les équipes Batiman : marquage cœur et grand dos, pour un rendu net et durable qui affiche la marque sur tous les chantiers.",
         "cap": "Textile personnalisé",
         "catLabel": "Textile",
         "dotClass": "textile",
-        "mainPhoto": { "src": "/assets/realisations/batiman-textile.jpg", "alt": "Textile personnalisé" },
+        "soc": "Batiman",
+        "desc": "Sweats personnalisés pour les équipes Batiman : marquage cœur et grand dos, pour un rendu net et durable qui affiche la marque sur tous les chantiers.",
+        "mainPhoto": {
+          "src": "/assets/realisations/batiman-textile.jpg",
+          "alt": "Textile personnalisé"
+        },
         "extraPhotos": [
-          { "src": "", "alt": "Photo 2 du projet" },
-          { "src": "", "alt": "Photo 3 du projet" }
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
         ]
       },
       {
@@ -105,38 +171,67 @@
         "cap": "Objets publicitaires",
         "catLabel": "Goodies",
         "dotClass": "goodies",
-        "mainPhoto": { "src": "", "alt": "Objets publicitaires" },
+        "soc": "",
+        "desc": "",
+        "mainPhoto": {
+          "src": "",
+          "alt": "Objets publicitaires"
+        },
         "extraPhotos": [
-          { "src": "", "alt": "Photo 2 du projet" },
-          { "src": "", "alt": "Photo 3 du projet" }
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
         ]
       },
       {
         "cat": "signa",
         "sub": "baches",
-        "soc": "Ameliora",
-        "desc": "Bâche échafaudage grand format imprimée et posée sur façade en travaux : visibilité maximale pour le client pendant toute la durée du chantier.",
         "cap": "Bâches échafaudage",
         "catLabel": "Signalétique",
         "dotClass": "signa",
-        "mainPhoto": { "src": "/assets/realisations/ameliora-bache.jpg", "alt": "Bâche échafaudage" },
+        "soc": "Ameliora",
+        "desc": "Bâche échafaudage grand format imprimée et posée sur façade en travaux : visibilité maximale pour le client pendant toute la durée du chantier.",
+        "mainPhoto": {
+          "src": "/assets/realisations/ameliora-bache.jpg",
+          "alt": "Bâche échafaudage"
+        },
         "extraPhotos": [
-          { "src": "", "alt": "Photo 2 du projet" },
-          { "src": "", "alt": "Photo 3 du projet" }
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
         ]
       },
       {
         "cat": "packaging",
         "sub": "sacs",
-        "soc": "Istanbul Kebab",
-        "desc": "Sacs papier kraft personnalisés, imprimés au logo du restaurant : un emballage à emporter solide et à l'image de l'enseigne.",
         "cap": "Sacs papier kraft",
         "catLabel": "Packaging",
         "dotClass": "packaging",
-        "mainPhoto": { "src": "/assets/realisations/istanbul-sacs.jpg", "alt": "Sacs papier kraft" },
+        "soc": "Istanbul Kebab",
+        "desc": "Sacs papier kraft personnalisés, imprimés au logo du restaurant : un emballage à emporter solide et à l'image de l'enseigne.",
+        "mainPhoto": {
+          "src": "/assets/realisations/istanbul-sacs.jpg",
+          "alt": "Sacs papier kraft"
+        },
         "extraPhotos": [
-          { "src": "", "alt": "Photo 2 du projet" },
-          { "src": "", "alt": "Photo 3 du projet" }
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
         ]
       },
       {
@@ -145,10 +240,21 @@
         "cap": "PLV et grand format",
         "catLabel": "Print",
         "dotClass": "print",
-        "mainPhoto": { "src": "", "alt": "PLV en magasin" },
+        "soc": "",
+        "desc": "",
+        "mainPhoto": {
+          "src": "",
+          "alt": "PLV en magasin"
+        },
         "extraPhotos": [
-          { "src": "", "alt": "Photo 2 du projet" },
-          { "src": "", "alt": "Photo 3 du projet" }
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
         ]
       },
       {
@@ -157,10 +263,21 @@
         "cap": "Dotation réseau",
         "catLabel": "Textile",
         "dotClass": "textile",
-        "mainPhoto": { "src": "", "alt": "Série textile réseau" },
+        "soc": "",
+        "desc": "",
+        "mainPhoto": {
+          "src": "",
+          "alt": "Série textile réseau"
+        },
         "extraPhotos": [
-          { "src": "", "alt": "Photo 2 du projet" },
-          { "src": "", "alt": "Photo 3 du projet" }
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
         ]
       },
       {
@@ -169,10 +286,21 @@
         "cap": "Tote bags et mugs",
         "catLabel": "Goodies",
         "dotClass": "goodies",
-        "mainPhoto": { "src": "", "alt": "Tote bags et mugs" },
+        "soc": "",
+        "desc": "",
+        "mainPhoto": {
+          "src": "",
+          "alt": "Tote bags et mugs"
+        },
         "extraPhotos": [
-          { "src": "", "alt": "Photo 2 du projet" },
-          { "src": "", "alt": "Photo 3 du projet" }
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
         ]
       },
       {
@@ -181,10 +309,21 @@
         "cap": "Emballage sur-mesure",
         "catLabel": "Packaging",
         "dotClass": "packaging",
-        "mainPhoto": { "src": "", "alt": "Emballage sur-mesure" },
+        "soc": "",
+        "desc": "",
+        "mainPhoto": {
+          "src": "",
+          "alt": "Emballage sur-mesure"
+        },
         "extraPhotos": [
-          { "src": "", "alt": "Photo 2 du projet" },
-          { "src": "", "alt": "Photo 3 du projet" }
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
         ]
       },
       {
@@ -193,75 +332,141 @@
         "cap": "Marquage véhicule",
         "catLabel": "Signalétique",
         "dotClass": "signa",
-        "mainPhoto": { "src": "", "alt": "Véhicule marqué" },
+        "soc": "",
+        "desc": "",
+        "mainPhoto": {
+          "src": "",
+          "alt": "Véhicule marqué"
+        },
         "extraPhotos": [
-          { "src": "", "alt": "Photo 2 du projet" },
-          { "src": "", "alt": "Photo 3 du projet" }
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
         ]
       },
       {
         "cat": "print",
         "sub": "cartes",
-        "extra": true,
         "cap": "Cartes de visite",
         "catLabel": "Print",
         "dotClass": "print",
-        "mainPhoto": { "src": "", "alt": "Cartes de visite" },
+        "soc": "",
+        "desc": "",
+        "extra": true,
+        "mainPhoto": {
+          "src": "",
+          "alt": "Cartes de visite"
+        },
         "extraPhotos": [
-          { "src": "", "alt": "Photo 2 du projet" },
-          { "src": "", "alt": "Photo 3 du projet" }
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
         ]
       },
       {
         "cat": "textile",
         "sub": "casquettes",
-        "extra": true,
         "cap": "Casquettes brodées",
         "catLabel": "Textile",
         "dotClass": "textile",
-        "mainPhoto": { "src": "", "alt": "Casquettes brodées" },
+        "soc": "",
+        "desc": "",
+        "extra": true,
+        "mainPhoto": {
+          "src": "",
+          "alt": "Casquettes brodées"
+        },
         "extraPhotos": [
-          { "src": "", "alt": "Photo 2 du projet" },
-          { "src": "", "alt": "Photo 3 du projet" }
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
         ]
       },
       {
         "cat": "packaging",
         "sub": "pochettes",
-        "extra": true,
         "cap": "Pochettes kraft",
         "catLabel": "Packaging",
         "dotClass": "packaging",
-        "mainPhoto": { "src": "", "alt": "Pochettes kraft" },
+        "soc": "",
+        "desc": "",
+        "extra": true,
+        "mainPhoto": {
+          "src": "",
+          "alt": "Pochettes kraft"
+        },
         "extraPhotos": [
-          { "src": "", "alt": "Photo 2 du projet" },
-          { "src": "", "alt": "Photo 3 du projet" }
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
         ]
       },
       {
         "cat": "goodies",
         "sub": "gourdes",
-        "extra": true,
         "cap": "Gourdes et mugs",
         "catLabel": "Goodies",
         "dotClass": "goodies",
-        "mainPhoto": { "src": "", "alt": "Gourdes personnalisées" },
+        "soc": "",
+        "desc": "",
+        "extra": true,
+        "mainPhoto": {
+          "src": "",
+          "alt": "Gourdes personnalisées"
+        },
         "extraPhotos": [
-          { "src": "", "alt": "Photo 2 du projet" },
-          { "src": "", "alt": "Photo 3 du projet" }
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
         ]
       },
       {
         "cat": "print",
         "sub": "kakemonos",
-        "extra": true,
         "cap": "Kakémonos roll-up",
         "catLabel": "Print",
         "dotClass": "print",
-        "mainPhoto": { "src": "", "alt": "Kakémonos roll-up" },
+        "soc": "",
+        "desc": "",
+        "extra": true,
+        "mainPhoto": {
+          "src": "",
+          "alt": "Kakémonos roll-up"
+        },
         "extraPhotos": [
-          { "src": "", "alt": "Photo 2 du projet" },
-          { "src": "", "alt": "Photo 3 du projet" }
+          {
+            "src": "",
+            "alt": "Photo 2 du projet"
+          },
+          {
+            "src": "",
+            "alt": "Photo 3 du projet"
+          }
         ]
       }
     ],
