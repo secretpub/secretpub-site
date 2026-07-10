@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
+  // Autorise la prévisualisation en dev depuis le réseau local (téléphone,
+  // autre poste) sans l'avertissement cross-origin. Sans effet en production.
+  allowedDevOrigins: ["192.168.1.108"],
   // Ship the Mustache templates into the serverless bundle so fs.readFileSync
   // finds them at runtime on Vercel.
   outputFileTracingIncludes: {
