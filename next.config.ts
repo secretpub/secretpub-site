@@ -6,6 +6,11 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
+  // Autorise l'upload d'images (via server action) plus lourdes que la limite
+  // par défaut de 1 Mo. Les images sont de toute façon redimensionnées côté client.
+  experimental: {
+    serverActions: { bodySizeLimit: "15mb" },
+  },
   // Autorise la prévisualisation en dev depuis le réseau local (téléphone,
   // autre poste) sans l'avertissement cross-origin. Sans effet en production.
   allowedDevOrigins: ["192.168.1.108"],

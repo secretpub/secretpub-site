@@ -286,6 +286,35 @@ function CollapsibleItem({
   );
 }
 
+// Redimensionne (≤1920px) et convertit en WebP léger avant l'envoi. Les SVG/GIF
+// passent tels quels. Évite de dépasser la limite d'upload et allège le site.
+async function prepareUpload(file: File): Promise<{ blob: Blob; name: string }> {
+  const base = file.name.replace(/\.[^.]+$/, "") || "image";
+  if (!/^image\/(png|jpe?g|webp|avif)$/i.test(file.type)) {
+    return { blob: file, name: file.name || base };
+  }
+  try {
+    const bitmap = await createImageBitmap(file);
+    const MAX = 1920;
+    const scale = Math.min(1, MAX / Math.max(bitmap.width, bitmap.height));
+    const w = Math.max(1, Math.round(bitmap.width * scale));
+    const h = Math.max(1, Math.round(bitmap.height * scale));
+    const canvas = document.createElement("canvas");
+    canvas.width = w;
+    canvas.height = h;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return { blob: file, name: file.name };
+    ctx.drawImage(bitmap, 0, 0, w, h);
+    const blob: Blob | null = await new Promise((res) =>
+      canvas.toBlob((b) => res(b), "image/webp", 0.85),
+    );
+    bitmap.close?.();
+    return blob ? { blob, name: `${base}.webp` } : { blob: file, name: file.name };
+  } catch {
+    return { blob: file, name: file.name };
+  }
+}
+
 function ImageField({
   value,
   onChange,
@@ -302,8 +331,9 @@ function ImageField({
     setBusy(true);
     setErr(null);
     try {
+      const { blob, name } = await prepareUpload(f);
       const fd = new FormData();
-      fd.append("file", f);
+      fd.append("file", blob, name);
       const { url } = await uploadImage(fd);
       onChange(url);
     } catch (e2) {
