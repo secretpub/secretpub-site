@@ -51,6 +51,18 @@ ul { margin: 0; padding: 0; }
 .wrap { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-inline: var(--gutter); }
 .section { padding-block: clamp(56px, 7vw, 96px); }
 
+/* Largeur de contenu RÉDUITE de « Nos métiers socles » jusqu'à « Contact ».
+   Le fond pleine largeur de chaque section déborde sur les côtés (blanc pour
+   métiers, noir pour réalisations, vert pour la liste d'attente…) = les « bords ».
+   Le hero et « Ils nous font confiance » restent pleine largeur. Ajustable ici : */
+.metiers .wrap,
+.real .wrap,
+.waitlist .wrap,
+.methode .wrap,
+.france .wrap,
+.faq .wrap,
+.contact .wrap { max-width: 1080px; }
+
 .eyebrow {
   display: inline-flex; align-items: center; gap: 10px;
   font-family: var(--display); font-weight: 600; font-size: 13px;
