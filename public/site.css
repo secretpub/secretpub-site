@@ -61,7 +61,11 @@ ul { margin: 0; padding: 0; }
 .methode .wrap,
 .france .wrap,
 .faq .wrap,
-.contact .wrap { max-width: 1080px; }
+.contact .wrap { max-width: 1140px; }
+
+/* Bandeau « 10 places limitées » : masqué par défaut, révélé + scroll auto
+   uniquement au clic sur « Réserver ma place ». */
+.waitlist:not(.revealed) { display: none; }
 
 .eyebrow {
   display: inline-flex; align-items: center; gap: 10px;
@@ -150,7 +154,7 @@ ul { margin: 0; padding: 0; }
   to { opacity: 1; transform: none; }
 }
 .header-inner {
-  width: 100%; max-width: var(--maxw); margin-inline: auto;
+  width: 100%; max-width: 1080px; margin-inline: auto;
   position: relative;
   display: flex; align-items: center; justify-content: space-between; gap: 18px;
   padding: 10px 10px 10px 24px;
@@ -182,7 +186,7 @@ ul { margin: 0; padding: 0; }
 }
 .brand { display: flex; align-items: center; gap: 12px; flex: none; position: relative; z-index: 1; }
 .brand img { height: 32px; width: auto; }
-.nav { display: flex; align-items: center; gap: 0; position: relative; z-index: 1; }
+.nav { display: flex; align-items: center; gap: 5px; position: relative; z-index: 1; }
 .nav-item { position: relative; }
 .nav > .nav-item > a, .nav > a {
   display: inline-flex; align-items: center; gap: 5px;

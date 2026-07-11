@@ -777,6 +777,24 @@
     });
   }
 
+  // Bandeau liste d'attente : masqué par défaut, révélé + scroll auto
+  // uniquement au clic sur « Réserver ma place » (ou tout lien vers #liste-attente).
+  (function () {
+    var wl = document.getElementById('liste-attente');
+    if (!wl) return;
+    document.querySelectorAll('a[href="#liste-attente"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        wl.classList.add('revealed');
+        requestAnimationFrame(function () {
+          var y = wl.getBoundingClientRect().top + window.scrollY - 16;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+          if (typeof requestCheck === 'function') requestCheck();
+        });
+      });
+    });
+  })();
+
   // Lien nav actif selon la page
   var path = location.pathname.split('/').pop();
   document.querySelectorAll('.nav a[data-page]').forEach(function (a) {
