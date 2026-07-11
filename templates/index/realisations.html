@@ -33,8 +33,8 @@
     <div class="real-grid" id="realGrid">
       {{#realisations.items}}<a class="real-item{{#extra}} extra{{/extra}}" data-cat="{{cat}}" data-sub="{{sub}}"{{#soc}} data-soc="{{soc}}"{{/soc}}{{#desc}} data-desc="{{desc}}"{{/desc}}>
         <div class="real-card">
-          {{#mainPhoto.src}}<img class="ph ri-main" src="{{mainPhoto.src}}" alt="{{mainPhoto.alt}}"{{#mainPhoto.pos}} style="object-position: {{mainPhoto.pos}}"{{/mainPhoto.pos}} loading="lazy" />{{/mainPhoto.src}}{{^mainPhoto.src}}<span class="ph ri-main" aria-hidden="true"></span>{{/mainPhoto.src}}
-          <div class="ri-extra" hidden="">{{#extraPhotos}}<img class="ph" src="{{src}}" alt="{{alt}}" loading="lazy" />{{/extraPhotos}}</div>
+          {{#mainPhoto.src}}<img class="ph ri-main" src="{{mainPhoto.src}}" alt="{{mainPhoto.alt}}"{{#mainPhoto.pos}} style="object-position: {{mainPhoto.pos}}"{{/mainPhoto.pos}}{{#mainPhoto.cat}} data-pcat="{{mainPhoto.cat}}"{{/mainPhoto.cat}} loading="lazy" />{{/mainPhoto.src}}{{^mainPhoto.src}}<span class="ph ri-main" aria-hidden="true"></span>{{/mainPhoto.src}}
+          <div class="ri-extra" hidden="">{{#extraPhotos}}<img class="ph" src="{{src}}" alt="{{alt}}"{{#cat}} data-pcat="{{cat}}"{{/cat}} loading="lazy" />{{/extraPhotos}}</div>
           <span class="ri-arrow" aria-hidden="true">↗</span>
           <div class="ri-overlay">
             {{#soc}}<span class="ri-soc">{{soc}}</span>{{/soc}}

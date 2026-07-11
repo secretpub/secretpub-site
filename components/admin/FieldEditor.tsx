@@ -572,14 +572,19 @@ function PhotoObjectField({
   value,
   path,
   setAt,
+  withFocal = false,
+  bare = false,
 }: {
   value: Record<string, any>;
   path: (string | number)[];
   setAt: SetAt;
+  withFocal?: boolean;
+  bare?: boolean;
 }) {
   const photo = value || {};
   const src: string = photo.src || "";
   const pos: string = photo.pos || "50% 50%";
+  const cat: string = photo.cat || "";
   const boxRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const [busy, setBusy] = useState(false);
@@ -614,75 +619,121 @@ function PhotoObjectField({
   const fx = m ? m[1] : "50";
   const fy = m ? m[2] : "50";
 
-  return (
-    <div className="fe-subgroup">
-      <div className="fe-subhead">Photo principale (aperçu de la vignette)</div>
-      <div className="fe-photo">
-        <div
-          className="fe-photo-box"
-          ref={boxRef}
-          style={{ cursor: src ? "crosshair" : "default" }}
-          onPointerDown={(e) => {
-            if (!src) return;
-            e.currentTarget.setPointerCapture(e.pointerId);
-            setDrag(true);
-            setPosFromEvent(e);
-          }}
-          onPointerMove={(e) => {
-            if (drag) setPosFromEvent(e);
-          }}
-          onPointerUp={(e) => {
-            setDrag(false);
-            try {
-              e.currentTarget.releasePointerCapture(e.pointerId);
-            } catch {
-              /* noop */
-            }
-          }}
-        >
-          {src ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={src} alt="" style={{ objectPosition: pos }} />
-          ) : (
-            <div className="fe-photo-empty">Aucune photo</div>
-          )}
-          {src && (
-            <span className="fe-focal" style={{ left: fx + "%", top: fy + "%" }} />
-          )}
-        </div>
-        <div className="fe-photo-ctl">
+  const inner = (
+    <div className="fe-photo">
+      <div
+        className="fe-photo-box"
+        ref={boxRef}
+        style={{ cursor: withFocal && src ? "crosshair" : "default" }}
+        onPointerDown={
+          withFocal
+            ? (e) => {
+                if (!src) return;
+                e.currentTarget.setPointerCapture(e.pointerId);
+                setDrag(true);
+                setPosFromEvent(e);
+              }
+            : undefined
+        }
+        onPointerMove={withFocal ? (e) => { if (drag) setPosFromEvent(e); } : undefined}
+        onPointerUp={
+          withFocal
+            ? (e) => {
+                setDrag(false);
+                try {
+                  e.currentTarget.releasePointerCapture(e.pointerId);
+                } catch {
+                  /* noop */
+                }
+              }
+            : undefined
+        }
+      >
+        {src ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={src}
+            alt=""
+            style={{
+              objectFit: withFocal ? "cover" : "contain",
+              objectPosition: withFocal ? pos : "center",
+            }}
+          />
+        ) : (
+          <div className="fe-photo-empty">Aucune photo</div>
+        )}
+        {withFocal && src && (
+          <span className="fe-focal" style={{ left: fx + "%", top: fy + "%" }} />
+        )}
+      </div>
+      <div className="fe-photo-ctl">
+        {withFocal && (
           <div className="fe-hint">
             Glisse sur l&apos;image pour repositionner l&apos;aperçu (le point
             vert = centre affiché sur la vignette du site).
           </div>
-          <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+        )}
+        <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+          <button
+            type="button"
+            className="adm-btn sm"
+            onClick={() => inputRef.current?.click()}
+            disabled={busy}
+          >
+            {busy ? "Envoi…" : src ? "Remplacer la photo" : "Téléverser une photo"}
+          </button>
+          {withFocal && src && (
             <button
               type="button"
-              className="adm-btn sm"
-              onClick={() => inputRef.current?.click()}
-              disabled={busy}
+              className="adm-btn sm ghost"
+              onClick={() => setAt([...path, "pos"], "50% 50%")}
             >
-              {busy ? "Envoi…" : src ? "Remplacer la photo" : "Téléverser une photo"}
+              Recentrer
             </button>
-            {src && (
-              <button
-                type="button"
-                className="adm-btn sm ghost"
-                onClick={() => setAt([...path, "pos"], "50% 50%")}
-              >
-                Recentrer
-              </button>
-            )}
-            <input ref={inputRef} type="file" accept="image/*" hidden onChange={onFile} />
+          )}
+          <input ref={inputRef} type="file" accept="image/*" hidden onChange={onFile} />
+        </div>
+        <ScalarField
+          fieldKey="alt"
+          value={photo.alt || ""}
+          path={[...path, "alt"]}
+          setAt={setAt}
+        />
+        <div className="fe-row">
+          <label className="fe-label">Catégorie de produit montrée sur cette photo</label>
+          <div className="fe-hint">
+            Sert au tri : quand un visiteur filtre par cette catégorie, c&apos;est
+            CETTE photo qui s&apos;affiche en aperçu (et à l&apos;ouverture).
           </div>
-          <ScalarField
-            fieldKey="alt"
-            value={photo.alt || ""}
-            path={[...path, "alt"]}
-            setAt={setAt}
-          />
+          <div className="fe-chips">
+            <button
+              type="button"
+              className={"fe-chip" + (!cat ? " on" : "")}
+              onClick={() => setAt([...path, "cat"], "")}
+            >
+              Défaut (projet)
+            </button>
+            {CATS.map((o) => (
+              <button
+                key={o.value}
+                type="button"
+                className={"fe-chip" + (cat === o.value ? " on" : "")}
+                onClick={() => setAt([...path, "cat"], o.value)}
+              >
+                {o.label}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
+    </div>
+  );
+
+  if (bare) return inner;
+  return (
+    <div className="fe-subgroup">
+      <div className="fe-subhead">Photo principale (aperçu de la vignette)</div>
+      {inner}
     </div>
   );
 }
@@ -742,8 +793,15 @@ function ArrayEditor({
     arr.length > 0 && !isPlainObject(arr[0]) && !Array.isArray(arr[0]);
   const itemName = itemLabel(key, path);
   const set = (a: unknown[]) => setAt(path, a);
-  const add = () =>
-    set([...arr, arr.length ? blankLike(arr[arr.length - 1]) : ""]);
+  const isPhotoArray = key === "extraPhotos";
+  const add = () => {
+    const tmpl = isPhotoArray
+      ? { src: "", alt: "", cat: "" }
+      : arr.length
+        ? blankLike(arr[arr.length - 1])
+        : "";
+    set([...arr, tmpl]);
+  };
   const removeAt = (i: number) => set(arr.filter((_, j) => j !== i));
   const move = (i: number, d: number) => {
     const j = i + d;
@@ -836,11 +894,15 @@ function ArrayEditor({
               (overI === i && dragI !== i ? "drop-target" : "")
             }
           >
-            {isPlainObject(item)
-              ? objectKeys(item).map((ck) => (
-                  <FieldEditor key={ck} fieldKey={ck} value={item[ck]} path={[...path, i, ck]} setAt={setAt} />
-                ))
-              : <ScalarField fieldKey={i} value={item} path={[...path, i]} setAt={setAt} hideLabel />}
+            {isPhotoArray && isPlainObject(item) ? (
+              <PhotoObjectField value={item} path={[...path, i]} setAt={setAt} bare />
+            ) : isPlainObject(item) ? (
+              objectKeys(item).map((ck) => (
+                <FieldEditor key={ck} fieldKey={ck} value={item[ck]} path={[...path, i, ck]} setAt={setAt} />
+              ))
+            ) : (
+              <ScalarField fieldKey={i} value={item} path={[...path, i]} setAt={setAt} hideLabel />
+            )}
           </CollapsibleItem>
         ),
       )}
@@ -876,7 +938,7 @@ export function FieldEditor({
 }) {
   if (HIDDEN.has(String(fieldKey))) return null;
   if (String(fieldKey) === "mainPhoto" && isPlainObject(value))
-    return <PhotoObjectField value={value} path={path} setAt={setAt} />;
+    return <PhotoObjectField value={value} path={path} setAt={setAt} withFocal />;
   if (Array.isArray(value))
     return <ArrayEditor fieldKey={fieldKey} value={value} path={path} setAt={setAt} top={top} />;
   if (isPlainObject(value))

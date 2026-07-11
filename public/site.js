@@ -250,10 +250,41 @@
   var allItems = realGridEl ? Array.prototype.slice.call(realGridEl.querySelectorAll('.real-item')) : [];
   if (realGridEl) realGridEl.classList.add('expanded');
 
+  // Catégories taguées sur les photos d'un projet (pour le tri par produit).
+  function itemPhotoCats(item) {
+    return Array.prototype.slice.call(item.querySelectorAll('img.ph[data-pcat]'))
+      .map(function (im) { return im.getAttribute('data-pcat'); });
+  }
   function matchesCat(item) {
-    if (curCat !== 'tout' && item.getAttribute('data-cat') !== curCat) return false;
+    if (curCat !== 'tout') {
+      if (item.getAttribute('data-cat') !== curCat &&
+          itemPhotoCats(item).indexOf(curCat) === -1) return false;
+    }
     if (curSub !== 'tout' && item.getAttribute('data-sub') !== curSub) return false;
     return true;
+  }
+  // Quand on filtre par catégorie, affiche la photo du projet taguée avec cette
+  // catégorie (sinon la photo principale). Mémorise l'index pour la visionneuse.
+  function applyPhotoPreview(item) {
+    var mainImg = item.querySelector('img.ri-main');
+    if (!mainImg) return;
+    if (!mainImg.getAttribute('data-orig')) {
+      mainImg.setAttribute('data-orig', mainImg.getAttribute('src') || '');
+    }
+    var photos = Array.prototype.slice.call(item.querySelectorAll('img.ph'));
+    var chosen = mainImg.getAttribute('data-orig');
+    var idx = 0;
+    if (curCat !== 'tout') {
+      for (var k = 0; k < photos.length; k++) {
+        if (photos[k].getAttribute('data-pcat') === curCat) {
+          chosen = photos[k].getAttribute('data-orig') || photos[k].getAttribute('src');
+          idx = k;
+          break;
+        }
+      }
+    }
+    mainImg.setAttribute('src', chosen);
+    item._startIdx = idx;
   }
 
   // Construit la barre de sous-catégories pour la catégorie active (apparaît au clic)
@@ -319,7 +350,10 @@
     if (curPage > pages) curPage = pages;
     allItems.forEach(function (it) { it.style.display = 'none'; });
     var start = (curPage - 1) * PER_PAGE;
-    matched.slice(start, start + PER_PAGE).forEach(function (it) { it.style.display = ''; });
+    matched.slice(start, start + PER_PAGE).forEach(function (it) {
+      it.style.display = '';
+      applyPhotoPreview(it);
+    });
     buildPager(pages);
   }
 
@@ -497,7 +531,14 @@
     }
     function itemSlots(item) { return Array.prototype.slice.call(item.querySelectorAll('img.ph')); }
     function filledSrcs(item) {
-      return itemSlots(item).map(slotSrc).filter(function (s) { return !!s; });
+      // Pour la photo principale, on garde la source d'origine même si l'aperçu
+      // a été remplacé par une photo filtrée (l'ordre des photos reste correct).
+      return itemSlots(item).map(function (im) {
+        if (im.classList.contains('ri-main') && im.getAttribute('data-orig')) {
+          return im.getAttribute('data-orig');
+        }
+        return slotSrc(im);
+      }).filter(function (s) { return !!s; });
     }
     function render() {
       var multi = st.srcs.length > 1;
@@ -595,7 +636,11 @@
       var srcs = filledSrcs(item);
       if (!srcs.length) return; // aucune photo : rien à ouvrir
       e.preventDefault();
-      open(item, srcs[Math.min(item._navIdx || 0, srcs.length - 1)]);
+      // Ouvre sur la photo filtrée si un filtre l'a sélectionnée, sinon la position de survol.
+      var startIdx = (typeof item._startIdx === 'number' && item._startIdx > 0)
+        ? item._startIdx
+        : (item._navIdx || 0);
+      open(item, srcs[Math.min(startIdx, srcs.length - 1)]);
     });
     // Navigation : flèches + miniatures
     prevBtn.addEventListener('click', function (e) { e.stopPropagation(); go(-1); });
