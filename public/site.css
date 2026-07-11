@@ -23,6 +23,7 @@
   --display: "Plus Jakarta Sans", system-ui, sans-serif;
   --body: "Hanken Grotesk", system-ui, sans-serif;
   --maxw: 1200px;
+  --maxw-body: 1300px;
   --gutter: clamp(20px, 5vw, 72px);
   --radius: 14px;
   --radius-lg: 20px;
@@ -55,13 +56,15 @@ ul { margin: 0; padding: 0; }
    Le fond pleine largeur de chaque section déborde sur les côtés (blanc pour
    métiers, noir pour réalisations, vert pour la liste d'attente…) = les « bords ».
    Le hero et « Ils nous font confiance » restent pleine largeur. Ajustable ici : */
+.site-header .wrap,
 .metiers .wrap,
 .real .wrap,
+.pourqui .wrap,
 .waitlist .wrap,
 .methode .wrap,
 .france .wrap,
 .faq .wrap,
-.contact .wrap { max-width: 1180px; }
+.contact .wrap { max-width: var(--maxw-body); }
 
 /* Bandeau « 10 places limitées » : masqué par défaut, révélé + scroll auto
    uniquement au clic sur « Réserver ma place ». */
@@ -145,7 +148,7 @@ ul { margin: 0; padding: 0; }
 /* ---------------- Header (pilule flottante liquid glass) ---------------- */
 .site-header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 50;
-  padding: 24px clamp(14px, 3vw, 44px) 0;
+  padding: 24px 0 0;
   background: transparent; border: none;
   animation: headerDrop 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) 0.05s backwards;
 }
@@ -154,7 +157,7 @@ ul { margin: 0; padding: 0; }
   to { opacity: 1; transform: none; }
 }
 .header-inner {
-  width: 100%; max-width: 1180px; margin-inline: auto;
+  width: 100%;
   position: relative;
   display: flex; align-items: center; justify-content: space-between; gap: 18px;
   padding: 0 clamp(18px, 2vw, 30px); min-height: 78px;

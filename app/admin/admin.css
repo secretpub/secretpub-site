@@ -124,6 +124,23 @@
 .fe-focal { position: absolute; width: 22px; height: 22px; border-radius: 50%; border: 2px solid #fff; background: rgba(64,171,63,0.55); box-shadow: 0 0 0 2px rgba(0,0,0,0.45), 0 2px 8px rgba(0,0,0,0.5); transform: translate(-50%, -50%); pointer-events: none; }
 .fe-photo-ctl { display: grid; gap: 8px; }
 
+/* Champs à choix : boutons cliquables */
+.fe-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.fe-chip {
+  font-family: "Plus Jakarta Sans", sans-serif; font-weight: 600; font-size: 12.5px;
+  padding: 7px 14px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--a-line); background: var(--a-panel-2); color: var(--a-muted);
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.fe-chip:hover { color: var(--a-text); border-color: #3a4a40; }
+.fe-chip.on { background: var(--a-green); border-color: var(--a-green); color: #06270f; }
+
+/* Poignée de glisser-déposer + états */
+.fe-drag { cursor: grab; color: var(--a-muted); font-size: 15px; line-height: 1; flex: none; padding: 0 3px; }
+.fe-drag:active { cursor: grabbing; }
+.fe-item.dragging { opacity: 0.45; }
+.fe-item.drop-target { border-color: var(--a-green-2); box-shadow: inset 0 3px 0 -1px var(--a-green-2); }
+
 /* Image field */
 .fe-img { display: flex; gap: 12px; align-items: flex-start; }
 .fe-img .fe-thumb {

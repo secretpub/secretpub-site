@@ -34,8 +34,9 @@ function labelize(k: string | number): string {
 type Descr = { label: string; hint?: string };
 const D = (label: string, hint?: string): Descr => ({ label, hint });
 
-// Champs purement techniques : masqués (leur valeur est conservée à l'enregistrement).
-const HIDDEN = new Set(["slideClass", "i"]);
+// Champs purement techniques ou auto-gérés : masqués (valeur conservée).
+// catLabel + dotClass sont pilotés par le bouton « Catégorie ».
+const HIDDEN = new Set(["slideClass", "i", "catLabel", "dotClass"]);
 
 // Clé "parent.clé" prioritaire, sinon "clé", sinon joli libellé auto.
 const DESCR: Record<string, Descr> = {
@@ -189,6 +190,46 @@ function parentOf(path: (string | number)[]): string {
   }
   return "";
 }
+
+// Champs à choix : boutons cliquables au lieu d'un champ texte.
+const CATS = [
+  { value: "signa", label: "Signalétique" },
+  { value: "print", label: "Print" },
+  { value: "textile", label: "Textile" },
+  { value: "goodies", label: "Goodies" },
+  { value: "packaging", label: "Packaging" },
+];
+const ENUMS: Record<string, { value: string; label: string }[]> = {
+  cat: CATS,
+  dotClass: CATS,
+  "ctas.type": [
+    { value: "primary", label: "Vert plein" },
+    { value: "ghost", label: "Contour" },
+  ],
+  "logos.size": [
+    { value: "", label: "Normal" },
+    { value: "sq", label: "Carré" },
+    { value: "lg", label: "Large" },
+    { value: "xl", label: "XL" },
+  ],
+};
+function enumFor(key: string, path: (string | number)[]) {
+  const p = parentOf(path);
+  return ENUMS[`${p}.${key}`] || ENUMS[key] || null;
+}
+
+// Champs avec suggestions (autocomplétion) pour éviter les fautes de frappe.
+const SUBS = [
+  "facade", "enseignes", "lettres", "panneaux", "totems", "vitrophanie",
+  "vehicule", "baches", "cartes", "brochures", "plv", "kakemonos",
+  "grandformat", "vetements", "casquettes", "dotation", "broderie",
+  "objets", "gourdes", "totebags", "boites", "pochettes", "emballage", "sacs",
+];
+const DATALISTS: Record<string, string[]> = { sub: SUBS };
+function datalistFor(key: string, path: (string | number)[]) {
+  const p = parentOf(path);
+  return DATALISTS[`${p}.${key}`] || DATALISTS[key] || null;
+}
 function describe(key: string, path: (string | number)[]): Descr {
   const p = parentOf(path);
   return DESCR[`${p}.${key}`] || DESCR[key] || { label: labelize(key) };
@@ -255,18 +296,28 @@ function CollapsibleItem({
   preview,
   thumb,
   controls,
+  handle,
+  rootProps,
+  extraClass,
   children,
 }: {
   title: string;
   preview: string;
   thumb: string;
   controls: React.ReactNode;
+  handle?: React.ReactNode;
+  rootProps?: React.HTMLAttributes<HTMLDivElement>;
+  extraClass?: string;
   children: React.ReactNode;
 }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className={"fe-item" + (open ? " open" : "")}>
+    <div
+      className={"fe-item" + (open ? " open" : "") + (extraClass ? " " + extraClass : "")}
+      {...rootProps}
+    >
       <div className="fe-item-head" onClick={() => setOpen((o) => !o)}>
+        {handle}
         <span className="fe-caret">{open ? "▾" : "▸"}</span>
         {thumb ? (
           <span className="fe-item-thumb">
@@ -399,6 +450,65 @@ function ScalarField({
 }) {
   const key = String(fieldKey);
   const { label, hint } = describe(key, path);
+  // Champs à choix → boutons à cliquer.
+  const opts = enumFor(key, path);
+  if (opts) {
+    const cur = value == null ? "" : String(value);
+    const pick = (v: string, lbl: string) => {
+      if (key === "cat") {
+        // Choisir la catégorie règle aussi le libellé affiché et la couleur.
+        const base = path.slice(0, -1);
+        setAt([...base, "cat"], v);
+        setAt([...base, "catLabel"], lbl);
+        setAt([...base, "dotClass"], v);
+      } else {
+        setAt(path, v);
+      }
+    };
+    return (
+      <div className="fe-row">
+        {!hideLabel && <label className="fe-label">{label}</label>}
+        {!hideLabel && hint && <div className="fe-hint">{hint}</div>}
+        <div className="fe-chips">
+          {opts.map((o) => (
+            <button
+              key={o.value}
+              type="button"
+              className={"fe-chip" + (cur === o.value ? " on" : "")}
+              onClick={() => pick(o.value, o.label)}
+            >
+              {o.label}
+            </button>
+          ))}
+        </div>
+      </div>
+    );
+  }
+  // Champ avec suggestions (autocomplétion)
+  const dl = datalistFor(key, path);
+  if (dl && typeof value !== "boolean" && typeof value !== "number") {
+    const cur = value == null ? "" : String(value);
+    const id = "dl-" + path.join("-");
+    return (
+      <div className="fe-row">
+        {!hideLabel && <label className="fe-label">{label}</label>}
+        {!hideLabel && hint && <div className="fe-hint">{hint}</div>}
+        <input
+          className="fe-input"
+          type="text"
+          list={id}
+          value={cur}
+          placeholder="Choisir ou taper…"
+          onChange={(e) => setAt(path, e.target.value)}
+        />
+        <datalist id={id}>
+          {dl.map((v) => (
+            <option key={v} value={v} />
+          ))}
+        </datalist>
+      </div>
+    );
+  }
   if (typeof value === "boolean") {
     return (
       <div className="fe-row">
@@ -642,6 +752,59 @@ function ArrayEditor({
     [c[i], c[j]] = [c[j], c[i]];
     set(c);
   };
+  // Glisser-déposer : on maintient la poignée ⠿, on glisse, on relâche pour placer.
+  const [dragI, setDragI] = useState<number | null>(null);
+  const [overI, setOverI] = useState<number | null>(null);
+  const endDrag = () => {
+    setDragI(null);
+    setOverI(null);
+  };
+  const moveTo = (to: number) => {
+    if (dragI === null || dragI === to) {
+      endDrag();
+      return;
+    }
+    const c = arr.slice();
+    const [m] = c.splice(dragI, 1);
+    c.splice(to, 0, m);
+    set(c);
+    endDrag();
+  };
+  const handleFor = (i: number) => (
+    <span
+      className="fe-drag"
+      draggable
+      title="Glisser pour réordonner"
+      onClick={(e) => e.stopPropagation()}
+      onDragStart={(e) => {
+        setDragI(i);
+        e.dataTransfer.effectAllowed = "move";
+        try {
+          e.dataTransfer.setData("text/plain", String(i));
+        } catch {
+          /* noop */
+        }
+      }}
+      onDragEnd={endDrag}
+    >
+      ⠿
+    </span>
+  );
+  const dragProps = (i: number): React.HTMLAttributes<HTMLDivElement> => ({
+    onDragOver: (e) => {
+      if (dragI !== null) {
+        e.preventDefault();
+        if (overI !== i) setOverI(i);
+      }
+    },
+    onDrop: (e) => {
+      e.preventDefault();
+      moveTo(i);
+    },
+  });
+  const removeCtl = (i: number) => (
+    <button className="adm-btn sm danger" type="button" onClick={() => removeAt(i)} title="Supprimer">✕</button>
+  );
   const ctl = (i: number) => (
     <>
       <button className="adm-btn sm ghost" type="button" onClick={() => move(i, -1)} disabled={i === 0} title="Monter">↑</button>
@@ -665,7 +828,13 @@ function ArrayEditor({
             title={`${itemName} #${i + 1}`}
             preview={previewOf(item)}
             thumb={firstImageOf(item)}
-            controls={ctl(i)}
+            handle={handleFor(i)}
+            controls={removeCtl(i)}
+            rootProps={dragProps(i)}
+            extraClass={
+              (dragI === i ? "dragging " : "") +
+              (overI === i && dragI !== i ? "drop-target" : "")
+            }
           >
             {isPlainObject(item)
               ? objectKeys(item).map((ck) => (
