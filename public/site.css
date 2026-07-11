@@ -154,7 +154,7 @@ ul { margin: 0; padding: 0; }
   to { opacity: 1; transform: none; }
 }
 .header-inner {
-  width: 100%; max-width: 1280px; margin-inline: auto;
+  width: 100%; max-width: 1180px; margin-inline: auto;
   position: relative;
   display: flex; align-items: center; justify-content: space-between; gap: 18px;
   padding: 0 clamp(18px, 2vw, 30px); min-height: 78px;
@@ -1593,6 +1593,7 @@ a.metier { text-decoration: none; color: inherit; }
   display: flex; flex-direction: column; justify-content: flex-end; gap: 5px; padding: 16px;
   background: linear-gradient(to top, rgba(11,13,12,0.82) 0%, rgba(11,13,12,0.24) 44%, transparent 72%);
 }
+.ri-soc { font-family: var(--display); font-weight: 700; font-size: 11px; letter-spacing: 0.09em; text-transform: uppercase; color: var(--sage); margin-bottom: 1px; }
 .ri-cap { font-family: var(--display); font-weight: 700; font-size: 16.5px; color: #fff; line-height: 1.2; }
 .ri-cat { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; color: rgba(255,255,255,0.82); }
 .ri-dot { display: none; }

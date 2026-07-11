@@ -33,10 +33,11 @@
     <div class="real-grid" id="realGrid">
       {{#realisations.items}}<a class="real-item{{#extra}} extra{{/extra}}" data-cat="{{cat}}" data-sub="{{sub}}"{{#soc}} data-soc="{{soc}}"{{/soc}}{{#desc}} data-desc="{{desc}}"{{/desc}}>
         <div class="real-card">
-          {{#mainPhoto.src}}<img class="ph ri-main" src="{{mainPhoto.src}}" alt="{{mainPhoto.alt}}" loading="lazy" />{{/mainPhoto.src}}{{^mainPhoto.src}}<span class="ph ri-main" aria-hidden="true"></span>{{/mainPhoto.src}}
+          {{#mainPhoto.src}}<img class="ph ri-main" src="{{mainPhoto.src}}" alt="{{mainPhoto.alt}}"{{#mainPhoto.pos}} style="object-position: {{mainPhoto.pos}}"{{/mainPhoto.pos}} loading="lazy" />{{/mainPhoto.src}}{{^mainPhoto.src}}<span class="ph ri-main" aria-hidden="true"></span>{{/mainPhoto.src}}
           <div class="ri-extra" hidden="">{{#extraPhotos}}<img class="ph" src="{{src}}" alt="{{alt}}" loading="lazy" />{{/extraPhotos}}</div>
           <span class="ri-arrow" aria-hidden="true">↗</span>
           <div class="ri-overlay">
+            {{#soc}}<span class="ri-soc">{{soc}}</span>{{/soc}}
             <span class="ri-cap">{{cap}}</span>
             <span class="ri-cat"><i class="ri-dot {{dotClass}}" aria-hidden="true"></i>{{catLabel}}</span>
           </div>

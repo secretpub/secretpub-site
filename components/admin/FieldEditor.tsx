@@ -456,6 +456,127 @@ function ScalarField({
   );
 }
 
+// Photo principale d'une réalisation : aperçu recadré (comme la vignette du site)
+// avec point focal déplaçable → pilote object-position.
+function PhotoObjectField({
+  value,
+  path,
+  setAt,
+}: {
+  value: Record<string, any>;
+  path: (string | number)[];
+  setAt: SetAt;
+}) {
+  const photo = value || {};
+  const src: string = photo.src || "";
+  const pos: string = photo.pos || "50% 50%";
+  const boxRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const [busy, setBusy] = useState(false);
+  const [drag, setDrag] = useState(false);
+
+  function setPosFromEvent(e: React.PointerEvent) {
+    const box = boxRef.current;
+    if (!box) return;
+    const r = box.getBoundingClientRect();
+    const x = Math.max(0, Math.min(100, ((e.clientX - r.left) / r.width) * 100));
+    const y = Math.max(0, Math.min(100, ((e.clientY - r.top) / r.height) * 100));
+    setAt([...path, "pos"], `${Math.round(x)}% ${Math.round(y)}%`);
+  }
+  async function onFile(e: React.ChangeEvent<HTMLInputElement>) {
+    const f = e.target.files?.[0];
+    if (!f) return;
+    setBusy(true);
+    try {
+      const { blob, name } = await prepareUpload(f);
+      const fd = new FormData();
+      fd.append("file", blob, name);
+      const { url } = await uploadImage(fd);
+      setAt([...path, "src"], url);
+    } catch {
+      /* ignore */
+    } finally {
+      setBusy(false);
+      if (inputRef.current) inputRef.current.value = "";
+    }
+  }
+  const m = /(-?\d+(?:\.\d+)?)%\s+(-?\d+(?:\.\d+)?)%/.exec(pos);
+  const fx = m ? m[1] : "50";
+  const fy = m ? m[2] : "50";
+
+  return (
+    <div className="fe-subgroup">
+      <div className="fe-subhead">Photo principale (aperçu de la vignette)</div>
+      <div className="fe-photo">
+        <div
+          className="fe-photo-box"
+          ref={boxRef}
+          style={{ cursor: src ? "crosshair" : "default" }}
+          onPointerDown={(e) => {
+            if (!src) return;
+            e.currentTarget.setPointerCapture(e.pointerId);
+            setDrag(true);
+            setPosFromEvent(e);
+          }}
+          onPointerMove={(e) => {
+            if (drag) setPosFromEvent(e);
+          }}
+          onPointerUp={(e) => {
+            setDrag(false);
+            try {
+              e.currentTarget.releasePointerCapture(e.pointerId);
+            } catch {
+              /* noop */
+            }
+          }}
+        >
+          {src ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={src} alt="" style={{ objectPosition: pos }} />
+          ) : (
+            <div className="fe-photo-empty">Aucune photo</div>
+          )}
+          {src && (
+            <span className="fe-focal" style={{ left: fx + "%", top: fy + "%" }} />
+          )}
+        </div>
+        <div className="fe-photo-ctl">
+          <div className="fe-hint">
+            Glisse sur l&apos;image pour repositionner l&apos;aperçu (le point
+            vert = centre affiché sur la vignette du site).
+          </div>
+          <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+            <button
+              type="button"
+              className="adm-btn sm"
+              onClick={() => inputRef.current?.click()}
+              disabled={busy}
+            >
+              {busy ? "Envoi…" : src ? "Remplacer la photo" : "Téléverser une photo"}
+            </button>
+            {src && (
+              <button
+                type="button"
+                className="adm-btn sm ghost"
+                onClick={() => setAt([...path, "pos"], "50% 50%")}
+              >
+                Recentrer
+              </button>
+            )}
+            <input ref={inputRef} type="file" accept="image/*" hidden onChange={onFile} />
+          </div>
+          <ScalarField
+            fieldKey="alt"
+            value={photo.alt || ""}
+            path={[...path, "alt"]}
+            setAt={setAt}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function objectKeys(v: Record<string, any>) {
   return Object.keys(v).filter((k) => !HIDDEN.has(k));
 }
@@ -585,6 +706,8 @@ export function FieldEditor({
   top?: boolean;
 }) {
   if (HIDDEN.has(String(fieldKey))) return null;
+  if (String(fieldKey) === "mainPhoto" && isPlainObject(value))
+    return <PhotoObjectField value={value} path={path} setAt={setAt} />;
   if (Array.isArray(value))
     return <ArrayEditor fieldKey={fieldKey} value={value} path={path} setAt={setAt} top={top} />;
   if (isPlainObject(value))
