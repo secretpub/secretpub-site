@@ -1,0 +1,113 @@
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-inner">
+    <a class="brand" href="/" aria-label="SecretPub, retour à l'accueil">
+      <img src="/assets/logo-full.png" alt="Logo SecretPub, signalétique, print et textile à Valence" />
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <div class="nav-item"><a href="/#metiers">Métiers</a></div>
+      <div class="nav-item"><a href="/#realisations">Réalisations</a></div>
+      <div class="nav-item"><a href="/#pourqui">Pour qui</a></div>
+      <div class="nav-item"><a href="/#methode">Méthode</a></div>
+      <div class="nav-item"><a href="/#contact">Contact</a></div>
+    </nav>
+    <div class="header-cta">
+      <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-glow">Catalogue <span class="ext" aria-hidden="true">↗</span></a>
+      <a href="/#contact" class="btn btn-primary">Demander un devis</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    </div>
+  </div>
+</header>
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="menu-close" id="menuClose" aria-label="Fermer le menu">×</button>
+  <a href="/#metiers">Métiers</a>
+  <a href="/#realisations">Réalisations</a>
+  <a href="/#pourqui">Pour qui</a>
+  <a href="/#methode">Méthode</a>
+  <a href="/#contact">Contact</a>
+  <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-glow">Catalogue <span class="ext" aria-hidden="true">↗</span></a>
+  <a href="/#contact" class="btn btn-primary">Demander un devis</a>
+</div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <nav class="crumb" aria-label="Fil d'Ariane"><a href="/">Accueil</a> <span>/</span> <span>Mentions légales</span></nav>
+    <h1>Mentions légales</h1>
+    <p class="hero-sub">Informations légales et politique de confidentialité du site secretpub.fr.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="legal-prose">
+      <h2>Éditeur du site</h2>
+      <p>Le site <strong>secretpub.fr</strong> est édité par <strong>SARL NOSTILE FACTORY</strong>, exerçant sous le nom commercial <strong>SecretPub</strong>.</p>
+      <ul>
+        <li>Forme juridique : Société à responsabilité limitée (SARL)</li>
+        <li>SIREN : 811 457 142</li>
+        <li>Siège social : 31 Rue Jean Jullien Davin, 26000 Valence, France</li>
+        <li>Téléphone : <a href="{{meta.phoneHref}}">{{meta.phoneDisplay}}</a></li>
+        <li>Email : <a href="mailto:{{meta.email}}">{{meta.email}}</a></li>
+      </ul>
+
+      <h2>Directeur de la publication</h2>
+      <p>Le représentant légal de la société SARL NOSTILE FACTORY.</p>
+
+      <h2>Hébergement</h2>
+      <p>Le site est hébergé par <strong>Vercel Inc.</strong>, 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis — <a href="https://vercel.com" target="_blank" rel="noopener">vercel.com</a>.</p>
+
+      <h2>Propriété intellectuelle</h2>
+      <p>L'ensemble des contenus présents sur ce site (textes, visuels, photographies de réalisations, logo, charte graphique) est la propriété exclusive de SecretPub ou de ses partenaires, sauf mention contraire. Toute reproduction, représentation ou diffusion, totale ou partielle, sans autorisation écrite préalable est interdite et constitue une contrefaçon sanctionnée par le Code de la propriété intellectuelle.</p>
+
+      <h2 id="confidentialite">Données personnelles et confidentialité</h2>
+      <p>Les informations transmises via les formulaires du site (contact, liste d'attente) sont utilisées uniquement pour traiter votre demande et vous recontacter. Elles ne sont ni vendues ni cédées à des tiers.</p>
+      <p>Conformément au Règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, d'opposition et de suppression de vos données. Pour l'exercer, écrivez à <a href="mailto:{{meta.email}}">{{meta.email}}</a>.</p>
+
+      <h2>Cookies</h2>
+      <p>Ce site utilise uniquement des cookies techniques nécessaires à son bon fonctionnement. Aucun cookie publicitaire ni de suivi tiers n'est déposé sans votre consentement.</p>
+
+      <h2>Responsabilité</h2>
+      <p>SecretPub s'efforce d'assurer l'exactitude des informations diffusées sur ce site mais ne saurait être tenue responsable des erreurs, omissions ou d'une indisponibilité temporaire. Les liens externes n'engagent pas la responsabilité de SecretPub quant à leur contenu.</p>
+
+      <p class="legal-back"><a href="/">← Retour à l'accueil</a></p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="foot-brand">
+        <a class="brand" href="/"><img src="/assets/logo-full.png" alt="Logo SecretPub" /></a>
+        <p class="about">{{footer.about}}</p>
+        <address class="foot-contact">
+          <a href="{{meta.phoneHref}}">{{meta.phoneDisplay}}</a>
+          <a href="mailto:{{meta.email}}">{{meta.email}}</a>
+          <span>{{meta.addressLine}}</span>
+        </address>
+      </div>
+      {{#footer.columns}}
+      <nav class="foot-col" aria-label="{{title}}">
+        <h5>{{title}}</h5>
+        {{#links}}<a href="{{href}}">{{label}}</a>{{/links}}
+      </nav>
+      {{/footer.columns}}
+    </div>
+    <div class="footer-bottom">
+      <div class="foot-copy">
+        <span>{{footer.copyright}}</span>
+        <span class="foot-legal-info">SARL NOSTILE FACTORY · SIREN 811 457 142 · Valence (26)</span>
+      </div>
+      <nav class="foot-legal" aria-label="Informations légales">
+        <a href="/mentions-legales">Mentions légales</a>
+        <a href="/#faq">Questions fréquentes</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <div class="socials">
+        {{#footer.socials}}<a href="{{href}}" target="_blank" rel="noopener" aria-label="{{label}}">{{{iconHtml}}}</a>{{/footer.socials}}
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1924,6 +1924,28 @@ a.metier { text-decoration: none; color: inherit; }
 .foot-col a { display: block; color: rgba(255,255,255,0.62); font-size: 14.5px; padding: 6px 0; transition: color 0.15s; }
 .foot-col a:hover { color: #fff; }
 .footer-bottom { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: 52px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.45); font-size: 13px; }
+/* Contact structuré dans le footer (SEO + accessibilité) */
+.foot-contact { font-style: normal; display: flex; flex-direction: column; gap: 5px; margin-top: 16px; font-size: 14px; }
+.foot-contact a { color: rgba(255,255,255,0.72); }
+.foot-contact a:hover { color: #fff; }
+.foot-contact span { color: rgba(255,255,255,0.48); }
+.foot-copy { display: flex; flex-direction: column; gap: 3px; }
+.foot-legal-info { color: rgba(255,255,255,0.35); font-size: 12px; }
+.foot-legal { display: flex; gap: 6px 18px; flex-wrap: wrap; align-items: center; }
+.foot-legal a { color: rgba(255,255,255,0.6); font-size: 13px; }
+.foot-legal a:hover { color: #fff; }
+/* Page Mentions légales — prose lisible */
+.legal-prose { max-width: 760px; }
+.legal-prose h2 { font-size: clamp(19px, 2.1vw, 25px); margin-top: 34px; }
+.legal-prose h2:first-child { margin-top: 0; }
+.legal-prose p { color: var(--muted); font-size: 15.5px; line-height: 1.7; margin-top: 12px; }
+.legal-prose ul { margin: 12px 0 0; padding-left: 20px; color: var(--muted); font-size: 15.5px; line-height: 1.9; }
+.legal-prose ul li { list-style: disc; }
+.legal-prose a { color: var(--green-deep); text-decoration: underline; text-underline-offset: 2px; }
+.legal-prose a:hover { color: var(--green); }
+.legal-prose strong { color: var(--ink); }
+.legal-back { margin-top: 36px; }
+.legal-back a { font-weight: 600; text-decoration: none; }
 /* Maillage SEO villes en bas de footer (discret) */
 .footer-cities { margin-top: 44px; padding-top: 26px; border-top: 1px solid rgba(255,255,255,0.08); }
 .fc-title { font-family: var(--display); font-weight: 600; font-size: 13px; color: rgba(255,255,255,0.7); }
