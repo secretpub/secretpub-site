@@ -29,12 +29,33 @@ const nextConfig: NextConfig = {
     ],
   },
   async headers() {
-    return [
+    const security = [
+      { key: "X-Content-Type-Options", value: "nosniff" },
+      { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+      { key: "X-Frame-Options", value: "SAMEORIGIN" },
       {
-        // Long-cache the immutable design assets (images, css, js live in /public).
+        key: "Permissions-Policy",
+        value: "camera=(), microphone=(), geolocation=(), interest-cohort=()",
+      },
+    ];
+    return [
+      // En-têtes de sécurité sur toutes les pages.
+      { source: "/(.*)", headers: security },
+      {
+        // Long-cache the immutable design assets (images live in /public/assets).
         source: "/assets/:path*",
         headers: [
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+      {
+        // CSS/JS de design : cache raisonnable + revalidation en arrière-plan.
+        source: "/:file(site\\.css|site\\.js)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=600, stale-while-revalidate=86400",
+          },
         ],
       },
     ];

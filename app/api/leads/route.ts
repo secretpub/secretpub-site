@@ -3,6 +3,18 @@ import { getAdminSupabase } from "@/lib/supabase/admin";
 
 export const runtime = "nodejs";
 
+// Rate-limit best-effort en mémoire (par instance) : freine les rafales de spam.
+// Pour une protection robuste multi-instances, brancher Upstash Ratelimit.
+const HITS = new Map<string, number[]>();
+function rateLimited(ip: string, max = 6, windowMs = 10 * 60 * 1000): boolean {
+  const now = Date.now();
+  const arr = (HITS.get(ip) || []).filter((t) => now - t < windowMs);
+  arr.push(now);
+  HITS.set(ip, arr);
+  if (HITS.size > 5000) HITS.clear(); // garde-fou mémoire
+  return arr.length > max;
+}
+
 /**
  * Lead capture for the contact form (#cform) and the réseaux waitlist (#wlForm).
  * Stores into Supabase `leads`. If Supabase is not configured yet, it still
@@ -10,6 +22,12 @@ export const runtime = "nodejs";
  * silently in a way that breaks the page).
  */
 export async function POST(req: NextRequest) {
+  const ip =
+    req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+  if (rateLimited(ip)) {
+    return NextResponse.json({ ok: false, error: "rate_limit" }, { status: 429 });
+  }
+
   let body: Record<string, unknown>;
   try {
     body = await req.json();

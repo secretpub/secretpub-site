@@ -425,34 +425,45 @@
     });
   }
 
-  // Envoi best-effort vers le back-end (Supabase via /api/leads). L'UX de
-  // confirmation reste identique quel que soit le résultat réseau.
+  // Envoi vers le back-end (Supabase via /api/leads). Renvoie une promesse
+  // résolue à true si l'enregistrement a réussi, false sinon.
   function postLead(payload) {
-    try {
-      fetch('/api/leads', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      }).catch(function () {});
-    } catch (e) { /* no-op */ }
+    return fetch('/api/leads', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(function (r) { return r.ok; }).catch(function () { return false; });
   }
 
-  // Formulaire contact
+  // Formulaire contact : confirmation UNIQUEMENT si l'envoi a réussi.
   var form = document.getElementById('cform');
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!form.reportValidity()) return;
-      form.classList.add('sent');
       var btn = form.querySelector('button[type="submit"]');
-      if (btn) { btn.disabled = true; btn.textContent = 'Demande envoyée'; }
       var fd = new FormData(form);
       var payload = { type: 'contact', source_page: location.pathname };
       fd.forEach(function (v, k) {
         if (k === 'besoin') { (payload.besoin = payload.besoin || []).push(v); }
         else { payload[k] = v; }
       });
-      postLead(payload);
+      if (btn) { btn.disabled = true; btn.textContent = 'Envoi…'; }
+      postLead(payload).then(function (ok) {
+        if (ok) {
+          form.classList.add('sent');
+          if (btn) btn.textContent = 'Demande envoyée';
+        } else {
+          if (btn) { btn.disabled = false; btn.textContent = 'Envoyer ma demande'; }
+          var err = form.querySelector('.cform-err');
+          if (!err) {
+            err = document.createElement('p');
+            err.className = 'cform-err'; err.setAttribute('role', 'alert');
+            form.appendChild(err);
+          }
+          err.textContent = "L'envoi a échoué. Réessayez, ou appelez-nous au 09 83 80 93 12.";
+        }
+      });
     });
   }
 
@@ -699,6 +710,18 @@
         : (item._navIdx || 0);
       open(item, srcs[Math.min(startIdx, srcs.length - 1)]);
     });
+    // Accessibilité clavier : Entrée / Espace ouvre la vignette focalisée.
+    grid.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      var item = e.target.closest('.real-item');
+      if (!item) return;
+      var srcs = filledSrcs(item);
+      if (!srcs.length) return;
+      e.preventDefault();
+      var startIdx = (typeof item._startIdx === 'number' && item._startIdx > 0)
+        ? item._startIdx : (item._navIdx || 0);
+      open(item, srcs[Math.min(startIdx, srcs.length - 1)]);
+    });
     // Navigation : flèches + miniatures
     prevBtn.addEventListener('click', function (e) { e.stopPropagation(); go(-1); });
     nextBtn.addEventListener('click', function (e) { e.stopPropagation(); go(1); });
@@ -872,9 +895,10 @@
       e.preventDefault();
       var emailInput = wlForm.querySelector('input[type="email"], input[name="wl-email"]');
       var email = emailInput ? emailInput.value : '';
+      var hp = wlForm.querySelector('input[name="company_hp"]');
       var c = document.getElementById('wlConfirm');
       if (c) c.hidden = false;
-      postLead({ type: 'waitlist', email: email, source_page: location.pathname });
+      postLead({ type: 'waitlist', email: email, company_hp: hp ? hp.value : '', source_page: location.pathname });
       wlForm.reset();
     });
   }

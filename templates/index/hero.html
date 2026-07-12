@@ -7,7 +7,7 @@
       <div class="wrap hslide-inner">
         <div class="hslide-copy">
           <span class="eyebrow">{{eyebrow}}</span>
-          <h1>{{{titleHtml}}}</h1>
+          {{#priority}}<h1>{{{titleHtml}}}</h1>{{/priority}}{{^priority}}<h2 class="hslide-title">{{{titleHtml}}}</h2>{{/priority}}
           <p class="hslide-sub">{{sub}}</p>
           <div class="hslide-actions">
 {{#actions}}

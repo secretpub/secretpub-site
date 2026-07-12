@@ -17,7 +17,7 @@
   --green-soft: #e4f3e1;
   --sage: #9fd8b4;
   --muted: #5d645f;
-  --muted-2: #899088;
+  --muted-2: #6f766e;
   --line: #e3e1d9;
   --line-strong: #d2cfc5;
   --display: "Plus Jakarta Sans", system-ui, sans-serif;
@@ -52,6 +52,19 @@ ul { margin: 0; padding: 0; }
 /* Zoom global (~+10%, comme un zoom navigateur) sur desktop. Header + corps
    scalent ensemble, donc l'alignement pile-poil est conservé. Réglable ici. */
 @media (min-width: 1000px) { html { zoom: 1.1; } }
+
+/* Lien d'évitement (accessibilité clavier) */
+.skip-link { position: absolute; left: -9999px; top: 0; z-index: 100; background: var(--green); color: #fff; padding: 11px 18px; border-radius: 0 0 12px 0; font-family: var(--display); font-weight: 700; font-size: 14px; }
+.skip-link:focus { left: 0; }
+/* Meilleur contraste des textes discrets du footer (fond sombre) */
+.footer .fc-intro, .footer .frc-intro { color: rgba(255,255,255,0.62); }
+.footer .fc-list li, .footer .frc-list li { color: rgba(255,255,255,0.58); }
+.foot-legal a { color: rgba(255,255,255,0.68); }
+.foot-contact span { color: rgba(255,255,255,0.6); }
+/* Champ piège anti-spam (invisible, hors flux) */
+.hp-field { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+/* Message d'erreur d'envoi du formulaire contact */
+.cform-err { grid-column: 1 / -1; color: #ffc9bd; background: rgba(224,83,61,0.16); border: 1px solid rgba(224,83,61,0.45); padding: 12px 14px; border-radius: 12px; font-size: 14.5px; margin-top: 2px; }
 
 .wrap { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-inline: var(--gutter); }
 .section { padding-block: clamp(56px, 7vw, 96px); }
@@ -375,7 +388,7 @@ body.menu-open { overflow: hidden; }
 .hslide-inner { position: relative; z-index: 2; height: 100%; display: flex; align-items: center; max-width: none; padding-inline: clamp(84px, 7vw, 130px); }
 .hslide-copy { max-width: 640px; color: #fff; }
 .hslide-copy .eyebrow { color: var(--sage); letter-spacing: 0.08em; }
-.hslide-copy h1 { font-size: clamp(36px, 4.4vw, 58px); margin-top: 16px; color: #fff; }
+.hslide-copy h1, .hslide-copy .hslide-title { font-size: clamp(36px, 4.4vw, 58px); margin-top: 16px; color: #fff; }
 .hslide-sub { color: rgba(255,255,255,0.82); font-size: clamp(16px, 1.6vw, 19px); margin-top: 20px; max-width: 52ch; }
 .hslide-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
 .hslide .btn-ghost-hero {
@@ -446,7 +459,7 @@ body.menu-open { overflow: hidden; }
   .hslide-inner { order: 1; display: block; height: auto; padding: 40px var(--gutter) 12px; }
   .hslide-copy { max-width: none; color: var(--ink); }
   .hslide-copy .eyebrow { color: var(--green-deep); }
-  .hslide-copy h1 { color: var(--ink); }
+  .hslide-copy h1, .hslide-copy .hslide-title { color: var(--ink); }
   .hslide-sub { color: var(--muted); }
   .hslide .btn-ghost-hero { border-color: var(--line-strong); color: var(--ink); }
   .hslide-bg {
@@ -2043,7 +2056,7 @@ a.metier { text-decoration: none; color: inherit; }
   .hslide-inner { padding-inline: var(--gutter); }
 }
 @media (max-width: 600px) {
-  .hslide-copy h1 { font-size: clamp(30px, 8vw, 40px); }
+  .hslide-copy h1, .hslide-copy .hslide-title { font-size: clamp(30px, 8vw, 40px); }
   .hslide-actions { flex-direction: column; align-items: stretch; }
   .hslide-actions .btn { width: 100%; justify-content: center; }
   /* Filtres réalisations : scroll horizontal plutôt que coupés */

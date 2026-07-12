@@ -31,9 +31,16 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Home() {
   const content = await getContent();
   const html = renderPage("index", content);
+  const heroImg = content.hero?.slides?.[0]?.image;
   return (
     <>
       <JsonLd data={homeJsonLd(content)} />
+      {/* Preload de la VRAIE image hero (résolue depuis le contenu) pour le LCP */}
+      {heroImg && (
+        // eslint-disable-next-line @next/next/no-head-element
+        <link rel="preload" as="image" href={heroImg} fetchPriority="high" />
+      )}
+      <a href="#main" className="skip-link">Aller au contenu</a>
       <div id="site-root" dangerouslySetInnerHTML={{ __html: html }} />
     </>
   );

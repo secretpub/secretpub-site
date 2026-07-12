@@ -1,7 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://secretpub.fr";
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -41,18 +44,17 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <link rel="stylesheet" href="/site.css" />
-        {/* Preload the hero image + the design stylesheet for a fast first paint */}
-        <link
-          rel="preload"
-          as="image"
-          href="/assets/hero-showroom-opt.jpg"
-          fetchPriority="high"
-        />
+        {/* Preconnexion au stockage Supabase (images de la galerie / hero) */}
+        {SUPABASE_URL && (
+          <link rel="preconnect" href={SUPABASE_URL} crossOrigin="" />
+        )}
       </head>
       <body>
         {children}
         {/* The vendored, hand-tuned interactions run on the server-rendered DOM. */}
         <Script src="/site.js" strategy="afterInteractive" />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
