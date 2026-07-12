@@ -522,7 +522,22 @@
     var lbThumbs = box.querySelector('.lb-thumbs');
     var prevBtn = box.querySelector('.lb-prev');
     var nextBtn = box.querySelector('.lb-next');
-    var st = { item: null, srcs: [], idx: 0 };
+    // Chaque photo porte les infos de SON projet (titre, catégorie, société,
+    // description) → tout reste synchronisé quand on navigue entre projets fusionnés.
+    var st = { item: null, photos: [], idx: 0 };
+    function esc(s) {
+      return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+    function itemMeta(it) {
+      var catEl = it.querySelector('.ri-cat');
+      return {
+        cap: (it.querySelector('.ri-cap') || {}).textContent || '',
+        cat: catEl ? catEl.textContent.trim() : '',
+        soc: it.getAttribute('data-soc') || '',
+        desc: it.getAttribute('data-desc') ||
+          'Réalisation SecretPub : conçue, produite et posée par nos équipes, à la charte du client.'
+      };
+    }
 
     function slotSrc(img) {
       if (!img) return null;
@@ -541,24 +556,44 @@
       }).filter(function (s) { return !!s; });
     }
     function render() {
-      var multi = st.srcs.length > 1;
+      var photos = st.photos;
+      var cur = photos[st.idx] || {};
+      var multi = photos.length > 1;
+      var projSet = {};
+      photos.forEach(function (p) { projSet[p.proj] = 1; });
+      var multiProj = Object.keys(projSet).length > 1;
+
       lbImg.style.opacity = 0;
       lbImg.onload = function () { lbImg.style.opacity = 1; };
-      lbImg.setAttribute('src', st.srcs[st.idx] || '');
+      lbImg.setAttribute('src', cur.src || '');
+      // Infos synchronisées avec la photo (donc le projet) en cours.
+      lbTitle.textContent = cur.cap || '';
+      lbCat.textContent = cur.cat || '';
+      lbCat.style.display = cur.cat ? '' : 'none';
+      lbSocV.textContent = cur.soc || 'Communiqué sur demande';
+      lbSocRow.style.display = '';
+      lbDesc.textContent = cur.desc || '';
       prevBtn.style.display = multi ? '' : 'none';
       nextBtn.style.display = multi ? '' : 'none';
-      if (lbCount) { lbCount.style.display = multi ? '' : 'none'; lbCount.textContent = (st.idx + 1) + ' / ' + st.srcs.length; }
+      if (lbCount) { lbCount.style.display = multi ? '' : 'none'; lbCount.textContent = (st.idx + 1) + ' / ' + photos.length; }
+
       var html = '';
       if (multi) {
-        st.srcs.forEach(function (s, i) {
-          html += '<button class="lb-thumb' + (i === st.idx ? ' on' : '') + '" data-i="' + i + '" aria-label="Photo ' + (i + 1) + '"><img src="' + s + '" alt="" /></button>';
+        var lastProj = -1;
+        photos.forEach(function (p, i) {
+          if (multiProj && p.proj !== lastProj) {
+            var lbl = (p.proj === 0 ? 'Ce projet — ' : 'Autre projet — ') + esc(p.cap);
+            html += '<div class="lb-thumb-sep' + (p.proj === 0 ? ' first' : '') + '"><span>' + lbl + '</span></div>';
+            lastProj = p.proj;
+          }
+          html += '<button class="lb-thumb' + (i === st.idx ? ' on' : '') + '" data-i="' + i + '" aria-label="Photo ' + (i + 1) + '"><img src="' + esc(p.src) + '" alt="" /></button>';
         });
       }
       lbThumbs.innerHTML = html;
     }
     function go(d) {
-      if (!st.srcs.length) return;
-      st.idx = (st.idx + d + st.srcs.length) % st.srcs.length;
+      if (!st.photos.length) return;
+      st.idx = (st.idx + d + st.photos.length) % st.photos.length;
       render();
     }
     function open(item, startSrc) {
@@ -567,8 +602,7 @@
       // activée, on regroupe toutes les photos de tous ses projets dans une
       // seule galerie navigable (même s'ils ne sont pas tous visibles à l'écran).
       var normSoc = function (s) { return (s || '').trim().toLowerCase(); };
-      var soc = item.getAttribute('data-soc');
-      var nsoc = normSoc(soc);
+      var nsoc = normSoc(item.getAttribute('data-soc'));
       var mergeItems = [item];
       if (nsoc) {
         var same = Array.prototype.slice.call(grid.querySelectorAll('.real-item'))
@@ -578,21 +612,21 @@
           mergeItems = [item].concat(same.filter(function (it) { return it !== item; }));
         }
       }
-      var srcs = [];
-      mergeItems.forEach(function (it) {
-        filledSrcs(it).forEach(function (s) { if (srcs.indexOf(s) === -1) srcs.push(s); });
+      // Construit la liste des photos, chacune reliée aux infos de son projet.
+      var photos = [];
+      var seen = {};
+      mergeItems.forEach(function (it, pi) {
+        var meta = itemMeta(it);
+        filledSrcs(it).forEach(function (s) {
+          if (s && !seen[s]) {
+            seen[s] = 1;
+            photos.push({ src: s, cap: meta.cap, cat: meta.cat, soc: meta.soc, desc: meta.desc, proj: pi });
+          }
+        });
       });
-      st.srcs = srcs;
-      st.idx = Math.max(0, srcs.indexOf(startSrc));
-      var cap = (item.querySelector('.ri-cap') || {}).textContent || '';
-      var catEl = item.querySelector('.ri-cat');
-      lbTitle.textContent = cap;
-      lbCat.textContent = catEl ? catEl.textContent.trim() : '';
-      lbCat.style.display = catEl ? '' : 'none';
-      lbSocV.textContent = item.getAttribute('data-soc') || 'Communiqué sur demande';
-      lbSocRow.style.display = '';
-      lbDesc.textContent = item.getAttribute('data-desc')
-        || 'Réalisation SecretPub : conçue, produite et posée par nos équipes, à la charte du client.';
+      st.photos = photos;
+      var si = photos.map(function (p) { return p.src; }).indexOf(startSrc);
+      st.idx = si < 0 ? 0 : si;
       render();
       box.classList.add('open');
     }
