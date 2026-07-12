@@ -37,10 +37,10 @@
           <div class="ri-extra" hidden="">{{#extraPhotos}}<img class="ph" src="{{src}}" alt="{{alt}}"{{#cat}} data-pcat="{{cat}}"{{/cat}} loading="lazy" />{{/extraPhotos}}</div>
           <span class="ri-arrow" aria-hidden="true">↗</span>
           <div class="ri-overlay">
-            <span class="ri-cap">{{cap}}</span>
             {{#soc}}<span class="ri-soc">{{soc}}</span>{{/soc}}
+            <span class="ri-cap">{{cap}}</span>
+            <span class="ri-cat"><i class="ri-dot {{dotClass}}" aria-hidden="true"></i>{{catLabel}}</span>
           </div>
-          {{#catLabel}}<span class="ri-cat-badge"><i class="ri-dot {{dotClass}}" aria-hidden="true"></i>{{catLabel}}</span>{{/catLabel}}
         </div>
       </a>
       {{/realisations.items}}
