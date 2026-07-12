@@ -566,11 +566,13 @@
       // Fusion par client : si un projet du même client (Société) a la fusion
       // activée, on regroupe toutes les photos de tous ses projets dans une
       // seule galerie navigable (même s'ils ne sont pas tous visibles à l'écran).
+      var normSoc = function (s) { return (s || '').trim().toLowerCase(); };
       var soc = item.getAttribute('data-soc');
+      var nsoc = normSoc(soc);
       var mergeItems = [item];
-      if (soc) {
+      if (nsoc) {
         var same = Array.prototype.slice.call(grid.querySelectorAll('.real-item'))
-          .filter(function (it) { return it.getAttribute('data-soc') === soc; });
+          .filter(function (it) { return normSoc(it.getAttribute('data-soc')) === nsoc; });
         var anyMerge = same.some(function (it) { return it.getAttribute('data-merge') === '1'; });
         if (anyMerge && same.length > 1) {
           mergeItems = [item].concat(same.filter(function (it) { return it !== item; }));

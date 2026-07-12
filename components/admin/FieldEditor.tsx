@@ -1,8 +1,12 @@
 "use client";
-import { useRef, useState } from "react";
+import { createContext, useContext, useRef, useState } from "react";
 import { uploadImage } from "@/app/admin/actions";
 
 export type SetAt = (path: (string | number)[], value: unknown) => void;
+
+// Liste des clients existants (Sociétés déjà saisies) — pour l'autocomplétion
+// du champ Société, afin d'identifier/réutiliser le même client de façon fiable.
+export const ClientsContext = createContext<string[]>([]);
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -349,12 +353,27 @@ function CollapsibleItem({
 // Redimensionne (≤1920px) et convertit en WebP léger avant l'envoi. Les SVG/GIF
 // passent tels quels. Évite de dépasser la limite d'upload et allège le site.
 async function prepareUpload(file: File): Promise<{ blob: Blob; name: string }> {
-  const base = file.name.replace(/\.[^.]+$/, "") || "image";
-  if (!/^image\/(png|jpe?g|webp|avif)$/i.test(file.type)) {
-    return { blob: file, name: file.name || base };
+  let f: File = file;
+  // Photos iPhone (HEIC/HEIF) : conversion en JPEG car les navigateurs ne les
+  // lisent pas. Le décodeur (WASM) n'est chargé que si une photo HEIC arrive.
+  if (/heic|heif/i.test(file.type) || /\.(heic|heif)$/i.test(file.name)) {
+    try {
+      const heic2any = (await import("heic2any")).default;
+      const out = await heic2any({ blob: file, toType: "image/jpeg", quality: 0.92 });
+      const b = Array.isArray(out) ? out[0] : out;
+      f = new File([b], file.name.replace(/\.(heic|heif)$/i, ".jpg"), {
+        type: "image/jpeg",
+      });
+    } catch {
+      /* conversion échouée : on tente le fichier brut */
+    }
+  }
+  const base = f.name.replace(/\.[^.]+$/, "") || "image";
+  if (!/^image\/(png|jpe?g|webp|avif)$/i.test(f.type)) {
+    return { blob: f, name: f.name || base };
   }
   try {
-    const bitmap = await createImageBitmap(file);
+    const bitmap = await createImageBitmap(f);
     const MAX = 1920;
     const scale = Math.min(1, MAX / Math.max(bitmap.width, bitmap.height));
     const w = Math.max(1, Math.round(bitmap.width * scale));
@@ -363,15 +382,15 @@ async function prepareUpload(file: File): Promise<{ blob: Blob; name: string }> 
     canvas.width = w;
     canvas.height = h;
     const ctx = canvas.getContext("2d");
-    if (!ctx) return { blob: file, name: file.name };
+    if (!ctx) return { blob: f, name: f.name };
     ctx.drawImage(bitmap, 0, 0, w, h);
     const blob: Blob | null = await new Promise((res) =>
       canvas.toBlob((b) => res(b), "image/webp", 0.85),
     );
     bitmap.close?.();
-    return blob ? { blob, name: `${base}.webp` } : { blob: file, name: file.name };
+    return blob ? { blob, name: `${base}.webp` } : { blob: f, name: f.name };
   } catch {
-    return { blob: file, name: file.name };
+    return { blob: f, name: f.name };
   }
 }
 
@@ -433,7 +452,7 @@ function ImageField({
           <input
             ref={inputRef}
             type="file"
-            accept="image/*"
+            accept="image/*,.heic,.heif"
             hidden
             onChange={onFile}
           />
@@ -457,6 +476,7 @@ function ScalarField({
   setAt: SetAt;
   hideLabel?: boolean;
 }) {
+  const clients = useContext(ClientsContext);
   const key = String(fieldKey);
   const { label, hint } = describe(key, path);
   // Champs à choix → boutons à cliquer.
@@ -493,9 +513,10 @@ function ScalarField({
       </div>
     );
   }
-  // Champ avec suggestions (autocomplétion)
-  const dl = datalistFor(key, path);
-  if (dl && typeof value !== "boolean" && typeof value !== "number") {
+  // Champ avec suggestions (autocomplétion). Le champ Société propose les
+  // clients déjà existants pour toujours identifier le même client à l'identique.
+  const dl = key === "soc" ? clients : datalistFor(key, path);
+  if (dl && dl.length && typeof value !== "boolean" && typeof value !== "number") {
     const cur = value == null ? "" : String(value);
     const id = "dl-" + path.join("-");
     return (
@@ -702,7 +723,7 @@ function PhotoObjectField({
               Recentrer
             </button>
           )}
-          <input ref={inputRef} type="file" accept="image/*" hidden onChange={onFile} />
+          <input ref={inputRef} type="file" accept="image/*,.heic,.heif" hidden onChange={onFile} />
         </div>
         <ScalarField
           fieldKey="alt"
@@ -961,7 +982,7 @@ function ArrayEditor({
             <input
               ref={bulkRef}
               type="file"
-              accept="image/*"
+              accept="image/*,.heic,.heif"
               multiple
               hidden
               onChange={onBulk}

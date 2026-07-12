@@ -2,7 +2,7 @@
 import { useCallback, useMemo, useState } from "react";
 import type { SiteContent } from "@/lib/content/schema";
 import { saveContent } from "@/app/admin/actions";
-import { FieldEditor, type SetAt } from "./FieldEditor";
+import { FieldEditor, ClientsContext, type SetAt } from "./FieldEditor";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -63,6 +63,17 @@ export default function ContentEditor({ initial }: { initial: SiteContent }) {
     ];
   }, [content]);
 
+  // Clients existants (Sociétés déjà saisies) pour l'autocomplétion du champ Société.
+  const clients = useMemo(() => {
+    const items = content?.realisations?.items;
+    if (!Array.isArray(items)) return [] as string[];
+    const set = new Set<string>();
+    items.forEach((it: any) => {
+      if (it && typeof it.soc === "string" && it.soc.trim()) set.add(it.soc.trim());
+    });
+    return Array.from(set).sort((a, b) => a.localeCompare(b));
+  }, [content]);
+
   async function onSave() {
     setStatus({ t: "saving" });
     try {
@@ -105,7 +116,9 @@ export default function ContentEditor({ initial }: { initial: SiteContent }) {
           Modifiez le contenu ci-dessous. Les images se téléversent directement.
           « Enregistrer » publie sur le site en direct.
         </p>
-        <FieldEditor fieldKey={sel} value={content[sel]} path={[sel]} setAt={setAt} top />
+        <ClientsContext.Provider value={clients}>
+          <FieldEditor fieldKey={sel} value={content[sel]} path={[sel]} setAt={setAt} top />
+        </ClientsContext.Provider>
       </main>
       <div className="adm-savebar">
         <span
