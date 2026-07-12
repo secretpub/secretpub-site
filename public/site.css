@@ -1556,17 +1556,29 @@ a.metier { text-decoration: none; color: inherit; }
 .lb-next { right: 14px; }
 .lb-nav:hover { background: rgba(64,171,63,0.55); border-color: rgba(255,255,255,0.6); }
 .lb-nav:active { transform: translateY(-50%) scale(0.94); }
-.lb-thumbs { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
-/* Séparateur nommé entre les projets fusionnés d'un même client */
-.lb-thumb-sep {
-  flex-basis: 100%; width: 100%; margin: 8px 0 2px;
-  display: flex; align-items: center; gap: 10px;
-  font-family: var(--display); font-weight: 700; font-size: 10.5px;
-  letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage);
+/* Bande de miniatures : défile horizontalement (les photos ne remontent plus) */
+.lb-thumbs {
+  display: flex; gap: 8px; margin-top: 12px; flex-wrap: nowrap;
+  overflow-x: auto; overflow-y: hidden; padding-bottom: 6px; scroll-behavior: smooth;
+  scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.25) transparent;
+  -webkit-overflow-scrolling: touch;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 14px, #000 calc(100% - 14px), transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 14px, #000 calc(100% - 14px), transparent 100%);
 }
-.lb-thumb-sep span { white-space: nowrap; }
-.lb-thumb-sep::after { content: ""; flex: 1; height: 1px; background: rgba(255,255,255,0.16); }
-.lb-thumb-sep.first { color: rgba(255,255,255,0.45); margin-top: 2px; }
+.lb-thumbs .lb-thumb { flex: 0 0 auto; }
+.lb-thumbs::-webkit-scrollbar { height: 6px; }
+.lb-thumbs::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.22); border-radius: 999px; }
+/* Séparateur compact entre projets d'un même client : fine barre + petit label vertical */
+.lb-thumb-sep {
+  flex: 0 0 auto; align-self: stretch; display: flex; align-items: center;
+  padding-left: 10px; margin-left: 3px; border-left: 1px solid rgba(255,255,255,0.16);
+}
+.lb-thumb-sep span {
+  writing-mode: vertical-rl; transform: rotate(180deg);
+  font-family: var(--display); font-weight: 700; font-size: 9px;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage);
+  white-space: nowrap; max-height: 52px; overflow: hidden;
+}
 .lb-thumb {
   width: 72px; height: 52px; border-radius: 9px; overflow: hidden; padding: 0;
   border: 2px solid rgba(255,255,255,0.18); background: #0e120f; cursor: pointer;

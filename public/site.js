@@ -579,17 +579,18 @@
 
       var html = '';
       if (multi) {
-        var lastProj = -1;
         photos.forEach(function (p, i) {
-          if (multiProj && p.proj !== lastProj) {
-            var lbl = (p.proj === 0 ? 'Ce projet — ' : 'Autre projet — ') + esc(p.cap);
-            html += '<div class="lb-thumb-sep' + (p.proj === 0 ? ' first' : '') + '"><span>' + lbl + '</span></div>';
-            lastProj = p.proj;
+          // Fin séparateur + petit label entre deux projets d'un même client.
+          if (multiProj && i > 0 && p.proj !== photos[i - 1].proj) {
+            html += '<div class="lb-thumb-sep"><span>' + esc(p.cap) + '</span></div>';
           }
           html += '<button class="lb-thumb' + (i === st.idx ? ' on' : '') + '" data-i="' + i + '" aria-label="Photo ' + (i + 1) + '"><img src="' + esc(p.src) + '" alt="" /></button>';
         });
       }
       lbThumbs.innerHTML = html;
+      // Garde la miniature active visible dans la bande qui défile.
+      var onThumb = lbThumbs.querySelector('.lb-thumb.on');
+      if (onThumb && onThumb.scrollIntoView) onThumb.scrollIntoView({ block: 'nearest', inline: 'center' });
     }
     function go(d) {
       if (!st.photos.length) return;
