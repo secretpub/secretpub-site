@@ -1,4 +1,4 @@
-/* SecretPub — interactions (brief v2 : précision, pas d'agitation) */
+/* SecretPub - interactions (brief v2 : précision, pas d'agitation) */
 (function () {
   'use strict';
 
@@ -492,7 +492,7 @@
     hGo(0); hReset();
   }
 
-  // Visionneuse (lightbox) des réalisations — multi-photos par projet
+  // Visionneuse (lightbox) des réalisations - multi-photos par projet
   (function () {
     var grid = document.getElementById('realGrid');
     if (!grid) return;
@@ -636,7 +636,7 @@
     }
     function close() { box.classList.remove('open'); lbImg.removeAttribute('src'); st.item = null; }
 
-    // — Navigation multi-photos directement sur la vignette —
+    // - Navigation multi-photos directement sur la vignette -
     function tileRefresh(item) {
       var srcs = filledSrcs(item);
       var multi = srcs.length > 1;
