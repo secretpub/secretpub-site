@@ -58,6 +58,7 @@
         "dotClass": "signa",
         "soc": "Pickup La Poste",
         "desc": "Habillage complet d'un relais Pickup : pose d'adhésif imprimé et de vinyle adhésif monochrome découpé à la forme.",
+        "mergeClient": false,
         "mainPhoto": {
           "src": "/assets/realisations/pickup-1.jpg",
           "alt": "Enseigne posée"
@@ -81,6 +82,7 @@
         "dotClass": "signa",
         "soc": "Boufi",
         "desc": "Habillage complet de la façade Boufi : caisson en tôle aluminium sur toute la façade, lettres boîtiers lumineuses, caisson full plexi 5 faces, lettres PVC peintes, tapis d'entrée personnalisé, décoration intérieure et caisson lumineux intérieur.",
+        "mergeClient": false,
         "mainPhoto": {
           "src": "/assets/realisations/boufi-1.jpg",
           "alt": "Habillage de façade"
@@ -104,6 +106,7 @@
         "dotClass": "signa",
         "soc": "NS Store",
         "desc": "Enseignes lumineuses pour la devanture NS Store : caissons lumineux avec lettres plexi relief et vitrophanie sur-mesure sur les vitrines cintrées.",
+        "mergeClient": false,
         "mainPhoto": {
           "src": "/assets/realisations/nsstore-1.jpg",
           "alt": "Enseignes lumineuses"
@@ -127,6 +130,7 @@
         "dotClass": "print",
         "soc": "",
         "desc": "",
+        "mergeClient": false,
         "mainPhoto": {
           "src": "",
           "alt": "Brochures livrées"
@@ -150,6 +154,7 @@
         "dotClass": "textile",
         "soc": "Batiman",
         "desc": "Sweats personnalisés pour les équipes Batiman : marquage cœur et grand dos, pour un rendu net et durable qui affiche la marque sur tous les chantiers.",
+        "mergeClient": false,
         "mainPhoto": {
           "src": "/assets/realisations/batiman-textile.jpg",
           "alt": "Textile personnalisé"
@@ -173,6 +178,7 @@
         "dotClass": "goodies",
         "soc": "",
         "desc": "",
+        "mergeClient": false,
         "mainPhoto": {
           "src": "",
           "alt": "Objets publicitaires"
@@ -196,6 +202,7 @@
         "dotClass": "signa",
         "soc": "Ameliora",
         "desc": "Bâche échafaudage grand format imprimée et posée sur façade en travaux : visibilité maximale pour le client pendant toute la durée du chantier.",
+        "mergeClient": false,
         "mainPhoto": {
           "src": "/assets/realisations/ameliora-bache.jpg",
           "alt": "Bâche échafaudage"
@@ -219,6 +226,7 @@
         "dotClass": "packaging",
         "soc": "Istanbul Kebab",
         "desc": "Sacs papier kraft personnalisés, imprimés au logo du restaurant : un emballage à emporter solide et à l'image de l'enseigne.",
+        "mergeClient": false,
         "mainPhoto": {
           "src": "/assets/realisations/istanbul-sacs.jpg",
           "alt": "Sacs papier kraft"
@@ -242,6 +250,7 @@
         "dotClass": "print",
         "soc": "",
         "desc": "",
+        "mergeClient": false,
         "mainPhoto": {
           "src": "",
           "alt": "PLV en magasin"
@@ -265,6 +274,7 @@
         "dotClass": "textile",
         "soc": "",
         "desc": "",
+        "mergeClient": false,
         "mainPhoto": {
           "src": "",
           "alt": "Série textile réseau"
@@ -288,6 +298,7 @@
         "dotClass": "goodies",
         "soc": "",
         "desc": "",
+        "mergeClient": false,
         "mainPhoto": {
           "src": "",
           "alt": "Tote bags et mugs"
@@ -311,6 +322,7 @@
         "dotClass": "packaging",
         "soc": "",
         "desc": "",
+        "mergeClient": false,
         "mainPhoto": {
           "src": "",
           "alt": "Emballage sur-mesure"
@@ -334,6 +346,7 @@
         "dotClass": "signa",
         "soc": "",
         "desc": "",
+        "mergeClient": false,
         "mainPhoto": {
           "src": "",
           "alt": "Véhicule marqué"
@@ -357,6 +370,7 @@
         "dotClass": "print",
         "soc": "",
         "desc": "",
+        "mergeClient": false,
         "extra": true,
         "mainPhoto": {
           "src": "",
@@ -381,6 +395,7 @@
         "dotClass": "textile",
         "soc": "",
         "desc": "",
+        "mergeClient": false,
         "extra": true,
         "mainPhoto": {
           "src": "",
@@ -405,6 +420,7 @@
         "dotClass": "packaging",
         "soc": "",
         "desc": "",
+        "mergeClient": false,
         "extra": true,
         "mainPhoto": {
           "src": "",
@@ -429,6 +445,7 @@
         "dotClass": "goodies",
         "soc": "",
         "desc": "",
+        "mergeClient": false,
         "extra": true,
         "mainPhoto": {
           "src": "",
@@ -453,6 +470,7 @@
         "dotClass": "print",
         "soc": "",
         "desc": "",
+        "mergeClient": false,
         "extra": true,
         "mainPhoto": {
           "src": "",

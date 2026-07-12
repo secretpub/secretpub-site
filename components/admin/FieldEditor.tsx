@@ -99,6 +99,10 @@ const DESCR: Record<string, Descr> = {
   "items.soc": D("Société (client)"),
   "items.desc": D("Description"),
   "items.extra": D("Masqué au départ", "Visible seulement après « voir plus »."),
+  "items.mergeClient": D(
+    "Fusionner les projets de ce client",
+    "Regroupe dans une seule galerie toutes les photos des projets ayant la même Société : cliquer sur l'un d'eux les affiche tous d'un coup.",
+  ),
   mainPhoto: D("Photo principale"),
   extraPhotos: D("Photos supplémentaires"),
   // secteurs
@@ -630,7 +634,8 @@ function PhotoObjectField({
       <div
         className="fe-photo-box"
         ref={boxRef}
-        style={{ cursor: withFocal && src ? "crosshair" : "default" }}
+        style={{ cursor: withFocal && src ? "crosshair" : "pointer" }}
+        onClick={!withFocal || !src ? () => inputRef.current?.click() : undefined}
         onPointerDown={
           withFocal
             ? (e) => {
@@ -819,6 +824,33 @@ function ArrayEditor({
   // Glisser-déposer : on maintient la poignée ⠿, on glisse, on relâche pour placer.
   const [dragI, setDragI] = useState<number | null>(null);
   const [overI, setOverI] = useState<number | null>(null);
+  // Ajout groupé de photos (bulk) : téléverse plusieurs fichiers d'un coup et
+  // crée automatiquement le bon nombre de cartes photo.
+  const bulkRef = useRef<HTMLInputElement>(null);
+  const [bulkBusy, setBulkBusy] = useState(false);
+  const [bulkN, setBulkN] = useState(0);
+  async function onBulk(e: React.ChangeEvent<HTMLInputElement>) {
+    const files = Array.from(e.target.files || []);
+    if (!files.length) return;
+    setBulkBusy(true);
+    const added: unknown[] = [];
+    for (let k = 0; k < files.length; k++) {
+      setBulkN(k + 1);
+      try {
+        const { blob, name } = await prepareUpload(files[k]);
+        const fd = new FormData();
+        fd.append("file", blob, name);
+        const { url } = await uploadImage(fd);
+        added.push({ src: url, alt: "", cat: "" });
+      } catch {
+        /* skip ce fichier */
+      }
+    }
+    setBulkBusy(false);
+    setBulkN(0);
+    if (added.length) set([...arr, ...added]);
+    if (bulkRef.current) bulkRef.current.value = "";
+  }
   const endDrag = () => {
     setDragI(null);
     setOverI(null);
@@ -912,9 +944,31 @@ function ArrayEditor({
           </CollapsibleItem>
         ),
       )}
-      <button className="adm-btn sm fe-add" type="button" onClick={add}>
-        + Ajouter {itemName.toLowerCase()}
-      </button>
+      <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 4 }}>
+        <button className="adm-btn sm fe-add" type="button" onClick={add}>
+          + Ajouter {itemName.toLowerCase()}
+        </button>
+        {isPhotoArray && (
+          <>
+            <button
+              className="adm-btn sm"
+              type="button"
+              onClick={() => bulkRef.current?.click()}
+              disabled={bulkBusy}
+            >
+              {bulkBusy ? `Envoi ${bulkN}…` : "+ Ajouter plusieurs photos"}
+            </button>
+            <input
+              ref={bulkRef}
+              type="file"
+              accept="image/*"
+              multiple
+              hidden
+              onChange={onBulk}
+            />
+          </>
+        )}
+      </div>
     </div>
   );
   if (top) return list;

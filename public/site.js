@@ -563,8 +563,25 @@
     }
     function open(item, startSrc) {
       st.item = item;
-      st.srcs = filledSrcs(item);
-      st.idx = Math.max(0, st.srcs.indexOf(startSrc));
+      // Fusion par client : si un projet du même client (Société) a la fusion
+      // activée, on regroupe toutes les photos de tous ses projets dans une
+      // seule galerie navigable (même s'ils ne sont pas tous visibles à l'écran).
+      var soc = item.getAttribute('data-soc');
+      var mergeItems = [item];
+      if (soc) {
+        var same = Array.prototype.slice.call(grid.querySelectorAll('.real-item'))
+          .filter(function (it) { return it.getAttribute('data-soc') === soc; });
+        var anyMerge = same.some(function (it) { return it.getAttribute('data-merge') === '1'; });
+        if (anyMerge && same.length > 1) {
+          mergeItems = [item].concat(same.filter(function (it) { return it !== item; }));
+        }
+      }
+      var srcs = [];
+      mergeItems.forEach(function (it) {
+        filledSrcs(it).forEach(function (s) { if (srcs.indexOf(s) === -1) srcs.push(s); });
+      });
+      st.srcs = srcs;
+      st.idx = Math.max(0, srcs.indexOf(startSrc));
       var cap = (item.querySelector('.ri-cap') || {}).textContent || '';
       var catEl = item.querySelector('.ri-cat');
       lbTitle.textContent = cap;
