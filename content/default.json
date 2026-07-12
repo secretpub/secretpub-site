@@ -352,13 +352,18 @@
     "siteName": "SecretPub",
     "title": "SecretPub Valence : signalétique, print et textile pour les professionnels",
     "description": "SecretPub conçoit, produit et pose toute votre communication physique : enseignes et signalétique, imprimerie, textile personnalisé. Production maîtrisée de bout en bout, à Valence et partout en France.",
-    "ogImage": "/assets/logo-full.png",
+    "ogImage": "/assets/og-cover.jpg",
     "catalogueUrl": "https://secretpub-catalogue.vercel.app/catalogue",
     "phoneDisplay": "09 83 80 93 12",
     "phoneHref": "tel:+33983809312",
     "email": "contact@secretpub.fr",
     "addressLine": "31 Rue Jean Jullien Davin, 26000 Valence",
-    "googleReviewUrl": "https://share.google/icRvqS7HRzNh8U7oh"
+    "googleReviewUrl": "https://share.google/icRvqS7HRzNh8U7oh",
+    "geoLat": 44.9032785,
+    "geoLng": 4.8996786,
+    "ratingValue": "5.0",
+    "reviewCount": 44,
+    "priceRange": "€€"
   },
   "nav": [
     {

@@ -1,6 +1,9 @@
 import type { SiteContent } from "./schema";
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://secretpub.fr";
+const BIZ_ID = SITE_URL + "#business";
 
 function abs(p: string): string {
   if (!p) return SITE_URL;
@@ -9,17 +12,26 @@ function abs(p: string): string {
 }
 
 function localBusiness(c: SiteContent) {
-  // "31 Rue Jean Jullien Davin, 26000 Valence"
+  const meta = c.meta as any;
   const parts = c.meta.addressLine.split(",");
   const street = (parts[0] || "").trim();
   const cityPart = (parts[1] || "").trim(); // "26000 Valence"
   const m = cityPart.match(/(\d{5})\s+(.*)/);
-  return {
-    "@type": "LocalBusiness",
+  const socials = (c.footer?.socials || [])
+    .map((s: any) => s.href)
+    .filter((h: string) => /^https?:/.test(h));
+
+  const biz: any = {
+    "@type": ["LocalBusiness", "ProfessionalService"],
+    "@id": BIZ_ID,
     name: c.meta.siteName,
     description: c.meta.description,
+    url: SITE_URL,
     telephone: c.meta.phoneHref.replace("tel:", ""),
     email: c.meta.email,
+    image: abs(c.meta.ogImage),
+    logo: abs("/assets/logo-full.png"),
+    priceRange: meta.priceRange || "€€",
     address: {
       "@type": "PostalAddress",
       streetAddress: street,
@@ -27,16 +39,59 @@ function localBusiness(c: SiteContent) {
       addressLocality: m ? m[2] : "Valence",
       addressCountry: "FR",
     },
-    image: abs(c.meta.ogImage),
-    url: SITE_URL,
-    areaServed: "France",
-    openingHours: "Mo-Fr 09:00-18:00",
+    areaServed: [
+      { "@type": "City", name: "Valence" },
+      { "@type": "AdministrativeArea", name: "Drôme" },
+      { "@type": "Country", name: "France" },
+    ],
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "18:00",
+      },
+    ],
   };
+
+  if (meta.geoLat && meta.geoLng) {
+    biz.geo = {
+      "@type": "GeoCoordinates",
+      latitude: meta.geoLat,
+      longitude: meta.geoLng,
+    };
+  }
+  if (socials.length) biz.sameAs = socials;
+  if (meta.googleReviewUrl) biz.hasMap = meta.googleReviewUrl;
+  if (meta.ratingValue && meta.reviewCount) {
+    biz.aggregateRating = {
+      "@type": "AggregateRating",
+      ratingValue: String(meta.ratingValue),
+      reviewCount: Number(meta.reviewCount),
+      bestRating: "5",
+    };
+  }
+  const testimonials = c.realisations?.testimonials || [];
+  if (testimonials.length) {
+    biz.review = testimonials.slice(0, 5).map((t: any) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: t.name || "Client" },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody: t.quote,
+    }));
+  }
+  return biz;
 }
 
 export function homeJsonLd(c: SiteContent): object[] {
   return [
     { "@context": "https://schema.org", ...localBusiness(c) },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: c.meta.siteName,
+      url: SITE_URL,
+    },
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -59,9 +114,14 @@ export function serviceJsonLd(
       "@type": "Service",
       name: opts.name,
       serviceType: opts.serviceType,
-      provider: { "@context": "https://schema.org", ...localBusiness(c) },
-      areaServed: "France",
+      provider: { "@id": BIZ_ID },
+      areaServed: [
+        { "@type": "City", name: "Valence" },
+        { "@type": "AdministrativeArea", name: "Drôme" },
+        { "@type": "Country", name: "France" },
+      ],
     },
+    { "@context": "https://schema.org", ...localBusiness(c) },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",

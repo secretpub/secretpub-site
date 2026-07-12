@@ -19,8 +19,21 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESC,
     locale: "fr_FR",
+    images: [
+      {
+        url: "/assets/og-cover.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Votre espace de commande SecretPub",
+      },
+    ],
   },
-  twitter: { card: "summary_large_image", title: TITLE, description: DESC },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESC,
+    images: ["/assets/og-cover.jpg"],
+  },
 };
 
 export default async function EspaceDeCommande() {
