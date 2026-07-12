@@ -9,7 +9,7 @@
         "title": "Signalétique",
         "descHtml": "Enseignes, totems, oriflammes et stands garantis extérieur. De l'étude à la pose, on rend votre point de vente visible de loin.",
         "linkLabel": "Voir nos réalisations signalétique",
-        "img": "/assets/signaletique-products-opt.png",
+        "img": "/assets/signaletique-products-opt.webp",
         "alt": "Réalisations signalétique SecretPub : enseigne ronde, kakémono roll-up, oriflamme et stand pliant noirs floqués SecretPub",
         "reverse": false
       },
@@ -18,7 +18,7 @@
         "title": "Print",
         "descHtml": "Cartes, brochures, affiches, PLV et grand format. Couleurs calibrées, finitions soignées et BAT sous 24 h, à vos quantités réelles.",
         "linkLabel": "Voir nos réalisations print",
-        "img": "/assets/print-products-opt.png",
+        "img": "/assets/print-products-opt.webp",
         "alt": "Réalisations print SecretPub : brochures, supports imprimés et cartes de visite à la charte SecretPub",
         "reverse": true
       },
@@ -27,7 +27,7 @@
         "title": "Textile",
         "descHtml": "Broderie, flocage et sérigraphie sur des textiles pros qui tiennent au lavage. Du t-shirt à la tenue complète du réseau.",
         "linkLabel": "Voir nos réalisations textile",
-        "img": "/assets/textile-products-opt.png",
+        "img": "/assets/textile-products-opt.webp",
         "alt": "Réalisations textile SecretPub : t-shirts, polo, casquette et bodywarmer noirs brodés SecretPub",
         "reverse": false
       }
@@ -43,7 +43,7 @@
         "title": "Goodies",
         "descHtml": "Tote bags, mugs, gourdes, stylos… Des objets utiles, donc gardés et vus longtemps, qui font voyager votre marque.",
         "linkLabel": "Voir nos goodies",
-        "img": "/assets/goodies-products-opt.png",
+        "img": "/assets/goodies-products-opt.webp",
         "alt": "Goodies SecretPub : mug, désodorisant voiture, stylo et tote bag personnalisés SecretPub",
         "reverse": true
       },
@@ -52,7 +52,7 @@
         "title": "Packaging",
         "descHtml": "Boîtes, étuis et emballages sur-mesure, du kraft au premium. Parfait pour donner vie à votre restaurant : simple, efficace, mémorable dès le premier contact.",
         "linkLabel": "Voir nos packagings",
-        "img": "/assets/packaging-products-opt.png",
+        "img": "/assets/packaging-products-opt.webp",
         "alt": "Packaging SecretPub : sac, boîte, gobelet et papier de soie personnalisés SecretPub",
         "reverse": false
       }

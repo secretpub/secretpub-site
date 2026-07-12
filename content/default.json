@@ -435,7 +435,7 @@
         "eyebrow": "Logistique intégrée",
         "titleHtml": "On livre, on conditionne, on <span class=\"mark\">pose</span>. Partout en France.",
         "sub": "Colis préparés site par site, expéditions suivies et pose sur place : votre communication arrive prête, au bon endroit, au bon moment.",
-        "image": "/assets/hero-logistique-opt.jpg",
+        "image": "/assets/hero-logistique-opt.webp",
         "alt": "Camion SecretPub chargé de colis, livraison et logistique partout en France",
         "priority": false,
         "actions": [
@@ -486,7 +486,7 @@
         "title": "Signalétique",
         "descHtml": "Enseignes, totems, oriflammes et stands garantis extérieur. De l'étude à la pose, on rend votre point de vente visible de loin.",
         "linkLabel": "Voir nos réalisations signalétique",
-        "img": "/assets/signaletique-products-opt.png",
+        "img": "/assets/signaletique-products-opt.webp",
         "alt": "Réalisations signalétique SecretPub : enseigne ronde, kakémono roll-up, oriflamme et stand pliant noirs floqués SecretPub",
         "reverse": false
       },
@@ -495,7 +495,7 @@
         "title": "Print",
         "descHtml": "Cartes, brochures, affiches, PLV et grand format. Couleurs calibrées, finitions soignées et BAT sous 24 h, à vos quantités réelles.",
         "linkLabel": "Voir nos réalisations print",
-        "img": "/assets/print-products-opt.png",
+        "img": "/assets/print-products-opt.webp",
         "alt": "Réalisations print SecretPub : brochures, supports imprimés et cartes de visite à la charte SecretPub",
         "reverse": true
       },
@@ -504,7 +504,7 @@
         "title": "Textile",
         "descHtml": "Broderie, flocage et sérigraphie sur des textiles pros qui tiennent au lavage. Du t-shirt à la tenue complète du réseau.",
         "linkLabel": "Voir nos réalisations textile",
-        "img": "/assets/textile-products-opt.png",
+        "img": "/assets/textile-products-opt.webp",
         "alt": "Réalisations textile SecretPub : t-shirts, polo, casquette et bodywarmer noirs brodés SecretPub",
         "reverse": false
       }
@@ -520,7 +520,7 @@
         "title": "Goodies",
         "descHtml": "Tote bags, mugs, gourdes, stylos… Des objets utiles, donc gardés et vus longtemps, qui font voyager votre marque.",
         "linkLabel": "Voir nos goodies",
-        "img": "/assets/goodies-products-opt.png",
+        "img": "/assets/goodies-products-opt.webp",
         "alt": "Goodies SecretPub : mug, désodorisant voiture, stylo et tote bag personnalisés SecretPub",
         "reverse": true
       },
@@ -529,7 +529,7 @@
         "title": "Packaging",
         "descHtml": "Boîtes, étuis et emballages sur-mesure, du kraft au premium. Parfait pour donner vie à votre restaurant : simple, efficace, mémorable dès le premier contact.",
         "linkLabel": "Voir nos packagings",
-        "img": "/assets/packaging-products-opt.png",
+        "img": "/assets/packaging-products-opt.webp",
         "alt": "Packaging SecretPub : sac, boîte, gobelet et papier de soie personnalisés SecretPub",
         "reverse": false
       }
@@ -544,7 +544,7 @@
         "i": "0",
         "n": "01",
         "title": "Restauration",
-        "img": "/assets/secteur-restauration-opt.jpg",
+        "img": "/assets/secteur-restauration-opt.webp",
         "alt": "Inspiration Restauration : enseigne, menus, PLV, tenues",
         "detailsHtml": "Enseigne · menus · packaging · tenues d'équipe"
       },
@@ -552,7 +552,7 @@
         "i": "1",
         "n": "02",
         "title": "Promoteur immobilier",
-        "img": "/assets/secteur-immobilier-opt.jpg",
+        "img": "/assets/secteur-immobilier-opt.webp",
         "alt": "Inspiration Promoteur immobilier : panneaux de programme, palissades, signalétique",
         "detailsHtml": "Panneaux de programme · palissades · kakémonos · bâches · signalétique de livraison"
       },
@@ -560,7 +560,7 @@
         "i": "2",
         "n": "03",
         "title": "BTP et rénovation",
-        "img": "/assets/secteur-btp-opt.jpg",
+        "img": "/assets/secteur-btp-opt.webp",
         "alt": "Inspiration BTP : panneaux de chantier, véhicules, EPI",
         "detailsHtml": "Panneaux de chantier · bâche échafaudage · signalétique · tenues d'équipe · totem"
       },
@@ -576,7 +576,7 @@
         "i": "4",
         "n": "05",
         "title": "Club de sport",
-        "img": "/assets/secteur-sport-opt.jpg",
+        "img": "/assets/secteur-sport-opt.webp",
         "alt": "Inspiration Club de sport : maillots, banderoles, signalétique",
         "detailsHtml": "Maillots personnalisés · banderoles · drapeaux oriflammes · tonnelle · goodies"
       },
@@ -584,7 +584,7 @@
         "i": "5",
         "n": "06",
         "title": "Beauté et esthétique",
-        "img": "/assets/secteur-esthetique-opt.jpg",
+        "img": "/assets/secteur-esthetique-opt.webp",
         "alt": "Inspiration Esthétique : enseigne lumineuse, vitrophanie, packaging",
         "detailsHtml": "Enseigne · vitrophanie · cartes de fidélité · dépliants · décoration intérieure"
       }
@@ -628,7 +628,7 @@
         "chipIconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"5\" r=\"2.3\"/><circle cx=\"5\" cy=\"18.5\" r=\"2.3\"/><circle cx=\"19\" cy=\"18.5\" r=\"2.3\"/><path d=\"M12 7.3v3.4M11 11.4 6.4 16.6M13 11.4l4.6 5.2\"/></svg>",
         "title": "Franchise, réseau, promoteur",
         "desc": "La cohérence de votre marque sur tous vos sites, sans y passer vos semaines. Vos équipes commandent, le siège pilote.",
-        "img": "/assets/hero-logistique-opt.jpg",
+        "img": "/assets/hero-logistique-opt.webp",
         "alt": "Photo réseau / franchise",
         "list": [
           "Charte respectée partout",
@@ -714,16 +714,16 @@
         "desc": "Habillage complet d'un relais Pickup : pose d'adhésif imprimé et de vinyle adhésif monochrome découpé à la forme.",
         "mergeClient": false,
         "mainPhoto": {
-          "src": "/assets/realisations/pickup-1.jpg",
+          "src": "/assets/realisations/pickup-1.webp",
           "alt": "Enseigne posée"
         },
         "extraPhotos": [
           {
-            "src": "/assets/realisations/pickup-2.jpg",
+            "src": "/assets/realisations/pickup-2.webp",
             "alt": "Photo 2 du projet"
           },
           {
-            "src": "/assets/realisations/pickup-3.jpg",
+            "src": "/assets/realisations/pickup-3.webp",
             "alt": "Photo 3 du projet"
           }
         ]
@@ -738,16 +738,16 @@
         "desc": "Habillage complet de la façade Boufi : caisson en tôle aluminium sur toute la façade, lettres boîtiers lumineuses, caisson full plexi 5 faces, lettres PVC peintes, tapis d'entrée personnalisé, décoration intérieure et caisson lumineux intérieur.",
         "mergeClient": false,
         "mainPhoto": {
-          "src": "/assets/realisations/boufi-1.jpg",
+          "src": "/assets/realisations/boufi-1.webp",
           "alt": "Habillage de façade"
         },
         "extraPhotos": [
           {
-            "src": "/assets/realisations/boufi-2.jpg",
+            "src": "/assets/realisations/boufi-2.webp",
             "alt": "Photo 2 du projet"
           },
           {
-            "src": "/assets/realisations/boufi-3.jpg",
+            "src": "/assets/realisations/boufi-3.webp",
             "alt": "Photo 3 du projet"
           }
         ]
@@ -762,7 +762,7 @@
         "desc": "Enseignes lumineuses pour la devanture NS Store : caissons lumineux avec lettres plexi relief et vitrophanie sur-mesure sur les vitrines cintrées.",
         "mergeClient": false,
         "mainPhoto": {
-          "src": "/assets/realisations/nsstore-1.jpg",
+          "src": "/assets/realisations/nsstore-1.webp",
           "alt": "Enseignes lumineuses"
         },
         "extraPhotos": [
@@ -858,7 +858,7 @@
         "desc": "Bâche échafaudage grand format imprimée et posée sur façade en travaux : visibilité maximale pour le client pendant toute la durée du chantier.",
         "mergeClient": false,
         "mainPhoto": {
-          "src": "/assets/realisations/ameliora-bache.jpg",
+          "src": "/assets/realisations/ameliora-bache.webp",
           "alt": "Bâche échafaudage"
         },
         "extraPhotos": [
@@ -882,7 +882,7 @@
         "desc": "Sacs papier kraft personnalisés, imprimés au logo du restaurant : un emballage à emporter solide et à l'image de l'enseigne.",
         "mergeClient": false,
         "mainPhoto": {
-          "src": "/assets/realisations/istanbul-sacs.jpg",
+          "src": "/assets/realisations/istanbul-sacs.webp",
           "alt": "Sacs papier kraft"
         },
         "extraPhotos": [
@@ -1302,7 +1302,7 @@
     "pill": "10 places limitées · jusqu'à -20% sur le catalogue",
     "titleHtml": "L'offre réseaux ouvre bientôt.<br />Réservez votre place.",
     "body": "Un espace de commande à votre charte pour tous vos points de vente, des tarifs groupés et un seul interlocuteur pour toute votre communication physique. Les 10 premiers réseaux inscrits bénéficient de tarifs préférentiels, jusqu'à -20% sur tout le catalogue. Inscrivez-vous à la liste d'attente : on vous contacte dès qu'une place se libère.",
-    "image": "/assets/plugprint-console-2-opt.png",
+    "image": "/assets/plugprint-console-2-opt.webp",
     "imageAlt": "Aperçu de la console réseau de votre espace de commande, à votre charte",
     "caption": "Un aperçu de votre console réseau, à votre charte.",
     "emailPlaceholder": "Votre email professionnel",

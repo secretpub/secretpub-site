@@ -60,16 +60,16 @@
         "desc": "Habillage complet d'un relais Pickup : pose d'adhésif imprimé et de vinyle adhésif monochrome découpé à la forme.",
         "mergeClient": false,
         "mainPhoto": {
-          "src": "/assets/realisations/pickup-1.jpg",
+          "src": "/assets/realisations/pickup-1.webp",
           "alt": "Enseigne posée"
         },
         "extraPhotos": [
           {
-            "src": "/assets/realisations/pickup-2.jpg",
+            "src": "/assets/realisations/pickup-2.webp",
             "alt": "Photo 2 du projet"
           },
           {
-            "src": "/assets/realisations/pickup-3.jpg",
+            "src": "/assets/realisations/pickup-3.webp",
             "alt": "Photo 3 du projet"
           }
         ]
@@ -84,16 +84,16 @@
         "desc": "Habillage complet de la façade Boufi : caisson en tôle aluminium sur toute la façade, lettres boîtiers lumineuses, caisson full plexi 5 faces, lettres PVC peintes, tapis d'entrée personnalisé, décoration intérieure et caisson lumineux intérieur.",
         "mergeClient": false,
         "mainPhoto": {
-          "src": "/assets/realisations/boufi-1.jpg",
+          "src": "/assets/realisations/boufi-1.webp",
           "alt": "Habillage de façade"
         },
         "extraPhotos": [
           {
-            "src": "/assets/realisations/boufi-2.jpg",
+            "src": "/assets/realisations/boufi-2.webp",
             "alt": "Photo 2 du projet"
           },
           {
-            "src": "/assets/realisations/boufi-3.jpg",
+            "src": "/assets/realisations/boufi-3.webp",
             "alt": "Photo 3 du projet"
           }
         ]
@@ -108,7 +108,7 @@
         "desc": "Enseignes lumineuses pour la devanture NS Store : caissons lumineux avec lettres plexi relief et vitrophanie sur-mesure sur les vitrines cintrées.",
         "mergeClient": false,
         "mainPhoto": {
-          "src": "/assets/realisations/nsstore-1.jpg",
+          "src": "/assets/realisations/nsstore-1.webp",
           "alt": "Enseignes lumineuses"
         },
         "extraPhotos": [
@@ -204,7 +204,7 @@
         "desc": "Bâche échafaudage grand format imprimée et posée sur façade en travaux : visibilité maximale pour le client pendant toute la durée du chantier.",
         "mergeClient": false,
         "mainPhoto": {
-          "src": "/assets/realisations/ameliora-bache.jpg",
+          "src": "/assets/realisations/ameliora-bache.webp",
           "alt": "Bâche échafaudage"
         },
         "extraPhotos": [
@@ -228,7 +228,7 @@
         "desc": "Sacs papier kraft personnalisés, imprimés au logo du restaurant : un emballage à emporter solide et à l'image de l'enseigne.",
         "mergeClient": false,
         "mainPhoto": {
-          "src": "/assets/realisations/istanbul-sacs.jpg",
+          "src": "/assets/realisations/istanbul-sacs.webp",
           "alt": "Sacs papier kraft"
         },
         "extraPhotos": [
