@@ -38,6 +38,11 @@ const D = (label: string, hint?: string): Descr => ({ label, hint });
 // catLabel + dotClass sont pilotés par le bouton « Catégorie ».
 const HIDDEN = new Set(["slideClass", "i", "catLabel", "dotClass"]);
 
+// Champs toujours en zone de texte multi-lignes (pour taper des retours à la ligne).
+const MULTILINE = new Set([
+  "desc", "description", "body", "note", "lead", "about", "message", "quote",
+]);
+
 // Clé "parent.clé" prioritaire, sinon "clé", sinon joli libellé auto.
 const DESCR: Record<string, Descr> = {
   // génériques
@@ -541,7 +546,8 @@ function ScalarField({
   const str = value == null ? "" : String(value);
   const isImg = isImageKey(key) || looksLikeImage(str);
   const isHtml = isHtmlKey(key);
-  const isLong = str.length > 70 || str.includes("\n") || isHtml;
+  const isLong =
+    MULTILINE.has(key) || str.length > 70 || str.includes("\n") || isHtml;
   return (
     <div className="fe-row">
       {!hideLabel && <label className="fe-label">{label}</label>}
