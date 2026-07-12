@@ -30,6 +30,8 @@
     </div>
   </div>
   <div class="wrap">
+    <div class="real-grid-wrap">
+    <button type="button" class="rg-arrow side prev" id="realPrev" aria-label="Page précédente" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
     <div class="real-grid" id="realGrid">
       {{#realisations.items}}<a class="real-item{{#extra}} extra{{/extra}}" tabindex="0" role="button" data-cat="{{cat}}" data-sub="{{sub}}"{{#soc}} data-soc="{{soc}}"{{/soc}}{{#mergeClient}} data-merge="1"{{/mergeClient}}{{#desc}} data-desc="{{desc}}"{{/desc}}>
         <div class="real-card">
@@ -44,6 +46,8 @@
         </div>
       </a>
       {{/realisations.items}}
+    </div>
+    <button type="button" class="rg-arrow side next" id="realNext" aria-label="Page suivante" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
     </div>
     <div class="real-pager" id="realPager"></div>
     <div class="real-cta-line reveal">

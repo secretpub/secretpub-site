@@ -234,10 +234,13 @@
   var filters = document.getElementById('filters');
   var realGridEl = document.getElementById('realGrid');
   var pager = document.getElementById('realPager');
+  var realPrev = document.getElementById('realPrev');
+  var realNext = document.getElementById('realNext');
   var PER_PAGE = 9;
   var curCat = 'tout';
   var curSub = 'tout';
   var curPage = 1;
+  var curPages = 1;
   var subbar = document.getElementById('subfilters');
   var SUB_LABELS = {
     enseignes: 'Enseignes', lettres: 'Lettres découpées', panneaux: 'Panneaux',
@@ -343,11 +346,30 @@
     mk('\u203a', curPage + 1, { cls: 'arrow', disabled: curPage === pages });
   }
 
+  // Flèches latérales de la grille : navigation page par page.
+  function updateSideArrows() {
+    [[realPrev, curPage > 1], [realNext, curPage < curPages]].forEach(function (pair) {
+      var el = pair[0]; if (!el) return;
+      if (curPages <= 1) { el.hidden = true; return; }
+      el.hidden = false;
+      el.disabled = !pair[1];
+    });
+  }
+  function goPage(delta) {
+    var next = curPage + delta;
+    if (next < 1 || next > curPages) return;
+    curPage = next;
+    renderGallery();
+  }
+  if (realPrev) realPrev.addEventListener('click', function () { goPage(-1); });
+  if (realNext) realNext.addEventListener('click', function () { goPage(1); });
+
   function renderGallery() {
     if (!realGridEl) return;
     var matched = allItems.filter(matchesCat);
     var pages = Math.max(1, Math.ceil(matched.length / PER_PAGE));
     if (curPage > pages) curPage = pages;
+    curPages = pages;
     allItems.forEach(function (it) { it.style.display = 'none'; });
     var start = (curPage - 1) * PER_PAGE;
     matched.slice(start, start + PER_PAGE).forEach(function (it) {
@@ -355,6 +377,7 @@
       applyPhotoPreview(it);
     });
     buildPager(pages);
+    updateSideArrows();
   }
 
   function applyFilter(cat) {
