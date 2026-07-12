@@ -1,5 +1,5 @@
 "use client";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import type { SiteContent } from "@/lib/content/schema";
 import { saveContent } from "@/app/admin/actions";
 import { FieldEditor, ClientsContext, type SetAt } from "./FieldEditor";
@@ -54,6 +54,20 @@ export default function ContentEditor({ initial }: { initial: SiteContent }) {
     setDirty(true);
     setStatus({ t: "idle" });
   }, []);
+
+  // Reste sur la même section après un rafraîchissement (mémorisée dans l'URL).
+  useEffect(() => {
+    const h = decodeURIComponent((window.location.hash || "").replace(/^#/, ""));
+    if (h && Object.prototype.hasOwnProperty.call(content, h)) setSel(h);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  useEffect(() => {
+    try {
+      window.history.replaceState(null, "", "#" + encodeURIComponent(sel));
+    } catch {
+      /* noop */
+    }
+  }, [sel]);
 
   const keys = useMemo(() => {
     const present = Object.keys(content);
