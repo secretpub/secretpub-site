@@ -11,7 +11,8 @@
         "linkLabel": "Voir nos réalisations signalétique",
         "img": "/assets/signaletique-products-opt.webp",
         "alt": "Réalisations signalétique SecretPub : enseigne ronde, kakémono roll-up, oriflamme et stand pliant noirs floqués SecretPub",
-        "reverse": false
+        "reverse": false,
+        "page": "signaletique"
       },
       {
         "cat": "print",
@@ -20,7 +21,8 @@
         "linkLabel": "Voir nos réalisations print",
         "img": "/assets/print-products-opt.webp",
         "alt": "Réalisations print SecretPub : brochures, supports imprimés et cartes de visite à la charte SecretPub",
-        "reverse": true
+        "reverse": true,
+        "page": "imprimerie"
       },
       {
         "cat": "textile",
@@ -29,7 +31,8 @@
         "linkLabel": "Voir nos réalisations textile",
         "img": "/assets/textile-products-opt.webp",
         "alt": "Réalisations textile SecretPub : t-shirts, polo, casquette et bodywarmer noirs brodés SecretPub",
-        "reverse": false
+        "reverse": false,
+        "page": "textile-personnalise"
       }
     ]
   },
@@ -45,7 +48,8 @@
         "linkLabel": "Voir nos goodies",
         "img": "/assets/goodies-products-opt.webp",
         "alt": "Goodies SecretPub : mug, désodorisant voiture, stylo et tote bag personnalisés SecretPub",
-        "reverse": true
+        "reverse": true,
+        "page": "objets-publicitaires"
       },
       {
         "cat": "packaging",
@@ -54,7 +58,8 @@
         "linkLabel": "Voir nos packagings",
         "img": "/assets/packaging-products-opt.webp",
         "alt": "Packaging SecretPub : sac, boîte, gobelet et papier de soie personnalisés SecretPub",
-        "reverse": false
+        "reverse": false,
+        "page": "packaging"
       }
     ]
   }

@@ -2113,3 +2113,116 @@ img, svg, image-slot, video { max-width: 100%; }
 
 /* Plein écran sur grands moniteurs : pas de cadre noir. Le contenu reste
    centré via .wrap (max-width 1200px) ; les sections pleine largeur s'étendent. */
+
+/* ============================ PAGES MÉTIER (/signaletique, …) ============================ */
+.mp-alt { background: var(--paper); }
+
+/* Bandeau de confiance sous le hero */
+.mp-hero-trust {
+  display: inline-flex; align-items: center; flex-wrap: wrap; gap: 8px;
+  margin-top: 16px; font-size: 14.5px; color: var(--muted);
+}
+.mp-hero-trust strong { color: var(--ink); }
+.mp-stars { color: #f5b301; letter-spacing: 1px; }
+
+/* Corps de texte introductif */
+.mp-prose { max-width: 74ch; margin: clamp(20px, 3vw, 32px) auto 0; }
+.mp-prose p {
+  color: var(--muted); font-size: clamp(15.5px, 1.4vw, 17px);
+  line-height: 1.75; margin: 0 0 16px;
+}
+.mp-prose p:last-child { margin-bottom: 0; }
+
+/* Grille de cartes (prestations, secteurs, avantages) */
+.mp-grid {
+  display: grid; gap: clamp(14px, 1.6vw, 20px);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin-top: clamp(26px, 3vw, 40px);
+}
+.mp-grid-2 { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.mp-grid-adv { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+
+.mp-card {
+  position: relative; background: var(--white);
+  border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 22px 22px 20px;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.mp-alt .mp-card { background: var(--white); }
+.mp-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--sage);
+  box-shadow: 0 14px 34px rgba(19, 122, 62, .10);
+}
+.mp-card h3 {
+  font-family: var(--display); font-weight: 700;
+  font-size: 17.5px; line-height: 1.3; margin: 12px 0 8px; color: var(--ink);
+}
+.mp-card p { color: var(--muted); font-size: 14.5px; line-height: 1.6; margin: 0; }
+
+.mp-card-dot {
+  display: inline-block; width: 11px; height: 11px; border-radius: 50%;
+  background: var(--green);
+}
+.mp-card-dot[data-cat="signa"] { background: #f5c211; }
+.mp-card-dot[data-cat="print"] { background: #3b82f6; }
+.mp-card-dot[data-cat="textile"] { background: #e8472b; }
+.mp-card-dot[data-cat="goodies"] { background: #8b5cf6; }
+.mp-card-dot[data-cat="packaging"] { background: #14b8a6; }
+
+.mp-card-plain { padding: 20px 22px; }
+.mp-card-plain h3 { margin-top: 0; }
+
+.mp-card-adv { padding-top: 20px; }
+.mp-check {
+  display: inline-grid; place-items: center; width: 30px; height: 30px;
+  border-radius: 9px; background: var(--green-soft); color: var(--green-deep);
+  font-weight: 800; font-size: 15px;
+}
+.mp-card-adv h3 { margin-top: 12px; }
+
+/* Étapes (process) */
+.mp-steps {
+  display: grid; gap: clamp(14px, 1.6vw, 20px);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: clamp(26px, 3vw, 40px);
+}
+.mp-step {
+  background: var(--white); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 22px;
+}
+.mp-step-n {
+  display: inline-block; font-family: var(--display); font-weight: 800;
+  font-size: 15px; color: var(--white); background: var(--green-deep);
+  width: 40px; height: 40px; line-height: 40px; text-align: center;
+  border-radius: 11px; margin-bottom: 14px;
+}
+.mp-step h3 {
+  font-family: var(--display); font-weight: 700; font-size: 17px;
+  margin: 0 0 8px; color: var(--ink);
+}
+.mp-step p { color: var(--muted); font-size: 14.5px; line-height: 1.6; margin: 0; }
+
+/* Maillage interne : nos autres métiers */
+.mp-related {
+  display: flex; flex-wrap: wrap; gap: 14px;
+  justify-content: center; margin-top: clamp(24px, 3vw, 36px);
+}
+.mp-related-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--white); border: 1px solid var(--line-strong);
+  border-radius: 999px; padding: 13px 22px;
+  font-family: var(--display); font-weight: 600; font-size: 15px; color: var(--ink);
+  transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.mp-related-link:hover {
+  border-color: var(--green); transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(19, 122, 62, .12);
+}
+.mp-related-link .arr { color: var(--green-deep); }
+
+/* Lien "en savoir plus" ajouté sous chaque métier de l'accueil */
+.msc-link.msc-link-page { margin-top: 10px; opacity: .95; }
+
+/* Scroll ancré : ne pas masquer les titres sous le header collant */
+html { scroll-padding-top: 88px; }

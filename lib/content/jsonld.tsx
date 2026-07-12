@@ -138,6 +138,70 @@ export function serviceJsonLd(
   ];
 }
 
+export function metierJsonLd(c: SiteContent, page: any): object[] {
+  const url = abs(`/${page.slug}`);
+  const offers = (page.prestations?.items || []).map((it: any) => ({
+    "@type": "Offer",
+    itemOffered: {
+      "@type": "Service",
+      name: it.title,
+      description: it.desc,
+    },
+  }));
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: page.navLabel,
+      serviceType: page.hero?.crumb || page.navLabel,
+      description: page.meta?.description,
+      url,
+      provider: { "@id": BIZ_ID },
+      areaServed: [
+        { "@type": "City", name: "Valence" },
+        { "@type": "AdministrativeArea", name: "Drôme" },
+        { "@type": "Country", name: "France" },
+      ],
+      ...(offers.length
+        ? {
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: page.prestations?.title || page.navLabel,
+              itemListElement: offers,
+            },
+          }
+        : {}),
+    },
+    { "@context": "https://schema.org", ...localBusiness(c) },
+    ...(page.faq?.items?.length
+      ? [
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: page.faq.items.map((f: any) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          },
+        ]
+      : []),
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: page.hero?.crumb || page.navLabel,
+          item: url,
+        },
+      ],
+    },
+  ];
+}
+
 export function JsonLd({ data }: { data: object[] }) {
   return (
     <>

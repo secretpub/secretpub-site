@@ -1,0 +1,277 @@
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-inner">
+    <a class="brand" href="/" aria-label="SecretPub, retour à l'accueil">
+      <img src="/assets/logo-full.png" alt="Logo SecretPub, signalétique, print et textile à Valence" />
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      {{#nav}}
+      <div class="nav-item"><a href="{{href}}">{{label}}</a></div>
+      {{/nav}}
+    </nav>
+    <div class="header-cta">
+      <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-glow">Catalogue <span class="ext" aria-hidden="true">↗</span></a>
+      <a href="/#contact" class="btn btn-primary">{{headerCtaLabel}}</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    </div>
+  </div>
+</header>
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="menu-close" id="menuClose" aria-label="Fermer le menu">×</button>
+  {{#nav}}
+  <a href="{{href}}">{{label}}</a>
+  {{/nav}}
+  <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-glow">Catalogue <span class="ext" aria-hidden="true">↗</span></a>
+  <a href="/#contact" class="btn btn-primary">{{headerCtaLabel}}</a>
+</div>
+
+<main id="main">
+
+<!-- HERO MÉTIER -->
+<section class="page-hero" data-screen-label="Hero {{page.navLabel}}">
+  <div class="wrap">
+    <nav class="crumb" aria-label="Fil d'Ariane"><a href="/">Accueil</a> <span>/</span> <span>{{page.hero.crumb}}</span></nav>
+    <span class="eyebrow" style="margin-top: 22px;">{{page.hero.eyebrow}}</span>
+    <h1>{{{page.hero.h1Html}}}</h1>
+    <p class="hero-sub">{{page.hero.sub}}</p>
+    <p class="mp-hero-trust">
+      <span class="mp-stars" aria-hidden="true">★★★★★</span>
+      <strong>{{meta.ratingValue}}/5</strong> sur {{meta.reviewCount}} avis Google · Valence &amp; toute la France · BAT sous 24 h
+    </p>
+    <div class="hero-actions">
+      <a href="/#contact" class="btn btn-primary btn-lg">Demander un devis <span class="arr">→</span></a>
+      <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-ghost-dark btn-lg">Voir le catalogue <span class="ext" aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="section" data-screen-label="Présentation">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{page.intro.eyebrow}}</span>
+      <h2>{{page.intro.title}}</h2>
+      <p class="lead">{{{page.intro.leadHtml}}}</p>
+    </div>
+    <div class="mp-prose reveal">
+      {{{page.intro.bodyHtml}}}
+    </div>
+  </div>
+</section>
+
+<!-- PRESTATIONS -->
+<section class="section mp-alt" id="prestations" data-screen-label="Prestations">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{page.prestations.eyebrow}}</span>
+      <h2>{{page.prestations.title}}</h2>
+      <p class="lead">{{page.prestations.intro}}</p>
+    </div>
+    <div class="mp-grid reveal">
+      {{#page.prestations.items}}
+      <article class="mp-card">
+        <span class="mp-card-dot" data-cat="{{page.cat}}" aria-hidden="true"></span>
+        <h3>{{title}}</h3>
+        <p>{{desc}}</p>
+      </article>
+      {{/page.prestations.items}}
+    </div>
+  </div>
+</section>
+
+<!-- SECTEURS -->
+<section class="section" data-screen-label="Pour qui">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>{{page.secteurs.title}}</h2>
+      <p class="lead">{{page.secteurs.intro}}</p>
+    </div>
+    <div class="mp-grid mp-grid-2 reveal">
+      {{#page.secteurs.items}}
+      <article class="mp-card mp-card-plain">
+        <h3>{{title}}</h3>
+        <p>{{desc}}</p>
+      </article>
+      {{/page.secteurs.items}}
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS / MÉTHODE -->
+<section class="section mp-alt" data-screen-label="Méthode">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{page.process.eyebrow}}</span>
+      <h2>{{page.process.title}}</h2>
+      <p class="lead">{{page.process.intro}}</p>
+    </div>
+    <div class="mp-steps reveal">
+      {{#page.process.steps}}
+      <div class="mp-step">
+        <span class="mp-step-n">{{n}}</span>
+        <h3>{{title}}</h3>
+        <p>{{desc}}</p>
+      </div>
+      {{/page.process.steps}}
+    </div>
+  </div>
+</section>
+
+<!-- AVANTAGES -->
+<section class="section" data-screen-label="Avantages">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>{{page.avantages.title}}</h2>
+    </div>
+    <div class="mp-grid mp-grid-adv reveal">
+      {{#page.avantages.items}}
+      <article class="mp-card mp-card-adv">
+        <span class="mp-check" aria-hidden="true">✓</span>
+        <h3>{{title}}</h3>
+        <p>{{desc}}</p>
+      </article>
+      {{/page.avantages.items}}
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq mp-faq" data-screen-label="Questions">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Questions fréquentes</span>
+      <h2>{{page.faq.title}}</h2>
+    </div>
+    <div class="faq-list reveal">
+      {{#page.faq.items}}
+      <details>
+        <summary>{{q}}</summary>
+        <p class="faq-a">{{a}}</p>
+      </details>
+      {{/page.faq.items}}
+    </div>
+  </div>
+</section>
+
+<!-- MAILLAGE : AUTRES MÉTIERS -->
+{{#page.related.length}}
+<section class="section mp-alt" data-screen-label="Nos autres métiers">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">La suite logique</span>
+      <h2>Nos autres métiers</h2>
+      <p class="lead">Un seul partenaire pour tout ce qui porte votre image. Découvrez le reste de nos savoir-faire.</p>
+    </div>
+    <div class="mp-related reveal">
+      {{#page.related}}
+      <a class="mp-related-link" href="{{href}}">{{label}} <span class="arr">→</span></a>
+      {{/page.related}}
+    </div>
+  </div>
+</section>
+{{/page.related.length}}
+
+<!-- CTA FINAL -->
+<section class="cta-band grainy pp" data-screen-label="CTA devis">
+  <div class="wrap">
+    <h2>{{page.cta.title}}</h2>
+    <p>{{page.cta.body}}</p>
+    <div class="hero-actions">
+      <a href="/#contact" class="btn btn-white btn-lg">{{page.cta.primaryLabel}} <span class="arr">→</span></a>
+      <a href="{{meta.phoneHref}}" class="btn btn-ghost btn-lg">{{meta.phoneDisplay}}</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="foot-brand">
+        <a class="brand" href="/" aria-label="SecretPub, retour à l'accueil"><img src="/assets/logo-full.png" alt="SecretPub : signalétique, print et textile à Valence" /></a>
+        <p class="about">{{footer.about}}</p>
+        <address class="foot-contact">
+          <a href="{{meta.phoneHref}}">{{meta.phoneDisplay}}</a>
+          <a href="mailto:{{meta.email}}">{{meta.email}}</a>
+          <span>{{meta.addressLine}}</span>
+        </address>
+      </div>
+      {{#footer.columns}}
+      <nav class="foot-col" aria-label="{{title}}">
+        <h5>{{title}}</h5>
+        {{#links}}
+        <a href="{{href}}">{{label}}</a>
+        {{/links}}
+      </nav>
+      {{/footer.columns}}
+    </div>
+
+    <div class="footer-cities">
+      <div class="fc-title">Signalétique, imprimerie et textile personnalisé partout en France</div>
+      <p class="fc-intro">Basés à Valence dans la Drôme, nous concevons, produisons et posons enseignes et signalétique, supports imprimés, PLV et grand format, textile professionnel, objets publicitaires et packaging pour les commerces, restaurants, PME, franchises et réseaux multi-sites, à Valence et dans toute la France.</p>
+      <ul class="fc-list" aria-label="Villes d'intervention">
+        <li><strong>Valence</strong></li>
+        <li>Romans-sur-Isère</li>
+        <li>Montélimar</li>
+        <li>Bourg-lès-Valence</li>
+        <li>Portes-lès-Valence</li>
+        <li>Guilherand-Granges</li>
+        <li>Livron-sur-Drôme</li>
+        <li>Crest</li>
+        <li>Die</li>
+        <li>Nyons</li>
+        <li>Pierrelatte</li>
+        <li>Tain-l'Hermitage</li>
+        <li>Privas</li>
+        <li>Aubenas</li>
+        <li>Lyon</li>
+        <li>Villeurbanne</li>
+        <li>Grenoble</li>
+        <li>Saint-Étienne</li>
+        <li>Vienne</li>
+        <li>Bourgoin-Jallieu</li>
+        <li>Annecy</li>
+        <li>Chambéry</li>
+        <li>Clermont-Ferrand</li>
+        <li>Avignon</li>
+        <li>Orange</li>
+        <li>Nîmes</li>
+        <li>Montpellier</li>
+        <li>Marseille</li>
+        <li>Aix-en-Provence</li>
+        <li>Nice</li>
+        <li>Toulon</li>
+        <li>Paris</li>
+        <li>Lille</li>
+        <li>Bordeaux</li>
+        <li>Toulouse</li>
+        <li>Nantes</li>
+        <li>Strasbourg</li>
+        <li>Dijon</li>
+        <li>Rennes</li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="foot-copy">
+        <span>{{footer.copyright}}</span>
+      </div>
+      <nav class="foot-legal" aria-label="Informations légales">
+        <a href="/mentions-legales">Mentions légales</a>
+        <a href="/mentions-legales#confidentialite">Confidentialité</a>
+        <a href="/#faq">Questions fréquentes</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <div class="socials">
+        {{#footer.socials}}
+        <a href="{{href}}" target="_blank" rel="noopener" aria-label="{{label}}">{{{iconHtml}}}</a>
+        {{/footer.socials}}
+      </div>
+    </div>
+  </div>
+</footer>

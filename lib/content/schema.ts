@@ -147,6 +147,42 @@ export interface FooterCol {
   links: LinkItem[];
 }
 
+/* ---- Pages métier (landing SEO : /signaletique, /imprimerie, …) ---- */
+export interface MetierPageDuo {
+  title: string;
+  desc: string;
+}
+export interface MetierPageStep {
+  n: string;
+  title: string;
+  desc: string;
+}
+export interface MetierPage {
+  slug: string;
+  cat: string; // signa/print/textile/goodies/packaging (couleur du point)
+  navLabel: string;
+  meta: { title: string; description: string };
+  hero: { crumb: string; eyebrow: string; h1Html: string; sub: string };
+  intro: { eyebrow: string; title: string; leadHtml: string; bodyHtml: string };
+  prestations: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    items: MetierPageDuo[];
+  };
+  secteurs: { title: string; intro: string; items: MetierPageDuo[] };
+  process: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    steps: MetierPageStep[];
+  };
+  avantages: { title: string; items: MetierPageDuo[] };
+  faq: { title: string; items: FaqItem[] };
+  cta: { title: string; body: string; primaryLabel: string };
+  related?: LinkItem[];
+}
+
 export interface SiteContent {
   meta: {
     siteName: string;
@@ -236,6 +272,7 @@ export interface SiteContent {
     copyright: string;
     socials: LinkItem[];
   };
+  metierPages?: Record<string, MetierPage>;
 }
 
 /** Deep partial for CMS overrides. */

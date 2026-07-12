@@ -5,29 +5,60 @@
       {
         "title": "Métiers",
         "links": [
-          { "label": "Signalétique", "href": "#metiers" },
-          { "label": "Print", "href": "#metiers" },
-          { "label": "Textile", "href": "#metiers" },
-          { "label": "Goodies", "href": "#metiers" },
-          { "label": "Packaging", "href": "#metiers" },
-          { "label": "Pose / Installation", "href": "#methode" },
-          { "label": "Prestation graphique", "href": "#contact" },
-          { "label": "Réalisations", "href": "#realisations" }
+          {
+            "label": "Signalétique & enseignes",
+            "href": "/signaletique"
+          },
+          {
+            "label": "Imprimerie",
+            "href": "/imprimerie"
+          },
+          {
+            "label": "Textile personnalisé",
+            "href": "/textile-personnalise"
+          },
+          {
+            "label": "Objets publicitaires",
+            "href": "/objets-publicitaires"
+          },
+          {
+            "label": "Packaging",
+            "href": "/packaging"
+          },
+          {
+            "label": "Réalisations",
+            "href": "/#realisations"
+          }
         ]
       },
       {
         "title": "Société",
         "links": [
-          { "label": "Méthode", "href": "#methode" },
-          { "label": "Questions fréquentes", "href": "#faq" }
+          {
+            "label": "Méthode",
+            "href": "/#methode"
+          },
+          {
+            "label": "Questions fréquentes",
+            "href": "/#faq"
+          }
         ]
       },
       {
         "title": "Contact",
         "links": [
-          { "label": "09 83 80 93 12", "href": "tel:+33983809312" },
-          { "label": "contact@secretpub.fr", "href": "mailto:contact@secretpub.fr" },
-          { "label": "31 Rue Jean Jullien Davin, 26000 Valence", "href": "#contact" }
+          {
+            "label": "09 83 80 93 12",
+            "href": "tel:+33983809312"
+          },
+          {
+            "label": "contact@secretpub.fr",
+            "href": "mailto:contact@secretpub.fr"
+          },
+          {
+            "label": "31 Rue Jean Jullien Davin, 26000 Valence",
+            "href": "/#contact"
+          }
         ]
       }
     ],
