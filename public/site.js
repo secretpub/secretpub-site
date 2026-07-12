@@ -502,19 +502,22 @@
     box.innerHTML = '<button class="lb-close" aria-label="Fermer">\u00d7</button>'
       + '<div class="lb-panel">'
       +   '<div class="lb-media">'
-      +     '<button class="lb-nav lb-prev" aria-label="Photo précédente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>'
-      +     '<img class="lb-main" alt="" />'
-      +     '<span class="lb-count-lb" aria-hidden="true"></span>'
-      +     '<button class="lb-nav lb-next" aria-label="Photo suivante"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>'
+      +     '<div class="lb-frame">'
+      +       '<button class="lb-nav lb-prev" aria-label="Photo précédente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>'
+      +       '<img class="lb-main" alt="" />'
+      +       '<span class="lb-count-lb" aria-hidden="true"></span>'
+      +       '<span class="lb-cat-badge" aria-hidden="true"></span>'
+      +       '<button class="lb-nav lb-next" aria-label="Photo suivante"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>'
+      +     '</div>'
       +     '<div class="lb-thumbs"></div>'
       +   '</div>'
       +   '<div class="lb-sep"></div>'
-      +   '<div class="lb-info"><span class="lb-cat"></span><h3 class="lb-title"></h3><div class="lb-soc"><span class="lb-soc-l">Société</span><span class="lb-soc-v"></span></div><p class="lb-desc"></p></div>'
+      +   '<div class="lb-info"><h3 class="lb-title"></h3><div class="lb-soc"><span class="lb-soc-v"></span></div><p class="lb-desc"></p></div>'
       + '</div>';
     document.body.appendChild(box);
     var lbImg = box.querySelector('.lb-media img.lb-main');
     var lbCount = box.querySelector('.lb-count-lb');
-    var lbCat = box.querySelector('.lb-cat');
+    var lbCat = box.querySelector('.lb-cat-badge');
     var lbTitle = box.querySelector('.lb-title');
     var lbDesc = box.querySelector('.lb-desc');
     var lbSocRow = box.querySelector('.lb-soc');
