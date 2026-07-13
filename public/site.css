@@ -2250,7 +2250,8 @@ img, svg, image-slot, video { max-width: 100%; }
    soit clairement d'une autre nature que le lien texte "voir nos réalisations"
    juste au-dessus (forme différente = plus de confusion). */
 .msc-link.msc-link-page {
-  margin-top: 16px; gap: 7px;
+  display: flex; width: fit-content; /* passe sur SA PROPRE ligne, sous le lien réalisations */
+  margin-top: 14px; gap: 7px;
   padding: 8px 16px; border-radius: 999px;
   background: transparent; border: 1px solid var(--line-strong);
   color: var(--green-deep); font-weight: 600; font-size: 13px;
