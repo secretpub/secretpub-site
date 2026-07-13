@@ -79,7 +79,7 @@
           },
           {
             "label": "Voir le catalogue",
-            "href": "https://secretpub-catalogue.vercel.app/catalogue",
+            "href": "/catalogue",
             "type": "ghost",
             "ghost": true
           }
@@ -109,7 +109,7 @@
           },
           {
             "label": "Voir le catalogue",
-            "href": "https://secretpub-catalogue.vercel.app/catalogue",
+            "href": "/catalogue",
             "type": "ghost",
             "ghost": true
           }

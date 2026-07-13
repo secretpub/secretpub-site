@@ -327,8 +327,14 @@ ul { margin: 0; padding: 0; }
 .cf-file-btn input[type="file"] { position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden; z-index: -1; }
 .cf-file-ic { font-size: 15px; }
 .cf-file-cta { font-family: var(--display); font-weight: 700; font-size: 13.5px; color: #fff; white-space: nowrap; }
-.cf-file-name { font-size: 12.5px; color: rgba(255,255,255,0.88); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cf-file-name { font-size: 12.5px; color: rgba(255,255,255,0.88); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 45%; }
 .cf-file-name[data-empty] { color: rgba(255,255,255,0.5); }
+.cf-file-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.cf-file-clear { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.06); color: #fff; font-size: 16px; line-height: 1; cursor: pointer; flex: none; transition: background 0.2s ease, border-color 0.2s ease; }
+.cf-file-clear:hover { background: rgba(224,83,61,0.25); border-color: rgba(224,83,61,0.6); }
+.cf-file-clear[hidden] { display: none; }
+.cf-file-warn { color: #ffc9bd; font-size: 12.5px; margin: 4px 0 0; }
+.cf-file-warn[hidden] { display: none; }
 .burger {
   display: none;
   background: none; border: 0; cursor: pointer;

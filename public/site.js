@@ -467,16 +467,36 @@
   // Formulaire contact : confirmation UNIQUEMENT si l'envoi a réussi.
   var form = document.getElementById('cform');
   if (form) {
-    // Affiche le nom du fichier choisi
+    // Fichier : nom affiché, petite croix pour retirer, limite légère (2 Mo)
+    // pour ne jamais bloquer/ralentir l'envoi du formulaire.
+    var MAX_FILE = 2 * 1024 * 1024;
     var fileInput = form.querySelector('input[name="fichier"]');
     var fileNameEl = form.querySelector('.cf-file-name');
-    if (fileInput && fileNameEl) {
+    var fileClear = form.querySelector('.cf-file-clear');
+    var fileWarn = form.querySelector('.cf-file-warn');
+    function resetFile() {
+      if (fileInput) fileInput.value = '';
+      if (fileNameEl) { fileNameEl.textContent = 'Aucun fichier'; fileNameEl.setAttribute('data-empty', '1'); }
+      if (fileClear) fileClear.hidden = true;
+      if (fileWarn) { fileWarn.hidden = true; fileWarn.textContent = ''; }
+    }
+    if (fileInput) {
       fileInput.addEventListener('change', function () {
         var f = fileInput.files && fileInput.files[0];
-        if (f) { fileNameEl.textContent = f.name; fileNameEl.removeAttribute('data-empty'); }
-        else { fileNameEl.textContent = 'Aucun fichier sélectionné'; fileNameEl.setAttribute('data-empty', '1'); }
+        if (fileWarn) { fileWarn.hidden = true; fileWarn.textContent = ''; }
+        if (!f) { resetFile(); return; }
+        if (f.size > MAX_FILE) {
+          fileInput.value = '';
+          if (fileNameEl) { fileNameEl.textContent = 'Aucun fichier'; fileNameEl.setAttribute('data-empty', '1'); }
+          if (fileClear) fileClear.hidden = true;
+          if (fileWarn) { fileWarn.hidden = false; fileWarn.textContent = 'Fichier trop lourd (max 2 Mo). Envoyez-le par email à contact@secretpub.fr.'; }
+          return;
+        }
+        if (fileNameEl) { fileNameEl.textContent = f.name; fileNameEl.removeAttribute('data-empty'); }
+        if (fileClear) fileClear.hidden = false;
       });
     }
+    if (fileClear) fileClear.addEventListener('click', resetFile);
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -509,8 +529,8 @@
       }
       function send() { postLead(payload).then(finish); }
 
-      // Jusqu'à 3 Mo : on lit le fichier en base64 et on le joint à la demande.
-      if (file && file.size <= 3 * 1024 * 1024) {
+      // Jusqu'à 2 Mo : on lit le fichier en base64 et on le joint à la demande.
+      if (file && file.size <= MAX_FILE) {
         var reader = new FileReader();
         reader.onload = function () {
           var res = String(reader.result || '');
@@ -521,7 +541,7 @@
         reader.onerror = function () { send(); };
         reader.readAsDataURL(file);
       } else {
-        if (file) payload.fichier_note = 'Fichier trop lourd (max 3 Mo), non joint. À envoyer par email.';
+        if (file) payload.fichier_note = 'Fichier trop lourd (max 2 Mo), non joint. À envoyer par email.';
         send();
       }
     });
