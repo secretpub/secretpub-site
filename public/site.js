@@ -423,6 +423,9 @@
     var curPages = function () { return Math.max(1, Math.ceil(allItems.filter(matchesCat).length / PER_PAGE)); };
     realGridEl.addEventListener('pointerdown', function (e) {
       if (e.button != null && e.button !== 0) return;
+      // Sur mobile (tactile) : pas de glisser-paginer, on laisse le scroll vertical
+      // natif et le tap pour ouvrir la photo. La pagination se fait par le pager du bas.
+      if (e.pointerType === 'touch') return;
       dragging = true; dragMoved = false; dragStartX = e.clientX;
       realGridEl.classList.add('grabbing');
     });
