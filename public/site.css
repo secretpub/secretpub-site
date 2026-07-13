@@ -453,6 +453,9 @@ body.menu-open { overflow: hidden; }
 @media (max-width: 880px) {
   /* Hero mobile : copie claire, puis le visuel empilé en dessous (image entière, carte arrondie) */
   .hero-carousel { height: auto; min-height: 0; max-height: none; background: var(--paper); }
+  /* Le conteneur des slides doit reprendre le flux, sinon (position:absolute)
+     le hero s'effondre à 0 de hauteur et disparaît sur mobile. */
+  .hc-slides { position: static; }
   .hslide { position: static; opacity: 1; visibility: visible; display: none; }
   .hslide.is-active { display: flex; flex-direction: column; }
   .hslide::after { display: none; }
@@ -2274,7 +2277,8 @@ html { scroll-padding-top: 88px; }
   .wrap { padding-inline: var(--m-gutter, 20px); }
   .section { padding-block: var(--m-section-py, 56px); }
   .page-hero { padding-block: var(--m-hero-py, 108px) calc(var(--m-hero-py, 108px) * 0.45); }
-  .page-hero h1, .hero h1, .hslide-title { font-size: var(--m-h1, 32px); }
+  .page-hero h1, .hslide-copy h1, .hslide-title { font-size: var(--m-h1, 32px); }
+  .hslide-sub { font-size: var(--m-lead, 16px); }
   .section-head h2, .mp-head h2, .sb-title { font-size: var(--m-h2, 28px); }
   .section-head .lead, .page-hero .hero-sub, .mp-head .lead, .mp-hero .hero-sub {
     font-size: var(--m-lead, 17px);
