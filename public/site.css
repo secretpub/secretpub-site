@@ -455,8 +455,10 @@ body.menu-open { overflow: hidden; }
      par-dessus avec un voile sombre. On adapte juste la hauteur, le padding et le
      voile (vertical, lisible en portrait). Les tailles de texte sont pilotées par
      l'éditeur Mobile (--m-h1 / --m-lead). */
-  .hero-carousel { height: clamp(390px, 64svh, 500px); min-height: 390px; background: var(--ink); }
-  .hslide-inner { padding-inline: var(--gutter); }
+  .hero-carousel { height: clamp(430px, 70svh, 560px); min-height: 430px; background: var(--ink); }
+  /* padding-top : le header est fixed (~78px) et flotte au-dessus du hero ;
+     on décale le contenu vers le bas pour qu'il ne cache plus le haut du titre. */
+  .hslide-inner { padding-inline: var(--gutter); padding-top: 78px; }
   .hslide-copy { max-width: 100%; }
   .hslide::after {
     background: linear-gradient(180deg, rgba(11,13,12,0.5) 0%, rgba(11,13,12,0.42) 46%, rgba(11,13,12,0.82) 100%);
@@ -565,6 +567,17 @@ body.loaded .mark { background-size: 100% 100%; }
 .lchip.lg img { max-height: 64px; max-width: 235px; }
 .lchip.xl img { max-height: 108px; max-width: 150px; }
 @media (prefers-reduced-motion: reduce) { .ltrack-single { animation: none; } }
+
+/* Logos clients sur mobile : plus petits et resserrés pour en voir ~4 à la fois. */
+@media (max-width: 640px) {
+  .clients .cl-label { margin-bottom: 16px; font-size: 11px; }
+  .ltrack { gap: 16px; }
+  .lchip { height: 52px; min-width: 56px; padding: 0 8px; }
+  .lchip img { max-height: 28px; max-width: 84px; }
+  .lchip.sq img { max-height: 38px; max-width: 54px; }
+  .lchip.lg img { max-height: 32px; max-width: 100px; }
+  .lchip.xl img { max-height: 46px; max-width: 78px; }
+}
 
 /* ---------------- Nos métiers (BLANC) ---------------- */
 .metiers { background: var(--white); padding-top: clamp(28px, 3.5vw, 44px); padding-bottom: clamp(28px, 3.5vw, 44px); counter-reset: socle; }
