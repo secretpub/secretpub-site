@@ -63,7 +63,9 @@
     <div class="shots-grid">
       {{#espace.shots}}
       <div class="shot reveal">
-        {{#src}}<img class="ph" src="{{src}}" alt="{{title}}" loading="lazy"/>{{/src}}{{^src}}<span class="ph" aria-hidden="true" style="display:block;width:100%;aspect-ratio:16/10;border-radius:12px;"></span>{{/src}}
+        <div class="sh-media">
+          {{#src}}<img class="ph" src="{{src}}" alt="{{title}}" loading="lazy"/>{{/src}}{{^src}}<span class="ph" aria-hidden="true"></span>{{/src}}
+        </div>
         <p class="sh-t">{{title}}</p>
         <p class="sh-d">{{desc}}</p>
       </div>
