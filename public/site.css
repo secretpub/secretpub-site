@@ -2114,111 +2114,136 @@ img, svg, image-slot, video { max-width: 100%; }
 /* Plein écran sur grands moniteurs : pas de cadre noir. Le contenu reste
    centré via .wrap (max-width 1200px) ; les sections pleine largeur s'étendent. */
 
-/* ============================ PAGES MÉTIER (/signaletique, …) ============================ */
+/* ============================ PAGES MÉTIER (/signaletique, …) — design premium ============================ */
 .mp-alt { background: var(--paper); }
 
-/* Bandeau de confiance sous le hero */
+/* HERO : accent radial vert subtil, badge de confiance en verre */
+.mp-hero { position: relative; overflow: hidden; }
+.mp-hero::before {
+  content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(58% 85% at 84% -12%, rgba(64,200,72,0.12), transparent 60%),
+    radial-gradient(42% 70% at -6% 112%, rgba(46,200,64,0.08), transparent 58%);
+}
+.mp-hero > .wrap { position: relative; z-index: 1; }
+.mp-hero .eyebrow { color: var(--green-deep); }
 .mp-hero-trust {
-  display: inline-flex; align-items: center; flex-wrap: wrap; gap: 8px;
-  margin-top: 16px; font-size: 14.5px; color: var(--muted);
+  display: inline-flex; align-items: center; flex-wrap: wrap; gap: 9px;
+  margin-top: 20px; padding: 9px 17px; border-radius: 999px;
+  background: rgba(255,255,255,0.72); border: 1px solid var(--line);
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  font-size: 13.5px; color: var(--muted);
+  box-shadow: 0 12px 30px -20px rgba(19,122,62,0.55);
 }
 .mp-hero-trust strong { color: var(--ink); }
 .mp-stars { color: #f5b301; letter-spacing: 1px; }
+
+/* En-tête de section numéroté (langage visuel de l'accueil) */
+.mp-head { text-align: center; max-width: 64ch; margin: 0 auto; }
+.mp-head-num {
+  display: inline-block; font-family: var(--display); font-weight: 800;
+  font-size: 12.5px; letter-spacing: 0.14em; color: #fff; margin-bottom: 16px;
+  padding: 7px 15px; border-radius: 999px;
+  background: linear-gradient(135deg, #2ec840, #1ea83a);
+  box-shadow: 0 10px 22px -12px rgba(30,168,58,0.85);
+}
+.mp-head h2 {
+  font-family: var(--display); font-weight: 800; margin: 0;
+  font-size: clamp(26px, 3.2vw, 40px); letter-spacing: -0.02em; color: var(--ink);
+}
+.mp-head .lead { margin: 14px auto 0; color: var(--muted); max-width: 58ch; }
 
 /* Corps de texte introductif */
 .mp-prose { max-width: 74ch; margin: clamp(20px, 3vw, 32px) auto 0; }
 .mp-prose p {
   color: var(--muted); font-size: clamp(15.5px, 1.4vw, 17px);
-  line-height: 1.75; margin: 0 0 16px;
+  line-height: 1.78; margin: 0 0 16px;
 }
 .mp-prose p:last-child { margin-bottom: 0; }
 
-/* Grille de cartes (prestations, secteurs, avantages) */
+/* Grilles */
 .mp-grid {
-  display: grid; gap: clamp(14px, 1.6vw, 20px);
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  margin-top: clamp(26px, 3vw, 40px);
+  display: grid; gap: clamp(16px, 1.8vw, 22px);
+  grid-template-columns: repeat(auto-fill, minmax(258px, 1fr));
+  margin-top: clamp(30px, 3.4vw, 46px);
 }
-.mp-grid-2 { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
-.mp-grid-adv { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+.mp-grid-2 { grid-template-columns: repeat(auto-fill, minmax(292px, 1fr)); }
+.mp-grid-adv { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
 
+/* Carte premium : liseré vert animé + halo au survol */
 .mp-card {
-  position: relative; background: var(--white);
-  border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 22px 22px 20px;
-  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  position: relative; overflow: hidden; background: var(--white);
+  border: 1px solid var(--line); border-radius: 18px;
+  padding: 26px 24px 24px;
+  transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s ease, border-color .35s ease;
 }
-.mp-alt .mp-card { background: var(--white); }
+.mp-card::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px;
+  background: linear-gradient(90deg, transparent, #2ec840, #1ea83a, transparent);
+  transform: scaleX(0); transform-origin: center; transition: transform .45s ease;
+}
 .mp-card:hover {
-  transform: translateY(-3px);
-  border-color: var(--sage);
-  box-shadow: 0 14px 34px rgba(19, 122, 62, .10);
+  transform: translateY(-6px);
+  border-color: rgba(46,200,64,0.5);
+  box-shadow: 0 0 0 1px rgba(46,200,64,0.26), 0 30px 60px -38px rgba(19,122,62,0.5), 0 0 34px -14px rgba(46,200,64,0.3);
 }
-.mp-card h3 {
-  font-family: var(--display); font-weight: 700;
-  font-size: 17.5px; line-height: 1.3; margin: 12px 0 8px; color: var(--ink);
-}
-.mp-card p { color: var(--muted); font-size: 14.5px; line-height: 1.6; margin: 0; }
+.mp-card:hover::before { transform: scaleX(1); }
+.mp-card h3 { font-family: var(--display); font-weight: 700; font-size: 18px; line-height: 1.3; margin: 14px 0 8px; color: var(--ink); }
+.mp-card p { color: var(--muted); font-size: 14.5px; line-height: 1.62; margin: 0; }
 
-.mp-card-dot {
-  display: inline-block; width: 11px; height: 11px; border-radius: 50%;
-  background: var(--green);
-}
-.mp-card-dot[data-cat="signa"] { background: #f5c211; }
-.mp-card-dot[data-cat="print"] { background: #3b82f6; }
-.mp-card-dot[data-cat="textile"] { background: #e8472b; }
-.mp-card-dot[data-cat="goodies"] { background: #8b5cf6; }
-.mp-card-dot[data-cat="packaging"] { background: #14b8a6; }
+/* Pastille catégorie -> chip carrée douce */
+.mp-card-dot { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: var(--green-soft); }
+.mp-card-dot::after { content: ""; width: 11px; height: 11px; border-radius: 50%; background: var(--green); }
+.mp-card-dot[data-cat="signa"]::after { background: #f5c211; }
+.mp-card-dot[data-cat="print"]::after { background: #3b82f6; }
+.mp-card-dot[data-cat="textile"]::after { background: #e8472b; }
+.mp-card-dot[data-cat="goodies"]::after { background: #8b5cf6; }
+.mp-card-dot[data-cat="packaging"]::after { background: #14b8a6; }
 
-.mp-card-plain { padding: 20px 22px; }
+/* Secteurs : accent latéral vert au lieu du bandeau haut */
+.mp-card-plain::before { top: 0; bottom: 0; left: 0; right: auto; width: 3px; height: auto; background: linear-gradient(180deg, #2ec840, #1ea83a); transform: scaleY(1); transform-origin: top; opacity: .5; transition: opacity .35s ease; }
+.mp-card-plain { padding-left: 26px; }
+.mp-card-plain:hover::before { opacity: 1; transform: scaleY(1); }
 .mp-card-plain h3 { margin-top: 0; }
 
-.mp-card-adv { padding-top: 20px; }
+/* Avantages : chip vert dégradé */
+.mp-card-adv { display: flex; flex-direction: column; }
 .mp-check {
-  display: inline-grid; place-items: center; width: 30px; height: 30px;
-  border-radius: 9px; background: var(--green-soft); color: var(--green-deep);
-  font-weight: 800; font-size: 15px;
+  display: inline-grid; place-items: center; width: 38px; height: 38px;
+  border-radius: 11px; background: linear-gradient(135deg, var(--green-soft), #d3efd6);
+  color: var(--green-deep); font-weight: 800; font-size: 17px;
 }
-.mp-card-adv h3 { margin-top: 12px; }
+.mp-card-adv h3 { margin-top: 14px; }
 
-/* Étapes (process) */
-.mp-steps {
-  display: grid; gap: clamp(14px, 1.6vw, 20px);
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  margin-top: clamp(26px, 3vw, 40px);
+/* PROCESS : timeline verticale sur rail vert (langage de l'accueil) */
+.mp-flow { position: relative; margin-top: clamp(30px, 3.4vw, 46px); padding-left: 34px; max-width: 780px; }
+.mp-flow::before {
+  content: ""; position: absolute; left: 15px; top: 12px; bottom: 12px; width: 3px; border-radius: 3px;
+  background: linear-gradient(180deg, #54c24f, #2ec840 55%, rgba(46,200,64,0.15));
+  box-shadow: 0 0 10px rgba(46,200,64,0.4);
 }
-.mp-step {
-  background: var(--white); border: 1px solid var(--line);
-  border-radius: var(--radius); padding: 22px;
-}
+.mp-step { position: relative; display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: start; padding-bottom: clamp(22px, 2.6vw, 32px); }
+.mp-step:last-child { padding-bottom: 0; }
 .mp-step-n {
-  display: inline-block; font-family: var(--display); font-weight: 800;
-  font-size: 15px; color: var(--white); background: var(--green-deep);
-  width: 40px; height: 40px; line-height: 40px; text-align: center;
-  border-radius: 11px; margin-bottom: 14px;
+  position: relative; z-index: 1; margin-left: -34px;
+  display: grid; place-items: center; width: 34px; height: 34px;
+  font-family: var(--display); font-weight: 800; font-size: 13.5px; color: #fff;
+  border-radius: 50%; background: linear-gradient(135deg, #2ec840, #1ea83a);
+  box-shadow: 0 0 0 5px var(--paper), 0 6px 16px -6px rgba(30,168,58,0.85);
 }
-.mp-step h3 {
-  font-family: var(--display); font-weight: 700; font-size: 17px;
-  margin: 0 0 8px; color: var(--ink);
-}
-.mp-step p { color: var(--muted); font-size: 14.5px; line-height: 1.6; margin: 0; }
+.mp-step-body { padding-top: 4px; }
+.mp-step-body h3 { font-family: var(--display); font-weight: 700; font-size: 18px; margin: 0 0 6px; color: var(--ink); }
+.mp-step-body p { color: var(--muted); font-size: 14.5px; line-height: 1.62; margin: 0; }
 
 /* Maillage interne : nos autres métiers */
-.mp-related {
-  display: flex; flex-wrap: wrap; gap: 14px;
-  justify-content: center; margin-top: clamp(24px, 3vw, 36px);
-}
+.mp-related { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: clamp(26px, 3vw, 40px); }
 .mp-related-link {
   display: inline-flex; align-items: center; gap: 8px;
-  background: var(--white); border: 1px solid var(--line-strong);
-  border-radius: 999px; padding: 13px 22px;
+  background: var(--white); border: 1px solid var(--line-strong); border-radius: 999px; padding: 13px 24px;
   font-family: var(--display); font-weight: 600; font-size: 15px; color: var(--ink);
   transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
 }
-.mp-related-link:hover {
-  border-color: var(--green); transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(19, 122, 62, .12);
-}
+.mp-related-link:hover { border-color: var(--green); transform: translateY(-2px); box-shadow: 0 12px 26px -14px rgba(19,122,62,0.5); }
 .mp-related-link .arr { color: var(--green-deep); }
 
 /* Lien "en savoir plus" ajouté sous chaque métier de l'accueil */

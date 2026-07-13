@@ -32,7 +32,7 @@
 <main id="main">
 
 <!-- HERO MÉTIER -->
-<section class="page-hero" data-screen-label="Hero {{page.navLabel}}">
+<section class="page-hero mp-hero" data-screen-label="Hero {{page.navLabel}}">
   <div class="wrap">
     <nav class="crumb" aria-label="Fil d'Ariane"><a href="/">Accueil</a> <span>/</span> <span>{{page.hero.crumb}}</span></nav>
     <span class="eyebrow" style="margin-top: 22px;">{{page.hero.eyebrow}}</span>
@@ -66,8 +66,8 @@
 <!-- PRESTATIONS -->
 <section class="section mp-alt" id="prestations" data-screen-label="Prestations">
   <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">{{page.prestations.eyebrow}}</span>
+    <div class="mp-head reveal">
+      <span class="mp-head-num">01 · {{page.prestations.eyebrow}}</span>
       <h2>{{page.prestations.title}}</h2>
       <p class="lead">{{page.prestations.intro}}</p>
     </div>
@@ -86,7 +86,8 @@
 <!-- SECTEURS -->
 <section class="section" data-screen-label="Pour qui">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="mp-head reveal">
+      <span class="mp-head-num">02 · Pour qui</span>
       <h2>{{page.secteurs.title}}</h2>
       <p class="lead">{{page.secteurs.intro}}</p>
     </div>
@@ -104,17 +105,19 @@
 <!-- PROCESS / MÉTHODE -->
 <section class="section mp-alt" data-screen-label="Méthode">
   <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">{{page.process.eyebrow}}</span>
+    <div class="mp-head reveal">
+      <span class="mp-head-num">03 · {{page.process.eyebrow}}</span>
       <h2>{{page.process.title}}</h2>
       <p class="lead">{{page.process.intro}}</p>
     </div>
-    <div class="mp-steps reveal">
+    <div class="mp-flow reveal">
       {{#page.process.steps}}
       <div class="mp-step">
         <span class="mp-step-n">{{n}}</span>
-        <h3>{{title}}</h3>
-        <p>{{desc}}</p>
+        <div class="mp-step-body">
+          <h3>{{title}}</h3>
+          <p>{{desc}}</p>
+        </div>
       </div>
       {{/page.process.steps}}
     </div>
@@ -124,7 +127,8 @@
 <!-- AVANTAGES -->
 <section class="section" data-screen-label="Avantages">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="mp-head reveal">
+      <span class="mp-head-num">04 · Pourquoi nous</span>
       <h2>{{page.avantages.title}}</h2>
     </div>
     <div class="mp-grid mp-grid-adv reveal">
