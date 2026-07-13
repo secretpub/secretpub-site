@@ -313,13 +313,22 @@ ul { margin: 0; padding: 0; }
 }
 
 /* Lien secondaire sous le bouton d'envoi du formulaire */
-.cform-deep-link {
-  display: inline-block; margin-top: 2px; margin-bottom: 4px; font-family: var(--display); font-weight: 600;
-  font-size: 13.5px; color: var(--sage); text-decoration: underline; text-underline-offset: 3px;
-  text-decoration-color: rgba(159,216,180,0.4); transition: color 0.2s ease, text-decoration-color 0.2s ease;
+/* Champ "Avez-vous un fichier ?" du formulaire de contact */
+.cf-file { display: flex; flex-direction: column; gap: 9px; }
+.cf-file-q { font-size: 13.5px; font-weight: 600; color: #fff; }
+.cf-file-q .cf-hint { font-weight: 400; color: rgba(255,255,255,0.6); font-size: 12px; }
+.cf-file-btn {
+  position: relative; display: inline-flex; align-items: center; gap: 10px; cursor: pointer;
+  align-self: flex-start; max-width: 100%; padding: 11px 16px; border-radius: 12px;
+  border: 1.5px dashed rgba(255,255,255,0.32); background: rgba(255,255,255,0.06);
+  transition: border-color 0.2s ease, background 0.2s ease;
 }
-.cform-deep-link:hover { color: #fff; text-decoration-color: #fff; }
-.cform-deep-link + .full { margin-top: -10px; }
+.cf-file-btn:hover { border-color: var(--green); background: rgba(255,255,255,0.11); }
+.cf-file-btn input[type="file"] { position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden; z-index: -1; }
+.cf-file-ic { font-size: 15px; }
+.cf-file-cta { font-family: var(--display); font-weight: 700; font-size: 13.5px; color: #fff; white-space: nowrap; }
+.cf-file-name { font-size: 12.5px; color: rgba(255,255,255,0.88); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cf-file-name[data-empty] { color: rgba(255,255,255,0.5); }
 .burger {
   display: none;
   background: none; border: 0; cursor: pointer;

@@ -47,7 +47,15 @@
         <label class="full">Votre projet en quelques mots
           <textarea name="message" placeholder="Exemple : remplacement de notre enseigne et tenues pour 10 salariés"></textarea>
         </label>
-        <a href="#contact" class="cform-deep-link full">{{contact.deepLinkLabel}}</a>
+        <div class="full cf-file">
+          <span class="cf-file-q">Avez-vous un fichier ? Téléchargez-le ici <span class="cf-hint">(logo, visuel, cahier des charges…)</span></span>
+          <label class="cf-file-btn">
+            <input type="file" name="fichier" accept="image/*,.pdf,.ai,.eps,.psd,.svg,.zip,.doc,.docx" />
+            <span class="cf-file-ic" aria-hidden="true">📎</span>
+            <span class="cf-file-cta">Choisir un fichier</span>
+            <span class="cf-file-name" data-empty="1">Aucun fichier sélectionné</span>
+          </label>
+        </div>
         <div class="full">
           <button type="submit" class="btn btn-primary btn-lg full-btn">{{contact.submitLabel}} <span class="arr">→</span></button>
         </div>

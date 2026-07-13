@@ -53,6 +53,38 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: true, stored: false });
   }
 
+  // Fichier joint (base64) : on l'upload dans le bucket public et on ne garde
+  // que l'URL dans le payload (jamais le base64). Un échec fichier ne fait pas
+  // échouer la demande.
+  const fichier = body.fichier as
+    | { name?: string; type?: string; data?: string }
+    | undefined;
+  if (fichier && typeof fichier.data === "string" && fichier.data.length) {
+    let fileUrl: string | null = null;
+    try {
+      const buf = Buffer.from(fichier.data, "base64");
+      const safe = (fichier.name || "fichier")
+        .replace(/[^\w.\-]+/g, "_")
+        .slice(-70);
+      const path = `lead-files/${Date.now()}-${safe}`;
+      const up = await supa.storage
+        .from("site-content")
+        .upload(path, buf, {
+          contentType: fichier.type || "application/octet-stream",
+          upsert: false,
+        });
+      if (!up.error) {
+        fileUrl = supa.storage.from("site-content").getPublicUrl(path)
+          .data.publicUrl;
+      }
+    } catch {
+      /* on n'échoue jamais la demande pour un fichier */
+    }
+    body.fichier = fileUrl
+      ? { name: fichier.name, type: fichier.type, url: fileUrl }
+      : { name: fichier.name, note: "upload échoué" };
+  }
+
   const needsRaw = body.besoin;
   const needs = Array.isArray(needsRaw)
     ? needsRaw.map(String)

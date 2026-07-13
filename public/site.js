@@ -467,18 +467,32 @@
   // Formulaire contact : confirmation UNIQUEMENT si l'envoi a réussi.
   var form = document.getElementById('cform');
   if (form) {
+    // Affiche le nom du fichier choisi
+    var fileInput = form.querySelector('input[name="fichier"]');
+    var fileNameEl = form.querySelector('.cf-file-name');
+    if (fileInput && fileNameEl) {
+      fileInput.addEventListener('change', function () {
+        var f = fileInput.files && fileInput.files[0];
+        if (f) { fileNameEl.textContent = f.name; fileNameEl.removeAttribute('data-empty'); }
+        else { fileNameEl.textContent = 'Aucun fichier sélectionné'; fileNameEl.setAttribute('data-empty', '1'); }
+      });
+    }
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!form.reportValidity()) return;
       var btn = form.querySelector('button[type="submit"]');
       var fd = new FormData(form);
       var payload = { type: 'contact', source_page: location.pathname };
+      var file = null;
       fd.forEach(function (v, k) {
+        if (k === 'fichier') { if (v && v.size) file = v; return; }
         if (k === 'besoin') { (payload.besoin = payload.besoin || []).push(v); }
         else { payload[k] = v; }
       });
       if (btn) { btn.disabled = true; btn.textContent = 'Envoi…'; }
-      postLead(payload).then(function (ok) {
+
+      function finish(ok) {
         if (ok) {
           form.classList.add('sent');
           if (btn) btn.textContent = 'Demande envoyée';
@@ -492,7 +506,24 @@
           }
           err.textContent = "L'envoi a échoué. Réessayez, ou appelez-nous au 09 83 80 93 12.";
         }
-      });
+      }
+      function send() { postLead(payload).then(finish); }
+
+      // Jusqu'à 3 Mo : on lit le fichier en base64 et on le joint à la demande.
+      if (file && file.size <= 3 * 1024 * 1024) {
+        var reader = new FileReader();
+        reader.onload = function () {
+          var res = String(reader.result || '');
+          var comma = res.indexOf(',');
+          payload.fichier = { name: file.name, type: file.type || 'application/octet-stream', data: comma >= 0 ? res.slice(comma + 1) : res };
+          send();
+        };
+        reader.onerror = function () { send(); };
+        reader.readAsDataURL(file);
+      } else {
+        if (file) payload.fichier_note = 'Fichier trop lourd (max 3 Mo), non joint. À envoyer par email.';
+        send();
+      }
     });
   }
 
