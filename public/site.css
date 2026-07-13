@@ -458,7 +458,7 @@ body.menu-open { overflow: hidden; }
   .hero-carousel { height: clamp(430px, 70svh, 560px); min-height: 430px; background: var(--ink); }
   /* padding-top : le header est fixed (~78px) et flotte au-dessus du hero ;
      on décale le contenu vers le bas pour qu'il ne cache plus le haut du titre. */
-  .hslide-inner { padding-inline: var(--gutter); padding-top: 78px; }
+  .hslide-inner { padding-inline: var(--gutter); padding-top: 88px; align-items: flex-start; }
   .hslide-copy { max-width: 100%; }
   .hslide::after {
     background: linear-gradient(180deg, rgba(11,13,12,0.5) 0%, rgba(11,13,12,0.42) 46%, rgba(11,13,12,0.82) 100%);
@@ -570,13 +570,13 @@ body.loaded .mark { background-size: 100% 100%; }
 
 /* Logos clients sur mobile : plus petits et resserrés pour en voir ~4 à la fois. */
 @media (max-width: 640px) {
-  .clients .cl-label { margin-bottom: 16px; font-size: 11px; }
-  .ltrack { gap: 16px; }
-  .lchip { height: 52px; min-width: 56px; padding: 0 8px; }
-  .lchip img { max-height: 28px; max-width: 84px; }
-  .lchip.sq img { max-height: 38px; max-width: 54px; }
-  .lchip.lg img { max-height: 32px; max-width: 100px; }
-  .lchip.xl img { max-height: 46px; max-width: 78px; }
+  .clients .cl-label { margin-bottom: 14px; font-size: 10.5px; }
+  .ltrack { gap: 8px; }
+  .lchip { height: 40px; min-width: 38px; padding: 0 5px; }
+  .lchip img { max-height: 21px; max-width: 62px; }
+  .lchip.sq img { max-height: 28px; max-width: 42px; }
+  .lchip.lg img { max-height: 24px; max-width: 76px; }
+  .lchip.xl img { max-height: 34px; max-width: 58px; }
 }
 
 /* ---------------- Nos métiers (BLANC) ---------------- */
@@ -2292,7 +2292,7 @@ html { scroll-padding-top: 88px; }
   .wrap { padding-inline: var(--m-gutter, 20px); }
   .section { padding-block: var(--m-section-py, 56px); }
   .page-hero { padding-block: var(--m-hero-py, 108px) calc(var(--m-hero-py, 108px) * 0.45); }
-  .page-hero h1, .hslide-copy h1, .hslide-title { font-size: var(--m-h1, 21px); line-height: 1.18; }
+  .page-hero h1, .hslide-copy h1, .hslide-copy .hslide-title { font-size: var(--m-h1, 21px); line-height: 1.18; }
   .hslide-sub { font-size: var(--m-lead, 15px); }
   .section-head h2, .mp-head h2, .sb-title { font-size: var(--m-h2, 22px); }
   .section-head .lead, .page-hero .hero-sub, .mp-head .lead, .mp-hero .hero-sub {
@@ -2309,11 +2309,16 @@ html { scroll-padding-top: 88px; }
   .sb-tag { font-size: 14.5px; }
   .mp-prose p, .mp-card p, .mp-step-body p { font-size: var(--m-body, 14.5px); }
   /* Hero : boutons compacts (plus de pleine largeur ni de gros padding) */
-  .hslide-actions { gap: 10px; margin-top: 18px; align-items: flex-start; }
+  .hslide-actions { gap: 10px; margin-top: 18px; align-items: center; width: 100%; }
   .hslide-actions .btn, .hslide-actions .btn-lg { width: auto; max-width: 100%; padding: 9px 15px; font-size: 12px; gap: 6px; white-space: nowrap; }
   .hslide-actions .btn .arr, .hslide-actions .btn .ext { font-size: 12px; }
   /* CTA génériques (bandeaux) aussi un cran plus petits sur mobile */
   .cta-band .btn-lg, .hero-actions .btn-lg { padding: 12px 20px; font-size: 14px; }
+  /* Fix overlap : la marge négative du 2e titre (prévue pour le scrollytelling PC)
+     chevauchait la dernière carte secteur sur mobile. On la neutralise + on réduit
+     ce gros titre pour rester cohérent avec les autres. */
+  .pq-second-head { margin-top: clamp(24px, 5vw, 40px); }
+  .pq-h2-big { font-size: 26px; }
 }
 
 /* ============================ Flèches latérales galerie réalisations ============================ */
