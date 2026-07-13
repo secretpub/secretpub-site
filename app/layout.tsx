@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { getContent } from "@/lib/content/store";
+import { buildMobileCss } from "@/lib/content/mobile";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://secretpub.fr";
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
@@ -25,11 +27,13 @@ export const viewport: Viewport = {
   themeColor: "#0b0d0c",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const content = await getContent();
+  const mobileCss = buildMobileCss(content.mobile);
   return (
     <html lang="fr">
       <head>
@@ -44,6 +48,13 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <link rel="stylesheet" href="/site.css" />
+        {/* Réglages responsive mobile poussés depuis l'admin (prend le dessus sur site.css) */}
+        {mobileCss && (
+          <style
+            id="mobile-vars"
+            dangerouslySetInnerHTML={{ __html: mobileCss }}
+          />
+        )}
         {/* Preconnexion au stockage Supabase (images de la galerie / hero) */}
         {SUPABASE_URL && (
           <link rel="preconnect" href={SUPABASE_URL} crossOrigin="" />

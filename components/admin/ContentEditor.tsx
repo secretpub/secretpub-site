@@ -3,6 +3,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import type { SiteContent } from "@/lib/content/schema";
 import { saveContent } from "@/app/admin/actions";
 import { FieldEditor, ClientsContext, type SetAt } from "./FieldEditor";
+import MobileEditor from "./MobileEditor";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -26,6 +27,7 @@ const SECTION_LABELS: Record<string, string> = {
   footer: "Pied de page",
   espace: "Page : Espace de commande",
   reseaux: "Page : Réseaux (masquée)",
+  mobile: "📱 Mobile (responsive)",
 };
 const SECTION_ORDER = Object.keys(SECTION_LABELS);
 
@@ -160,13 +162,20 @@ export default function ContentEditor({ initial }: { initial: SiteContent }) {
           « Enregistrer » publie sur le site en direct.
         </p>
         <ClientsContext.Provider value={clients}>
-          <FieldEditor
-            fieldKey={selPath[selPath.length - 1]}
-            value={getAt(content, selPath)}
-            path={selPath}
-            setAt={setAt}
-            top
-          />
+          {sel === "mobile" ? (
+            <MobileEditor
+              value={content.mobile}
+              onChange={(next) => setAt(["mobile"], next)}
+            />
+          ) : (
+            <FieldEditor
+              fieldKey={selPath[selPath.length - 1]}
+              value={getAt(content, selPath)}
+              path={selPath}
+              setAt={setAt}
+              top
+            />
+          )}
         </ClientsContext.Provider>
       </main>
       <div className="adm-savebar">

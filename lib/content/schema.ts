@@ -273,6 +273,8 @@ export interface SiteContent {
     socials: LinkItem[];
   };
   metierPages?: Record<string, MetierPage>;
+  /** Réglages responsive mobile (clé -> valeur en px). Voir lib/content/mobile.ts */
+  mobile?: Record<string, number>;
 }
 
 /** Deep partial for CMS overrides. */

@@ -2267,6 +2267,23 @@ img, svg, image-slot, video { max-width: 100%; }
 /* Scroll ancré : ne pas masquer les titres sous le header collant */
 html { scroll-padding-top: 88px; }
 
+/* ============================ RÉGLAGES MOBILE (pilotés depuis l'admin « Mobile ») ============================
+   Les 2e arguments de var() = rendu actuel sur téléphone : rien ne change tant
+   que l'admin n'injecte pas de valeurs via <style id="mobile-vars">. */
+@media (max-width: 640px) {
+  .wrap { padding-inline: var(--m-gutter, 20px); }
+  .section { padding-block: var(--m-section-py, 56px); }
+  .page-hero { padding-block: var(--m-hero-py, 108px) calc(var(--m-hero-py, 108px) * 0.45); }
+  .page-hero h1, .hero h1, .hslide-title { font-size: var(--m-h1, 32px); }
+  .section-head h2, .mp-head h2, .sb-title { font-size: var(--m-h2, 28px); }
+  .section-head .lead, .page-hero .hero-sub, .mp-head .lead, .mp-hero .hero-sub {
+    font-size: var(--m-lead, 17px);
+  }
+  .mp-grid, .mp-grid-2, .mp-grid-adv { gap: var(--m-gap, 16px); }
+  .mp-card { padding: var(--m-card-pad, 24px); border-radius: var(--m-radius, 16px); }
+  .mp-step, .mp-related-link { border-radius: var(--m-radius, 16px); }
+}
+
 /* ============================ Flèches latérales galerie réalisations ============================ */
 .real-grid-wrap { position: relative; }
 .rg-arrow {
