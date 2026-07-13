@@ -38,8 +38,8 @@ export const MOBILE_FIELDS: MobileField[] = [
   { key: "radius", varName: "--m-radius", group: "Cartes", label: "Arrondi des coins", min: 0, max: 28, step: 1, def: 16, unit: "px" },
 
   // ── Textes ────────────────────────────────────────────
-  { key: "h1", varName: "--m-h1", group: "Textes", label: "Titre principal (H1)", min: 22, max: 44, step: 1, def: 32, unit: "px" },
-  { key: "h2", varName: "--m-h2", group: "Textes", label: "Titres de section (H2)", min: 18, max: 38, step: 1, def: 28, unit: "px" },
+  { key: "h1", varName: "--m-h1", group: "Textes", label: "Titre principal (H1)", min: 20, max: 44, step: 1, def: 27, unit: "px" },
+  { key: "h2", varName: "--m-h2", group: "Textes", label: "Titres de section (H2)", min: 18, max: 38, step: 1, def: 25, unit: "px" },
   { key: "lead", varName: "--m-lead", group: "Textes", label: "Sous-titres et intros", min: 13, max: 22, step: 1, def: 17, unit: "px" },
 ];
 

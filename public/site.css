@@ -451,31 +451,17 @@ body.menu-open { overflow: hidden; }
 .hc-dots button.on { width: 32px; background: #fff; }
 
 @media (max-width: 880px) {
-  /* Hero mobile : copie claire, puis le visuel empilé en dessous (image entière, carte arrondie) */
-  .hero-carousel { height: auto; min-height: 0; max-height: none; background: var(--paper); }
-  /* Le conteneur des slides doit reprendre le flux, sinon (position:absolute)
-     le hero s'effondre à 0 de hauteur et disparaît sur mobile. */
-  .hc-slides { position: static; }
-  .hslide { position: static; opacity: 1; visibility: visible; display: none; }
-  .hslide.is-active { display: flex; flex-direction: column; }
-  .hslide::after { display: none; }
-  .hslide-inner { order: 1; display: block; height: auto; padding: 40px var(--gutter) 12px; }
-  .hslide-copy { max-width: none; color: var(--ink); }
-  .hslide-copy .eyebrow { color: var(--green-deep); }
-  .hslide-copy h1, .hslide-copy .hslide-title { color: var(--ink); }
-  .hslide-sub { color: var(--muted); }
-  .hslide .btn-ghost-hero { border-color: var(--line-strong); color: var(--ink); }
-  .hslide-bg {
-    display: block; position: static; inset: auto; z-index: 0; order: 2;
-    width: auto; margin: 6px var(--gutter) 4px;
-    aspect-ratio: 16 / 11; border-radius: 18px; overflow: hidden;
-    box-shadow: 0 20px 44px -24px rgba(11,13,12,0.45);
+  /* Hero mobile = même principe que PC : la photo reste en ARRIÈRE-PLAN, le texte
+     par-dessus avec un voile sombre. On adapte juste la hauteur, le padding et le
+     voile (vertical, lisible en portrait). Les tailles de texte sont pilotées par
+     l'éditeur Mobile (--m-h1 / --m-lead). */
+  .hero-carousel { height: clamp(480px, 82svh, 660px); min-height: 480px; background: var(--ink); }
+  .hslide-inner { padding-inline: var(--gutter); }
+  .hslide-copy { max-width: 100%; }
+  .hslide::after {
+    background: linear-gradient(180deg, rgba(11,13,12,0.5) 0%, rgba(11,13,12,0.42) 46%, rgba(11,13,12,0.82) 100%);
   }
-  .hslide-bg img { width: 100%; height: 100%; object-fit: cover; }
   .hc-arrow { display: none; }
-  .hc-dots { position: static; transform: none; justify-content: center; padding-bottom: 30px; margin-top: 14px; }
-  .hc-dots button { background: rgba(11,13,12,0.22); }
-  .hc-dots button.on { background: var(--green); }
 }
 
 /* Soulignement au marqueur vert vif, dessiné à l'arrivée */
@@ -2277,9 +2263,9 @@ html { scroll-padding-top: 88px; }
   .wrap { padding-inline: var(--m-gutter, 20px); }
   .section { padding-block: var(--m-section-py, 56px); }
   .page-hero { padding-block: var(--m-hero-py, 108px) calc(var(--m-hero-py, 108px) * 0.45); }
-  .page-hero h1, .hslide-copy h1, .hslide-title { font-size: var(--m-h1, 32px); }
+  .page-hero h1, .hslide-copy h1, .hslide-title { font-size: var(--m-h1, 27px); line-height: 1.14; }
   .hslide-sub { font-size: var(--m-lead, 16px); }
-  .section-head h2, .mp-head h2, .sb-title { font-size: var(--m-h2, 28px); }
+  .section-head h2, .mp-head h2, .sb-title { font-size: var(--m-h2, 25px); }
   .section-head .lead, .page-hero .hero-sub, .mp-head .lead, .mp-hero .hero-sub {
     font-size: var(--m-lead, 17px);
   }
