@@ -18,5 +18,14 @@ export async function POST(req: NextRequest) {
   revalidatePath("/");
   revalidatePath("/espace-de-commande");
   revalidatePath("/reseaux-franchises");
+  for (const slug of [
+    "signaletique",
+    "imprimerie",
+    "textile-personnalise",
+    "objets-publicitaires",
+    "packaging",
+  ]) {
+    revalidatePath(`/${slug}`);
+  }
   return NextResponse.json({ ok: true, revalidated: true });
 }
