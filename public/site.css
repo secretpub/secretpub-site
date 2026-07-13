@@ -2279,7 +2279,7 @@ html { scroll-padding-top: 88px; }
   .wrap { padding-inline: var(--m-gutter, 20px); }
   .section { padding-block: var(--m-section-py, 56px); }
   .page-hero { padding-block: var(--m-hero-py, 108px) calc(var(--m-hero-py, 108px) * 0.45); }
-  .page-hero h1, .hslide-copy h1, .hslide-title { font-size: var(--m-h1, 24px); line-height: 1.15; }
+  .page-hero h1, .hslide-copy h1, .hslide-title { font-size: var(--m-h1, 21px); line-height: 1.18; }
   .hslide-sub { font-size: var(--m-lead, 15px); }
   .section-head h2, .mp-head h2, .sb-title { font-size: var(--m-h2, 22px); }
   .section-head .lead, .page-hero .hero-sub, .mp-head .lead, .mp-hero .hero-sub {
@@ -2295,6 +2295,12 @@ html { scroll-padding-top: 88px; }
   .msc-desc { font-size: 14px; margin-top: 10px; }
   .sb-tag { font-size: 14.5px; }
   .mp-prose p, .mp-card p, .mp-step-body p { font-size: var(--m-body, 14.5px); }
+  /* Hero : boutons compacts (plus de pleine largeur ni de gros padding) */
+  .hslide-actions { gap: 10px; margin-top: 18px; align-items: flex-start; }
+  .hslide-actions .btn, .hslide-actions .btn-lg { width: auto; max-width: 100%; padding: 10px 16px; font-size: 13px; gap: 7px; }
+  .hslide-actions .btn .arr, .hslide-actions .btn .ext { font-size: 12px; }
+  /* CTA génériques (bandeaux) aussi un cran plus petits sur mobile */
+  .cta-band .btn-lg, .hero-actions .btn-lg { padding: 12px 20px; font-size: 14px; }
 }
 
 /* ============================ Flèches latérales galerie réalisations ============================ */
