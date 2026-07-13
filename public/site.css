@@ -2333,6 +2333,8 @@ html { scroll-padding-top: 88px; }
      ce gros titre pour rester cohérent avec les autres. */
   .pq-second-head { margin-top: clamp(24px, 5vw, 40px); }
   .pq-h2-big { font-size: 26px; }
+  /* Réalisations : on retire les flèches latérales sur mobile (le pager du bas suffit). */
+  .rg-arrow { display: none !important; }
 }
 
 /* ============================ Flèches latérales galerie réalisations ============================ */
