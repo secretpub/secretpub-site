@@ -277,7 +277,10 @@
     var photos = Array.prototype.slice.call(item.querySelectorAll('img.ph'));
     var chosen = mainImg.getAttribute('data-orig');
     var idx = 0;
-    if (curCat !== 'tout') {
+    // On ne bascule sur la photo taguée de la catégorie filtrée QUE si le projet est
+    // d'une catégorie DIFFÉRENTE (ex. un projet "textile" qui a aussi une photo signa).
+    // Si le projet est déjà de la catégorie filtrée, on garde toujours la 1re photo.
+    if (curCat !== 'tout' && item.getAttribute('data-cat') !== curCat) {
       for (var k = 0; k < photos.length; k++) {
         if (photos[k].getAttribute('data-pcat') === curCat) {
           chosen = photos[k].getAttribute('data-orig') || photos[k].getAttribute('src');
