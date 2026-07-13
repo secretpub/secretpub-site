@@ -29,6 +29,26 @@ const SECTION_LABELS: Record<string, string> = {
 };
 const SECTION_ORDER = Object.keys(SECTION_LABELS);
 
+// Libellés des pages métier (SEO) : chaque page devient une section éditable.
+const METIER_PAGE_LABELS: Record<string, string> = {
+  signaletique: "Page métier : Signalétique",
+  imprimerie: "Page métier : Imprimerie",
+  "textile-personnalise": "Page métier : Textile",
+  "objets-publicitaires": "Page métier : Objets publicitaires",
+  packaging: "Page métier : Packaging",
+};
+
+function getAt(obj: any, path: string[]): any {
+  return path.reduce((o, k) => (o == null ? o : o[k]), obj);
+}
+function labelFor(key: string): string {
+  if (key.startsWith("metierPages.")) {
+    const slug = key.split(".")[1];
+    return METIER_PAGE_LABELS[slug] || slug;
+  }
+  return SECTION_LABELS[key] || key;
+}
+
 function setDeep(obj: any, path: (string | number)[], value: unknown): any {
   if (path.length === 0) return value;
   const [head, ...rest] = path;
@@ -58,7 +78,7 @@ export default function ContentEditor({ initial }: { initial: SiteContent }) {
   // Reste sur la même section après un rafraîchissement (mémorisée dans l'URL).
   useEffect(() => {
     const h = decodeURIComponent((window.location.hash || "").replace(/^#/, ""));
-    if (h && Object.prototype.hasOwnProperty.call(content, h)) setSel(h);
+    if (h && getAt(content, h.split(".")) !== undefined) setSel(h);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
@@ -71,11 +91,20 @@ export default function ContentEditor({ initial }: { initial: SiteContent }) {
 
   const keys = useMemo(() => {
     const present = Object.keys(content);
-    return [
+    const base = [
       ...SECTION_ORDER.filter((s) => present.includes(s)),
-      ...present.filter((s) => !SECTION_ORDER.includes(s)),
+      ...present.filter(
+        (s) => !SECTION_ORDER.includes(s) && s !== "metierPages",
+      ),
     ];
+    // Éclate metierPages en une section par page (édition simple).
+    const metier = content.metierPages
+      ? Object.keys(content.metierPages).map((slug) => "metierPages." + slug)
+      : [];
+    return [...base, ...metier];
   }, [content]);
+
+  const selPath = useMemo(() => sel.split("."), [sel]);
 
   // Clients existants (Sociétés déjà saisies) pour l'autocomplétion du champ Société.
   const clients = useMemo(() => {
@@ -120,18 +149,24 @@ export default function ContentEditor({ initial }: { initial: SiteContent }) {
             className={sel === k ? "on" : ""}
             onClick={() => setSel(k)}
           >
-            {SECTION_LABELS[k] || k}
+            {labelFor(k)}
           </button>
         ))}
       </aside>
       <main className="adm-main">
-        <h1 className="adm-h1">{SECTION_LABELS[sel] || sel}</h1>
+        <h1 className="adm-h1">{labelFor(sel)}</h1>
         <p className="adm-sub">
           Modifiez le contenu ci-dessous. Les images se téléversent directement.
           « Enregistrer » publie sur le site en direct.
         </p>
         <ClientsContext.Provider value={clients}>
-          <FieldEditor fieldKey={sel} value={content[sel]} path={[sel]} setAt={setAt} top />
+          <FieldEditor
+            fieldKey={selPath[selPath.length - 1]}
+            value={getAt(content, selPath)}
+            path={selPath}
+            setAt={setAt}
+            top
+          />
         </ClientsContext.Provider>
       </main>
       <div className="adm-savebar">

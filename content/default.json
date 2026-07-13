@@ -201,7 +201,7 @@
     "items": [
       {
         "q": "Quels sont vos délais ?",
-        "a": "Un devis clair sous 48 h ouvrées, un BAT sous 24 h après validation, et une date de livraison annoncée dès la commande, et tenue."
+        "a": "On vous répond une première fois sous 24 h. Ensuite, tout dépend de votre projet : on vous envoie un devis clair, puis un bon à tirer à valider avant production, et une date de livraison annoncée dès la commande, et tenue."
       },
       {
         "q": "Intervenez-vous en dehors de la Drôme ?",
@@ -475,24 +475,24 @@
       "navLabel": "Signalétique",
       "meta": {
         "title": "Signalétique et enseignes à Valence | SecretPub",
-        "description": "Signalétique et enseignes à Valence : enseigne, totem, vitrophanie, covering. Étude, fabrication et pose incluses en Drôme. Devis sous 24 h."
+        "description": "Signalétique et enseignes à Valence : enseigne, totem, vitrophanie, adhésifs. Étude, fabrication et pose incluses en Drôme. Première réponse sous 24 h."
       },
       "hero": {
         "crumb": "Signalétique",
         "eyebrow": "Signalétique et enseignes",
         "h1Html": "<span class=\"mark\">Signalétique et enseignes à Valence</span>, de l’étude à la pose",
-        "sub": "Enseignes, totems, vitrophanie, covering et panneaux de chantier. On conçoit, on fabrique et on installe votre visibilité extérieure à Valence, dans la Drôme et partout en France."
+        "sub": "Enseignes, totems, vitrophanie, adhésifs et panneaux de chantier. On conçoit, on fabrique et on installe votre visibilité extérieure à Valence, dans la Drôme et partout en France."
       },
       "intro": {
         "eyebrow": "Votre visibilité, installée",
         "title": "Une seule équipe pour rendre votre point de vente visible dehors",
         "leadHtml": "On ne vous livre pas un carton d’adhésifs à poser vous-même : <b>on installe votre signalétique sur site, prête à durer.</b>",
-        "bodyHtml": "<p>La signalétique, c’est tout ce qui rend votre commerce, votre bureau ou votre chantier visible de l’extérieur. Enseigne de façade, totem sur un parking, vitrophanie sur votre vitrine, covering sur vos véhicules ou bâche sur un échafaudage : chaque support est étudié pour son emplacement, fabriqué dans des matériaux garantis extérieur et monté par nos soins. Vous validez votre bon à tirer sous 24 h, on s’occupe du reste.</p><p>Basés au 31 Rue Jean Jullien Davin à Valence, on intervient dans toute la Drôme, en Auvergne-Rhône-Alpes et partout en France. Un seul interlocuteur pilote votre projet du premier croquis à l’installation finale, avec la même exigence que vous soyez un commerce indépendant ou un réseau à équiper à l’identique sur plusieurs sites.</p>"
+        "bodyHtml": "<p>La signalétique, c’est tout ce qui rend votre commerce, votre bureau ou votre chantier visible de l’extérieur. Enseigne de façade, totem sur un parking, vitrophanie sur votre vitrine, adhésifs et stickers sur vos supports ou bâche sur un échafaudage : chaque support est étudié pour son emplacement, fabriqué dans des matériaux garantis extérieur et monté par nos soins. On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production ; on s’occupe du reste.</p><p>Basés au 31 Rue Jean Jullien Davin à Valence, on intervient dans toute la Drôme, en Auvergne-Rhône-Alpes et partout en France. Un seul interlocuteur pilote votre projet du premier croquis à l’installation finale, avec la même exigence que vous soyez un commerce indépendant ou un réseau à équiper à l’identique sur plusieurs sites.</p>"
       },
       "prestations": {
         "eyebrow": "Ce qu’on fabrique et pose",
         "title": "Nos prestations de signalétique",
-        "intro": "De l’enseigne lumineuse au covering de flotte, chaque support est étudié, fabriqué et installé par nos équipes.",
+        "intro": "De l’enseigne lumineuse aux adhésifs sur mesure, chaque support est étudié, fabriqué et installé par nos équipes.",
         "items": [
           {
             "title": "Enseignes de façade",
@@ -511,8 +511,8 @@
             "desc": "Habillage complet de vitrine : adhésif dépoli, découpe de logo ou plein. On masque, on habille et on attire le regard."
           },
           {
-            "title": "Covering de véhicule",
-            "desc": "Covering et lettrage adhésif voiture ou utilitaire pour transformer votre flotte en support publicitaire roulant, visible partout où vous passez."
+            "title": "Adhésifs et stickers",
+            "desc": "Adhésifs et stickers découpés à la forme pour vitrines, sols, murs et supports en tout genre. Marquage précis, pose nette, visibilité immédiate."
           },
           {
             "title": "Panneaux de chantier",
@@ -553,8 +553,8 @@
             "desc": "Affichage extérieur, oriflammes et bâches pour vos façades et vos événements, montés et démontés proprement."
           },
           {
-            "title": "PME avec flotte",
-            "desc": "Covering et lettrage adhésif de vos véhicules pour transformer chaque trajet en publicité mobile à vos couleurs."
+            "title": "Bureaux et espaces d’accueil",
+            "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
           }
         ]
       },
@@ -570,8 +570,8 @@
           },
           {
             "n": "02",
-            "title": "BAT sous 24 h",
-            "desc": "On vous envoie un bon à tirer sous 24 h : vous visualisez le rendu exact et vous validez avant fabrication."
+            "title": "Bon à tirer à valider",
+            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
           },
           {
             "n": "03",
@@ -602,7 +602,7 @@
           },
           {
             "title": "Note 5,0/5",
-            "desc": "5,0 sur 5 sur 44 avis Google et des réponses sous 24 h. On vous rappelle vite et on tient nos délais."
+            "desc": "5,0 sur 5 sur 44 avis Google et une première réponse sous 24 h. On vous rappelle vite et on tient nos engagements."
           }
         ]
       },
@@ -611,7 +611,7 @@
         "items": [
           {
             "q": "Quels sont les délais pour une enseigne à Valence ?",
-            "a": "Tout commence par une étude et une prise de cotes sur site. Vous recevez votre bon à tirer sous 24 h. Après validation, comptez généralement quelques jours pour une vitrophanie, davantage pour une enseigne lumineuse sur mesure. On vous annonce le délai précis dès le devis et on planifie la pose avec vous."
+            "a": "On vous répond une première fois sous 24 h. Ensuite, les délais (devis détaillé, bon à tirer, production) dépendent du projet : support, quantité, finitions. Comptez généralement quelques jours pour une vitrophanie, davantage pour une enseigne lumineuse sur mesure. On vous annonce le délai précis dès le devis et on planifie la pose avec vous."
           },
           {
             "q": "Est-ce que la pose est incluse ?",
@@ -633,7 +633,7 @@
       },
       "cta": {
         "title": "Une enseigne, un totem ou une vitrine à habiller ?",
-        "body": "Dites-nous ce que vous voulez rendre visible. On étudie votre emplacement et on vous répond sous 24 h, devis à l’appui.",
+        "body": "Dites-nous ce que vous voulez rendre visible. On étudie votre emplacement et on vous répond une première fois sous 24 h.",
         "primaryLabel": "Demander un devis"
       },
       "related": [
@@ -657,24 +657,24 @@
       "navLabel": "Imprimerie",
       "meta": {
         "title": "Imprimerie à Valence : print sur mesure | SecretPub",
-        "description": "Imprimerie à Valence : cartes, flyers, brochures, affiches, grand format. Couleurs calibrées, BAT sous 24 h, petites et grandes séries. Devis rapide."
+        "description": "Imprimerie à Valence : cartes, flyers, brochures, affiches, grand format. Gros volumes, stockage, conditionnement et distribution multi-sites. Première réponse sous 24 h."
       },
       "hero": {
         "crumb": "Imprimerie",
         "eyebrow": "Imprimerie et print",
-        "h1Html": "<span class=\"mark\">Imprimerie à Valence</span>, vos supports imprimés du premier tirage à la grande série",
-        "sub": "Cartes, flyers, brochures, affiches, PLV et grand format, imprimés avec des couleurs calibrées et un BAT sous 24 h. À Valence, dans la Drôme et partout en France."
+        "h1Html": "<span class=\"mark\">Imprimerie à Valence</span>, vos supports imprimés en gros volumes, stockés, conditionnés et livrés",
+        "sub": "Cartes, flyers, brochures, affiches, PLV et grand format, imprimés en grandes séries avec des couleurs calibrées. On stocke, on conditionne et on distribue à Valence, dans la Drôme et partout en France."
       },
       "intro": {
         "eyebrow": "Votre imprimeur de proximité",
-        "title": "L’imprimeur du papier et du carton, proche de vous",
-        "leadHtml": "<b>Un seul partenaire</b> pour concevoir, imprimer et livrer tous vos supports de communication et de vente.",
-        "bodyHtml": "<p>Basés au 31 Rue Jean Jullien Davin à Valence, nous imprimons vos cartes de visite, flyers, brochures, affiches, menus, stickers et grands formats avec le même soin, que vous commandiez dix exemplaires ou dix mille. Couleurs calibrées, papiers sélectionnés, finitions maîtrisées : chaque support ressemble à votre marque et donne envie de vous lire.</p><p>Parce que nous maîtrisons la production de bout en bout, vous n’avez qu’un seul interlocuteur pour toute votre communication physique. Vous validez un BAT sous 24 h, nous produisons, et vous recevez votre commande dans les temps. Signalétique, textile, objets publicitaires ou packaging : tout se pilote au même endroit, avec la même exigence.</p>"
+        "title": "L’imprimeur du papier et du carton, taillé pour le volume",
+        "leadHtml": "<b>Un seul partenaire</b> pour concevoir, imprimer en grande série, stocker, conditionner et distribuer tous vos supports de communication et de vente.",
+        "bodyHtml": "<p>Basés au 31 Rue Jean Jullien Davin à Valence, nous imprimons vos cartes de visite, flyers, brochures, affiches, menus, stickers et grands formats en tirages importants, avec la même exigence sur les grandes séries et les campagnes nationales. Couleurs calibrées, papiers sélectionnés, finitions maîtrisées : chaque support ressemble à votre marque et donne envie de vous lire.</p><p>Parce que nous maîtrisons la production de bout en bout, vous n’avez qu’un seul interlocuteur pour toute votre communication physique. Nous imprimons en volume, nous stockons pour vous, nous conditionnons (mise sous pli, colisage, kits par point de vente) et nous distribuons vers tous vos points de vente ou vers un site unique, partout en France. On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production ; ensuite les délais (devis détaillé, BAT, production, livraison) dépendent du projet : support, quantité, finitions. Signalétique, textile, objets publicitaires ou packaging : tout se pilote au même endroit, avec la même exigence.</p>"
       },
       "prestations": {
         "eyebrow": "Nos prestations",
-        "title": "Tous vos supports imprimés",
-        "intro": "Du tirage unitaire aux grandes séries, avec des finitions qui font la différence.",
+        "title": "Tous vos supports imprimés, en volume",
+        "intro": "Des grandes séries aux campagnes nationales, avec des finitions qui font la différence et une logistique qui suit.",
         "items": [
           {
             "title": "Cartes de visite premium",
@@ -682,7 +682,7 @@
           },
           {
             "title": "Flyers et dépliants",
-            "desc": "Pour ouvrir, promouvoir et distribuer en local. Formats pliés ou simples, couleurs franches, livraison rapide dans la Drôme."
+            "desc": "Pour ouvrir, promouvoir et distribuer à grande échelle. Formats pliés ou simples, couleurs franches, tirages importants et livraison suivie."
           },
           {
             "title": "Brochures et catalogues",
@@ -690,37 +690,37 @@
           },
           {
             "title": "Affiches et PLV carton",
-            "desc": "Pour animer un point de vente et capter le regard. Petits et grands formats, présentoirs et supports d’exposition sur mesure."
+            "desc": "Pour animer vos points de vente et capter le regard. Grands formats, présentoirs et supports d’exposition produits en série sur mesure."
           },
           {
             "title": "Kakémonos et roll-up",
             "desc": "Prêts pour vos salons et boutiques. Structure enroulable, montage immédiat, visuel net et couleurs fidèles à votre charte."
           },
           {
-            "title": "Papeterie d’entreprise",
-            "desc": "Papier en-tête, enveloppes, blocs et chemises. Une papeterie cohérente qui professionnalise chaque courrier et chaque rendez-vous."
+            "title": "Stockage et réassort",
+            "desc": "Nous imprimons vos volumes puis nous les stockons pour vous. Vous déclenchez le réassort quand vous en avez besoin, sans réimprimer à chaque fois."
           },
           {
-            "title": "Menus et cartes restaurant",
-            "desc": "Plastifiés ou sur papier épais, résistants au service. Des cartes lisibles et appétissantes qui valorisent chaque plat."
+            "title": "Conditionnement sur mesure",
+            "desc": "Mise sous pli, colisage et kits prêts à l’emploi par point de vente. Chaque colis part organisé, étiqueté et prêt à être ouvert."
           },
           {
-            "title": "Stickers et étiquettes",
-            "desc": "Découpés à la forme, en planche ou en rouleau. Idéals pour vos produits, vos vitrines ou vos campagnes de proximité."
+            "title": "Distribution multi-sites",
+            "desc": "Nous distribuons vers tous vos points de vente ou vers un site unique, partout en France, depuis un espace de commande centralisé."
           }
         ]
       },
       "secteurs": {
         "title": "Pensé pour votre secteur",
-        "intro": "Chaque métier a ses supports : nous les connaissons et les produisons pour vous.",
+        "intro": "Chaque métier a ses supports et ses volumes : nous les produisons, les stockons et les distribuons pour vous.",
         "items": [
           {
             "title": "Restaurateurs et cafés",
-            "desc": "Menus, cartes, sets de table et affiches. Des supports résistants au service qui donnent envie de commander."
+            "desc": "Menus, cartes, sets de table et affiches en série. Des supports résistants au service, réassortis dès que vous en manquez."
           },
           {
             "title": "Commerçants et retail",
-            "desc": "Flyers de campagne, PLV carton et affiches de promotion pour attirer en vitrine et faire tourner votre boutique."
+            "desc": "Flyers de campagne, PLV carton et affiches de promotion en volume pour attirer en vitrine et faire tourner toutes vos boutiques."
           },
           {
             "title": "Artisans et PME",
@@ -728,11 +728,11 @@
           },
           {
             "title": "Événements et salons",
-            "desc": "Roll-up, kakémonos, brochures et affiches prêts à temps pour votre stand. Un ensemble cohérent qui vous rend visible."
+            "desc": "Roll-up, kakémonos, brochures et affiches produits en nombre et prêts à temps pour vos stands. Un ensemble cohérent qui vous rend visible."
           },
           {
             "title": "Franchises et réseaux",
-            "desc": "Kits d’ouverture et supports récurrents à la charte. Les points de vente commandent, le siège garde la main."
+            "desc": "Kits d’ouverture et supports récurrents à la charte, conditionnés par point de vente et distribués partout en France. Le siège garde la main."
           },
           {
             "title": "Clubs et associations",
@@ -742,28 +742,28 @@
       },
       "process": {
         "eyebrow": "Comment ça marche",
-        "title": "De votre fichier au support fini",
-        "intro": "Une méthode simple, rapide et sans mauvaise surprise.",
+        "title": "De votre fichier au support livré",
+        "intro": "Une méthode simple, cadrée et sans mauvaise surprise, du tirage à la distribution.",
         "steps": [
           {
             "n": "01",
-            "title": "Brief et devis",
-            "desc": "Vous nous dites ce dont vous avez besoin. Nous répondons sous 24 h avec un conseil clair sur formats, papiers et finitions."
+            "title": "Brief et première réponse",
+            "desc": "Vous nous dites ce dont vous avez besoin. On vous répond une première fois sous 24 h avec un conseil clair sur formats, papiers, finitions et volumes."
           },
           {
             "n": "02",
-            "title": "BAT sous 24 h",
-            "desc": "Nous préparons votre bon à tirer sous 24 h. Vous validez couleurs et textes en toute tranquillité avant lancement."
+            "title": "Devis et bon à tirer",
+            "desc": "On vous envoie un devis détaillé puis un bon à tirer à valider avant production. Les délais dépendent du projet : support, quantité, finitions."
           },
           {
             "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "Nous imprimons avec des couleurs calibrées et contrôlons chaque finition, du tirage unitaire aux grandes séries."
+            "title": "Production en volume",
+            "desc": "Nous imprimons vos grandes séries avec des couleurs calibrées et contrôlons chaque finition, campagne nationale comprise."
           },
           {
             "n": "04",
-            "title": "Livraison",
-            "desc": "Vous recevez votre commande dans les délais annoncés, à Valence, dans la Drôme ou partout en France."
+            "title": "Stockage et distribution",
+            "desc": "Nous stockons, conditionnons et distribuons vers tous vos points de vente ou un site unique, à Valence, dans la Drôme ou partout en France."
           }
         ]
       },
@@ -772,15 +772,15 @@
         "items": [
           {
             "title": "Imprimeur local",
-            "desc": "Basés à Valence, nous connaissons la Drôme et restons joignables. Un interlocuteur proche qui répond sous 24 h."
+            "desc": "Basés à Valence, nous connaissons la Drôme et restons joignables. Un interlocuteur proche qui vous répond une première fois sous 24 h."
           },
           {
-            "title": "Un seul partenaire",
-            "desc": "Print, signalétique, textile, objets et packaging au même endroit. Production maîtrisée de bout en bout, sans intermédiaire."
+            "title": "Taillé pour le volume",
+            "desc": "Grandes séries, tirages importants et campagnes nationales. Nous imprimons en volume sans jamais lâcher sur la qualité."
           },
           {
-            "title": "Idéal multi-sites",
-            "desc": "Espace de commande à votre charte : vos points de vente commandent, votre siège pilote et garde le contrôle."
+            "title": "Stockage et logistique",
+            "desc": "Nous stockons vos tirages, conditionnons par point de vente et distribuons partout en France. Vous ne gérez plus le réassort."
           },
           {
             "title": "Note 5,0 sur 44 avis",
@@ -792,30 +792,30 @@
         "title": "Vos questions sur l’impression",
         "items": [
           {
-            "q": "Quels sont vos délais pour imprimer des flyers ou des cartes ?",
-            "a": "Nous répondons à votre demande sous 24 h et préparons votre BAT sous 24 h une fois le fichier reçu. La production démarre dès votre validation. Les délais de livraison dépendent du support et de la quantité, mais nous privilégions toujours la rapidité, surtout dans la Drôme."
+            "q": "Quels sont vos délais pour imprimer et livrer une grande série ?",
+            "a": "On vous répond une première fois sous 24 h. Ensuite, on vous envoie un devis détaillé puis un bon à tirer à valider avant production. Les délais (devis, BAT, production, livraison) dépendent du projet : support, quantité, finitions et logistique. Nous privilégions toujours la rapidité, surtout dans la Drôme."
           },
           {
-            "q": "Y a-t-il une quantité minimum de commande ?",
-            "a": "Non. Nous imprimons aussi bien un petit tirage qu’une grande série. Vous pouvez commander quelques cartes de visite premium comme plusieurs milliers de flyers. Nous adaptons le procédé pour garder un bon rapport qualité prix à chaque volume."
+            "q": "Gérez-vous les gros volumes et les campagnes nationales ?",
+            "a": "Oui, c’est notre point fort. Nous imprimons des grandes séries et des tirages importants, puis nous stockons pour vous et déclenchons le réassort à la demande. Nous adaptons le procédé pour garder un bon rapport qualité prix, même sur de très gros volumes."
           },
           {
             "q": "Comment dois-je préparer mes fichiers ?",
-            "a": "L’idéal est un PDF haute définition avec les fonds perdus et les textes en courbes. Si vous n’avez pas de fichier prêt, notre équipe s’occupe de la conception ou reprend votre visuel. Nous vérifions tout avant impression et le BAT vous permet de valider le rendu final."
+            "a": "L’idéal est un PDF haute définition avec les fonds perdus et les textes en courbes. Si vous n’avez pas de fichier prêt, notre équipe s’occupe de la conception ou reprend votre visuel. Nous vérifions tout avant impression et le bon à tirer vous permet de valider le rendu final."
           },
           {
             "q": "Quelles finitions proposez-vous ?",
             "a": "Nous proposons le pelliculage mat ou brillant, le vernis sélectif, la dorure, la découpe à la forme, le pliage et la plastification. Ces finitions donnent du relief et de la tenue à vos supports. Nous vous conseillons celle qui met le mieux votre projet en valeur."
           },
           {
-            "q": "Livrez-vous en dehors de Valence ?",
-            "a": "Oui. Nous sommes ancrés à Valence et dans la Drôme, mais nous livrons partout en France. Pour les réseaux et les franchises, nous gérons aussi les envois vers plusieurs points de vente depuis un espace de commande centralisé."
+            "q": "Pouvez-vous stocker, conditionner et distribuer vers plusieurs points de vente ?",
+            "a": "Oui. Nous imprimons en volume, nous stockons vos supports, nous conditionnons (mise sous pli, colisage, kits par point de vente) et nous distribuons vers tous vos points de vente ou vers un site unique, partout en France, depuis un espace de commande centralisé."
           }
         ]
       },
       "cta": {
-        "title": "Un projet à imprimer ? Parlons-en.",
-        "body": "Décrivez votre besoin, nous vous répondons sous 24 h avec un conseil concret et un devis clair. Cartes, flyers, affiches ou grand format : on s’occupe de tout.",
+        "title": "Un gros tirage à imprimer ? Parlons-en.",
+        "body": "Décrivez votre besoin, on vous répond une première fois sous 24 h avec un conseil concret. Grandes séries, stockage, conditionnement et distribution : on s’occupe de tout.",
         "primaryLabel": "Demander un devis"
       },
       "related": [
@@ -851,7 +851,7 @@
         "eyebrow": "Le métier",
         "title": "Des vêtements portés tous les jours, marqués comme il faut",
         "leadHtml": "Votre équipe porte vos couleurs : <b>autant que la tenue tienne, et que le logo reste net après des dizaines de lavages</b>.",
-        "bodyHtml": "<p>Le textile personnalisé, ce n'est pas juste imprimer un logo sur un t-shirt. C'est choisir le bon vêtement pour l'usage, la bonne technique de marquage pour le visuel et la quantité, et une qualité qui supporte le terrain, la cuisine ou le chantier. Broderie pour un rendu durable et haut de gamme, flocage pour les petites séries, sérigraphie pour les grandes quantités, impression numérique DTF pour les visuels détaillés en couleurs : on vous oriente vers ce qui vous convient vraiment.</p><p>Basés à Valence, dans la Drôme, on est votre interlocuteur unique du t-shirt d'accueil à l'habillage complet d'un réseau. Vous validez un bon à tirer sous 24 h, on maîtrise la production de bout en bout, et vous recevez des tenues homogènes pour tous vos sites. Un seul partenaire pour le textile, la signalétique, le print, les objets et le packaging : une seule charte, une seule facture, un seul contact.</p>"
+        "bodyHtml": "<p>Le textile personnalisé, ce n'est pas juste imprimer un logo sur un t-shirt. C'est choisir le bon vêtement pour l'usage, la bonne technique de marquage pour le visuel et la quantité, et une qualité qui supporte le terrain, la cuisine ou le chantier. Broderie pour un rendu durable et haut de gamme, flocage pour les petites séries, sérigraphie pour les grandes quantités, impression numérique DTF pour les visuels détaillés en couleurs : on vous oriente vers ce qui vous convient vraiment.</p><p>Basés à Valence, dans la Drôme, on est votre interlocuteur unique du t-shirt d'accueil à l'habillage complet d'un réseau. On vous répond une première fois sous 24 h, on vous envoie un bon à tirer à valider avant production, et on maîtrise la fabrication de bout en bout, pour des tenues homogènes sur tous vos sites. Un seul partenaire pour le textile, la signalétique, le print, les objets et le packaging : une seule charte, une seule facture, un seul contact.</p>"
       },
       "prestations": {
         "eyebrow": "Nos prestations",
@@ -934,8 +934,8 @@
           },
           {
             "n": "02",
-            "title": "BAT sous 24 h",
-            "desc": "Vous recevez un bon à tirer avec l'emplacement et le rendu du logo sous 24 h, à valider avant tout lancement."
+            "title": "Bon à tirer à valider",
+            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
           },
           {
             "n": "03",
@@ -958,7 +958,7 @@
           },
           {
             "title": "Ancrage local",
-            "desc": "Basés à Valence, dans la Drôme : on répond sous 24 h et on reste joignables, pour vos tenues comme pour vos réassorts."
+            "desc": "Basés à Valence, dans la Drôme : on vous répond une première fois sous 24 h et on reste joignables, pour vos tenues comme pour vos réassorts."
           },
           {
             "title": "Pensé multi-sites",
@@ -975,7 +975,7 @@
         "items": [
           {
             "q": "Quel est le délai pour des vêtements personnalisés à Valence ?",
-            "a": "Après validation du bon à tirer, comptez généralement quelques jours à deux semaines selon la technique et la quantité. Le BAT, lui, vous parvient sous 24 h. Pour un besoin urgent (événement, salon), dites-le nous dès le brief : on cale le planning avec vous."
+            "a": "On vous répond une première fois sous 24 h. Ensuite, les délais (devis, bon à tirer, production) dépendent du projet : le support, la quantité et les finitions. Après validation du bon à tirer, comptez généralement quelques jours à deux semaines selon la technique et la quantité. Pour un besoin urgent (événement, salon), dites-le nous dès le brief : on cale le planning avec vous."
           },
           {
             "q": "Y a-t-il une quantité minimum de commande ?",
@@ -997,7 +997,7 @@
       },
       "cta": {
         "title": "Habillez votre équipe aux bonnes couleurs",
-        "body": "Envoyez-nous votre logo et votre besoin : on vous conseille le bon vêtement, la bonne technique et un devis clair, avec réponse sous 24 h.",
+        "body": "Envoyez-nous votre logo et votre besoin : on vous conseille le bon vêtement, la bonne technique et un devis clair. On vous répond une première fois sous 24 h, puis on cale les délais selon votre projet.",
         "primaryLabel": "Demander un devis"
       },
       "related": [
@@ -1021,7 +1021,7 @@
       "navLabel": "Objets publicitaires",
       "meta": {
         "title": "Objets publicitaires à Valence | SecretPub",
-        "description": "Objets publicitaires personnalisés à Valence : tote bags, mugs, gourdes, goodies et welcome packs à votre logo. Production et livraison. Devis 24 h."
+        "description": "Objets publicitaires personnalisés à Valence : tote bags, mugs, gourdes, goodies et welcome packs à votre logo. Production et livraison. Première réponse sous 24 h."
       },
       "hero": {
         "crumb": "Objets publicitaires",
@@ -1058,7 +1058,7 @@
           },
           {
             "title": "Magnets et objets de fidélisation",
-            "desc": "Magnets et désodorisants voiture pensés pour les commerces de proximité et la fidélisation locale."
+            "desc": "Magnets et petits objets de bureau pensés pour les commerces de proximité et la fidélisation locale."
           },
           {
             "title": "Cadeaux d’affaires de fin d’année",
@@ -1116,8 +1116,8 @@
           },
           {
             "n": "02",
-            "title": "Personnalisation et BAT 24 h",
-            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer sous 24 h pour valider avant production."
+            "title": "Personnalisation et bon à tirer",
+            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
           },
           {
             "n": "03",
@@ -1148,7 +1148,7 @@
           },
           {
             "title": "Réactivité prouvée",
-            "desc": "Réponses et BAT sous 24 h, avec une note de 5,0 sur 5 sur 44 avis Google."
+            "desc": "Première réponse sous 24 h, puis des délais calés avec vous, avec une note de 5,0 sur 5 sur 44 avis Google."
           }
         ]
       },
@@ -1161,7 +1161,7 @@
           },
           {
             "q": "Sous quels délais recevez-vous les goodies personnalisés ?",
-            "a": "On vous envoie un bon à tirer sous 24 h pour valider le visuel. Après votre accord, le délai de production dépend de l’objet et de la quantité, en général quelques jours à deux semaines. Pour un salon ou une date précise, prévenez-nous tôt, on cale le planning avec vous."
+            "a": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production. Ensuite les délais (devis, bon à tirer, production) dépendent du projet : objet, quantité et finitions, en général quelques jours à deux semaines. Pour un salon ou une date précise, prévenez-nous tôt, on cale le planning avec vous."
           },
           {
             "q": "Peut-on personnaliser les objets à notre logo et à notre charte ?",
@@ -1173,13 +1173,13 @@
           },
           {
             "q": "Combien coûte un objet publicitaire personnalisé ?",
-            "a": "Le prix varie selon l’objet, la quantité et la personnalisation. Plus la quantité est élevée, plus le prix unitaire baisse. Demandez un devis avec votre besoin et votre budget, on vous répond sous 24 h avec une proposition claire."
+            "a": "Le prix varie selon l’objet, la quantité et la personnalisation. Plus la quantité est élevée, plus le prix unitaire baisse. Demandez un devis avec votre besoin et votre budget : on vous répond une première fois sous 24 h, puis les délais de devis détaillé, de bon à tirer et de production dépendent du projet."
           }
         ]
       },
       "cta": {
         "title": "Faites circuler votre marque",
-        "body": "Dites-nous votre occasion, votre budget et vos quantités. On vous propose les objets utiles les plus adaptés et un devis clair sous 24 h.",
+        "body": "Dites-nous votre occasion, votre budget et vos quantités. On vous propose les objets utiles les plus adaptés et on vous répond une première fois sous 24 h ; ensuite les délais (devis, bon à tirer, production) dépendent du projet.",
         "primaryLabel": "Demander un devis"
       },
       "related": [
@@ -1203,7 +1203,7 @@
       "navLabel": "Packaging",
       "meta": {
         "title": "Packaging personnalisé à Valence | SecretPub",
-        "description": "Packaging personnalisé à Valence : boîtes, sacs kraft, emballages food et coffrets premium. Un seul partenaire, BAT 24 h, livraison France entière."
+        "description": "Packaging personnalisé à Valence : boîtes, sacs kraft, emballages food et coffrets premium. Un seul partenaire, première réponse sous 24 h, livraison France entière."
       },
       "hero": {
         "crumb": "Packaging",
@@ -1298,8 +1298,8 @@
           },
           {
             "n": "02",
-            "title": "BAT sous 24 h",
-            "desc": "Nous préparons votre bon à tirer sous 24 h. Vous validez le visuel et les dimensions avant tout lancement, sans mauvaise surprise."
+            "title": "Bon à tirer à valider",
+            "desc": "Nous vous envoyons un bon à tirer à valider avant production. Vous contrôlez le visuel et les dimensions avant tout lancement, sans mauvaise surprise."
           },
           {
             "n": "03",
@@ -1325,8 +1325,8 @@
             "desc": "Une équipe à Valence, dans la Drôme, joignable et réactive, qui livre partout en France y compris vos réseaux multi-sites."
           },
           {
-            "title": "Réponses sous 24 h",
-            "desc": "Nous répondons à vos demandes sous 24 h et livrons votre BAT dans le même délai, pour avancer vite sans perdre en qualité."
+            "title": "Première réponse sous 24 h",
+            "desc": "Nous répondons à votre demande sous 24 h, puis les délais (devis, bon à tirer, production) dépendent du projet : support, quantité, finitions."
           },
           {
             "title": "Note 5,0 sur 44 avis",
@@ -1339,7 +1339,7 @@
         "items": [
           {
             "q": "Quels sont les délais pour un packaging personnalisé à Valence ?",
-            "a": "Nous répondons à votre demande sous 24 h et vous transmettons votre BAT dans le même délai. Une fois le bon à tirer validé, les délais de production dépendent du format et des quantités. Nous vous donnons un planning précis dès le devis, sans surprise."
+            "a": "Nous répondons à votre demande une première fois sous 24 h. Ensuite, les délais (devis, bon à tirer, production) dépendent du projet : support, quantité et finitions. Nous vous donnons un planning précis avec le devis, sans surprise."
           },
           {
             "q": "Y a-t-il une quantité minimum de commande ?",
@@ -1351,7 +1351,7 @@
           },
           {
             "q": "Quels fichiers dois-je fournir pour mon packaging ?",
-            "a": "Idéalement un logo vectoriel et votre charte graphique, mais si vous n'avez qu'une image ou une idée, nous nous en occupons. Notre équipe prépare la mise en page et vous soumet un BAT à valider avant production."
+            "a": "Idéalement un logo vectoriel et votre charte graphique, mais si vous n'avez qu'une image ou une idée, nous nous en occupons. Notre équipe prépare la mise en page et vous envoie un bon à tirer à valider avant production."
           },
           {
             "q": "Pouvez-vous gérer un packaging identique sur plusieurs points de vente ?",
@@ -1361,7 +1361,7 @@
       },
       "cta": {
         "title": "Donnez à votre produit l'emballage qu'il mérite",
-        "body": "Parlez-nous de votre projet de packaging à Valence ou ailleurs en France. Réponse sous 24 h et BAT rapide, d'un seul partenaire de bout en bout.",
+        "body": "Parlez-nous de votre projet de packaging à Valence ou ailleurs en France. Première réponse sous 24 h, puis un bon à tirer à valider, d'un seul partenaire de bout en bout.",
         "primaryLabel": "Demander un devis"
       },
       "related": [
@@ -1398,7 +1398,7 @@
       {
         "cat": "print",
         "title": "Print",
-        "descHtml": "Cartes, brochures, affiches, PLV et grand format. Couleurs calibrées, finitions soignées et BAT sous 24 h, à vos quantités réelles.",
+        "descHtml": "Cartes, brochures, affiches, PLV et grand format. Couleurs calibrées, finitions soignées, gestion des stocks et distribution multi-sites.",
         "linkLabel": "Voir nos réalisations print",
         "img": "/assets/print-products-opt.webp",
         "alt": "Réalisations print SecretPub : brochures, supports imprimés et cartes de visite à la charte SecretPub",

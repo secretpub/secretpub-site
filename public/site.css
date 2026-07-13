@@ -2222,7 +2222,15 @@ img, svg, image-slot, video { max-width: 100%; }
 .mp-related-link .arr { color: var(--green-deep); }
 
 /* Lien "en savoir plus" ajouté sous chaque métier de l'accueil */
-.msc-link.msc-link-page { margin-top: 10px; opacity: .95; }
+/* Lien secondaire "en savoir plus" : volontairement discret pour ne pas se
+   confondre avec le lien principal "voir nos réalisations" juste au-dessus. */
+.msc-link.msc-link-page {
+  margin-top: 12px; font-weight: 500; font-size: 13.5px;
+  color: var(--muted); gap: 6px;
+}
+.msc-link.msc-link-page .arr { font-size: 12px; opacity: .7; }
+.msc-link.msc-link-page:hover { color: var(--green-deep); }
+.ms-showcase:hover .msc-link.msc-link-page .arr { transform: none; }
 
 /* Scroll ancré : ne pas masquer les titres sous le header collant */
 html { scroll-padding-top: 88px; }
