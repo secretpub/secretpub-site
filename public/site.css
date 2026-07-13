@@ -2297,7 +2297,7 @@ html { scroll-padding-top: 88px; }
   .mp-prose p, .mp-card p, .mp-step-body p { font-size: var(--m-body, 14.5px); }
   /* Hero : boutons compacts (plus de pleine largeur ni de gros padding) */
   .hslide-actions { gap: 10px; margin-top: 18px; align-items: flex-start; }
-  .hslide-actions .btn, .hslide-actions .btn-lg { width: auto; max-width: 100%; padding: 10px 16px; font-size: 13px; gap: 7px; }
+  .hslide-actions .btn, .hslide-actions .btn-lg { width: auto; max-width: 100%; padding: 9px 15px; font-size: 12px; gap: 6px; white-space: nowrap; }
   .hslide-actions .btn .arr, .hslide-actions .btn .ext { font-size: 12px; }
   /* CTA génériques (bandeaux) aussi un cran plus petits sur mobile */
   .cta-band .btn-lg, .hero-actions .btn-lg { padding: 12px 20px; font-size: 14px; }
