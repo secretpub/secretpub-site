@@ -36,6 +36,21 @@
       </div>
     </div>
 
+    <!-- Version mobile des secteurs : liste naturelle (image + titre + détails),
+         sans scroll bloqué. Masquée sur PC (le scrollytelling ci-dessus reste). -->
+    <div class="sectors-mobile">
+      {{#secteurs.items}}
+      <article class="secm-card reveal">
+        <div class="secm-media"><img class="ph" src="{{img}}" alt="{{alt}}" loading="lazy" /></div>
+        <div class="secm-body">
+          <span class="secm-n">{{n}}</span>
+          <h3 class="secm-t">{{title}}</h3>
+          <p class="secm-d">{{{detailsHtml}}}</p>
+        </div>
+      </article>
+      {{/secteurs.items}}
+    </div>
+
     <div class="section-head reveal center pq-second-head">
       <h2 class="pq-h2"><span class="pq-h2-big">{{secteurs.heading2}}</span></h2>
     </div>

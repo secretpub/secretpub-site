@@ -455,7 +455,7 @@ body.menu-open { overflow: hidden; }
      par-dessus avec un voile sombre. On adapte juste la hauteur, le padding et le
      voile (vertical, lisible en portrait). Les tailles de texte sont pilotées par
      l'éditeur Mobile (--m-h1 / --m-lead). */
-  .hero-carousel { height: clamp(480px, 82svh, 660px); min-height: 480px; background: var(--ink); }
+  .hero-carousel { height: clamp(390px, 64svh, 500px); min-height: 390px; background: var(--ink); }
   .hslide-inner { padding-inline: var(--gutter); }
   .hslide-copy { max-width: 100%; }
   .hslide::after {
@@ -958,6 +958,22 @@ body.loaded .mark { background-size: 100% 100%; }
 }
 .ft-k::after { content: ""; position: absolute; right: 0; top: 50%; width: 1px; height: 16px; background: rgba(255,255,255,0.2); transform: translateY(-50%); }
 .fan-title p { font-size: clamp(13px, 1.5vw, 15.5px); color: rgba(255,255,255,0.78); font-weight: 500; }
+
+/* Version mobile des secteurs (liste naturelle) : cachée par défaut sur PC. */
+.sectors-mobile { display: none; }
+.secm-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; overflow: hidden; }
+.secm-media { position: relative; width: 100%; aspect-ratio: 16 / 10; }
+.secm-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.secm-body { padding: 15px 17px 17px; }
+.secm-n { font-family: var(--display); font-weight: 800; font-size: 11.5px; letter-spacing: 0.12em; color: var(--green); }
+.secm-t { font-family: var(--display); font-weight: 800; font-size: 18px; color: #fff; margin: 4px 0 8px; letter-spacing: -0.01em; }
+.secm-d { color: rgba(255,255,255,0.8); font-size: 13.5px; line-height: 1.5; margin: 0; }
+
+/* Sur mobile : on remplace le scrollytelling bloqué (300vh) par la liste naturelle. */
+@media (max-width: 640px) {
+  .sectors { display: none; }
+  .sectors-mobile { display: flex; flex-direction: column; gap: 16px; max-width: 520px; margin: 6px auto 0; }
+}
 
 @media (max-width: 820px) {
   .sectors { height: 300vh; }
@@ -2263,15 +2279,22 @@ html { scroll-padding-top: 88px; }
   .wrap { padding-inline: var(--m-gutter, 20px); }
   .section { padding-block: var(--m-section-py, 56px); }
   .page-hero { padding-block: var(--m-hero-py, 108px) calc(var(--m-hero-py, 108px) * 0.45); }
-  .page-hero h1, .hslide-copy h1, .hslide-title { font-size: var(--m-h1, 27px); line-height: 1.14; }
-  .hslide-sub { font-size: var(--m-lead, 16px); }
-  .section-head h2, .mp-head h2, .sb-title { font-size: var(--m-h2, 25px); }
+  .page-hero h1, .hslide-copy h1, .hslide-title { font-size: var(--m-h1, 24px); line-height: 1.15; }
+  .hslide-sub { font-size: var(--m-lead, 15px); }
+  .section-head h2, .mp-head h2, .sb-title { font-size: var(--m-h2, 22px); }
   .section-head .lead, .page-hero .hero-sub, .mp-head .lead, .mp-hero .hero-sub {
-    font-size: var(--m-lead, 17px);
+    font-size: var(--m-lead, 15px);
   }
   .mp-grid, .mp-grid-2, .mp-grid-adv { gap: var(--m-gap, 16px); }
-  .mp-card { padding: var(--m-card-pad, 24px); border-radius: var(--m-radius, 16px); }
+  .mp-card { padding: var(--m-card-pad, 22px); border-radius: var(--m-radius, 16px); }
   .mp-step, .mp-related-link { border-radius: var(--m-radius, 16px); }
+  /* Métiers (accueil) : images produits plus petites et centrées, titres/textes réduits */
+  .ms-showcase, .ms-showcase.reverse { gap: 16px; }
+  .msc-visual { max-width: 260px; margin-inline: auto; }
+  .msc-title { font-size: 21px; margin-top: 8px; }
+  .msc-desc { font-size: 14px; margin-top: 10px; }
+  .sb-tag { font-size: 14.5px; }
+  .mp-prose p, .mp-card p, .mp-step-body p { font-size: var(--m-body, 14.5px); }
 }
 
 /* ============================ Flèches latérales galerie réalisations ============================ */

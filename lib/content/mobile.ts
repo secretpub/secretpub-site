@@ -38,9 +38,10 @@ export const MOBILE_FIELDS: MobileField[] = [
   { key: "radius", varName: "--m-radius", group: "Cartes", label: "Arrondi des coins", min: 0, max: 28, step: 1, def: 16, unit: "px" },
 
   // ── Textes ────────────────────────────────────────────
-  { key: "h1", varName: "--m-h1", group: "Textes", label: "Titre principal (H1)", min: 20, max: 44, step: 1, def: 27, unit: "px" },
-  { key: "h2", varName: "--m-h2", group: "Textes", label: "Titres de section (H2)", min: 18, max: 38, step: 1, def: 25, unit: "px" },
-  { key: "lead", varName: "--m-lead", group: "Textes", label: "Sous-titres et intros", min: 13, max: 22, step: 1, def: 17, unit: "px" },
+  { key: "h1", varName: "--m-h1", group: "Textes", label: "Titre principal (H1)", min: 18, max: 44, step: 1, def: 24, unit: "px" },
+  { key: "h2", varName: "--m-h2", group: "Textes", label: "Titres de section (H2)", min: 16, max: 38, step: 1, def: 22, unit: "px" },
+  { key: "lead", varName: "--m-lead", group: "Textes", label: "Sous-titres et intros", min: 12, max: 22, step: 1, def: 15, unit: "px" },
+  { key: "body", varName: "--m-body", group: "Textes", label: "Texte courant", min: 12, max: 18, step: 0.5, def: 14.5, unit: "px" },
 ];
 
 export const MOBILE_DEFAULTS: MobileTokens = Object.fromEntries(
