@@ -451,18 +451,22 @@ body.menu-open { overflow: hidden; }
 .hc-dots button.on { width: 32px; background: #fff; }
 
 @media (max-width: 880px) {
-  /* Hero mobile = même principe que PC : la photo reste en ARRIÈRE-PLAN, le texte
-     par-dessus avec un voile sombre. On adapte juste la hauteur, le padding et le
-     voile (vertical, lisible en portrait). Les tailles de texte sont pilotées par
-     l'éditeur Mobile (--m-h1 / --m-lead). */
-  .hero-carousel { height: clamp(430px, 70svh, 560px); min-height: 430px; background: var(--ink); }
-  /* padding-top : le header est fixed (~78px) et flotte au-dessus du hero ;
-     on décale le contenu vers le bas pour qu'il ne cache plus le haut du titre. */
-  .hslide-inner { padding-inline: var(--gutter); padding-top: 88px; align-items: flex-start; }
-  .hslide-copy { max-width: 100%; }
+  /* Hero mobile premium : la PHOTO occupe presque tout l'écran et reste visible en
+     ENTIER en haut. Le texte est ancré en BAS sur un dégradé propre (transparent en
+     haut -> sombre en bas), au lieu d'un voile terne sur toute l'image. */
+  .hero-carousel { height: 88svh; min-height: 560px; max-height: 780px; background: var(--ink); }
   .hslide::after {
-    background: linear-gradient(180deg, rgba(11,13,12,0.5) 0%, rgba(11,13,12,0.42) 46%, rgba(11,13,12,0.82) 100%);
+    background: linear-gradient(to top,
+      rgba(7,10,8,0.95) 0%, rgba(7,10,8,0.82) 14%, rgba(7,10,8,0.42) 36%,
+      rgba(7,10,8,0.10) 58%, rgba(7,10,8,0) 80%);
   }
+  .hslide-inner {
+    align-items: flex-end; justify-content: center; height: 100%;
+    padding: 0 var(--gutter) 48px;
+  }
+  .hslide-copy { max-width: 440px; text-align: center; }
+  .hslide-copy .eyebrow { justify-content: center; }
+  .hslide-copy .eyebrow::before { display: none; }
   .hc-arrow { display: none; }
 }
 
@@ -2308,10 +2312,10 @@ html { scroll-padding-top: 88px; }
   .msc-desc { font-size: 14px; margin-top: 10px; }
   .sb-tag { font-size: 14.5px; }
   .mp-prose p, .mp-card p, .mp-step-body p { font-size: var(--m-body, 14.5px); }
-  /* Hero : boutons compacts (plus de pleine largeur ni de gros padding) */
-  .hslide-actions { gap: 10px; margin-top: 18px; align-items: center; width: 100%; }
-  .hslide-actions .btn, .hslide-actions .btn-lg { width: auto; max-width: 100%; padding: 9px 15px; font-size: 12px; gap: 6px; white-space: nowrap; }
-  .hslide-actions .btn .arr, .hslide-actions .btn .ext { font-size: 12px; }
+  /* Hero : boutons centrés, à la taille du bouton "Demander plus d'exemples" (rm-btn). */
+  .hslide-actions { gap: 11px; margin-top: 20px; align-items: center; width: 100%; }
+  .hslide-actions .btn, .hslide-actions .btn-lg { width: auto; max-width: 100%; padding: 13px 22px; font-size: 15px; font-weight: 700; gap: 8px; white-space: nowrap; }
+  .hslide-actions .btn .arr, .hslide-actions .btn .ext { font-size: 13px; }
   /* CTA génériques (bandeaux) aussi un cran plus petits sur mobile */
   .cta-band .btn-lg, .hero-actions .btn-lg { padding: 12px 20px; font-size: 14px; }
   /* Fix overlap : la marge négative du 2e titre (prévue pour le scrollytelling PC)
