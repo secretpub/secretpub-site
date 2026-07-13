@@ -2246,15 +2246,21 @@ img, svg, image-slot, video { max-width: 100%; }
 .mp-related-link:hover { border-color: var(--green); transform: translateY(-2px); box-shadow: 0 12px 26px -14px rgba(19,122,62,0.5); }
 .mp-related-link .arr { color: var(--green-deep); }
 
-/* Lien "en savoir plus" ajouté sous chaque métier de l'accueil */
-/* Lien secondaire "en savoir plus" : volontairement discret pour ne pas se
-   confondre avec le lien principal "voir nos réalisations" juste au-dessus. */
+/* Lien secondaire "en savoir plus" -> petit bouton pilule fantôme, pour qu'il
+   soit clairement d'une autre nature que le lien texte "voir nos réalisations"
+   juste au-dessus (forme différente = plus de confusion). */
 .msc-link.msc-link-page {
-  margin-top: 12px; font-weight: 500; font-size: 13.5px;
-  color: var(--muted); gap: 6px;
+  margin-top: 16px; gap: 7px;
+  padding: 8px 16px; border-radius: 999px;
+  background: transparent; border: 1px solid var(--line-strong);
+  color: var(--green-deep); font-weight: 600; font-size: 13px;
+  transition: border-color .2s ease, background .2s ease, transform .2s ease, box-shadow .2s ease;
 }
-.msc-link.msc-link-page .arr { font-size: 12px; opacity: .7; }
-.msc-link.msc-link-page:hover { color: var(--green-deep); }
+.msc-link.msc-link-page:hover {
+  border-color: var(--green); background: var(--green-soft);
+  transform: translateY(-1px); box-shadow: 0 8px 18px -12px rgba(19, 122, 62, .5);
+}
+.msc-link.msc-link-page .arr { color: var(--green-deep); font-size: 12px; }
 .ms-showcase:hover .msc-link.msc-link-page .arr { transform: none; }
 
 /* Scroll ancré : ne pas masquer les titres sous le header collant */
