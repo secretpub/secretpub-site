@@ -7,6 +7,8 @@ export type SetAt = (path: (string | number)[], value: unknown) => void;
 // Liste des clients existants (Sociétés déjà saisies) — pour l'autocomplétion
 // du champ Société, afin d'identifier/réutiliser le même client de façon fiable.
 export const ClientsContext = createContext<string[]>([]);
+// Mots-clés de sous-catégorie déjà utilisés (photos + projets) : proposés en suggestions.
+export const SubsContext = createContext<string[]>([]);
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -623,6 +625,17 @@ function SubTagsField({
   const [draft, setDraft] = useState("");
   const tags = (value || "").split(",").map((s) => s.trim()).filter(Boolean);
   const id = "dl-psub-" + path.join("-");
+  // Suggestions = liste de base + tous les mots-clés déjà saisis ailleurs.
+  const usedSubs = useContext(SubsContext);
+  const seen = new Set<string>();
+  const suggestions: string[] = [];
+  for (const s of SUBS.concat(usedSubs)) {
+    const t = (s || "").trim();
+    if (!t) continue;
+    const k = t.toLowerCase();
+    if (!seen.has(k)) { seen.add(k); suggestions.push(t); }
+  }
+  suggestions.sort((a, b) => a.localeCompare(b, "fr"));
   function commit(raw: string) {
     const t = capFirst(raw.trim());
     if (!t) return;
@@ -660,7 +673,7 @@ function SubTagsField({
         placeholder="Ajouter un mot-clé (ex. Mugs)…"
         onChange={(e) => {
           const v = e.target.value;
-          if (SUBS.indexOf(v) !== -1) { commit(v); return; }
+          if (suggestions.indexOf(v) !== -1) { commit(v); return; }
           setDraft(v);
         }}
         onKeyDown={(e) => {
@@ -669,7 +682,7 @@ function SubTagsField({
         onBlur={() => { if (draft.trim()) commit(draft); }}
       />
       <datalist id={id}>
-        {SUBS.map((s) => (
+        {suggestions.map((s) => (
           <option key={s} value={s} />
         ))}
       </datalist>

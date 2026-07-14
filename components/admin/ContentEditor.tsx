@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { SiteContent } from "@/lib/content/schema";
 import { saveContent } from "@/app/admin/actions";
-import { FieldEditor, ClientsContext, type SetAt } from "./FieldEditor";
+import { FieldEditor, ClientsContext, SubsContext, type SetAt } from "./FieldEditor";
 import MobileEditor from "./MobileEditor";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -119,6 +119,27 @@ export default function ContentEditor({ initial }: { initial: SiteContent }) {
     return Array.from(set).sort((a, b) => a.localeCompare(b));
   }, [content]);
 
+  // Mots-clés de sous-catégorie déjà saisis (projets + photos) : proposés partout.
+  const subs = useMemo(() => {
+    const items = content?.realisations?.items;
+    if (!Array.isArray(items)) return [] as string[];
+    const set = new Set<string>();
+    const add = (v: unknown) => {
+      if (typeof v === "string")
+        v.split(",").forEach((x) => {
+          const t = x.trim();
+          if (t) set.add(t);
+        });
+    };
+    items.forEach((it: any) => {
+      if (!it) return;
+      add(it.sub);
+      if (it.mainPhoto) add(it.mainPhoto.sub);
+      if (Array.isArray(it.extraPhotos)) it.extraPhotos.forEach((p: any) => p && add(p.sub));
+    });
+    return Array.from(set).sort((a, b) => a.localeCompare(b, "fr"));
+  }, [content]);
+
   async function onSave() {
     setStatus({ t: "saving" });
     try {
@@ -162,20 +183,22 @@ export default function ContentEditor({ initial }: { initial: SiteContent }) {
           « Enregistrer » publie sur le site en direct.
         </p>
         <ClientsContext.Provider value={clients}>
-          {sel === "mobile" ? (
-            <MobileEditor
-              value={content.mobile}
-              onChange={(next) => setAt(["mobile"], next)}
-            />
-          ) : (
-            <FieldEditor
-              fieldKey={selPath[selPath.length - 1]}
-              value={getAt(content, selPath)}
-              path={selPath}
-              setAt={setAt}
-              top
-            />
-          )}
+          <SubsContext.Provider value={subs}>
+            {sel === "mobile" ? (
+              <MobileEditor
+                value={content.mobile}
+                onChange={(next) => setAt(["mobile"], next)}
+              />
+            ) : (
+              <FieldEditor
+                fieldKey={selPath[selPath.length - 1]}
+                value={getAt(content, selPath)}
+                path={selPath}
+                setAt={setAt}
+                top
+              />
+            )}
+          </SubsContext.Provider>
         </ClientsContext.Provider>
       </main>
       <div className="adm-savebar">
