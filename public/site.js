@@ -785,9 +785,9 @@
     box.setAttribute('role', 'dialog');
     box.innerHTML = '<button class="lb-close" aria-label="Fermer">\u00d7</button>'
       + '<div class="lb-panel">'
+      +   '<div class="lb-stories" aria-hidden="true"></div>'
       +   '<div class="lb-media">'
       +     '<div class="lb-frame">'
-      +       '<div class="lb-stories" aria-hidden="true"></div>'
       +       '<button type="button" class="lb-tapzone prev" aria-label="Photo précédente"></button>'
       +       '<button type="button" class="lb-tapzone next" aria-label="Photo suivante"></button>'
       +       '<button class="lb-nav lb-prev" aria-label="Photo précédente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>'

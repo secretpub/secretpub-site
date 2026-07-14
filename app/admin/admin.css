@@ -53,18 +53,26 @@
 .adm-btn.sm { padding: 5px 11px; font-size: 12.5px; border-radius: 8px; }
 
 /* Layout */
-.adm-wrap { display: grid; grid-template-columns: 232px 1fr; gap: 0; align-items: start; }
+.adm-wrap { display: grid; grid-template-columns: 250px 1fr; gap: 0; align-items: start; }
 .adm-side {
   position: sticky; top: 57px; align-self: start; height: calc(100vh - 57px); overflow-y: auto;
-  padding: 16px 12px; border-right: 1px solid var(--a-line); background: var(--a-panel);
+  padding: 8px 12px 24px; border-right: 1px solid var(--a-line); background: var(--a-panel);
 }
-.adm-side .adm-side-t { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--a-muted); padding: 6px 10px; }
+/* Groupes de sections nettement séparés */
+.adm-side-group { padding-top: 10px; }
+.adm-side-group + .adm-side-group { margin-top: 8px; border-top: 1px solid var(--a-line); }
+.adm-side .adm-side-t {
+  position: sticky; top: 0; z-index: 1; background: var(--a-panel);
+  font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800;
+  color: var(--a-text); padding: 8px 10px; margin-bottom: 2px;
+}
 .adm-side button {
-  display: block; width: 100%; text-align: left; padding: 8px 10px; border-radius: 8px;
+  display: block; width: 100%; text-align: left; padding: 9px 11px; border-radius: 8px;
   background: transparent; border: none; color: var(--a-muted); cursor: pointer; font-size: 13.5px; font-weight: 600;
+  transition: background 0.12s ease, color 0.12s ease;
 }
 .adm-side button:hover { background: var(--a-panel-2); color: var(--a-text); }
-.adm-side button.on { background: rgba(64,171,63,0.16); color: var(--a-green-2); }
+.adm-side button.on { background: rgba(64,171,63,0.16); color: var(--a-green-2); box-shadow: inset 2px 0 0 var(--a-green-2); }
 .adm-main { padding: 22px clamp(16px, 3vw, 40px) 120px; max-width: 940px; }
 .adm-h1 { font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 24px; letter-spacing: -0.02em; margin: 0 0 4px; }
 .adm-sub { color: var(--a-muted); font-size: 14px; margin: 0 0 22px; }

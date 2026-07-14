@@ -171,16 +171,39 @@ export default function ContentEditor({ initial }: { initial: SiteContent }) {
   return (
     <div className="adm-wrap">
       <aside className="adm-side">
-        <div className="adm-side-t">Sections</div>
-        {keys.map((k) => (
-          <button
-            key={k}
-            className={sel === k ? "on" : ""}
-            onClick={() => setSel(k)}
-          >
-            {labelFor(k)}
-          </button>
-        ))}
+        {(() => {
+          const homeKeys = [
+            "meta", "nav", "headerCtaLabel", "hero", "trust", "clients",
+            "metiersSocle", "metiersComplement", "realisations", "secteurs",
+            "pourqui", "waitlist", "methode", "france", "faq", "contact", "footer",
+          ];
+          const groups: { title: string; match: (k: string) => boolean }[] = [
+            { title: "🏠 Page d'accueil", match: (k) => homeKeys.includes(k) },
+            { title: "📄 Autres pages", match: (k) => k === "espace" || k === "reseaux" || k.startsWith("metierPages.") },
+            { title: "📱 Mobile", match: (k) => k === "mobile" },
+          ];
+          const used = new Set<string>();
+          const blocks = groups.map((g) => {
+            const gk = keys.filter((k) => !used.has(k) && g.match(k));
+            gk.forEach((k) => used.add(k));
+            return { title: g.title, gk };
+          });
+          const rest = keys.filter((k) => !used.has(k));
+          if (rest.length) blocks.push({ title: "Autres", gk: rest });
+          const btn = (k: string) => (
+            <button key={k} className={sel === k ? "on" : ""} onClick={() => setSel(k)}>
+              {labelFor(k)}
+            </button>
+          );
+          return blocks
+            .filter((b) => b.gk.length)
+            .map((b) => (
+              <div className="adm-side-group" key={b.title}>
+                <div className="adm-side-t">{b.title}</div>
+                {b.gk.map(btn)}
+              </div>
+            ));
+        })()}
       </aside>
       <main className="adm-main">
         <h1 className="adm-h1">{labelFor(sel)}</h1>
