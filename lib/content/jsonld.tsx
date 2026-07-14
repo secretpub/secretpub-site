@@ -25,6 +25,39 @@ function localBusiness(c: SiteContent) {
     "@type": ["LocalBusiness", "ProfessionalService"],
     "@id": BIZ_ID,
     name: c.meta.siteName,
+    // Toutes les graphies rencontrées sur le web pointent vers la MÊME entité,
+    // dont le nom canonique est « SecretPub » (name). Ça neutralise la confusion
+    // Google « Secret Pub » (2 mots) vs « SecretPub » (le « Essayer avec… »).
+    alternateName: [
+      "Secret Pub",
+      "Secret Pub Valence",
+      "SecretPub Valence",
+      "NOSTILE FACTORY",
+    ],
+    legalName: "NOSTILE FACTORY",
+    slogan: "Toute votre communication physique, un seul partenaire.",
+    foundingDate: "2015-05-21",
+    knowsAbout: [
+      "Enseigne",
+      "Enseigne lumineuse",
+      "Signalétique",
+      "Impression grand format",
+      "Imprimerie",
+      "PLV",
+      "Textile personnalisé",
+      "Objets publicitaires",
+      "Goodies",
+      "Packaging",
+      "Habillage de véhicule",
+      "Covering",
+      "Communication visuelle",
+    ],
+    vatID: "FR74811457142",
+    identifier: {
+      "@type": "PropertyValue",
+      propertyID: "SIREN",
+      value: "811457142",
+    },
     description: c.meta.description,
     url: SITE_URL,
     telephone: c.meta.phoneHref.replace("tel:", ""),
@@ -80,6 +113,26 @@ function localBusiness(c: SiteContent) {
       reviewBody: t.quote,
     }));
   }
+  // Catalogue de services (les pages métier) : dit clairement aux moteurs et
+  // aux IA « voici ce que fait SecretPub », utile pour les réponses génératives.
+  const metierOffers = Object.values((c as any).metierPages || {}).map(
+    (p: any) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: p.navLabel,
+        description: p.meta?.description,
+        url: abs(`/${p.slug}`),
+      },
+    }),
+  );
+  if (metierOffers.length) {
+    biz.hasOfferCatalog = {
+      "@type": "OfferCatalog",
+      name: "Communication physique — SecretPub",
+      itemListElement: metierOffers,
+    };
+  }
   return biz;
 }
 
@@ -89,8 +142,12 @@ export function homeJsonLd(c: SiteContent): object[] {
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
+      "@id": SITE_URL + "#website",
       name: c.meta.siteName,
+      alternateName: ["Secret Pub", "SecretPub Valence"],
       url: SITE_URL,
+      inLanguage: "fr-FR",
+      publisher: { "@id": BIZ_ID },
     },
     {
       "@context": "https://schema.org",

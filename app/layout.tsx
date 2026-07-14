@@ -15,10 +15,51 @@ export const metadata: Metadata = {
       "SecretPub Valence : signalétique, print et textile pour les professionnels",
     template: "%s",
   },
-  icons: {
-    icon: [{ url: "/assets/logo-mark.png", type: "image/png" }],
+  applicationName: "SecretPub",
+  authors: [{ name: "SecretPub", url: SITE_URL }],
+  creator: "SecretPub",
+  publisher: "SecretPub",
+  category: "business",
+  keywords: [
+    "SecretPub",
+    "enseigne Valence",
+    "signalétique Valence",
+    "imprimerie Valence",
+    "impression grand format",
+    "textile personnalisé",
+    "objets publicitaires",
+    "goodies",
+    "packaging",
+    "PLV",
+    "habillage véhicule",
+    "covering",
+    "communication physique",
+    "agence de communication Valence",
+    "Drôme",
+  ],
+  formatDetection: { telephone: true, address: true, email: true },
+  // Favicons servis par convention de fichier Next : app/icon.png + app/apple-icon.png.
+  // max-image-preview:large + max-snippet:-1 => vignettes riches en SERP et
+  // extraits complets réutilisables par les moteurs génératifs (GEO).
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
-  robots: { index: true, follow: true },
+  // Codes de vérification (renseignés via variables d'env Vercel, sans redeploy
+  // de code : NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION / NEXT_PUBLIC_BING_SITE_VERIFICATION).
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    other: process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
+      ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION }
+      : {},
+  },
 };
 
 export const viewport: Viewport = {
