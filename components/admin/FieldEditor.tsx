@@ -850,8 +850,8 @@ function PhotoObjectField({
             src={src}
             alt=""
             style={{
-              objectFit: withFocal ? "cover" : "contain",
-              objectPosition: withFocal ? pos : "center",
+              objectFit: withFocal && !photo.full ? "cover" : "contain",
+              objectPosition: withFocal && !photo.full ? pos : "center",
             }}
           />
         ) : (
@@ -884,6 +884,16 @@ function PhotoObjectField({
               onClick={() => setAt([...path, "pos"], "50% 50%")}
             >
               Recentrer
+            </button>
+          )}
+          {withFocal && src && (
+            <button
+              type="button"
+              className={"adm-btn sm" + (photo.full ? "" : " ghost")}
+              onClick={() => setAt([...path, "full"], !photo.full)}
+              title="Affiche la photo ENTIÈRE dans la vignette (sans recadrage), utile pour les cartes de visite en paysage."
+            >
+              {photo.full ? "✓ Photo entière" : "Afficher en entier"}
             </button>
           )}
           <input ref={inputRef} type="file" accept="image/*,.heic,.heif" hidden onChange={onFile} />

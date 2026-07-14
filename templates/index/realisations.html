@@ -34,7 +34,7 @@
     <button type="button" class="rg-arrow side prev" id="realPrev" aria-label="Page précédente" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
     <div class="real-grid" id="realGrid">
       {{#realisations.items}}<a class="real-item{{#extra}} extra{{/extra}}" tabindex="0" role="button" data-cat="{{cat}}" data-sub="{{sub}}"{{#group}} data-group="{{group}}"{{/group}}{{#soc}} data-soc="{{soc}}"{{/soc}}{{#mergeClient}} data-merge="1"{{/mergeClient}}{{#desc}} data-desc="{{desc}}"{{/desc}}>
-        <div class="real-card">
+        <div class="real-card{{#mainPhoto.full}} ri-full{{/mainPhoto.full}}">
           {{#mainPhoto.src}}<img class="ph ri-main" src="{{mainPhoto.src}}" alt="{{mainPhoto.alt}}"{{#mainPhoto.pos}} style="object-position: {{mainPhoto.pos}}"{{/mainPhoto.pos}}{{#mainPhoto.cat}} data-pcat="{{mainPhoto.cat}}"{{/mainPhoto.cat}} loading="lazy" />{{/mainPhoto.src}}{{^mainPhoto.src}}<span class="ph ri-main" aria-hidden="true"></span>{{/mainPhoto.src}}
           <div class="ri-extra" hidden="">{{#extraPhotos}}<img class="ph" src="{{src}}" alt="{{alt}}"{{#cat}} data-pcat="{{cat}}"{{/cat}}{{#sub}} data-psub="{{sub}}"{{/sub}}{{#soc}} data-soc="{{soc}}"{{/soc}}{{#pos}} data-pos="{{pos}}"{{/pos}} loading="lazy" />{{/extraPhotos}}</div>
           <span class="ri-arrow" aria-hidden="true">↗</span>

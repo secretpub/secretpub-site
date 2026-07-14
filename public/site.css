@@ -2002,12 +2002,10 @@ body.lb-open { overflow: hidden; }
 @media (max-width: 600px) { .real-more { flex-direction: column; align-items: flex-start; } .rm-actions { width: 100%; } .rm-btn { flex: 1; justify-content: center; } }
 /* Réas mobile : 1 photo pleine largeur par ligne (alignée sur la largeur du header). */
 @media (max-width: 640px) { .real-grid { grid-template-columns: 1fr; } }
-/* Réas mobile : chaque photo est affichée ENTIÈRE, à sa hauteur naturelle (format
-   paysage d'origine) — plus aucun recadrage/zoom forcé par le cadre 4/3. */
-@media (max-width: 640px) {
-  .real-card { aspect-ratio: auto; }
-  .real-card img.ph { height: auto; object-fit: contain; }
-}
+/* Photos réas marquées "entière" (par photo, dans l'admin) : affichées SANS recadrage
+   (contain) au lieu du cover 4/3 — pour les cartes de visite en paysage notamment.
+   Les autres gardent le cadre 4/3 + le point focal réglé dans l'admin. */
+.real-card.ri-full img.ph { object-fit: contain; background: #0e120f; }
 /* Témoignage déplacé entre pagination et CTA sur mobile : bien espacé de la pagination. */
 @media (max-width: 640px) { #testi { margin: 38px 0 12px; } }
 
