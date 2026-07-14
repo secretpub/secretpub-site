@@ -481,7 +481,7 @@ body.menu-open { overflow: hidden; }
   .hero-carousel {
     --hero-pad-top: clamp(104px, 27vw, 138px); /* bande noire au-dessus de l'image */
     --hero-media-h: clamp(252px, 66vw, 440px); /* hauteur média verrouillée (zoom) */
-    --hero-text-h: clamp(248px, 62vw, 320px);  /* hauteur zone texte verrouillée */
+    --hero-text-h: clamp(184px, 48vw, 250px);  /* hauteur zone texte (sous-texte masqué) */
     height: calc(var(--hero-pad-top) + var(--hero-media-h) + var(--hero-text-h));
     min-height: 0; max-height: none; padding-top: 0; overflow: hidden; background: var(--ink);
   }
@@ -492,9 +492,16 @@ body.menu-open { overflow: hidden; }
   }
   .hslide.is-active { opacity: 1; visibility: visible; }
   .hslide::after { display: none; }
+  /* Sous-texte masqué sur mobile (on garde titre + boutons). */
+  .hslide-sub { display: none; }
   /* Média à hauteur fixe + cover, cadré à droite */
   .hslide-bg { position: relative; width: 100%; height: var(--hero-media-h); z-index: 0; overflow: hidden; }
   .hslide-bg img { width: 100%; height: 100%; object-fit: cover; object-position: 82% center; display: block; }
+  /* Léger effet Ken Burns sur le slide actif : zoom + basculement gauche → droite. */
+  .hslide.is-active .hslide-bg img { animation: heroKen 6.2s ease-out both; }
+  /* Slide 1 (« Toute votre communication ») : zoomé davantage et cadré plus à droite. */
+  .hc-slides .hslide:first-child .hslide-bg img { object-position: 94% center; }
+  .hc-slides .hslide:first-child.is-active .hslide-bg img { animation: heroKenPp 6.2s ease-out both; }
   /* fondu du HAUT : la photo émerge en douceur de la bande noire (vers le header) */
   .hslide-bg::before {
     content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 34%; z-index: 1;
@@ -521,12 +528,16 @@ body.menu-open { overflow: hidden; }
 .hc-stories, .hc-nav { display: none; }
 @keyframes segFill { from { width: 0; } to { width: 100%; } }
 @keyframes tapHint { 0%, 100% { opacity: 0.28; } 50% { opacity: 0.75; } }
+/* Ken Burns hero mobile : zoom léger + basculement gauche → droite. */
+@keyframes heroKen { from { transform: scale(1.02) translateX(-1.4%); } to { transform: scale(1.11) translateX(1.8%); } }
+@keyframes heroKenPp { from { transform: scale(1.08) translateX(-1%); } to { transform: scale(1.18) translateX(2.2%); } }
 @media (max-width: 880px) {
   .hc-dots { display: none; } /* remplacé par la jauge stories en haut */
   /* Jauge segmentée en haut du média (une barre par slide) */
+  /* Jauge stories placée EN BAS de la photo (juste au-dessus du fondu vers le texte). */
   .hc-stories {
     display: flex; gap: 5px; position: absolute; z-index: 7;
-    top: calc(var(--hero-pad-top) + 9px); left: 12px; right: 12px;
+    top: calc(var(--hero-pad-top) + var(--hero-media-h) - 16px); left: 12px; right: 12px;
   }
   .hc-seg { flex: 1; height: 3px; border-radius: 3px; background: rgba(255,255,255,0.32); overflow: hidden; }
   .hc-seg-fill { display: block; height: 100%; width: 0; border-radius: 3px; background: #fff; box-shadow: 0 0 6px rgba(255,255,255,0.7); }
@@ -2129,8 +2140,9 @@ a.metier { text-decoration: none; color: inherit; }
 .footer-bottom .socials { display: flex; gap: 10px; }
 .footer-bottom .socials a { width: 38px; height: 38px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.14); display: grid; place-items: center; color: rgba(255,255,255,0.7); transition: all 0.15s ease; }
 .footer-bottom .socials a:hover { background: var(--green); color: #06270f; border-color: var(--green); }
-@media (max-width: 880px) { .footer-top { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 540px) { .footer-top { grid-template-columns: 1fr; } }
+/* Footer mobile : marque pleine largeur, puis colonnes (Métiers + Société) sur 2 colonnes. */
+@media (max-width: 880px) { .footer-top { grid-template-columns: 1fr 1fr; } .foot-brand { grid-column: 1 / -1; } }
+@media (max-width: 540px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 26px 20px; } }
 
 /* ---------------- Page intérieure (hero CLAIR) ---------------- */
 .page-hero {
@@ -2455,12 +2467,15 @@ html { scroll-padding-top: 88px; }
   .mp-grid, .mp-grid-2, .mp-grid-adv { gap: var(--m-gap, 16px); }
   .mp-card { padding: var(--m-card-pad, 22px); border-radius: var(--m-radius, 16px); }
   .mp-step, .mp-related-link { border-radius: var(--m-radius, 16px); }
-  /* Métiers (accueil) : images produits plus petites et centrées, titres/textes réduits */
+  /* Métiers (accueil) : images d'exemple PLUS GRANDES (quasi pleine largeur), centrées. */
   .ms-showcase, .ms-showcase.reverse { gap: 16px; }
-  .msc-visual { max-width: 260px; margin-inline: auto; }
+  .msc-visual { max-width: min(440px, 92%); margin-inline: auto; }
   .msc-title { font-size: 21px; margin-top: 8px; }
   .msc-desc { font-size: 14px; margin-top: 10px; }
   .sb-tag { font-size: 14.5px; }
+  /* Bannière socle : titre + numéro bien recentrés (le "02 ..." débordait/décentrait). */
+  .sb-head { flex-wrap: wrap; justify-content: center; gap: 10px; }
+  .sb-title { text-align: center; }
   .mp-prose p, .mp-card p, .mp-step-body p { font-size: var(--m-body, 14.5px); }
   /* Hero : boutons centrés, à la taille du bouton "Demander plus d'exemples" (rm-btn). */
   .hslide-actions { gap: 11px; margin-top: 20px; align-items: center; width: 100%; }
@@ -2555,6 +2570,10 @@ html { scroll-padding-top: 88px; }
      scroll : conteneurs séparés, non affectés par ce clip.) */
   html, body { overflow-x: clip; max-width: 100%; }
 
+  /* Points du carrousel « Pour qui » (indicateur de position) — rétabli ici pour
+     passer après la règle de base .secm-dots{display:none} plus bas dans le fichier. */
+  .secm-dots { display: flex; }
+
   /* Header : flou composité tout de suite (fond plus opaque = pas de "pop"),
      rayon réduit (plus léger), entrée plus rapide. */
   .site-header { animation-duration: 0.45s; animation-delay: 0s; }
@@ -2578,26 +2597,8 @@ html { scroll-padding-top: 88px; }
   .ms-showcase.reverse .msc-visual { transform: translateY(14px); }
   .ms-showcase.armed .msc-copy, .ms-showcase.armed .msc-visual { transform: none; }
 
-  /* Métiers : 2 colonnes (cartes côte à côte) + rail vert de progression fin,
-     collé au bord gauche (comme sur PC, sans prendre de place). */
-  .metiers-flow { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding-left: 15px; }
-  .flow-rail { display: block; left: 2px; top: 2px; bottom: 2px; width: 3px; }
-  .ms-showcase, .ms-showcase.reverse {
-    grid-template-columns: 1fr; gap: 12px; margin-top: 0; padding: clamp(14px, 2.4vw, 20px);
-    align-items: start;
-  }
-  .ms-showcase.complement { margin-top: 0; align-items: start; }
-  .ms-showcase.complement + .ms-showcase.complement { padding-top: clamp(14px, 2.4vw, 20px); border-top: none; }
-  .ms-showcase::before { display: none; } /* on masque le gros chiffre décoratif */
-  /* image de vignette un peu plus grande : déborde légèrement sur les côtés de la carte */
-  .msc-visual, .ms-showcase.reverse .msc-visual {
-    order: -1; max-width: none; margin: -2px calc(-1 * clamp(8px, 1.6vw, 14px)) 2px;
-  }
-  .ms-showcase.reverse .msc-copy { order: 0; }
-  .msc-title, .ms-showcase.complement .msc-title { font-size: clamp(16px, 3.4vw, 20px); margin-top: 8px; }
-  .msc-desc { font-size: clamp(12.5px, 2.6vw, 14px); margin-top: 8px; max-width: none; }
-  .msc-link { margin-top: 12px; font-size: 13.5px; gap: 7px; }
-  .msc-link.msc-link-page { margin-top: 8px; }
+  /* Métiers : on RESTE en 1 colonne (vitrines pleine largeur empilées, comme avant) ;
+     seule modif voulue = images d'exemple plus grandes (voir bloc ≤640). */
 }
 
 /* Méthode : sur mobile, timeline VERTICALE — trait animé reliant les pastilles

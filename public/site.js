@@ -1047,10 +1047,26 @@
       Array.prototype.forEach.call(dotsWrap.children, function (d, j) { d.classList.toggle('on', j === idx); });
     }
     function reset() { if (timer) clearInterval(timer); timer = setInterval(function () { go(idx + 1); }, 3500); }
+    // Verrou de hauteur : le track est figé sur la carte la plus haute → plus de saut
+    // quand on change de témoignage. Recalculé sur resize (largeur/police changent).
+    function lockHeight() {
+      var maxH = 0;
+      cards.forEach(function (c) {
+        var pp = c.style.position, pv = c.style.visibility;
+        c.style.position = 'relative'; c.style.visibility = 'hidden';
+        if (c.offsetHeight > maxH) maxH = c.offsetHeight;
+        c.style.position = pp; c.style.visibility = pv;
+      });
+      if (maxH) track.style.minHeight = maxH + 'px';
+    }
     var prev = document.getElementById('testiPrev'), next = document.getElementById('testiNext');
     if (prev) prev.addEventListener('click', function () { go(idx - 1); reset(); });
     if (next) next.addEventListener('click', function () { go(idx + 1); reset(); });
     go(0); reset();
+    lockHeight();
+    [250, 900].forEach(function (d) { setTimeout(lockHeight, d); }); // après chargement des polices
+    var lhT = null;
+    window.addEventListener('resize', function () { if (lhT) clearTimeout(lhT); lhT = setTimeout(lockHeight, 200); });
   })();
 
   // Allume le gros numéro de la vitrine au niveau de scroll
