@@ -258,12 +258,54 @@
     return Array.prototype.slice.call(item.querySelectorAll('img.ph[data-pcat]'))
       .map(function (im) { return im.getAttribute('data-pcat'); });
   }
+  // Mots-clés de sous-catégorie d'un projet : data-sub peut en contenir plusieurs
+  // (séparés par virgule) et chaque photo extra peut en porter d'autres (data-psub).
+  // On rassemble tout, dédupliqué, pour que CHAQUE mot-clé pilote un filtre.
+  function subKeysOf(item) {
+    var out = [];
+    var push = function (v) {
+      (v || '').split(',').forEach(function (x) {
+        var t = x.trim();
+        if (t && out.indexOf(t) === -1) out.push(t);
+      });
+    };
+    push(item.getAttribute('data-sub'));
+    Array.prototype.slice.call(item.querySelectorAll('img.ph[data-psub]'))
+      .forEach(function (im) { push(im.getAttribute('data-psub')); });
+    return out;
+  }
+  // Mots-clés de sous-catégorie appartenant à UNE catégorie précise : on n'affiche
+  // dans la barre que les sous-filtres pertinents (data-sub de l'item si l'item est de
+  // cette catégorie ; data-psub d'une photo si la photo est taguée de cette catégorie,
+  // ou non taguée mais le projet l'est). Évite qu'un projet textile ayant une photo
+  // signa injecte « Sweats » dans la barre signa.
+  function subKeysInCat(item, cat) {
+    var out = [];
+    var push = function (v) {
+      (v || '').split(',').forEach(function (x) {
+        var t = x.trim();
+        if (t && out.indexOf(t) === -1) out.push(t);
+      });
+    };
+    var ownCat = item.getAttribute('data-cat');
+    if (ownCat === cat) push(item.getAttribute('data-sub'));
+    Array.prototype.slice.call(item.querySelectorAll('img.ph[data-psub]')).forEach(function (im) {
+      var pc = im.getAttribute('data-pcat');
+      if (pc === cat || (!pc && ownCat === cat)) push(im.getAttribute('data-psub'));
+    });
+    return out;
+  }
+  // Échappement HTML (attribut + texte) pour construire des boutons en toute sécurité.
+  function escHtml(s) {
+    return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
   function matchesCat(item) {
     if (curCat !== 'tout') {
       if (item.getAttribute('data-cat') !== curCat &&
           itemPhotoCats(item).indexOf(curCat) === -1) return false;
     }
-    if (curSub !== 'tout' && item.getAttribute('data-sub') !== curSub) return false;
+    if (curSub !== 'tout' && subKeysOf(item).indexOf(curSub) === -1) return false;
     return true;
   }
   // Quand on filtre par catégorie, affiche la photo du projet taguée avec cette
@@ -281,17 +323,27 @@
     var chosen = mainImg.getAttribute('data-orig');
     var chosenPos = mainImg.getAttribute('data-orig-pos') || '';
     var idx = 0;
-    // On ne bascule sur la photo taguée de la catégorie filtrée QUE si le projet est
-    // d'une catégorie DIFFÉRENTE (ex. un projet "textile" qui a aussi une photo signa).
-    // Si le projet est déjà de la catégorie filtrée, on garde toujours la 1re photo.
-    if (curCat !== 'tout' && item.getAttribute('data-cat') !== curCat) {
+    var pickPhoto = function (k) {
+      chosen = photos[k].getAttribute('data-orig') || photos[k].getAttribute('src');
+      chosenPos = photos[k].getAttribute('data-pos') || '';
+      idx = k;
+    };
+    var psubOf = function (im) {
+      return (im.getAttribute('data-psub') || '').split(',').map(function (x) { return x.trim(); });
+    };
+    if (curSub !== 'tout') {
+      // Sous-filtre actif : on montre la photo taguée avec ce mot-clé, même si le
+      // projet est classé sous une autre sous-catégorie (ex. la photo « Tapis d'entrée »
+      // d'un projet Revigest par ailleurs « Adhésifs »). Sinon on garde la 1re photo.
+      for (var si = 0; si < photos.length; si++) {
+        if (psubOf(photos[si]).indexOf(curSub) !== -1) { pickPhoto(si); break; }
+      }
+    } else if (curCat !== 'tout' && item.getAttribute('data-cat') !== curCat) {
+      // On ne bascule sur la photo taguée de la catégorie filtrée QUE si le projet est
+      // d'une catégorie DIFFÉRENTE (ex. un projet "textile" qui a aussi une photo signa).
+      // Si le projet est déjà de la catégorie filtrée, on garde toujours la 1re photo.
       for (var k = 0; k < photos.length; k++) {
-        if (photos[k].getAttribute('data-pcat') === curCat) {
-          chosen = photos[k].getAttribute('data-orig') || photos[k].getAttribute('src');
-          chosenPos = photos[k].getAttribute('data-pos') || '';
-          idx = k;
-          break;
-        }
+        if (photos[k].getAttribute('data-pcat') === curCat) { pickPhoto(k); break; }
       }
     }
     mainImg.setAttribute('src', chosen);
@@ -310,10 +362,14 @@
     }
     var seen = [];
     allItems.forEach(function (it) {
-      if (it.getAttribute('data-cat') !== cat) return;
-      var s = it.getAttribute('data-sub');
-      if (s && seen.indexOf(s) === -1) seen.push(s);
+      var inCat = it.getAttribute('data-cat') === cat
+        || itemPhotoCats(it).indexOf(cat) !== -1;
+      if (!inCat) return;
+      subKeysInCat(it, cat).forEach(function (s) {
+        if (seen.indexOf(s) === -1) seen.push(s);
+      });
     });
+    seen.sort(function (a, b) { return a.localeCompare(b, 'fr'); });
     if (seen.length < 2) {  // pas de sous-catégorie utile
       subbar.classList.remove('open');
       subbar.setAttribute('hidden', '');
@@ -322,7 +378,7 @@
     }
     var html = '<button class="on" data-sub="tout">Tout</button>';
     seen.forEach(function (s) {
-      html += '<button data-sub="' + s + '">' + (SUB_LABELS[s] || s) + '</button>';
+      html += '<button data-sub="' + escHtml(s) + '">' + escHtml(SUB_LABELS[s] || s) + '</button>';
     });
     subbar.innerHTML = html;
     subbar.removeAttribute('hidden');
