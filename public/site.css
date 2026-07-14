@@ -501,12 +501,14 @@ body.menu-open { overflow: hidden; }
   .hslide.is-active .hslide-bg img { animation: heroKen 6.2s ease-out both; }
   /* Slide 1 (« Toute votre communication ») : cadré un peu plus à droite. */
   .hc-slides .hslide:first-child .hslide-bg img { object-position: 85% center; }
-  /* Mobile uniquement : le 1er slide utilise une photo dédiée (showroom SecretPub). */
+  /* Mobile uniquement : le 1er slide utilise une photo dédiée (showroom SecretPub),
+     avec le même effet de mouvement (Ken Burns) que les deux autres slides. */
   .hc-slides .hslide:first-child .hslide-bg {
     background-image: url('/assets/hero-mobile-1.jpg');
-    background-size: cover; background-position: center;
+    background-size: cover; background-position: center; background-repeat: no-repeat;
   }
   .hc-slides .hslide:first-child .hslide-bg img { display: none; }
+  .hc-slides .hslide:first-child.is-active .hslide-bg { animation: heroKenBg 6.2s ease-out both; }
   .hc-slides .hslide:first-child.is-active .hslide-bg img { animation: heroKenPp 6.2s ease-out both; }
   /* fondu du HAUT : la photo émerge en douceur de la bande noire (vers le header) */
   .hslide-bg::before {
@@ -540,6 +542,11 @@ body.menu-open { overflow: hidden; }
    amplitude réduite (photos moins zoomées). */
 @keyframes heroKen { from { transform: scale(1.05) translateX(1.4%); } to { transform: scale(1.0) translateX(-1.2%); } }
 @keyframes heroKenPp { from { transform: scale(1.06) translateX(1.6%); } to { transform: scale(1.0) translateX(-1%); } }
+/* Ken Burns pour le 1er slide mobile (image en background) : même sens que les autres. */
+@keyframes heroKenBg {
+  from { background-size: 116%; background-position: 58% center; }
+  to { background-size: 106%; background-position: 44% center; }
+}
 @media (max-width: 880px) {
   .hc-dots { display: none; } /* remplacé par la jauge stories en haut */
   /* Jauge segmentée en haut du média (une barre par slide) */
@@ -2007,6 +2014,12 @@ body.lb-open { overflow: hidden; }
 @media (max-width: 600px) { .real-more { flex-direction: column; align-items: flex-start; } .rm-actions { width: 100%; } .rm-btn { flex: 1; justify-content: center; } }
 /* Réas mobile : 1 photo pleine largeur par ligne (alignée sur la largeur du header). */
 @media (max-width: 640px) { .real-grid { grid-template-columns: 1fr; } }
+/* Réas mobile : chaque photo est affichée ENTIÈRE, à sa hauteur naturelle (format
+   paysage d'origine) — plus aucun recadrage/zoom forcé par le cadre 4/3. */
+@media (max-width: 640px) {
+  .real-card { aspect-ratio: auto; }
+  .real-card img.ph { height: auto; object-fit: contain; }
+}
 /* Témoignage déplacé entre pagination et CTA sur mobile : bien espacé de la pagination. */
 @media (max-width: 640px) { #testi { margin: 38px 0 12px; } }
 
