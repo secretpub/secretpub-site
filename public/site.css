@@ -2550,6 +2550,11 @@ html { scroll-padding-top: 88px; }
 .mm-tel-ic { width: 18px; height: 18px; flex: none; color: var(--green); }
 
 @media (max-width: 1024px) {
+  /* Verrou dur du défilement horizontal : impossible de décaler la page au doigt,
+     aucune "tranche" sur les côtés. (Les carrousels internes gardent leur propre
+     scroll : conteneurs séparés, non affectés par ce clip.) */
+  html, body { overflow-x: clip; max-width: 100%; }
+
   /* Header : flou composité tout de suite (fond plus opaque = pas de "pop"),
      rayon réduit (plus léger), entrée plus rapide. */
   .site-header { animation-duration: 0.45s; animation-delay: 0s; }
