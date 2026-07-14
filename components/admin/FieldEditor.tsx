@@ -609,6 +609,74 @@ function ScalarField({
 
 // Photo principale d'une réalisation : aperçu recadré (comme la vignette du site)
 // avec point focal déplaçable → pilote object-position.
+// Sous-catégories d'une photo : plusieurs mots-clés (chips), suggestions,
+// 1re lettre en majuscule auto. Stockées en chaîne "Mugs, Goodies".
+function SubTagsField({
+  value,
+  path,
+  setAt,
+}: {
+  value: string;
+  path: (string | number)[];
+  setAt: SetAt;
+}) {
+  const [draft, setDraft] = useState("");
+  const tags = (value || "").split(",").map((s) => s.trim()).filter(Boolean);
+  const id = "dl-psub-" + path.join("-");
+  function commit(raw: string) {
+    const t = capFirst(raw.trim());
+    if (!t) return;
+    if (!tags.some((x) => x.toLowerCase() === t.toLowerCase())) {
+      setAt(path, [...tags, t].join(", "));
+    }
+    setDraft("");
+  }
+  function remove(t: string) {
+    setAt(path, tags.filter((x) => x !== t).join(", "));
+  }
+  return (
+    <div className="fe-row">
+      <label className="fe-label">Sous-catégories de cette photo</label>
+      <div className="fe-hint">
+        Plusieurs mots-clés possibles (ex. Mugs, Goodies). Choisir une suggestion, ou taper puis Entrée. 1re lettre en majuscule automatique.
+      </div>
+      {tags.length > 0 && (
+        <div className="fe-tags">
+          {tags.map((t) => (
+            <span key={t} className="fe-tag">
+              {t}
+              <button type="button" aria-label={"Retirer " + t} onClick={() => remove(t)}>
+                ×
+              </button>
+            </span>
+          ))}
+        </div>
+      )}
+      <input
+        className="fe-input"
+        type="text"
+        list={id}
+        value={draft}
+        placeholder="Ajouter un mot-clé (ex. Mugs)…"
+        onChange={(e) => {
+          const v = e.target.value;
+          if (SUBS.indexOf(v) !== -1) { commit(v); return; }
+          setDraft(v);
+        }}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === ",") { e.preventDefault(); commit(draft); }
+        }}
+        onBlur={() => { if (draft.trim()) commit(draft); }}
+      />
+      <datalist id={id}>
+        {SUBS.map((s) => (
+          <option key={s} value={s} />
+        ))}
+      </datalist>
+    </div>
+  );
+}
+
 function PhotoObjectField({
   value,
   path,
@@ -767,25 +835,7 @@ function PhotoObjectField({
             ))}
           </div>
         </div>
-        <div className="fe-row">
-          <label className="fe-label">Sous-catégorie de cette photo</label>
-          <div className="fe-hint">
-            Ex. Mugs, Tote bags, Enseignes… (1re lettre en majuscule, suggestions proposées).
-          </div>
-          <input
-            className="fe-input"
-            type="text"
-            list={"dl-psub-" + path.join("-")}
-            value={photo.sub || ""}
-            placeholder="Ex. Mugs"
-            onChange={(e) => setAt([...path, "sub"], capFirst(e.target.value))}
-          />
-          <datalist id={"dl-psub-" + path.join("-")}>
-            {SUBS.map((s) => (
-              <option key={s} value={s} />
-            ))}
-          </datalist>
-        </div>
+        <SubTagsField value={photo.sub || ""} path={[...path, "sub"]} setAt={setAt} />
       </div>
     </div>
   );

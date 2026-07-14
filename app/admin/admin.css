@@ -135,6 +135,12 @@
 .fe-chip:hover { color: var(--a-text); border-color: #3a4a40; }
 .fe-chip.on { background: var(--a-green); border-color: var(--a-green); color: #06270f; }
 
+/* Multi-tags (sous-catégories par photo) */
+.fe-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.fe-tag { display: inline-flex; align-items: center; gap: 4px; padding: 4px 5px 4px 11px; border-radius: 999px; background: var(--a-panel-2); border: 1px solid var(--a-line); color: var(--a-text); font-family: "Plus Jakarta Sans", sans-serif; font-size: 12.5px; font-weight: 600; }
+.fe-tag button { display: inline-grid; place-items: center; width: 18px; height: 18px; border-radius: 50%; border: none; background: transparent; color: var(--a-muted); cursor: pointer; font-size: 15px; line-height: 1; padding: 0; }
+.fe-tag button:hover { background: rgba(224, 83, 61, 0.3); color: #fff; }
+
 /* Poignée de glisser-déposer + états */
 .fe-drag { cursor: grab; color: var(--a-muted); font-size: 15px; line-height: 1; flex: none; padding: 0 3px; }
 .fe-drag:active { cursor: grabbing; }
