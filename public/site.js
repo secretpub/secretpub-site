@@ -654,6 +654,12 @@
   // en haut, tap droite = avancer, tap gauche = reculer, appui long = pause).
   var heroC = document.querySelector('.hero-carousel');
   if (heroC) {
+    // Mobile : le 1er slide utilise une photo dédiée (showroom) — en <img> pour un
+    // mouvement Ken Burns LISSE (transform GPU), pas un background saccadé.
+    if (window.matchMedia('(max-width: 880px)').matches) {
+      var hFirstImg = heroC.querySelector('.hslide:first-child .hslide-bg img');
+      if (hFirstImg) hFirstImg.setAttribute('src', '/assets/hero-mobile-1.jpg');
+    }
     var hSlides = heroC.querySelectorAll('.hslide');
     var hN = hSlides.length;
     var hDots = document.getElementById('hcDots');
