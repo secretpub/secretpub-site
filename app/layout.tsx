@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SiteAnalytics } from "@/components/SiteAnalytics";
 import { getContent } from "@/lib/content/store";
 import { buildMobileCss } from "@/lib/content/mobile";
 
@@ -109,8 +108,7 @@ export default async function RootLayout({
         {children}
         {/* The vendored, hand-tuned interactions run on the server-rendered DOM. */}
         <Script src="/site.js" strategy="afterInteractive" />
-        <Analytics />
-        <SpeedInsights />
+        <SiteAnalytics />
       </body>
     </html>
   );
