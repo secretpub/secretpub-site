@@ -1021,6 +1021,47 @@
     update();
   })();
 
+  // Carrousel secteurs (mobile/tablette) : points de navigation synchronisés au scroll.
+  var secMobile = document.querySelector('.sectors-mobile');
+  if (secMobile) {
+    var secCards = Array.prototype.slice.call(secMobile.querySelectorAll('.secm-card'));
+    if (secCards.length > 1) {
+      var secDots = document.createElement('div');
+      secDots.className = 'secm-dots';
+      secCards.forEach(function (c, i) {
+        var b = document.createElement('button');
+        b.setAttribute('type', 'button');
+        b.setAttribute('aria-label', 'Secteur ' + (i + 1));
+        b.addEventListener('click', function () {
+          secMobile.scrollTo({
+            left: c.offsetLeft + c.clientWidth / 2 - secMobile.clientWidth / 2,
+            behavior: 'smooth'
+          });
+        });
+        secDots.appendChild(b);
+      });
+      secMobile.insertAdjacentElement('afterend', secDots);
+      var secSyncRaf = false;
+      var secSync = function () {
+        secSyncRaf = false;
+        var center = secMobile.scrollLeft + secMobile.clientWidth / 2;
+        var best = 0, bestD = Infinity;
+        secCards.forEach(function (c, i) {
+          var cc = c.offsetLeft + c.clientWidth / 2;
+          var d = Math.abs(cc - center);
+          if (d < bestD) { bestD = d; best = i; }
+        });
+        Array.prototype.forEach.call(secDots.children, function (d, i) {
+          d.classList.toggle('on', i === best);
+        });
+      };
+      secMobile.addEventListener('scroll', function () {
+        if (!secSyncRaf) { secSyncRaf = true; window.requestAnimationFrame(secSync); }
+      }, { passive: true });
+      secSync();
+    }
+  }
+
   // Scrollytelling secteurs : révélation des photos au fil du scroll
   var sectorsWrap = document.getElementById('sectors');
   if (sectorsWrap) {
