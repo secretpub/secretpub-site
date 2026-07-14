@@ -611,6 +611,77 @@ function ScalarField({
 
 // Photo principale d'une réalisation : aperçu recadré (comme la vignette du site)
 // avec point focal déplaçable → pilote object-position.
+// Champ "texte alternatif (SEO)" avec suggestions générées depuis la catégorie,
+// les mots-clés et le client de la photo (+ clients existants).
+const CAT_LABELS: Record<string, string> = {
+  signa: "signalétique",
+  print: "print",
+  textile: "textile personnalisé",
+  goodies: "objets publicitaires",
+  packaging: "packaging",
+};
+function AltField({
+  value,
+  path,
+  setAt,
+  cat,
+  subs,
+  soc,
+  clients,
+}: {
+  value: string;
+  path: (string | number)[];
+  setAt: SetAt;
+  cat: string;
+  subs: string[];
+  soc: string;
+  clients: string[];
+}) {
+  const catLabel = CAT_LABELS[cat] || "réalisation";
+  const seen = new Set<string>();
+  const sugg: string[] = [];
+  const push = (s: string) => {
+    const t = s.trim();
+    if (t && !seen.has(t.toLowerCase())) {
+      seen.add(t.toLowerCase());
+      sugg.push(t);
+    }
+  };
+  const who = (soc || "").trim();
+  if (who) {
+    push(`Réalisation ${catLabel} SecretPub pour ${who} à Valence`);
+    subs.forEach((s) => push(`${s} ${who} par SecretPub à Valence`));
+  }
+  subs.forEach((s) => push(`${s} SecretPub à Valence`));
+  push(`Réalisation ${catLabel} SecretPub à Valence`);
+  push(`Réalisation SecretPub, ${catLabel}, conçue et posée à Valence`);
+  clients.slice(0, 6).forEach((c) => {
+    if (c && c !== who) push(`Réalisation ${catLabel} SecretPub pour ${c}`);
+  });
+  const id = "dl-alt-" + path.join("-");
+  return (
+    <div className="fe-row">
+      <label className="fe-label">Texte alternatif (SEO)</label>
+      <div className="fe-hint">
+        Décrit l&apos;image pour Google et l&apos;accessibilité. Choisis une suggestion ou adapte-la.
+      </div>
+      <input
+        className="fe-input"
+        type="text"
+        list={id}
+        value={value}
+        placeholder="Ex. Enseigne lumineuse SecretPub pour…"
+        onChange={(e) => setAt(path, e.target.value)}
+      />
+      <datalist id={id}>
+        {sugg.map((s) => (
+          <option key={s} value={s} />
+        ))}
+      </datalist>
+    </div>
+  );
+}
+
 // Sous-catégories d'une photo : plusieurs mots-clés (chips), suggestions,
 // 1re lettre en majuscule auto. Stockées en chaîne "Mugs, Goodies".
 function SubTagsField({
@@ -817,11 +888,14 @@ function PhotoObjectField({
           )}
           <input ref={inputRef} type="file" accept="image/*,.heic,.heif" hidden onChange={onFile} />
         </div>
-        <ScalarField
-          fieldKey="alt"
+        <AltField
           value={photo.alt || ""}
           path={[...path, "alt"]}
           setAt={setAt}
+          cat={cat}
+          subs={(photo.sub || "").split(",").map((s: string) => s.trim()).filter(Boolean)}
+          soc={photo.soc || ""}
+          clients={clientsList}
         />
         <div className="fe-row">
           <label className="fe-label">Catégorie de produit montrée sur cette photo</label>

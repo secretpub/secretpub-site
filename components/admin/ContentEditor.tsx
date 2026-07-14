@@ -108,13 +108,19 @@ export default function ContentEditor({ initial }: { initial: SiteContent }) {
 
   const selPath = useMemo(() => sel.split("."), [sel]);
 
-  // Clients existants (Sociétés déjà saisies) pour l'autocomplétion du champ Société.
+  // Clients existants (Sociétés déjà saisies, projets ET photos) pour l'autocomplétion.
   const clients = useMemo(() => {
     const items = content?.realisations?.items;
     if (!Array.isArray(items)) return [] as string[];
     const set = new Set<string>();
+    const add = (v: unknown) => {
+      if (typeof v === "string" && v.trim()) set.add(v.trim());
+    };
     items.forEach((it: any) => {
-      if (it && typeof it.soc === "string" && it.soc.trim()) set.add(it.soc.trim());
+      if (!it) return;
+      add(it.soc);
+      if (it.mainPhoto) add(it.mainPhoto.soc);
+      if (Array.isArray(it.extraPhotos)) it.extraPhotos.forEach((p: any) => p && add(p.soc));
     });
     return Array.from(set).sort((a, b) => a.localeCompare(b));
   }, [content]);
