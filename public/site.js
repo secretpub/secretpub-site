@@ -274,8 +274,12 @@
     if (!mainImg.getAttribute('data-orig')) {
       mainImg.setAttribute('data-orig', mainImg.getAttribute('src') || '');
     }
+    if (mainImg.getAttribute('data-orig-pos') === null) {
+      mainImg.setAttribute('data-orig-pos', mainImg.style.objectPosition || '');
+    }
     var photos = Array.prototype.slice.call(item.querySelectorAll('img.ph'));
     var chosen = mainImg.getAttribute('data-orig');
+    var chosenPos = mainImg.getAttribute('data-orig-pos') || '';
     var idx = 0;
     // On ne bascule sur la photo taguée de la catégorie filtrée QUE si le projet est
     // d'une catégorie DIFFÉRENTE (ex. un projet "textile" qui a aussi une photo signa).
@@ -284,12 +288,14 @@
       for (var k = 0; k < photos.length; k++) {
         if (photos[k].getAttribute('data-pcat') === curCat) {
           chosen = photos[k].getAttribute('data-orig') || photos[k].getAttribute('src');
+          chosenPos = photos[k].getAttribute('data-pos') || '';
           idx = k;
           break;
         }
       }
     }
     mainImg.setAttribute('src', chosen);
+    mainImg.style.objectPosition = chosenPos || '50% 50%';
     item._startIdx = idx;
   }
 
@@ -467,9 +473,9 @@
   // Formulaire contact : confirmation UNIQUEMENT si l'envoi a réussi.
   var form = document.getElementById('cform');
   if (form) {
-    // Fichier : nom affiché, petite croix pour retirer, limite légère (2 Mo)
-    // pour ne jamais bloquer/ralentir l'envoi du formulaire.
-    var MAX_FILE = 2 * 1024 * 1024;
+    // Fichiers : plusieurs autorisés tant que le TOTAL tient dans la limite
+    // (3 Mo, pour ne jamais bloquer l'envoi ni dépasser la limite serveur).
+    var MAX_FILE = 3 * 1024 * 1024;
     var fileInput = form.querySelector('input[name="fichier"]');
     var fileNameEl = form.querySelector('.cf-file-name');
     var fileClear = form.querySelector('.cf-file-clear');
@@ -480,19 +486,24 @@
       if (fileClear) fileClear.hidden = true;
       if (fileWarn) { fileWarn.hidden = true; fileWarn.textContent = ''; }
     }
+    function totalSize(files) { var t = 0; for (var i = 0; i < files.length; i++) t += files[i].size; return t; }
+    function fileList() { return (fileInput && fileInput.files) ? Array.prototype.slice.call(fileInput.files) : []; }
     if (fileInput) {
       fileInput.addEventListener('change', function () {
-        var f = fileInput.files && fileInput.files[0];
+        var files = fileList();
         if (fileWarn) { fileWarn.hidden = true; fileWarn.textContent = ''; }
-        if (!f) { resetFile(); return; }
-        if (f.size > MAX_FILE) {
+        if (!files.length) { resetFile(); return; }
+        if (totalSize(files) > MAX_FILE) {
           fileInput.value = '';
           if (fileNameEl) { fileNameEl.textContent = 'Aucun fichier'; fileNameEl.setAttribute('data-empty', '1'); }
           if (fileClear) fileClear.hidden = true;
-          if (fileWarn) { fileWarn.hidden = false; fileWarn.textContent = 'Fichier trop lourd (max 2 Mo). Envoyez-le par email à contact@secretpub.fr.'; }
+          if (fileWarn) { fileWarn.hidden = false; fileWarn.textContent = 'Fichiers trop lourds (max 3 Mo au total). Réduisez, ou envoyez par email à contact@secretpub.fr.'; }
           return;
         }
-        if (fileNameEl) { fileNameEl.textContent = f.name; fileNameEl.removeAttribute('data-empty'); }
+        if (fileNameEl) {
+          fileNameEl.textContent = files.length === 1 ? files[0].name : (files.length + ' fichiers');
+          fileNameEl.removeAttribute('data-empty');
+        }
         if (fileClear) fileClear.hidden = false;
       });
     }
@@ -504,9 +515,8 @@
       var btn = form.querySelector('button[type="submit"]');
       var fd = new FormData(form);
       var payload = { type: 'contact', source_page: location.pathname };
-      var file = null;
       fd.forEach(function (v, k) {
-        if (k === 'fichier') { if (v && v.size) file = v; return; }
+        if (k === 'fichier') return; // géré via fileInput.files (multi)
         if (k === 'besoin') { (payload.besoin = payload.besoin || []).push(v); }
         else { payload[k] = v; }
       });
@@ -529,19 +539,26 @@
       }
       function send() { postLead(payload).then(finish); }
 
-      // Jusqu'à 2 Mo : on lit le fichier en base64 et on le joint à la demande.
-      if (file && file.size <= MAX_FILE) {
-        var reader = new FileReader();
-        reader.onload = function () {
-          var res = String(reader.result || '');
-          var comma = res.indexOf(',');
-          payload.fichier = { name: file.name, type: file.type || 'application/octet-stream', data: comma >= 0 ? res.slice(comma + 1) : res };
+      // Plusieurs fichiers autorisés tant que le total tient dans la limite (3 Mo).
+      var files = fileList();
+      if (files.length && totalSize(files) <= MAX_FILE) {
+        var readers = files.map(function (f) {
+          return new Promise(function (res) {
+            var r = new FileReader();
+            r.onload = function () {
+              var s = String(r.result || ''); var c = s.indexOf(',');
+              res({ name: f.name, type: f.type || 'application/octet-stream', data: c >= 0 ? s.slice(c + 1) : s });
+            };
+            r.onerror = function () { res(null); };
+            r.readAsDataURL(f);
+          });
+        });
+        Promise.all(readers).then(function (arr) {
+          payload.fichiers = arr.filter(Boolean);
           send();
-        };
-        reader.onerror = function () { send(); };
-        reader.readAsDataURL(file);
+        });
       } else {
-        if (file) payload.fichier_note = 'Fichier trop lourd (max 2 Mo), non joint. À envoyer par email.';
+        if (files.length) payload.fichier_note = 'Fichiers trop lourds (max 3 Mo au total), non joints. À envoyer par email.';
         send();
       }
     });

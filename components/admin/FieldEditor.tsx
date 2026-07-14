@@ -233,12 +233,20 @@ function enumFor(key: string, path: (string | number)[]) {
 
 // Champs avec suggestions (autocomplétion) pour éviter les fautes de frappe.
 const SUBS = [
-  "facade", "enseignes", "lettres", "panneaux", "totems", "vitrophanie",
-  "vehicule", "baches", "cartes", "brochures", "plv", "kakemonos",
-  "grandformat", "vetements", "casquettes", "dotation", "broderie",
-  "objets", "gourdes", "totebags", "boites", "pochettes", "emballage", "sacs",
+  "Enseignes", "Lettres découpées", "Panneaux", "Totems", "Vitrophanie",
+  "Habillage de façade", "Marquage véhicule", "Bâches", "Adhésifs et stickers",
+  "Cartes de visite", "Flyers", "Dépliants", "Brochures", "Affiches et PLV", "Kakémonos",
+  "Grand format", "Menus",
+  "Vêtements de travail", "Casquettes", "Broderie", "Flocage", "Dotation réseau",
+  "Objets publicitaires", "Mugs", "Gourdes", "Tote bags", "Stylos", "Goodies",
+  "Boîtes et étuis", "Sacs kraft", "Emballage food", "Pochettes", "Packaging",
 ];
 const DATALISTS: Record<string, string[]> = { sub: SUBS };
+// Champs de sous-catégorie : toujours 1re lettre en majuscule.
+const CAP_KEYS = new Set(["sub"]);
+function capFirst(s: string): string {
+  return s.length ? s.charAt(0).toUpperCase() + s.slice(1) : s;
+}
 function datalistFor(key: string, path: (string | number)[]) {
   const p = parentOf(path);
   return DATALISTS[`${p}.${key}`] || DATALISTS[key] || null;
@@ -529,7 +537,9 @@ function ScalarField({
           list={id}
           value={cur}
           placeholder="Choisir ou taper…"
-          onChange={(e) => setAt(path, e.target.value)}
+          onChange={(e) =>
+            setAt(path, CAP_KEYS.has(String(key)) ? capFirst(e.target.value) : e.target.value)
+          }
         />
         <datalist id={id}>
           {dl.map((v) => (
@@ -757,6 +767,25 @@ function PhotoObjectField({
             ))}
           </div>
         </div>
+        <div className="fe-row">
+          <label className="fe-label">Sous-catégorie de cette photo</label>
+          <div className="fe-hint">
+            Ex. Mugs, Tote bags, Enseignes… (1re lettre en majuscule, suggestions proposées).
+          </div>
+          <input
+            className="fe-input"
+            type="text"
+            list={"dl-psub-" + path.join("-")}
+            value={photo.sub || ""}
+            placeholder="Ex. Mugs"
+            onChange={(e) => setAt([...path, "sub"], capFirst(e.target.value))}
+          />
+          <datalist id={"dl-psub-" + path.join("-")}>
+            {SUBS.map((s) => (
+              <option key={s} value={s} />
+            ))}
+          </datalist>
+        </div>
       </div>
     </div>
   );
@@ -954,7 +983,7 @@ function ArrayEditor({
             }
           >
             {isPhotoArray && isPlainObject(item) ? (
-              <PhotoObjectField value={item} path={[...path, i]} setAt={setAt} bare />
+              <PhotoObjectField value={item} path={[...path, i]} setAt={setAt} bare withFocal />
             ) : isPlainObject(item) ? (
               objectKeys(item).map((ck) => (
                 <FieldEditor key={ck} fieldKey={ck} value={item[ck]} path={[...path, i, ck]} setAt={setAt} />

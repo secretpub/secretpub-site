@@ -85,6 +85,36 @@ export async function POST(req: NextRequest) {
       : { name: fichier.name, note: "upload échoué" };
   }
 
+  // Plusieurs fichiers (nouveau formulaire) : on upload chacun, on garde les URL.
+  const fichiers = body.fichiers as
+    | Array<{ name?: string; type?: string; data?: string }>
+    | undefined;
+  if (Array.isArray(fichiers) && fichiers.length) {
+    const out: Array<{ name?: string; type?: string; url?: string; note?: string }> = [];
+    for (const fi of fichiers.slice(0, 8)) {
+      if (!fi || typeof fi.data !== "string" || !fi.data.length) continue;
+      let url: string | null = null;
+      try {
+        const buf = Buffer.from(fi.data, "base64");
+        const safe = (fi.name || "fichier").replace(/[^\w.\-]+/g, "_").slice(-70);
+        const path = `lead-files/${Date.now()}-${Math.random().toString(36).slice(2, 7)}-${safe}`;
+        const up = await supa.storage
+          .from("site-content")
+          .upload(path, buf, {
+            contentType: fi.type || "application/octet-stream",
+            upsert: false,
+          });
+        if (!up.error) {
+          url = supa.storage.from("site-content").getPublicUrl(path).data.publicUrl;
+        }
+      } catch {
+        /* on n'échoue jamais la demande pour un fichier */
+      }
+      out.push(url ? { name: fi.name, type: fi.type, url } : { name: fi.name, note: "upload échoué" });
+    }
+    body.fichiers = out;
+  }
+
   const needsRaw = body.besoin;
   const needs = Array.isArray(needsRaw)
     ? needsRaw.map(String)
