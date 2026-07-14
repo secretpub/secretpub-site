@@ -480,7 +480,7 @@ body.menu-open { overflow: hidden; }
      droite (le sujet est à droite ; le vide de gauche servait au texte sur PC). */
   .hero-carousel {
     --hero-pad-top: clamp(104px, 27vw, 138px); /* bande noire au-dessus de l'image */
-    --hero-media-h: clamp(252px, 66vw, 440px); /* hauteur média verrouillée (zoom) */
+    --hero-media-h: clamp(206px, 55vw, 380px); /* hauteur média (moins haut = moins zoomé) */
     --hero-text-h: clamp(184px, 48vw, 250px);  /* hauteur zone texte (sous-texte masqué) */
     height: calc(var(--hero-pad-top) + var(--hero-media-h) + var(--hero-text-h));
     min-height: 0; max-height: none; padding-top: 0; overflow: hidden; background: var(--ink);
@@ -499,8 +499,8 @@ body.menu-open { overflow: hidden; }
   .hslide-bg img { width: 100%; height: 100%; object-fit: cover; object-position: 82% center; display: block; }
   /* Léger effet Ken Burns sur le slide actif : zoom + basculement gauche → droite. */
   .hslide.is-active .hslide-bg img { animation: heroKen 6.2s ease-out both; }
-  /* Slide 1 (« Toute votre communication ») : zoomé davantage et cadré plus à droite. */
-  .hc-slides .hslide:first-child .hslide-bg img { object-position: 94% center; }
+  /* Slide 1 (« Toute votre communication ») : cadré un peu plus à droite. */
+  .hc-slides .hslide:first-child .hslide-bg img { object-position: 85% center; }
   .hc-slides .hslide:first-child.is-active .hslide-bg img { animation: heroKenPp 6.2s ease-out both; }
   /* fondu du HAUT : la photo émerge en douceur de la bande noire (vers le header) */
   .hslide-bg::before {
@@ -530,9 +530,10 @@ body.menu-open { overflow: hidden; }
 .hc-stories, .hc-nav { display: none; }
 @keyframes segFill { from { width: 0; } to { width: 100%; } }
 @keyframes tapHint { 0%, 100% { opacity: 0.28; } 50% { opacity: 0.75; } }
-/* Ken Burns hero mobile : sens inversé — départ zoomé, on dézoome en basculant vers la gauche. */
-@keyframes heroKen { from { transform: scale(1.11) translateX(1.8%); } to { transform: scale(1.02) translateX(-1.4%); } }
-@keyframes heroKenPp { from { transform: scale(1.18) translateX(2.4%); } to { transform: scale(1.08) translateX(-1%); } }
+/* Ken Burns hero mobile : sens inversé (départ légèrement zoomé → dézoome vers la gauche),
+   amplitude réduite (photos moins zoomées). */
+@keyframes heroKen { from { transform: scale(1.05) translateX(1.4%); } to { transform: scale(1.0) translateX(-1.2%); } }
+@keyframes heroKenPp { from { transform: scale(1.06) translateX(1.6%); } to { transform: scale(1.0) translateX(-1%); } }
 @media (max-width: 880px) {
   .hc-dots { display: none; } /* remplacé par la jauge stories en haut */
   /* Jauge segmentée en haut du média (une barre par slide) */
