@@ -659,6 +659,11 @@
     if (window.matchMedia('(max-width: 880px)').matches) {
       var hFirstImg = heroC.querySelector('.hslide:first-child .hslide-bg img');
       if (hFirstImg) hFirstImg.setAttribute('src', '/assets/hero-mobile-1.jpg');
+      // Bouton espace de commande : libellé raccourci sur mobile.
+      var hPpBtn = heroC.querySelector('.btn-pp');
+      if (hPpBtn && hPpBtn.firstChild && hPpBtn.firstChild.nodeType === 3) {
+        hPpBtn.firstChild.textContent = 'Découvrir votre espace ';
+      }
     }
     var hSlides = heroC.querySelectorAll('.hslide');
     var hN = hSlides.length;
