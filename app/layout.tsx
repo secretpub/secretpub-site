@@ -55,7 +55,11 @@ export const metadata: Metadata = {
   // Codes de vérification (renseignés via variables d'env Vercel, sans redeploy
   // de code : NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION / NEXT_PUBLIC_BING_SITE_VERIFICATION).
   verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    // Token public de Google Search Console (visible dans le HTML de toute façon).
+    // Codé en dur pour être garanti au déploiement ; surchargeable par variable d'env.
+    google:
+      process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ||
+      "KsQLO3xT8ntK93JqoFM1-NWrcxROUgVjOky9f2tZGKI",
     other: process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
       ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION }
       : {},
