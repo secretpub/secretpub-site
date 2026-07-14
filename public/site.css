@@ -501,6 +501,12 @@ body.menu-open { overflow: hidden; }
   .hslide.is-active .hslide-bg img { animation: heroKen 6.2s ease-out both; }
   /* Slide 1 (« Toute votre communication ») : cadré un peu plus à droite. */
   .hc-slides .hslide:first-child .hslide-bg img { object-position: 85% center; }
+  /* Mobile uniquement : le 1er slide utilise une photo dédiée (showroom SecretPub). */
+  .hc-slides .hslide:first-child .hslide-bg {
+    background-image: url('/assets/hero-mobile-1.jpg');
+    background-size: cover; background-position: center;
+  }
+  .hc-slides .hslide:first-child .hslide-bg img { display: none; }
   .hc-slides .hslide:first-child.is-active .hslide-bg img { animation: heroKenPp 6.2s ease-out both; }
   /* fondu du HAUT : la photo émerge en douceur de la bande noire (vers le header) */
   .hslide-bg::before {
