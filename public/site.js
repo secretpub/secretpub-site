@@ -236,7 +236,7 @@
   var pager = document.getElementById('realPager');
   var realPrev = document.getElementById('realPrev');
   var realNext = document.getElementById('realNext');
-  var PER_PAGE = 9;
+  var PER_PAGE = 6;
   var curCat = 'tout';
   var curSub = 'tout';
   var curPage = 1;

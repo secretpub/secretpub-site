@@ -2376,38 +2376,61 @@ html { scroll-padding-top: 88px; }
      ce gros titre pour rester cohérent avec les autres. */
   .pq-second-head { margin-top: clamp(24px, 5vw, 40px); }
   .pq-h2-big { font-size: 26px; }
-  /* Réalisations : on retire les flèches latérales sur mobile (le pager du bas suffit). */
+  /* Réalisations : on retire les couloirs latéraux sur mobile (le pager du bas suffit)
+     et on rend toute sa largeur à la grille. */
   .rg-arrow { display: none !important; }
+  .real-grid-wrap { padding-inline: 0; }
 }
 
-/* ============================ Flèches latérales galerie réalisations ============================ */
-.real-grid-wrap { position: relative; }
+/* ============================ Couloirs de navigation galerie réalisations ============================ */
+/* Deux grandes zones pleine hauteur : on réserve un couloir de chaque côté (padding
+   sur le wrap → la grille est très légèrement réduite, comme demandé). Chaque couloir
+   s'illumine au survol (dégradé vert sur toute la hauteur) et porte une petite flèche
+   blanche à lueur, pulsée en continu pour signaler qu'on peut naviguer. Le pager reste
+   hors de ces couloirs : il est toujours visible sur la même page. */
+.real-grid-wrap { position: relative; padding-inline: clamp(46px, 6vw, 76px); }
 .rg-arrow {
-  position: absolute; top: 50%; z-index: 6;
-  width: 48px; height: 48px; border-radius: 50%;
-  display: grid; place-items: center;
-  background: var(--white); color: var(--ink);
-  border: 1px solid var(--line-strong);
-  box-shadow: 0 10px 28px rgba(11, 13, 12, .16);
-  cursor: pointer;
-  transition: transform .18s ease, background .18s ease, color .18s ease,
-    opacity .18s ease, box-shadow .18s ease, border-color .18s ease;
+  position: absolute; top: 0; bottom: 0; z-index: 6;
+  width: clamp(46px, 6vw, 76px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 0; border: 0; background: transparent; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
-.rg-arrow svg { width: 22px; height: 22px; }
-.rg-arrow.prev { left: 0; transform: translate(-50%, -50%); }
-.rg-arrow.next { right: 0; transform: translate(50%, -50%); }
-.rg-arrow:not(:disabled):hover {
-  background: var(--green-deep); color: #fff; border-color: var(--green-deep);
+.rg-arrow.prev { left: 0; }
+.rg-arrow.next { right: 0; }
+/* Halo qui éclaire toute la hauteur de la grille, révélé au survol */
+.rg-arrow::before {
+  content: ""; position: absolute; inset: 0;
+  opacity: 0; transition: opacity .4s ease; pointer-events: none;
 }
-.rg-arrow.prev:not(:disabled):hover { transform: translate(-50%, -50%) scale(1.08); }
-.rg-arrow.next:not(:disabled):hover { transform: translate(50%, -50%) scale(1.08); }
-.rg-arrow:disabled { opacity: .3; cursor: default; box-shadow: none; }
+.rg-arrow.prev::before {
+  background: linear-gradient(90deg, rgba(64,171,63,.34) 0%, rgba(64,171,63,.12) 46%, transparent 100%);
+}
+.rg-arrow.next::before {
+  background: linear-gradient(270deg, rgba(64,171,63,.34) 0%, rgba(64,171,63,.12) 46%, transparent 100%);
+}
+.rg-arrow:not(:disabled):hover::before { opacity: 1; }
+/* Petite flèche blanche à lueur, toujours visible + légère pulsation d'invitation */
+.rg-arrow svg {
+  position: relative; z-index: 1; width: 26px; height: 26px; color: #fff;
+  animation: rgPulse 2.6s ease-in-out infinite;
+  transition: transform .28s cubic-bezier(.2,.8,.2,1), filter .28s ease;
+}
+@keyframes rgPulse {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(255,255,255,.45)) drop-shadow(0 0 11px rgba(64,171,63,.35)); }
+  50%      { filter: drop-shadow(0 0 8px rgba(255,255,255,.72)) drop-shadow(0 0 20px rgba(64,171,63,.62)); }
+}
+.rg-arrow:not(:disabled):hover svg {
+  animation: none;
+  filter: drop-shadow(0 0 9px rgba(255,255,255,.95)) drop-shadow(0 0 24px rgba(64,171,63,.9));
+}
+.rg-arrow.prev:not(:disabled):hover svg { transform: translateX(-3px) scale(1.16); }
+.rg-arrow.next:not(:disabled):hover svg { transform: translateX(3px) scale(1.16); }
+/* Bord (première/dernière page) : couloir éteint mais présent */
+.rg-arrow:disabled { cursor: default; }
+.rg-arrow:disabled svg { animation: none; filter: none; opacity: .16; }
+.rg-arrow:disabled::before { display: none; }
 .rg-arrow[hidden] { display: none; }
-@media (max-width: 720px) {
-  .rg-arrow { width: 40px; height: 40px; }
-  .rg-arrow svg { width: 19px; height: 19px; }
-  .rg-arrow.prev { left: 5px; transform: translateY(-50%); }
-  .rg-arrow.next { right: 5px; transform: translateY(-50%); }
-  .rg-arrow.prev:not(:disabled):hover { transform: translateY(-50%) scale(1.06); }
-  .rg-arrow.next:not(:disabled):hover { transform: translateY(-50%) scale(1.06); }
+@media (prefers-reduced-motion: reduce) {
+  .rg-arrow svg { animation: none; filter: drop-shadow(0 0 6px rgba(255,255,255,.6)) drop-shadow(0 0 16px rgba(64,171,63,.5)); }
 }
