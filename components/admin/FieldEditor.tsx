@@ -962,6 +962,50 @@ function objectKeys(v: Record<string, any>) {
   return Object.keys(v).filter((k) => !HIDDEN.has(k));
 }
 
+// Regroupement de la diapo (lightbox) d'une réalisation : décide de ce que la
+// visionneuse rassemble quand on clique sur la tuile.
+const GROUP_MODES: { v: string; label: string; hint: string }[] = [
+  { v: "self", label: "Ce projet seul", hint: "La diapo n'affiche que les photos de cette réalisation." },
+  { v: "client", label: "Tout ce client", hint: "La diapo rassemble toutes les réalisations de la même société — ex. Safir → tout Safir, toutes pages et catégories confondues." },
+  { v: "product", label: "Ce produit, tous clients", hint: "La diapo rassemble toutes les réalisations qui partagent un mot-clé de sous-catégorie — ex. « cartes de visite » de clients différents. Chaque photo garde le nom de son client." },
+];
+
+function GroupModeField({
+  item,
+  path,
+  setAt,
+}: {
+  item: Record<string, any>;
+  path: (string | number)[];
+  setAt: SetAt;
+}) {
+  const cur =
+    typeof item.group === "string" && item.group
+      ? item.group
+      : item.mergeClient
+        ? "client"
+        : "self";
+  const hint = (GROUP_MODES.find((m) => m.v === cur) || GROUP_MODES[0]).hint;
+  return (
+    <div className="fe-row">
+      <label className="fe-label">Regroupement de la diapo</label>
+      <div className="fe-hint">{hint}</div>
+      <div className="fe-chips">
+        {GROUP_MODES.map((m) => (
+          <button
+            key={m.v}
+            type="button"
+            className={"fe-chip" + (cur === m.v ? " on" : "")}
+            onClick={() => setAt([...path, "group"], m.v)}
+          >
+            {m.label}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function ObjectEditor({
   fieldKey,
   value,
@@ -1014,6 +1058,9 @@ function ArrayEditor({
   const itemName = itemLabel(key, path);
   const set = (a: unknown[]) => setAt(path, a);
   const isPhotoArray = key === "extraPhotos";
+  // Tableau des réalisations (realisations.items) → chaque item reçoit le
+  // sélecteur « Regroupement de la diapo ».
+  const isRealItemArray = key === "items" && path[path.length - 2] === "realisations";
   const add = () => {
     const tmpl = isPhotoArray
       ? { src: "", alt: "", cat: "" }
@@ -1143,6 +1190,15 @@ function ArrayEditor({
           >
             {isPhotoArray && isPlainObject(item) ? (
               <PhotoObjectField value={item} path={[...path, i]} setAt={setAt} bare withFocal />
+            ) : isRealItemArray && isPlainObject(item) ? (
+              <>
+                <GroupModeField item={item} path={[...path, i]} setAt={setAt} />
+                {objectKeys(item)
+                  .filter((ck) => ck !== "group" && ck !== "mergeClient")
+                  .map((ck) => (
+                    <FieldEditor key={ck} fieldKey={ck} value={item[ck]} path={[...path, i, ck]} setAt={setAt} />
+                  ))}
+              </>
             ) : isPlainObject(item) ? (
               objectKeys(item).map((ck) => (
                 <FieldEditor key={ck} fieldKey={ck} value={item[ck]} path={[...path, i, ck]} setAt={setAt} />

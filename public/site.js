@@ -691,9 +691,12 @@
       var html = '';
       if (multi) {
         photos.forEach(function (p, i) {
-          // Fin séparateur + petit label entre deux projets d'un même client.
+          // Séparateur + petit label entre deux projets : en mode « produit » on
+          // repère chaque bloc par son client (les titres se répètent) ; sinon par
+          // le titre du projet.
           if (multiProj && i > 0 && p.proj !== photos[i - 1].proj) {
-            html += '<div class="lb-thumb-sep"><span>' + esc(p.cap) + '</span></div>';
+            var sepLbl = st.mode === 'product' ? (p.soc || p.cap) : p.cap;
+            html += '<div class="lb-thumb-sep"><span>' + esc(sepLbl) + '</span></div>';
           }
           html += '<button class="lb-thumb' + (i === st.idx ? ' on' : '') + '" data-i="' + i + '" aria-label="Photo ' + (i + 1) + '"><img src="' + esc(p.src) + '" alt="" /></button>';
         });
@@ -710,19 +713,41 @@
     }
     function open(item, startSrc) {
       st.item = item;
-      // Fusion par client : si un projet du même client (Société) a la fusion
-      // activée, on regroupe toutes les photos de tous ses projets dans une
-      // seule galerie navigable (même s'ils ne sont pas tous visibles à l'écran).
-      var normSoc = function (s) { return (s || '').trim().toLowerCase(); };
-      var nsoc = normSoc(item.getAttribute('data-soc'));
+      // Regroupement de la diapo selon le mode de la tuile cliquée :
+      //  - 'self'    : uniquement ce projet ;
+      //  - 'client'  : toutes les réalisations de la même Société (Safir → tout Safir) ;
+      //  - 'product' : toutes les réalisations partageant un mot-clé de sous-catégorie
+      //                (cartes de visite de clients différents — chaque photo garde son client).
+      // On lit TOUS les items (jamais retirés du DOM) → marche entre pages et catégories.
+      var norm = function (s) { return (s || '').trim().toLowerCase(); };
+      var keysOf = function (v) {
+        return norm(v).split(',').map(function (s) { return s.trim(); }).filter(Boolean);
+      };
+      var mode = item.getAttribute('data-group')
+        || (item.getAttribute('data-merge') === '1' ? 'client' : 'self');
+      var all = Array.prototype.slice.call(grid.querySelectorAll('.real-item'));
       var mergeItems = [item];
-      if (nsoc) {
-        var same = Array.prototype.slice.call(grid.querySelectorAll('.real-item'))
-          .filter(function (it) { return normSoc(it.getAttribute('data-soc')) === nsoc; });
-        var anyMerge = same.some(function (it) { return it.getAttribute('data-merge') === '1'; });
-        if (anyMerge && same.length > 1) {
-          mergeItems = [item].concat(same.filter(function (it) { return it !== item; }));
+      if (mode === 'client') {
+        var nsoc = norm(item.getAttribute('data-soc'));
+        if (nsoc) {
+          mergeItems = [item].concat(all.filter(function (it) {
+            return it !== item && norm(it.getAttribute('data-soc')) === nsoc;
+          }));
         }
+      } else if (mode === 'product') {
+        var subKeys = keysOf(item.getAttribute('data-sub'));
+        var ncat = norm(item.getAttribute('data-cat'));
+        var shares = function (it) {
+          if (subKeys.length) {
+            return keysOf(it.getAttribute('data-sub')).some(function (k) {
+              return subKeys.indexOf(k) !== -1;
+            });
+          }
+          return ncat && norm(it.getAttribute('data-cat')) === ncat;
+        };
+        mergeItems = [item].concat(all.filter(function (it) {
+          return it !== item && shares(it);
+        }));
       }
       // Construit la liste des photos, chacune reliée aux infos de son projet.
       var photos = [];
@@ -741,6 +766,7 @@
         });
       });
       st.photos = photos;
+      st.mode = mode;
       var si = photos.map(function (p) { return p.src; }).indexOf(startSrc);
       st.idx = si < 0 ? 0 : si;
       render();
