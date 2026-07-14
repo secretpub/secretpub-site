@@ -725,6 +725,24 @@
       hStories.classList.remove('paused'); startTimer(hSegRemain);
     });
 
+    // Calibrage : on fixe la zone texte mobile sur le slide le PLUS HAUT → le texte
+    // (eyebrow inclus) n'est jamais coupé, quel que soit le téléphone / la taille de police.
+    function calibrateHero() {
+      if (!window.matchMedia('(max-width: 880px)').matches) return;
+      var maxH = 0;
+      Array.prototype.forEach.call(heroC.querySelectorAll('.hslide-inner'), function (inner) {
+        var ph = inner.style.height;
+        inner.style.height = 'auto';
+        if (inner.scrollHeight > maxH) maxH = inner.scrollHeight;
+        inner.style.height = ph;
+      });
+      if (maxH) heroC.style.setProperty('--hero-text-h', maxH + 'px');
+    }
+    calibrateHero();
+    [200, 700, 1400].forEach(function (d) { setTimeout(calibrateHero, d); });
+    var hcalT = null;
+    window.addEventListener('resize', function () { if (hcalT) clearTimeout(hcalT); hcalT = setTimeout(calibrateHero, 200); });
+
     hGo(0);
   }
 
@@ -1154,14 +1172,16 @@
   var lRow = document.querySelector('.clients .lrow');
   var lTrack = lRow && lRow.querySelector('.ltrack');
   if (lRow && lTrack && window.matchMedia('(max-width: 1024px)').matches) {
-    var lPaused = false, lLast = 0, lResumeT = null, lSpeed = 34;
+    var lPaused = false, lLast = 0, lResumeT = null, lSpeed = 42, lPos = 0;
     var lStep = function (t) {
       if (!lLast) lLast = t;
       var dt = (t - lLast) / 1000; lLast = t;
-      if (!lPaused && dt < 0.1) {
-        lRow.scrollLeft += lSpeed * dt;
+      // Accumulateur flottant : on assigne scrollLeft (les fractions ne se perdent plus).
+      if (!lPaused && dt > 0 && dt < 0.1) {
+        lPos += lSpeed * dt;
         var half = lTrack.scrollWidth / 2;
-        if (half > 0 && lRow.scrollLeft >= half) lRow.scrollLeft -= half;
+        if (half > 0 && lPos >= half) lPos -= half;
+        lRow.scrollLeft = lPos;
       }
       requestAnimationFrame(lStep);
     };
@@ -1169,8 +1189,10 @@
     var lPause = function () { lPaused = true; if (lResumeT) clearTimeout(lResumeT); };
     var lResumeSoon = function () {
       if (lResumeT) clearTimeout(lResumeT);
-      lResumeT = setTimeout(function () { lPaused = false; lLast = 0; }, 1400);
+      lResumeT = setTimeout(function () { lPos = lRow.scrollLeft; lPaused = false; lLast = 0; }, 1400);
     };
+    // Pendant que l'utilisateur fait défiler à la main, on suit sa position.
+    lRow.addEventListener('scroll', function () { if (lPaused) lPos = lRow.scrollLeft; }, { passive: true });
     lRow.addEventListener('touchstart', lPause, { passive: true });
     lRow.addEventListener('touchend', lResumeSoon, { passive: true });
     lRow.addEventListener('touchcancel', lResumeSoon, { passive: true });

@@ -521,6 +521,8 @@ body.menu-open { overflow: hidden; }
   .hslide-copy .eyebrow { justify-content: center; }
   .hslide-copy .eyebrow::before { display: none; }
   .hslide-actions { justify-content: center; }
+  /* On garde un seul CTA (« Demander un devis ») → il ressort mieux. */
+  .hslide-actions .btn-ghost-hero { display: none; }
   .hc-arrow { display: none; }
 }
 
@@ -528,9 +530,9 @@ body.menu-open { overflow: hidden; }
 .hc-stories, .hc-nav { display: none; }
 @keyframes segFill { from { width: 0; } to { width: 100%; } }
 @keyframes tapHint { 0%, 100% { opacity: 0.28; } 50% { opacity: 0.75; } }
-/* Ken Burns hero mobile : zoom léger + basculement gauche → droite. */
-@keyframes heroKen { from { transform: scale(1.02) translateX(-1.4%); } to { transform: scale(1.11) translateX(1.8%); } }
-@keyframes heroKenPp { from { transform: scale(1.08) translateX(-1%); } to { transform: scale(1.18) translateX(2.2%); } }
+/* Ken Burns hero mobile : sens inversé — départ zoomé, on dézoome en basculant vers la gauche. */
+@keyframes heroKen { from { transform: scale(1.11) translateX(1.8%); } to { transform: scale(1.02) translateX(-1.4%); } }
+@keyframes heroKenPp { from { transform: scale(1.18) translateX(2.4%); } to { transform: scale(1.08) translateX(-1%); } }
 @media (max-width: 880px) {
   .hc-dots { display: none; } /* remplacé par la jauge stories en haut */
   /* Jauge segmentée en haut du média (une barre par slide) */
@@ -2154,8 +2156,11 @@ a.metier { text-decoration: none; color: inherit; }
 .fc-note { margin-top: 16px; font-size: 12.5px; color: rgba(255,255,255,0.4); }
 .fc-note a { color: rgba(159,216,180,0.85); font-weight: 600; }
 .fc-note a:hover { color: #fff; }
-@media (max-width: 820px) { .fc-list { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 480px) { .fc-list { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 820px) { .fc-list { grid-template-columns: repeat(4, 1fr); gap: 5px 12px; } }
+@media (max-width: 480px) {
+  .fc-list { grid-template-columns: repeat(4, 1fr); gap: 3px 8px; }
+  .fc-list li { font-size: 9px; line-height: 1.35; }
+}
 .footer-bottom .socials { display: flex; gap: 10px; }
 .footer-bottom .socials a { width: 38px; height: 38px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.14); display: grid; place-items: center; color: rgba(255,255,255,0.7); transition: all 0.15s ease; }
 .footer-bottom .socials a:hover { background: var(--green); color: #06270f; border-color: var(--green); }
@@ -2505,12 +2510,14 @@ html { scroll-padding-top: 88px; }
   /* Fix overlap : la marge négative du 2e titre (prévue pour le scrollytelling PC)
      chevauchait la dernière carte secteur sur mobile. On la neutralise + on réduit
      ce gros titre pour rester cohérent avec les autres. */
-  .pq-second-head { margin-top: clamp(24px, 5vw, 40px); }
+  .pq-second-head { margin-top: clamp(46px, 11vw, 66px); }
   .pq-h2-big { font-size: 26px; }
   /* Réalisations : on retire les couloirs latéraux sur mobile (le pager du bas suffit)
      et on rend toute sa largeur à la grille. */
   .rg-arrow { display: none !important; }
-  .real-grid-wrap { padding-inline: 0; }
+  /* Aperçus réas en PLEINE LARGEUR (bord à bord) : on annule la gouttière du wrap. */
+  .real-grid-wrap { padding-inline: 0; margin-inline: calc(-1 * var(--m-gutter, 20px)); }
+  .real-grid { gap: 12px; }
 }
 
 /* ============================ Couloirs de navigation galerie réalisations ============================ */
