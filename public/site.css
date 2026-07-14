@@ -479,14 +479,16 @@ body.menu-open { overflow: hidden; }
      supprimer les sauts d'un slide à l'autre. Le texte vient dessous sur fond sombre. */
   .hero-carousel {
     height: auto; min-height: 0; max-height: none; background: var(--ink);
-    padding-top: clamp(104px, 27vw, 138px); /* bande noire : descend l'image sous le header */
+    --hero-pad-top: clamp(104px, 27vw, 138px); /* bande noire au-dessus de l'image */
+    --hero-media-h: clamp(238px, 60vw, 440px); /* hauteur média verrouillée */
+    padding-top: var(--hero-pad-top);
   }
   .hc-slides { position: static; }
   .hslide { position: static; opacity: 1; visibility: visible; display: none; transition: none; }
   .hslide.is-active { display: block; animation: hsFadeM 0.4s ease; }
   .hslide::after { display: none; }
   /* Média à hauteur fixe (verrou anti-saut) + cover = léger zoom sur le sujet */
-  .hslide-bg { position: relative; width: 100%; height: clamp(238px, 60vw, 440px); z-index: 0; overflow: hidden; }
+  .hslide-bg { position: relative; width: 100%; height: var(--hero-media-h); z-index: 0; overflow: hidden; }
   .hslide-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
   /* fondu du bas de la photo vers le fond sombre du bloc texte */
   .hslide-bg::after {
@@ -507,6 +509,48 @@ body.menu-open { overflow: hidden; }
   .hc-dots button.on { background: var(--green); }
 }
 @keyframes hsFadeM { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* Stories mobile : jauge segmentée + zones de tap (masquées sur PC). */
+.hc-stories, .hc-nav { display: none; }
+@keyframes segFill { from { width: 0; } to { width: 100%; } }
+@keyframes tapHint { 0%, 100% { opacity: 0.28; } 50% { opacity: 0.75; } }
+@media (max-width: 880px) {
+  .hc-dots { display: none; } /* remplacé par la jauge stories en haut */
+  /* Jauge segmentée en haut du média (une barre par slide) */
+  .hc-stories {
+    display: flex; gap: 5px; position: absolute; z-index: 7;
+    top: calc(var(--hero-pad-top) + 9px); left: 12px; right: 12px;
+  }
+  .hc-seg { flex: 1; height: 3px; border-radius: 3px; background: rgba(255,255,255,0.32); overflow: hidden; }
+  .hc-seg-fill { display: block; height: 100%; width: 0; border-radius: 3px; background: #fff; box-shadow: 0 0 6px rgba(255,255,255,0.7); }
+  .hc-seg.done .hc-seg-fill { width: 100%; }
+  .hc-seg.active .hc-seg-fill { animation: segFill var(--story-dur, 5.5s) linear forwards; }
+  .hc-stories.paused .hc-seg.active .hc-seg-fill { animation-play-state: paused; }
+  /* Zones de tap gauche (retour) / droite (avancer) sur le média */
+  .hc-nav {
+    display: flex; position: absolute; z-index: 6; left: 0; right: 0;
+    top: var(--hero-pad-top); height: var(--hero-media-h);
+    touch-action: pan-y; -webkit-tap-highlight-color: transparent;
+  }
+  .hc-tap { position: relative; flex: 1; cursor: pointer; }
+  .hc-tap.next { flex: 1.25; }
+  /* Indice lumineux + chevron (affiché au départ, puis retiré) */
+  .hc-tap::after {
+    content: ""; position: absolute; top: 0; bottom: 0; width: 62%; opacity: 0;
+    pointer-events: none; transition: opacity 0.5s ease;
+  }
+  .hc-tap.prev::after { left: 0; background: radial-gradient(130% 82% at 0% 50%, rgba(255,255,255,0.5), transparent 68%); }
+  .hc-tap.next::after { right: 0; background: radial-gradient(130% 82% at 100% 50%, rgba(255,255,255,0.5), transparent 68%); }
+  .hc-nav.hint .hc-tap::after { animation: tapHint 1.15s ease-in-out infinite; }
+  .hc-tap-ic {
+    position: absolute; top: 50%; transform: translateY(-50%); width: 30px; height: 30px;
+    color: #fff; opacity: 0; pointer-events: none; transition: opacity 0.5s ease;
+    filter: drop-shadow(0 1px 5px rgba(0,0,0,0.55));
+  }
+  .hc-tap.prev .hc-tap-ic { left: 12px; }
+  .hc-tap.next .hc-tap-ic { right: 12px; }
+  .hc-nav.hint .hc-tap-ic { opacity: 0.95; }
+}
 
 /* Soulignement au marqueur vert vif, dessiné à l'arrivée */
 .mark {
@@ -1723,9 +1767,24 @@ a.metier { text-decoration: none; color: inherit; }
 .lb-close { position: absolute; top: 22px; right: 26px; width: 46px; height: 46px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.12); color: #fff; font-size: 24px; line-height: 1; cursor: pointer; -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); transition: background 0.2s ease; z-index: 2; }
 .lb-close:hover { background: rgba(255,255,255,0.26); }
 @media (max-width: 720px) {
-  .lb-panel { grid-template-columns: 1fr; gap: 18px; max-width: 92vw; }
-  .lb-sep { width: auto; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.28), transparent); }
-  .lb-media img.lb-main { max-height: 44vh; height: auto; }
+  /* Panneau plein écran : média + miniatures + compteur + croix FIXES, seul le
+     bloc texte scrolle → tout reste visible même quand la description est longue. */
+  .lightbox { padding: 0; align-items: stretch; }
+  .lb-panel {
+    display: flex; flex-direction: column; align-items: stretch; gap: 12px;
+    grid-template-columns: none; max-width: 100%; width: 100%;
+    height: 100%; max-height: 100vh; padding: 58px 14px 16px;
+  }
+  .lb-media { flex: 0 0 auto; }
+  .lb-sep { flex: 0 0 auto; width: auto; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.28), transparent); }
+  .lb-info { flex: 1 1 auto; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; padding-right: 4px; }
+  .lb-media img.lb-main { max-height: 42vh; height: auto; }
+  /* Compteur en haut-GAUCHE (la croix reste en haut-droite) : plus de chevauchement. */
+  .lb-count-lb { left: 12px; right: auto; }
+  .lb-close { top: 12px; right: 12px; z-index: 6; }
+  /* Miniatures : un peu plus grandes, bien défilables au doigt. */
+  .lb-thumbs { gap: 7px; }
+  .lb-thumb { width: 66px; height: 48px; }
 }
 .real-card {
   position: relative; overflow: hidden; border-radius: 16px;

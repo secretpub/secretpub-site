@@ -620,40 +620,112 @@
     });
   }
 
-  // Carrousel HERO plein écran (crossfade, flèches, points, autoplay)
+  // Carrousel HERO (crossfade PC + stories façon Snap sur mobile : jauge segmentée
+  // en haut, tap droite = avancer, tap gauche = reculer, appui long = pause).
   var heroC = document.querySelector('.hero-carousel');
   if (heroC) {
     var hSlides = heroC.querySelectorAll('.hslide');
     var hN = hSlides.length;
     var hDots = document.getElementById('hcDots');
-    var hIdx = 0, hTimer = null;
+    var hIdx = 0, hTimer = null, H_DUR = 5500;
+    var hSegStart = 0, hSegRemain = H_DUR;
+
+    // Points (PC)
     for (var hi = 0; hi < hN; hi++) {
       var hb = document.createElement('button');
       hb.setAttribute('role', 'tab');
       hb.setAttribute('aria-label', 'Slide ' + (hi + 1));
-      (function (k) { hb.addEventListener('click', function () { hGo(k); hReset(); }); })(hi);
+      (function (k) { hb.addEventListener('click', function () { hGo(k); }); })(hi);
       hDots.appendChild(hb);
+    }
+
+    // Jauge stories (mobile) + zones de tap
+    var hStories = document.createElement('div');
+    hStories.className = 'hc-stories';
+    hStories.setAttribute('aria-hidden', 'true');
+    var hSegs = [];
+    for (var sgi = 0; sgi < hN; sgi++) {
+      var seg = document.createElement('div'); seg.className = 'hc-seg';
+      var fill = document.createElement('span'); fill.className = 'hc-seg-fill';
+      seg.appendChild(fill); hStories.appendChild(seg); hSegs.push(seg);
+    }
+    heroC.appendChild(hStories);
+    var hNav = document.createElement('div');
+    hNav.className = 'hc-nav hint';
+    var mkTap = function (cls, d) {
+      var z = document.createElement('div'); z.className = 'hc-tap ' + cls;
+      z.innerHTML = '<svg class="hc-tap-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="' + d + '"/></svg>';
+      return z;
+    };
+    hNav.appendChild(mkTap('prev', 'M15 18l-6-6 6-6'));
+    hNav.appendChild(mkTap('next', 'M9 6l6 6-6 6'));
+    heroC.appendChild(hNav);
+
+    function setSegments(active) {
+      hSegs.forEach(function (s, i) {
+        var f = s.firstChild;
+        s.classList.remove('done', 'active');
+        if (i < active) { s.classList.add('done'); }
+        else if (i === active) {
+          f.style.animation = 'none'; void f.offsetWidth; f.style.animation = ''; // relance le remplissage
+          s.classList.add('active');
+        }
+      });
+    }
+    function startTimer(ms) {
+      if (hTimer) { clearTimeout(hTimer); }
+      hSegStart = Date.now(); hSegRemain = ms;
+      hTimer = setTimeout(function () { hGo(hIdx + 1); }, ms);
+    }
+    function pauseTimer() {
+      if (hTimer) { clearTimeout(hTimer); hTimer = null; }
+      hSegRemain = Math.max(300, hSegRemain - (Date.now() - hSegStart));
     }
     function hGo(k) {
       hIdx = (k + hN) % hN;
       hSlides.forEach(function (s, j) { s.classList.toggle('is-active', j === hIdx); });
       Array.prototype.forEach.call(hDots.children, function (d, j) { d.classList.toggle('on', j === hIdx); });
+      setSegments(hIdx);
+      hStories.classList.remove('paused');
+      startTimer(H_DUR);
     }
-    function hReset() { if (hTimer) { clearInterval(hTimer); } hTimer = setInterval(function () { hGo(hIdx + 1); }, 6500); }
+    function hReset() { startTimer(H_DUR); }
+
     var hcPrev = document.getElementById('hcPrev'), hcNext = document.getElementById('hcNext');
-    if (hcPrev) hcPrev.addEventListener('click', function () { hGo(hIdx - 1); hReset(); });
-    if (hcNext) hcNext.addEventListener('click', function () { hGo(hIdx + 1); hReset(); });
-    heroC.addEventListener('mouseenter', function () { if (hTimer) clearInterval(hTimer); });
-    heroC.addEventListener('mouseleave', hReset);
-    var hsx = null;
-    heroC.addEventListener('touchstart', function (e) { hsx = e.touches[0].clientX; }, { passive: true });
-    heroC.addEventListener('touchend', function (e) {
-      if (hsx === null) return;
-      var dx = e.changedTouches[0].clientX - hsx;
-      if (Math.abs(dx) > 45) { hGo(hIdx + (dx < 0 ? 1 : -1)); hReset(); }
-      hsx = null;
-    }, { passive: true });
-    hGo(0); hReset();
+    if (hcPrev) hcPrev.addEventListener('click', function () { hGo(hIdx - 1); });
+    if (hcNext) hcNext.addEventListener('click', function () { hGo(hIdx + 1); });
+    heroC.addEventListener('mouseenter', function () { pauseTimer(); hStories.classList.add('paused'); });
+    heroC.addEventListener('mouseleave', function () { hStories.classList.remove('paused'); startTimer(hSegRemain); });
+
+    // Indice lumineux : montré au départ, retiré au bout de 2,8 s ou à la 1re interaction
+    var hHintT = setTimeout(removeHint, 2800);
+    function removeHint() { if (hHintT) { clearTimeout(hHintT); hHintT = null; } hNav.classList.remove('hint'); }
+
+    // Tap / swipe / appui long sur la zone média (mobile)
+    var dX = 0, dY = 0, dT = 0, down = false;
+    hNav.addEventListener('pointerdown', function (e) {
+      down = true; dX = e.clientX; dY = e.clientY; dT = Date.now();
+      pauseTimer(); hStories.classList.add('paused'); removeHint();
+    });
+    hNav.addEventListener('pointerup', function (e) {
+      if (!down) return; down = false;
+      var dt = Date.now() - dT, dx = e.clientX - dX, dy = e.clientY - dY;
+      hStories.classList.remove('paused');
+      if (Math.abs(dy) > 16 && Math.abs(dy) > Math.abs(dx)) { startTimer(hSegRemain); return; } // scroll vertical
+      if (Math.abs(dx) > 40) { hGo(hIdx + (dx < 0 ? 1 : -1)); return; } // swipe
+      if (dt < 260 && Math.abs(dx) < 12) { // tap : zone gauche = retour, droite = avancer
+        var r = hNav.getBoundingClientRect();
+        hGo(hIdx + ((e.clientX - r.left) / r.width < 0.4 ? -1 : 1));
+        return;
+      }
+      startTimer(hSegRemain); // appui long relâché : reprend le temps restant
+    });
+    hNav.addEventListener('pointercancel', function () {
+      if (!down) return; down = false;
+      hStories.classList.remove('paused'); startTimer(hSegRemain);
+    });
+
+    hGo(0);
   }
 
   // Visionneuse (lightbox) des réalisations - multi-photos par projet
