@@ -848,9 +848,23 @@
       photos.forEach(function (p) { projSet[p.proj] = 1; });
       var multiProj = Object.keys(projSet).length > 1;
 
-      lbImg.style.opacity = 0;
-      lbImg.onload = function () { lbImg.style.opacity = 1; };
-      lbImg.setAttribute('src', cur.src || '');
+      // Affichage SANS FLASH : on précharge la photo cible et on ne remplace la source
+      // que lorsqu'elle est prête. L'image en cours reste visible en attendant → plus
+      // de réaffichage de la 1re photo / flash entre deux vues.
+      (function () {
+        var target = cur.src || '';
+        if (lbImg.getAttribute('src') === target) { lbImg.style.opacity = 1; return; }
+        var swap = function () {
+          if (!st.photos[st.idx] || st.photos[st.idx].src !== target) return; // on a re-navigué entre-temps
+          lbImg.setAttribute('src', target);
+          lbImg.style.opacity = 1;
+        };
+        lbImg.style.opacity = 0.32; // léger fondu sur l'image en cours pendant le chargement
+        var pre = new Image();
+        pre.onload = swap; pre.onerror = swap;
+        pre.src = target;
+        if (pre.complete) swap();
+      })();
       // Infos synchronisées avec la photo (donc le projet) en cours.
       lbTitle.textContent = cur.cap || '';
       lbCat.textContent = cur.cat || '';
@@ -1056,17 +1070,30 @@
     // Zones de tap (mobile, façon story Snap) : gauche = photo précédente, droite = suivante.
     if (tapPrev) tapPrev.addEventListener('click', function (e) { e.stopPropagation(); go(-1); });
     if (tapNext) tapNext.addEventListener('click', function (e) { e.stopPropagation(); go(1); });
-    // Swipe horizontal sur la photo (mobile).
-    var lbfx = null;
+    // Défilement manuel au doigt (mobile) : on suit le doigt (l'image glisse) et on
+    // bascule de photo au relâchement. Facile et fluide.
+    var lbfx = null, lbfy = null, lbDrag = false;
     var lbFrame = box.querySelector('.lb-frame');
     if (lbFrame) {
-      lbFrame.addEventListener('touchstart', function (e) { lbfx = e.touches[0].clientX; }, { passive: true });
-      lbFrame.addEventListener('touchend', function (e) {
-        if (lbfx === null) return;
-        var dx = e.changedTouches[0].clientX - lbfx;
-        if (Math.abs(dx) > 40) { go(dx < 0 ? 1 : -1); }
-        lbfx = null;
+      lbFrame.addEventListener('touchstart', function (e) {
+        lbfx = e.touches[0].clientX; lbfy = e.touches[0].clientY; lbDrag = false;
       }, { passive: true });
+      lbFrame.addEventListener('touchmove', function (e) {
+        if (lbfx === null || st.photos.length < 2) return;
+        var dx = e.touches[0].clientX - lbfx, dy = e.touches[0].clientY - lbfy;
+        if (!lbDrag && Math.abs(dx) > 8 && Math.abs(dx) > Math.abs(dy) + 2) lbDrag = true;
+        if (lbDrag) { lbImg.style.transition = 'none'; lbImg.style.transform = 'translateX(' + (dx * 0.4) + 'px)'; }
+      }, { passive: true });
+      lbFrame.addEventListener('touchend', function (e) {
+        if (lbfx === null) { return; }
+        var dx = e.changedTouches[0].clientX - lbfx;
+        lbImg.style.transition = ''; lbImg.style.transform = '';
+        if (lbDrag && Math.abs(dx) > 42) {
+          e.preventDefault(); // supprime le clic fantôme sur la zone de tap
+          go(dx < 0 ? 1 : -1);
+        }
+        lbfx = null; lbDrag = false;
+      }, { passive: false });
     }
     lbThumbs.addEventListener('click', function (e) {
       var t = e.target.closest('.lb-thumb');
