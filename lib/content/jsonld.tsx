@@ -197,6 +197,18 @@ export function serviceJsonLd(
 
 export function metierJsonLd(c: SiteContent, page: any): object[] {
   const url = abs(`/${page.slug}`);
+  // Pages villes : la zone desservie = la ville ciblée (signal SEO local).
+  // Sinon (pages métier génériques) : Valence / Drôme / France.
+  const areaServed = page.areaServed
+    ? [
+        { "@type": "City", name: page.areaServed },
+        { "@type": "Country", name: "France" },
+      ]
+    : [
+        { "@type": "City", name: "Valence" },
+        { "@type": "AdministrativeArea", name: "Drôme" },
+        { "@type": "Country", name: "France" },
+      ];
   const offers = (page.prestations?.items || []).map((it: any) => ({
     "@type": "Offer",
     itemOffered: {
@@ -214,11 +226,7 @@ export function metierJsonLd(c: SiteContent, page: any): object[] {
       description: page.meta?.description,
       url,
       provider: { "@id": BIZ_ID },
-      areaServed: [
-        { "@type": "City", name: "Valence" },
-        { "@type": "AdministrativeArea", name: "Drôme" },
-        { "@type": "Country", name: "France" },
-      ],
+      areaServed,
       ...(offers.length
         ? {
             hasOfferCatalog: {
