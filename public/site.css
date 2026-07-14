@@ -1986,10 +1986,10 @@ body.lb-open { overflow: hidden; }
 .real-cta-line .rm-btn.ghost:hover .arr { transform: translateX(5px); }
 @media (max-width: 600px) { .real-cta-line { flex-direction: column; gap: 12px; } }
 @media (max-width: 600px) { .real-more { flex-direction: column; align-items: flex-start; } .rm-actions { width: 100%; } .rm-btn { flex: 1; justify-content: center; } }
-/* Réas mobile : 2 photos par ligne (3 lignes × 2 = 6 par page). */
-@media (max-width: 640px) { .real-grid { grid-template-columns: 1fr 1fr; } }
-/* Témoignage déplacé entre pagination et CTA sur mobile : un peu d'air. */
-@media (max-width: 640px) { #testi { margin: 10px 0 2px; } }
+/* Réas mobile : 1 photo pleine largeur par ligne (alignée sur la largeur du header). */
+@media (max-width: 640px) { .real-grid { grid-template-columns: 1fr; } }
+/* Témoignage déplacé entre pagination et CTA sur mobile : bien espacé de la pagination. */
+@media (max-width: 640px) { #testi { margin: 30px 0 6px; } }
 
 /* ---------------- FAQ (BLANC) ---------------- */
 .faq { background: var(--white); position: relative; overflow: hidden; }
@@ -2062,6 +2062,8 @@ body.lb-open { overflow: hidden; }
   box-shadow: inset 0 1px 1px rgba(255,255,255,0.4), 0 34px 80px -34px rgba(0,0,0,0.75);
 }
 .cform .full { grid-column: 1 / -1; }
+/* Nom + Prénom côte à côte (50/50) sur PC comme sur mobile. */
+.cf-row { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .cf-multi { grid-column: 1 / -1; }
 .cf-hint { font-weight: 500; color: rgba(255,255,255,0.45); text-transform: none; letter-spacing: 0; }
 .need-chips { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -2335,7 +2337,7 @@ img, svg, image-slot, video { max-width: 100%; }
   .pq-chip { font-size: 11px; left: 12px; bottom: 12px; }
   .pq-body { padding: 22px 18px; }
   .frc-list { grid-template-columns: 1fr; }
-  .real-grid { grid-template-columns: 1fr 1fr; }
+  .real-grid { grid-template-columns: 1fr; }
   .fusion { height: 44px; }
 }
 /* Anti-débordement universel */
@@ -2539,9 +2541,9 @@ html { scroll-padding-top: 88px; }
   /* Réalisations : on retire les couloirs latéraux sur mobile (le pager du bas suffit)
      et on rend toute sa largeur à la grille. */
   .rg-arrow { display: none !important; }
-  /* Aperçus réas en PLEINE LARGEUR (bord à bord) : on annule la gouttière du wrap. */
-  .real-grid-wrap { padding-inline: 0; margin-inline: calc(-1 * var(--m-gutter, 20px)); }
-  .real-grid { gap: 12px; }
+  /* Réas : 1 photo par ligne, alignée sur la largeur du header (gouttière du wrap conservée). */
+  .real-grid-wrap { padding-inline: 0; }
+  .real-grid { gap: 14px; }
 }
 
 /* ============================ Couloirs de navigation galerie réalisations ============================ */

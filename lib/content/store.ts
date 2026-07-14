@@ -36,7 +36,7 @@ function optimizeImageUrl(url: string): string {
   if (!url.includes(marker) || !IMG_EXT.test(url) || url.includes("/render/image/"))
     return url;
   const rendered = url.replace(marker, "/storage/v1/render/image/public/");
-  return rendered + (rendered.includes("?") ? "&" : "?") + "width=1000&quality=74";
+  return rendered + (rendered.includes("?") ? "&" : "?") + "width=1200&quality=76";
 }
 function optimizeImages<T>(node: T): T {
   if (typeof node === "string") return optimizeImageUrl(node) as unknown as T;
@@ -75,9 +75,16 @@ async function getMergedContent(): Promise<SiteContent> {
   }
 }
 
-/** Contenu public : images Supabase resizées (rendu rapide). */
+/** Contenu public : SEULES les images de réalisations sont resizées (elles étaient
+ *  lourdes et ramaient). Le hero et le reste gardent leur résolution d'origine
+ *  (déjà légers → les transformer les dégradait). */
 export async function getContent(): Promise<SiteContent> {
-  return optimizeImages(await getMergedContent());
+  const c = await getMergedContent();
+  const anyC = c as unknown as Record<string, unknown>;
+  if (anyC && anyC.realisations) {
+    return { ...(c as object), realisations: optimizeImages(anyC.realisations) } as SiteContent;
+  }
+  return c;
 }
 
 /** Contenu brut (admin) : URLs d'origine, pour ne jamais sauvegarder des URLs

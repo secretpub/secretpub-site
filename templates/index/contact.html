@@ -9,16 +9,21 @@
     <div class="contact-grid">
       <form class="cform reveal" id="cform" novalidate="">
         <input type="text" name="company_hp" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field" />
-        <label>Nom
-          <input type="text" name="nom" required="" autocomplete="name" placeholder="Votre nom" />
-        </label>
+        <div class="cf-row">
+          <label>Nom
+            <input type="text" name="nom" required="" autocomplete="family-name" placeholder="Votre nom" />
+          </label>
+          <label>Prénom
+            <input type="text" name="prenom" autocomplete="given-name" placeholder="Votre prénom" />
+          </label>
+        </div>
         <label>Société
           <input type="text" name="societe" required="" autocomplete="organization" placeholder="Votre société" />
         </label>
         <label>Email
           <input type="email" name="email" required="" autocomplete="email" placeholder="vous@societe.fr" />
         </label>
-        <label>Téléphone
+        <label class="full">Téléphone
           <input type="tel" name="tel" autocomplete="tel" placeholder="06 00 00 00 00" />
         </label>
         <label class="cf-multi">Votre besoin <span class="cf-hint">(plusieurs choix possibles)</span>
