@@ -479,7 +479,7 @@ body.menu-open { overflow: hidden; }
      supprimer les sauts d'un slide à l'autre. Le texte vient dessous sur fond sombre. */
   .hero-carousel {
     height: auto; min-height: 0; max-height: none; background: var(--ink);
-    padding-top: clamp(84px, 20vw, 118px); /* bande noire : descend l'image sous le header */
+    padding-top: clamp(104px, 27vw, 138px); /* bande noire : descend l'image sous le header */
   }
   .hc-slides { position: static; }
   .hslide { position: static; opacity: 1; visibility: visible; display: none; transition: none; }
@@ -610,15 +610,23 @@ body.loaded .mark { background-size: 100% 100%; }
 .lchip.xl img { max-height: 108px; max-width: 150px; }
 @media (prefers-reduced-motion: reduce) { .ltrack-single { animation: none; } }
 
-/* Logos clients sur mobile : plus petits et resserrés pour en voir ~4 à la fois. */
+/* Logos clients sur mobile : compacts mais lisibles (un peu plus gros). */
 @media (max-width: 640px) {
   .clients .cl-label { margin-bottom: 14px; font-size: 10.5px; }
-  .ltrack { gap: 8px; }
-  .lchip { height: 40px; min-width: 38px; padding: 0 5px; }
-  .lchip img { max-height: 21px; max-width: 62px; }
-  .lchip.sq img { max-height: 28px; max-width: 42px; }
-  .lchip.lg img { max-height: 24px; max-width: 76px; }
-  .lchip.xl img { max-height: 34px; max-width: 58px; }
+  .ltrack { gap: 14px; }
+  .lchip { height: 54px; min-width: 52px; padding: 0 8px; }
+  .lchip img { max-height: 30px; max-width: 84px; }
+  .lchip.sq img { max-height: 38px; max-width: 56px; }
+  .lchip.lg img { max-height: 32px; max-width: 100px; }
+  .lchip.xl img { max-height: 46px; max-width: 78px; }
+}
+/* Logos défilables au doigt sur mobile/tablette : on ouvre le scroll horizontal
+   et on coupe l'animation CSS (le défilement auto est repris en JS, qui se met en
+   pause quand l'utilisateur pose le doigt). */
+@media (max-width: 1024px) {
+  .clients .lrow { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .clients .lrow::-webkit-scrollbar { display: none; }
+  .ltrack-single { animation: none; }
 }
 
 /* ---------------- Nos métiers (BLANC) ---------------- */
@@ -2499,9 +2507,10 @@ html { scroll-padding-top: 88px; }
   .ms-showcase.reverse .msc-visual { transform: translateY(14px); }
   .ms-showcase.armed .msc-copy, .ms-showcase.armed .msc-visual { transform: none; }
 
-  /* Métiers : 2 colonnes (cartes côte à côte) pour gagner en longueur. */
-  .metiers-flow { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding-left: 0; }
-  .flow-rail { display: none; }
+  /* Métiers : 2 colonnes (cartes côte à côte) + rail vert de progression fin,
+     collé au bord gauche (comme sur PC, sans prendre de place). */
+  .metiers-flow { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding-left: 15px; }
+  .flow-rail { display: block; left: 2px; top: 2px; bottom: 2px; width: 3px; }
   .ms-showcase, .ms-showcase.reverse {
     grid-template-columns: 1fr; gap: 12px; margin-top: 0; padding: clamp(14px, 2.4vw, 20px);
     align-items: start;
@@ -2509,7 +2518,10 @@ html { scroll-padding-top: 88px; }
   .ms-showcase.complement { margin-top: 0; align-items: start; }
   .ms-showcase.complement + .ms-showcase.complement { padding-top: clamp(14px, 2.4vw, 20px); border-top: none; }
   .ms-showcase::before { display: none; } /* on masque le gros chiffre décoratif */
-  .msc-visual, .ms-showcase.reverse .msc-visual { order: -1; max-width: none; margin-inline: 0; }
+  /* image de vignette un peu plus grande : déborde légèrement sur les côtés de la carte */
+  .msc-visual, .ms-showcase.reverse .msc-visual {
+    order: -1; max-width: none; margin: -2px calc(-1 * clamp(8px, 1.6vw, 14px)) 2px;
+  }
   .ms-showcase.reverse .msc-copy { order: 0; }
   .msc-title, .ms-showcase.complement .msc-title { font-size: clamp(16px, 3.4vw, 20px); margin-top: 8px; }
   .msc-desc { font-size: clamp(12.5px, 2.6vw, 14px); margin-top: 8px; max-width: none; }

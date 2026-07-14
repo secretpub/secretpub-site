@@ -1021,6 +1021,34 @@
     update();
   })();
 
+  // Logos clients (mobile/tablette) : défilement auto repris en JS + swipe au doigt.
+  // (L'animation CSS est coupée sous 1024px, on pilote scrollLeft ici pour que le
+  //  défilement continue ET que l'utilisateur puisse faire défiler à la main.)
+  var lRow = document.querySelector('.clients .lrow');
+  var lTrack = lRow && lRow.querySelector('.ltrack');
+  if (lRow && lTrack && window.matchMedia('(max-width: 1024px)').matches) {
+    var lPaused = false, lLast = 0, lResumeT = null, lSpeed = 34;
+    var lStep = function (t) {
+      if (!lLast) lLast = t;
+      var dt = (t - lLast) / 1000; lLast = t;
+      if (!lPaused && dt < 0.1) {
+        lRow.scrollLeft += lSpeed * dt;
+        var half = lTrack.scrollWidth / 2;
+        if (half > 0 && lRow.scrollLeft >= half) lRow.scrollLeft -= half;
+      }
+      requestAnimationFrame(lStep);
+    };
+    requestAnimationFrame(lStep);
+    var lPause = function () { lPaused = true; if (lResumeT) clearTimeout(lResumeT); };
+    var lResumeSoon = function () {
+      if (lResumeT) clearTimeout(lResumeT);
+      lResumeT = setTimeout(function () { lPaused = false; lLast = 0; }, 1400);
+    };
+    lRow.addEventListener('touchstart', lPause, { passive: true });
+    lRow.addEventListener('touchend', lResumeSoon, { passive: true });
+    lRow.addEventListener('touchcancel', lResumeSoon, { passive: true });
+  }
+
   // Carrousel secteurs (mobile/tablette) : points de navigation synchronisés au scroll.
   var secMobile = document.querySelector('.sectors-mobile');
   if (secMobile) {
