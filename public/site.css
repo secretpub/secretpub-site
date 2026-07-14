@@ -1791,13 +1791,30 @@ a.metier { text-decoration: none; color: inherit; }
      bloc texte scrolle → tout reste visible même quand la description est longue. */
   .lightbox { padding: 0; align-items: stretch; }
   .lb-panel {
+    position: relative;
     display: flex; flex-direction: column; align-items: stretch; gap: 12px;
     grid-template-columns: none; max-width: 100%; width: 100%;
     height: 100%; max-height: 100vh; padding: 58px 14px 16px;
   }
   .lb-media { flex: 0 0 auto; }
   .lb-sep { flex: 0 0 auto; width: auto; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.28), transparent); }
-  .lb-info { flex: 1 1 auto; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; padding-right: 4px; }
+  /* Le texte scrolle (et LUI seul : overscroll contain = l'arrière-plan ne bouge pas). */
+  .lb-info { flex: 1 1 auto; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; padding-right: 4px; overscroll-behavior: contain; }
+  /* Quand le texte dépasse : fondu bas + petit indice « faire défiler » pour qu'on
+     comprenne bien qu'on peut le scroller. */
+  .lb-panel.info-scroll::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 52px; z-index: 4;
+    background: linear-gradient(to top, rgba(8,10,9,0.96) 20%, transparent); pointer-events: none;
+  }
+  .lb-scrollhint {
+    position: absolute; left: 50%; bottom: 9px; transform: translateX(-50%); z-index: 5;
+    display: none; align-items: center; gap: 5px; pointer-events: none;
+    font-family: var(--display); font-weight: 700; font-size: 10px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: rgba(255,255,255,0.72);
+  }
+  .lb-scrollhint svg { width: 13px; height: 13px; animation: lbHintBob 1.4s ease-in-out infinite; }
+  .lb-panel.info-scroll .lb-scrollhint { display: inline-flex; }
+  .lb-panel.info-scrolled .lb-scrollhint, .lb-panel.info-scrolled::after { opacity: 0; transition: opacity 0.3s ease; }
   .lb-media img.lb-main { max-height: 42vh; height: auto; }
   /* Compteur en haut-GAUCHE (la croix reste en haut-droite) : plus de chevauchement. */
   .lb-count-lb { left: 12px; right: auto; }
@@ -1806,6 +1823,8 @@ a.metier { text-decoration: none; color: inherit; }
   .lb-thumbs { gap: 7px; }
   .lb-thumb { width: 66px; height: 48px; }
 }
+@keyframes lbHintBob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(3px); } }
+body.lb-open { overflow: hidden; }
 
 /* Visionneuse réalisations façon story Snap (mobile) : jauge en HAUT + zones de tap. */
 .lb-stories, .lb-tapzone { display: none; }
@@ -1966,7 +1985,10 @@ a.metier { text-decoration: none; color: inherit; }
 .real-cta-line .rm-btn.ghost:hover .arr { transform: translateX(5px); }
 @media (max-width: 600px) { .real-cta-line { flex-direction: column; gap: 12px; } }
 @media (max-width: 600px) { .real-more { flex-direction: column; align-items: flex-start; } .rm-actions { width: 100%; } .rm-btn { flex: 1; justify-content: center; } }
-@media (max-width: 640px) { .real-grid { grid-template-columns: 1fr; } }
+/* Réas mobile : 2 photos par ligne (3 lignes × 2 = 6 par page). */
+@media (max-width: 640px) { .real-grid { grid-template-columns: 1fr 1fr; } }
+/* Témoignage déplacé entre pagination et CTA sur mobile : un peu d'air. */
+@media (max-width: 640px) { #testi { margin: 10px 0 2px; } }
 
 /* ---------------- FAQ (BLANC) ---------------- */
 .faq { background: var(--white); position: relative; overflow: hidden; }
@@ -2312,7 +2334,7 @@ img, svg, image-slot, video { max-width: 100%; }
   .pq-chip { font-size: 11px; left: 12px; bottom: 12px; }
   .pq-body { padding: 22px 18px; }
   .frc-list { grid-template-columns: 1fr; }
-  .real-grid { grid-template-columns: 1fr; }
+  .real-grid { grid-template-columns: 1fr 1fr; }
   .fusion { height: 44px; }
 }
 /* Anti-débordement universel */
@@ -2497,9 +2519,10 @@ html { scroll-padding-top: 88px; }
   .msc-title { font-size: 21px; margin-top: 8px; }
   .msc-desc { font-size: 14px; margin-top: 10px; }
   .sb-tag { font-size: 14.5px; }
-  /* Bannière socle : titre + numéro bien recentrés (le "02 ..." débordait/décentrait). */
+  /* Bannière socle : titre + numéro bien recentrés (le "02 ..." débordait/décentrait)
+     et titre « Nos métiers socles » un peu plus grand. */
   .sb-head { flex-wrap: wrap; justify-content: center; gap: 10px; }
-  .sb-title { text-align: center; }
+  .sb-title { text-align: center; font-size: 26px; }
   .mp-prose p, .mp-card p, .mp-step-body p { font-size: var(--m-body, 14.5px); }
   /* Hero : boutons centrés, à la taille du bouton "Demander plus d'exemples" (rm-btn). */
   .hslide-actions { gap: 11px; margin-top: 20px; align-items: center; width: 100%; }

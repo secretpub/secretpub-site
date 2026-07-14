@@ -61,10 +61,31 @@ export default function CatalogueSoon() {
       />
       {/* liseré d'accent en haut */}
       <div aria-hidden style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, zIndex: 2, background: "linear-gradient(90deg, transparent, #2ec840, #1ea83a, #2ec840, transparent)" }} />
-      <div style={{ width: "100%", maxWidth: 620, textAlign: "center", position: "relative", zIndex: 1 }}>
-        <a href="/" aria-label="Accueil SecretPub" style={{ display: "inline-block", marginBottom: 30 }}>
+      <style>{`
+        @keyframes csGlow {
+          0%, 100% { box-shadow: 0 0 0 0 rgba(46,200,64,0), 0 0 18px -8px rgba(46,200,64,0.55); border-color: rgba(255,255,255,0.28); }
+          50% { box-shadow: 0 0 0 4px rgba(46,200,64,0.16), 0 0 30px -4px rgba(46,200,64,0.85); border-color: rgba(84,194,79,0.78); }
+        }
+        .cs-email-input { animation: csGlow 2.4s ease-in-out infinite; transition: box-shadow .2s ease, border-color .2s ease; }
+        .cs-email-input:focus { animation: none; border-color: #54c24f !important; box-shadow: 0 0 0 4px rgba(46,200,64,0.22), 0 0 34px -2px rgba(46,200,64,0.9) !important; background: rgba(255,255,255,0.12) !important; }
+        .cs-email-input::placeholder { color: rgba(255,255,255,0.5); }
+        @keyframes csArrow { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(4px); } }
+        .cs-arrow { display: inline-block; animation: csArrow 1.3s ease-in-out infinite; }
+        @media (prefers-reduced-motion: reduce) { .cs-email-input, .cs-arrow { animation: none; } }
+      `}</style>
+      <div
+        style={{
+          width: "100%", maxWidth: 620, textAlign: "center", position: "relative", zIndex: 1,
+          display: "flex", flexDirection: "column", alignItems: "center",
+        }}
+      >
+        <a
+          href="/"
+          aria-label="Accueil SecretPub"
+          style={{ display: "block", margin: "0 auto 30px", lineHeight: 0 }}
+        >
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/assets/logo-full.png" alt="SecretPub" style={{ height: 40, width: "auto" }} />
+          <img src="/assets/logo-full.png" alt="SecretPub" style={{ height: 40, width: "auto", display: "block", margin: "0 auto" }} />
         </a>
 
         <div
@@ -129,6 +150,7 @@ export default function CatalogueSoon() {
             style={{ display: "flex", gap: 10, flexWrap: "wrap", justifyContent: "center", maxWidth: 480, margin: "0 auto" }}
           >
             <input
+              className="cs-email-input"
               type="email"
               required
               value={email}
@@ -150,7 +172,7 @@ export default function CatalogueSoon() {
                 boxShadow: "0 14px 34px -18px rgba(255,255,255,0.5)",
               }}
             >
-              {state === "sending" ? "Envoi…" : "Me prévenir →"}
+              {state === "sending" ? "Envoi…" : <>Me prévenir <span className="cs-arrow">→</span></>}
             </button>
           </form>
         )}

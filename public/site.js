@@ -236,7 +236,9 @@
   var pager = document.getElementById('realPager');
   var realPrev = document.getElementById('realPrev');
   var realNext = document.getElementById('realNext');
-  var PER_PAGE = 9;
+  // 9 par page en desktop (3×3), 6 en mobile/tablette (3 lignes × 2 colonnes).
+  function computePerPage() { return window.matchMedia('(min-width: 1025px)').matches ? 9 : 6; }
+  var PER_PAGE = computePerPage();
   var curCat = 'tout';
   var curSub = 'tout';
   var curPage = 1;
@@ -481,6 +483,18 @@
     a.addEventListener('click', function () { applyFilter(a.getAttribute('data-cat')); });
   });
   if (realGridEl) renderGallery();
+
+  // Recalcule le nombre par page quand on bascule mobile/tablette ↔ desktop.
+  if (realGridEl) {
+    var ppT = null;
+    window.addEventListener('resize', function () {
+      if (ppT) clearTimeout(ppT);
+      ppT = setTimeout(function () {
+        var np = computePerPage();
+        if (np !== PER_PAGE) { PER_PAGE = np; curPage = 1; renderGallery(); }
+      }, 200);
+    });
+  }
 
   // Glisser (maintien du clic + balayage gauche/droite) pour changer de page
   if (realGridEl) {
@@ -770,6 +784,7 @@
       +   '</div>'
       +   '<div class="lb-sep"></div>'
       +   '<div class="lb-info"><h3 class="lb-title"></h3><div class="lb-soc"><span class="lb-soc-v"></span></div><p class="lb-desc"></p></div>'
+      +   '<div class="lb-scrollhint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>Faire défiler</div>'
       + '</div>';
     document.body.appendChild(box);
     var lbImg = box.querySelector('.lb-media img.lb-main');
@@ -785,6 +800,13 @@
     var lbStories = box.querySelector('.lb-stories');
     var tapPrev = box.querySelector('.lb-tapzone.prev');
     var tapNext = box.querySelector('.lb-tapzone.next');
+    var lbInfo = box.querySelector('.lb-info');
+    var lbPanel = box.querySelector('.lb-panel');
+    if (lbInfo && lbPanel) {
+      lbInfo.addEventListener('scroll', function () {
+        if (lbInfo.scrollTop > 6) lbPanel.classList.add('info-scrolled');
+      }, { passive: true });
+    }
     // Chaque photo porte les infos de SON projet (titre, catégorie, société,
     // description) → tout reste synchronisé quand on navigue entre projets fusionnés.
     var st = { item: null, photos: [], idx: 0 };
@@ -836,6 +858,14 @@
       lbSocV.textContent = cur.soc || 'Communiqué sur demande';
       lbSocRow.style.display = '';
       lbDesc.textContent = cur.desc || '';
+      // Indice « faire défiler » quand le texte dépasse la zone visible.
+      if (lbInfo && lbPanel) {
+        lbPanel.classList.remove('info-scrolled');
+        requestAnimationFrame(function () {
+          lbInfo.scrollTop = 0;
+          lbPanel.classList.toggle('info-scroll', lbInfo.scrollHeight > lbInfo.clientHeight + 6);
+        });
+      }
       prevBtn.style.display = multi ? '' : 'none';
       nextBtn.style.display = multi ? '' : 'none';
       if (lbCount) { lbCount.style.display = multi ? '' : 'none'; lbCount.textContent = (st.idx + 1) + ' / ' + photos.length; }
@@ -941,8 +971,9 @@
       st.idx = si < 0 ? 0 : si;
       render();
       box.classList.add('open');
+      document.body.classList.add('lb-open'); // verrouille le scroll de la page derrière
     }
-    function close() { box.classList.remove('open'); lbImg.removeAttribute('src'); st.item = null; }
+    function close() { box.classList.remove('open'); document.body.classList.remove('lb-open'); lbImg.removeAttribute('src'); st.item = null; }
 
     // - Navigation multi-photos directement sur la vignette -
     function tileRefresh(item) {
@@ -1124,6 +1155,27 @@
     [250, 900].forEach(function (d) { setTimeout(lockHeight, d); }); // après chargement des polices
     var lhT = null;
     window.addEventListener('resize', function () { if (lhT) clearTimeout(lhT); lhT = setTimeout(lockHeight, 200); });
+  })();
+
+  // Sur mobile : on place le bloc témoignages ENTRE la pagination et la ligne CTA
+  // (« Vous cherchez un exemple… »). Sur PC il reste dans l'en-tête à droite.
+  (function () {
+    var testi = document.getElementById('testi');
+    var ctaLine = document.querySelector('.real-cta-line');
+    if (!testi || !ctaLine) return;
+    var home = testi.parentNode, homeNext = testi.nextSibling;
+    function place() {
+      if (window.matchMedia('(max-width: 640px)').matches) {
+        if (testi.parentNode !== ctaLine.parentNode || testi.nextElementSibling !== ctaLine) {
+          ctaLine.parentNode.insertBefore(testi, ctaLine);
+        }
+      } else if (testi.parentNode !== home) {
+        home.insertBefore(testi, homeNext);
+      }
+    }
+    place();
+    var pt = null;
+    window.addEventListener('resize', function () { if (pt) clearTimeout(pt); pt = setTimeout(place, 200); });
   })();
 
   // Allume le gros numéro de la vitrine au niveau de scroll
