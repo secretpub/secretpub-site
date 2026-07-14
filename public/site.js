@@ -236,8 +236,12 @@
   var pager = document.getElementById('realPager');
   var realPrev = document.getElementById('realPrev');
   var realNext = document.getElementById('realNext');
-  // 9 par page en desktop (3×3), 6 en mobile/tablette (3 lignes × 2 colonnes).
-  function computePerPage() { return window.matchMedia('(min-width: 1025px)').matches ? 9 : 6; }
+  // 3 lignes × nb de colonnes : 1 col mobile → 3, 2 col tablette → 6, 3 col desktop → 9.
+  function computePerPage() {
+    var cols = window.matchMedia('(max-width: 640px)').matches ? 1
+      : window.matchMedia('(max-width: 1024px)').matches ? 2 : 3;
+    return cols * 3;
+  }
   var PER_PAGE = computePerPage();
   var curCat = 'tout';
   var curSub = 'tout';
@@ -1067,9 +1071,12 @@
     // Navigation : flèches + miniatures
     prevBtn.addEventListener('click', function (e) { e.stopPropagation(); go(-1); });
     nextBtn.addEventListener('click', function (e) { e.stopPropagation(); go(1); });
+    // Garde anti double-navigation : après un swipe, on ignore le clic de zone de tap
+    // qui pourrait suivre (sinon on avance de 2 photos d'un coup).
+    var lbLastSwipe = 0;
     // Zones de tap (mobile, façon story Snap) : gauche = photo précédente, droite = suivante.
-    if (tapPrev) tapPrev.addEventListener('click', function (e) { e.stopPropagation(); go(-1); });
-    if (tapNext) tapNext.addEventListener('click', function (e) { e.stopPropagation(); go(1); });
+    if (tapPrev) tapPrev.addEventListener('click', function (e) { e.stopPropagation(); if (Date.now() - lbLastSwipe < 450) return; go(-1); });
+    if (tapNext) tapNext.addEventListener('click', function (e) { e.stopPropagation(); if (Date.now() - lbLastSwipe < 450) return; go(1); });
     // Défilement manuel au doigt (mobile) : on suit le doigt (l'image glisse) et on
     // bascule de photo au relâchement. Facile et fluide.
     var lbfx = null, lbfy = null, lbDrag = false;
@@ -1090,6 +1097,7 @@
         lbImg.style.transition = ''; lbImg.style.transform = '';
         if (lbDrag && Math.abs(dx) > 42) {
           e.preventDefault(); // supprime le clic fantôme sur la zone de tap
+          lbLastSwipe = Date.now();
           go(dx < 0 ? 1 : -1);
         }
         lbfx = null; lbDrag = false;
@@ -1253,6 +1261,7 @@
   if (lRow && lTrack && window.matchMedia('(max-width: 1024px)').matches) {
     var lPaused = false, lLast = 0, lResumeT = null, lSpeed = 42, lPos = 0;
     var lStep = function (t) {
+      if (!lTrack || lTrack.scrollWidth < 2) { requestAnimationFrame(lStep); return; } // rien à défiler
       if (!lLast) lLast = t;
       var dt = (t - lLast) / 1000; lLast = t;
       // Accumulateur flottant : on assigne scrollLeft (les fractions ne se perdent plus).
@@ -1289,10 +1298,9 @@
         b.setAttribute('type', 'button');
         b.setAttribute('aria-label', 'Secteur ' + (i + 1));
         b.addEventListener('click', function () {
-          secMobile.scrollTo({
-            left: c.offsetLeft + c.clientWidth / 2 - secMobile.clientWidth / 2,
-            behavior: 'smooth'
-          });
+          var raw = c.offsetLeft + c.clientWidth / 2 - secMobile.clientWidth / 2;
+          var max = secMobile.scrollWidth - secMobile.clientWidth;
+          secMobile.scrollTo({ left: Math.max(0, Math.min(max, raw)), behavior: 'smooth' });
         });
         secDots.appendChild(b);
       });
@@ -1314,7 +1322,7 @@
       secMobile.addEventListener('scroll', function () {
         if (!secSyncRaf) { secSyncRaf = true; window.requestAnimationFrame(secSync); }
       }, { passive: true });
-      secSync();
+      setTimeout(secSync, 60); // laisse le layout se finaliser avant de marquer le 1er point
     }
   }
 
