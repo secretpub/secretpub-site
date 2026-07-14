@@ -2626,19 +2626,10 @@ html { scroll-padding-top: 88px; }
      passer après la règle de base .secm-dots{display:none} plus bas dans le fichier. */
   .secm-dots { display: flex; }
 
-  /* Header : flou composité tout de suite (fond plus opaque = pas de "pop"),
-     rayon réduit (plus léger), entrée plus rapide. */
+  /* Header : entrée plus rapide sur mobile. Le rendu "liquid glass" reste EXACTEMENT
+     celui du PC (fond transparent 0.42 + flou 22px) — on garde donc les valeurs de base,
+     pour bien voir le flou des éléments derrière le header (pas d'assombrissement). */
   .site-header { animation-duration: 0.45s; animation-delay: 0s; }
-  .header-inner {
-    background: rgba(15, 18, 16, 0.66);
-    -webkit-backdrop-filter: blur(14px) saturate(1.5);
-    backdrop-filter: blur(14px) saturate(1.5);
-  }
-  .site-header.scrolled .header-inner {
-    background: rgba(13, 16, 14, 0.75);
-    -webkit-backdrop-filter: blur(16px) saturate(1.6);
-    backdrop-filter: blur(16px) saturate(1.6);
-  }
 
   /* Animations plus vives (moins lentes) sur mobile/tablette */
   .reveal { transition-duration: 0.42s; }
