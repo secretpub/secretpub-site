@@ -474,41 +474,48 @@ body.menu-open { overflow: hidden; }
 .hc-dots button.on { width: 32px; background: #fff; }
 
 @media (max-width: 880px) {
-  /* Hero mobile/tablette : photo en haut (fond noir au-dessus pour la faire descendre
-     sous le header et bien la voir), légèrement zoomée, à HAUTEUR VERROUILLÉE pour
-     supprimer les sauts d'un slide à l'autre. Le texte vient dessous sur fond sombre. */
+  /* Hero mobile/tablette : carrousel TOTALEMENT VERROUILLÉ. Les slides sont empilés
+     en absolu (média + texte à hauteurs fixes) → aucun saut de mise en page. Le
+     passage d'un slide à l'autre est un simple FONDU. Photo zoomée et cadrée à
+     droite (le sujet est à droite ; le vide de gauche servait au texte sur PC). */
   .hero-carousel {
-    height: auto; min-height: 0; max-height: none; background: var(--ink);
     --hero-pad-top: clamp(104px, 27vw, 138px); /* bande noire au-dessus de l'image */
-    --hero-media-h: clamp(238px, 60vw, 440px); /* hauteur média verrouillée */
-    padding-top: var(--hero-pad-top);
+    --hero-media-h: clamp(252px, 66vw, 440px); /* hauteur média verrouillée (zoom) */
+    --hero-text-h: clamp(248px, 62vw, 320px);  /* hauteur zone texte verrouillée */
+    height: calc(var(--hero-pad-top) + var(--hero-media-h) + var(--hero-text-h));
+    min-height: 0; max-height: none; padding-top: 0; overflow: hidden; background: var(--ink);
   }
-  .hc-slides { position: static; }
-  .hslide { position: static; opacity: 1; visibility: visible; display: none; transition: none; }
-  .hslide.is-active { display: block; animation: hsFadeM 0.4s ease; }
+  .hc-slides { position: absolute; top: var(--hero-pad-top); left: 0; right: 0; bottom: 0; }
+  .hslide {
+    position: absolute; inset: 0; display: block; opacity: 0; visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  .hslide.is-active { opacity: 1; visibility: visible; }
   .hslide::after { display: none; }
-  /* Média à hauteur fixe (verrou anti-saut) + cover = léger zoom sur le sujet */
+  /* Média à hauteur fixe + cover, cadré à droite */
   .hslide-bg { position: relative; width: 100%; height: var(--hero-media-h); z-index: 0; overflow: hidden; }
-  .hslide-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+  .hslide-bg img { width: 100%; height: 100%; object-fit: cover; object-position: 82% center; display: block; }
+  /* fondu du HAUT : la photo émerge en douceur de la bande noire (vers le header) */
+  .hslide-bg::before {
+    content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 34%; z-index: 1;
+    background: linear-gradient(to bottom, var(--ink) 2%, rgba(11,13,12,0) 100%); pointer-events: none;
+  }
   /* fondu du bas de la photo vers le fond sombre du bloc texte */
   .hslide-bg::after {
     content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 42%;
     background: linear-gradient(to top, var(--ink) 6%, rgba(11,13,12,0) 100%); pointer-events: none;
   }
   .hslide-inner {
-    position: static; display: block; height: auto; min-height: 172px; background: var(--ink);
-    padding: 16px var(--gutter) 34px; text-align: center;
+    position: static; display: flex; flex-direction: column; justify-content: center;
+    height: var(--hero-text-h); background: var(--ink);
+    padding: 10px var(--gutter) 18px; text-align: center;
   }
   .hslide-copy { max-width: 460px; margin-inline: auto; text-align: center; }
   .hslide-copy .eyebrow { justify-content: center; }
   .hslide-copy .eyebrow::before { display: none; }
   .hslide-actions { justify-content: center; }
   .hc-arrow { display: none; }
-  .hc-dots { position: static; transform: none; justify-content: center; padding: 14px 0 20px; margin: 0; }
-  .hc-dots button { background: rgba(255,255,255,0.32); }
-  .hc-dots button.on { background: var(--green); }
 }
-@keyframes hsFadeM { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 
 /* Stories mobile : jauge segmentée + zones de tap (masquées sur PC). */
 .hc-stories, .hc-nav { display: none; }
