@@ -236,12 +236,8 @@
   var pager = document.getElementById('realPager');
   var realPrev = document.getElementById('realPrev');
   var realNext = document.getElementById('realNext');
-  // 3 lignes × nb de colonnes : 1 col mobile → 3, 2 col tablette → 6, 3 col desktop → 9.
-  function computePerPage() {
-    var cols = window.matchMedia('(max-width: 640px)').matches ? 1
-      : window.matchMedia('(max-width: 1024px)').matches ? 2 : 3;
-    return cols * 3;
-  }
+  // 6 photos par page sur mobile/tablette, 9 sur desktop.
+  function computePerPage() { return window.matchMedia('(min-width: 1025px)').matches ? 9 : 6; }
   var PER_PAGE = computePerPage();
   var curCat = 'tout';
   var curSub = 'tout';
@@ -412,8 +408,24 @@
       else { b.addEventListener('click', function () { curPage = page; renderGallery(); scrollToGrid(); }); }
       pager.appendChild(b);
     };
+    var mkEllipsis = function () {
+      var s = document.createElement('span');
+      s.className = 'pg-ellipsis'; s.textContent = '\u2026';
+      pager.appendChild(s);
+    };
     mk('\u2039', curPage - 1, { cls: 'arrow', disabled: curPage === 1 });
-    for (var p = 1; p <= pages; p++) { mk(String(p), p, { active: p === curPage }); }
+    // Pager condens\u00e9 : page 1, derni\u00e8re page, et une fen\u00eatre autour de la page courante
+    // (\u2026). Pas toute la suite de chiffres.
+    var show = {};
+    show[1] = 1; show[pages] = 1;
+    for (var d = -1; d <= 1; d++) { var w = curPage + d; if (w >= 1 && w <= pages) show[w] = 1; }
+    var list = Object.keys(show).map(Number).sort(function (a, b) { return a - b; });
+    var prev = 0;
+    list.forEach(function (p) {
+      if (p - prev > 1) mkEllipsis();
+      mk(String(p), p, { active: p === curPage });
+      prev = p;
+    });
     mk('\u203a', curPage + 1, { cls: 'arrow', disabled: curPage === pages });
   }
 
@@ -1082,7 +1094,13 @@
     // "double scroll" avec la page derrière (fiable même sur iOS où overflow:hidden ne
     // suffit pas). Le positionnement reste donc parfaitement stable.
     box.addEventListener('touchmove', function (e) {
-      if (e.target.closest('.lb-info') || e.target.closest('.lb-thumbs')) return;
+      // On n'autorise le scroll QUE si l'élément touché peut réellement défiler
+      // (texte plus long que la zone, ou miniatures plus larges). Sinon on bloque tout
+      // → plus aucun chaînage vers la page derrière, même quand le texte est court.
+      var info = e.target.closest('.lb-info');
+      if (info && info.scrollHeight > info.clientHeight + 1) return;
+      var th = e.target.closest('.lb-thumbs');
+      if (th && th.scrollWidth > th.clientWidth + 1) return;
       if (e.cancelable) e.preventDefault();
     }, { passive: false });
 

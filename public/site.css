@@ -1964,6 +1964,7 @@ body.lb-open { overflow: hidden; }
 .pg-btn.on { background: var(--green); color: #06270f; border-color: var(--green); }
 .pg-btn.arrow { font-size: 20px; }
 .pg-btn:disabled { opacity: 0.32; cursor: default; }
+.pg-ellipsis { display: inline-flex; align-items: flex-end; padding: 0 2px; color: rgba(255,255,255,0.4); font-weight: 700; letter-spacing: 1px; }
 .real-cta-line { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; margin-top: clamp(24px, 3vw, 34px); text-align: center; }
 .rcl-txt { color: rgba(255,255,255,0.7); font-size: 15px; }
 .real-cta-line .rm-btn.ghost {
