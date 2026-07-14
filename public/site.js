@@ -729,10 +729,14 @@
       var seen = {};
       mergeItems.forEach(function (it, pi) {
         var meta = itemMeta(it);
-        filledSrcs(it).forEach(function (s) {
+        itemSlots(it).forEach(function (im) {
+          var s = (im.classList.contains('ri-main') && im.getAttribute('data-orig'))
+            ? im.getAttribute('data-orig') : slotSrc(im);
           if (s && !seen[s]) {
             seen[s] = 1;
-            photos.push({ src: s, cap: meta.cap, cat: meta.cat, soc: meta.soc, desc: meta.desc, proj: pi });
+            // Client propre à la photo (extra) si renseigné, sinon celui du projet.
+            var photoSoc = im.getAttribute('data-soc') || meta.soc;
+            photos.push({ src: s, cap: meta.cap, cat: meta.cat, soc: photoSoc, desc: meta.desc, proj: pi });
           }
         });
       });

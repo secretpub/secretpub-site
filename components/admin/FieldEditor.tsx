@@ -707,6 +707,7 @@ function PhotoObjectField({
   const src: string = photo.src || "";
   const pos: string = photo.pos || "50% 50%";
   const cat: string = photo.cat || "";
+  const clientsList = useContext(ClientsContext);
   const boxRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const [busy, setBusy] = useState(false);
@@ -849,6 +850,27 @@ function PhotoObjectField({
           </div>
         </div>
         <SubTagsField value={photo.sub || ""} path={[...path, "sub"]} setAt={setAt} />
+        {bare && (
+          <div className="fe-row">
+            <label className="fe-label">Client de cette photo (si différent du projet)</label>
+            <div className="fe-hint">
+              Laisse vide pour garder le client du projet. Renseigne un autre client pour regrouper CETTE photo avec sa galerie.
+            </div>
+            <input
+              className="fe-input"
+              type="text"
+              list={"dl-psoc-" + path.join("-")}
+              value={photo.soc || ""}
+              placeholder="Nom du client…"
+              onChange={(e) => setAt([...path, "soc"], e.target.value)}
+            />
+            <datalist id={"dl-psoc-" + path.join("-")}>
+              {clientsList.map((c) => (
+                <option key={c} value={c} />
+              ))}
+            </datalist>
+          </div>
+        )}
       </div>
     </div>
   );
