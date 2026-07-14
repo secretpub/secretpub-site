@@ -1800,8 +1800,17 @@ a.metier { text-decoration: none; color: inherit; }
   }
   .lb-media { flex: 0 0 auto; }
   .lb-sep { flex: 0 0 auto; width: auto; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.28), transparent); }
-  /* Le texte scrolle (et LUI seul : overscroll contain = l'arrière-plan ne bouge pas). */
-  .lb-info { flex: 1 1 auto; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; padding-right: 4px; overscroll-behavior: contain; }
+  /* Le texte scrolle (et LUI seul : overscroll contain = l'arrière-plan ne bouge pas).
+     Barre de scroll verte bien visible quand le texte dépasse. */
+  .lb-info {
+    flex: 1 1 auto; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch;
+    padding-right: 8px; overscroll-behavior: contain;
+    scrollbar-width: thin; scrollbar-color: rgba(84,194,79,0.9) rgba(255,255,255,0.12);
+  }
+  .lb-info::-webkit-scrollbar { width: 5px; }
+  .lb-info::-webkit-scrollbar-track { background: rgba(255,255,255,0.1); border-radius: 999px; }
+  .lb-info::-webkit-scrollbar-thumb { background: rgba(84,194,79,0.9); border-radius: 999px; }
+  .lb-thumbs { overscroll-behavior: contain; }
   /* Quand le texte dépasse : fondu bas + petit indice « faire défiler » pour qu'on
      comprenne bien qu'on peut le scroller. */
   .lb-panel.info-scroll::after {

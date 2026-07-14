@@ -1077,31 +1077,32 @@
     // Zones de tap (mobile, façon story Snap) : gauche = photo précédente, droite = suivante.
     if (tapPrev) tapPrev.addEventListener('click', function (e) { e.stopPropagation(); if (Date.now() - lbLastSwipe < 450) return; go(-1); });
     if (tapNext) tapNext.addEventListener('click', function (e) { e.stopPropagation(); if (Date.now() - lbLastSwipe < 450) return; go(1); });
-    // Défilement manuel au doigt (mobile) : on suit le doigt (l'image glisse) et on
-    // bascule de photo au relâchement. Facile et fluide.
-    var lbfx = null, lbfy = null, lbDrag = false;
+    // VERROU du scroll de l'arrière-plan : dans la visionneuse, seuls le texte (.lb-info)
+    // et la bande de miniatures peuvent défiler. Tout le reste est bloqué → fini le
+    // "double scroll" avec la page derrière (fiable même sur iOS où overflow:hidden ne
+    // suffit pas). Le positionnement reste donc parfaitement stable.
+    box.addEventListener('touchmove', function (e) {
+      if (e.target.closest('.lb-info') || e.target.closest('.lb-thumbs')) return;
+      if (e.cancelable) e.preventDefault();
+    }, { passive: false });
+
+    // Swipe horizontal simple : on ne déplace PAS l'image (positionnement droit et stable),
+    // on bascule juste de photo au relâchement si le geste est franchement horizontal.
+    var lbfx = null, lbfy = null;
     var lbFrame = box.querySelector('.lb-frame');
     if (lbFrame) {
       lbFrame.addEventListener('touchstart', function (e) {
-        lbfx = e.touches[0].clientX; lbfy = e.touches[0].clientY; lbDrag = false;
-      }, { passive: true });
-      lbFrame.addEventListener('touchmove', function (e) {
-        if (lbfx === null || st.photos.length < 2) return;
-        var dx = e.touches[0].clientX - lbfx, dy = e.touches[0].clientY - lbfy;
-        if (!lbDrag && Math.abs(dx) > 8 && Math.abs(dx) > Math.abs(dy) + 2) lbDrag = true;
-        if (lbDrag) { lbImg.style.transition = 'none'; lbImg.style.transform = 'translateX(' + (dx * 0.4) + 'px)'; }
+        lbfx = e.touches[0].clientX; lbfy = e.touches[0].clientY;
       }, { passive: true });
       lbFrame.addEventListener('touchend', function (e) {
-        if (lbfx === null) { return; }
-        var dx = e.changedTouches[0].clientX - lbfx;
-        lbImg.style.transition = ''; lbImg.style.transform = '';
-        if (lbDrag && Math.abs(dx) > 42) {
-          e.preventDefault(); // supprime le clic fantôme sur la zone de tap
+        if (lbfx === null) return;
+        var dx = e.changedTouches[0].clientX - lbfx, dy = e.changedTouches[0].clientY - lbfy;
+        if (st.photos.length > 1 && Math.abs(dx) > 42 && Math.abs(dx) > Math.abs(dy)) {
           lbLastSwipe = Date.now();
           go(dx < 0 ? 1 : -1);
         }
-        lbfx = null; lbDrag = false;
-      }, { passive: false });
+        lbfx = null; lbfy = null;
+      }, { passive: true });
     }
     lbThumbs.addEventListener('click', function (e) {
       var t = e.target.closest('.lb-thumb');
