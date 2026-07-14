@@ -739,6 +739,9 @@
       + '<div class="lb-panel">'
       +   '<div class="lb-media">'
       +     '<div class="lb-frame">'
+      +       '<div class="lb-stories" aria-hidden="true"></div>'
+      +       '<button type="button" class="lb-tapzone prev" aria-label="Photo précédente"></button>'
+      +       '<button type="button" class="lb-tapzone next" aria-label="Photo suivante"></button>'
       +       '<button class="lb-nav lb-prev" aria-label="Photo précédente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>'
       +       '<img class="lb-main" alt="" />'
       +       '<span class="lb-count-lb" aria-hidden="true"></span>'
@@ -761,6 +764,9 @@
     var lbThumbs = box.querySelector('.lb-thumbs');
     var prevBtn = box.querySelector('.lb-prev');
     var nextBtn = box.querySelector('.lb-next');
+    var lbStories = box.querySelector('.lb-stories');
+    var tapPrev = box.querySelector('.lb-tapzone.prev');
+    var tapNext = box.querySelector('.lb-tapzone.next');
     // Chaque photo porte les infos de SON projet (titre, catégorie, société,
     // description) → tout reste synchronisé quand on navigue entre projets fusionnés.
     var st = { item: null, photos: [], idx: 0 };
@@ -830,9 +836,27 @@
         });
       }
       lbThumbs.innerHTML = html;
-      // Garde la miniature active visible dans la bande qui défile.
+      // Jauge stories (mobile) : une barre par photo, remplie jusqu'à la photo active.
+      if (lbStories) {
+        if (multi) {
+          var gh = '';
+          for (var gi = 0; gi < photos.length; gi++) {
+            gh += '<div class="lb-seg ' + (gi < st.idx ? 'done' : gi === st.idx ? 'active' : '') + '"><i></i></div>';
+          }
+          lbStories.innerHTML = gh;
+          lbStories.style.display = '';
+        } else { lbStories.innerHTML = ''; lbStories.style.display = 'none'; }
+      }
+      if (tapPrev) tapPrev.style.display = multi ? '' : 'none';
+      if (tapNext) tapNext.style.display = multi ? '' : 'none';
+      // Centre la miniature active DANS la bande (scroll horizontal interne seulement,
+      // jamais la page → corrige le bug de scroll).
       var onThumb = lbThumbs.querySelector('.lb-thumb.on');
-      if (onThumb && onThumb.scrollIntoView) onThumb.scrollIntoView({ block: 'nearest', inline: 'center' });
+      if (onThumb) {
+        var tr = lbThumbs.getBoundingClientRect(), brc = onThumb.getBoundingClientRect();
+        var delta = (brc.left - tr.left) - (lbThumbs.clientWidth - onThumb.offsetWidth) / 2;
+        lbThumbs.scrollTo({ left: lbThumbs.scrollLeft + delta, behavior: 'smooth' });
+      }
     }
     function go(d) {
       if (!st.photos.length) return;
@@ -980,6 +1004,21 @@
     // Navigation : flèches + miniatures
     prevBtn.addEventListener('click', function (e) { e.stopPropagation(); go(-1); });
     nextBtn.addEventListener('click', function (e) { e.stopPropagation(); go(1); });
+    // Zones de tap (mobile, façon story Snap) : gauche = photo précédente, droite = suivante.
+    if (tapPrev) tapPrev.addEventListener('click', function (e) { e.stopPropagation(); go(-1); });
+    if (tapNext) tapNext.addEventListener('click', function (e) { e.stopPropagation(); go(1); });
+    // Swipe horizontal sur la photo (mobile).
+    var lbfx = null;
+    var lbFrame = box.querySelector('.lb-frame');
+    if (lbFrame) {
+      lbFrame.addEventListener('touchstart', function (e) { lbfx = e.touches[0].clientX; }, { passive: true });
+      lbFrame.addEventListener('touchend', function (e) {
+        if (lbfx === null) return;
+        var dx = e.changedTouches[0].clientX - lbfx;
+        if (Math.abs(dx) > 40) { go(dx < 0 ? 1 : -1); }
+        lbfx = null;
+      }, { passive: true });
+    }
     lbThumbs.addEventListener('click', function (e) {
       var t = e.target.closest('.lb-thumb');
       if (!t) return;
