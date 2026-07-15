@@ -39,9 +39,9 @@ async function notifyByEmail(f: {
   files?: Array<{ name?: string; url?: string }>;
 }): Promise<void> {
   const key = process.env.RESEND_API_KEY;
-  const to = process.env.LEADS_NOTIFY_EMAIL;
-  if (!key || !to) {
-    console.warn("[leads] email non envoyé (RESEND_API_KEY ou LEADS_NOTIFY_EMAIL manquant)");
+  const to = "contact@secretpub.fr"; // destinataire fixe des notifications de demande
+  if (!key) {
+    console.warn("[leads] email non envoyé (RESEND_API_KEY manquant)");
     return;
   }
   const from = process.env.RESEND_FROM || "SecretPub <onboarding@resend.dev>";
