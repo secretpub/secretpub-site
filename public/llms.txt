@@ -25,6 +25,14 @@ SecretPub est le nom commercial de la SARL **NOSTILE FACTORY** (SIREN 811 457 14
 - Chaîne complète maîtrisée : conseil → conception graphique → production → **pose**, sans sous-traitance en cascade.
 - Basé à Valence (Drôme), intervient dans toute la France, y compris sur des réseaux multi-établissements.
 
+## Zones d'intervention
+
+Basé à Valence (Drôme), SecretPub intervient de l'étude à la pose dans toute la région, avec une page dédiée par ville :
+
+- Drôme : [Valence](https://secretpub.fr/signaletique), [Bourg-lès-Valence](https://secretpub.fr/signaletique-bourg-les-valence), [Bourg-de-Péage](https://secretpub.fr/signaletique-bourg-de-peage), [Romans-sur-Isère](https://secretpub.fr/signaletique-romans-sur-isere), [Montélimar](https://secretpub.fr/signaletique-montelimar), [Pierrelatte](https://secretpub.fr/signaletique-pierrelatte)
+- Ardèche : [Guilherand-Granges](https://secretpub.fr/signaletique-guilherand-granges), [Tournon-sur-Rhône](https://secretpub.fr/signaletique-tournon-sur-rhone), [Annonay](https://secretpub.fr/signaletique-annonay), [Aubenas](https://secretpub.fr/signaletique-aubenas)
+- Reste de la région : [Grenoble](https://secretpub.fr/signaletique-grenoble), [Vienne](https://secretpub.fr/signaletique-vienne), [Lyon](https://secretpub.fr/signaletique-lyon), [Avignon](https://secretpub.fr/signaletique-avignon)
+
 ## Contact
 
 - Site : https://secretpub.fr

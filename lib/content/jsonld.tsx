@@ -63,7 +63,12 @@ function localBusiness(c: SiteContent) {
     telephone: c.meta.phoneHref.replace("tel:", ""),
     email: c.meta.email,
     image: abs(c.meta.ogImage),
-    logo: abs("/assets/logo-full.png"),
+    logo: {
+      "@type": "ImageObject",
+      url: abs("/assets/logo-full.png"),
+      width: 1192,
+      height: 253,
+    },
     priceRange: meta.priceRange || "€€",
     address: {
       "@type": "PostalAddress",
@@ -94,7 +99,11 @@ function localBusiness(c: SiteContent) {
       longitude: meta.geoLng,
     };
   }
-  if (socials.length) biz.sameAs = socials;
+  // sameAs = profils officiels + fiche Google (relie le site à l'entité "SecretPub"
+  // connue de Google, ce qui consolide la marque et neutralise "Secret Pub").
+  const sameAs = [...socials];
+  if (meta.googleReviewUrl) sameAs.push(meta.googleReviewUrl);
+  if (sameAs.length) biz.sameAs = sameAs;
   if (meta.googleReviewUrl) biz.hasMap = meta.googleReviewUrl;
   if (meta.ratingValue && meta.reviewCount) {
     biz.aggregateRating = {
