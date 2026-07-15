@@ -1,9 +1,9 @@
 <!-- NOS MÉTIERS (blanc) -->
-<section class="section metiers" id="metiers" data-screen-label="Métiers">
+<section class="section metiers" id="metiers" data-screen-label="Services">
   <div class="wrap">
     <div class="socle-banner reveal">
       <div class="sb-head">
-        <span class="sb-num">{{metiersSocle.num}}</span>
+        {{#metiersSocle.num}}<span class="sb-num">{{metiersSocle.num}}</span>{{/metiersSocle.num}}
         <h2 class="sb-title">{{metiersSocle.title}}</h2>
       </div>
       <p class="sb-tag">{{{metiersSocle.tagHtml}}}</p>
@@ -24,18 +24,6 @@
       </div>
     </div>
     {{/metiersSocle.items}}
-    </div>
-
-    <div class="socle-banner finishing reveal">
-      <div class="sb-head">
-        <span class="sb-num">{{metiersComplement.num}}</span>
-        <h2 class="sb-title">{{metiersComplement.title}}</h2>
-      </div>
-      <p class="sb-tag">{{{metiersComplement.tagHtml}}}</p>
-    </div>
-
-    <div class="metiers-flow" id="flow02">
-      <div class="flow-rail" aria-hidden="true"><span class="flow-rail-fill"></span><span class="flow-dot"></span></div>
     {{#metiersComplement.items}}
     <div class="ms-showcase {{#reverse}}reverse {{/reverse}}reveal spotlight">
       <div class="msc-copy">

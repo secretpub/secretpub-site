@@ -359,7 +359,7 @@
   },
   "nav": [
     {
-      "label": "Métiers",
+      "label": "Services",
       "href": "/#metiers"
     },
     {
@@ -3116,9 +3116,9 @@
     }
   },
   "metiersSocle": {
-    "num": "01",
-    "title": "Nos métiers socles",
-    "tagHtml": "La <b>signalétique</b> vous expose, le <b>print</b> vous raconte, le <b>textile</b> vous incarne.",
+    "num": "",
+    "title": "Nos services",
+    "tagHtml": "La <b>signalétique</b> vous expose, le <b>print</b> vous raconte, le <b>textile</b> vous incarne. Le <b>packaging</b> et les <b>goodies</b> font circuler votre image, entre toutes les mains.",
     "items": [
       {
         "cat": "signa",
