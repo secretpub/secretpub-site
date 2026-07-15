@@ -1,0 +1,126 @@
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-inner">
+    <a class="brand" href="/" aria-label="SecretPub, retour à l'accueil">
+      <img src="/assets/logo-full.png" alt="Logo SecretPub, signalétique, print et textile à Valence" />
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      {{#nav}}
+      <div class="nav-item"><a href="{{href}}">{{label}}</a></div>
+      {{/nav}}
+    </nav>
+    <div class="header-cta">
+      <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-glow">Catalogue <span class="ext" aria-hidden="true">↗</span></a>
+      <a href="/#contact" class="btn btn-primary">{{headerCtaLabel}}</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    </div>
+  </div>
+</header>
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="menu-close" id="menuClose" aria-label="Fermer le menu">×</button>
+  {{#nav}}
+  <a href="{{href}}">{{label}}</a>
+  {{/nav}}
+  <a href="/conseils">Conseils</a>
+  <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-glow">Catalogue <span class="ext" aria-hidden="true">↗</span></a>
+  <a href="/#contact" class="btn btn-primary">{{headerCtaLabel}}</a>
+  <div class="mm-contact">
+    <a class="mm-tel" href="{{meta.phoneHref}}">{{meta.phoneDisplay}}</a>
+    <address class="mm-addr">{{meta.addressLine}}</address>
+  </div>
+</div>
+
+<style>
+  .conseils-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 34px; }
+  @media (max-width: 720px) { .conseils-grid { grid-template-columns: 1fr; } }
+  .conseil-card { display: flex; flex-direction: column; gap: 12px; padding: 28px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); text-decoration: none; color: inherit; transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease; }
+  .conseil-card:hover { transform: translateY(-3px); border-color: rgba(64,171,63,0.5); background: rgba(64,171,63,0.05); }
+  .conseil-card .cc-tag { font-family: var(--display); font-weight: 700; font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); }
+  .conseil-card h2 { font-family: var(--display); font-weight: 800; font-size: 21px; line-height: 1.25; color: #fff; letter-spacing: -0.01em; margin: 0; }
+  .conseil-card p { font-size: 15px; line-height: 1.6; color: rgba(255,255,255,0.7); margin: 0; }
+  .conseil-card .cc-more { margin-top: auto; display: inline-flex; align-items: center; gap: 7px; font-family: var(--display); font-weight: 700; font-size: 14px; color: var(--green); }
+</style>
+
+<main id="main">
+
+<section class="page-hero mp-hero" data-screen-label="Conseils">
+  <div class="wrap">
+    <nav class="crumb" aria-label="Fil d'Ariane"><a href="/">Accueil</a> <span>/</span> <span>Conseils</span></nav>
+    <span class="eyebrow" style="margin-top: 22px;">Conseils &amp; guides</span>
+    <h1>Nos conseils d'enseigniste, sans langue de bois</h1>
+    <p class="hero-sub">Prix réels, démarches, choix techniques : ce qu'on explique à nos clients tous les jours, mis par écrit. Dix ans de terrain à Valence et dans toute la région, au service de vos projets.</p>
+  </div>
+</section>
+
+<section class="section" data-screen-label="Articles">
+  <div class="wrap">
+    <div class="conseils-grid">
+      {{#articles}}
+      <a class="conseil-card reveal" href="/conseils/{{slug}}">
+        <span class="cc-tag">Conseil · {{readingMin}} min</span>
+        <h2>{{title}}</h2>
+        <p>{{excerpt}}</p>
+        <span class="cc-more">Lire l'article <span class="arr" aria-hidden="true">→</span></span>
+      </a>
+      {{/articles}}
+    </div>
+  </div>
+</section>
+
+<section class="cta-band grainy pp" data-screen-label="CTA devis">
+  <div class="wrap">
+    <h2>Une question sur votre projet ?</h2>
+    <p>Un doute sur le budget, les autorisations, la bonne technique ? Posez-nous la question directement, on répond sous 24 h.</p>
+    <div class="hero-actions">
+      <a href="/#contact" class="btn btn-white btn-lg">Nous contacter <span class="arr">→</span></a>
+      <a href="{{meta.phoneHref}}" class="btn btn-ghost btn-lg">{{meta.phoneDisplay}}</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="foot-brand">
+        <a class="brand" href="/" aria-label="SecretPub, retour à l'accueil"><img src="/assets/logo-full.png" alt="SecretPub : signalétique, print et textile à Valence" /></a>
+        <p class="about">{{footer.about}}</p>
+        <address class="foot-contact">
+          <a href="{{meta.phoneHref}}">{{meta.phoneDisplay}}</a>
+          <a href="mailto:{{meta.email}}">{{meta.email}}</a>
+          <span>{{meta.addressLine}}</span>
+        </address>
+      </div>
+      {{#footer.columns}}
+      <nav class="foot-col" aria-label="{{title}}">
+        <h5>{{title}}</h5>
+        {{#links}}
+        <a href="{{href}}">{{label}}</a>
+        {{/links}}
+      </nav>
+      {{/footer.columns}}
+    </div>
+
+    <div class="footer-bottom">
+      <div class="foot-copy">
+        <span>{{footer.copyright}}</span>
+      </div>
+      <nav class="foot-legal" aria-label="Informations légales">
+        <a href="/conseils">Conseils</a>
+        <a href="/mentions-legales">Mentions légales</a>
+        <a href="/mentions-legales#confidentialite">Confidentialité</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <div class="socials">
+        {{#footer.socials}}
+        <a href="{{href}}" target="_blank" rel="noopener" aria-label="{{label}}">{{{iconHtml}}}</a>
+        {{/footer.socials}}
+      </div>
+    </div>
+  </div>
+</footer>

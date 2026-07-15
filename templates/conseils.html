@@ -1,0 +1,144 @@
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-inner">
+    <a class="brand" href="/" aria-label="SecretPub, retour à l'accueil">
+      <img src="/assets/logo-full.png" alt="Logo SecretPub, signalétique, print et textile à Valence" />
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      {{#nav}}
+      <div class="nav-item"><a href="{{href}}">{{label}}</a></div>
+      {{/nav}}
+    </nav>
+    <div class="header-cta">
+      <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-glow">Catalogue <span class="ext" aria-hidden="true">↗</span></a>
+      <a href="/#contact" class="btn btn-primary">{{headerCtaLabel}}</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    </div>
+  </div>
+</header>
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="menu-close" id="menuClose" aria-label="Fermer le menu">×</button>
+  {{#nav}}
+  <a href="{{href}}">{{label}}</a>
+  {{/nav}}
+  <a href="/conseils">Conseils</a>
+  <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-glow">Catalogue <span class="ext" aria-hidden="true">↗</span></a>
+  <a href="/#contact" class="btn btn-primary">{{headerCtaLabel}}</a>
+  <div class="mm-contact">
+    <a class="mm-tel" href="{{meta.phoneHref}}">{{meta.phoneDisplay}}</a>
+    <address class="mm-addr">{{meta.addressLine}}</address>
+  </div>
+</div>
+
+<style>
+  .article-wrap { max-width: 760px; }
+  .article-body { font-size: 17px; line-height: 1.75; color: rgba(255,255,255,0.82); }
+  .article-body h2 { font-family: var(--display); font-weight: 800; font-size: clamp(22px, 2.4vw, 28px); color: #fff; letter-spacing: -0.01em; margin: 42px 0 14px; }
+  .article-body h3 { font-family: var(--display); font-weight: 700; font-size: 19px; color: #eafff0; margin: 28px 0 8px; }
+  .article-body p { margin: 0 0 16px; }
+  .article-body ul { margin: 0 0 18px; padding-left: 4px; list-style: none; }
+  .article-body li { position: relative; padding-left: 24px; margin: 0 0 9px; }
+  .article-body li::before { content: ""; position: absolute; left: 4px; top: 10px; width: 7px; height: 7px; border-radius: 50%; background: var(--green); }
+  .article-body strong { color: #fff; }
+  .article-meta { display: flex; gap: 14px; align-items: center; color: rgba(255,255,255,0.6); font-size: 14px; margin-top: 16px; }
+  .article-meta .dot { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,0.4); }
+  .article-back { display: inline-flex; align-items: center; gap: 7px; margin-top: 8px; color: var(--sage); font-family: var(--display); font-weight: 700; font-size: 14px; text-decoration: none; }
+  .article-back:hover { color: var(--green); }
+</style>
+
+<main id="main">
+
+<section class="page-hero mp-hero" data-screen-label="Article {{article.slug}}">
+  <div class="wrap article-wrap">
+    <nav class="crumb" aria-label="Fil d'Ariane"><a href="/">Accueil</a> <span>/</span> <a href="/conseils">Conseils</a> <span>/</span> <span>{{article.title}}</span></nav>
+    <span class="eyebrow" style="margin-top: 22px;">Conseil d'expert</span>
+    <h1>{{article.title}}</h1>
+    <p class="article-meta"><span>{{article.readingMin}} min de lecture</span> <span class="dot" aria-hidden="true"></span> <span>Par SecretPub, enseigniste à Valence</span></p>
+  </div>
+</section>
+
+<section class="section" data-screen-label="Contenu">
+  <div class="wrap article-wrap">
+    <article class="article-body reveal">
+      {{{article.bodyHtml}}}
+    </article>
+  </div>
+</section>
+
+{{#article.faq.length}}
+<section class="section faq mp-faq mp-alt" data-screen-label="Questions">
+  <div class="wrap article-wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Questions fréquentes</span>
+      <h2>Ce qu'on nous demande souvent</h2>
+    </div>
+    <div class="faq-list reveal">
+      {{#article.faq}}
+      <details>
+        <summary>{{q}}</summary>
+        <p class="faq-a">{{a}}</p>
+      </details>
+      {{/article.faq}}
+    </div>
+    <a class="article-back" href="/conseils"><span class="arr" aria-hidden="true">←</span> Tous nos conseils</a>
+  </div>
+</section>
+{{/article.faq.length}}
+
+<section class="cta-band grainy pp" data-screen-label="CTA devis">
+  <div class="wrap">
+    <h2>Un projet d'enseigne, d'impression ou de textile ?</h2>
+    <p>On étudie votre besoin et on vous répond clairement, devis à l'appui. Un seul partenaire, de l'étude à la pose.</p>
+    <div class="hero-actions">
+      <a href="/#contact" class="btn btn-white btn-lg">Demander un devis <span class="arr">→</span></a>
+      <a href="{{meta.phoneHref}}" class="btn btn-ghost btn-lg">{{meta.phoneDisplay}}</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="foot-brand">
+        <a class="brand" href="/" aria-label="SecretPub, retour à l'accueil"><img src="/assets/logo-full.png" alt="SecretPub : signalétique, print et textile à Valence" /></a>
+        <p class="about">{{footer.about}}</p>
+        <address class="foot-contact">
+          <a href="{{meta.phoneHref}}">{{meta.phoneDisplay}}</a>
+          <a href="mailto:{{meta.email}}">{{meta.email}}</a>
+          <span>{{meta.addressLine}}</span>
+        </address>
+      </div>
+      {{#footer.columns}}
+      <nav class="foot-col" aria-label="{{title}}">
+        <h5>{{title}}</h5>
+        {{#links}}
+        <a href="{{href}}">{{label}}</a>
+        {{/links}}
+      </nav>
+      {{/footer.columns}}
+    </div>
+
+    <div class="footer-bottom">
+      <div class="foot-copy">
+        <span>{{footer.copyright}}</span>
+      </div>
+      <nav class="foot-legal" aria-label="Informations légales">
+        <a href="/conseils">Conseils</a>
+        <a href="/mentions-legales">Mentions légales</a>
+        <a href="/mentions-legales#confidentialite">Confidentialité</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <div class="socials">
+        {{#footer.socials}}
+        <a href="{{href}}" target="_blank" rel="noopener" aria-label="{{label}}">{{{iconHtml}}}</a>
+        {{/footer.socials}}
+      </div>
+    </div>
+  </div>
+</footer>

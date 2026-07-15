@@ -21,6 +21,8 @@ const nextConfig: NextConfig = {
     "/espace-de-commande": ["./templates/**/*"],
     "/reseaux-franchises": ["./templates/**/*"],
     "/mentions-legales": ["./templates/**/*"],
+    "/conseils": ["./templates/**/*"],
+    "/conseils/[slug]": ["./templates/**/*"],
   },
   images: {
     // Supabase Storage public bucket for CMS-uploaded images.

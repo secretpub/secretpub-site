@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getDefaultContent } from "@/lib/content/store";
+import conseils from "@/content/conseils.json";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL || "https://secretpub.fr";
 
@@ -13,9 +14,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     }),
   );
+  const articles = conseils.articles.map((a) => ({
+    url: `${SITE}/conseils/${a.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
   return [
     { url: SITE, lastModified: now, changeFrequency: "weekly", priority: 1 },
     ...metier,
+    {
+      url: `${SITE}/conseils`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    ...articles,
     {
       url: `${SITE}/espace-de-commande`,
       lastModified: now,

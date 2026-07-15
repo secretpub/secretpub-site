@@ -276,6 +276,83 @@ export function metierJsonLd(c: SiteContent, page: any): object[] {
   ];
 }
 
+export function articleJsonLd(c: SiteContent, article: any): object[] {
+  const url = abs(`/conseils/${article.slug}`);
+  const nodes: any[] = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: article.title,
+      description: article.metaDescription || article.excerpt,
+      datePublished: article.datePublished,
+      dateModified: article.datePublished,
+      inLanguage: "fr-FR",
+      author: { "@type": "Organization", name: c.meta.siteName, url: SITE_URL },
+      publisher: {
+        "@type": "Organization",
+        name: c.meta.siteName,
+        logo: {
+          "@type": "ImageObject",
+          url: abs("/assets/logo-full.png"),
+          width: 1192,
+          height: 253,
+        },
+      },
+      image: abs(c.meta.ogImage),
+      mainEntityOfPage: url,
+      url,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "Conseils", item: abs("/conseils") },
+        { "@type": "ListItem", position: 3, name: article.title, item: url },
+      ],
+    },
+  ];
+  if (article.faq?.length) {
+    nodes.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: article.faq.map((f: any) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    });
+  }
+  return nodes;
+}
+
+export function conseilsIndexJsonLd(c: SiteContent, articles: any[]): object[] {
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "Conseils SecretPub",
+      description:
+        "Guides pratiques sur l'enseigne, la signalétique, l'impression et le textile personnalisé.",
+      url: abs("/conseils"),
+      hasPart: articles.map((a) => ({
+        "@type": "Article",
+        headline: a.title,
+        url: abs(`/conseils/${a.slug}`),
+      })),
+    },
+    { "@context": "https://schema.org", ...localBusiness(c) },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "Conseils", item: abs("/conseils") },
+      ],
+    },
+  ];
+}
+
 export function JsonLd({ data }: { data: object[] }) {
   return (
     <>
