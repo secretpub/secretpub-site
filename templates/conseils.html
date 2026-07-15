@@ -105,6 +105,22 @@
 </section>
 {{/article.faq.length}}
 
+{{#article.related.length}}
+<section class="section mp-alt" data-screen-label="Pour aller plus loin">
+  <div class="wrap article-wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Pour aller plus loin</span>
+      <h2>À lire aussi</h2>
+    </div>
+    <div class="mp-related reveal">
+      {{#article.related}}
+      <a class="mp-related-link" href="{{href}}">{{label}} <span class="arr">→</span></a>
+      {{/article.related}}
+    </div>
+  </div>
+</section>
+{{/article.related.length}}
+
 <section class="cta-band grainy pp" data-screen-label="CTA devis">
   <div class="wrap">
     <h2>Un projet d'enseigne, d'impression ou de textile ?</h2>

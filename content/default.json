@@ -685,6 +685,24 @@
           "label": "Signalétique Lyon",
           "href": "/signaletique-lyon"
         }
+      ],
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "PLV et panneaux qui attirent",
+          "href": "/conseils/panneaux-plv"
+        }
       ]
     },
     "imprimerie": {
@@ -866,6 +884,16 @@
         {
           "label": "Objets publicitaires",
           "href": "/objets-publicitaires"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Cartes, flyers, brochures : le guide print",
+          "href": "/conseils/supports-imprimes-print"
+        },
+        {
+          "label": "Impression grand format : bien choisir",
+          "href": "/conseils/impression-grand-format"
         }
       ]
     },
@@ -1049,6 +1077,16 @@
           "label": "Imprimerie",
           "href": "/imprimerie"
         }
+      ],
+      "conseils": [
+        {
+          "label": "Textile perso : choisir le vêtement",
+          "href": "/conseils/textile-personnalise-guide"
+        },
+        {
+          "label": "Broderie, sérigraphie, flocage ou DTF ?",
+          "href": "/conseils/choisir-marquage-textile-pro"
+        }
       ]
     },
     "objets-publicitaires": {
@@ -1231,6 +1269,12 @@
           "label": "Imprimerie",
           "href": "/imprimerie"
         }
+      ],
+      "conseils": [
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/conseils/objets-publicitaires-goodies"
+        }
       ]
     },
     "packaging": {
@@ -1412,6 +1456,16 @@
         {
           "label": "Signalétique",
           "href": "/signaletique"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Cartes, flyers, brochures : le guide print",
+          "href": "/conseils/supports-imprimes-print"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/conseils/objets-publicitaires-goodies"
         }
       ]
     },
@@ -1600,7 +1654,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Romans-sur-Isère"
+      "areaServed": "Romans-sur-Isère",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-montelimar": {
       "slug": "signaletique-montelimar",
@@ -1787,7 +1859,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Montélimar"
+      "areaServed": "Montélimar",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-grenoble": {
       "slug": "signaletique-grenoble",
@@ -1974,7 +2064,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Grenoble"
+      "areaServed": "Grenoble",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-avignon": {
       "slug": "signaletique-avignon",
@@ -2161,7 +2269,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Avignon"
+      "areaServed": "Avignon",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-bourg-les-valence": {
       "slug": "signaletique-bourg-les-valence",
@@ -2348,7 +2474,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Bourg-lès-Valence"
+      "areaServed": "Bourg-lès-Valence",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-guilherand-granges": {
       "slug": "signaletique-guilherand-granges",
@@ -2535,7 +2679,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Guilherand-Granges"
+      "areaServed": "Guilherand-Granges",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-tournon-sur-rhone": {
       "slug": "signaletique-tournon-sur-rhone",
@@ -2722,7 +2884,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Tournon-sur-Rhône"
+      "areaServed": "Tournon-sur-Rhône",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-annonay": {
       "slug": "signaletique-annonay",
@@ -2909,7 +3089,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Annonay"
+      "areaServed": "Annonay",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-lyon": {
       "slug": "signaletique-lyon",
@@ -3096,7 +3294,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Lyon"
+      "areaServed": "Lyon",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-aubenas": {
       "slug": "signaletique-aubenas",
@@ -3283,7 +3499,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Aubenas"
+      "areaServed": "Aubenas",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-pierrelatte": {
       "slug": "signaletique-pierrelatte",
@@ -3470,7 +3704,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Pierrelatte"
+      "areaServed": "Pierrelatte",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-bourg-de-peage": {
       "slug": "signaletique-bourg-de-peage",
@@ -3657,7 +3909,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Bourg-de-Péage"
+      "areaServed": "Bourg-de-Péage",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-vienne": {
       "slug": "signaletique-vienne",
@@ -3844,7 +4114,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Vienne"
+      "areaServed": "Vienne",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-portes-les-valence": {
       "slug": "signaletique-portes-les-valence",
@@ -4031,7 +4319,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Portes-lès-Valence"
+      "areaServed": "Portes-lès-Valence",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-livron-sur-drome": {
       "slug": "signaletique-livron-sur-drome",
@@ -4218,7 +4524,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Livron-sur-Drôme"
+      "areaServed": "Livron-sur-Drôme",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-crest": {
       "slug": "signaletique-crest",
@@ -4405,7 +4729,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Crest"
+      "areaServed": "Crest",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-die": {
       "slug": "signaletique-die",
@@ -4592,7 +4934,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Die"
+      "areaServed": "Die",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-nyons": {
       "slug": "signaletique-nyons",
@@ -4779,7 +5139,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Nyons"
+      "areaServed": "Nyons",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-tain-l-hermitage": {
       "slug": "signaletique-tain-l-hermitage",
@@ -4966,7 +5344,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Tain-l'Hermitage"
+      "areaServed": "Tain-l'Hermitage",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-privas": {
       "slug": "signaletique-privas",
@@ -5153,7 +5549,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Privas"
+      "areaServed": "Privas",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-villeurbanne": {
       "slug": "signaletique-villeurbanne",
@@ -5340,7 +5754,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Villeurbanne"
+      "areaServed": "Villeurbanne",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-saint-etienne": {
       "slug": "signaletique-saint-etienne",
@@ -5527,7 +5959,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Saint-Étienne"
+      "areaServed": "Saint-Étienne",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-bourgoin-jallieu": {
       "slug": "signaletique-bourgoin-jallieu",
@@ -5714,7 +6164,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Bourgoin-Jallieu"
+      "areaServed": "Bourgoin-Jallieu",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-annecy": {
       "slug": "signaletique-annecy",
@@ -5901,7 +6369,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Annecy"
+      "areaServed": "Annecy",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-chambery": {
       "slug": "signaletique-chambery",
@@ -6088,7 +6574,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Chambéry"
+      "areaServed": "Chambéry",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     },
     "signaletique-orange": {
       "slug": "signaletique-orange",
@@ -6275,7 +6779,25 @@
           "href": "/packaging"
         }
       ],
-      "areaServed": "Orange"
+      "areaServed": "Orange",
+      "conseils": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        }
+      ]
     }
   },
   "metiersSocle": {

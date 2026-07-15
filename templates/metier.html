@@ -183,6 +183,24 @@
 </section>
 {{/page.related.length}}
 
+<!-- NOS CONSEILS (maillage vers le blog) -->
+{{#page.conseils.length}}
+<section class="section" data-screen-label="Nos conseils">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Conseils d'expert</span>
+      <h2>Nos guides pour bien choisir</h2>
+      <p class="lead">Avant de vous lancer, quelques conseils concrets tirés du terrain.</p>
+    </div>
+    <div class="mp-related reveal">
+      {{#page.conseils}}
+      <a class="mp-related-link" href="{{href}}">{{label}} <span class="arr">→</span></a>
+      {{/page.conseils}}
+    </div>
+  </div>
+</section>
+{{/page.conseils.length}}
+
 <!-- CTA FINAL -->
 <section class="cta-band grainy pp" data-screen-label="CTA devis">
   <div class="wrap">

@@ -22,6 +22,20 @@
           "q": "Une enseigne lumineuse coûte-t-elle beaucoup plus cher ?",
           "a": "Elle coûte plus cher à l'achat, parce qu'il faut compter les LED, l'alimentation et le raccordement. Mais on reste le plus souvent dans une fourchette de quelques milliers d'euros. Et comme une enseigne tient 8 à 12 ans, la différence ramenée à la journée se compte en centimes, pour un commerce qui reste visible même la nuit."
         }
+      ],
+      "related": [
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Signalétique & enseignes",
+          "href": "/signaletique"
+        }
       ]
     },
     {
@@ -45,6 +59,20 @@
         {
           "q": "En cas de reprise d'un commerce, l'autorisation de l'ancien exploitant reste-t-elle valable ?",
           "a": "Non. L'autorisation porte sur une enseigne précise pour un exploitant précis. Si vous changez le nom, le visuel ou la structure, il faut redéposer un dossier. Intégrez ces 2 mois d'instruction dans votre calendrier de reprise, au même titre que les travaux."
+        }
+      ],
+      "related": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Signalétique de réseau / franchise",
+          "href": "/conseils/signaletique-reseau-franchise-multisite"
+        },
+        {
+          "label": "Signalétique & enseignes",
+          "href": "/signaletique"
         }
       ]
     },
@@ -70,6 +98,20 @@
           "q": "Quelle quantité minimum pour une commande ?",
           "a": "Techniquement, on sait marquer à l'unité en flex ou en DTF. Mais soyons clairs : pour une poignée de pièces, ce n'est ni le plus économique pour vous, ni là où on vous apporte le plus. Notre métier, ce sont les séries qui comptent : une équipe à habiller, un événement, une boutique, un réseau. En broderie, l'unité est possible, mais la mise en fichier ne s'amortit qu'à partir de quelques pièces (et elle resservira pour toutes vos commandes suivantes). En sérigraphie, en dessous d'une trentaine de pièces, on vous oriente honnêtement vers une autre technique. Dites-nous votre projet et sa quantité, on vous dira à partir de quand chaque solution devient vraiment intéressante."
         }
+      ],
+      "related": [
+        {
+          "label": "Textile perso : choisir le vêtement",
+          "href": "/conseils/textile-personnalise-guide"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/conseils/objets-publicitaires-goodies"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        }
       ]
     },
     {
@@ -93,6 +135,20 @@
         {
           "q": "Combien de temps pour déployer dix sites ?",
           "a": "Comptez 4 à 8 mois en menant les autorisations en parallèle : environ 2 mois d'instruction par mairie, des fabrications groupées, puis des vagues de pose par zone géographique. Le facteur limitant n'est presque jamais la fabrication, ce sont les dossiers administratifs. D'où l'intérêt de tous les déposer dès la validation des maquettes."
+        }
+      ],
+      "related": [
+        {
+          "label": "Prix d'une enseigne : le vrai budget",
+          "href": "/conseils/prix-enseigne-magasin"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        },
+        {
+          "label": "Signalétique & enseignes",
+          "href": "/signaletique"
         }
       ]
     },
@@ -118,6 +174,20 @@
           "q": "Faut-il une autorisation pour installer une bâche ou un panneau en façade ?",
           "a": "Souvent, oui. Une enseigne ou une bâche publicitaire visible depuis la voie publique relève de la réglementation locale sur la publicité extérieure et passe généralement par une déclaration ou une autorisation en mairie. Les règles varient d'une commune à l'autre, y compris autour de Valence. Nous vous indiquons la marche à suivre au moment de l'étude."
         }
+      ],
+      "related": [
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        },
+        {
+          "label": "PLV et panneaux qui attirent",
+          "href": "/conseils/panneaux-plv"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        }
       ]
     },
     {
@@ -141,6 +211,20 @@
         {
           "q": "Peut-on poser sa vitrophanie soi-même ?",
           "a": "Pour de petites lettres découpées ou un logo modeste, oui, avec de la patience et une raclette. Au-delà d'une certaine surface, et surtout pour du microperforé ou du dépoli pleine vitre, la pose à deux avec la bonne technique fait toute la différence : alignement, absence de bulles, découpe propre aux joints. Une vitrine, c'est votre visage sur rue, autant qu'elle soit impeccable."
+        }
+      ],
+      "related": [
+        {
+          "label": "Impression grand format : bien choisir",
+          "href": "/conseils/impression-grand-format"
+        },
+        {
+          "label": "PLV et panneaux qui attirent",
+          "href": "/conseils/panneaux-plv"
+        },
+        {
+          "label": "Signalétique & enseignes",
+          "href": "/signaletique"
         }
       ]
     },
@@ -166,6 +250,20 @@
           "q": "Quel délai prévoir pour une impression ?",
           "a": "Pour des supports standards (cartes, flyers, dépliants), comptez en général quelques jours ouvrés une fois le bon à tirer validé. Les finitions spéciales comme la dorure à chaud ou le vernis sélectif rallongent le planning, tout comme les papiers de création qui doivent parfois être approvisionnés. Le bon réflexe : nous consulter dès que la date de votre événement ou de votre campagne est connue."
         }
+      ],
+      "related": [
+        {
+          "label": "Impression grand format : bien choisir",
+          "href": "/conseils/impression-grand-format"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/conseils/objets-publicitaires-goodies"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        }
       ]
     },
     {
@@ -189,6 +287,20 @@
         {
           "q": "Un objet éco-responsable coûte-t-il forcément plus cher ?",
           "a": "Bonne nouvelle : l'écart se réduit d'année en année, surtout sur les basiques comme le tote bag en coton bio ou les objets en plastique recyclé. Et raisonné en coût par jour d'utilisation, un objet durable gardé longtemps est souvent le meilleur investissement du lot. Le devis permet de comparer les deux options sur votre quantité exacte."
+        }
+      ],
+      "related": [
+        {
+          "label": "Textile perso : choisir le vêtement",
+          "href": "/conseils/textile-personnalise-guide"
+        },
+        {
+          "label": "Cartes, flyers, brochures : le guide print",
+          "href": "/conseils/supports-imprimes-print"
+        },
+        {
+          "label": "Objets publicitaires",
+          "href": "/objets-publicitaires"
         }
       ]
     },
@@ -214,6 +326,20 @@
           "q": "Peut-on réutiliser un roll-up en changeant simplement le visuel ?",
           "a": "Oui, sur les structures de qualité la toile imprimée se remplace sans changer le mécanisme. C'est une solution économique pour les campagnes saisonnières ou les offres qui tournent. Sur les modèles d'entrée de gamme, le remplacement est parfois plus coûteux que l'ensemble : autant le savoir avant d'acheter."
         }
+      ],
+      "related": [
+        {
+          "label": "Impression grand format : bien choisir",
+          "href": "/conseils/impression-grand-format"
+        },
+        {
+          "label": "Covering et adhésifs sans se tromper",
+          "href": "/conseils/covering-adhesif"
+        },
+        {
+          "label": "Signalétique & enseignes",
+          "href": "/signaletique"
+        }
       ]
     },
     {
@@ -237,6 +363,20 @@
         {
           "q": "Peut-on marquer un vêtement haute visibilité avec son logo ?",
           "a": "Oui, mais avec des règles strictes : le marquage ne doit ni recouvrir les bandes rétroréfléchissantes ni réduire les surfaces fluorescentes en dessous des seuils imposés par la norme EN ISO 20471, sous peine de perdre la certification. C'est un cas où il faut passer par un professionnel qui connaît ces contraintes."
+        }
+      ],
+      "related": [
+        {
+          "label": "Broderie, sérigraphie, flocage ou DTF ?",
+          "href": "/conseils/choisir-marquage-textile-pro"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/conseils/objets-publicitaires-goodies"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
         }
       ]
     }
