@@ -15,6 +15,74 @@ function rateLimited(ip: string, max = 6, windowMs = 10 * 60 * 1000): boolean {
   return arr.length > max;
 }
 
+function esc(s: unknown): string {
+  return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+/**
+ * Notifie contact@secretpub.fr (LEADS_NOTIFY_EMAIL) à CHAQUE nouvelle demande,
+ * quel que soit le formulaire. Envoi via Resend (RESEND_API_KEY). Si l'email n'est
+ * pas configuré, on saute silencieusement (la demande reste stockée dans `leads`).
+ */
+async function notifyByEmail(f: {
+  type: string;
+  source_page: string | null;
+  email: string;
+  nom?: string | null;
+  prenom?: string | null;
+  company?: string | null;
+  phone?: string | null;
+  needs?: string[] | null;
+  activity?: string | null;
+  sites?: string | null;
+  message?: string | null;
+  files?: Array<{ name?: string; url?: string }>;
+}): Promise<void> {
+  const key = process.env.RESEND_API_KEY;
+  const to = process.env.LEADS_NOTIFY_EMAIL;
+  if (!key || !to) {
+    console.warn("[leads] email non envoyé (RESEND_API_KEY ou LEADS_NOTIFY_EMAIL manquant)");
+    return;
+  }
+  const from = process.env.RESEND_FROM || "SecretPub <onboarding@resend.dev>";
+  const fullName = [f.prenom, f.nom].filter(Boolean).join(" ");
+  const who = f.company || fullName || f.email;
+  const label = f.type === "waitlist" ? "Liste d'attente" : "Demande de contact";
+  const subject = `📩 ${label} — ${who}${f.source_page ? ` (${f.source_page})` : ""}`;
+  const row = (k: string, v?: string | null) =>
+    v ? `<tr><td style="padding:5px 14px 5px 0;color:#6b7280;white-space:nowrap;vertical-align:top">${k}</td><td style="padding:5px 0;color:#111">${esc(v)}</td></tr>` : "";
+  const files = (f.files || [])
+    .filter((x) => x && x.url)
+    .map((x) => `<a href="${esc(x.url)}" style="color:#159a3a">${esc(x.name || "fichier")}</a>`)
+    .join(" &middot; ");
+  const html = `<div style="font-family:system-ui,-apple-system,sans-serif;font-size:14px;color:#111;line-height:1.5">
+    <div style="font-weight:800;font-size:16px;margin:0 0 12px">${esc(label)}</div>
+    <table style="border-collapse:collapse">
+      ${row("Nom", fullName || null)}
+      ${row("Société", f.company)}
+      ${row("Email", f.email)}
+      ${row("Téléphone", f.phone)}
+      ${row("Besoin", (f.needs || []).join(", ") || null)}
+      ${row("Activité", f.activity)}
+      ${row("Établissements", f.sites)}
+      ${row("Origine (formulaire)", f.source_page)}
+      ${f.message ? `<tr><td style="padding:5px 14px 5px 0;color:#6b7280;vertical-align:top">Message</td><td style="padding:5px 0;white-space:pre-wrap">${esc(f.message)}</td></tr>` : ""}
+      ${files ? `<tr><td style="padding:5px 14px 5px 0;color:#6b7280">Fichiers</td><td style="padding:5px 0">${files}</td></tr>` : ""}
+    </table>
+    <div style="margin-top:14px;color:#9ca3af;font-size:12px">Répondez directement à cet email pour recontacter le prospect.</div>
+  </div>`;
+  try {
+    const r = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+      body: JSON.stringify({ from, to: [to], reply_to: f.email, subject, html }),
+    });
+    if (!r.ok) console.error("[leads] resend error", r.status, await r.text());
+  } catch (e) {
+    console.error("[leads] email notify failed", e);
+  }
+}
+
 /**
  * Lead capture for the contact form (#cform) and the réseaux waitlist (#wlForm).
  * Stores into Supabase `leads`. If Supabase is not configured yet, it still
@@ -140,5 +208,25 @@ export async function POST(req: NextRequest) {
     console.error("[leads] insert error:", error.message);
     return NextResponse.json({ ok: false, error: "store" }, { status: 500 });
   }
+
+  // Email de notification à contact@secretpub.fr, à CHAQUE demande (tout formulaire).
+  const files: Array<{ name?: string; url?: string }> = [];
+  if (Array.isArray(body.fichiers)) files.push(...(body.fichiers as Array<{ name?: string; url?: string }>));
+  if (body.fichier && (body.fichier as { url?: string }).url) files.push(body.fichier as { name?: string; url?: string });
+  await notifyByEmail({
+    type,
+    source_page: (body.source_page as string) || null,
+    email,
+    nom: (body.nom as string) || null,
+    prenom: (body.prenom as string) || null,
+    company: (body.societe as string) || null,
+    phone: (body.tel as string) || null,
+    needs,
+    activity: (body.activite as string) || null,
+    sites: (body.sites as string) || null,
+    message: (body.message as string) || null,
+    files,
+  });
+
   return NextResponse.json({ ok: true, stored: true });
 }

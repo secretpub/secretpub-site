@@ -349,6 +349,29 @@ ul { margin: 0; padding: 0; }
 .burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .burger.open span:nth-child(2) { opacity: 0; }
 .burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+/* Effet de particules (comme le CTA) autour du burger */
+.burger { position: relative; overflow: visible; isolation: isolate; }
+.burger::before {
+  content: ""; position: absolute; inset: -9px; border-radius: 50%; z-index: -1; pointer-events: none; opacity: 0;
+  background:
+    radial-gradient(3px 3px at 16% 22%, rgba(255,255,255,0.95), transparent 60%),
+    radial-gradient(3px 3px at 82% 20%, rgba(190,255,200,0.9), transparent 60%),
+    radial-gradient(3px 3px at 80% 80%, rgba(255,255,255,0.9), transparent 60%),
+    radial-gradient(2px 2px at 22% 78%, rgba(190,255,200,0.85), transparent 60%),
+    radial-gradient(3px 3px at 50% 8%, rgba(255,255,255,0.9), transparent 60%),
+    radial-gradient(2px 2px at 8% 52%, rgba(255,255,255,0.85), transparent 60%),
+    radial-gradient(2px 2px at 92% 54%, rgba(190,255,200,0.85), transparent 60%);
+}
+.burger::after { content: ""; position: absolute; inset: 3px; border-radius: 50%; z-index: -1; pointer-events: none; }
+.burger.open::before, .burger.open::after { display: none; } /* on éteint quand le menu est ouvert */
+@media (prefers-reduced-motion: no-preference) {
+  .burger:not(.open)::before { animation: ctaSuck 2.6s ease-in-out infinite; }
+  .burger:not(.open)::after { animation: burgerHalo 2.6s ease-out infinite; }
+  @keyframes burgerHalo {
+    0%, 100% { box-shadow: 0 0 9px -3px rgba(64,171,63,0.4); }
+    50% { box-shadow: 0 0 17px 1px rgba(64,171,63,0.7); }
+  }
+}
 .mobile-menu {
   position: fixed; top: 0; right: 0; bottom: 0; z-index: 60;
   width: min(86vw, 340px);
