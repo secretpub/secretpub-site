@@ -96,6 +96,36 @@
     onScrollHeader();
   }
 
+  // Bouton flottant « Demander un devis » (mobile) : apparaît/disparaît en fondu selon
+  // le scroll — visible de « Nos services » jusqu'à « À chaque profil, sa solution »,
+  // puis de « Méthode » jusqu'à « Contact » (là où il n'y a pas déjà de CTA à l'écran).
+  (function () {
+    var metiers = document.getElementById('metiers');
+    if (!metiers) return;
+    var fcta = document.createElement('a');
+    fcta.className = 'btn btn-primary float-cta';
+    fcta.href = '#contact';
+    fcta.setAttribute('aria-label', 'Demander un devis');
+    fcta.innerHTML = 'Demander un devis <span class="arr">→</span>';
+    document.body.appendChild(fcta);
+    var topOf = function (el) { return el ? el.getBoundingClientRect().top + window.scrollY : null; };
+    var ticking = false;
+    function update() {
+      ticking = false;
+      var profil = document.querySelector('.pq-second-head');
+      var methode = document.getElementById('methode');
+      var contact = document.getElementById('contact');
+      var ref = window.scrollY + window.innerHeight * 0.5; // ligne de référence : milieu de l'écran
+      var mT = topOf(metiers), pT = topOf(profil), meT = topOf(methode), cT = topOf(contact);
+      var r1 = mT !== null && ref >= mT && (pT === null || ref < pT);       // services → à chaque profil
+      var r2 = meT !== null && ref >= meT && (cT === null || ref < cT);     // méthode → contact
+      fcta.classList.toggle('show', r1 || r2);
+    }
+    window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    window.addEventListener('resize', update);
+    [0, 400, 1000].forEach(function (d) { setTimeout(update, d); });
+  })();
+
   // Fusion du voyant vert dans le titre Réalisations (lié au scroll, bidirectionnel)
   var fusion = document.getElementById('fusionTrack');
   var realSec = document.getElementById('realisations');

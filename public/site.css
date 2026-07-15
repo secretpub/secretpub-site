@@ -2688,3 +2688,20 @@ html { scroll-padding-top: 88px; }
   .steps.in .step:nth-child(4) .step-card { animation-delay: 0.4s; }
   .steps.in .step:nth-child(5) .step-card { animation-delay: 0.54s; }
 }
+
+/* ===== Bouton flottant « Demander un devis » (mobile) ===== */
+.float-cta { display: none; }
+@media (max-width: 880px) {
+  .float-cta {
+    display: inline-flex; align-items: center; gap: 8px; border-radius: 999px;
+    position: fixed; left: 50%; bottom: 16px; z-index: 60;
+    padding: 13px 26px; font-size: 15px; font-weight: 700; white-space: nowrap;
+    opacity: 0; visibility: hidden; pointer-events: none;
+    transform: translateX(-50%) translateY(28px);
+    box-shadow: 0 14px 34px -10px rgba(46,200,64,0.75), 0 0 0 1px rgba(255,255,255,0.12) inset;
+    transition: opacity 0.4s ease, transform 0.5s cubic-bezier(0.2,0.8,0.2,1), visibility 0.4s;
+  }
+  .float-cta.show { opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(-50%) translateY(0); }
+  /* on l'efface quand le menu latéral est ouvert */
+  body.menu-open .float-cta { opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
+}
