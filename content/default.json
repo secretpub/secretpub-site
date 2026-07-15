@@ -1011,7 +1011,7 @@
         "items": [
           {
             "q": "Quel est le délai pour des vêtements personnalisés à Valence ?",
-            "a": "On vous répond une première fois sous 24 h. Ensuite, les délais (devis, bon à tirer, production) dépendent du projet : le support, la quantité et les finitions. Après validation du bon à tirer, comptez généralement quelques jours à deux semaines selon la technique et la quantité. Pour un besoin urgent (événement, salon), dites-le nous dès le brief : on cale le planning avec vous."
+            "a": "On vous répond une première fois sous 24 h. Ensuite, les délais (devis, bon à tirer, production) dépendent du projet : le support, la quantité et les finitions. Après validation du bon à tirer, comptez généralement quelques jours à deux semaines selon la technique et la quantité. Pour un besoin urgent (événement, salon), dites-le nous dès le brief : on cale le planning avec vous. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
           },
           {
             "q": "Y a-t-il une quantité minimum de commande ?",
@@ -1197,7 +1197,7 @@
           },
           {
             "q": "Sous quels délais recevez-vous les goodies personnalisés ?",
-            "a": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production. Ensuite les délais (devis, bon à tirer, production) dépendent du projet : objet, quantité et finitions, en général quelques jours à deux semaines. Pour un salon ou une date précise, prévenez-nous tôt, on cale le planning avec vous."
+            "a": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production. Ensuite les délais (devis, bon à tirer, production) dépendent du projet : objet, quantité et finitions, en général quelques jours à deux semaines. Pour un salon ou une date précise, prévenez-nous tôt, on cale le planning avec vous. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
           },
           {
             "q": "Peut-on personnaliser les objets à notre logo et à notre charte ?",
@@ -1584,24 +1584,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Montélimar",
-          "href": "/signaletique-montelimar"
-        },
-        {
-          "label": "Signalétique Grenoble",
-          "href": "/signaletique-grenoble"
-        },
-        {
-          "label": "Signalétique Avignon",
-          "href": "/signaletique-avignon"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Romans-sur-Isère"
@@ -1775,24 +1771,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Romans-sur-Isère",
-          "href": "/signaletique-romans-sur-isere"
-        },
-        {
-          "label": "Signalétique Grenoble",
-          "href": "/signaletique-grenoble"
-        },
-        {
-          "label": "Signalétique Avignon",
-          "href": "/signaletique-avignon"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Montélimar"
@@ -1966,24 +1958,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Romans-sur-Isère",
-          "href": "/signaletique-romans-sur-isere"
-        },
-        {
-          "label": "Signalétique Montélimar",
-          "href": "/signaletique-montelimar"
-        },
-        {
-          "label": "Signalétique Avignon",
-          "href": "/signaletique-avignon"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Grenoble"
@@ -2157,24 +2145,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Romans-sur-Isère",
-          "href": "/signaletique-romans-sur-isere"
-        },
-        {
-          "label": "Signalétique Montélimar",
-          "href": "/signaletique-montelimar"
-        },
-        {
-          "label": "Signalétique Grenoble",
-          "href": "/signaletique-grenoble"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Avignon"
@@ -2348,20 +2332,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Guilherand-Granges",
-          "href": "/signaletique-guilherand-granges"
-        },
-        {
-          "label": "Signalétique Romans Sur Isere",
-          "href": "/signaletique-romans-sur-isere"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Bourg-lès-Valence"
@@ -2535,20 +2519,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Bourg-lès-Valence",
-          "href": "/signaletique-bourg-les-valence"
-        },
-        {
-          "label": "Signalétique Tournon-sur-Rhône",
-          "href": "/signaletique-tournon-sur-rhone"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Guilherand-Granges"
@@ -2722,20 +2706,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Guilherand-Granges",
-          "href": "/signaletique-guilherand-granges"
-        },
-        {
-          "label": "Signalétique Annonay",
-          "href": "/signaletique-annonay"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Tournon-sur-Rhône"
@@ -2909,20 +2893,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Tournon-sur-Rhône",
-          "href": "/signaletique-tournon-sur-rhone"
-        },
-        {
-          "label": "Signalétique Lyon",
-          "href": "/signaletique-lyon"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Annonay"
@@ -3096,20 +3080,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Annonay",
-          "href": "/signaletique-annonay"
-        },
-        {
-          "label": "Signalétique Grenoble",
-          "href": "/signaletique-grenoble"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Lyon"
@@ -3283,20 +3267,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Montélimar",
-          "href": "/signaletique-montelimar"
-        },
-        {
-          "label": "Signalétique signaletique-pierrelatte",
-          "href": "/signaletique-pierrelatte"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Aubenas"
@@ -3470,20 +3454,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Montélimar",
-          "href": "/signaletique-montelimar"
-        },
-        {
-          "label": "Signalétique Aubenas",
-          "href": "/signaletique-aubenas"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Pierrelatte"
@@ -3657,20 +3641,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Romans-sur-Isère",
-          "href": "/signaletique-romans-sur-isere"
-        },
-        {
-          "label": "Signalétique Bourg-lès-Valence",
-          "href": "/signaletique-bourg-les-valence"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Bourg-de-Péage"
@@ -3844,20 +3828,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Lyon",
-          "href": "/signaletique-lyon"
-        },
-        {
-          "label": "Signalétique Grenoble",
-          "href": "/signaletique-grenoble"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Vienne"
@@ -4012,7 +3996,7 @@
           },
           {
             "q": "Quels délais entre la commande et la pose à Portes-lès-Valence ?",
-            "a": "Une fois la maquette validée et l'autorisation obtenue, la fabrication prend en général deux à quatre semaines selon la technique (lettres découpées, boîtiers lumineux, panneau simple). La pose se fait ensuite en une demi-journée à une journée."
+            "a": "Une fois la maquette validée et l'autorisation obtenue, la fabrication prend en général 1 à 3 semaines selon la technique (lettres découpées, boîtiers lumineux, panneau simple). La pose se fait ensuite en une demi-journée à une journée. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
           },
           {
             "q": "Pouvez-vous poser en hauteur sur un entrepôt de la zone industrielle de Portes-lès-Valence ?",
@@ -4031,20 +4015,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Livron-sur-Drôme",
-          "href": "/signaletique-livron-sur-drome"
-        },
-        {
-          "label": "Signalétique Crest",
-          "href": "/signaletique-crest"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Portes-lès-Valence"
@@ -4199,7 +4183,7 @@
           },
           {
             "q": "Quels sont vos délais pour une enseigne à Livron-sur-Drôme ?",
-            "a": "Comptez deux à quatre semaines de fabrication après validation de la maquette, selon la complexité. La pose est planifiée dans la foulée, souvent en une journée."
+            "a": "Comptez 1 à 3 semaines de fabrication après validation de la maquette, selon la complexité. La pose est planifiée dans la foulée, souvent en une journée. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
           },
           {
             "q": "Vous déplacez-vous à Livron pour un relevé avant devis ?",
@@ -4218,20 +4202,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Crest",
-          "href": "/signaletique-crest"
-        },
-        {
-          "label": "Signalétique Die",
-          "href": "/signaletique-die"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Livron-sur-Drôme"
@@ -4386,7 +4370,7 @@
           },
           {
             "q": "Combien de temps prévoir pour une enseigne à Crest ?",
-            "a": "Avec le passage en mairie (environ deux mois, parfois plus avec l'ABF) puis deux à quatre semaines de fabrication, visez deux à trois mois entre le premier rendez-vous et la pose. On vous donne un calendrier réaliste dès le devis."
+            "a": "Avec le passage en mairie (environ deux mois, parfois plus avec l'ABF) puis 1 à 3 semaines de fabrication, visez deux à trois mois entre le premier rendez-vous et la pose. On vous donne un calendrier réaliste dès le devis. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
           },
           {
             "q": "Vous déplacez-vous à Crest pour le relevé et la pose ?",
@@ -4405,20 +4389,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Die",
-          "href": "/signaletique-die"
-        },
-        {
-          "label": "Signalétique Nyons",
-          "href": "/signaletique-nyons"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Crest"
@@ -4569,7 +4553,7 @@
           },
           {
             "q": "Quels délais pour une enseigne à Die ?",
-            "a": "Deux à quatre semaines de fabrication après validation de la maquette, plus le délai d'autorisation en mairie s'il y a modification de façade. Si vous visez l'avant-saison, contactez-nous dès l'hiver."
+            "a": "Deux à quatre semaines de fabrication après validation de la maquette, plus le délai d'autorisation en mairie s'il y a modification de façade. Si vous visez l'avant-saison, contactez-nous dès l'hiver. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
           },
           {
             "q": "Faut-il une autorisation de la mairie de Die pour changer mon enseigne ?",
@@ -4592,20 +4576,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Nyons",
-          "href": "/signaletique-nyons"
-        },
-        {
-          "label": "Signalétique Tain-l'Hermitage",
-          "href": "/signaletique-tain-l-hermitage"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Die"
@@ -4764,7 +4748,7 @@
           },
           {
             "q": "Sous quel délai peut-on avoir une enseigne posée à Nyons ?",
-            "a": "Après validation de la maquette et autorisation, la fabrication demande deux à quatre semaines, puis nous programmons la pose sur la tournée suivante. Anticipez si vous ouvrez avant l'été."
+            "a": "Après validation de la maquette et autorisation, la fabrication demande 1 à 3 semaines, puis nous programmons la pose sur la tournée suivante. Anticipez si vous ouvrez avant l'été. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
           },
           {
             "q": "Mon store banne est délavé, pouvez-vous refaire le lambrequin à Nyons ?",
@@ -4779,20 +4763,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Tain-l'Hermitage",
-          "href": "/signaletique-tain-l-hermitage"
-        },
-        {
-          "label": "Signalétique Privas",
-          "href": "/signaletique-privas"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Nyons"
@@ -4943,7 +4927,7 @@
           },
           {
             "q": "Quel délai pour une enseigne de caveau à Tain-l'Hermitage ?",
-            "a": "Deux à quatre semaines de fabrication après validation, pose comprise dans la foulée. Si vous visez le printemps et la reprise des visites, lancez le projet en hiver."
+            "a": "Deux à quatre semaines de fabrication après validation, pose comprise dans la foulée. Si vous visez le printemps et la reprise des visites, lancez le projet en hiver. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
           },
           {
             "q": "Faites-vous la vitrophanie des boutiques de Tain ?",
@@ -4966,20 +4950,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Privas",
-          "href": "/signaletique-privas"
-        },
-        {
-          "label": "Signalétique Villeurbanne",
-          "href": "/signaletique-villeurbanne"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Tain-l'Hermitage"
@@ -5134,7 +5118,7 @@
           },
           {
             "q": "Quels délais annoncez-vous pour une enseigne à Privas ?",
-            "a": "Deux à quatre semaines de fabrication après validation de la maquette, selon la technique choisie. La pose est ensuite calée sur une journée, en semaine, aux horaires qui vous arrangent."
+            "a": "Deux à quatre semaines de fabrication après validation de la maquette, selon la technique choisie. La pose est ensuite calée sur une journée, en semaine, aux horaires qui vous arrangent. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
           },
           {
             "q": "Équipez-vous les bâtiments administratifs à Privas ?",
@@ -5153,20 +5137,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Villeurbanne",
-          "href": "/signaletique-villeurbanne"
-        },
-        {
-          "label": "Signalétique Saint-Étienne",
-          "href": "/signaletique-saint-etienne"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Privas"
@@ -5340,20 +5324,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Saint-Étienne",
-          "href": "/signaletique-saint-etienne"
-        },
-        {
-          "label": "Signalétique Bourgoin-Jallieu",
-          "href": "/signaletique-bourgoin-jallieu"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Villeurbanne"
@@ -5504,7 +5488,7 @@
           },
           {
             "q": "En combien de temps puis-je avoir mon enseigne à Saint-Étienne ?",
-            "a": "Trois à cinq semaines pour une enseigne fabriquée sur mesure, validation du BAT comprise. Pour un covering de vitrine ou de la signalétique intérieure, une à deux semaines suffisent souvent."
+            "a": "Trois à cinq semaines pour une enseigne fabriquée sur mesure, validation du BAT comprise. Pour un covering de vitrine ou de la signalétique intérieure, une à deux semaines suffisent souvent. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
           },
           {
             "q": "Nous ouvrons plusieurs points de vente dans la Loire, pouvez-vous suivre ?",
@@ -5527,20 +5511,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Bourgoin-Jallieu",
-          "href": "/signaletique-bourgoin-jallieu"
-        },
-        {
-          "label": "Signalétique Annecy",
-          "href": "/signaletique-annecy"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Saint-Étienne"
@@ -5691,7 +5675,7 @@
           },
           {
             "q": "Quel délai pour un totem ou des lettres sur bardage à Bourgoin-Jallieu ?",
-            "a": "Quatre à six semaines pour un totem sur massif béton, le génie civil impose son rythme. Trois à quatre semaines pour des lettres sur bardage. La signalétique intérieure va nettement plus vite."
+            "a": "Un peu plus pour un totem sur massif béton, le génie civil impose son rythme. Trois à quatre semaines pour des lettres sur bardage. La signalétique intérieure va nettement plus vite. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
           },
           {
             "q": "Nous avons des sites entre Lyon et Grenoble, gérez-vous l'ensemble ?",
@@ -5714,20 +5698,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Annecy",
-          "href": "/signaletique-annecy"
-        },
-        {
-          "label": "Signalétique Chambéry",
-          "href": "/signaletique-chambery"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Bourgoin-Jallieu"
@@ -5878,7 +5862,7 @@
           },
           {
             "q": "Quels délais prévoir pour une enseigne à Annecy ?",
-            "a": "Quatre semaines en moyenne après validation du BAT pour du sur mesure. Si votre local est en vieille ville, ajoutez le délai d'instruction de la déclaration préalable, souvent un à deux mois : anticipez avant votre ouverture."
+            "a": "1 à 3 semaines après validation du BAT, selon le projet. Si votre local est en vieille ville, ajoutez le délai d'instruction de la déclaration préalable, souvent un à deux mois : anticipez avant votre ouverture. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
           },
           {
             "q": "Une enseigne en vieille ville d'Annecy, c'est vraiment compliqué ?",
@@ -5901,20 +5885,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Chambéry",
-          "href": "/signaletique-chambery"
-        },
-        {
-          "label": "Signalétique Orange",
-          "href": "/signaletique-orange"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Annecy"
@@ -6065,7 +6049,7 @@
           },
           {
             "q": "Quels délais pour une enseigne posée à Chambéry ?",
-            "a": "Entre trois et six semaines après validation de la maquette, selon la complexité de la fabrication. En secteur protégé du centre historique, prévoyez en plus le délai d'autorisation : parlez-nous de votre projet tôt."
+            "a": "1 à 3 semaines selon le projet après validation de la maquette, selon la complexité de la fabrication. En secteur protégé du centre historique, prévoyez en plus le délai d'autorisation : parlez-nous de votre projet tôt. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
           },
           {
             "q": "Mon local est près de la fontaine des Éléphants, quelles contraintes ?",
@@ -6088,20 +6072,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Orange",
-          "href": "/signaletique-orange"
-        },
-        {
-          "label": "Signalétique Portes-lès-Valence",
-          "href": "/signaletique-portes-les-valence"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Chambéry"
@@ -6252,7 +6236,7 @@
           },
           {
             "q": "Quel délai pour une enseigne à Orange ?",
-            "a": "Comptez trois à cinq semaines entre la validation du BAT et la pose pour du sur mesure. En secteur protégé du centre, l'autorisation peut ajouter un à deux mois : venez nous voir tôt, surtout avant la saison des Chorégies."
+            "a": "Comptez 1 à 3 semaines entre la validation du BAT et la pose pour du sur mesure. En secteur protégé du centre, l'autorisation peut ajouter un à deux mois : venez nous voir tôt, surtout avant la saison des Chorégies. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
           },
           {
             "q": "Mon commerce est près du théâtre antique, ai-je droit à une enseigne lumineuse ?",
@@ -6275,20 +6259,20 @@
       },
       "related": [
         {
-          "label": "Signalétique à Valence",
-          "href": "/signaletique"
-        },
-        {
-          "label": "Signalétique Portes-lès-Valence",
-          "href": "/signaletique-portes-les-valence"
-        },
-        {
-          "label": "Signalétique Livron-sur-Drôme",
-          "href": "/signaletique-livron-sur-drome"
-        },
-        {
           "label": "Imprimerie",
           "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
         }
       ],
       "areaServed": "Orange"
