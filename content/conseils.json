@@ -36,7 +36,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "agence"
     },
     {
       "slug": "supports-marketing-personnalises",
@@ -74,7 +75,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "agence"
     },
     {
       "slug": "impact-communication-entreprise",
@@ -112,7 +114,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "agence"
     },
     {
       "slug": "agence-locale-partenaire-unique",
@@ -150,7 +153,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "agence"
     },
     {
       "slug": "signaletique-franchise-ouverture",
@@ -188,7 +192,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "secteur"
     },
     {
       "slug": "deploiement-reseau-multisites",
@@ -226,7 +231,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "secteur"
     },
     {
       "slug": "communication-restaurant",
@@ -264,7 +270,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "secteur"
     },
     {
       "slug": "communication-restaurant-valence-drome",
@@ -302,7 +309,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "secteur"
     },
     {
       "slug": "communication-btp",
@@ -340,7 +348,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "secteur"
     },
     {
       "slug": "communication-immobilier",
@@ -378,7 +387,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "secteur"
     },
     {
       "slug": "communication-professionnels-sante",
@@ -416,7 +426,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "secteur"
     },
     {
       "slug": "communication-garage-concession",
@@ -454,7 +465,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "secteur"
     },
     {
       "slug": "communication-salle-de-sport",
@@ -492,7 +504,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "secteur"
     },
     {
       "slug": "communication-institut-beaute",
@@ -530,7 +543,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "secteur"
     },
     {
       "slug": "prix-enseigne-magasin",
@@ -568,7 +582,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "guide"
     },
     {
       "slug": "autorisation-enseigne-demarches",
@@ -606,7 +621,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "guide"
     },
     {
       "slug": "choisir-marquage-textile-pro",
@@ -644,7 +660,8 @@
           "label": "Textile personnalisé",
           "href": "/textile-personnalise"
         }
-      ]
+      ],
+      "category": "guide"
     },
     {
       "slug": "signaletique-reseau-franchise-multisite",
@@ -682,7 +699,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "guide"
     },
     {
       "slug": "impression-grand-format",
@@ -720,7 +738,8 @@
           "label": "Imprimerie",
           "href": "/imprimerie"
         }
-      ]
+      ],
+      "category": "guide"
     },
     {
       "slug": "covering-adhesif",
@@ -758,7 +777,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "guide"
     },
     {
       "slug": "supports-imprimes-print",
@@ -796,7 +816,8 @@
           "label": "Imprimerie",
           "href": "/imprimerie"
         }
-      ]
+      ],
+      "category": "guide"
     },
     {
       "slug": "objets-publicitaires-goodies",
@@ -834,7 +855,8 @@
           "label": "Objets publicitaires",
           "href": "/objets-publicitaires"
         }
-      ]
+      ],
+      "category": "guide"
     },
     {
       "slug": "panneaux-plv",
@@ -872,7 +894,8 @@
           "label": "Signalétique & enseignes",
           "href": "/signaletique"
         }
-      ]
+      ],
+      "category": "guide"
     },
     {
       "slug": "textile-personnalise-guide",
@@ -910,7 +933,8 @@
           "label": "Textile personnalisé",
           "href": "/textile-personnalise"
         }
-      ]
+      ],
+      "category": "guide"
     }
   ]
 }

@@ -33,12 +33,35 @@ export const metadata: Metadata = {
   },
 };
 
+const SECTIONS = [
+  {
+    key: "agence",
+    title: "Notre agence",
+    intro: "Qui nous sommes, notre savoir-faire et ce qu'on change pour votre entreprise.",
+  },
+  {
+    key: "secteur",
+    title: "Par secteur d'activité",
+    intro: "Nos réponses aux besoins précis de votre métier, du commerce à la franchise.",
+  },
+  {
+    key: "guide",
+    title: "Nos guides techniques",
+    intro: "Prix, autorisations, choix des supports : les conseils concrets, sans langue de bois.",
+  },
+];
+
 export default async function ConseilsIndex() {
   const content = await getContent();
   const articles = conseils.articles;
+  const sections = SECTIONS.map((s) => ({
+    title: s.title,
+    intro: s.intro,
+    articles: articles.filter((a) => a.category === s.key),
+  })).filter((s) => s.articles.length);
   const html = renderPage("conseils-index", {
     ...content,
-    articles,
+    sections,
   } as unknown as SiteContent);
   return (
     <>

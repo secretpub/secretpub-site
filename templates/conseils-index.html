@@ -35,7 +35,11 @@
 </div>
 
 <style>
-  .conseils-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(16px, 1.8vw, 22px); margin-top: clamp(30px, 3.4vw, 44px); }
+  .conseils-section + .conseils-section { margin-top: clamp(44px, 5vw, 72px); }
+  .cs-head { max-width: 60ch; }
+  .cs-head h2 { font-family: var(--display); font-weight: 800; font-size: clamp(22px, 2.6vw, 30px); color: var(--ink); letter-spacing: -0.02em; margin: 0; }
+  .cs-head p { color: var(--muted); font-size: 16px; margin: 8px 0 0; }
+  .conseils-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(16px, 1.8vw, 22px); margin-top: clamp(22px, 2.6vw, 30px); }
   @media (max-width: 680px) { .conseils-grid { grid-template-columns: 1fr; } }
   .conseil-card {
     position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 12px;
@@ -51,7 +55,7 @@
   .conseil-card:hover { transform: translateY(-6px); border-color: rgba(46,200,64,0.5); box-shadow: 0 0 0 1px rgba(46,200,64,0.22), 0 30px 60px -40px rgba(19,122,62,0.5); }
   .conseil-card:hover::before { transform: scaleX(1); }
   .conseil-card .cc-tag { font-family: var(--display); font-weight: 700; font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green-deep); }
-  .conseil-card h2 { font-family: var(--display); font-weight: 800; font-size: clamp(19px, 1.8vw, 22px); line-height: 1.25; color: var(--ink); letter-spacing: -0.01em; margin: 0; }
+  .conseil-card h3 { font-family: var(--display); font-weight: 800; font-size: clamp(18px, 1.7vw, 21px); line-height: 1.25; color: var(--ink); letter-spacing: -0.01em; margin: 0; }
   .conseil-card p { font-size: 15px; line-height: 1.62; color: var(--muted); margin: 0; }
   .conseil-card .cc-more { margin-top: auto; padding-top: 4px; display: inline-flex; align-items: center; gap: 7px; font-family: var(--display); font-weight: 700; font-size: 14px; color: var(--green-deep); }
   .conseil-card:hover .cc-more { gap: 11px; }
@@ -71,16 +75,24 @@
 
 <section class="section" data-screen-label="Articles">
   <div class="wrap">
-    <div class="conseils-grid">
-      {{#articles}}
-      <a class="conseil-card reveal" href="/conseils/{{slug}}">
-        <span class="cc-tag">Conseil · {{readingMin}} min</span>
+    {{#sections}}
+    <div class="conseils-section">
+      <div class="cs-head reveal">
         <h2>{{title}}</h2>
-        <p>{{excerpt}}</p>
-        <span class="cc-more">Lire l'article <span class="arr" aria-hidden="true">→</span></span>
-      </a>
-      {{/articles}}
+        <p>{{intro}}</p>
+      </div>
+      <div class="conseils-grid">
+        {{#articles}}
+        <a class="conseil-card reveal" href="/conseils/{{slug}}">
+          <span class="cc-tag">Conseil · {{readingMin}} min</span>
+          <h3>{{title}}</h3>
+          <p>{{excerpt}}</p>
+          <span class="cc-more">Lire l'article <span class="arr" aria-hidden="true">→</span></span>
+        </a>
+        {{/articles}}
+      </div>
     </div>
+    {{/sections}}
   </div>
 </section>
 
