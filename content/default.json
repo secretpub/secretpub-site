@@ -168,7 +168,7 @@
         "list": [
           "Vos supports à votre charte, validés une fois",
           "Recommande en quelques clics, sans nouveau brief",
-          "Vos prix et votre historique au même endroit",
+          "Vos prix et votre historique avec un seul interlocuteur",
           "Les trois métiers réunis : signalétique, print, textile",
           "Fichiers et bons à tirer archivés"
         ]
@@ -343,7 +343,7 @@
   "meta": {
     "siteName": "SecretPub",
     "title": "SecretPub | Agence de communication et de publicité à Valence",
-    "description": "SecretPub, agence de communication et de publicité à Valence. Enseignes, print, textile et goodies conçus, fabriqués et posés par nos équipes, de l'étude à la pose.",
+    "description": "SecretPub, agence de communication et de publicité à Valence. Enseignes, print, textile et goodies conçus, fabriqués et posés, de l'étude à la pose.",
     "ogImage": "/assets/og-cover.jpg",
     "catalogueUrl": "/catalogue",
     "phoneDisplay": "09 83 80 93 12",
@@ -590,7 +590,7 @@
         "items": [
           {
             "title": "Un seul partenaire",
-            "desc": "Étude, fabrication et pose au même endroit. Vous ne coordonnez ni imprimeur, ni poseur : on gère tout de bout en bout."
+            "desc": "Étude, fabrication et pose avec un seul interlocuteur. Vous ne coordonnez ni imprimeur, ni poseur : on gère tout de bout en bout."
           },
           {
             "title": "Ancrage local",
@@ -723,7 +723,7 @@
         "eyebrow": "Votre imprimeur de proximité",
         "title": "L’imprimeur du papier et du carton, taillé pour le volume",
         "leadHtml": "<b>Un seul partenaire</b> pour concevoir, imprimer en grande série, stocker, conditionner et distribuer tous vos supports de communication et de vente.",
-        "bodyHtml": "<p>Basés au 31 Rue Jean Jullien Davin à Valence, nous imprimons vos cartes de visite, flyers, brochures, affiches, menus, stickers et grands formats en tirages importants, avec la même exigence sur les grandes séries et les campagnes nationales. Couleurs calibrées, papiers sélectionnés, finitions maîtrisées : chaque support ressemble à votre marque et donne envie de vous lire.</p><p>Parce que nous maîtrisons la production de bout en bout, vous n’avez qu’un seul interlocuteur pour toute votre communication physique. Nous imprimons en volume, nous stockons pour vous, nous conditionnons (mise sous pli, colisage, kits par point de vente) et nous distribuons vers tous vos points de vente ou vers un site unique, partout en France. On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production ; ensuite les délais (devis détaillé, BAT, production, livraison) dépendent du projet : support, quantité, finitions. Signalétique, textile, objets publicitaires ou packaging : tout se pilote au même endroit, avec la même exigence.</p>"
+        "bodyHtml": "<p>Basés au 31 Rue Jean Jullien Davin à Valence, nous imprimons vos cartes de visite, flyers, brochures, affiches, menus, stickers et grands formats en tirages importants, avec la même exigence sur les grandes séries et les campagnes nationales. Couleurs calibrées, papiers sélectionnés, finitions maîtrisées : chaque support ressemble à votre marque et donne envie de vous lire.</p><p>Parce que nous maîtrisons la production de bout en bout, vous n’avez qu’un seul interlocuteur pour toute votre communication physique. Nous imprimons en volume, nous stockons pour vous, nous conditionnons (mise sous pli, colisage, kits par point de vente) et nous distribuons vers tous vos points de vente ou vers un site unique, partout en France. On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production ; ensuite les délais (devis détaillé, BAT, production, livraison) dépendent du projet : support, quantité, finitions. Signalétique, textile, objets publicitaires ou packaging : tout se pilote avec un seul interlocuteur, avec la même exigence.</p>"
       },
       "prestations": {
         "eyebrow": "Nos prestations",
@@ -1018,7 +1018,7 @@
         "items": [
           {
             "title": "Un seul partenaire",
-            "desc": "Textile, signalétique, print, objets et packaging au même endroit : une seule charte, un seul contact, une seule facture."
+            "desc": "Textile, signalétique, print, objets et packaging avec un seul interlocuteur : une seule charte, un seul contact, une seule facture."
           },
           {
             "title": "Ancrage local",
@@ -1210,7 +1210,7 @@
         "items": [
           {
             "title": "Un seul partenaire",
-            "desc": "Objets, signalétique, print et textile au même endroit : une seule charte, un seul contact, zéro aller-retour."
+            "desc": "Objets, signalétique, print et textile avec un seul interlocuteur : une seule charte, un seul contact, zéro aller-retour."
           },
           {
             "title": "Ancrage local à Valence",
@@ -1398,7 +1398,7 @@
         "items": [
           {
             "title": "Un seul partenaire",
-            "desc": "Packaging, signalétique, print, textile et objets publicitaires réunis chez nous, pour une marque cohérente et zéro coordination à gérer."
+            "desc": "Packaging, signalétique, print, textile et objets publicitaires réunis chez un seul partenaire, pour une marque cohérente et zéro coordination à gérer."
           },
           {
             "title": "Ancrage local",
@@ -1481,7 +1481,7 @@
         "crumb": "Signalétique Romans-sur-Isère",
         "eyebrow": "Signalétique et enseignes à Romans-sur-Isère",
         "h1Html": "<span class=\"mark\">Signalétique et enseignes à Romans-sur-Isère</span>, de l’étude à la pose",
-        "sub": "Enseignes, totems, vitrophanie et adhésifs pour les commerces et entreprises de Romans-sur-Isère. On conçoit, on fabrique et on pose, sans sous-traitance en cascade."
+        "sub": "Enseignes, totems, vitrophanie et adhésifs pour les commerces et entreprises de Romans-sur-Isère. On conçoit, on fabrique et on pose, avec un seul interlocuteur."
       },
       "intro": {
         "eyebrow": "Votre visibilité, installée",
@@ -1594,7 +1594,7 @@
           },
           {
             "title": "Un seul partenaire",
-            "desc": "Étude, fabrication et pose au même endroit. Vous ne coordonnez ni imprimeur, ni poseur, ni sous-traitant."
+            "desc": "Étude, fabrication et pose avec un seul interlocuteur. Vous ne coordonnez ni imprimeur, ni poseur : un seul interlocuteur pour tout."
           },
           {
             "title": "Tenue dans le temps",
@@ -2008,7 +2008,7 @@
           },
           {
             "title": "Un seul partenaire",
-            "desc": "Conception graphique, fabrication et pose au même endroit. Un projet cohérent, un seul interlocuteur."
+            "desc": "Conception graphique, fabrication et pose avec un seul interlocuteur. Un projet cohérent, un seul interlocuteur."
           },
           {
             "title": "Idéal multi-sites",
@@ -2414,7 +2414,7 @@
           },
           {
             "title": "Un seul partenaire",
-            "desc": "Étude, fabrication et pose au même endroit. Aucun sous-traitant à coordonner."
+            "desc": "Étude, fabrication et pose avec un seul interlocuteur. Vous ne coordonnez personne."
           },
           {
             "title": "Tenue dans le temps",
@@ -2824,7 +2824,7 @@
           },
           {
             "title": "Un seul partenaire",
-            "desc": "Conception, fabrication et pose au même endroit. Un projet cohérent, un seul contact."
+            "desc": "Conception, fabrication et pose avec un seul interlocuteur. Un projet cohérent, un seul contact."
           },
           {
             "title": "Soigné pour le patrimoine",
@@ -3033,7 +3033,7 @@
           },
           {
             "title": "Un seul partenaire",
-            "desc": "Conception, fabrication et pose réunies. Aucun sous-traitant à gérer."
+            "desc": "Conception, fabrication et pose réunies. Vous n'avez qu'un seul contact."
           },
           {
             "title": "Idéal multi-sites",
@@ -3648,7 +3648,7 @@
           },
           {
             "title": "Un seul partenaire",
-            "desc": "Conception, fabrication et pose réunies. Aucun sous-traitant à gérer."
+            "desc": "Conception, fabrication et pose réunies. Vous n'avez qu'un seul contact."
           },
           {
             "title": "Idéal multi-sites",
@@ -3849,7 +3849,7 @@
           },
           {
             "title": "Un seul partenaire",
-            "desc": "Étude, fabrication et pose au même endroit. Aucun sous-traitant à coordonner."
+            "desc": "Étude, fabrication et pose avec un seul interlocuteur. Vous ne coordonnez personne."
           },
           {
             "title": "Tenue dans le temps",
@@ -5317,7 +5317,7 @@
           },
           {
             "q": "Pouvez-vous harmoniser façade, véhicule et supports de salon pour mon domaine près de Tain ?",
-            "a": "Oui, c'est même recommandé : enseigne, totem d'entrée, marquage du véhicule de livraison et supports de salon déclinés dans la même charte, fabriqués au même endroit."
+            "a": "Oui, c'est même recommandé : enseigne, totem d'entrée, marquage du véhicule de livraison et supports de salon déclinés dans la même charte, fabriqués avec un seul interlocuteur."
           }
         ]
       },
@@ -5690,7 +5690,7 @@
         "items": [
           {
             "title": "Fabrication intégrée à Valence",
-            "desc": "Enseignes, lettres découpées, adhésifs et supports sortent de notre atelier drômois. Pas de sous-traitance opaque : celui qui fabrique votre enseigne est aussi celui qui répond au téléphone."
+            "desc": "Enseignes, lettres découpées, adhésifs et supports : un seul interlocuteur pilote tout votre projet. Celui qui suit votre enseigne est aussi celui qui répond au téléphone."
           },
           {
             "title": "Le déplacement, on le prend en charge",
