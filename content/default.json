@@ -222,7 +222,7 @@
     ]
   },
   "footer": {
-    "about": "Un seul partenaire, pour tout ce qui porte votre image. Conception, production et pose réunies, partout en France.",
+    "about": "Un seul partenaire, pour tout ce qui porte votre image. De la conception à la pose, partout en France.",
     "columns": [
       {
         "title": "Services",
@@ -1368,7 +1368,7 @@
       },
       "process": {
         "eyebrow": "Comment on travaille",
-        "title": "De l'idée à la livraison, sans intermédiaire",
+        "title": "De l'idée à la livraison",
         "intro": "Une production maîtrisée de bout en bout, avec des réponses rapides et une seule équipe en face de vous.",
         "steps": [
           {
@@ -1384,7 +1384,7 @@
           {
             "n": "03",
             "title": "Production maîtrisée",
-            "desc": "Nous produisons votre packaging en interne, avec des couleurs fidèles à votre charte et un contrôle qualité à chaque étape."
+            "desc": "Nous produisons votre packaging, avec des couleurs fidèles à votre charte et un contrôle qualité à chaque étape."
           },
           {
             "n": "04",
@@ -1627,7 +1627,7 @@
           },
           {
             "q": "Faut-il un fichier prêt ou pouvez-vous créer le visuel ?",
-            "a": "Les deux. Vous nous envoyez votre logo, ou on crée le visuel de votre enseigne de A à Z. On gère la conception graphique en interne."
+            "a": "Les deux. Vous nous envoyez votre logo, ou on crée le visuel de votre enseigne de A à Z. On gère la conception graphique."
           }
         ]
       },
@@ -1799,7 +1799,7 @@
           },
           {
             "title": "Un seul partenaire",
-            "desc": "Conception, fabrication et pose réunies. Vous ne jonglez pas entre un graphiste, un imprimeur et un poseur."
+            "desc": "Conception, fabrication et pose pilotées par un seul interlocuteur. Vous ne jonglez pas entre un graphiste, un imprimeur et un poseur."
           },
           {
             "title": "Pensé pour l'extérieur",
@@ -2037,7 +2037,7 @@
           },
           {
             "q": "Pouvez-vous créer le visuel ou faut-il le fournir ?",
-            "a": "On gère la conception graphique en interne. Vous nous donnez votre charte, ou on crée l'ensemble du visuel de votre signalétique."
+            "a": "On gère la conception graphique. Vous nous donnez votre charte, ou on crée l'ensemble du visuel de votre signalétique."
           }
         ]
       },
@@ -2209,7 +2209,7 @@
           },
           {
             "title": "Un seul partenaire",
-            "desc": "Conception, fabrication et pose réunies. Vous traitez avec une seule équipe du début à la fin."
+            "desc": "Conception, fabrication et pose pilotées par un seul interlocuteur. Vous traitez avec une seule équipe du début à la fin."
           },
           {
             "title": "Conçu pour durer au soleil",
@@ -2447,7 +2447,7 @@
           },
           {
             "q": "Faut-il fournir un fichier ou créez-vous le visuel ?",
-            "a": "Les deux. Vous nous donnez votre logo, ou on crée le visuel de votre enseigne en interne."
+            "a": "Les deux. Vous nous donnez votre logo, ou on crée le visuel de votre enseigne."
           }
         ]
       },
@@ -2619,7 +2619,7 @@
           },
           {
             "title": "Un seul partenaire",
-            "desc": "Conception, fabrication et pose réunies. Vous ne coordonnez personne."
+            "desc": "Conception, fabrication et pose pilotées par un seul interlocuteur. Vous ne coordonnez personne."
           },
           {
             "title": "Pensé pour durer",
@@ -2652,7 +2652,7 @@
           },
           {
             "q": "Pouvez-vous créer le visuel ?",
-            "a": "Oui, on gère la conception graphique en interne, ou on part de votre charte existante."
+            "a": "Oui, on gère la conception graphique, ou on part de votre charte existante."
           }
         ]
       },
@@ -3033,7 +3033,7 @@
           },
           {
             "title": "Un seul partenaire",
-            "desc": "Conception, fabrication et pose réunies. Vous n'avez qu'un seul contact."
+            "desc": "Conception, fabrication et pose pilotées par un seul interlocuteur. Vous n'avez qu'un seul contact."
           },
           {
             "title": "Idéal multi-sites",
@@ -3062,7 +3062,7 @@
           },
           {
             "q": "Pouvez-vous créer le visuel ?",
-            "a": "Oui, conception graphique en interne, ou reprise de votre charte existante."
+            "a": "Oui, conception graphique, ou reprise de votre charte existante."
           }
         ]
       },
@@ -3238,7 +3238,7 @@
           },
           {
             "title": "Un seul partenaire",
-            "desc": "Conception, fabrication et pose réunies. Un projet cohérent, un seul interlocuteur."
+            "desc": "Conception, fabrication et pose pilotées par un seul interlocuteur. Un projet cohérent, un seul interlocuteur."
           },
           {
             "title": "On se déplace",
@@ -3267,7 +3267,7 @@
           },
           {
             "q": "Pouvez-vous créer le visuel ?",
-            "a": "Oui, conception graphique en interne, ou reprise de votre charte de marque."
+            "a": "Oui, conception graphique, ou reprise de votre charte de marque."
           }
         ]
       },
@@ -3439,7 +3439,7 @@
           },
           {
             "title": "Un seul partenaire",
-            "desc": "Conception, fabrication et pose réunies. Aucun intervenant à coordonner."
+            "desc": "Conception, fabrication et pose pilotées par un seul interlocuteur. Aucun intervenant à coordonner."
           },
           {
             "title": "Soigné pour le centre ancien",
@@ -3472,7 +3472,7 @@
           },
           {
             "q": "Pouvez-vous créer le visuel ?",
-            "a": "Oui, conception graphique en interne, ou reprise de votre charte existante."
+            "a": "Oui, conception graphique, ou reprise de votre charte existante."
           }
         ]
       },
@@ -3648,7 +3648,7 @@
           },
           {
             "title": "Un seul partenaire",
-            "desc": "Conception, fabrication et pose réunies. Vous n'avez qu'un seul contact."
+            "desc": "Conception, fabrication et pose pilotées par un seul interlocuteur. Vous n'avez qu'un seul contact."
           },
           {
             "title": "Idéal multi-sites",
@@ -3677,7 +3677,7 @@
           },
           {
             "q": "Pouvez-vous créer le visuel ?",
-            "a": "Oui, conception graphique en interne, ou reprise de votre charte existante."
+            "a": "Oui, conception graphique, ou reprise de votre charte existante."
           }
         ]
       },
@@ -3882,7 +3882,7 @@
           },
           {
             "q": "Faut-il fournir un fichier ou créez-vous le visuel ?",
-            "a": "Les deux. Vous nous donnez votre logo, ou on crée le visuel de votre enseigne en interne."
+            "a": "Les deux. Vous nous donnez votre logo, ou on crée le visuel de votre enseigne."
           }
         ]
       },
@@ -4054,7 +4054,7 @@
           },
           {
             "title": "Un seul partenaire",
-            "desc": "Conception, fabrication et pose réunies. Un projet cohérent, un seul contact."
+            "desc": "Conception, fabrication et pose pilotées par un seul interlocuteur. Un projet cohérent, un seul contact."
           },
           {
             "title": "Adapté au patrimoine",
@@ -4087,7 +4087,7 @@
           },
           {
             "q": "Pouvez-vous créer le visuel ?",
-            "a": "Oui, conception graphique en interne, ou reprise de votre charte existante."
+            "a": "Oui, conception graphique, ou reprise de votre charte existante."
           }
         ]
       },
@@ -4677,7 +4677,7 @@
           },
           {
             "title": "Fabrication en atelier",
-            "desc": "Tout est fabriqué chez nous à Valence : nous maîtrisons les finitions, les délais et la qualité de bout en bout."
+            "desc": "Nous maîtrisons les finitions, les délais et la qualité de bout en bout."
           }
         ]
       },
@@ -5291,7 +5291,7 @@
             "desc": "Vitrophanie, stores, éclairage : nous savons attirer le regard des passants des quais sans tomber dans le tape-à-l'œil."
           },
           {
-            "title": "Chaîne complète intégrée",
+            "title": "Chaîne complète maîtrisée",
             "desc": "Conception graphique, dossier d'autorisation, fabrication en atelier et pose par nos équipes : vous suivez un seul fil."
           }
         ]
@@ -5689,7 +5689,7 @@
         "title": "Pourquoi nous confier votre signalétique",
         "items": [
           {
-            "title": "Fabrication intégrée à Valence",
+            "title": "Production maîtrisée à Valence",
             "desc": "Enseignes, lettres découpées, adhésifs et supports : un seul interlocuteur pilote tout votre projet. Celui qui suit votre enseigne est aussi celui qui répond au téléphone."
           },
           {
@@ -6111,8 +6111,8 @@
             "desc": "Votre siège à Bourgoin, un dépôt à Saint-Quentin-Fallavier, une agence à Lyon ? Nous harmonisons l'ensemble : mêmes totems, mêmes façades, un interlocuteur unique."
           },
           {
-            "title": "Fabrication maîtrisée en interne",
-            "desc": "Découpe, impression, laquage : tout sort de notre atelier de Valence. Nous garantissons la tenue des matériaux, y compris en plein soleil sur un parc d'activité exposé."
+            "title": "Fabrication maîtrisée",
+            "desc": "Découpe, impression, laquage : nous maîtrisons chaque étape de la production. Nous garantissons la tenue des matériaux, y compris en plein soleil sur un parc d'activité exposé."
           }
         ]
       },
@@ -6736,7 +6736,7 @@
         "items": [
           {
             "q": "Vous déplacez-vous à Orange pour le relevé et la pose ?",
-            "a": "Oui, systématiquement : une heure de route depuis Valence par l'A7. Aucune enseigne ne part en fabrication sans un relevé de cotes fait sur place, et c'est notre propre équipe qui pose."
+            "a": "Oui, systématiquement : une heure de route depuis Valence par l'A7. Aucune enseigne ne part en fabrication sans un relevé de cotes fait sur place, et c'est nos équipes qui posent."
           },
           {
             "q": "Quel délai pour une enseigne à Orange ?",
