@@ -271,7 +271,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "secteur"
+      "category": "secteur",
+      "cover": "/assets/conseils/restaurant.jpg"
     },
     {
       "slug": "communication-restaurant-valence-drome",
@@ -310,7 +311,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "secteur"
+      "category": "secteur",
+      "cover": "/assets/conseils/cafe.jpg"
     },
     {
       "slug": "communication-btp",
@@ -349,7 +351,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "secteur"
+      "category": "secteur",
+      "cover": "/assets/conseils/btp.jpg"
     },
     {
       "slug": "communication-immobilier",
@@ -388,7 +391,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "secteur"
+      "category": "secteur",
+      "cover": "/assets/conseils/immobilier.jpg"
     },
     {
       "slug": "communication-professionnels-sante",
@@ -427,7 +431,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "secteur"
+      "category": "secteur",
+      "cover": "/assets/conseils/sante.jpg"
     },
     {
       "slug": "communication-garage-concession",
@@ -466,7 +471,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "secteur"
+      "category": "secteur",
+      "cover": "/assets/conseils/garage.jpg"
     },
     {
       "slug": "communication-salle-de-sport",
@@ -505,7 +511,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "secteur"
+      "category": "secteur",
+      "cover": "/assets/conseils/sport.jpg"
     },
     {
       "slug": "communication-institut-beaute",
@@ -544,7 +551,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "secteur"
+      "category": "secteur",
+      "cover": "/assets/conseils/beaute.jpg"
     },
     {
       "slug": "prix-enseigne-magasin",
@@ -661,7 +669,8 @@
           "href": "/textile-personnalise"
         }
       ],
-      "category": "guide"
+      "category": "guide",
+      "cover": "/assets/conseils/textile.jpg"
     },
     {
       "slug": "signaletique-reseau-franchise-multisite",
@@ -934,7 +943,8 @@
           "href": "/textile-personnalise"
         }
       ],
-      "category": "guide"
+      "category": "guide",
+      "cover": "/assets/conseils/textile.jpg"
     }
   ]
 }

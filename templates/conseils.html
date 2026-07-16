@@ -63,7 +63,8 @@
   .article-body strong { color: var(--ink); font-weight: 700; }
   .article-back { display: inline-flex; align-items: center; gap: 8px; margin-top: 30px; color: var(--green-deep); font-family: var(--display); font-weight: 700; font-size: 14.5px; text-decoration: none; transition: gap .2s ease; }
   .article-back:hover { gap: 13px; }
-  @media (max-width: 720px) { .article-body { font-size: 16.5px; border-radius: 18px; } .article-body > p:first-of-type { font-size: 18px; } }
+  .article-cover { display: block; width: 100%; height: clamp(210px, 32vw, 380px); object-fit: cover; border-radius: 22px; margin-top: 10px; box-shadow: 0 30px 60px -45px rgba(19,122,62,0.4), 0 2px 4px rgba(11,13,12,0.04); }
+  @media (max-width: 720px) { .article-body { font-size: 16.5px; border-radius: 18px; } .article-body > p:first-of-type { font-size: 18px; } .article-cover { border-radius: 16px; height: clamp(180px, 46vw, 260px); } }
 </style>
 
 <main id="main">
@@ -79,6 +80,9 @@
 
 <section class="section" data-screen-label="Contenu">
   <div class="wrap article-wrap">
+    {{#article.cover}}
+    <img class="article-cover reveal" src="{{article.cover}}" alt="{{article.title}}" />
+    {{/article.cover}}
     <article class="article-body reveal">
       {{{article.bodyHtml}}}
     </article>
