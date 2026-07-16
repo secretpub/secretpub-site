@@ -37,7 +37,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "agence"
+      "category": "agence",
+      "cover": "/assets/conseils/univers.jpg"
     },
     {
       "slug": "supports-marketing-personnalises",
@@ -76,7 +77,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "agence"
+      "category": "agence",
+      "cover": "/assets/conseils/pochettes.jpg"
     },
     {
       "slug": "impact-communication-entreprise",
@@ -115,7 +117,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "agence"
+      "category": "agence",
+      "cover": "/assets/conseils/nsstore.jpg"
     },
     {
       "slug": "agence-locale-partenaire-unique",
@@ -154,7 +157,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "agence"
+      "category": "agence",
+      "cover": "/assets/conseils/chamas.jpg"
     },
     {
       "slug": "signaletique-franchise-ouverture",
@@ -193,7 +197,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "secteur"
+      "category": "secteur",
+      "cover": "/assets/conseils/bigmext.jpg"
     },
     {
       "slug": "deploiement-reseau-multisites",
@@ -232,7 +237,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "secteur"
+      "category": "secteur",
+      "cover": "/assets/conseils/univers.jpg"
     },
     {
       "slug": "communication-restaurant",
@@ -352,7 +358,7 @@
         }
       ],
       "category": "secteur",
-      "cover": "/assets/conseils/btp.jpg"
+      "cover": "/assets/conseils/bache.jpg"
     },
     {
       "slug": "communication-immobilier",
@@ -591,7 +597,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "guide"
+      "category": "guide",
+      "cover": "/assets/conseils/boufi.jpg"
     },
     {
       "slug": "autorisation-enseigne-demarches",
@@ -630,7 +637,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "guide"
+      "category": "guide",
+      "cover": "/assets/conseils/nsstore.jpg"
     },
     {
       "slug": "choisir-marquage-textile-pro",
@@ -709,7 +717,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "guide"
+      "category": "guide",
+      "cover": "/assets/conseils/chamas.jpg"
     },
     {
       "slug": "impression-grand-format",
@@ -748,7 +757,8 @@
           "href": "/imprimerie"
         }
       ],
-      "category": "guide"
+      "category": "guide",
+      "cover": "/assets/conseils/bache.jpg"
     },
     {
       "slug": "covering-adhesif",
@@ -787,7 +797,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "guide"
+      "category": "guide",
+      "cover": "/assets/conseils/pickup.jpg"
     },
     {
       "slug": "supports-imprimes-print",
@@ -826,7 +837,8 @@
           "href": "/imprimerie"
         }
       ],
-      "category": "guide"
+      "category": "guide",
+      "cover": "/assets/conseils/cartes.jpg"
     },
     {
       "slug": "objets-publicitaires-goodies",
@@ -865,7 +877,8 @@
           "href": "/objets-publicitaires"
         }
       ],
-      "category": "guide"
+      "category": "guide",
+      "cover": "/assets/conseils/stylos.jpg"
     },
     {
       "slug": "panneaux-plv",
@@ -904,7 +917,8 @@
           "href": "/signaletique"
         }
       ],
-      "category": "guide"
+      "category": "guide",
+      "cover": "/assets/conseils/drapeau.jpg"
     },
     {
       "slug": "textile-personnalise-guide",
@@ -944,7 +958,7 @@
         }
       ],
       "category": "guide",
-      "cover": "/assets/conseils/textile.jpg"
+      "cover": "/assets/conseils/doudounes.jpg"
     }
   ]
 }
