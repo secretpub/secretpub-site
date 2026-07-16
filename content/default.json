@@ -225,7 +225,7 @@
     "about": "Un seul partenaire, pour tout ce qui porte votre image. Conception, production et pose réunies, partout en France.",
     "columns": [
       {
-        "title": "Métiers",
+        "title": "Services",
         "links": [
           {
             "label": "Signalétique & enseignes",
@@ -342,8 +342,8 @@
   },
   "meta": {
     "siteName": "SecretPub",
-    "title": "Agence de communication et de publicité à Valence | SecretPub",
-    "description": "Agence de communication et de publicité à Valence : enseignes, print, textile et goodies conçus, fabriqués et posés par SecretPub, de l'étude à la pose.",
+    "title": "SecretPub | Agence de communication et de publicité à Valence",
+    "description": "SecretPub, agence de communication et de publicité à Valence. Enseignes, print, textile et goodies conçus, fabriqués et posés par nos équipes, de l'étude à la pose.",
     "ogImage": "/assets/og-cover.jpg",
     "catalogueUrl": "/catalogue",
     "phoneDisplay": "09 83 80 93 12",
