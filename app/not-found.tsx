@@ -12,34 +12,14 @@ export default function NotFound() {
       }}
     >
       <div style={{ maxWidth: 540 }}>
-        {/* Fond clair : on compose l'icône + le texte en noir (le logo-full a le
-            texte blanc, donc invisible ici). */}
-        <div
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: 11,
-            marginBottom: 26,
-          }}
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/assets/logo-mark.png"
-            alt=""
-            style={{ height: 40, width: "auto", display: "block" }}
-          />
-          <span
-            style={{
-              fontSize: 34,
-              fontWeight: 800,
-              letterSpacing: "-0.02em",
-              color: "#111",
-              lineHeight: 1,
-            }}
-          >
-            SecretPub
-          </span>
-        </div>
+        {/* Fond clair : logo officiel avec le texte en noir (logo-full a le texte
+            blanc, invisible ici). */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/assets/logo-dark.svg"
+          alt="SecretPub"
+          style={{ height: 42, width: "auto", margin: "0 auto 26px" }}
+        />
         <h1 style={{ fontSize: "clamp(30px, 4vw, 46px)" }}>Page introuvable</h1>
         <p
           style={{
