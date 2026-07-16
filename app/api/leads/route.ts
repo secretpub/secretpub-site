@@ -44,7 +44,10 @@ async function notifyByEmail(f: {
     console.warn("[leads] email non envoyé (RESEND_API_KEY manquant)");
     return;
   }
-  const from = process.env.RESEND_FROM || "SecretPub <onboarding@resend.dev>";
+  // Expéditeur DISTINCT de contact@ : évite l'auto-envoi (contact@ -> contact@) qui tombe
+  // dans le dossier "axonaut", et améliore le classement en "Prioritaire". Le domaine
+  // secretpub.fr étant validé dans Resend, on peut envoyer depuis demandes@secretpub.fr.
+  const from = "SecretPub Demandes <demandes@secretpub.fr>";
   const fullName = [f.prenom, f.nom].filter(Boolean).join(" ");
   const who = f.company || fullName || f.email;
   const label = f.type === "waitlist" ? "Liste d'attente" : "Demande de contact";
@@ -75,7 +78,10 @@ async function notifyByEmail(f: {
     const r = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ from, to: [to], reply_to: f.email, subject, html }),
+      body: JSON.stringify({
+        from, to: [to], reply_to: f.email, subject, html,
+        headers: { "X-Priority": "1", Importance: "high" },
+      }),
     });
     if (!r.ok) console.error("[leads] resend error", r.status, await r.text());
   } catch (e) {
