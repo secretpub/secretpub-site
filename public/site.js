@@ -642,6 +642,10 @@
         if (ok) {
           form.classList.add('sent');
           if (btn) btn.textContent = 'Demande envoyée';
+          // Redirige vers la page de confirmation : sert d'UX de remerciement
+          // ET de page de conversion pour Google Ads (ne se charge qu'après un
+          // envoi réussi, donc le comptage reste fiable).
+          window.location.assign('/demande-recue');
         } else {
           if (btn) { btn.disabled = false; btn.textContent = 'Envoyer ma demande'; }
           var err = form.querySelector('.cform-err');

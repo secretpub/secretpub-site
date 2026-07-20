@@ -1,0 +1,86 @@
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-inner">
+    <a class="brand" href="/" aria-label="SecretPub, retour à l'accueil">
+      <img src="/assets/logo-full.png" alt="Logo SecretPub, signalétique, print et textile à Valence" />
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <div class="nav-item"><a href="/#metiers">Services</a></div>
+      <div class="nav-item"><a href="/#realisations">Réalisations</a></div>
+      <div class="nav-item"><a href="/#pourqui">Pour qui</a></div>
+      <div class="nav-item"><a href="/#methode">Méthode</a></div>
+      <div class="nav-item"><a href="/#contact">Contact</a></div>
+    </nav>
+    <div class="header-cta">
+      <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-glow">Catalogue <span class="ext" aria-hidden="true">↗</span></a>
+      <a href="/#contact" class="btn btn-primary">Demander un devis</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    </div>
+  </div>
+</header>
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="menu-close" id="menuClose" aria-label="Fermer le menu">×</button>
+  <a href="/#metiers">Services</a>
+  <a href="/#realisations">Réalisations</a>
+  <a href="/#pourqui">Pour qui</a>
+  <a href="/#methode">Méthode</a>
+  <a href="/#contact">Contact</a>
+  <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-glow">Catalogue <span class="ext" aria-hidden="true">↗</span></a>
+  <a href="/#contact" class="btn btn-primary">Demander un devis</a>
+</div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <nav class="crumb" aria-label="Fil d'Ariane"><a href="/">Accueil</a> <span>/</span> <span>Demande reçue</span></nav>
+    <h1>Merci, votre demande est bien arrivée</h1>
+    <p class="hero-sub">On vous recontacte très vite pour en parler.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="legal-prose">
+      <p>Votre demande de devis vient de nous parvenir, elle est entre de bonnes mains. Un membre de l'équipe la regarde et revient vers vous sous 24 heures ouvrées, par téléphone ou par email, pour préciser votre projet et vous préparer une proposition claire.</p>
+      <p>Un détail à ajouter, un fichier oublié ou simplement envie d'en discuter de vive voix ? Appelez-nous directement, c'est souvent le plus rapide : <a href="{{meta.phoneHref}}">{{meta.phoneDisplay}}</a>. Vous pouvez aussi nous écrire à <a href="mailto:{{meta.email}}">{{meta.email}}</a>.</p>
+      <p>En attendant notre appel, vous pouvez jeter un œil à <a href="/#realisations">nos dernières réalisations</a> ou à <a href="/conseils">nos guides et conseils</a>.</p>
+      <p class="legal-back"><a href="/">← Retour à l'accueil</a></p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="foot-brand">
+        <a class="brand" href="/"><img src="/assets/logo-full.png" alt="Logo SecretPub" /></a>
+        <p class="about">{{footer.about}}</p>
+        <address class="foot-contact">
+          <a href="{{meta.phoneHref}}">{{meta.phoneDisplay}}</a>
+          <a href="mailto:{{meta.email}}">{{meta.email}}</a>
+          <span>{{meta.addressLine}}</span>
+        </address>
+      </div>
+      {{#footer.columns}}
+      <nav class="foot-col" aria-label="{{title}}">
+        <h5>{{title}}</h5>
+        {{#links}}<a href="{{href}}">{{label}}</a>{{/links}}
+      </nav>
+      {{/footer.columns}}
+    </div>
+    <div class="footer-bottom">
+      <div class="foot-copy">
+        <span>{{footer.copyright}}</span>
+      </div>
+      <nav class="foot-legal" aria-label="Informations légales">
+        <a href="/mentions-legales">Mentions légales</a>
+        <a href="/#faq">Questions fréquentes</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <div class="socials">
+        {{#footer.socials}}<a href="{{href}}" target="_blank" rel="noopener" aria-label="{{label}}">{{{iconHtml}}}</a>{{/footer.socials}}
+      </div>
+    </div>
+  </div>
+</footer>
