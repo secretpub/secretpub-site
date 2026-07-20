@@ -71,8 +71,7 @@ export function CookieBanner() {
           🍪
         </span>
         On aimerait déposer quelques cookies pour mieux comprendre les visites
-        et rendre le site plus agréable. À vous de voir, on respecte votre
-        choix.{" "}
+        et rendre le site plus agréable. On respecte votre choix.{" "}
         <a href="/mentions-legales#confidentialite">En savoir plus</a>.
       </p>
       <div className="spc-btns">
