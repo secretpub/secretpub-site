@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { SiteAnalytics } from "@/components/SiteAnalytics";
+import { CookieBanner } from "@/components/CookieBanner";
 import { getContent } from "@/lib/content/store";
 import { buildMobileCss } from "@/lib/content/mobile";
 
@@ -123,11 +124,14 @@ export default async function RootLayout({
               {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
+var spGranted=false;try{spGranted=localStorage.getItem('sp-consent')==='granted';}catch(e){}
+gtag('consent','default',{ad_storage:spGranted?'granted':'denied',analytics_storage:spGranted?'granted':'denied',ad_user_data:spGranted?'granted':'denied',ad_personalization:spGranted?'granted':'denied',wait_for_update:500});
 gtag('config', '${GOOGLE_TAG_ID}');`}
             </Script>
           </>
         )}
         <SiteAnalytics />
+        <CookieBanner />
       </body>
     </html>
   );
