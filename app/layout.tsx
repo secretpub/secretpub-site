@@ -6,6 +6,10 @@ import { buildMobileCss } from "@/lib/content/mobile";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://secretpub.fr";
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
+// Google tag (gtag.js) : mesure Google Ads / Analytics. La conversion "demande
+// de devis" est suivie via la visite de /demande-recue. Surchargeable par env.
+const GOOGLE_TAG_ID =
+  process.env.NEXT_PUBLIC_GOOGLE_TAG_ID || "G-K9RJFD3GYE";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -108,6 +112,21 @@ export default async function RootLayout({
         {children}
         {/* The vendored, hand-tuned interactions run on the server-rendered DOM. */}
         <Script src="/site.js" strategy="afterInteractive" />
+        {/* Google tag (gtag.js) — suivi Google Ads (conversion sur /demande-recue). */}
+        {GOOGLE_TAG_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_TAG_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="gtag-init" strategy="afterInteractive">
+              {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GOOGLE_TAG_ID}');`}
+            </Script>
+          </>
+        )}
         <SiteAnalytics />
       </body>
     </html>
