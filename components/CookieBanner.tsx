@@ -70,8 +70,9 @@ export function CookieBanner() {
         <span className="spc-emoji" aria-hidden="true">
           🍪
         </span>
-        On utilise des cookies pour mesurer l&apos;audience du site et évaluer
-        nos publicités. C&apos;est vous qui décidez.{" "}
+        On aimerait déposer quelques cookies pour mieux comprendre les visites
+        et rendre le site plus agréable. À vous de voir, on respecte votre
+        choix.{" "}
         <a href="/mentions-legales#confidentialite">En savoir plus</a>.
       </p>
       <div className="spc-btns">
