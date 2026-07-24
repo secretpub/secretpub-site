@@ -354,7 +354,7 @@
     "geoLat": 44.9032785,
     "geoLng": 4.8996786,
     "ratingValue": "5.0",
-    "reviewCount": 44,
+    "reviewCount": 102,
     "priceRange": "€€"
   },
   "nav": [
@@ -602,7 +602,7 @@
           },
           {
             "title": "Note 5,0/5",
-            "desc": "5,0 sur 5 sur 44 avis Google et une première réponse sous 24 h. On vous rappelle vite et on tient nos engagements."
+            "desc": "5,0 sur 5 sur 102 avis Google et une première réponse sous 24 h. On vous rappelle vite et on tient nos engagements."
           }
         ]
       },
@@ -837,8 +837,8 @@
             "desc": "Nous stockons vos tirages, conditionnons par point de vente et distribuons partout en France. Vous ne gérez plus le réassort."
           },
           {
-            "title": "Note 5,0 sur 44 avis",
-            "desc": "Une note Google de 5,0/5 sur 44 avis. La preuve d’un travail soigné et d’un suivi qui tient ses promesses."
+            "title": "Note 5,0 sur 102 avis",
+            "desc": "Une note Google de 5,0/5 sur 102 avis. La preuve d’un travail soigné et d’un suivi qui tient ses promesses."
           }
         ]
       },
@@ -1029,8 +1029,8 @@
             "desc": "Idéal pour les réseaux : tenues identiques sur tous les points de vente, pilotées simplement depuis le siège."
           },
           {
-            "title": "Note 5,0 sur 44 avis",
-            "desc": "Une note Google de 5,0/5 sur 44 avis : nos clients reviennent pour la qualité des tenues et le suivi."
+            "title": "Note 5,0 sur 102 avis",
+            "desc": "Une note Google de 5,0/5 sur 102 avis : nos clients reviennent pour la qualité des tenues et le suivi."
           }
         ]
       },
@@ -1222,7 +1222,7 @@
           },
           {
             "title": "Réactivité prouvée",
-            "desc": "Première réponse sous 24 h, puis des délais calés avec vous, avec une note de 5,0 sur 5 sur 44 avis Google."
+            "desc": "Première réponse sous 24 h, puis des délais calés avec vous, avec une note de 5,0 sur 5 sur 102 avis Google."
           }
         ]
       },
@@ -1409,8 +1409,8 @@
             "desc": "Nous répondons à votre demande sous 24 h, puis les délais (devis, bon à tirer, production) dépendent du projet : support, quantité, finitions."
           },
           {
-            "title": "Note 5,0 sur 44 avis",
-            "desc": "Une note Google de 5,0 sur 5 sur 44 avis, le reflet d'un travail soigné et d'un accompagnement suivi jusqu'à la livraison."
+            "title": "Note 5,0 sur 102 avis",
+            "desc": "Une note Google de 5,0 sur 5 sur 102 avis, le reflet d'un travail soigné et d'un accompagnement suivi jusqu'à la livraison."
           }
         ]
       },
