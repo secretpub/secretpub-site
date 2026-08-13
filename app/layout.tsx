@@ -11,6 +11,9 @@ const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 // de devis" est suivie via la visite de /demande-recue. Surchargeable par env.
 const GOOGLE_TAG_ID =
   process.env.NEXT_PUBLIC_GOOGLE_TAG_ID || "G-K9RJFD3GYE";
+// Google Tag Manager (conteneur). Snippet posé le plus haut possible dans le
+// <head> + noscript juste après <body>. Surchargeable par env NEXT_PUBLIC_GTM_ID.
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "GTM-5NJBFL85";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -86,6 +89,23 @@ export default async function RootLayout({
   return (
     <html lang="fr">
       <head>
+        {/* Consent Mode par défaut (AVANT GTM/GA) : ad + analytics refusés tant
+            que le visiteur n'a pas accepté les cookies (bandeau => 'sp-consent'). */}
+        {GTM_ID && (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}var spGranted=false;try{spGranted=localStorage.getItem('sp-consent')==='granted';}catch(e){}gtag('consent','default',{ad_storage:spGranted?'granted':'denied',analytics_storage:spGranted?'granted':'denied',ad_user_data:spGranted?'granted':'denied',ad_personalization:spGranted?'granted':'denied',wait_for_update:500});`,
+            }}
+          />
+        )}
+        {/* Google Tag Manager — le plus haut possible dans le <head>. */}
+        {GTM_ID && (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`,
+            }}
+          />
+        )}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -110,6 +130,17 @@ export default async function RootLayout({
         )}
       </head>
       <body>
+        {/* Google Tag Manager (noscript) — juste après l'ouverture de <body>. */}
+        {GTM_ID && (
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            />
+          </noscript>
+        )}
         {children}
         {/* The vendored, hand-tuned interactions run on the server-rendered DOM. */}
         <Script src="/site.js" strategy="afterInteractive" />
