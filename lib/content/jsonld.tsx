@@ -157,7 +157,7 @@ function localBusiness(c: SiteContent) {
   if (metierOffers.length) {
     biz.hasOfferCatalog = {
       "@type": "OfferCatalog",
-      name: "Communication physique — SecretPub",
+      name: "Communication physique par SecretPub",
       itemListElement: metierOffers,
     };
   }

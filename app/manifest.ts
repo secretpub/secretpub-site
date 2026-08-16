@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "SecretPub — signalétique, print et textile",
+    name: "SecretPub : signalétique, print et textile",
     short_name: "SecretPub",
     description:
       "Toute votre communication physique, un seul partenaire. Signalétique, print, textile, goodies et packaging, de l'étude à la pose.",

@@ -6,7 +6,7 @@ export const revalidate = 3600;
 
 const TITLE = "Mentions légales | SecretPub";
 const DESC =
-  "Mentions légales et politique de confidentialité de SecretPub (SARL NOSTILE FACTORY) — signalétique, print et textile à Valence.";
+  "Mentions légales et politique de confidentialité de SecretPub (SARL NOSTILE FACTORY), signalétique, print et textile à Valence.";
 
 export const metadata: Metadata = {
   title: TITLE,
