@@ -5,6 +5,29 @@ import type { SiteContent } from "./schema";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://secretpub.fr";
 const BIZ_ID = SITE_URL + "#business";
 
+/** Zone desservie déclarée aux moteurs et aux IA : Valence, sa couronne
+ *  (Drôme + Ardèche) et les grandes villes d'Auvergne-Rhône-Alpes où l'on
+ *  intervient. Sert le SEO local au-delà de la seule ville de Valence. */
+const SERVED_AREAS = [
+  { "@type": "City", name: "Valence" },
+  { "@type": "City", name: "Bourg-lès-Valence" },
+  { "@type": "City", name: "Portes-lès-Valence" },
+  { "@type": "City", name: "Guilherand-Granges" },
+  { "@type": "City", name: "Romans-sur-Isère" },
+  { "@type": "City", name: "Bourg-de-Péage" },
+  { "@type": "City", name: "Tain-l'Hermitage" },
+  { "@type": "City", name: "Tournon-sur-Rhône" },
+  { "@type": "City", name: "Montélimar" },
+  { "@type": "City", name: "Crest" },
+  { "@type": "City", name: "Livron-sur-Drôme" },
+  { "@type": "City", name: "Grenoble" },
+  { "@type": "City", name: "Lyon" },
+  { "@type": "AdministrativeArea", name: "Drôme" },
+  { "@type": "AdministrativeArea", name: "Ardèche" },
+  { "@type": "AdministrativeArea", name: "Auvergne-Rhône-Alpes" },
+  { "@type": "Country", name: "France" },
+];
+
 function abs(p: string): string {
   if (!p) return SITE_URL;
   if (p.startsWith("http")) return p;
@@ -77,11 +100,7 @@ function localBusiness(c: SiteContent) {
       addressLocality: m ? m[2] : "Valence",
       addressCountry: "FR",
     },
-    areaServed: [
-      { "@type": "City", name: "Valence" },
-      { "@type": "AdministrativeArea", name: "Drôme" },
-      { "@type": "Country", name: "France" },
-    ],
+    areaServed: SERVED_AREAS,
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -181,11 +200,7 @@ export function serviceJsonLd(
       name: opts.name,
       serviceType: opts.serviceType,
       provider: { "@id": BIZ_ID },
-      areaServed: [
-        { "@type": "City", name: "Valence" },
-        { "@type": "AdministrativeArea", name: "Drôme" },
-        { "@type": "Country", name: "France" },
-      ],
+      areaServed: SERVED_AREAS,
     },
     { "@context": "https://schema.org", ...localBusiness(c) },
     {
@@ -213,11 +228,7 @@ export function metierJsonLd(c: SiteContent, page: any): object[] {
         { "@type": "City", name: page.areaServed },
         { "@type": "Country", name: "France" },
       ]
-    : [
-        { "@type": "City", name: "Valence" },
-        { "@type": "AdministrativeArea", name: "Drôme" },
-        { "@type": "Country", name: "France" },
-      ];
+    : SERVED_AREAS;
   const offers = (page.prestations?.items || []).map((it: any) => ({
     "@type": "Offer",
     itemOffered: {

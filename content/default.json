@@ -475,13 +475,13 @@
       "navLabel": "Signalétique",
       "meta": {
         "title": "Signalétique et enseignes à Valence | SecretPub",
-        "description": "Signalétique et enseignes à Valence : enseigne, totem, vitrophanie, adhésifs. Étude, fabrication et pose incluses en Drôme. Première réponse sous 24 h."
+        "description": "Signalétique, enseignes et panneaux à Valence : enseigne, totem, panneaux publicitaires, vitrophanie, adhésifs. Étude, fabrication et pose d'enseigne incluses en Drôme et toute la France."
       },
       "hero": {
         "crumb": "Signalétique",
         "eyebrow": "Signalétique et enseignes",
         "h1Html": "<span class=\"mark\">Signalétique et enseignes à Valence</span>, de l’étude à la pose",
-        "sub": "Enseignes, totems, vitrophanie, adhésifs et panneaux de chantier. On conçoit, on fabrique et on installe votre visibilité extérieure à Valence, dans la Drôme et partout en France."
+        "sub": "Enseignes, totems, vitrophanie, adhésifs, panneaux publicitaires et de chantier. On conçoit, on fabrique et on installe votre visibilité extérieure à Valence, dans la Drôme et partout en France."
       },
       "intro": {
         "eyebrow": "Votre visibilité, installée",
@@ -525,6 +525,14 @@
           {
             "title": "Panneaux rigides extérieurs",
             "desc": "Panneaux dibond et PVC de façade, panneaux directionnels et d’orientation, ancrés pour durer dehors. Pour vos kakémonos, PLV comptoir et supports papier grand format, voir notre page Imprimerie."
+          },
+          {
+            "title": "Pose et installation d'enseigne",
+            "desc": "L'installation de l'enseigne fait partie du métier : prise de cotes, fixation sécurisée et raccordement électrique pour les modèles lumineux. On pose sur site, proprement, à Valence et dans toute la Drôme."
+          },
+          {
+            "title": "Panneaux publicitaires et grand format",
+            "desc": "Panneaux publicitaires, panneaux dibond et PVC, panneaux directionnels, bâches et supports grand format pour vos façades, vos abords et vos événements. Fabrication et pose comprises."
           }
         ]
       },
@@ -628,6 +636,14 @@
           {
             "q": "Faut-il fournir un fichier prêt ou pouvez-vous créer le visuel ?",
             "a": "Les deux fonctionnent. Si vous avez un logo ou une charte, on part de vos fichiers. Sinon, on conçoit le visuel avec vous. Dans tous les cas, vous validez le rendu exact sur le bon à tirer avant fabrication."
+          },
+          {
+            "q": "Fabriquez-vous et posez-vous des panneaux publicitaires à Valence ?",
+            "a": "Oui. On fabrique tous types de panneaux (panneaux publicitaires, dibond, PVC, panneaux directionnels, panneaux de chantier) et on les installe sur site. Étude, fabrication et pose sont gérées par la même équipe, à Valence et dans toute la Drôme."
+          },
+          {
+            "q": "Assurez-vous l'installation et la pose de l'enseigne ?",
+            "a": "Oui, l'installation de l'enseigne est comprise. On prend les cotes sur votre façade, on fabrique, puis nos équipes posent et raccordent l'enseigne, y compris les modèles lumineux. Vous récupérez une enseigne installée, prête à travailler."
           }
         ]
       },
@@ -1087,7 +1103,41 @@
           "label": "Broderie, sérigraphie, flocage ou DTF ?",
           "href": "/conseils/choisir-marquage-textile-pro"
         }
-      ]
+      ],
+      "cityLinks": {
+        "title": "Le textile personnalisé près de chez vous",
+        "intro": "On habille aussi les équipes des villes voisines. Choisissez votre secteur.",
+        "items": [
+          {
+            "label": "Romans-sur-Isère",
+            "href": "/textile-personnalise-romans-sur-isere"
+          },
+          {
+            "label": "Montélimar",
+            "href": "/textile-personnalise-montelimar"
+          },
+          {
+            "label": "Bourg-lès-Valence",
+            "href": "/textile-personnalise-bourg-les-valence"
+          },
+          {
+            "label": "Guilherand-Granges",
+            "href": "/textile-personnalise-guilherand-granges"
+          },
+          {
+            "label": "Portes-lès-Valence",
+            "href": "/textile-personnalise-portes-les-valence"
+          },
+          {
+            "label": "Tain-l'Hermitage",
+            "href": "/textile-personnalise-tain-l-hermitage"
+          },
+          {
+            "label": "Tournon-sur-Rhône",
+            "href": "/textile-personnalise-tournon-sur-rhone"
+          }
+        ]
+      }
     },
     "objets-publicitaires": {
       "slug": "objets-publicitaires",
@@ -1275,7 +1325,41 @@
           "label": "Objets publicitaires & goodies",
           "href": "/conseils/objets-publicitaires-goodies"
         }
-      ]
+      ],
+      "cityLinks": {
+        "title": "Objets publicitaires et goodies près de chez vous",
+        "intro": "On personnalise aussi pour les villes voisines. Choisissez votre secteur.",
+        "items": [
+          {
+            "label": "Romans-sur-Isère",
+            "href": "/objets-publicitaires-romans-sur-isere"
+          },
+          {
+            "label": "Montélimar",
+            "href": "/objets-publicitaires-montelimar"
+          },
+          {
+            "label": "Bourg-lès-Valence",
+            "href": "/objets-publicitaires-bourg-les-valence"
+          },
+          {
+            "label": "Guilherand-Granges",
+            "href": "/objets-publicitaires-guilherand-granges"
+          },
+          {
+            "label": "Portes-lès-Valence",
+            "href": "/objets-publicitaires-portes-les-valence"
+          },
+          {
+            "label": "Tain-l'Hermitage",
+            "href": "/objets-publicitaires-tain-l-hermitage"
+          },
+          {
+            "label": "Tournon-sur-Rhône",
+            "href": "/objets-publicitaires-tournon-sur-rhone"
+          }
+        ]
+      }
     },
     "packaging": {
       "slug": "packaging",
@@ -6798,6 +6882,3212 @@
           "href": "/conseils/covering-adhesif"
         }
       ]
+    },
+    "textile-personnalise-romans-sur-isere": {
+      "slug": "textile-personnalise-romans-sur-isere",
+      "cat": "textile",
+      "navLabel": "Textile Romans-sur-Isère",
+      "meta": {
+        "title": "Textile personnalisé à Romans-sur-Isère | SecretPub",
+        "description": "Textile personnalisé à Romans-sur-Isère (Drôme) : t-shirts, polos, vêtements de travail et EPI marqués en broderie, flocage ou sérigraphie. Conçu, produit et livré depuis Valence."
+      },
+      "hero": {
+        "crumb": "Textile Romans-sur-Isère",
+        "eyebrow": "Textile personnalisé à Romans-sur-Isère",
+        "h1Html": "Le <span class=\"mark\">textile personnalisé à Romans-sur-Isère</span> pour habiller votre équipe",
+        "sub": "T-shirts, polos, vêtements de travail et tenues marqués à votre logo pour les professionnels de Romans-sur-Isère. On conçoit, on produit et on livre depuis notre atelier de Valence."
+      },
+      "intro": {
+        "eyebrow": "Votre équipe à vos couleurs",
+        "title": "Des tenues marquées pour les pros de Romans-sur-Isère",
+        "leadHtml": "À Romans-sur-Isère, une tenue d'équipe soignée en dit long sur votre sérieux : <b>autant qu'elle tienne, et que le logo reste net lavage après lavage.</b>",
+        "bodyHtml": "<p>Ville de la chaussure et de la maroquinerie, Romans vit de ses ateliers, de ses commerces de centre-ville et des boutiques de Marques Avenue, où une tenue d'équipe soignée pèse dès l'accueil. Restaurateurs, artisans et clubs romanais : on habille vos équipes aux bonnes couleurs, avec un marquage qui tient.</p><p>Notre atelier est à Valence, à 20 minutes de Romans-sur-Isère : on vous conseille le bon vêtement et la bonne technique (broderie, flocage, sérigraphie ou DTF), on produit, puis on vous livre sur place ou vous passez récupérer. Un seul interlocuteur, du choix de la matière à la livraison.</p>"
+      },
+      "prestations": {
+        "eyebrow": "Nos prestations",
+        "title": "Ce qu'on personnalise pour vous",
+        "intro": "Chaque marquage est pensé pour l'usage réel de vos équipes à Romans-sur-Isère : la matière, la technique et le rendu qui tiennent dans le temps.",
+        "items": [
+          {
+            "title": "T-shirts, polos et sweats",
+            "desc": "Le trio de base à votre charte pour uniformiser une équipe, de l'accueil au service, sur des textiles qui tiennent au lavage."
+          },
+          {
+            "title": "Softshells, vestes et bodywarmers",
+            "desc": "Des pièces chaudes et présentables pour l'accueil, le terrain et les événements en extérieur, marquées à votre logo."
+          },
+          {
+            "title": "Vêtements de travail et EPI",
+            "desc": "Tenues de chantier et EPI marqués, résistants et durables, taillés pour les artisans et le bâtiment au quotidien."
+          },
+          {
+            "title": "Tabliers et tenues restauration",
+            "desc": "Tabliers, vestes et tenues brodées pour la salle, la cuisine et les métiers de bouche, propres et professionnels."
+          },
+          {
+            "title": "Maillots et textiles de sport",
+            "desc": "Maillots, survêtements et textiles de sport pour clubs, équipes et événements, avec numéros, noms et sponsors."
+          },
+          {
+            "title": "Casquettes et accessoires brodés",
+            "desc": "Casquettes, bonnets et accessoires brodés portés par l'équipe, en complément de la tenue, pour une image cohérente."
+          },
+          {
+            "title": "Impression DTF pour visuels détaillés",
+            "desc": "Impression numérique DTF pour les logos en couleurs, dégradés et visuels photo, nets sur t-shirts et textiles clairs."
+          },
+          {
+            "title": "Habillage complet d'un réseau",
+            "desc": "Du siège aux points de vente, on habille tous vos sites à l'identique avec le bon marquage selon chaque usage."
+          }
+        ]
+      },
+      "secteurs": {
+        "title": "Pour qui on personnalise du textile",
+        "intro": "Restaurateurs, artisans, clubs ou commerces : à Romans-sur-Isère, on adapte le vêtement et le marquage à chaque activité et à chaque budget.",
+        "items": [
+          {
+            "title": "Restaurateurs et hôtellerie",
+            "desc": "Tenues de salle et de cuisine, tabliers et polos brodés pour une équipe propre, reconnaissable et professionnelle."
+          },
+          {
+            "title": "Artisans et bâtiment",
+            "desc": "Vêtements de travail et EPI haute visibilité floqués, résistants au chantier et au lavage intensif."
+          },
+          {
+            "title": "Clubs de sport et associations",
+            "desc": "Maillots, survêtements et t-shirts d'équipe avec numéros, noms et logos de sponsors, prêts pour la saison."
+          },
+          {
+            "title": "Beauté, spas et coiffeurs",
+            "desc": "Tuniques, tabliers et tenues d'accueil brodées, sobres et élégantes, à la charte de votre institut."
+          },
+          {
+            "title": "Franchises et réseaux",
+            "desc": "Habillage identique de tous les points de vente, piloté depuis le siège, pour une image homogène partout."
+          },
+          {
+            "title": "PME et commerces",
+            "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Notre méthode",
+        "title": "De votre logo à la tenue livrée",
+        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Brief et conseil",
+            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
+          },
+          {
+            "n": "02",
+            "title": "Bon à tirer à valider",
+            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
+          },
+          {
+            "n": "03",
+            "title": "Production maîtrisée",
+            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
+          },
+          {
+            "n": "04",
+            "title": "Livraison et réassort",
+            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
+          }
+        ]
+      },
+      "avantages": {
+        "title": "Pourquoi nous confier votre textile",
+        "items": [
+          {
+            "title": "Un seul partenaire",
+            "desc": "Textile, signalétique, print, objets et packaging avec un seul interlocuteur : une seule charte, un seul contact, une seule facture."
+          },
+          {
+            "title": "Ancrage local",
+            "desc": "Basés à Valence, dans la Drôme : on vous répond une première fois sous 24 h et on reste joignables, pour vos tenues comme pour vos réassorts."
+          },
+          {
+            "title": "Pensé multi-sites",
+            "desc": "Idéal pour les réseaux : tenues identiques sur tous les points de vente, pilotées simplement depuis le siège."
+          },
+          {
+            "title": "Note 5,0 sur 102 avis",
+            "desc": "Une note Google de 5,0/5 sur 102 avis : nos clients reviennent pour la qualité des tenues et le suivi."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Vos questions sur le textile personnalisé",
+        "items": [
+          {
+            "q": "Quel est le délai pour des vêtements personnalisés à Romans-sur-Isère ?",
+            "a": "On vous répond une première fois sous 24 h. Ensuite, les délais (devis, bon à tirer, production) dépendent du projet : le support, la quantité et les finitions. Après validation du bon à tirer, comptez généralement quelques jours à deux semaines selon la technique et la quantité. Pour un besoin urgent (événement, salon), dites-le nous dès le brief : on cale le planning avec vous. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
+          },
+          {
+            "q": "Y a-t-il une quantité minimum de commande ?",
+            "a": "Non, on s'adapte à votre besoin réel, d'une petite série pour une équipe à plusieurs centaines de pièces pour un réseau. La technique de marquage varie selon la quantité et le visuel : flocage pour les petites séries, DTF pour les visuels détaillés en couleurs, sérigraphie pour les gros volumes. On vous oriente vers le plus pertinent."
+          },
+          {
+            "q": "Quelle technique choisir : broderie, flocage ou sérigraphie ?",
+            "a": "La broderie donne un rendu durable et haut de gamme, parfaite sur polos, softshells et textiles épais. Le flocage convient aux petites séries et aux visuels simples. La sérigraphie est idéale pour les grandes quantités. Le DTF gère les visuels détaillés en couleurs, dégradés et photos. On choisit avec vous selon le vêtement, le visuel et le budget."
+          },
+          {
+            "q": "Les vêtements résistent-ils aux lavages répétés ?",
+            "a": "Oui, on travaille des textiles pros et des marquages pensés pour durer. Broderie et sérigraphie tiennent particulièrement bien dans le temps, y compris en lavage intensif pour les vêtements de travail et de cuisine. C'est justement le sens d'une tenue de qualité pro plutôt qu'un textile grand public."
+          },
+          {
+            "q": "Pouvez-vous habiller tous les sites d'un réseau à l'identique ?",
+            "a": "C'est notre spécialité. On produit des tenues homogènes pour l'ensemble de vos points de vente, avec le bon marquage selon chaque usage. Le siège pilote, les sites reçoivent, et les réassorts se gèrent simplement. Une seule charte respectée partout en France."
+          },
+          {
+            "q": "Intervenez-vous à Romans-sur-Isère ?",
+            "a": "Oui. Notre atelier est à Valence, à 20 minutes de Romans-sur-Isère : on récupère votre brief et votre logo, on produit, et on vous livre sur place, ou vous passez à l'atelier. Un seul interlocuteur du devis à la livraison."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Habillez votre équipe aux bonnes couleurs",
+        "body": "Envoyez-nous votre logo et votre besoin pour Romans-sur-Isère : on vous conseille le bon vêtement, la bonne technique et un devis clair. Première réponse sous 24 h.",
+        "primaryLabel": "Demander un devis"
+      },
+      "related": [
+        {
+          "label": "Signalétique",
+          "href": "/signaletique"
+        },
+        {
+          "label": "Objets publicitaires",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Textile perso : choisir le vêtement",
+          "href": "/conseils/textile-personnalise-guide"
+        },
+        {
+          "label": "Broderie, sérigraphie, flocage ou DTF ?",
+          "href": "/conseils/choisir-marquage-textile-pro"
+        }
+      ],
+      "areaServed": "Romans-sur-Isère",
+      "cityLinks": {
+        "title": "Le textile personnalisé près de chez vous",
+        "intro": "On habille aussi les équipes des villes voisines. Choisissez votre secteur.",
+        "items": [
+          {
+            "label": "Valence",
+            "href": "/textile-personnalise"
+          },
+          {
+            "label": "Montélimar",
+            "href": "/textile-personnalise-montelimar"
+          },
+          {
+            "label": "Bourg-lès-Valence",
+            "href": "/textile-personnalise-bourg-les-valence"
+          },
+          {
+            "label": "Guilherand-Granges",
+            "href": "/textile-personnalise-guilherand-granges"
+          },
+          {
+            "label": "Portes-lès-Valence",
+            "href": "/textile-personnalise-portes-les-valence"
+          },
+          {
+            "label": "Tain-l'Hermitage",
+            "href": "/textile-personnalise-tain-l-hermitage"
+          },
+          {
+            "label": "Tournon-sur-Rhône",
+            "href": "/textile-personnalise-tournon-sur-rhone"
+          }
+        ]
+      }
+    },
+    "objets-publicitaires-romans-sur-isere": {
+      "slug": "objets-publicitaires-romans-sur-isere",
+      "cat": "goodies",
+      "navLabel": "Objets publicitaires Romans-sur-Isère",
+      "meta": {
+        "title": "Objets publicitaires à Romans-sur-Isère | SecretPub",
+        "description": "Objets publicitaires et goodies personnalisés à Romans-sur-Isère (Drôme) : tote bags, mugs, gourdes, welcome packs à votre logo. Production et livraison depuis Valence."
+      },
+      "hero": {
+        "crumb": "Objets publicitaires Romans-sur-Isère",
+        "eyebrow": "Objets & goodies",
+        "h1Html": "<span class=\"mark\">Objets publicitaires</span> personnalisés à Romans-sur-Isère",
+        "sub": "Des goodies utiles à votre logo pour les entreprises et commerces de Romans-sur-Isère. Conçus, produits et livrés depuis notre atelier de Valence."
+      },
+      "intro": {
+        "eyebrow": "Le cadeau qui dure",
+        "title": "L'objet qu'on offre et qu'on garde, à Romans-sur-Isère",
+        "leadHtml": "Un bon objet publicitaire, c'est <b>votre marque qui vit au quotidien</b> à Romans-sur-Isère, longtemps après le premier contact.",
+        "bodyHtml": "<p>Entre le marché du centre, l'affluence de Marques Avenue et les nombreux événements locaux, un objet publicitaire utile prolonge votre présence bien après la visite. Pour les commerces, salons et clubs de Romans, on choisit avec vous des goodies qu'on garde et qu'on ressort.</p><p>Notre atelier est à Valence, à 20 minutes de Romans-sur-Isère : on sélectionne avec vous les objets utiles, on les personnalise à votre charte, on produit et on livre. Un seul interlocuteur pour tout, du choix des goodies au réassort.</p>"
+      },
+      "prestations": {
+        "eyebrow": "Ce que nous personnalisons",
+        "title": "Nos objets publicitaires",
+        "intro": "Des objets choisis pour être vraiment utilisés par vos clients et vos équipes à Romans-sur-Isère, personnalisés à votre logo et à votre charte.",
+        "items": [
+          {
+            "title": "Tote bags et sacs",
+            "desc": "Le sac qu’on offre, pas le vêtement qu’on porte : réutilisable et marqué à votre logo, vu dans toute la ville et gardé bien au-delà d’un événement."
+          },
+          {
+            "title": "Mugs, gourdes et bouteilles",
+            "desc": "Objets du quotidien qui restent sur les bureaux et en réunion, pour une présence de marque chaque jour."
+          },
+          {
+            "title": "Stylos, carnets et porte-clés",
+            "desc": "Les incontournables des salons et du premier contact, à distribuer largement à petit prix."
+          },
+          {
+            "title": "Clés USB et accessoires tech",
+            "desc": "Objets connectés personnalisés, parfaits pour des cadeaux pros à forte valeur perçue."
+          },
+          {
+            "title": "Magnets et objets de fidélisation",
+            "desc": "Magnets et petits objets de bureau pensés pour les commerces de proximité et la fidélisation locale."
+          },
+          {
+            "title": "Cadeaux d’affaires de fin d’année",
+            "desc": "Coffrets et attentions soignées pour remercier vos clients et partenaires en fin d’année."
+          },
+          {
+            "title": "Coffrets d’accueil et welcome packs",
+            "desc": "Kits d’accueil complets pour vos nouveaux salariés, cohérents et prêts à remettre dès le premier jour."
+          },
+          {
+            "title": "Kits événementiels de stand",
+            "desc": "Ensembles d’objets coordonnés à distribuer sur un salon ou un séminaire, tous à la même charte."
+          }
+        ]
+      },
+      "secteurs": {
+        "title": "Pour qui nous produisons",
+        "intro": "PME, commerces, événements ou associations : à Romans-sur-Isère, on choisit les objets qui collent à votre occasion et à votre budget.",
+        "items": [
+          {
+            "title": "PME et grandes équipes",
+            "desc": "Welcome packs des nouveaux arrivants et cadeaux internes pour souder et remercier vos équipes."
+          },
+          {
+            "title": "Commerçants et restaurateurs",
+            "desc": "Petits objets à offrir pour fidéliser, remercier et faire revenir vos clients réguliers."
+          },
+          {
+            "title": "Franchises et réseaux",
+            "desc": "Des goodies identiques sur tous les sites, commandés simplement et pilotés depuis le siège."
+          },
+          {
+            "title": "Événements, salons et séminaires",
+            "desc": "Kits à distribuer sur un stand et objets mémo pour marquer les esprits après l’événement."
+          },
+          {
+            "title": "Clubs de sport et associations",
+            "desc": "Objets supporters, lots de tombola et cadeaux membres pour animer votre communauté."
+          },
+          {
+            "title": "Promoteurs immobiliers",
+            "desc": "Coffrets de remise de clés et objets d’inauguration pour marquer les livraisons de programmes."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Notre méthode",
+        "title": "De l’idée à la livraison",
+        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Brief et sélection",
+            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
+          },
+          {
+            "n": "02",
+            "title": "Personnalisation et bon à tirer",
+            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
+          },
+          {
+            "n": "03",
+            "title": "Production maîtrisée",
+            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
+          },
+          {
+            "n": "04",
+            "title": "Livraison et multi-sites",
+            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
+          }
+        ]
+      },
+      "avantages": {
+        "title": "Pourquoi SecretPub",
+        "items": [
+          {
+            "title": "Un seul partenaire",
+            "desc": "Objets, signalétique, print et textile avec un seul interlocuteur : une seule charte, un seul contact, zéro aller-retour."
+          },
+          {
+            "title": "Ancrage local à Valence",
+            "desc": "Basés dans la Drôme, joignables et réactifs, avec une livraison à Valence et partout en France."
+          },
+          {
+            "title": "Pensé multi-sites",
+            "desc": "Mêmes goodies sur tous vos points de vente, commande simple pour les réseaux et les franchises."
+          },
+          {
+            "title": "Réactivité prouvée",
+            "desc": "Première réponse sous 24 h, puis des délais calés avec vous, avec une note de 5,0 sur 5 sur 102 avis Google."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Vos questions sur les objets publicitaires",
+        "items": [
+          {
+            "q": "Quelle quantité minimum pour commander des objets publicitaires ?",
+            "a": "Cela dépend de l’objet. Comptez souvent 50 à 100 pièces pour un stylo ou un tote bag, et davantage pour un objet tech. Dites-nous votre besoin et votre budget, on vous conseille la formule la plus juste."
+          },
+          {
+            "q": "Sous quels délais recevez-vous les goodies personnalisés à Romans-sur-Isère ?",
+            "a": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production. Ensuite les délais (devis, bon à tirer, production) dépendent du projet : objet, quantité et finitions, en général quelques jours à deux semaines. Pour un salon ou une date précise, prévenez-nous tôt, on cale le planning avec vous. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
+          },
+          {
+            "q": "Peut-on personnaliser les objets à notre logo et à notre charte ?",
+            "a": "Oui, c’est notre métier. On applique votre logo à vos couleurs exactes sur chaque objet, du mug à la clé USB. Envoyez-nous votre logo en bonne définition, idéalement en fichier vectoriel, et on s’occupe de tout le reste."
+          },
+          {
+            "q": "Livrez-vous en dehors de Valence et de la Drôme ?",
+            "a": "Oui. Nous sommes basés à Valence mais nous livrons dans toute l’Auvergne-Rhône-Alpes et partout en France. Pour les réseaux multi-sites, nous répartissons les mêmes goodies sur chacun de vos points de vente."
+          },
+          {
+            "q": "Combien coûte un objet publicitaire personnalisé ?",
+            "a": "Le prix varie selon l’objet, la quantité et la personnalisation. Plus la quantité est élevée, plus le prix unitaire baisse. Demandez un devis avec votre besoin et votre budget : on vous répond une première fois sous 24 h, puis les délais de devis détaillé, de bon à tirer et de production dépendent du projet."
+          },
+          {
+            "q": "Intervenez-vous à Romans-sur-Isère ?",
+            "a": "Oui. Notre atelier est à Valence, à 20 minutes de Romans-sur-Isère : on prépare votre commande, on personnalise à votre charte et on vous livre sur place. Un seul interlocuteur du devis à la livraison."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Faites circuler votre marque",
+        "body": "Dites-nous votre occasion, votre budget et vos quantités pour Romans-sur-Isère : on propose les objets utiles les plus adaptés. Première réponse sous 24 h.",
+        "primaryLabel": "Demander un devis"
+      },
+      "related": [
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/conseils/objets-publicitaires-goodies"
+        }
+      ],
+      "areaServed": "Romans-sur-Isère",
+      "cityLinks": {
+        "title": "Objets publicitaires et goodies près de chez vous",
+        "intro": "On personnalise aussi pour les villes voisines. Choisissez votre secteur.",
+        "items": [
+          {
+            "label": "Valence",
+            "href": "/objets-publicitaires"
+          },
+          {
+            "label": "Montélimar",
+            "href": "/objets-publicitaires-montelimar"
+          },
+          {
+            "label": "Bourg-lès-Valence",
+            "href": "/objets-publicitaires-bourg-les-valence"
+          },
+          {
+            "label": "Guilherand-Granges",
+            "href": "/objets-publicitaires-guilherand-granges"
+          },
+          {
+            "label": "Portes-lès-Valence",
+            "href": "/objets-publicitaires-portes-les-valence"
+          },
+          {
+            "label": "Tain-l'Hermitage",
+            "href": "/objets-publicitaires-tain-l-hermitage"
+          },
+          {
+            "label": "Tournon-sur-Rhône",
+            "href": "/objets-publicitaires-tournon-sur-rhone"
+          }
+        ]
+      }
+    },
+    "textile-personnalise-montelimar": {
+      "slug": "textile-personnalise-montelimar",
+      "cat": "textile",
+      "navLabel": "Textile Montélimar",
+      "meta": {
+        "title": "Textile personnalisé à Montélimar | SecretPub",
+        "description": "Textile personnalisé à Montélimar (Drôme) : t-shirts, polos, vêtements de travail et EPI marqués en broderie, flocage ou sérigraphie. Conçu, produit et livré depuis Valence."
+      },
+      "hero": {
+        "crumb": "Textile Montélimar",
+        "eyebrow": "Textile personnalisé à Montélimar",
+        "h1Html": "Le <span class=\"mark\">textile personnalisé à Montélimar</span> pour habiller votre équipe",
+        "sub": "T-shirts, polos, vêtements de travail et tenues marqués à votre logo pour les professionnels de Montélimar. On conçoit, on produit et on livre depuis notre atelier de Valence."
+      },
+      "intro": {
+        "eyebrow": "Votre équipe à vos couleurs",
+        "title": "Des tenues marquées pour les pros de Montélimar",
+        "leadHtml": "À Montélimar, une tenue d'équipe soignée en dit long sur votre sérieux : <b>autant qu'elle tienne, et que le logo reste net lavage après lavage.</b>",
+        "bodyHtml": "<p>Capitale du nougat et porte de la Provence, Montélimar vit du commerce, du tourisme et de l'artisanat. Vêtements de travail et EPI pour les artisans des zones d'activité, tenues d'accueil pour les commerces du centre et les restaurateurs : on marque du solide, pensé pour le terrain.</p><p>Notre atelier est à Valence, à 30 minutes de Montélimar : on vous conseille le bon vêtement et la bonne technique (broderie, flocage, sérigraphie ou DTF), on produit, puis on vous livre sur place ou vous passez récupérer. Un seul interlocuteur, du choix de la matière à la livraison.</p>"
+      },
+      "prestations": {
+        "eyebrow": "Nos prestations",
+        "title": "Ce qu'on personnalise pour vous",
+        "intro": "Chaque marquage est pensé pour l'usage réel de vos équipes à Montélimar : la matière, la technique et le rendu qui tiennent dans le temps.",
+        "items": [
+          {
+            "title": "T-shirts, polos et sweats",
+            "desc": "Le trio de base à votre charte pour uniformiser une équipe, de l'accueil au service, sur des textiles qui tiennent au lavage."
+          },
+          {
+            "title": "Softshells, vestes et bodywarmers",
+            "desc": "Des pièces chaudes et présentables pour l'accueil, le terrain et les événements en extérieur, marquées à votre logo."
+          },
+          {
+            "title": "Vêtements de travail et EPI",
+            "desc": "Tenues de chantier et EPI marqués, résistants et durables, taillés pour les artisans et le bâtiment au quotidien."
+          },
+          {
+            "title": "Tabliers et tenues restauration",
+            "desc": "Tabliers, vestes et tenues brodées pour la salle, la cuisine et les métiers de bouche, propres et professionnels."
+          },
+          {
+            "title": "Maillots et textiles de sport",
+            "desc": "Maillots, survêtements et textiles de sport pour clubs, équipes et événements, avec numéros, noms et sponsors."
+          },
+          {
+            "title": "Casquettes et accessoires brodés",
+            "desc": "Casquettes, bonnets et accessoires brodés portés par l'équipe, en complément de la tenue, pour une image cohérente."
+          },
+          {
+            "title": "Impression DTF pour visuels détaillés",
+            "desc": "Impression numérique DTF pour les logos en couleurs, dégradés et visuels photo, nets sur t-shirts et textiles clairs."
+          },
+          {
+            "title": "Habillage complet d'un réseau",
+            "desc": "Du siège aux points de vente, on habille tous vos sites à l'identique avec le bon marquage selon chaque usage."
+          }
+        ]
+      },
+      "secteurs": {
+        "title": "Pour qui on personnalise du textile",
+        "intro": "Restaurateurs, artisans, clubs ou commerces : à Montélimar, on adapte le vêtement et le marquage à chaque activité et à chaque budget.",
+        "items": [
+          {
+            "title": "Restaurateurs et hôtellerie",
+            "desc": "Tenues de salle et de cuisine, tabliers et polos brodés pour une équipe propre, reconnaissable et professionnelle."
+          },
+          {
+            "title": "Artisans et bâtiment",
+            "desc": "Vêtements de travail et EPI haute visibilité floqués, résistants au chantier et au lavage intensif."
+          },
+          {
+            "title": "Clubs de sport et associations",
+            "desc": "Maillots, survêtements et t-shirts d'équipe avec numéros, noms et logos de sponsors, prêts pour la saison."
+          },
+          {
+            "title": "Beauté, spas et coiffeurs",
+            "desc": "Tuniques, tabliers et tenues d'accueil brodées, sobres et élégantes, à la charte de votre institut."
+          },
+          {
+            "title": "Franchises et réseaux",
+            "desc": "Habillage identique de tous les points de vente, piloté depuis le siège, pour une image homogène partout."
+          },
+          {
+            "title": "PME et commerces",
+            "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Notre méthode",
+        "title": "De votre logo à la tenue livrée",
+        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Brief et conseil",
+            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
+          },
+          {
+            "n": "02",
+            "title": "Bon à tirer à valider",
+            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
+          },
+          {
+            "n": "03",
+            "title": "Production maîtrisée",
+            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
+          },
+          {
+            "n": "04",
+            "title": "Livraison et réassort",
+            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
+          }
+        ]
+      },
+      "avantages": {
+        "title": "Pourquoi nous confier votre textile",
+        "items": [
+          {
+            "title": "Un seul partenaire",
+            "desc": "Textile, signalétique, print, objets et packaging avec un seul interlocuteur : une seule charte, un seul contact, une seule facture."
+          },
+          {
+            "title": "Ancrage local",
+            "desc": "Basés à Valence, dans la Drôme : on vous répond une première fois sous 24 h et on reste joignables, pour vos tenues comme pour vos réassorts."
+          },
+          {
+            "title": "Pensé multi-sites",
+            "desc": "Idéal pour les réseaux : tenues identiques sur tous les points de vente, pilotées simplement depuis le siège."
+          },
+          {
+            "title": "Note 5,0 sur 102 avis",
+            "desc": "Une note Google de 5,0/5 sur 102 avis : nos clients reviennent pour la qualité des tenues et le suivi."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Vos questions sur le textile personnalisé",
+        "items": [
+          {
+            "q": "Quel est le délai pour des vêtements personnalisés à Montélimar ?",
+            "a": "On vous répond une première fois sous 24 h. Ensuite, les délais (devis, bon à tirer, production) dépendent du projet : le support, la quantité et les finitions. Après validation du bon à tirer, comptez généralement quelques jours à deux semaines selon la technique et la quantité. Pour un besoin urgent (événement, salon), dites-le nous dès le brief : on cale le planning avec vous. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
+          },
+          {
+            "q": "Y a-t-il une quantité minimum de commande ?",
+            "a": "Non, on s'adapte à votre besoin réel, d'une petite série pour une équipe à plusieurs centaines de pièces pour un réseau. La technique de marquage varie selon la quantité et le visuel : flocage pour les petites séries, DTF pour les visuels détaillés en couleurs, sérigraphie pour les gros volumes. On vous oriente vers le plus pertinent."
+          },
+          {
+            "q": "Quelle technique choisir : broderie, flocage ou sérigraphie ?",
+            "a": "La broderie donne un rendu durable et haut de gamme, parfaite sur polos, softshells et textiles épais. Le flocage convient aux petites séries et aux visuels simples. La sérigraphie est idéale pour les grandes quantités. Le DTF gère les visuels détaillés en couleurs, dégradés et photos. On choisit avec vous selon le vêtement, le visuel et le budget."
+          },
+          {
+            "q": "Les vêtements résistent-ils aux lavages répétés ?",
+            "a": "Oui, on travaille des textiles pros et des marquages pensés pour durer. Broderie et sérigraphie tiennent particulièrement bien dans le temps, y compris en lavage intensif pour les vêtements de travail et de cuisine. C'est justement le sens d'une tenue de qualité pro plutôt qu'un textile grand public."
+          },
+          {
+            "q": "Pouvez-vous habiller tous les sites d'un réseau à l'identique ?",
+            "a": "C'est notre spécialité. On produit des tenues homogènes pour l'ensemble de vos points de vente, avec le bon marquage selon chaque usage. Le siège pilote, les sites reçoivent, et les réassorts se gèrent simplement. Une seule charte respectée partout en France."
+          },
+          {
+            "q": "Intervenez-vous à Montélimar ?",
+            "a": "Oui. Notre atelier est à Valence, à 30 minutes de Montélimar : on récupère votre brief et votre logo, on produit, et on vous livre sur place, ou vous passez à l'atelier. Un seul interlocuteur du devis à la livraison."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Habillez votre équipe aux bonnes couleurs",
+        "body": "Envoyez-nous votre logo et votre besoin pour Montélimar : on vous conseille le bon vêtement, la bonne technique et un devis clair. Première réponse sous 24 h.",
+        "primaryLabel": "Demander un devis"
+      },
+      "related": [
+        {
+          "label": "Signalétique",
+          "href": "/signaletique"
+        },
+        {
+          "label": "Objets publicitaires",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Textile perso : choisir le vêtement",
+          "href": "/conseils/textile-personnalise-guide"
+        },
+        {
+          "label": "Broderie, sérigraphie, flocage ou DTF ?",
+          "href": "/conseils/choisir-marquage-textile-pro"
+        }
+      ],
+      "areaServed": "Montélimar",
+      "cityLinks": {
+        "title": "Le textile personnalisé près de chez vous",
+        "intro": "On habille aussi les équipes des villes voisines. Choisissez votre secteur.",
+        "items": [
+          {
+            "label": "Valence",
+            "href": "/textile-personnalise"
+          },
+          {
+            "label": "Romans-sur-Isère",
+            "href": "/textile-personnalise-romans-sur-isere"
+          },
+          {
+            "label": "Bourg-lès-Valence",
+            "href": "/textile-personnalise-bourg-les-valence"
+          },
+          {
+            "label": "Guilherand-Granges",
+            "href": "/textile-personnalise-guilherand-granges"
+          },
+          {
+            "label": "Portes-lès-Valence",
+            "href": "/textile-personnalise-portes-les-valence"
+          },
+          {
+            "label": "Tain-l'Hermitage",
+            "href": "/textile-personnalise-tain-l-hermitage"
+          },
+          {
+            "label": "Tournon-sur-Rhône",
+            "href": "/textile-personnalise-tournon-sur-rhone"
+          }
+        ]
+      }
+    },
+    "objets-publicitaires-montelimar": {
+      "slug": "objets-publicitaires-montelimar",
+      "cat": "goodies",
+      "navLabel": "Objets publicitaires Montélimar",
+      "meta": {
+        "title": "Objets publicitaires à Montélimar | SecretPub",
+        "description": "Objets publicitaires et goodies personnalisés à Montélimar (Drôme) : tote bags, mugs, gourdes, welcome packs à votre logo. Production et livraison depuis Valence."
+      },
+      "hero": {
+        "crumb": "Objets publicitaires Montélimar",
+        "eyebrow": "Objets & goodies",
+        "h1Html": "<span class=\"mark\">Objets publicitaires</span> personnalisés à Montélimar",
+        "sub": "Des goodies utiles à votre logo pour les entreprises et commerces de Montélimar. Conçus, produits et livrés depuis notre atelier de Valence."
+      },
+      "intro": {
+        "eyebrow": "Le cadeau qui dure",
+        "title": "L'objet qu'on offre et qu'on garde, à Montélimar",
+        "leadHtml": "Un bon objet publicitaire, c'est <b>votre marque qui vit au quotidien</b> à Montélimar, longtemps après le premier contact.",
+        "bodyHtml": "<p>Avec le passage touristique de la porte de Provence et un tissu dense de commerces et de PME, l'objet publicitaire utile garde votre marque en main longtemps. Welcome packs, goodies de salon et cadeaux d'affaires pour Montélimar et son agglomération.</p><p>Notre atelier est à Valence, à 30 minutes de Montélimar : on sélectionne avec vous les objets utiles, on les personnalise à votre charte, on produit et on livre. Un seul interlocuteur pour tout, du choix des goodies au réassort.</p>"
+      },
+      "prestations": {
+        "eyebrow": "Ce que nous personnalisons",
+        "title": "Nos objets publicitaires",
+        "intro": "Des objets choisis pour être vraiment utilisés par vos clients et vos équipes à Montélimar, personnalisés à votre logo et à votre charte.",
+        "items": [
+          {
+            "title": "Tote bags et sacs",
+            "desc": "Le sac qu’on offre, pas le vêtement qu’on porte : réutilisable et marqué à votre logo, vu dans toute la ville et gardé bien au-delà d’un événement."
+          },
+          {
+            "title": "Mugs, gourdes et bouteilles",
+            "desc": "Objets du quotidien qui restent sur les bureaux et en réunion, pour une présence de marque chaque jour."
+          },
+          {
+            "title": "Stylos, carnets et porte-clés",
+            "desc": "Les incontournables des salons et du premier contact, à distribuer largement à petit prix."
+          },
+          {
+            "title": "Clés USB et accessoires tech",
+            "desc": "Objets connectés personnalisés, parfaits pour des cadeaux pros à forte valeur perçue."
+          },
+          {
+            "title": "Magnets et objets de fidélisation",
+            "desc": "Magnets et petits objets de bureau pensés pour les commerces de proximité et la fidélisation locale."
+          },
+          {
+            "title": "Cadeaux d’affaires de fin d’année",
+            "desc": "Coffrets et attentions soignées pour remercier vos clients et partenaires en fin d’année."
+          },
+          {
+            "title": "Coffrets d’accueil et welcome packs",
+            "desc": "Kits d’accueil complets pour vos nouveaux salariés, cohérents et prêts à remettre dès le premier jour."
+          },
+          {
+            "title": "Kits événementiels de stand",
+            "desc": "Ensembles d’objets coordonnés à distribuer sur un salon ou un séminaire, tous à la même charte."
+          }
+        ]
+      },
+      "secteurs": {
+        "title": "Pour qui nous produisons",
+        "intro": "PME, commerces, événements ou associations : à Montélimar, on choisit les objets qui collent à votre occasion et à votre budget.",
+        "items": [
+          {
+            "title": "PME et grandes équipes",
+            "desc": "Welcome packs des nouveaux arrivants et cadeaux internes pour souder et remercier vos équipes."
+          },
+          {
+            "title": "Commerçants et restaurateurs",
+            "desc": "Petits objets à offrir pour fidéliser, remercier et faire revenir vos clients réguliers."
+          },
+          {
+            "title": "Franchises et réseaux",
+            "desc": "Des goodies identiques sur tous les sites, commandés simplement et pilotés depuis le siège."
+          },
+          {
+            "title": "Événements, salons et séminaires",
+            "desc": "Kits à distribuer sur un stand et objets mémo pour marquer les esprits après l’événement."
+          },
+          {
+            "title": "Clubs de sport et associations",
+            "desc": "Objets supporters, lots de tombola et cadeaux membres pour animer votre communauté."
+          },
+          {
+            "title": "Promoteurs immobiliers",
+            "desc": "Coffrets de remise de clés et objets d’inauguration pour marquer les livraisons de programmes."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Notre méthode",
+        "title": "De l’idée à la livraison",
+        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Brief et sélection",
+            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
+          },
+          {
+            "n": "02",
+            "title": "Personnalisation et bon à tirer",
+            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
+          },
+          {
+            "n": "03",
+            "title": "Production maîtrisée",
+            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
+          },
+          {
+            "n": "04",
+            "title": "Livraison et multi-sites",
+            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
+          }
+        ]
+      },
+      "avantages": {
+        "title": "Pourquoi SecretPub",
+        "items": [
+          {
+            "title": "Un seul partenaire",
+            "desc": "Objets, signalétique, print et textile avec un seul interlocuteur : une seule charte, un seul contact, zéro aller-retour."
+          },
+          {
+            "title": "Ancrage local à Valence",
+            "desc": "Basés dans la Drôme, joignables et réactifs, avec une livraison à Valence et partout en France."
+          },
+          {
+            "title": "Pensé multi-sites",
+            "desc": "Mêmes goodies sur tous vos points de vente, commande simple pour les réseaux et les franchises."
+          },
+          {
+            "title": "Réactivité prouvée",
+            "desc": "Première réponse sous 24 h, puis des délais calés avec vous, avec une note de 5,0 sur 5 sur 102 avis Google."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Vos questions sur les objets publicitaires",
+        "items": [
+          {
+            "q": "Quelle quantité minimum pour commander des objets publicitaires ?",
+            "a": "Cela dépend de l’objet. Comptez souvent 50 à 100 pièces pour un stylo ou un tote bag, et davantage pour un objet tech. Dites-nous votre besoin et votre budget, on vous conseille la formule la plus juste."
+          },
+          {
+            "q": "Sous quels délais recevez-vous les goodies personnalisés à Montélimar ?",
+            "a": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production. Ensuite les délais (devis, bon à tirer, production) dépendent du projet : objet, quantité et finitions, en général quelques jours à deux semaines. Pour un salon ou une date précise, prévenez-nous tôt, on cale le planning avec vous. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
+          },
+          {
+            "q": "Peut-on personnaliser les objets à notre logo et à notre charte ?",
+            "a": "Oui, c’est notre métier. On applique votre logo à vos couleurs exactes sur chaque objet, du mug à la clé USB. Envoyez-nous votre logo en bonne définition, idéalement en fichier vectoriel, et on s’occupe de tout le reste."
+          },
+          {
+            "q": "Livrez-vous en dehors de Valence et de la Drôme ?",
+            "a": "Oui. Nous sommes basés à Valence mais nous livrons dans toute l’Auvergne-Rhône-Alpes et partout en France. Pour les réseaux multi-sites, nous répartissons les mêmes goodies sur chacun de vos points de vente."
+          },
+          {
+            "q": "Combien coûte un objet publicitaire personnalisé ?",
+            "a": "Le prix varie selon l’objet, la quantité et la personnalisation. Plus la quantité est élevée, plus le prix unitaire baisse. Demandez un devis avec votre besoin et votre budget : on vous répond une première fois sous 24 h, puis les délais de devis détaillé, de bon à tirer et de production dépendent du projet."
+          },
+          {
+            "q": "Intervenez-vous à Montélimar ?",
+            "a": "Oui. Notre atelier est à Valence, à 30 minutes de Montélimar : on prépare votre commande, on personnalise à votre charte et on vous livre sur place. Un seul interlocuteur du devis à la livraison."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Faites circuler votre marque",
+        "body": "Dites-nous votre occasion, votre budget et vos quantités pour Montélimar : on propose les objets utiles les plus adaptés. Première réponse sous 24 h.",
+        "primaryLabel": "Demander un devis"
+      },
+      "related": [
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/conseils/objets-publicitaires-goodies"
+        }
+      ],
+      "areaServed": "Montélimar",
+      "cityLinks": {
+        "title": "Objets publicitaires et goodies près de chez vous",
+        "intro": "On personnalise aussi pour les villes voisines. Choisissez votre secteur.",
+        "items": [
+          {
+            "label": "Valence",
+            "href": "/objets-publicitaires"
+          },
+          {
+            "label": "Romans-sur-Isère",
+            "href": "/objets-publicitaires-romans-sur-isere"
+          },
+          {
+            "label": "Bourg-lès-Valence",
+            "href": "/objets-publicitaires-bourg-les-valence"
+          },
+          {
+            "label": "Guilherand-Granges",
+            "href": "/objets-publicitaires-guilherand-granges"
+          },
+          {
+            "label": "Portes-lès-Valence",
+            "href": "/objets-publicitaires-portes-les-valence"
+          },
+          {
+            "label": "Tain-l'Hermitage",
+            "href": "/objets-publicitaires-tain-l-hermitage"
+          },
+          {
+            "label": "Tournon-sur-Rhône",
+            "href": "/objets-publicitaires-tournon-sur-rhone"
+          }
+        ]
+      }
+    },
+    "textile-personnalise-bourg-les-valence": {
+      "slug": "textile-personnalise-bourg-les-valence",
+      "cat": "textile",
+      "navLabel": "Textile Bourg-lès-Valence",
+      "meta": {
+        "title": "Textile personnalisé à Bourg-lès-Valence | SecretPub",
+        "description": "Textile personnalisé à Bourg-lès-Valence (Drôme) : t-shirts, polos, vêtements de travail et EPI marqués en broderie, flocage ou sérigraphie. Conçu, produit et livré depuis Valence."
+      },
+      "hero": {
+        "crumb": "Textile Bourg-lès-Valence",
+        "eyebrow": "Textile personnalisé à Bourg-lès-Valence",
+        "h1Html": "Le <span class=\"mark\">textile personnalisé à Bourg-lès-Valence</span> pour habiller votre équipe",
+        "sub": "T-shirts, polos, vêtements de travail et tenues marqués à votre logo pour les professionnels de Bourg-lès-Valence. On conçoit, on produit et on livre depuis notre atelier de Valence."
+      },
+      "intro": {
+        "eyebrow": "Votre équipe à vos couleurs",
+        "title": "Des tenues marquées pour les pros de Bourg-lès-Valence",
+        "leadHtml": "À Bourg-lès-Valence, une tenue d'équipe soignée en dit long sur votre sérieux : <b>autant qu'elle tienne, et que le logo reste net lavage après lavage.</b>",
+        "bodyHtml": "<p>Dans le prolongement direct de Valence, Bourg-lès-Valence concentre commerces de proximité et entreprises sur ses zones d'activité comme Mauboule ou les Îles. À quelques minutes de notre atelier, on habille vos équipes vite et bien, sans logistique compliquée.</p><p>Notre atelier est à Valence, à quelques minutes de Bourg-lès-Valence : on vous conseille le bon vêtement et la bonne technique (broderie, flocage, sérigraphie ou DTF), on produit, puis on vous livre sur place ou vous passez récupérer. Un seul interlocuteur, du choix de la matière à la livraison.</p>"
+      },
+      "prestations": {
+        "eyebrow": "Nos prestations",
+        "title": "Ce qu'on personnalise pour vous",
+        "intro": "Chaque marquage est pensé pour l'usage réel de vos équipes à Bourg-lès-Valence : la matière, la technique et le rendu qui tiennent dans le temps.",
+        "items": [
+          {
+            "title": "T-shirts, polos et sweats",
+            "desc": "Le trio de base à votre charte pour uniformiser une équipe, de l'accueil au service, sur des textiles qui tiennent au lavage."
+          },
+          {
+            "title": "Softshells, vestes et bodywarmers",
+            "desc": "Des pièces chaudes et présentables pour l'accueil, le terrain et les événements en extérieur, marquées à votre logo."
+          },
+          {
+            "title": "Vêtements de travail et EPI",
+            "desc": "Tenues de chantier et EPI marqués, résistants et durables, taillés pour les artisans et le bâtiment au quotidien."
+          },
+          {
+            "title": "Tabliers et tenues restauration",
+            "desc": "Tabliers, vestes et tenues brodées pour la salle, la cuisine et les métiers de bouche, propres et professionnels."
+          },
+          {
+            "title": "Maillots et textiles de sport",
+            "desc": "Maillots, survêtements et textiles de sport pour clubs, équipes et événements, avec numéros, noms et sponsors."
+          },
+          {
+            "title": "Casquettes et accessoires brodés",
+            "desc": "Casquettes, bonnets et accessoires brodés portés par l'équipe, en complément de la tenue, pour une image cohérente."
+          },
+          {
+            "title": "Impression DTF pour visuels détaillés",
+            "desc": "Impression numérique DTF pour les logos en couleurs, dégradés et visuels photo, nets sur t-shirts et textiles clairs."
+          },
+          {
+            "title": "Habillage complet d'un réseau",
+            "desc": "Du siège aux points de vente, on habille tous vos sites à l'identique avec le bon marquage selon chaque usage."
+          }
+        ]
+      },
+      "secteurs": {
+        "title": "Pour qui on personnalise du textile",
+        "intro": "Restaurateurs, artisans, clubs ou commerces : à Bourg-lès-Valence, on adapte le vêtement et le marquage à chaque activité et à chaque budget.",
+        "items": [
+          {
+            "title": "Restaurateurs et hôtellerie",
+            "desc": "Tenues de salle et de cuisine, tabliers et polos brodés pour une équipe propre, reconnaissable et professionnelle."
+          },
+          {
+            "title": "Artisans et bâtiment",
+            "desc": "Vêtements de travail et EPI haute visibilité floqués, résistants au chantier et au lavage intensif."
+          },
+          {
+            "title": "Clubs de sport et associations",
+            "desc": "Maillots, survêtements et t-shirts d'équipe avec numéros, noms et logos de sponsors, prêts pour la saison."
+          },
+          {
+            "title": "Beauté, spas et coiffeurs",
+            "desc": "Tuniques, tabliers et tenues d'accueil brodées, sobres et élégantes, à la charte de votre institut."
+          },
+          {
+            "title": "Franchises et réseaux",
+            "desc": "Habillage identique de tous les points de vente, piloté depuis le siège, pour une image homogène partout."
+          },
+          {
+            "title": "PME et commerces",
+            "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Notre méthode",
+        "title": "De votre logo à la tenue livrée",
+        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Brief et conseil",
+            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
+          },
+          {
+            "n": "02",
+            "title": "Bon à tirer à valider",
+            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
+          },
+          {
+            "n": "03",
+            "title": "Production maîtrisée",
+            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
+          },
+          {
+            "n": "04",
+            "title": "Livraison et réassort",
+            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
+          }
+        ]
+      },
+      "avantages": {
+        "title": "Pourquoi nous confier votre textile",
+        "items": [
+          {
+            "title": "Un seul partenaire",
+            "desc": "Textile, signalétique, print, objets et packaging avec un seul interlocuteur : une seule charte, un seul contact, une seule facture."
+          },
+          {
+            "title": "Ancrage local",
+            "desc": "Basés à Valence, dans la Drôme : on vous répond une première fois sous 24 h et on reste joignables, pour vos tenues comme pour vos réassorts."
+          },
+          {
+            "title": "Pensé multi-sites",
+            "desc": "Idéal pour les réseaux : tenues identiques sur tous les points de vente, pilotées simplement depuis le siège."
+          },
+          {
+            "title": "Note 5,0 sur 102 avis",
+            "desc": "Une note Google de 5,0/5 sur 102 avis : nos clients reviennent pour la qualité des tenues et le suivi."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Vos questions sur le textile personnalisé",
+        "items": [
+          {
+            "q": "Quel est le délai pour des vêtements personnalisés à Bourg-lès-Valence ?",
+            "a": "On vous répond une première fois sous 24 h. Ensuite, les délais (devis, bon à tirer, production) dépendent du projet : le support, la quantité et les finitions. Après validation du bon à tirer, comptez généralement quelques jours à deux semaines selon la technique et la quantité. Pour un besoin urgent (événement, salon), dites-le nous dès le brief : on cale le planning avec vous. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
+          },
+          {
+            "q": "Y a-t-il une quantité minimum de commande ?",
+            "a": "Non, on s'adapte à votre besoin réel, d'une petite série pour une équipe à plusieurs centaines de pièces pour un réseau. La technique de marquage varie selon la quantité et le visuel : flocage pour les petites séries, DTF pour les visuels détaillés en couleurs, sérigraphie pour les gros volumes. On vous oriente vers le plus pertinent."
+          },
+          {
+            "q": "Quelle technique choisir : broderie, flocage ou sérigraphie ?",
+            "a": "La broderie donne un rendu durable et haut de gamme, parfaite sur polos, softshells et textiles épais. Le flocage convient aux petites séries et aux visuels simples. La sérigraphie est idéale pour les grandes quantités. Le DTF gère les visuels détaillés en couleurs, dégradés et photos. On choisit avec vous selon le vêtement, le visuel et le budget."
+          },
+          {
+            "q": "Les vêtements résistent-ils aux lavages répétés ?",
+            "a": "Oui, on travaille des textiles pros et des marquages pensés pour durer. Broderie et sérigraphie tiennent particulièrement bien dans le temps, y compris en lavage intensif pour les vêtements de travail et de cuisine. C'est justement le sens d'une tenue de qualité pro plutôt qu'un textile grand public."
+          },
+          {
+            "q": "Pouvez-vous habiller tous les sites d'un réseau à l'identique ?",
+            "a": "C'est notre spécialité. On produit des tenues homogènes pour l'ensemble de vos points de vente, avec le bon marquage selon chaque usage. Le siège pilote, les sites reçoivent, et les réassorts se gèrent simplement. Une seule charte respectée partout en France."
+          },
+          {
+            "q": "Intervenez-vous à Bourg-lès-Valence ?",
+            "a": "Oui. Notre atelier est à Valence, à quelques minutes de Bourg-lès-Valence : on récupère votre brief et votre logo, on produit, et on vous livre sur place, ou vous passez à l'atelier. Un seul interlocuteur du devis à la livraison."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Habillez votre équipe aux bonnes couleurs",
+        "body": "Envoyez-nous votre logo et votre besoin pour Bourg-lès-Valence : on vous conseille le bon vêtement, la bonne technique et un devis clair. Première réponse sous 24 h.",
+        "primaryLabel": "Demander un devis"
+      },
+      "related": [
+        {
+          "label": "Signalétique",
+          "href": "/signaletique"
+        },
+        {
+          "label": "Objets publicitaires",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Textile perso : choisir le vêtement",
+          "href": "/conseils/textile-personnalise-guide"
+        },
+        {
+          "label": "Broderie, sérigraphie, flocage ou DTF ?",
+          "href": "/conseils/choisir-marquage-textile-pro"
+        }
+      ],
+      "areaServed": "Bourg-lès-Valence",
+      "cityLinks": {
+        "title": "Le textile personnalisé près de chez vous",
+        "intro": "On habille aussi les équipes des villes voisines. Choisissez votre secteur.",
+        "items": [
+          {
+            "label": "Valence",
+            "href": "/textile-personnalise"
+          },
+          {
+            "label": "Romans-sur-Isère",
+            "href": "/textile-personnalise-romans-sur-isere"
+          },
+          {
+            "label": "Montélimar",
+            "href": "/textile-personnalise-montelimar"
+          },
+          {
+            "label": "Guilherand-Granges",
+            "href": "/textile-personnalise-guilherand-granges"
+          },
+          {
+            "label": "Portes-lès-Valence",
+            "href": "/textile-personnalise-portes-les-valence"
+          },
+          {
+            "label": "Tain-l'Hermitage",
+            "href": "/textile-personnalise-tain-l-hermitage"
+          },
+          {
+            "label": "Tournon-sur-Rhône",
+            "href": "/textile-personnalise-tournon-sur-rhone"
+          }
+        ]
+      }
+    },
+    "objets-publicitaires-bourg-les-valence": {
+      "slug": "objets-publicitaires-bourg-les-valence",
+      "cat": "goodies",
+      "navLabel": "Objets publicitaires Bourg-lès-Valence",
+      "meta": {
+        "title": "Objets publicitaires à Bourg-lès-Valence | SecretPub",
+        "description": "Objets publicitaires et goodies personnalisés à Bourg-lès-Valence (Drôme) : tote bags, mugs, gourdes, welcome packs à votre logo. Production et livraison depuis Valence."
+      },
+      "hero": {
+        "crumb": "Objets publicitaires Bourg-lès-Valence",
+        "eyebrow": "Objets & goodies",
+        "h1Html": "<span class=\"mark\">Objets publicitaires</span> personnalisés à Bourg-lès-Valence",
+        "sub": "Des goodies utiles à votre logo pour les entreprises et commerces de Bourg-lès-Valence. Conçus, produits et livrés depuis notre atelier de Valence."
+      },
+      "intro": {
+        "eyebrow": "Le cadeau qui dure",
+        "title": "L'objet qu'on offre et qu'on garde, à Bourg-lès-Valence",
+        "leadHtml": "Un bon objet publicitaire, c'est <b>votre marque qui vit au quotidien</b> à Bourg-lès-Valence, longtemps après le premier contact.",
+        "bodyHtml": "<p>Commerces de quartier, PME des zones d'activité, associations : à Bourg-lès-Valence, à cinq minutes de notre atelier, on livre vite des objets publicitaires utiles et personnalisés à votre logo.</p><p>Notre atelier est à Valence, à quelques minutes de Bourg-lès-Valence : on sélectionne avec vous les objets utiles, on les personnalise à votre charte, on produit et on livre. Un seul interlocuteur pour tout, du choix des goodies au réassort.</p>"
+      },
+      "prestations": {
+        "eyebrow": "Ce que nous personnalisons",
+        "title": "Nos objets publicitaires",
+        "intro": "Des objets choisis pour être vraiment utilisés par vos clients et vos équipes à Bourg-lès-Valence, personnalisés à votre logo et à votre charte.",
+        "items": [
+          {
+            "title": "Tote bags et sacs",
+            "desc": "Le sac qu’on offre, pas le vêtement qu’on porte : réutilisable et marqué à votre logo, vu dans toute la ville et gardé bien au-delà d’un événement."
+          },
+          {
+            "title": "Mugs, gourdes et bouteilles",
+            "desc": "Objets du quotidien qui restent sur les bureaux et en réunion, pour une présence de marque chaque jour."
+          },
+          {
+            "title": "Stylos, carnets et porte-clés",
+            "desc": "Les incontournables des salons et du premier contact, à distribuer largement à petit prix."
+          },
+          {
+            "title": "Clés USB et accessoires tech",
+            "desc": "Objets connectés personnalisés, parfaits pour des cadeaux pros à forte valeur perçue."
+          },
+          {
+            "title": "Magnets et objets de fidélisation",
+            "desc": "Magnets et petits objets de bureau pensés pour les commerces de proximité et la fidélisation locale."
+          },
+          {
+            "title": "Cadeaux d’affaires de fin d’année",
+            "desc": "Coffrets et attentions soignées pour remercier vos clients et partenaires en fin d’année."
+          },
+          {
+            "title": "Coffrets d’accueil et welcome packs",
+            "desc": "Kits d’accueil complets pour vos nouveaux salariés, cohérents et prêts à remettre dès le premier jour."
+          },
+          {
+            "title": "Kits événementiels de stand",
+            "desc": "Ensembles d’objets coordonnés à distribuer sur un salon ou un séminaire, tous à la même charte."
+          }
+        ]
+      },
+      "secteurs": {
+        "title": "Pour qui nous produisons",
+        "intro": "PME, commerces, événements ou associations : à Bourg-lès-Valence, on choisit les objets qui collent à votre occasion et à votre budget.",
+        "items": [
+          {
+            "title": "PME et grandes équipes",
+            "desc": "Welcome packs des nouveaux arrivants et cadeaux internes pour souder et remercier vos équipes."
+          },
+          {
+            "title": "Commerçants et restaurateurs",
+            "desc": "Petits objets à offrir pour fidéliser, remercier et faire revenir vos clients réguliers."
+          },
+          {
+            "title": "Franchises et réseaux",
+            "desc": "Des goodies identiques sur tous les sites, commandés simplement et pilotés depuis le siège."
+          },
+          {
+            "title": "Événements, salons et séminaires",
+            "desc": "Kits à distribuer sur un stand et objets mémo pour marquer les esprits après l’événement."
+          },
+          {
+            "title": "Clubs de sport et associations",
+            "desc": "Objets supporters, lots de tombola et cadeaux membres pour animer votre communauté."
+          },
+          {
+            "title": "Promoteurs immobiliers",
+            "desc": "Coffrets de remise de clés et objets d’inauguration pour marquer les livraisons de programmes."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Notre méthode",
+        "title": "De l’idée à la livraison",
+        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Brief et sélection",
+            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
+          },
+          {
+            "n": "02",
+            "title": "Personnalisation et bon à tirer",
+            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
+          },
+          {
+            "n": "03",
+            "title": "Production maîtrisée",
+            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
+          },
+          {
+            "n": "04",
+            "title": "Livraison et multi-sites",
+            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
+          }
+        ]
+      },
+      "avantages": {
+        "title": "Pourquoi SecretPub",
+        "items": [
+          {
+            "title": "Un seul partenaire",
+            "desc": "Objets, signalétique, print et textile avec un seul interlocuteur : une seule charte, un seul contact, zéro aller-retour."
+          },
+          {
+            "title": "Ancrage local à Valence",
+            "desc": "Basés dans la Drôme, joignables et réactifs, avec une livraison à Valence et partout en France."
+          },
+          {
+            "title": "Pensé multi-sites",
+            "desc": "Mêmes goodies sur tous vos points de vente, commande simple pour les réseaux et les franchises."
+          },
+          {
+            "title": "Réactivité prouvée",
+            "desc": "Première réponse sous 24 h, puis des délais calés avec vous, avec une note de 5,0 sur 5 sur 102 avis Google."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Vos questions sur les objets publicitaires",
+        "items": [
+          {
+            "q": "Quelle quantité minimum pour commander des objets publicitaires ?",
+            "a": "Cela dépend de l’objet. Comptez souvent 50 à 100 pièces pour un stylo ou un tote bag, et davantage pour un objet tech. Dites-nous votre besoin et votre budget, on vous conseille la formule la plus juste."
+          },
+          {
+            "q": "Sous quels délais recevez-vous les goodies personnalisés à Bourg-lès-Valence ?",
+            "a": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production. Ensuite les délais (devis, bon à tirer, production) dépendent du projet : objet, quantité et finitions, en général quelques jours à deux semaines. Pour un salon ou une date précise, prévenez-nous tôt, on cale le planning avec vous. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
+          },
+          {
+            "q": "Peut-on personnaliser les objets à notre logo et à notre charte ?",
+            "a": "Oui, c’est notre métier. On applique votre logo à vos couleurs exactes sur chaque objet, du mug à la clé USB. Envoyez-nous votre logo en bonne définition, idéalement en fichier vectoriel, et on s’occupe de tout le reste."
+          },
+          {
+            "q": "Livrez-vous en dehors de Valence et de la Drôme ?",
+            "a": "Oui. Nous sommes basés à Valence mais nous livrons dans toute l’Auvergne-Rhône-Alpes et partout en France. Pour les réseaux multi-sites, nous répartissons les mêmes goodies sur chacun de vos points de vente."
+          },
+          {
+            "q": "Combien coûte un objet publicitaire personnalisé ?",
+            "a": "Le prix varie selon l’objet, la quantité et la personnalisation. Plus la quantité est élevée, plus le prix unitaire baisse. Demandez un devis avec votre besoin et votre budget : on vous répond une première fois sous 24 h, puis les délais de devis détaillé, de bon à tirer et de production dépendent du projet."
+          },
+          {
+            "q": "Intervenez-vous à Bourg-lès-Valence ?",
+            "a": "Oui. Notre atelier est à Valence, à quelques minutes de Bourg-lès-Valence : on prépare votre commande, on personnalise à votre charte et on vous livre sur place. Un seul interlocuteur du devis à la livraison."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Faites circuler votre marque",
+        "body": "Dites-nous votre occasion, votre budget et vos quantités pour Bourg-lès-Valence : on propose les objets utiles les plus adaptés. Première réponse sous 24 h.",
+        "primaryLabel": "Demander un devis"
+      },
+      "related": [
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/conseils/objets-publicitaires-goodies"
+        }
+      ],
+      "areaServed": "Bourg-lès-Valence",
+      "cityLinks": {
+        "title": "Objets publicitaires et goodies près de chez vous",
+        "intro": "On personnalise aussi pour les villes voisines. Choisissez votre secteur.",
+        "items": [
+          {
+            "label": "Valence",
+            "href": "/objets-publicitaires"
+          },
+          {
+            "label": "Romans-sur-Isère",
+            "href": "/objets-publicitaires-romans-sur-isere"
+          },
+          {
+            "label": "Montélimar",
+            "href": "/objets-publicitaires-montelimar"
+          },
+          {
+            "label": "Guilherand-Granges",
+            "href": "/objets-publicitaires-guilherand-granges"
+          },
+          {
+            "label": "Portes-lès-Valence",
+            "href": "/objets-publicitaires-portes-les-valence"
+          },
+          {
+            "label": "Tain-l'Hermitage",
+            "href": "/objets-publicitaires-tain-l-hermitage"
+          },
+          {
+            "label": "Tournon-sur-Rhône",
+            "href": "/objets-publicitaires-tournon-sur-rhone"
+          }
+        ]
+      }
+    },
+    "textile-personnalise-guilherand-granges": {
+      "slug": "textile-personnalise-guilherand-granges",
+      "cat": "textile",
+      "navLabel": "Textile Guilherand-Granges",
+      "meta": {
+        "title": "Textile personnalisé à Guilherand-Granges | SecretPub",
+        "description": "Textile personnalisé à Guilherand-Granges (Ardèche) : t-shirts, polos, vêtements de travail et EPI marqués en broderie, flocage ou sérigraphie. Conçu, produit et livré depuis Valence."
+      },
+      "hero": {
+        "crumb": "Textile Guilherand-Granges",
+        "eyebrow": "Textile personnalisé à Guilherand-Granges",
+        "h1Html": "Le <span class=\"mark\">textile personnalisé à Guilherand-Granges</span> pour habiller votre équipe",
+        "sub": "T-shirts, polos, vêtements de travail et tenues marqués à votre logo pour les professionnels de Guilherand-Granges. On conçoit, on produit et on livre depuis notre atelier de Valence."
+      },
+      "intro": {
+        "eyebrow": "Votre équipe à vos couleurs",
+        "title": "Des tenues marquées pour les pros de Guilherand-Granges",
+        "leadHtml": "À Guilherand-Granges, une tenue d'équipe soignée en dit long sur votre sérieux : <b>autant qu'elle tienne, et que le logo reste net lavage après lavage.</b>",
+        "bodyHtml": "<p>Sur la rive ardéchoise, face à Valence, Guilherand-Granges mêle grandes surfaces, commerces et PME le long de l'avenue de la République. À deux ponts de notre atelier, on habille vos équipes sans délai et sans surcoût de déplacement.</p><p>Notre atelier est à Valence, à deux ponts de Guilherand-Granges : on vous conseille le bon vêtement et la bonne technique (broderie, flocage, sérigraphie ou DTF), on produit, puis on vous livre sur place ou vous passez récupérer. Un seul interlocuteur, du choix de la matière à la livraison.</p>"
+      },
+      "prestations": {
+        "eyebrow": "Nos prestations",
+        "title": "Ce qu'on personnalise pour vous",
+        "intro": "Chaque marquage est pensé pour l'usage réel de vos équipes à Guilherand-Granges : la matière, la technique et le rendu qui tiennent dans le temps.",
+        "items": [
+          {
+            "title": "T-shirts, polos et sweats",
+            "desc": "Le trio de base à votre charte pour uniformiser une équipe, de l'accueil au service, sur des textiles qui tiennent au lavage."
+          },
+          {
+            "title": "Softshells, vestes et bodywarmers",
+            "desc": "Des pièces chaudes et présentables pour l'accueil, le terrain et les événements en extérieur, marquées à votre logo."
+          },
+          {
+            "title": "Vêtements de travail et EPI",
+            "desc": "Tenues de chantier et EPI marqués, résistants et durables, taillés pour les artisans et le bâtiment au quotidien."
+          },
+          {
+            "title": "Tabliers et tenues restauration",
+            "desc": "Tabliers, vestes et tenues brodées pour la salle, la cuisine et les métiers de bouche, propres et professionnels."
+          },
+          {
+            "title": "Maillots et textiles de sport",
+            "desc": "Maillots, survêtements et textiles de sport pour clubs, équipes et événements, avec numéros, noms et sponsors."
+          },
+          {
+            "title": "Casquettes et accessoires brodés",
+            "desc": "Casquettes, bonnets et accessoires brodés portés par l'équipe, en complément de la tenue, pour une image cohérente."
+          },
+          {
+            "title": "Impression DTF pour visuels détaillés",
+            "desc": "Impression numérique DTF pour les logos en couleurs, dégradés et visuels photo, nets sur t-shirts et textiles clairs."
+          },
+          {
+            "title": "Habillage complet d'un réseau",
+            "desc": "Du siège aux points de vente, on habille tous vos sites à l'identique avec le bon marquage selon chaque usage."
+          }
+        ]
+      },
+      "secteurs": {
+        "title": "Pour qui on personnalise du textile",
+        "intro": "Restaurateurs, artisans, clubs ou commerces : à Guilherand-Granges, on adapte le vêtement et le marquage à chaque activité et à chaque budget.",
+        "items": [
+          {
+            "title": "Restaurateurs et hôtellerie",
+            "desc": "Tenues de salle et de cuisine, tabliers et polos brodés pour une équipe propre, reconnaissable et professionnelle."
+          },
+          {
+            "title": "Artisans et bâtiment",
+            "desc": "Vêtements de travail et EPI haute visibilité floqués, résistants au chantier et au lavage intensif."
+          },
+          {
+            "title": "Clubs de sport et associations",
+            "desc": "Maillots, survêtements et t-shirts d'équipe avec numéros, noms et logos de sponsors, prêts pour la saison."
+          },
+          {
+            "title": "Beauté, spas et coiffeurs",
+            "desc": "Tuniques, tabliers et tenues d'accueil brodées, sobres et élégantes, à la charte de votre institut."
+          },
+          {
+            "title": "Franchises et réseaux",
+            "desc": "Habillage identique de tous les points de vente, piloté depuis le siège, pour une image homogène partout."
+          },
+          {
+            "title": "PME et commerces",
+            "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Notre méthode",
+        "title": "De votre logo à la tenue livrée",
+        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Brief et conseil",
+            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
+          },
+          {
+            "n": "02",
+            "title": "Bon à tirer à valider",
+            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
+          },
+          {
+            "n": "03",
+            "title": "Production maîtrisée",
+            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
+          },
+          {
+            "n": "04",
+            "title": "Livraison et réassort",
+            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
+          }
+        ]
+      },
+      "avantages": {
+        "title": "Pourquoi nous confier votre textile",
+        "items": [
+          {
+            "title": "Un seul partenaire",
+            "desc": "Textile, signalétique, print, objets et packaging avec un seul interlocuteur : une seule charte, un seul contact, une seule facture."
+          },
+          {
+            "title": "Ancrage local",
+            "desc": "Basés à Valence, dans la Drôme : on vous répond une première fois sous 24 h et on reste joignables, pour vos tenues comme pour vos réassorts."
+          },
+          {
+            "title": "Pensé multi-sites",
+            "desc": "Idéal pour les réseaux : tenues identiques sur tous les points de vente, pilotées simplement depuis le siège."
+          },
+          {
+            "title": "Note 5,0 sur 102 avis",
+            "desc": "Une note Google de 5,0/5 sur 102 avis : nos clients reviennent pour la qualité des tenues et le suivi."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Vos questions sur le textile personnalisé",
+        "items": [
+          {
+            "q": "Quel est le délai pour des vêtements personnalisés à Guilherand-Granges ?",
+            "a": "On vous répond une première fois sous 24 h. Ensuite, les délais (devis, bon à tirer, production) dépendent du projet : le support, la quantité et les finitions. Après validation du bon à tirer, comptez généralement quelques jours à deux semaines selon la technique et la quantité. Pour un besoin urgent (événement, salon), dites-le nous dès le brief : on cale le planning avec vous. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
+          },
+          {
+            "q": "Y a-t-il une quantité minimum de commande ?",
+            "a": "Non, on s'adapte à votre besoin réel, d'une petite série pour une équipe à plusieurs centaines de pièces pour un réseau. La technique de marquage varie selon la quantité et le visuel : flocage pour les petites séries, DTF pour les visuels détaillés en couleurs, sérigraphie pour les gros volumes. On vous oriente vers le plus pertinent."
+          },
+          {
+            "q": "Quelle technique choisir : broderie, flocage ou sérigraphie ?",
+            "a": "La broderie donne un rendu durable et haut de gamme, parfaite sur polos, softshells et textiles épais. Le flocage convient aux petites séries et aux visuels simples. La sérigraphie est idéale pour les grandes quantités. Le DTF gère les visuels détaillés en couleurs, dégradés et photos. On choisit avec vous selon le vêtement, le visuel et le budget."
+          },
+          {
+            "q": "Les vêtements résistent-ils aux lavages répétés ?",
+            "a": "Oui, on travaille des textiles pros et des marquages pensés pour durer. Broderie et sérigraphie tiennent particulièrement bien dans le temps, y compris en lavage intensif pour les vêtements de travail et de cuisine. C'est justement le sens d'une tenue de qualité pro plutôt qu'un textile grand public."
+          },
+          {
+            "q": "Pouvez-vous habiller tous les sites d'un réseau à l'identique ?",
+            "a": "C'est notre spécialité. On produit des tenues homogènes pour l'ensemble de vos points de vente, avec le bon marquage selon chaque usage. Le siège pilote, les sites reçoivent, et les réassorts se gèrent simplement. Une seule charte respectée partout en France."
+          },
+          {
+            "q": "Intervenez-vous à Guilherand-Granges ?",
+            "a": "Oui. Notre atelier est à Valence, à deux ponts de Guilherand-Granges : on récupère votre brief et votre logo, on produit, et on vous livre sur place, ou vous passez à l'atelier. Un seul interlocuteur du devis à la livraison."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Habillez votre équipe aux bonnes couleurs",
+        "body": "Envoyez-nous votre logo et votre besoin pour Guilherand-Granges : on vous conseille le bon vêtement, la bonne technique et un devis clair. Première réponse sous 24 h.",
+        "primaryLabel": "Demander un devis"
+      },
+      "related": [
+        {
+          "label": "Signalétique",
+          "href": "/signaletique"
+        },
+        {
+          "label": "Objets publicitaires",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Textile perso : choisir le vêtement",
+          "href": "/conseils/textile-personnalise-guide"
+        },
+        {
+          "label": "Broderie, sérigraphie, flocage ou DTF ?",
+          "href": "/conseils/choisir-marquage-textile-pro"
+        }
+      ],
+      "areaServed": "Guilherand-Granges",
+      "cityLinks": {
+        "title": "Le textile personnalisé près de chez vous",
+        "intro": "On habille aussi les équipes des villes voisines. Choisissez votre secteur.",
+        "items": [
+          {
+            "label": "Valence",
+            "href": "/textile-personnalise"
+          },
+          {
+            "label": "Romans-sur-Isère",
+            "href": "/textile-personnalise-romans-sur-isere"
+          },
+          {
+            "label": "Montélimar",
+            "href": "/textile-personnalise-montelimar"
+          },
+          {
+            "label": "Bourg-lès-Valence",
+            "href": "/textile-personnalise-bourg-les-valence"
+          },
+          {
+            "label": "Portes-lès-Valence",
+            "href": "/textile-personnalise-portes-les-valence"
+          },
+          {
+            "label": "Tain-l'Hermitage",
+            "href": "/textile-personnalise-tain-l-hermitage"
+          },
+          {
+            "label": "Tournon-sur-Rhône",
+            "href": "/textile-personnalise-tournon-sur-rhone"
+          }
+        ]
+      }
+    },
+    "objets-publicitaires-guilherand-granges": {
+      "slug": "objets-publicitaires-guilherand-granges",
+      "cat": "goodies",
+      "navLabel": "Objets publicitaires Guilherand-Granges",
+      "meta": {
+        "title": "Objets publicitaires à Guilherand-Granges | SecretPub",
+        "description": "Objets publicitaires et goodies personnalisés à Guilherand-Granges (Ardèche) : tote bags, mugs, gourdes, welcome packs à votre logo. Production et livraison depuis Valence."
+      },
+      "hero": {
+        "crumb": "Objets publicitaires Guilherand-Granges",
+        "eyebrow": "Objets & goodies",
+        "h1Html": "<span class=\"mark\">Objets publicitaires</span> personnalisés à Guilherand-Granges",
+        "sub": "Des goodies utiles à votre logo pour les entreprises et commerces de Guilherand-Granges. Conçus, produits et livrés depuis notre atelier de Valence."
+      },
+      "intro": {
+        "eyebrow": "Le cadeau qui dure",
+        "title": "L'objet qu'on offre et qu'on garde, à Guilherand-Granges",
+        "leadHtml": "Un bon objet publicitaire, c'est <b>votre marque qui vit au quotidien</b> à Guilherand-Granges, longtemps après le premier contact.",
+        "bodyHtml": "<p>Zone commerciale active et proximité immédiate de Valence : à Guilherand-Granges, on choisit avec vous des goodies vraiment utiles pour vos commerces, vos événements et vos équipes, livrés en un rien de temps.</p><p>Notre atelier est à Valence, à deux ponts de Guilherand-Granges : on sélectionne avec vous les objets utiles, on les personnalise à votre charte, on produit et on livre. Un seul interlocuteur pour tout, du choix des goodies au réassort.</p>"
+      },
+      "prestations": {
+        "eyebrow": "Ce que nous personnalisons",
+        "title": "Nos objets publicitaires",
+        "intro": "Des objets choisis pour être vraiment utilisés par vos clients et vos équipes à Guilherand-Granges, personnalisés à votre logo et à votre charte.",
+        "items": [
+          {
+            "title": "Tote bags et sacs",
+            "desc": "Le sac qu’on offre, pas le vêtement qu’on porte : réutilisable et marqué à votre logo, vu dans toute la ville et gardé bien au-delà d’un événement."
+          },
+          {
+            "title": "Mugs, gourdes et bouteilles",
+            "desc": "Objets du quotidien qui restent sur les bureaux et en réunion, pour une présence de marque chaque jour."
+          },
+          {
+            "title": "Stylos, carnets et porte-clés",
+            "desc": "Les incontournables des salons et du premier contact, à distribuer largement à petit prix."
+          },
+          {
+            "title": "Clés USB et accessoires tech",
+            "desc": "Objets connectés personnalisés, parfaits pour des cadeaux pros à forte valeur perçue."
+          },
+          {
+            "title": "Magnets et objets de fidélisation",
+            "desc": "Magnets et petits objets de bureau pensés pour les commerces de proximité et la fidélisation locale."
+          },
+          {
+            "title": "Cadeaux d’affaires de fin d’année",
+            "desc": "Coffrets et attentions soignées pour remercier vos clients et partenaires en fin d’année."
+          },
+          {
+            "title": "Coffrets d’accueil et welcome packs",
+            "desc": "Kits d’accueil complets pour vos nouveaux salariés, cohérents et prêts à remettre dès le premier jour."
+          },
+          {
+            "title": "Kits événementiels de stand",
+            "desc": "Ensembles d’objets coordonnés à distribuer sur un salon ou un séminaire, tous à la même charte."
+          }
+        ]
+      },
+      "secteurs": {
+        "title": "Pour qui nous produisons",
+        "intro": "PME, commerces, événements ou associations : à Guilherand-Granges, on choisit les objets qui collent à votre occasion et à votre budget.",
+        "items": [
+          {
+            "title": "PME et grandes équipes",
+            "desc": "Welcome packs des nouveaux arrivants et cadeaux internes pour souder et remercier vos équipes."
+          },
+          {
+            "title": "Commerçants et restaurateurs",
+            "desc": "Petits objets à offrir pour fidéliser, remercier et faire revenir vos clients réguliers."
+          },
+          {
+            "title": "Franchises et réseaux",
+            "desc": "Des goodies identiques sur tous les sites, commandés simplement et pilotés depuis le siège."
+          },
+          {
+            "title": "Événements, salons et séminaires",
+            "desc": "Kits à distribuer sur un stand et objets mémo pour marquer les esprits après l’événement."
+          },
+          {
+            "title": "Clubs de sport et associations",
+            "desc": "Objets supporters, lots de tombola et cadeaux membres pour animer votre communauté."
+          },
+          {
+            "title": "Promoteurs immobiliers",
+            "desc": "Coffrets de remise de clés et objets d’inauguration pour marquer les livraisons de programmes."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Notre méthode",
+        "title": "De l’idée à la livraison",
+        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Brief et sélection",
+            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
+          },
+          {
+            "n": "02",
+            "title": "Personnalisation et bon à tirer",
+            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
+          },
+          {
+            "n": "03",
+            "title": "Production maîtrisée",
+            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
+          },
+          {
+            "n": "04",
+            "title": "Livraison et multi-sites",
+            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
+          }
+        ]
+      },
+      "avantages": {
+        "title": "Pourquoi SecretPub",
+        "items": [
+          {
+            "title": "Un seul partenaire",
+            "desc": "Objets, signalétique, print et textile avec un seul interlocuteur : une seule charte, un seul contact, zéro aller-retour."
+          },
+          {
+            "title": "Ancrage local à Valence",
+            "desc": "Basés dans la Drôme, joignables et réactifs, avec une livraison à Valence et partout en France."
+          },
+          {
+            "title": "Pensé multi-sites",
+            "desc": "Mêmes goodies sur tous vos points de vente, commande simple pour les réseaux et les franchises."
+          },
+          {
+            "title": "Réactivité prouvée",
+            "desc": "Première réponse sous 24 h, puis des délais calés avec vous, avec une note de 5,0 sur 5 sur 102 avis Google."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Vos questions sur les objets publicitaires",
+        "items": [
+          {
+            "q": "Quelle quantité minimum pour commander des objets publicitaires ?",
+            "a": "Cela dépend de l’objet. Comptez souvent 50 à 100 pièces pour un stylo ou un tote bag, et davantage pour un objet tech. Dites-nous votre besoin et votre budget, on vous conseille la formule la plus juste."
+          },
+          {
+            "q": "Sous quels délais recevez-vous les goodies personnalisés à Guilherand-Granges ?",
+            "a": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production. Ensuite les délais (devis, bon à tirer, production) dépendent du projet : objet, quantité et finitions, en général quelques jours à deux semaines. Pour un salon ou une date précise, prévenez-nous tôt, on cale le planning avec vous. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
+          },
+          {
+            "q": "Peut-on personnaliser les objets à notre logo et à notre charte ?",
+            "a": "Oui, c’est notre métier. On applique votre logo à vos couleurs exactes sur chaque objet, du mug à la clé USB. Envoyez-nous votre logo en bonne définition, idéalement en fichier vectoriel, et on s’occupe de tout le reste."
+          },
+          {
+            "q": "Livrez-vous en dehors de Valence et de la Drôme ?",
+            "a": "Oui. Nous sommes basés à Valence mais nous livrons dans toute l’Auvergne-Rhône-Alpes et partout en France. Pour les réseaux multi-sites, nous répartissons les mêmes goodies sur chacun de vos points de vente."
+          },
+          {
+            "q": "Combien coûte un objet publicitaire personnalisé ?",
+            "a": "Le prix varie selon l’objet, la quantité et la personnalisation. Plus la quantité est élevée, plus le prix unitaire baisse. Demandez un devis avec votre besoin et votre budget : on vous répond une première fois sous 24 h, puis les délais de devis détaillé, de bon à tirer et de production dépendent du projet."
+          },
+          {
+            "q": "Intervenez-vous à Guilherand-Granges ?",
+            "a": "Oui. Notre atelier est à Valence, à deux ponts de Guilherand-Granges : on prépare votre commande, on personnalise à votre charte et on vous livre sur place. Un seul interlocuteur du devis à la livraison."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Faites circuler votre marque",
+        "body": "Dites-nous votre occasion, votre budget et vos quantités pour Guilherand-Granges : on propose les objets utiles les plus adaptés. Première réponse sous 24 h.",
+        "primaryLabel": "Demander un devis"
+      },
+      "related": [
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/conseils/objets-publicitaires-goodies"
+        }
+      ],
+      "areaServed": "Guilherand-Granges",
+      "cityLinks": {
+        "title": "Objets publicitaires et goodies près de chez vous",
+        "intro": "On personnalise aussi pour les villes voisines. Choisissez votre secteur.",
+        "items": [
+          {
+            "label": "Valence",
+            "href": "/objets-publicitaires"
+          },
+          {
+            "label": "Romans-sur-Isère",
+            "href": "/objets-publicitaires-romans-sur-isere"
+          },
+          {
+            "label": "Montélimar",
+            "href": "/objets-publicitaires-montelimar"
+          },
+          {
+            "label": "Bourg-lès-Valence",
+            "href": "/objets-publicitaires-bourg-les-valence"
+          },
+          {
+            "label": "Portes-lès-Valence",
+            "href": "/objets-publicitaires-portes-les-valence"
+          },
+          {
+            "label": "Tain-l'Hermitage",
+            "href": "/objets-publicitaires-tain-l-hermitage"
+          },
+          {
+            "label": "Tournon-sur-Rhône",
+            "href": "/objets-publicitaires-tournon-sur-rhone"
+          }
+        ]
+      }
+    },
+    "textile-personnalise-portes-les-valence": {
+      "slug": "textile-personnalise-portes-les-valence",
+      "cat": "textile",
+      "navLabel": "Textile Portes-lès-Valence",
+      "meta": {
+        "title": "Textile personnalisé à Portes-lès-Valence | SecretPub",
+        "description": "Textile personnalisé à Portes-lès-Valence (Drôme) : t-shirts, polos, vêtements de travail et EPI marqués en broderie, flocage ou sérigraphie. Conçu, produit et livré depuis Valence."
+      },
+      "hero": {
+        "crumb": "Textile Portes-lès-Valence",
+        "eyebrow": "Textile personnalisé à Portes-lès-Valence",
+        "h1Html": "Le <span class=\"mark\">textile personnalisé à Portes-lès-Valence</span> pour habiller votre équipe",
+        "sub": "T-shirts, polos, vêtements de travail et tenues marqués à votre logo pour les professionnels de Portes-lès-Valence. On conçoit, on produit et on livre depuis notre atelier de Valence."
+      },
+      "intro": {
+        "eyebrow": "Votre équipe à vos couleurs",
+        "title": "Des tenues marquées pour les pros de Portes-lès-Valence",
+        "leadHtml": "À Portes-lès-Valence, une tenue d'équipe soignée en dit long sur votre sérieux : <b>autant qu'elle tienne, et que le logo reste net lavage après lavage.</b>",
+        "bodyHtml": "<p>Au sud de Valence, Portes-lès-Valence concentre industrie, logistique et artisanat sur ses grandes zones d'activité. EPI et vêtements de travail résistants pour vos équipes de terrain, tenues marquées pour vos commerces : on marque pour durer sur le chantier comme à l'atelier.</p><p>Notre atelier est à Valence, à 10 minutes de Portes-lès-Valence : on vous conseille le bon vêtement et la bonne technique (broderie, flocage, sérigraphie ou DTF), on produit, puis on vous livre sur place ou vous passez récupérer. Un seul interlocuteur, du choix de la matière à la livraison.</p>"
+      },
+      "prestations": {
+        "eyebrow": "Nos prestations",
+        "title": "Ce qu'on personnalise pour vous",
+        "intro": "Chaque marquage est pensé pour l'usage réel de vos équipes à Portes-lès-Valence : la matière, la technique et le rendu qui tiennent dans le temps.",
+        "items": [
+          {
+            "title": "T-shirts, polos et sweats",
+            "desc": "Le trio de base à votre charte pour uniformiser une équipe, de l'accueil au service, sur des textiles qui tiennent au lavage."
+          },
+          {
+            "title": "Softshells, vestes et bodywarmers",
+            "desc": "Des pièces chaudes et présentables pour l'accueil, le terrain et les événements en extérieur, marquées à votre logo."
+          },
+          {
+            "title": "Vêtements de travail et EPI",
+            "desc": "Tenues de chantier et EPI marqués, résistants et durables, taillés pour les artisans et le bâtiment au quotidien."
+          },
+          {
+            "title": "Tabliers et tenues restauration",
+            "desc": "Tabliers, vestes et tenues brodées pour la salle, la cuisine et les métiers de bouche, propres et professionnels."
+          },
+          {
+            "title": "Maillots et textiles de sport",
+            "desc": "Maillots, survêtements et textiles de sport pour clubs, équipes et événements, avec numéros, noms et sponsors."
+          },
+          {
+            "title": "Casquettes et accessoires brodés",
+            "desc": "Casquettes, bonnets et accessoires brodés portés par l'équipe, en complément de la tenue, pour une image cohérente."
+          },
+          {
+            "title": "Impression DTF pour visuels détaillés",
+            "desc": "Impression numérique DTF pour les logos en couleurs, dégradés et visuels photo, nets sur t-shirts et textiles clairs."
+          },
+          {
+            "title": "Habillage complet d'un réseau",
+            "desc": "Du siège aux points de vente, on habille tous vos sites à l'identique avec le bon marquage selon chaque usage."
+          }
+        ]
+      },
+      "secteurs": {
+        "title": "Pour qui on personnalise du textile",
+        "intro": "Restaurateurs, artisans, clubs ou commerces : à Portes-lès-Valence, on adapte le vêtement et le marquage à chaque activité et à chaque budget.",
+        "items": [
+          {
+            "title": "Restaurateurs et hôtellerie",
+            "desc": "Tenues de salle et de cuisine, tabliers et polos brodés pour une équipe propre, reconnaissable et professionnelle."
+          },
+          {
+            "title": "Artisans et bâtiment",
+            "desc": "Vêtements de travail et EPI haute visibilité floqués, résistants au chantier et au lavage intensif."
+          },
+          {
+            "title": "Clubs de sport et associations",
+            "desc": "Maillots, survêtements et t-shirts d'équipe avec numéros, noms et logos de sponsors, prêts pour la saison."
+          },
+          {
+            "title": "Beauté, spas et coiffeurs",
+            "desc": "Tuniques, tabliers et tenues d'accueil brodées, sobres et élégantes, à la charte de votre institut."
+          },
+          {
+            "title": "Franchises et réseaux",
+            "desc": "Habillage identique de tous les points de vente, piloté depuis le siège, pour une image homogène partout."
+          },
+          {
+            "title": "PME et commerces",
+            "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Notre méthode",
+        "title": "De votre logo à la tenue livrée",
+        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Brief et conseil",
+            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
+          },
+          {
+            "n": "02",
+            "title": "Bon à tirer à valider",
+            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
+          },
+          {
+            "n": "03",
+            "title": "Production maîtrisée",
+            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
+          },
+          {
+            "n": "04",
+            "title": "Livraison et réassort",
+            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
+          }
+        ]
+      },
+      "avantages": {
+        "title": "Pourquoi nous confier votre textile",
+        "items": [
+          {
+            "title": "Un seul partenaire",
+            "desc": "Textile, signalétique, print, objets et packaging avec un seul interlocuteur : une seule charte, un seul contact, une seule facture."
+          },
+          {
+            "title": "Ancrage local",
+            "desc": "Basés à Valence, dans la Drôme : on vous répond une première fois sous 24 h et on reste joignables, pour vos tenues comme pour vos réassorts."
+          },
+          {
+            "title": "Pensé multi-sites",
+            "desc": "Idéal pour les réseaux : tenues identiques sur tous les points de vente, pilotées simplement depuis le siège."
+          },
+          {
+            "title": "Note 5,0 sur 102 avis",
+            "desc": "Une note Google de 5,0/5 sur 102 avis : nos clients reviennent pour la qualité des tenues et le suivi."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Vos questions sur le textile personnalisé",
+        "items": [
+          {
+            "q": "Quel est le délai pour des vêtements personnalisés à Portes-lès-Valence ?",
+            "a": "On vous répond une première fois sous 24 h. Ensuite, les délais (devis, bon à tirer, production) dépendent du projet : le support, la quantité et les finitions. Après validation du bon à tirer, comptez généralement quelques jours à deux semaines selon la technique et la quantité. Pour un besoin urgent (événement, salon), dites-le nous dès le brief : on cale le planning avec vous. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
+          },
+          {
+            "q": "Y a-t-il une quantité minimum de commande ?",
+            "a": "Non, on s'adapte à votre besoin réel, d'une petite série pour une équipe à plusieurs centaines de pièces pour un réseau. La technique de marquage varie selon la quantité et le visuel : flocage pour les petites séries, DTF pour les visuels détaillés en couleurs, sérigraphie pour les gros volumes. On vous oriente vers le plus pertinent."
+          },
+          {
+            "q": "Quelle technique choisir : broderie, flocage ou sérigraphie ?",
+            "a": "La broderie donne un rendu durable et haut de gamme, parfaite sur polos, softshells et textiles épais. Le flocage convient aux petites séries et aux visuels simples. La sérigraphie est idéale pour les grandes quantités. Le DTF gère les visuels détaillés en couleurs, dégradés et photos. On choisit avec vous selon le vêtement, le visuel et le budget."
+          },
+          {
+            "q": "Les vêtements résistent-ils aux lavages répétés ?",
+            "a": "Oui, on travaille des textiles pros et des marquages pensés pour durer. Broderie et sérigraphie tiennent particulièrement bien dans le temps, y compris en lavage intensif pour les vêtements de travail et de cuisine. C'est justement le sens d'une tenue de qualité pro plutôt qu'un textile grand public."
+          },
+          {
+            "q": "Pouvez-vous habiller tous les sites d'un réseau à l'identique ?",
+            "a": "C'est notre spécialité. On produit des tenues homogènes pour l'ensemble de vos points de vente, avec le bon marquage selon chaque usage. Le siège pilote, les sites reçoivent, et les réassorts se gèrent simplement. Une seule charte respectée partout en France."
+          },
+          {
+            "q": "Intervenez-vous à Portes-lès-Valence ?",
+            "a": "Oui. Notre atelier est à Valence, à 10 minutes de Portes-lès-Valence : on récupère votre brief et votre logo, on produit, et on vous livre sur place, ou vous passez à l'atelier. Un seul interlocuteur du devis à la livraison."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Habillez votre équipe aux bonnes couleurs",
+        "body": "Envoyez-nous votre logo et votre besoin pour Portes-lès-Valence : on vous conseille le bon vêtement, la bonne technique et un devis clair. Première réponse sous 24 h.",
+        "primaryLabel": "Demander un devis"
+      },
+      "related": [
+        {
+          "label": "Signalétique",
+          "href": "/signaletique"
+        },
+        {
+          "label": "Objets publicitaires",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Textile perso : choisir le vêtement",
+          "href": "/conseils/textile-personnalise-guide"
+        },
+        {
+          "label": "Broderie, sérigraphie, flocage ou DTF ?",
+          "href": "/conseils/choisir-marquage-textile-pro"
+        }
+      ],
+      "areaServed": "Portes-lès-Valence",
+      "cityLinks": {
+        "title": "Le textile personnalisé près de chez vous",
+        "intro": "On habille aussi les équipes des villes voisines. Choisissez votre secteur.",
+        "items": [
+          {
+            "label": "Valence",
+            "href": "/textile-personnalise"
+          },
+          {
+            "label": "Romans-sur-Isère",
+            "href": "/textile-personnalise-romans-sur-isere"
+          },
+          {
+            "label": "Montélimar",
+            "href": "/textile-personnalise-montelimar"
+          },
+          {
+            "label": "Bourg-lès-Valence",
+            "href": "/textile-personnalise-bourg-les-valence"
+          },
+          {
+            "label": "Guilherand-Granges",
+            "href": "/textile-personnalise-guilherand-granges"
+          },
+          {
+            "label": "Tain-l'Hermitage",
+            "href": "/textile-personnalise-tain-l-hermitage"
+          },
+          {
+            "label": "Tournon-sur-Rhône",
+            "href": "/textile-personnalise-tournon-sur-rhone"
+          }
+        ]
+      }
+    },
+    "objets-publicitaires-portes-les-valence": {
+      "slug": "objets-publicitaires-portes-les-valence",
+      "cat": "goodies",
+      "navLabel": "Objets publicitaires Portes-lès-Valence",
+      "meta": {
+        "title": "Objets publicitaires à Portes-lès-Valence | SecretPub",
+        "description": "Objets publicitaires et goodies personnalisés à Portes-lès-Valence (Drôme) : tote bags, mugs, gourdes, welcome packs à votre logo. Production et livraison depuis Valence."
+      },
+      "hero": {
+        "crumb": "Objets publicitaires Portes-lès-Valence",
+        "eyebrow": "Objets & goodies",
+        "h1Html": "<span class=\"mark\">Objets publicitaires</span> personnalisés à Portes-lès-Valence",
+        "sub": "Des goodies utiles à votre logo pour les entreprises et commerces de Portes-lès-Valence. Conçus, produits et livrés depuis notre atelier de Valence."
+      },
+      "intro": {
+        "eyebrow": "Le cadeau qui dure",
+        "title": "L'objet qu'on offre et qu'on garde, à Portes-lès-Valence",
+        "leadHtml": "Un bon objet publicitaire, c'est <b>votre marque qui vit au quotidien</b> à Portes-lès-Valence, longtemps après le premier contact.",
+        "bodyHtml": "<p>Entre plateformes logistiques, PME et commerces, Portes-lès-Valence a besoin d'objets qui servent vraiment. À dix minutes de notre atelier, on produit vos goodies et cadeaux d'affaires personnalisés, en petite comme en grande série.</p><p>Notre atelier est à Valence, à 10 minutes de Portes-lès-Valence : on sélectionne avec vous les objets utiles, on les personnalise à votre charte, on produit et on livre. Un seul interlocuteur pour tout, du choix des goodies au réassort.</p>"
+      },
+      "prestations": {
+        "eyebrow": "Ce que nous personnalisons",
+        "title": "Nos objets publicitaires",
+        "intro": "Des objets choisis pour être vraiment utilisés par vos clients et vos équipes à Portes-lès-Valence, personnalisés à votre logo et à votre charte.",
+        "items": [
+          {
+            "title": "Tote bags et sacs",
+            "desc": "Le sac qu’on offre, pas le vêtement qu’on porte : réutilisable et marqué à votre logo, vu dans toute la ville et gardé bien au-delà d’un événement."
+          },
+          {
+            "title": "Mugs, gourdes et bouteilles",
+            "desc": "Objets du quotidien qui restent sur les bureaux et en réunion, pour une présence de marque chaque jour."
+          },
+          {
+            "title": "Stylos, carnets et porte-clés",
+            "desc": "Les incontournables des salons et du premier contact, à distribuer largement à petit prix."
+          },
+          {
+            "title": "Clés USB et accessoires tech",
+            "desc": "Objets connectés personnalisés, parfaits pour des cadeaux pros à forte valeur perçue."
+          },
+          {
+            "title": "Magnets et objets de fidélisation",
+            "desc": "Magnets et petits objets de bureau pensés pour les commerces de proximité et la fidélisation locale."
+          },
+          {
+            "title": "Cadeaux d’affaires de fin d’année",
+            "desc": "Coffrets et attentions soignées pour remercier vos clients et partenaires en fin d’année."
+          },
+          {
+            "title": "Coffrets d’accueil et welcome packs",
+            "desc": "Kits d’accueil complets pour vos nouveaux salariés, cohérents et prêts à remettre dès le premier jour."
+          },
+          {
+            "title": "Kits événementiels de stand",
+            "desc": "Ensembles d’objets coordonnés à distribuer sur un salon ou un séminaire, tous à la même charte."
+          }
+        ]
+      },
+      "secteurs": {
+        "title": "Pour qui nous produisons",
+        "intro": "PME, commerces, événements ou associations : à Portes-lès-Valence, on choisit les objets qui collent à votre occasion et à votre budget.",
+        "items": [
+          {
+            "title": "PME et grandes équipes",
+            "desc": "Welcome packs des nouveaux arrivants et cadeaux internes pour souder et remercier vos équipes."
+          },
+          {
+            "title": "Commerçants et restaurateurs",
+            "desc": "Petits objets à offrir pour fidéliser, remercier et faire revenir vos clients réguliers."
+          },
+          {
+            "title": "Franchises et réseaux",
+            "desc": "Des goodies identiques sur tous les sites, commandés simplement et pilotés depuis le siège."
+          },
+          {
+            "title": "Événements, salons et séminaires",
+            "desc": "Kits à distribuer sur un stand et objets mémo pour marquer les esprits après l’événement."
+          },
+          {
+            "title": "Clubs de sport et associations",
+            "desc": "Objets supporters, lots de tombola et cadeaux membres pour animer votre communauté."
+          },
+          {
+            "title": "Promoteurs immobiliers",
+            "desc": "Coffrets de remise de clés et objets d’inauguration pour marquer les livraisons de programmes."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Notre méthode",
+        "title": "De l’idée à la livraison",
+        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Brief et sélection",
+            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
+          },
+          {
+            "n": "02",
+            "title": "Personnalisation et bon à tirer",
+            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
+          },
+          {
+            "n": "03",
+            "title": "Production maîtrisée",
+            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
+          },
+          {
+            "n": "04",
+            "title": "Livraison et multi-sites",
+            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
+          }
+        ]
+      },
+      "avantages": {
+        "title": "Pourquoi SecretPub",
+        "items": [
+          {
+            "title": "Un seul partenaire",
+            "desc": "Objets, signalétique, print et textile avec un seul interlocuteur : une seule charte, un seul contact, zéro aller-retour."
+          },
+          {
+            "title": "Ancrage local à Valence",
+            "desc": "Basés dans la Drôme, joignables et réactifs, avec une livraison à Valence et partout en France."
+          },
+          {
+            "title": "Pensé multi-sites",
+            "desc": "Mêmes goodies sur tous vos points de vente, commande simple pour les réseaux et les franchises."
+          },
+          {
+            "title": "Réactivité prouvée",
+            "desc": "Première réponse sous 24 h, puis des délais calés avec vous, avec une note de 5,0 sur 5 sur 102 avis Google."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Vos questions sur les objets publicitaires",
+        "items": [
+          {
+            "q": "Quelle quantité minimum pour commander des objets publicitaires ?",
+            "a": "Cela dépend de l’objet. Comptez souvent 50 à 100 pièces pour un stylo ou un tote bag, et davantage pour un objet tech. Dites-nous votre besoin et votre budget, on vous conseille la formule la plus juste."
+          },
+          {
+            "q": "Sous quels délais recevez-vous les goodies personnalisés à Portes-lès-Valence ?",
+            "a": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production. Ensuite les délais (devis, bon à tirer, production) dépendent du projet : objet, quantité et finitions, en général quelques jours à deux semaines. Pour un salon ou une date précise, prévenez-nous tôt, on cale le planning avec vous. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
+          },
+          {
+            "q": "Peut-on personnaliser les objets à notre logo et à notre charte ?",
+            "a": "Oui, c’est notre métier. On applique votre logo à vos couleurs exactes sur chaque objet, du mug à la clé USB. Envoyez-nous votre logo en bonne définition, idéalement en fichier vectoriel, et on s’occupe de tout le reste."
+          },
+          {
+            "q": "Livrez-vous en dehors de Valence et de la Drôme ?",
+            "a": "Oui. Nous sommes basés à Valence mais nous livrons dans toute l’Auvergne-Rhône-Alpes et partout en France. Pour les réseaux multi-sites, nous répartissons les mêmes goodies sur chacun de vos points de vente."
+          },
+          {
+            "q": "Combien coûte un objet publicitaire personnalisé ?",
+            "a": "Le prix varie selon l’objet, la quantité et la personnalisation. Plus la quantité est élevée, plus le prix unitaire baisse. Demandez un devis avec votre besoin et votre budget : on vous répond une première fois sous 24 h, puis les délais de devis détaillé, de bon à tirer et de production dépendent du projet."
+          },
+          {
+            "q": "Intervenez-vous à Portes-lès-Valence ?",
+            "a": "Oui. Notre atelier est à Valence, à 10 minutes de Portes-lès-Valence : on prépare votre commande, on personnalise à votre charte et on vous livre sur place. Un seul interlocuteur du devis à la livraison."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Faites circuler votre marque",
+        "body": "Dites-nous votre occasion, votre budget et vos quantités pour Portes-lès-Valence : on propose les objets utiles les plus adaptés. Première réponse sous 24 h.",
+        "primaryLabel": "Demander un devis"
+      },
+      "related": [
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/conseils/objets-publicitaires-goodies"
+        }
+      ],
+      "areaServed": "Portes-lès-Valence",
+      "cityLinks": {
+        "title": "Objets publicitaires et goodies près de chez vous",
+        "intro": "On personnalise aussi pour les villes voisines. Choisissez votre secteur.",
+        "items": [
+          {
+            "label": "Valence",
+            "href": "/objets-publicitaires"
+          },
+          {
+            "label": "Romans-sur-Isère",
+            "href": "/objets-publicitaires-romans-sur-isere"
+          },
+          {
+            "label": "Montélimar",
+            "href": "/objets-publicitaires-montelimar"
+          },
+          {
+            "label": "Bourg-lès-Valence",
+            "href": "/objets-publicitaires-bourg-les-valence"
+          },
+          {
+            "label": "Guilherand-Granges",
+            "href": "/objets-publicitaires-guilherand-granges"
+          },
+          {
+            "label": "Tain-l'Hermitage",
+            "href": "/objets-publicitaires-tain-l-hermitage"
+          },
+          {
+            "label": "Tournon-sur-Rhône",
+            "href": "/objets-publicitaires-tournon-sur-rhone"
+          }
+        ]
+      }
+    },
+    "textile-personnalise-tain-l-hermitage": {
+      "slug": "textile-personnalise-tain-l-hermitage",
+      "cat": "textile",
+      "navLabel": "Textile Tain-l'Hermitage",
+      "meta": {
+        "title": "Textile personnalisé à Tain-l'Hermitage | SecretPub",
+        "description": "Textile personnalisé à Tain-l'Hermitage (Drôme) : t-shirts, polos, vêtements de travail et EPI marqués en broderie, flocage ou sérigraphie. Conçu, produit et livré depuis Valence."
+      },
+      "hero": {
+        "crumb": "Textile Tain-l'Hermitage",
+        "eyebrow": "Textile personnalisé à Tain-l'Hermitage",
+        "h1Html": "Le <span class=\"mark\">textile personnalisé à Tain-l'Hermitage</span> pour habiller votre équipe",
+        "sub": "T-shirts, polos, vêtements de travail et tenues marqués à votre logo pour les professionnels de Tain-l'Hermitage. On conçoit, on produit et on livre depuis notre atelier de Valence."
+      },
+      "intro": {
+        "eyebrow": "Votre équipe à vos couleurs",
+        "title": "Des tenues marquées pour les pros de Tain-l'Hermitage",
+        "leadHtml": "À Tain-l'Hermitage, une tenue d'équipe soignée en dit long sur votre sérieux : <b>autant qu'elle tienne, et que le logo reste net lavage après lavage.</b>",
+        "bodyHtml": "<p>Au pied du vignoble de l'Hermitage et à côté de la Cité du Chocolat, Tain vit du vin, du tourisme et de la restauration. Tenues d'accueil pour caveaux, boutiques et restaurants, vêtements marqués pour les domaines : on habille une équipe qui reçoit une clientèle venue de loin.</p><p>Notre atelier est à Valence, à 20 minutes de Tain-l'Hermitage : on vous conseille le bon vêtement et la bonne technique (broderie, flocage, sérigraphie ou DTF), on produit, puis on vous livre sur place ou vous passez récupérer. Un seul interlocuteur, du choix de la matière à la livraison.</p>"
+      },
+      "prestations": {
+        "eyebrow": "Nos prestations",
+        "title": "Ce qu'on personnalise pour vous",
+        "intro": "Chaque marquage est pensé pour l'usage réel de vos équipes à Tain-l'Hermitage : la matière, la technique et le rendu qui tiennent dans le temps.",
+        "items": [
+          {
+            "title": "T-shirts, polos et sweats",
+            "desc": "Le trio de base à votre charte pour uniformiser une équipe, de l'accueil au service, sur des textiles qui tiennent au lavage."
+          },
+          {
+            "title": "Softshells, vestes et bodywarmers",
+            "desc": "Des pièces chaudes et présentables pour l'accueil, le terrain et les événements en extérieur, marquées à votre logo."
+          },
+          {
+            "title": "Vêtements de travail et EPI",
+            "desc": "Tenues de chantier et EPI marqués, résistants et durables, taillés pour les artisans et le bâtiment au quotidien."
+          },
+          {
+            "title": "Tabliers et tenues restauration",
+            "desc": "Tabliers, vestes et tenues brodées pour la salle, la cuisine et les métiers de bouche, propres et professionnels."
+          },
+          {
+            "title": "Maillots et textiles de sport",
+            "desc": "Maillots, survêtements et textiles de sport pour clubs, équipes et événements, avec numéros, noms et sponsors."
+          },
+          {
+            "title": "Casquettes et accessoires brodés",
+            "desc": "Casquettes, bonnets et accessoires brodés portés par l'équipe, en complément de la tenue, pour une image cohérente."
+          },
+          {
+            "title": "Impression DTF pour visuels détaillés",
+            "desc": "Impression numérique DTF pour les logos en couleurs, dégradés et visuels photo, nets sur t-shirts et textiles clairs."
+          },
+          {
+            "title": "Habillage complet d'un réseau",
+            "desc": "Du siège aux points de vente, on habille tous vos sites à l'identique avec le bon marquage selon chaque usage."
+          }
+        ]
+      },
+      "secteurs": {
+        "title": "Pour qui on personnalise du textile",
+        "intro": "Restaurateurs, artisans, clubs ou commerces : à Tain-l'Hermitage, on adapte le vêtement et le marquage à chaque activité et à chaque budget.",
+        "items": [
+          {
+            "title": "Restaurateurs et hôtellerie",
+            "desc": "Tenues de salle et de cuisine, tabliers et polos brodés pour une équipe propre, reconnaissable et professionnelle."
+          },
+          {
+            "title": "Artisans et bâtiment",
+            "desc": "Vêtements de travail et EPI haute visibilité floqués, résistants au chantier et au lavage intensif."
+          },
+          {
+            "title": "Clubs de sport et associations",
+            "desc": "Maillots, survêtements et t-shirts d'équipe avec numéros, noms et logos de sponsors, prêts pour la saison."
+          },
+          {
+            "title": "Beauté, spas et coiffeurs",
+            "desc": "Tuniques, tabliers et tenues d'accueil brodées, sobres et élégantes, à la charte de votre institut."
+          },
+          {
+            "title": "Franchises et réseaux",
+            "desc": "Habillage identique de tous les points de vente, piloté depuis le siège, pour une image homogène partout."
+          },
+          {
+            "title": "PME et commerces",
+            "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Notre méthode",
+        "title": "De votre logo à la tenue livrée",
+        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Brief et conseil",
+            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
+          },
+          {
+            "n": "02",
+            "title": "Bon à tirer à valider",
+            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
+          },
+          {
+            "n": "03",
+            "title": "Production maîtrisée",
+            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
+          },
+          {
+            "n": "04",
+            "title": "Livraison et réassort",
+            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
+          }
+        ]
+      },
+      "avantages": {
+        "title": "Pourquoi nous confier votre textile",
+        "items": [
+          {
+            "title": "Un seul partenaire",
+            "desc": "Textile, signalétique, print, objets et packaging avec un seul interlocuteur : une seule charte, un seul contact, une seule facture."
+          },
+          {
+            "title": "Ancrage local",
+            "desc": "Basés à Valence, dans la Drôme : on vous répond une première fois sous 24 h et on reste joignables, pour vos tenues comme pour vos réassorts."
+          },
+          {
+            "title": "Pensé multi-sites",
+            "desc": "Idéal pour les réseaux : tenues identiques sur tous les points de vente, pilotées simplement depuis le siège."
+          },
+          {
+            "title": "Note 5,0 sur 102 avis",
+            "desc": "Une note Google de 5,0/5 sur 102 avis : nos clients reviennent pour la qualité des tenues et le suivi."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Vos questions sur le textile personnalisé",
+        "items": [
+          {
+            "q": "Quel est le délai pour des vêtements personnalisés à Tain-l'Hermitage ?",
+            "a": "On vous répond une première fois sous 24 h. Ensuite, les délais (devis, bon à tirer, production) dépendent du projet : le support, la quantité et les finitions. Après validation du bon à tirer, comptez généralement quelques jours à deux semaines selon la technique et la quantité. Pour un besoin urgent (événement, salon), dites-le nous dès le brief : on cale le planning avec vous. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
+          },
+          {
+            "q": "Y a-t-il une quantité minimum de commande ?",
+            "a": "Non, on s'adapte à votre besoin réel, d'une petite série pour une équipe à plusieurs centaines de pièces pour un réseau. La technique de marquage varie selon la quantité et le visuel : flocage pour les petites séries, DTF pour les visuels détaillés en couleurs, sérigraphie pour les gros volumes. On vous oriente vers le plus pertinent."
+          },
+          {
+            "q": "Quelle technique choisir : broderie, flocage ou sérigraphie ?",
+            "a": "La broderie donne un rendu durable et haut de gamme, parfaite sur polos, softshells et textiles épais. Le flocage convient aux petites séries et aux visuels simples. La sérigraphie est idéale pour les grandes quantités. Le DTF gère les visuels détaillés en couleurs, dégradés et photos. On choisit avec vous selon le vêtement, le visuel et le budget."
+          },
+          {
+            "q": "Les vêtements résistent-ils aux lavages répétés ?",
+            "a": "Oui, on travaille des textiles pros et des marquages pensés pour durer. Broderie et sérigraphie tiennent particulièrement bien dans le temps, y compris en lavage intensif pour les vêtements de travail et de cuisine. C'est justement le sens d'une tenue de qualité pro plutôt qu'un textile grand public."
+          },
+          {
+            "q": "Pouvez-vous habiller tous les sites d'un réseau à l'identique ?",
+            "a": "C'est notre spécialité. On produit des tenues homogènes pour l'ensemble de vos points de vente, avec le bon marquage selon chaque usage. Le siège pilote, les sites reçoivent, et les réassorts se gèrent simplement. Une seule charte respectée partout en France."
+          },
+          {
+            "q": "Intervenez-vous à Tain-l'Hermitage ?",
+            "a": "Oui. Notre atelier est à Valence, à 20 minutes de Tain-l'Hermitage : on récupère votre brief et votre logo, on produit, et on vous livre sur place, ou vous passez à l'atelier. Un seul interlocuteur du devis à la livraison."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Habillez votre équipe aux bonnes couleurs",
+        "body": "Envoyez-nous votre logo et votre besoin pour Tain-l'Hermitage : on vous conseille le bon vêtement, la bonne technique et un devis clair. Première réponse sous 24 h.",
+        "primaryLabel": "Demander un devis"
+      },
+      "related": [
+        {
+          "label": "Signalétique",
+          "href": "/signaletique"
+        },
+        {
+          "label": "Objets publicitaires",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Textile perso : choisir le vêtement",
+          "href": "/conseils/textile-personnalise-guide"
+        },
+        {
+          "label": "Broderie, sérigraphie, flocage ou DTF ?",
+          "href": "/conseils/choisir-marquage-textile-pro"
+        }
+      ],
+      "areaServed": "Tain-l'Hermitage",
+      "cityLinks": {
+        "title": "Le textile personnalisé près de chez vous",
+        "intro": "On habille aussi les équipes des villes voisines. Choisissez votre secteur.",
+        "items": [
+          {
+            "label": "Valence",
+            "href": "/textile-personnalise"
+          },
+          {
+            "label": "Romans-sur-Isère",
+            "href": "/textile-personnalise-romans-sur-isere"
+          },
+          {
+            "label": "Montélimar",
+            "href": "/textile-personnalise-montelimar"
+          },
+          {
+            "label": "Bourg-lès-Valence",
+            "href": "/textile-personnalise-bourg-les-valence"
+          },
+          {
+            "label": "Guilherand-Granges",
+            "href": "/textile-personnalise-guilherand-granges"
+          },
+          {
+            "label": "Portes-lès-Valence",
+            "href": "/textile-personnalise-portes-les-valence"
+          },
+          {
+            "label": "Tournon-sur-Rhône",
+            "href": "/textile-personnalise-tournon-sur-rhone"
+          }
+        ]
+      }
+    },
+    "objets-publicitaires-tain-l-hermitage": {
+      "slug": "objets-publicitaires-tain-l-hermitage",
+      "cat": "goodies",
+      "navLabel": "Objets publicitaires Tain-l'Hermitage",
+      "meta": {
+        "title": "Objets publicitaires à Tain-l'Hermitage | SecretPub",
+        "description": "Objets publicitaires et goodies personnalisés à Tain-l'Hermitage (Drôme) : tote bags, mugs, gourdes, welcome packs à votre logo. Production et livraison depuis Valence."
+      },
+      "hero": {
+        "crumb": "Objets publicitaires Tain-l'Hermitage",
+        "eyebrow": "Objets & goodies",
+        "h1Html": "<span class=\"mark\">Objets publicitaires</span> personnalisés à Tain-l'Hermitage",
+        "sub": "Des goodies utiles à votre logo pour les entreprises et commerces de Tain-l'Hermitage. Conçus, produits et livrés depuis notre atelier de Valence."
+      },
+      "intro": {
+        "eyebrow": "Le cadeau qui dure",
+        "title": "L'objet qu'on offre et qu'on garde, à Tain-l'Hermitage",
+        "leadHtml": "Un bon objet publicitaire, c'est <b>votre marque qui vit au quotidien</b> à Tain-l'Hermitage, longtemps après le premier contact.",
+        "bodyHtml": "<p>Avec le vignoble de l'Hermitage et la Cité du Chocolat qui drainent des visiteurs toute l'année, l'objet souvenir ou le goodie utile prolonge l'expérience. Pour les caveaux, boutiques et événements de Tain, on personnalise ce qui se garde.</p><p>Notre atelier est à Valence, à 20 minutes de Tain-l'Hermitage : on sélectionne avec vous les objets utiles, on les personnalise à votre charte, on produit et on livre. Un seul interlocuteur pour tout, du choix des goodies au réassort.</p>"
+      },
+      "prestations": {
+        "eyebrow": "Ce que nous personnalisons",
+        "title": "Nos objets publicitaires",
+        "intro": "Des objets choisis pour être vraiment utilisés par vos clients et vos équipes à Tain-l'Hermitage, personnalisés à votre logo et à votre charte.",
+        "items": [
+          {
+            "title": "Tote bags et sacs",
+            "desc": "Le sac qu’on offre, pas le vêtement qu’on porte : réutilisable et marqué à votre logo, vu dans toute la ville et gardé bien au-delà d’un événement."
+          },
+          {
+            "title": "Mugs, gourdes et bouteilles",
+            "desc": "Objets du quotidien qui restent sur les bureaux et en réunion, pour une présence de marque chaque jour."
+          },
+          {
+            "title": "Stylos, carnets et porte-clés",
+            "desc": "Les incontournables des salons et du premier contact, à distribuer largement à petit prix."
+          },
+          {
+            "title": "Clés USB et accessoires tech",
+            "desc": "Objets connectés personnalisés, parfaits pour des cadeaux pros à forte valeur perçue."
+          },
+          {
+            "title": "Magnets et objets de fidélisation",
+            "desc": "Magnets et petits objets de bureau pensés pour les commerces de proximité et la fidélisation locale."
+          },
+          {
+            "title": "Cadeaux d’affaires de fin d’année",
+            "desc": "Coffrets et attentions soignées pour remercier vos clients et partenaires en fin d’année."
+          },
+          {
+            "title": "Coffrets d’accueil et welcome packs",
+            "desc": "Kits d’accueil complets pour vos nouveaux salariés, cohérents et prêts à remettre dès le premier jour."
+          },
+          {
+            "title": "Kits événementiels de stand",
+            "desc": "Ensembles d’objets coordonnés à distribuer sur un salon ou un séminaire, tous à la même charte."
+          }
+        ]
+      },
+      "secteurs": {
+        "title": "Pour qui nous produisons",
+        "intro": "PME, commerces, événements ou associations : à Tain-l'Hermitage, on choisit les objets qui collent à votre occasion et à votre budget.",
+        "items": [
+          {
+            "title": "PME et grandes équipes",
+            "desc": "Welcome packs des nouveaux arrivants et cadeaux internes pour souder et remercier vos équipes."
+          },
+          {
+            "title": "Commerçants et restaurateurs",
+            "desc": "Petits objets à offrir pour fidéliser, remercier et faire revenir vos clients réguliers."
+          },
+          {
+            "title": "Franchises et réseaux",
+            "desc": "Des goodies identiques sur tous les sites, commandés simplement et pilotés depuis le siège."
+          },
+          {
+            "title": "Événements, salons et séminaires",
+            "desc": "Kits à distribuer sur un stand et objets mémo pour marquer les esprits après l’événement."
+          },
+          {
+            "title": "Clubs de sport et associations",
+            "desc": "Objets supporters, lots de tombola et cadeaux membres pour animer votre communauté."
+          },
+          {
+            "title": "Promoteurs immobiliers",
+            "desc": "Coffrets de remise de clés et objets d’inauguration pour marquer les livraisons de programmes."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Notre méthode",
+        "title": "De l’idée à la livraison",
+        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Brief et sélection",
+            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
+          },
+          {
+            "n": "02",
+            "title": "Personnalisation et bon à tirer",
+            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
+          },
+          {
+            "n": "03",
+            "title": "Production maîtrisée",
+            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
+          },
+          {
+            "n": "04",
+            "title": "Livraison et multi-sites",
+            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
+          }
+        ]
+      },
+      "avantages": {
+        "title": "Pourquoi SecretPub",
+        "items": [
+          {
+            "title": "Un seul partenaire",
+            "desc": "Objets, signalétique, print et textile avec un seul interlocuteur : une seule charte, un seul contact, zéro aller-retour."
+          },
+          {
+            "title": "Ancrage local à Valence",
+            "desc": "Basés dans la Drôme, joignables et réactifs, avec une livraison à Valence et partout en France."
+          },
+          {
+            "title": "Pensé multi-sites",
+            "desc": "Mêmes goodies sur tous vos points de vente, commande simple pour les réseaux et les franchises."
+          },
+          {
+            "title": "Réactivité prouvée",
+            "desc": "Première réponse sous 24 h, puis des délais calés avec vous, avec une note de 5,0 sur 5 sur 102 avis Google."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Vos questions sur les objets publicitaires",
+        "items": [
+          {
+            "q": "Quelle quantité minimum pour commander des objets publicitaires ?",
+            "a": "Cela dépend de l’objet. Comptez souvent 50 à 100 pièces pour un stylo ou un tote bag, et davantage pour un objet tech. Dites-nous votre besoin et votre budget, on vous conseille la formule la plus juste."
+          },
+          {
+            "q": "Sous quels délais recevez-vous les goodies personnalisés à Tain-l'Hermitage ?",
+            "a": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production. Ensuite les délais (devis, bon à tirer, production) dépendent du projet : objet, quantité et finitions, en général quelques jours à deux semaines. Pour un salon ou une date précise, prévenez-nous tôt, on cale le planning avec vous. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
+          },
+          {
+            "q": "Peut-on personnaliser les objets à notre logo et à notre charte ?",
+            "a": "Oui, c’est notre métier. On applique votre logo à vos couleurs exactes sur chaque objet, du mug à la clé USB. Envoyez-nous votre logo en bonne définition, idéalement en fichier vectoriel, et on s’occupe de tout le reste."
+          },
+          {
+            "q": "Livrez-vous en dehors de Valence et de la Drôme ?",
+            "a": "Oui. Nous sommes basés à Valence mais nous livrons dans toute l’Auvergne-Rhône-Alpes et partout en France. Pour les réseaux multi-sites, nous répartissons les mêmes goodies sur chacun de vos points de vente."
+          },
+          {
+            "q": "Combien coûte un objet publicitaire personnalisé ?",
+            "a": "Le prix varie selon l’objet, la quantité et la personnalisation. Plus la quantité est élevée, plus le prix unitaire baisse. Demandez un devis avec votre besoin et votre budget : on vous répond une première fois sous 24 h, puis les délais de devis détaillé, de bon à tirer et de production dépendent du projet."
+          },
+          {
+            "q": "Intervenez-vous à Tain-l'Hermitage ?",
+            "a": "Oui. Notre atelier est à Valence, à 20 minutes de Tain-l'Hermitage : on prépare votre commande, on personnalise à votre charte et on vous livre sur place. Un seul interlocuteur du devis à la livraison."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Faites circuler votre marque",
+        "body": "Dites-nous votre occasion, votre budget et vos quantités pour Tain-l'Hermitage : on propose les objets utiles les plus adaptés. Première réponse sous 24 h.",
+        "primaryLabel": "Demander un devis"
+      },
+      "related": [
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/conseils/objets-publicitaires-goodies"
+        }
+      ],
+      "areaServed": "Tain-l'Hermitage",
+      "cityLinks": {
+        "title": "Objets publicitaires et goodies près de chez vous",
+        "intro": "On personnalise aussi pour les villes voisines. Choisissez votre secteur.",
+        "items": [
+          {
+            "label": "Valence",
+            "href": "/objets-publicitaires"
+          },
+          {
+            "label": "Romans-sur-Isère",
+            "href": "/objets-publicitaires-romans-sur-isere"
+          },
+          {
+            "label": "Montélimar",
+            "href": "/objets-publicitaires-montelimar"
+          },
+          {
+            "label": "Bourg-lès-Valence",
+            "href": "/objets-publicitaires-bourg-les-valence"
+          },
+          {
+            "label": "Guilherand-Granges",
+            "href": "/objets-publicitaires-guilherand-granges"
+          },
+          {
+            "label": "Portes-lès-Valence",
+            "href": "/objets-publicitaires-portes-les-valence"
+          },
+          {
+            "label": "Tournon-sur-Rhône",
+            "href": "/objets-publicitaires-tournon-sur-rhone"
+          }
+        ]
+      }
+    },
+    "textile-personnalise-tournon-sur-rhone": {
+      "slug": "textile-personnalise-tournon-sur-rhone",
+      "cat": "textile",
+      "navLabel": "Textile Tournon-sur-Rhône",
+      "meta": {
+        "title": "Textile personnalisé à Tournon-sur-Rhône | SecretPub",
+        "description": "Textile personnalisé à Tournon-sur-Rhône (Ardèche) : t-shirts, polos, vêtements de travail et EPI marqués en broderie, flocage ou sérigraphie. Conçu, produit et livré depuis Valence."
+      },
+      "hero": {
+        "crumb": "Textile Tournon-sur-Rhône",
+        "eyebrow": "Textile personnalisé à Tournon-sur-Rhône",
+        "h1Html": "Le <span class=\"mark\">textile personnalisé à Tournon-sur-Rhône</span> pour habiller votre équipe",
+        "sub": "T-shirts, polos, vêtements de travail et tenues marqués à votre logo pour les professionnels de Tournon-sur-Rhône. On conçoit, on produit et on livre depuis notre atelier de Valence."
+      },
+      "intro": {
+        "eyebrow": "Votre équipe à vos couleurs",
+        "title": "Des tenues marquées pour les pros de Tournon-sur-Rhône",
+        "leadHtml": "À Tournon-sur-Rhône, une tenue d'équipe soignée en dit long sur votre sérieux : <b>autant qu'elle tienne, et que le logo reste net lavage après lavage.</b>",
+        "bodyHtml": "<p>Face à Tain sur la rive ardéchoise, Tournon vit de son centre historique, du tourisme fluvial et de ses commerces. Tenues d'accueil pour boutiques et restaurants, vêtements marqués pour les acteurs du tourisme : on soigne l'image de votre équipe au contact des visiteurs.</p><p>Notre atelier est à Valence, à 20 minutes de Tournon-sur-Rhône : on vous conseille le bon vêtement et la bonne technique (broderie, flocage, sérigraphie ou DTF), on produit, puis on vous livre sur place ou vous passez récupérer. Un seul interlocuteur, du choix de la matière à la livraison.</p>"
+      },
+      "prestations": {
+        "eyebrow": "Nos prestations",
+        "title": "Ce qu'on personnalise pour vous",
+        "intro": "Chaque marquage est pensé pour l'usage réel de vos équipes à Tournon-sur-Rhône : la matière, la technique et le rendu qui tiennent dans le temps.",
+        "items": [
+          {
+            "title": "T-shirts, polos et sweats",
+            "desc": "Le trio de base à votre charte pour uniformiser une équipe, de l'accueil au service, sur des textiles qui tiennent au lavage."
+          },
+          {
+            "title": "Softshells, vestes et bodywarmers",
+            "desc": "Des pièces chaudes et présentables pour l'accueil, le terrain et les événements en extérieur, marquées à votre logo."
+          },
+          {
+            "title": "Vêtements de travail et EPI",
+            "desc": "Tenues de chantier et EPI marqués, résistants et durables, taillés pour les artisans et le bâtiment au quotidien."
+          },
+          {
+            "title": "Tabliers et tenues restauration",
+            "desc": "Tabliers, vestes et tenues brodées pour la salle, la cuisine et les métiers de bouche, propres et professionnels."
+          },
+          {
+            "title": "Maillots et textiles de sport",
+            "desc": "Maillots, survêtements et textiles de sport pour clubs, équipes et événements, avec numéros, noms et sponsors."
+          },
+          {
+            "title": "Casquettes et accessoires brodés",
+            "desc": "Casquettes, bonnets et accessoires brodés portés par l'équipe, en complément de la tenue, pour une image cohérente."
+          },
+          {
+            "title": "Impression DTF pour visuels détaillés",
+            "desc": "Impression numérique DTF pour les logos en couleurs, dégradés et visuels photo, nets sur t-shirts et textiles clairs."
+          },
+          {
+            "title": "Habillage complet d'un réseau",
+            "desc": "Du siège aux points de vente, on habille tous vos sites à l'identique avec le bon marquage selon chaque usage."
+          }
+        ]
+      },
+      "secteurs": {
+        "title": "Pour qui on personnalise du textile",
+        "intro": "Restaurateurs, artisans, clubs ou commerces : à Tournon-sur-Rhône, on adapte le vêtement et le marquage à chaque activité et à chaque budget.",
+        "items": [
+          {
+            "title": "Restaurateurs et hôtellerie",
+            "desc": "Tenues de salle et de cuisine, tabliers et polos brodés pour une équipe propre, reconnaissable et professionnelle."
+          },
+          {
+            "title": "Artisans et bâtiment",
+            "desc": "Vêtements de travail et EPI haute visibilité floqués, résistants au chantier et au lavage intensif."
+          },
+          {
+            "title": "Clubs de sport et associations",
+            "desc": "Maillots, survêtements et t-shirts d'équipe avec numéros, noms et logos de sponsors, prêts pour la saison."
+          },
+          {
+            "title": "Beauté, spas et coiffeurs",
+            "desc": "Tuniques, tabliers et tenues d'accueil brodées, sobres et élégantes, à la charte de votre institut."
+          },
+          {
+            "title": "Franchises et réseaux",
+            "desc": "Habillage identique de tous les points de vente, piloté depuis le siège, pour une image homogène partout."
+          },
+          {
+            "title": "PME et commerces",
+            "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Notre méthode",
+        "title": "De votre logo à la tenue livrée",
+        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Brief et conseil",
+            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
+          },
+          {
+            "n": "02",
+            "title": "Bon à tirer à valider",
+            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
+          },
+          {
+            "n": "03",
+            "title": "Production maîtrisée",
+            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
+          },
+          {
+            "n": "04",
+            "title": "Livraison et réassort",
+            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
+          }
+        ]
+      },
+      "avantages": {
+        "title": "Pourquoi nous confier votre textile",
+        "items": [
+          {
+            "title": "Un seul partenaire",
+            "desc": "Textile, signalétique, print, objets et packaging avec un seul interlocuteur : une seule charte, un seul contact, une seule facture."
+          },
+          {
+            "title": "Ancrage local",
+            "desc": "Basés à Valence, dans la Drôme : on vous répond une première fois sous 24 h et on reste joignables, pour vos tenues comme pour vos réassorts."
+          },
+          {
+            "title": "Pensé multi-sites",
+            "desc": "Idéal pour les réseaux : tenues identiques sur tous les points de vente, pilotées simplement depuis le siège."
+          },
+          {
+            "title": "Note 5,0 sur 102 avis",
+            "desc": "Une note Google de 5,0/5 sur 102 avis : nos clients reviennent pour la qualité des tenues et le suivi."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Vos questions sur le textile personnalisé",
+        "items": [
+          {
+            "q": "Quel est le délai pour des vêtements personnalisés à Tournon-sur-Rhône ?",
+            "a": "On vous répond une première fois sous 24 h. Ensuite, les délais (devis, bon à tirer, production) dépendent du projet : le support, la quantité et les finitions. Après validation du bon à tirer, comptez généralement quelques jours à deux semaines selon la technique et la quantité. Pour un besoin urgent (événement, salon), dites-le nous dès le brief : on cale le planning avec vous. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
+          },
+          {
+            "q": "Y a-t-il une quantité minimum de commande ?",
+            "a": "Non, on s'adapte à votre besoin réel, d'une petite série pour une équipe à plusieurs centaines de pièces pour un réseau. La technique de marquage varie selon la quantité et le visuel : flocage pour les petites séries, DTF pour les visuels détaillés en couleurs, sérigraphie pour les gros volumes. On vous oriente vers le plus pertinent."
+          },
+          {
+            "q": "Quelle technique choisir : broderie, flocage ou sérigraphie ?",
+            "a": "La broderie donne un rendu durable et haut de gamme, parfaite sur polos, softshells et textiles épais. Le flocage convient aux petites séries et aux visuels simples. La sérigraphie est idéale pour les grandes quantités. Le DTF gère les visuels détaillés en couleurs, dégradés et photos. On choisit avec vous selon le vêtement, le visuel et le budget."
+          },
+          {
+            "q": "Les vêtements résistent-ils aux lavages répétés ?",
+            "a": "Oui, on travaille des textiles pros et des marquages pensés pour durer. Broderie et sérigraphie tiennent particulièrement bien dans le temps, y compris en lavage intensif pour les vêtements de travail et de cuisine. C'est justement le sens d'une tenue de qualité pro plutôt qu'un textile grand public."
+          },
+          {
+            "q": "Pouvez-vous habiller tous les sites d'un réseau à l'identique ?",
+            "a": "C'est notre spécialité. On produit des tenues homogènes pour l'ensemble de vos points de vente, avec le bon marquage selon chaque usage. Le siège pilote, les sites reçoivent, et les réassorts se gèrent simplement. Une seule charte respectée partout en France."
+          },
+          {
+            "q": "Intervenez-vous à Tournon-sur-Rhône ?",
+            "a": "Oui. Notre atelier est à Valence, à 20 minutes de Tournon-sur-Rhône : on récupère votre brief et votre logo, on produit, et on vous livre sur place, ou vous passez à l'atelier. Un seul interlocuteur du devis à la livraison."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Habillez votre équipe aux bonnes couleurs",
+        "body": "Envoyez-nous votre logo et votre besoin pour Tournon-sur-Rhône : on vous conseille le bon vêtement, la bonne technique et un devis clair. Première réponse sous 24 h.",
+        "primaryLabel": "Demander un devis"
+      },
+      "related": [
+        {
+          "label": "Signalétique",
+          "href": "/signaletique"
+        },
+        {
+          "label": "Objets publicitaires",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Textile perso : choisir le vêtement",
+          "href": "/conseils/textile-personnalise-guide"
+        },
+        {
+          "label": "Broderie, sérigraphie, flocage ou DTF ?",
+          "href": "/conseils/choisir-marquage-textile-pro"
+        }
+      ],
+      "areaServed": "Tournon-sur-Rhône",
+      "cityLinks": {
+        "title": "Le textile personnalisé près de chez vous",
+        "intro": "On habille aussi les équipes des villes voisines. Choisissez votre secteur.",
+        "items": [
+          {
+            "label": "Valence",
+            "href": "/textile-personnalise"
+          },
+          {
+            "label": "Romans-sur-Isère",
+            "href": "/textile-personnalise-romans-sur-isere"
+          },
+          {
+            "label": "Montélimar",
+            "href": "/textile-personnalise-montelimar"
+          },
+          {
+            "label": "Bourg-lès-Valence",
+            "href": "/textile-personnalise-bourg-les-valence"
+          },
+          {
+            "label": "Guilherand-Granges",
+            "href": "/textile-personnalise-guilherand-granges"
+          },
+          {
+            "label": "Portes-lès-Valence",
+            "href": "/textile-personnalise-portes-les-valence"
+          },
+          {
+            "label": "Tain-l'Hermitage",
+            "href": "/textile-personnalise-tain-l-hermitage"
+          }
+        ]
+      }
+    },
+    "objets-publicitaires-tournon-sur-rhone": {
+      "slug": "objets-publicitaires-tournon-sur-rhone",
+      "cat": "goodies",
+      "navLabel": "Objets publicitaires Tournon-sur-Rhône",
+      "meta": {
+        "title": "Objets publicitaires à Tournon-sur-Rhône | SecretPub",
+        "description": "Objets publicitaires et goodies personnalisés à Tournon-sur-Rhône (Ardèche) : tote bags, mugs, gourdes, welcome packs à votre logo. Production et livraison depuis Valence."
+      },
+      "hero": {
+        "crumb": "Objets publicitaires Tournon-sur-Rhône",
+        "eyebrow": "Objets & goodies",
+        "h1Html": "<span class=\"mark\">Objets publicitaires</span> personnalisés à Tournon-sur-Rhône",
+        "sub": "Des goodies utiles à votre logo pour les entreprises et commerces de Tournon-sur-Rhône. Conçus, produits et livrés depuis notre atelier de Valence."
+      },
+      "intro": {
+        "eyebrow": "Le cadeau qui dure",
+        "title": "L'objet qu'on offre et qu'on garde, à Tournon-sur-Rhône",
+        "leadHtml": "Un bon objet publicitaire, c'est <b>votre marque qui vit au quotidien</b> à Tournon-sur-Rhône, longtemps après le premier contact.",
+        "bodyHtml": "<p>Tourisme fluvial, centre ancien et commerces de proximité : à Tournon, un objet publicitaire utile fait circuler votre marque auprès des visiteurs comme des habitués. On choisit avec vous les goodies qui restent.</p><p>Notre atelier est à Valence, à 20 minutes de Tournon-sur-Rhône : on sélectionne avec vous les objets utiles, on les personnalise à votre charte, on produit et on livre. Un seul interlocuteur pour tout, du choix des goodies au réassort.</p>"
+      },
+      "prestations": {
+        "eyebrow": "Ce que nous personnalisons",
+        "title": "Nos objets publicitaires",
+        "intro": "Des objets choisis pour être vraiment utilisés par vos clients et vos équipes à Tournon-sur-Rhône, personnalisés à votre logo et à votre charte.",
+        "items": [
+          {
+            "title": "Tote bags et sacs",
+            "desc": "Le sac qu’on offre, pas le vêtement qu’on porte : réutilisable et marqué à votre logo, vu dans toute la ville et gardé bien au-delà d’un événement."
+          },
+          {
+            "title": "Mugs, gourdes et bouteilles",
+            "desc": "Objets du quotidien qui restent sur les bureaux et en réunion, pour une présence de marque chaque jour."
+          },
+          {
+            "title": "Stylos, carnets et porte-clés",
+            "desc": "Les incontournables des salons et du premier contact, à distribuer largement à petit prix."
+          },
+          {
+            "title": "Clés USB et accessoires tech",
+            "desc": "Objets connectés personnalisés, parfaits pour des cadeaux pros à forte valeur perçue."
+          },
+          {
+            "title": "Magnets et objets de fidélisation",
+            "desc": "Magnets et petits objets de bureau pensés pour les commerces de proximité et la fidélisation locale."
+          },
+          {
+            "title": "Cadeaux d’affaires de fin d’année",
+            "desc": "Coffrets et attentions soignées pour remercier vos clients et partenaires en fin d’année."
+          },
+          {
+            "title": "Coffrets d’accueil et welcome packs",
+            "desc": "Kits d’accueil complets pour vos nouveaux salariés, cohérents et prêts à remettre dès le premier jour."
+          },
+          {
+            "title": "Kits événementiels de stand",
+            "desc": "Ensembles d’objets coordonnés à distribuer sur un salon ou un séminaire, tous à la même charte."
+          }
+        ]
+      },
+      "secteurs": {
+        "title": "Pour qui nous produisons",
+        "intro": "PME, commerces, événements ou associations : à Tournon-sur-Rhône, on choisit les objets qui collent à votre occasion et à votre budget.",
+        "items": [
+          {
+            "title": "PME et grandes équipes",
+            "desc": "Welcome packs des nouveaux arrivants et cadeaux internes pour souder et remercier vos équipes."
+          },
+          {
+            "title": "Commerçants et restaurateurs",
+            "desc": "Petits objets à offrir pour fidéliser, remercier et faire revenir vos clients réguliers."
+          },
+          {
+            "title": "Franchises et réseaux",
+            "desc": "Des goodies identiques sur tous les sites, commandés simplement et pilotés depuis le siège."
+          },
+          {
+            "title": "Événements, salons et séminaires",
+            "desc": "Kits à distribuer sur un stand et objets mémo pour marquer les esprits après l’événement."
+          },
+          {
+            "title": "Clubs de sport et associations",
+            "desc": "Objets supporters, lots de tombola et cadeaux membres pour animer votre communauté."
+          },
+          {
+            "title": "Promoteurs immobiliers",
+            "desc": "Coffrets de remise de clés et objets d’inauguration pour marquer les livraisons de programmes."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Notre méthode",
+        "title": "De l’idée à la livraison",
+        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Brief et sélection",
+            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
+          },
+          {
+            "n": "02",
+            "title": "Personnalisation et bon à tirer",
+            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
+          },
+          {
+            "n": "03",
+            "title": "Production maîtrisée",
+            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
+          },
+          {
+            "n": "04",
+            "title": "Livraison et multi-sites",
+            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
+          }
+        ]
+      },
+      "avantages": {
+        "title": "Pourquoi SecretPub",
+        "items": [
+          {
+            "title": "Un seul partenaire",
+            "desc": "Objets, signalétique, print et textile avec un seul interlocuteur : une seule charte, un seul contact, zéro aller-retour."
+          },
+          {
+            "title": "Ancrage local à Valence",
+            "desc": "Basés dans la Drôme, joignables et réactifs, avec une livraison à Valence et partout en France."
+          },
+          {
+            "title": "Pensé multi-sites",
+            "desc": "Mêmes goodies sur tous vos points de vente, commande simple pour les réseaux et les franchises."
+          },
+          {
+            "title": "Réactivité prouvée",
+            "desc": "Première réponse sous 24 h, puis des délais calés avec vous, avec une note de 5,0 sur 5 sur 102 avis Google."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Vos questions sur les objets publicitaires",
+        "items": [
+          {
+            "q": "Quelle quantité minimum pour commander des objets publicitaires ?",
+            "a": "Cela dépend de l’objet. Comptez souvent 50 à 100 pièces pour un stylo ou un tote bag, et davantage pour un objet tech. Dites-nous votre besoin et votre budget, on vous conseille la formule la plus juste."
+          },
+          {
+            "q": "Sous quels délais recevez-vous les goodies personnalisés à Tournon-sur-Rhône ?",
+            "a": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production. Ensuite les délais (devis, bon à tirer, production) dépendent du projet : objet, quantité et finitions, en général quelques jours à deux semaines. Pour un salon ou une date précise, prévenez-nous tôt, on cale le planning avec vous. Ce sont nos délais standard : pour un projet urgent, on peut activer une priorité planning sur demande."
+          },
+          {
+            "q": "Peut-on personnaliser les objets à notre logo et à notre charte ?",
+            "a": "Oui, c’est notre métier. On applique votre logo à vos couleurs exactes sur chaque objet, du mug à la clé USB. Envoyez-nous votre logo en bonne définition, idéalement en fichier vectoriel, et on s’occupe de tout le reste."
+          },
+          {
+            "q": "Livrez-vous en dehors de Valence et de la Drôme ?",
+            "a": "Oui. Nous sommes basés à Valence mais nous livrons dans toute l’Auvergne-Rhône-Alpes et partout en France. Pour les réseaux multi-sites, nous répartissons les mêmes goodies sur chacun de vos points de vente."
+          },
+          {
+            "q": "Combien coûte un objet publicitaire personnalisé ?",
+            "a": "Le prix varie selon l’objet, la quantité et la personnalisation. Plus la quantité est élevée, plus le prix unitaire baisse. Demandez un devis avec votre besoin et votre budget : on vous répond une première fois sous 24 h, puis les délais de devis détaillé, de bon à tirer et de production dépendent du projet."
+          },
+          {
+            "q": "Intervenez-vous à Tournon-sur-Rhône ?",
+            "a": "Oui. Notre atelier est à Valence, à 20 minutes de Tournon-sur-Rhône : on prépare votre commande, on personnalise à votre charte et on vous livre sur place. Un seul interlocuteur du devis à la livraison."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Faites circuler votre marque",
+        "body": "Dites-nous votre occasion, votre budget et vos quantités pour Tournon-sur-Rhône : on propose les objets utiles les plus adaptés. Première réponse sous 24 h.",
+        "primaryLabel": "Demander un devis"
+      },
+      "related": [
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Objets publicitaires & goodies",
+          "href": "/conseils/objets-publicitaires-goodies"
+        }
+      ],
+      "areaServed": "Tournon-sur-Rhône",
+      "cityLinks": {
+        "title": "Objets publicitaires et goodies près de chez vous",
+        "intro": "On personnalise aussi pour les villes voisines. Choisissez votre secteur.",
+        "items": [
+          {
+            "label": "Valence",
+            "href": "/objets-publicitaires"
+          },
+          {
+            "label": "Romans-sur-Isère",
+            "href": "/objets-publicitaires-romans-sur-isere"
+          },
+          {
+            "label": "Montélimar",
+            "href": "/objets-publicitaires-montelimar"
+          },
+          {
+            "label": "Bourg-lès-Valence",
+            "href": "/objets-publicitaires-bourg-les-valence"
+          },
+          {
+            "label": "Guilherand-Granges",
+            "href": "/objets-publicitaires-guilherand-granges"
+          },
+          {
+            "label": "Portes-lès-Valence",
+            "href": "/objets-publicitaires-portes-les-valence"
+          },
+          {
+            "label": "Tain-l'Hermitage",
+            "href": "/objets-publicitaires-tain-l-hermitage"
+          }
+        ]
+      }
     }
   },
   "metiersSocle": {

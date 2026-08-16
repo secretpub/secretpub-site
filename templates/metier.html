@@ -165,6 +165,24 @@
   </div>
 </section>
 
+<!-- MAILLAGE : VILLES DU MÊME SERVICE (évite les pages orphelines) -->
+{{#page.cityLinks}}
+<section class="section" data-screen-label="Villes {{page.navLabel}}">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Zone d'intervention</span>
+      <h2>{{title}}</h2>
+      <p class="lead">{{intro}}</p>
+    </div>
+    <div class="mp-related reveal">
+      {{#items}}
+      <a class="mp-related-link" href="{{href}}">{{label}} <span class="arr">→</span></a>
+      {{/items}}
+    </div>
+  </div>
+</section>
+{{/page.cityLinks}}
+
 <!-- MAILLAGE : AUTRES MÉTIERS -->
 {{#page.related.length}}
 <section class="section mp-alt" data-screen-label="Nos autres services">
