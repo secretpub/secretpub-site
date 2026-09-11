@@ -167,8 +167,17 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false, error: "bad_json" }, { status: 400 });
   }
 
-  // Honeypot: bots fill hidden fields. Accept silently to not tip them off.
-  if (body.company_hp) return NextResponse.json({ ok: true });
+  // Honeypot : les robots remplissent le champ caché ; on accepte en silence
+  // pour ne pas les renseigner. Le champ s'appelle `hp_token` : l'ancien nom
+  // `company_hp` était rempli par l'auto-complétion des navigateurs (Chrome et
+  // Safari ignorent autocomplete="off" sur un champ dont le nom contient
+  // « company »), ce qui faisait disparaître de vraies demandes (11/09/2026).
+  // `company_hp` n'est plus regardé, un JS encore en cache peut l'envoyer.
+  if (typeof body.hp_token === "string" && body.hp_token.trim()) {
+    console.warn("[leads] honeypot déclenché, demande ignorée");
+    return NextResponse.json({ ok: true });
+  }
+  delete body.company_hp;
 
   const type = body.type === "waitlist" ? "waitlist" : "contact";
   const email = String(body.email || "").trim();

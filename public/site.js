@@ -1447,10 +1447,10 @@
       e.preventDefault();
       var emailInput = wlForm.querySelector('input[type="email"], input[name="wl-email"]');
       var email = emailInput ? emailInput.value : '';
-      var hp = wlForm.querySelector('input[name="company_hp"]');
+      var hp = wlForm.querySelector('input[name="hp_token"]');
       var c = document.getElementById('wlConfirm');
       if (c) c.hidden = false;
-      postLead({ type: 'waitlist', email: email, company_hp: hp ? hp.value : '', source_page: location.pathname });
+      postLead({ type: 'waitlist', email: email, hp_token: hp ? hp.value : '', source_page: location.pathname });
       wlForm.reset();
     });
   }
