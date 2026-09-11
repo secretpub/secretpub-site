@@ -90,6 +90,64 @@ async function notifyByEmail(f: {
 }
 
 /**
+ * Relais vers le dashboard interne : la demande de contact devient une demande
+ * de l'onglet Demandes, avec client Axonaut renseigné automatiquement (IA +
+ * SIRENE). Cf. secretpub-dashboard/docs/DEMANDES.md §6. Actif seulement si
+ * DASHBOARD_INGEST_URL et DASHBOARD_INGEST_SECRET sont posés ; un échec ici
+ * ne fait jamais échouer le formulaire (le lead reste dans `leads` et le mail
+ * de notification est déjà parti).
+ */
+async function forwardToDashboard(lead: {
+  id: string | null;
+  created_at: string | null;
+  source_page: string | null;
+  email: string;
+  nom?: string | null;
+  prenom?: string | null;
+  company?: string | null;
+  phone?: string | null;
+  needs?: string[] | null;
+  activity?: string | null;
+  sites?: string | null;
+  message?: string | null;
+  files?: Array<{ name?: string; type?: string; url?: string }>;
+}): Promise<void> {
+  const base = process.env.DASHBOARD_INGEST_URL;
+  const secret = process.env.DASHBOARD_INGEST_SECRET;
+  if (!base || !secret) return;
+  const body = {
+    kind: "lead",
+    lead: {
+      id: lead.id,
+      source: "site_contact",
+      source_page: lead.source_page,
+      created_at: lead.created_at,
+      email: lead.email,
+      nom: lead.nom ?? null,
+      prenom: lead.prenom ?? null,
+      societe: lead.company ?? null,
+      tel: lead.phone ?? null,
+      besoin: lead.needs ?? [],
+      activite: lead.activity ?? null,
+      sites: lead.sites ?? null,
+      message: lead.message ?? null,
+      fichiers: (lead.files || []).filter((f) => f && f.url).map((f) => ({ name: f.name ?? "fichier", type: f.type ?? null, url: f.url })),
+    },
+  };
+  try {
+    const r = await fetch(`${base.replace(/\/$/, "")}/api/demandes/ingest`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "x-ingest-secret": secret },
+      body: JSON.stringify(body),
+      signal: AbortSignal.timeout(10_000),
+    });
+    if (!r.ok) console.error("[leads] dashboard ingest", r.status, (await r.text()).slice(0, 200));
+  } catch (e) {
+    console.error("[leads] dashboard ingest failed", e);
+  }
+}
+
+/**
  * Lead capture for the contact form (#cform) and the réseaux waitlist (#wlForm).
  * Stores into Supabase `leads`. If Supabase is not configured yet, it still
  * returns ok so the front-end confirmation UX works (lead is logged, not lost
@@ -196,7 +254,7 @@ export async function POST(req: NextRequest) {
       ? [String(needsRaw)]
       : null;
 
-  const { error } = await supa.from("leads").insert({
+  const { data: inserted, error } = await supa.from("leads").insert({
     type,
     email,
     name: (body.nom as string) || (body.name as string) || null,
@@ -208,7 +266,7 @@ export async function POST(req: NextRequest) {
     message: (body.message as string) || null,
     source_page: (body.source_page as string) || null,
     payload: body,
-  });
+  }).select("id, created_at").single();
 
   if (error) {
     console.error("[leads] insert error:", error.message);
@@ -233,6 +291,25 @@ export async function POST(req: NextRequest) {
     message: (body.message as string) || null,
     files,
   });
+
+  // Demande de contact -> onglet Demandes du dashboard (client Axonaut auto).
+  if (type === "contact") {
+    await forwardToDashboard({
+      id: (inserted as { id?: string } | null)?.id ?? null,
+      created_at: (inserted as { created_at?: string } | null)?.created_at ?? null,
+      source_page: (body.source_page as string) || null,
+      email,
+      nom: (body.nom as string) || null,
+      prenom: (body.prenom as string) || null,
+      company: (body.societe as string) || null,
+      phone: (body.tel as string) || null,
+      needs,
+      activity: (body.activite as string) || null,
+      sites: (body.sites as string) || null,
+      message: (body.message as string) || null,
+      files,
+    });
+  }
 
   return NextResponse.json({ ok: true, stored: true });
 }
