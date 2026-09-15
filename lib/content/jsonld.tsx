@@ -6,8 +6,10 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://secretpub.fr";
 const BIZ_ID = SITE_URL + "#business";
 
 /** Zone desservie déclarée aux moteurs et aux IA : Valence, sa couronne
- *  (Drôme + Ardèche) et les grandes villes d'Auvergne-Rhône-Alpes où l'on
- *  intervient. Sert le SEO local au-delà de la seule ville de Valence. */
+ *  (Drôme + Ardèche), les grandes villes d'Auvergne-Rhône-Alpes, et Paris /
+ *  l'Île-de-France où l'on intervient sur la signalétique, les panneaux de
+ *  chantier et les stores bannes. Sert le SEO local et la citation par les
+ *  moteurs génératifs au-delà de la seule ville de Valence. */
 const SERVED_AREAS = [
   { "@type": "City", name: "Valence" },
   { "@type": "City", name: "Bourg-lès-Valence" },
@@ -22,9 +24,14 @@ const SERVED_AREAS = [
   { "@type": "City", name: "Livron-sur-Drôme" },
   { "@type": "City", name: "Grenoble" },
   { "@type": "City", name: "Lyon" },
+  { "@type": "City", name: "Paris" },
   { "@type": "AdministrativeArea", name: "Drôme" },
   { "@type": "AdministrativeArea", name: "Ardèche" },
   { "@type": "AdministrativeArea", name: "Auvergne-Rhône-Alpes" },
+  { "@type": "AdministrativeArea", name: "Hauts-de-Seine" },
+  { "@type": "AdministrativeArea", name: "Seine-Saint-Denis" },
+  { "@type": "AdministrativeArea", name: "Val-de-Marne" },
+  { "@type": "AdministrativeArea", name: "Île-de-France" },
   { "@type": "Country", name: "France" },
 ];
 
@@ -74,6 +81,11 @@ function localBusiness(c: SiteContent) {
       "Habillage de véhicule",
       "Covering",
       "Communication visuelle",
+      "Store banne",
+      "Store banne personnalisé",
+      "Lambrequin publicitaire",
+      "Panneau de chantier",
+      "Réassort de supports publicitaires",
     ],
     vatID: "FR74811457142",
     identifier: {

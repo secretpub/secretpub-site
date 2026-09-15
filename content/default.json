@@ -13104,6 +13104,425 @@
           }
         ]
       }
+    },
+    "stores-bannes": {
+      "slug": "stores-bannes",
+      "cat": "signa",
+      "navLabel": "Stores bannes",
+      "meta": {
+        "title": "Store banne personnalisé : fabrication, pose et lambrequin imprimé | SecretPub",
+        "description": "Stores bannes sur mesure, lambrequin et toile imprimés à votre charte, motorisation et pose. Fabricant enseigniste, du relevé à la mise en service, partout en France."
+      },
+      "hero": {
+        "crumb": "Stores bannes",
+        "eyebrow": "Stores bannes et lambrequins imprimés",
+        "h1Html": "<span class=\"mark\">Stores bannes personnalisés</span>, du lambrequin imprimé à la pose",
+        "sub": "Fabrication sur mesure, motorisation, toile et lambrequin imprimés à votre charte, pose par nos équipes. Le store devient une enseigne : celle qu'on lit depuis le trottoir d'en face."
+      },
+      "intro": {
+        "eyebrow": "Un store, c'est une enseigne horizontale",
+        "title": "Le seul support de marque qui abrite aussi vos clients",
+        "leadHtml": "Un store banne n'est pas un accessoire de terrasse : <b>c'est la plus grande surface de marque de votre façade</b>, et la seule que vos clients lisent assis dessous.",
+        "bodyHtml": "<p>Un storiste vous vendra une mécanique et une toile au mètre. Nous, on part de l'autre bout : qu'est-ce qui doit se lire, à quelle distance, et dans quelle rue. Le lambrequin, ce bandeau de toile qui pend devant le store, est le support le plus lu d'une devanture parce qu'il est à hauteur d'œil et qu'il ne disparaît pas derrière un camion garé. C'est aussi notre métier depuis le premier jour : on imprime, on découpe, on coud et on pose.</p><p>Concrètement, on fabrique le store aux cotes de votre façade (coffre intégral, semi-coffre ou monobloc), on imprime le lambrequin et la toile à votre charte, on motorise, et on installe. Quand la façade a besoin d'autre chose au même moment, bandeau, caisson lumineux, vitrophanie, tout part dans le même chantier. Notre atelier est à Valence, on livre et on pose dans toute la France, avec un seul interlocuteur du relevé à la mise en service.</p>"
+      },
+      "prestations": {
+        "eyebrow": "Ce qu'on fabrique et pose",
+        "title": "Nos prestations store banne",
+        "intro": "De l'armature au lambrequin imprimé, chaque élément est étudié, fabriqué et installé par nos équipes.",
+        "items": [
+          {
+            "title": "Store banne sur mesure",
+            "desc": "Coffre intégral, semi-coffre ou monobloc, largeur et avancée calculées sur votre façade. Armature laquée dans la teinte de votre charte, toile acrylique teintée masse garantie extérieur."
+          },
+          {
+            "title": "Lambrequin imprimé",
+            "desc": "Le bandeau de toile qui pend devant le store : c'est là que votre nom se lit, depuis le trottoir d'en face. Impression numérique, découpe adhésive ou lambrequin cousu remplaçable."
+          },
+          {
+            "title": "Toile complète personnalisée",
+            "desc": "Rayures, aplat à votre couleur de charte, logo répété ou visuel plein format sur toute la toile. On imprime, on coud et on tend."
+          },
+          {
+            "title": "Remplacement de toile",
+            "desc": "Armature saine mais toile délavée, tachée ou déchirée : on relève les cotes, on refabrique à l'identique, et on profite du passage pour ajouter le lambrequin imprimé."
+          },
+          {
+            "title": "Motorisation et automatismes",
+            "desc": "Moteur tubulaire radio, télécommande, capteur de vent et manœuvre de secours. On motorise aussi un store manuel existant quand l'armature le permet."
+          },
+          {
+            "title": "Pose et fixation",
+            "desc": "Façade, linteau, potence ou dalle : on contrôle le support avant de percer, et on pose avec l'outillage et les protections adaptés au chantier."
+          },
+          {
+            "title": "Joues, écrans et stores droits",
+            "desc": "Descentes verticales, joues latérales et stores droits pour fermer une terrasse du vent et du soleil rasant, dans la teinte du banne et avec le même marquage."
+          },
+          {
+            "title": "Réseaux et franchises",
+            "desc": "Vingt ou trente terrasses à équiper du même store et du même lambrequin, site par site, avec un interlocuteur unique et une identité strictement identique."
+          }
+        ]
+      },
+      "secteurs": {
+        "title": "Pour qui on fabrique et on pose",
+        "intro": "Presque tous nos clients store banne ont le même point commun : une terrasse ou une vitrine qui doit se voir, et une enseigne à faire tenir dessus.",
+        "items": [
+          {
+            "title": "Cafés, bars et restaurants",
+            "desc": "Chaque mètre d'avancée abrite des couverts et porte votre nom au-dessus. On dimensionne pour la terrasse réelle, pas pour le catalogue."
+          },
+          {
+            "title": "Commerces de bouche et boutiques",
+            "desc": "Boulangeries, primeurs, fleuristes : le store protège la marchandise du soleil et signale la boutique dans une rue où tout se ressemble."
+          },
+          {
+            "title": "Hôtels et résidences",
+            "desc": "Entrées, terrasses et loggias, en teinte sobre et finitions soignées, avec la même identité sur tous les niveaux."
+          },
+          {
+            "title": "Franchises et réseaux",
+            "desc": "Un cahier des charges, N adresses, le même store et le même lambrequin partout, déployés site par site."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Comment ça se passe",
+        "title": "Du relevé à la mise en service, en 4 étapes",
+        "intro": "Un déroulé clair, un seul interlocuteur, et rien qui se découvre le jour de la pose.",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Relevé et faisabilité",
+            "desc": "On mesure la façade, on vérifie le support (linteau, bandeau, maçonnerie) et la hauteur libre au-dessus du trottoir avant de proposer quoi que ce soit."
+          },
+          {
+            "n": "02",
+            "title": "BAT inséré sur votre façade",
+            "desc": "Première réponse sous 24 h, puis un bon à tirer monté sur la photo réelle de votre devanture : vous voyez le store déployé, le lambrequin et le rendu du texte avant de valider."
+          },
+          {
+            "n": "03",
+            "title": "Fabrication et impression",
+            "desc": "Armature laquée, toile acrylique teintée masse, lambrequin imprimé et cousu en atelier. Tout part monté et repéré pour aller vite sur site."
+          },
+          {
+            "n": "04",
+            "title": "Pose et mise en service",
+            "desc": "Pose, réglage de l'inclinaison, essai moteur et réglage du capteur de vent. On repart quand le store fonctionne devant vous."
+          }
+        ]
+      },
+      "avantages": {
+        "title": "Pourquoi nous confier votre store banne",
+        "items": [
+          {
+            "title": "Le lambrequin, c'est notre métier de base",
+            "desc": "Nous sommes imprimeurs et enseignistes avant d'être poseurs de stores. Le calage du logo, la hauteur de lettre utile, le contraste qui tient à dix mètres : c'est ce qu'on fait toute la journée."
+          },
+          {
+            "title": "Le store et l'enseigne, un seul chantier",
+            "desc": "Bandeau, caisson, vitrophanie et store sont sur la même façade, à trente centimètres les uns des autres. Les traiter ensemble coûte moins cher que deux interventions, et le résultat est cohérent."
+          },
+          {
+            "title": "Les autorisations, on les connaît",
+            "desc": "Dès qu'une inscription apparaît sur la toile, le store devient une enseigne au sens réglementaire. On sait quel dossier déposer, dans quel ordre, et ce que ça ajoute au délai."
+          },
+          {
+            "title": "Fait pour les réseaux multi-sites",
+            "desc": "On équipe des réseaux entiers à la même charte, avec un interlocuteur unique, un BAT validé une fois et la même finition d'un bout à l'autre."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Questions fréquentes sur les stores bannes personnalisés",
+        "items": [
+          {
+            "q": "Peut-on imprimer un logo sur un store que j'ai déjà ?",
+            "a": "Oui, dans la plupart des cas. Si votre armature est saine, on remplace le lambrequin seul, ou on le marque en adhésif découpé. C'est l'intervention la moins chère pour transformer un store banal en support d'enseigne."
+          },
+          {
+            "q": "Faut-il une autorisation pour poser un store banne ?",
+            "a": "Deux régimes se cumulent. La modification de l'aspect de la façade relève de l'urbanisme, souvent une déclaration préalable en mairie, avec avis de l'architecte des bâtiments de France en secteur protégé. Et dès que le store porte une inscription, il devient une enseigne, ce qui demande une autorisation au titre du règlement local de publicité. Si le store surplombe le trottoir, la commune encadre en plus la saillie et la hauteur libre. On vous dit lesquels s'appliquent avant de lancer la fabrication."
+          },
+          {
+            "q": "Combien de temps tient une toile de store ?",
+            "a": "Comptez 8 à 12 ans pour une toile acrylique teintée masse bien entretenue, moins en plein sud sans protection ou si elle est souvent rentrée humide. Ce qui lâche en premier, ce sont les coutures et la barre de charge, rarement la toile elle-même."
+          },
+          {
+            "q": "Quel est le délai entre la commande et la pose ?",
+            "a": "Généralement 2 à 4 semaines après validation du bon à tirer, fabrication et pose comprises. Si une autorisation en mairie est nécessaire, c'est l'instruction du dossier qui commande le calendrier, souvent un à deux mois : il faut l'anticiper avant une ouverture."
+          },
+          {
+            "q": "Qu'est-ce qui fait vraiment le prix d'un store banne ?",
+            "a": "La largeur et l'avancée, le type de coffre, la motorisation et les automatismes, la nature du support de fixation, l'accès au chantier, et l'impression. On chiffre sur photo et cotes plutôt qu'au forfait, parce que deux façades identiques sur le papier ne se posent pas pareil."
+          },
+          {
+            "q": "Un store motorisé résiste-t-il au vent ?",
+            "a": "Un store banne est un équipement de beau temps : au-delà de sa classe de résistance au vent, il doit se replier. C'est le rôle du capteur de vent, que nous réglons à la mise en service. Sur une terrasse exposée, on conseille plutôt un store avec joues ou un modèle sur pieds."
+          },
+          {
+            "q": "Vous équipez plusieurs adresses d'un même réseau ?",
+            "a": "Oui, c'est même le cas où on est le plus utile : un seul BAT validé, la même toile, le même lambrequin et la même finition sur chaque point de vente, avec un planning de pose site par site et un seul interlocuteur."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Envoyez-nous la photo de votre façade",
+        "body": "Une photo de la devanture, une largeur approximative et votre logo suffisent pour démarrer. On revient avec le store inséré sur votre façade réelle et un devis complet, pose comprise.",
+        "primaryLabel": "Demander un devis"
+      },
+      "related": [
+        {
+          "label": "Signalétique & enseignes",
+          "href": "/signaletique"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        },
+        {
+          "label": "Réseaux & franchises",
+          "href": "/reseaux-franchises"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Store banne personnalisé : le lambrequin",
+          "href": "/conseils/store-banne-personnalise-lambrequin"
+        },
+        {
+          "label": "Remplacer la toile d'un store banne",
+          "href": "/conseils/remplacer-toile-store-banne"
+        },
+        {
+          "label": "Store banne : les autorisations",
+          "href": "/conseils/autorisation-store-banne-terrasse"
+        },
+        {
+          "label": "Enseigne : autorisations et démarches",
+          "href": "/conseils/autorisation-enseigne-demarches"
+        }
+      ],
+      "cityLinks": {
+        "title": "Stores bannes à Paris et en Île-de-France",
+        "intro": "On fabrique à Valence et on pose dans toute la France. Voici notre page dédiée à la région où la demande de lambrequins imprimés est la plus forte.",
+        "items": [
+          {
+            "label": "Store banne à Paris",
+            "href": "/stores-bannes-paris"
+          }
+        ]
+      }
+    },
+    "stores-bannes-paris": {
+      "slug": "stores-bannes-paris",
+      "cat": "signa",
+      "navLabel": "Stores bannes Paris",
+      "meta": {
+        "title": "Store banne personnalisé à Paris : fabrication, pose, lambrequin | SecretPub",
+        "description": "Store banne sur mesure à Paris : lambrequin imprimé à votre charte, motorisation, remplacement de toile et pose. Fabricant enseigniste, devis sur photo de votre façade."
+      },
+      "hero": {
+        "crumb": "Stores bannes Paris",
+        "eyebrow": "Stores bannes personnalisés à Paris",
+        "h1Html": "<span class=\"mark\">Stores bannes personnalisés à Paris</span>, du lambrequin à la pose",
+        "sub": "Terrasses de café, boulangeries, boutiques de pied d'immeuble : on fabrique le store aux cotes de votre devanture parisienne, on imprime le lambrequin à votre charte et on pose en une journée."
+      },
+      "intro": {
+        "eyebrow": "Votre nom, à hauteur d'œil",
+        "title": "À Paris, ce qui se lit dans la rue, c'est le bandeau de toile",
+        "leadHtml": "Dans une rue de huit mètres de large, personne ne lève la tête vers votre enseigne. <b>Ce qui se lit, à Paris, c'est le lambrequin du store</b>, à hauteur de regard et juste au-dessus des tables.",
+        "bodyHtml": "<p>Paris a une particularité : la terrasse est devenue de la surface commerciale à part entière, et chaque mètre d'avancée de store abrite des couverts en même temps qu'il porte votre nom. Rue Oberkampf, rue de Charonne, autour du marché d'Aligre, dans le haut du 18e ou rue du Commerce, les devantures se ressemblent toutes à deux mètres du sol : le store est souvent le seul élément qui vous distingue vraiment du voisin. Encore faut-il qu'il porte autre chose qu'un blanc cassé standard.</p><p>Notre atelier est à Valence, autant le dire tout de suite. Paris est à 2 h 10 de TGV pour le relevé et à un peu plus de cinq heures de camion pour la pose, alors on regroupe tout ce qui peut l'être : relevé et photos en une visite, bon à tirer inséré sur la photo réelle de votre façade, fabrication et impression en atelier, puis pose bouclée en une journée, tôt le matin quand la rue est encore libre. Les contraintes parisiennes entrent dans le devis dès le départ, pas en cours de chantier : stationnement du camion, hauteur libre au-dessus du trottoir, accord du syndic et dossier en mairie d'arrondissement.</p>"
+      },
+      "prestations": {
+        "eyebrow": "Ce qu'on fabrique et pose à Paris",
+        "title": "Nos prestations store banne",
+        "intro": "Du store complet au simple remplacement de lambrequin, avec le marquage imprimé en atelier avant de monter dans la rue.",
+        "items": [
+          {
+            "title": "Store banne sur mesure",
+            "desc": "Coffre intégral, semi-coffre ou monobloc, largeur et avancée calculées sur votre façade. Armature laquée dans la teinte de votre charte, toile acrylique teintée masse garantie extérieur."
+          },
+          {
+            "title": "Lambrequin imprimé",
+            "desc": "Le bandeau de toile qui pend devant le store : c'est là que votre nom se lit, depuis le trottoir d'en face. Impression numérique, découpe adhésive ou lambrequin cousu remplaçable."
+          },
+          {
+            "title": "Toile complète personnalisée",
+            "desc": "Rayures, aplat à votre couleur de charte, logo répété ou visuel plein format sur toute la toile. On imprime, on coud et on tend."
+          },
+          {
+            "title": "Remplacement de toile",
+            "desc": "Armature saine mais toile délavée, tachée ou déchirée : on relève les cotes, on refabrique à l'identique, et on profite du passage pour ajouter le lambrequin imprimé."
+          },
+          {
+            "title": "Motorisation et automatismes",
+            "desc": "Moteur tubulaire radio, télécommande, capteur de vent et manœuvre de secours. On motorise aussi un store manuel existant quand l'armature le permet."
+          },
+          {
+            "title": "Pose et fixation",
+            "desc": "Façade, linteau, potence ou dalle : on contrôle le support avant de percer, et on pose avec l'outillage et les protections adaptés au chantier."
+          },
+          {
+            "title": "Joues, écrans et stores droits",
+            "desc": "Descentes verticales, joues latérales et stores droits pour fermer une terrasse du vent et du soleil rasant, dans la teinte du banne et avec le même marquage."
+          },
+          {
+            "title": "Réseaux et franchises",
+            "desc": "Vingt ou trente terrasses à équiper du même store et du même lambrequin, site par site, avec un interlocuteur unique et une identité strictement identique."
+          }
+        ]
+      },
+      "secteurs": {
+        "title": "Pour qui on pose des stores à Paris",
+        "intro": "Nos chantiers parisiens se concentrent sur les commerces de pied d'immeuble et la restauration, là où la terrasse et la devanture font le chiffre d'affaires.",
+        "items": [
+          {
+            "title": "Cafés, bars et restaurants",
+            "desc": "Terrasses du 10e, du 11e et du 12e, brasseries d'angle, adresses de quartier : avancée maximale utile, joues latérales et nom lisible depuis le trottoir d'en face."
+          },
+          {
+            "title": "Boulangeries et commerces de bouche",
+            "desc": "Protéger la vitrine du soleil et signaler l'enseigne dans une rue commerçante saturée d'affichage."
+          },
+          {
+            "title": "Hôtels et immeubles de bureaux",
+            "desc": "Entrées et rez-de-chaussée en secteur haussmannien, teintes sobres et finitions compatibles avec le règlement de copropriété."
+          },
+          {
+            "title": "Réseaux et franchises parisiennes",
+            "desc": "Plusieurs adresses dans Paris et en petite couronne, équipées à l'identique, avec un planning de pose regroupé pour limiter les déplacements."
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "Comment ça se passe",
+        "title": "Du relevé à la mise en service, en 4 étapes",
+        "intro": "Un déroulé clair, un seul interlocuteur, et rien qui se découvre le jour de la pose.",
+        "steps": [
+          {
+            "n": "01",
+            "title": "Relevé et faisabilité",
+            "desc": "On mesure la façade, on vérifie le support (linteau, bandeau, maçonnerie) et la hauteur libre au-dessus du trottoir avant de proposer quoi que ce soit."
+          },
+          {
+            "n": "02",
+            "title": "BAT inséré sur votre façade",
+            "desc": "Première réponse sous 24 h, puis un bon à tirer monté sur la photo réelle de votre devanture : vous voyez le store déployé, le lambrequin et le rendu du texte avant de valider."
+          },
+          {
+            "n": "03",
+            "title": "Fabrication et impression",
+            "desc": "Armature laquée, toile acrylique teintée masse, lambrequin imprimé et cousu en atelier. Tout part monté et repéré pour aller vite sur site."
+          },
+          {
+            "n": "04",
+            "title": "Pose et mise en service",
+            "desc": "Pose, réglage de l'inclinaison, essai moteur et réglage du capteur de vent. On repart quand le store fonctionne devant vous."
+          }
+        ]
+      },
+      "avantages": {
+        "title": "Pourquoi nous faire venir à Paris",
+        "items": [
+          {
+            "title": "Un chantier calé sur une journée",
+            "desc": "À Paris, le problème n'est pas la pose, c'est l'accès. Relevé précis en amont, matériel repéré et monté en atelier, créneau tôt le matin : on n'immobilise pas votre trottoir deux jours."
+          },
+          {
+            "title": "La copropriété et la mairie d'arrondissement",
+            "desc": "Teinte harmonisée avec les autres stores de l'immeuble, visuel à présenter en assemblée générale, dossier de déclaration préalable prêt à déposer : on fournit les pièces, vous ne partez pas de zéro."
+          },
+          {
+            "title": "Le lambrequin pensé pour une rue étroite",
+            "desc": "Hauteur de lettre calculée pour la largeur réelle de votre rue, contraste qui tient par temps couvert, logo qui ne se perd pas dans la vague du bandeau. C'est notre métier d'imprimeur qui parle."
+          },
+          {
+            "title": "Plusieurs adresses d'un coup",
+            "desc": "Un réseau avec une adresse dans le 11e, une dans le 15e et une à Boulogne : un seul BAT, une seule fabrication, une tournée de pose. C'est là qu'un fabricant unique devient franchement rentable."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Questions fréquentes sur les stores bannes à Paris",
+        "items": [
+          {
+            "q": "Vous venez vraiment de Valence pour poser un store à Paris ?",
+            "a": "Oui, et on l'organise pour que ça ne vous coûte pas plus cher qu'un poseur du coin : une visite de relevé, une fabrication complète en atelier, puis une seule journée de pose. Le déplacement figure noir sur blanc dans le devis, et il se dilue vite dès qu'il y a plusieurs adresses ou un store plus large que trois mètres."
+          },
+          {
+            "q": "Faut-il une autorisation pour un store banne à Paris ?",
+            "a": "Oui, presque toujours, et souvent deux. Modifier l'aspect de la façade relève de l'urbanisme, avec un dossier en mairie d'arrondissement et l'avis de l'architecte des bâtiments de France en secteur protégé. Dès que le store porte votre nom, il devient aussi une enseigne, encadrée par le règlement local de publicité de Paris. Si le store surplombe le trottoir, la saillie et la hauteur libre sont réglementées en plus. On fait le point avec vous avant la fabrication."
+          },
+          {
+            "q": "Et si l'immeuble est en copropriété ?",
+            "a": "La façade est une partie commune : il faut l'accord de l'assemblée générale, et le règlement impose souvent une teinte unique pour tous les stores de l'immeuble. On vous prépare le visuel inséré sur photo et la fiche technique à joindre à la convocation, ce qui fait gagner un cycle d'assemblée."
+          },
+          {
+            "q": "Vous intervenez dans quels arrondissements ?",
+            "a": "Tous les arrondissements de Paris, plus la petite couronne : Boulogne, Neuilly, Levallois, Montreuil, Vincennes, Saint-Denis, Aubervilliers, Pantin, Ivry, Créteil, Nanterre. Au-delà, on regarde au cas par cas selon la taille du chantier."
+          },
+          {
+            "q": "Peut-on changer seulement le lambrequin de mon store existant ?",
+            "a": "Oui, c'est l'intervention la plus fréquente à Paris. On relève les cotes, on fabrique un lambrequin imprimé à votre charte et on le remplace sur place, sans toucher à l'armature. Quand la toile est encore bonne, c'est de loin le meilleur rapport visibilité sur budget."
+          },
+          {
+            "q": "Quels délais pour un store à Paris ?",
+            "a": "2 à 4 semaines après validation du bon à tirer si aucune autorisation n'est requise. Avec un dossier en mairie ou un passage en assemblée générale, comptez plutôt un à trois mois : c'est l'administratif qui commande, pas la fabrication."
+          },
+          {
+            "q": "Faites-vous du dépannage en urgence sur Paris ?",
+            "a": "Non, et on préfère le dire : nous ne sommes pas une entreprise de dépannage en deux heures. Nous faisons du remplacement et de la fabrication planifiés, avec un rendez-vous, un devis et une pose propre. Pour une toile arrachée ou un bras cassé, on intervient dans la semaine selon le planning."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Un store banne à votre nom, sur votre façade parisienne",
+        "body": "Envoyez-nous une photo de la devanture, la largeur approximative et votre logo. On revient avec le store et le lambrequin insérés sur votre façade réelle, et un devis complet, déplacement et pose inclus.",
+        "primaryLabel": "Demander un devis"
+      },
+      "related": [
+        {
+          "label": "Stores bannes",
+          "href": "/stores-bannes"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        },
+        {
+          "label": "Signalétique & enseignes",
+          "href": "/signaletique"
+        },
+        {
+          "label": "Réseaux & franchises",
+          "href": "/reseaux-franchises"
+        }
+      ],
+      "conseils": [
+        {
+          "label": "Store banne personnalisé : le lambrequin",
+          "href": "/conseils/store-banne-personnalise-lambrequin"
+        },
+        {
+          "label": "Store banne : les autorisations",
+          "href": "/conseils/autorisation-store-banne-terrasse"
+        },
+        {
+          "label": "Remplacer la toile d'un store banne",
+          "href": "/conseils/remplacer-toile-store-banne"
+        },
+        {
+          "label": "Communication pour restaurant",
+          "href": "/conseils/communication-restaurant"
+        }
+      ],
+      "areaServed": "Paris"
     }
   },
   "metiersSocle": {
