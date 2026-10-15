@@ -691,7 +691,8 @@
     // Mobile : le 1er slide utilise une photo dédiée (showroom) — en <img> pour un
     // mouvement Ken Burns LISSE (transform GPU), pas un background saccadé.
     if (window.matchMedia('(max-width: 880px)').matches) {
-      var hFirstImg = heroC.querySelector('.hslide:first-child .hslide-bg img');
+      // (pas de remplacement si le 1er slide est la vidéo : son image = sa 1re image)
+      var hFirstImg = heroC.querySelector('.hslide:first-child .hslide-bg:not(.has-video) img');
       if (hFirstImg) hFirstImg.setAttribute('src', '/assets/hero-mobile-1.jpg');
       // Bouton espace de commande : libellé raccourci sur mobile.
       var hPpBtn = heroC.querySelector('.btn-pp');
@@ -736,20 +737,70 @@
     hNav.appendChild(mkTap('next', 'M9 6l6 6-6 6'));
     heroC.appendChild(hNav);
 
+    // Vidéo d'ouverture (1er slide) : lecture auto muette, sans aucune commande. Le slide
+    // dure le temps de la vidéo (la jauge mobile suit la lecture), puis passe au suivant.
+    // Pas de vidéo si l'utilisateur préfère moins d'animations, économise ses données, ou
+    // si la lecture auto est refusée (économie d'énergie iOS) : l'image reste, minuteur normal.
+    var hVid = heroC.querySelector('video.hvid'), hVidIdx = -1, hHover = false;
+    if (hVid) {
+      var hNoVid = window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
+        (navigator.connection && navigator.connection.saveData) ||
+        !hVid.canPlayType || !hVid.canPlayType('video/mp4');
+      if (hNoVid) { hVid.parentNode.removeChild(hVid); hVid = null; }
+    }
+    function hVidDrop() { // retour au mode image + minuteur classique
+      if (!hVid) return;
+      var wasOn = hIdx === hVidIdx;
+      hVid.classList.remove('is-on');
+      try { hVid.pause(); } catch (e0) {}
+      if (hVid.parentNode) hVid.parentNode.removeChild(hVid);
+      if (hSegs[hVidIdx]) hSegs[hVidIdx].classList.remove('is-video');
+      hVid = null; hVidIdx = -1;
+      if (wasOn) { setSegments(hIdx); startTimer(H_DUR); }
+    }
+    function hVidPlay() {
+      if (!hVid) return;
+      var p = hVid.play();
+      if (p && p.catch) p.catch(function () { hVidDrop(); });
+    }
+    if (hVid) {
+      hSlides.forEach(function (s, j) { if (s.contains(hVid)) hVidIdx = j; });
+      if (hSegs[hVidIdx]) hSegs[hVidIdx].classList.add('is-video');
+      var hMob = window.matchMedia('(max-width: 880px)').matches;
+      var hSrc = (hMob && hVid.getAttribute('data-src-mobile')) || hVid.getAttribute('data-src');
+      hVid.muted = true; hVid.defaultMuted = true; hVid.loop = false;
+      hVid.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+      hVid.addEventListener('playing', function () { hVid.classList.add('is-on'); });
+      hVid.addEventListener('timeupdate', function () {
+        if (hIdx !== hVidIdx || !hVid.duration) return;
+        hSegs[hVidIdx].firstChild.style.width = Math.min(100, hVid.currentTime / hVid.duration * 100) + '%';
+      });
+      hVid.addEventListener('ended', function () {
+        if (hIdx !== hVidIdx) return;
+        if (hHover) { try { hVid.currentTime = 0; } catch (e1) {} hVidPlay(); return; } // souris posée : on rejoue
+        hGo(hIdx + 1);
+      });
+      hVid.addEventListener('error', function () { hVidDrop(); });
+      if (hSrc) hVid.setAttribute('src', hSrc); else hVidDrop();
+    }
+
     function setSegments(active) {
       hSegs.forEach(function (s, i) {
         var f = s.firstChild;
         s.classList.remove('done', 'active');
+        f.style.width = ''; // (segment vidéo : largeur inline pilotée pendant la lecture)
         if (i < active) { s.classList.add('done'); }
         else if (i === active) {
           f.style.animation = 'none'; void f.offsetWidth; f.style.animation = ''; // relance le remplissage
+          if (i === hVidIdx) f.style.width = '0%';
           s.classList.add('active');
         }
       });
     }
     function startTimer(ms) {
-      if (hTimer) { clearTimeout(hTimer); }
+      if (hTimer) { clearTimeout(hTimer); hTimer = null; }
       hSegStart = Date.now(); hSegRemain = ms;
+      if (hIdx === hVidIdx) { hVidPlay(); return; } // slide vidéo : c'est la fin de la vidéo qui fait avancer
       hTimer = setTimeout(function () { hGo(hIdx + 1); }, ms);
     }
     function pauseTimer() {
@@ -760,6 +811,7 @@
       hIdx = (k + hN) % hN;
       hSlides.forEach(function (s, j) { s.classList.toggle('is-active', j === hIdx); });
       Array.prototype.forEach.call(hDots.children, function (d, j) { d.classList.toggle('on', j === hIdx); });
+      if (hVid) { if (hIdx === hVidIdx) { try { hVid.currentTime = 0; } catch (e2) {} } else { hVid.pause(); } }
       setSegments(hIdx);
       hStories.classList.remove('paused');
       startTimer(H_DUR);
@@ -769,8 +821,8 @@
     var hcPrev = document.getElementById('hcPrev'), hcNext = document.getElementById('hcNext');
     if (hcPrev) hcPrev.addEventListener('click', function () { hGo(hIdx - 1); });
     if (hcNext) hcNext.addEventListener('click', function () { hGo(hIdx + 1); });
-    heroC.addEventListener('mouseenter', function () { pauseTimer(); hStories.classList.add('paused'); });
-    heroC.addEventListener('mouseleave', function () { hStories.classList.remove('paused'); startTimer(hSegRemain); });
+    heroC.addEventListener('mouseenter', function () { hHover = true; pauseTimer(); hStories.classList.add('paused'); });
+    heroC.addEventListener('mouseleave', function () { hHover = false; hStories.classList.remove('paused'); startTimer(hSegRemain); });
 
     // Indice lumineux : montré au départ, retiré au bout de 2,8 s ou à la 1re interaction
     var hHintT = setTimeout(removeHint, 2800);
@@ -781,6 +833,7 @@
     hNav.addEventListener('pointerdown', function (e) {
       down = true; dX = e.clientX; dY = e.clientY; dT = Date.now();
       pauseTimer(); hStories.classList.add('paused'); removeHint();
+      if (hVid && hIdx === hVidIdx) hVid.pause(); // appui long = pause de la vidéo aussi
     });
     hNav.addEventListener('pointerup', function (e) {
       if (!down) return; down = false;

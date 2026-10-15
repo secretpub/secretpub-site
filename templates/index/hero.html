@@ -3,7 +3,18 @@
   <div class="hc-slides" id="heroSlides">
 {{#hero.slides}}
     <div class="{{slideClass}}">
-      <div class="hslide-bg"><img class="ph" src="{{image}}" alt="{{alt}}"{{#priority}} fetchpriority="high"{{/priority}}{{^priority}} loading="lazy"{{/priority}} /></div>
+{{#priority}}{{#hero.video}}
+      <!-- Vidéo d'ouverture : lecture auto muette, aucune commande (ni barre, ni avance rapide).
+           La source est posée en JS (version PC ou mobile) ; l'image dessous = 1re image de la vidéo. -->
+      <div class="hslide-bg has-video">
+        <img class="ph" src="{{hero.videoPoster}}" alt="{{alt}}" fetchpriority="high" />
+        <video class="hvid" muted playsinline autoplay preload="auto" disablepictureinpicture disableremoteplayback controlslist="nodownload noplaybackrate nofullscreen" tabindex="-1" aria-hidden="true" data-src="{{hero.video}}"{{#hero.videoMobile}} data-src-mobile="{{hero.videoMobile}}"{{/hero.videoMobile}}></video>
+      </div>
+{{/hero.video}}{{^hero.video}}
+      <div class="hslide-bg"><img class="ph" src="{{image}}" alt="{{alt}}" fetchpriority="high" /></div>
+{{/hero.video}}{{/priority}}{{^priority}}
+      <div class="hslide-bg"><img class="ph" src="{{image}}" alt="{{alt}}" loading="lazy" /></div>
+{{/priority}}
       <div class="wrap hslide-inner">
         <div class="hslide-copy">
           <span class="eyebrow">{{eyebrow}}</span>

@@ -198,7 +198,13 @@ export interface SiteContent {
   };
   nav: LinkItem[];
   headerCtaLabel: string;
-  hero: { slides: HeroSlide[] };
+  hero: {
+    /** vidéo d'ouverture (1er slide) : lecture auto muette, sans commande ; vide = photo seule */
+    video?: string;
+    videoMobile?: string; // version allégée servie sous 880px
+    videoPoster?: string; // 1re image de la vidéo (affichée avant / sans lecture)
+    slides: HeroSlide[];
+  };
   trust: { items: TrustItem[] };
   clients: { label: string; logos: ClientLogo[] };
   metiersSocle: MetierBand;

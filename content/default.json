@@ -381,6 +381,9 @@
   ],
   "headerCtaLabel": "Demander un devis",
   "hero": {
+    "video": "/assets/hero-bureau-2026-1080.mp4",
+    "videoMobile": "/assets/hero-bureau-2026-720.mp4",
+    "videoPoster": "/assets/hero-bureau-2026-poster.webp",
     "slides": [
       {
         "slideClass": "hslide is-active",

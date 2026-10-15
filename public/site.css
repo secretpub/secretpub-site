@@ -422,6 +422,17 @@ body.menu-open { overflow: hidden; }
 .hslide-bg { position: absolute; inset: 0; z-index: 0; }
 .hslide-bg image-slot, .hslide-bg img.ph { display: block; width: 100%; height: 100%; }
 .hslide-bg img { display: block; width: 100%; height: 100%; object-fit: cover; }
+/* Vidéo d'ouverture (1er slide) : lecture auto, muette, aucune commande ni interaction
+   (pointer-events:none → ni clic, ni menu contextuel, ni avance rapide). Elle apparaît en
+   fondu par-dessus sa 1re image une fois la lecture démarrée ; si la lecture est refusée,
+   l'image reste seule. */
+.hslide-bg .hvid {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;
+  z-index: 0; opacity: 0; transition: opacity 0.8s ease; pointer-events: none; background: transparent;
+}
+.hslide-bg .hvid.is-on { opacity: 1; }
+.hslide-bg .hvid::-webkit-media-controls,
+.hslide-bg .hvid::-webkit-media-controls-start-playback-button { display: none !important; -webkit-appearance: none; }
 .hslide::after {
   content: ""; position: absolute; inset: 0; z-index: 1;
   background: linear-gradient(90deg, rgba(11,13,12,0.94) 0%, rgba(11,13,12,0.72) 34%, rgba(11,13,12,0.26) 66%, rgba(11,13,12,0.08) 100%);
@@ -567,6 +578,8 @@ body.menu-open { overflow: hidden; }
   .hc-seg.done .hc-seg-fill { width: 100%; }
   .hc-seg.active .hc-seg-fill { animation: segFill var(--story-dur, 5.5s) linear forwards; }
   .hc-stories.paused .hc-seg.active .hc-seg-fill { animation-play-state: paused; }
+  /* Segment du slide vidéo : largeur pilotée en JS au fil de la lecture (pas de minuteur). */
+  .hc-seg.is-video.active .hc-seg-fill { animation: none; transition: width 0.3s linear; }
   /* Zones de tap gauche (retour) / droite (avancer) sur le média */
   .hc-nav {
     display: flex; position: absolute; z-index: 6; left: 0; right: 0;
