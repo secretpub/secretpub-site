@@ -625,8 +625,21 @@
     }
     if (fileClear) fileClear.addEventListener('click', resetFile);
 
+    // Mobile obligatoire : 06/07 (ou +33 6/7), ou numéro étranger en +XX.
+    var telInput = form.querySelector('input[name="tel"]');
+    function isMobile(v) {
+      var n = String(v || '').replace(/[\s.\-()]/g, '');
+      return /^0[67]\d{8}$/.test(n) || /^(\+|00)330?[67]\d{8}$/.test(n) || /^(\+|00)(?!33)\d{7,14}$/.test(n);
+    }
+    if (telInput) telInput.addEventListener('input', function () { telInput.setCustomValidity(''); });
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      if (telInput) {
+        telInput.setCustomValidity(isMobile(telInput.value) ? ''
+          : telInput.value.trim() ? 'Numéro de mobile invalide (exemple : 06 12 34 56 78).'
+          : 'Indiquez votre numéro de mobile.');
+      }
       if (!form.reportValidity()) return;
       var btn = form.querySelector('button[type="submit"]');
       var fd = new FormData(form);

@@ -184,6 +184,17 @@ export async function POST(req: NextRequest) {
   if (!email || !/.+@.+\..+/.test(email)) {
     return NextResponse.json({ ok: false, error: "email" }, { status: 400 });
   }
+  // Formulaire de contact : mobile obligatoire (même règle que public/site.js).
+  if (type === "contact") {
+    const tel = String(body.tel || "").replace(/[\s.\-()]/g, "");
+    const mobileOk =
+      /^0[67]\d{8}$/.test(tel) ||
+      /^(\+|00)330?[67]\d{8}$/.test(tel) ||
+      /^(\+|00)(?!33)\d{7,14}$/.test(tel);
+    if (!mobileOk) {
+      return NextResponse.json({ ok: false, error: "tel" }, { status: 400 });
+    }
+  }
 
   const supa = getAdminSupabase();
   if (!supa) {
