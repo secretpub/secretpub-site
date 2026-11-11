@@ -1,0 +1,158 @@
+{
+  "aide": [
+    "Fichier de pilotage des mots-clés datés du site vitrine secretpub.fr (blog /conseils). Le code le lit (lib/content/annee.ts) : garder un JSON valide.",
+    "Dans content/conseils.json, les titres, descriptions, intertitres, textes et FAQ n'écrivent pas l'année en dur mais un repère, remplacé au rendu à l'heure de Paris :",
+    "{annee} = l'année en cours (2026 aujourd'hui, 2027 dès le 1er janvier 2027).",
+    "{annee_suivante} = l'année en cours + 1 (2027 aujourd'hui).",
+    "{annee_cible} = l'année que les clients préparent : l'année suivante à partir de reglages.basculeAnneeCible (11-01 = 1er novembre), l'année en cours avant. Donc 2027 du 1er novembre 2026 au 31 octobre 2027, puis 2028.",
+    "Les pages /conseils se régénèrent toutes les heures : l'année change seule, sans republier le site ni réécrire les articles. Les adresses (slugs) ne contiennent jamais d'année.",
+    "Reste à faire à la main à chaque 1er janvier : public/llms.txt (fichier statique, années écrites en dur), et relire les fourchettes de prix de l'article prix-enseigne-magasin.",
+    "priorite : 1 = haute (à pousser en premier, liens internes et réseaux sociaux), 2 = moyenne, 3 = basse."
+  ],
+  "reglages": {
+    "basculeAnneeCible": "11-01"
+  },
+  "basculesAVenir": [
+    {
+      "date": "2027-01-01",
+      "effet": "{annee} passe de 2026 à 2027 et {annee_suivante} de 2027 à 2028 : titres, descriptions et FAQ des articles en {annee} se mettent à jour seuls.",
+      "aFaireALaMain": "public/llms.txt (remplacer 2026 par 2027 et 2027 par 2028) ; relire les prix de /conseils/prix-enseigne-magasin."
+    },
+    {
+      "date": "2027-11-01",
+      "effet": "{annee_cible} passe de 2027 à 2028 : les articles « tendances enseignes » et « préparer sa signalétique » visent alors 2028.",
+      "aFaireALaMain": "Relire ces deux articles (tendances et calendrier) pour l'année qui vient."
+    }
+  ],
+  "motsCles": [
+    {
+      "motCle": "pourquoi choisir SecretPub {annee}",
+      "variantes": { "2026": "pourquoi choisir SecretPub 2026", "2027": "pourquoi choisir SecretPub 2027" },
+      "aussi": ["SecretPub avis", "qui est SecretPub", "meilleur service impression et signalétique {annee}"],
+      "page": "/conseils/pourquoi-choisir-secretpub",
+      "repere": "{annee}",
+      "priorite": 1,
+      "basculeLe": "2027-01-01"
+    },
+    {
+      "motCle": "meilleure agence de communication Valence {annee}",
+      "variantes": { "2026": "meilleure agence de communication Valence 2026", "2027": "meilleure agence de communication Valence 2027" },
+      "aussi": ["agence de communication Valence avis", "agence de publicité Valence {annee}", "agence de communication Drôme"],
+      "page": "/conseils/meilleure-agence-communication-valence",
+      "repere": "{annee}",
+      "priorite": 1,
+      "basculeLe": "2027-01-01"
+    },
+    {
+      "motCle": "commander son enseigne en ligne {annee}",
+      "variantes": { "2026": "commander son enseigne en ligne 2026", "2027": "commander son enseigne en ligne 2027" },
+      "aussi": ["enseigne sur mesure en ligne", "acheter une enseigne de magasin", "enseigne en 3D avant de commander"],
+      "page": "/conseils/commander-enseigne-en-ligne",
+      "repere": "{annee}",
+      "priorite": 1,
+      "basculeLe": "2027-01-01"
+    },
+    {
+      "motCle": "prix enseigne {annee}",
+      "variantes": { "2026": "prix enseigne magasin 2026", "2027": "prix enseigne magasin 2027" },
+      "aussi": ["combien coûte une enseigne de magasin", "budget enseigne {annee}"],
+      "page": "/conseils/prix-enseigne-magasin",
+      "repere": "{annee}",
+      "priorite": 1,
+      "basculeLe": "2027-01-01",
+      "note": "Article existant passé aux repères le 11/11/2026. Relire ses fourchettes de prix avant chaque bascule."
+    },
+    {
+      "motCle": "tendances enseignes {annee_cible}",
+      "variantes": { "2026": "tendances enseignes 2026", "2027": "tendances enseignes 2027" },
+      "aussi": ["enseigne magasin tendance {annee_cible}", "enseigne moderne {annee_cible}", "enseigne lumineuse tendance"],
+      "page": "/conseils/tendances-enseignes",
+      "repere": "{annee_cible}",
+      "priorite": 1,
+      "basculeLe": "2027-11-01"
+    },
+    {
+      "motCle": "préparer sa signalétique {annee_cible}",
+      "variantes": { "2026": "préparer sa signalétique 2026", "2027": "préparer sa signalétique 2027" },
+      "aussi": ["plan de communication {annee_cible} commerce", "calendrier communication commerce {annee_cible}", "budget communication {annee_cible} PME"],
+      "page": "/conseils/preparer-signaletique-annee-prochaine",
+      "repere": "{annee_cible}",
+      "priorite": 1,
+      "basculeLe": "2027-11-01"
+    },
+    {
+      "motCle": "enseigne lumineuse {annee}",
+      "variantes": { "2026": "enseigne lumineuse 2026", "2027": "enseigne lumineuse 2027" },
+      "aussi": ["quelle enseigne lumineuse choisir", "caisson lumineux ou lettres boîtier", "lettres rétroéclairées effet halo"],
+      "page": "/conseils/enseigne-lumineuse-que-choisir",
+      "repere": "{annee}",
+      "priorite": 2,
+      "basculeLe": "2027-01-01"
+    },
+    {
+      "motCle": "panneau Dibond ou Akilux {annee}",
+      "variantes": { "2026": "panneau dibond ou akilux 2026", "2027": "panneau dibond ou akilux 2027" },
+      "aussi": ["panneau akilux personnalisé", "panneau dibond extérieur", "panneau de chantier dibond"],
+      "page": "/conseils/panneau-dibond-ou-akilux",
+      "repere": "{annee}",
+      "priorite": 2,
+      "basculeLe": "2027-01-01"
+    },
+    {
+      "motCle": "PLV salon {annee}",
+      "variantes": { "2026": "PLV salon 2026", "2027": "PLV salon 2027" },
+      "aussi": ["roll up personnalisé", "drapeau publicitaire personnalisé", "bâche publicitaire"],
+      "page": "/conseils/plv-roll-up-drapeau-bache",
+      "repere": "{annee}",
+      "priorite": 2,
+      "basculeLe": "2027-01-01"
+    },
+    {
+      "motCle": "textile personnalisé entreprise {annee}",
+      "variantes": { "2026": "textile personnalisé entreprise 2026", "2027": "textile personnalisé entreprise 2027" },
+      "aussi": ["t-shirt personnalisé logo entreprise", "polo brodé entreprise", "vêtement de travail personnalisé"],
+      "page": "/conseils/textile-personnalise-entreprise-en-ligne",
+      "repere": "{annee}",
+      "priorite": 2,
+      "basculeLe": "2027-01-01"
+    },
+    {
+      "motCle": "impression en ligne professionnel {annee}",
+      "variantes": { "2026": "impression en ligne professionnel 2026", "2027": "impression en ligne professionnel 2027" },
+      "aussi": ["imprimer des flyers en ligne", "imprimeur en ligne avec BAT", "cartes de visite professionnelles en ligne"],
+      "page": "/conseils/impression-en-ligne-professionnels",
+      "repere": "{annee}",
+      "priorite": 2,
+      "basculeLe": "2027-01-01"
+    },
+    {
+      "motCle": "espace client pro impression {annee}",
+      "variantes": { "2026": "espace client pro impression 2026", "2027": "espace client pro impression 2027" },
+      "aussi": ["commander ses supports publicitaires en ligne", "plateforme de commande franchise {annee}", "suivi de commande impression"],
+      "page": "/conseils/espace-client-pro-devis-bat-suivi",
+      "repere": "{annee}",
+      "priorite": 2,
+      "basculeLe": "2027-01-01"
+    },
+    {
+      "motCle": "bon à tirer BAT",
+      "variantes": { "2026": "bon à tirer BAT 2026", "2027": "bon à tirer BAT 2027" },
+      "aussi": ["valider un BAT", "c'est quoi un BAT en impression", "BAT avant impression"],
+      "page": "/conseils/bon-a-tirer-bat",
+      "repere": "{annee}",
+      "priorite": 3,
+      "basculeLe": "2027-01-01",
+      "note": "Requête surtout sans année : l'année n'est que dans le titre et la description."
+    },
+    {
+      "motCle": "conseils enseigne signalétique {annee}",
+      "variantes": { "2026": "conseils enseigne signalétique 2026", "2027": "conseils enseigne signalétique 2027" },
+      "aussi": ["blog enseigne", "guide signalétique commerce"],
+      "page": "/conseils",
+      "repere": "{annee}",
+      "priorite": 3,
+      "basculeLe": "2027-01-01",
+      "note": "Titre et description de la page du blog (app/conseils/page.tsx)."
+    }
+  ]
+}

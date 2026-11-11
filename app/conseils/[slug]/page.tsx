@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getContent } from "@/lib/content/store";
 import { renderPage } from "@/lib/content/render";
 import { articleJsonLd, JsonLd } from "@/lib/content/jsonld";
+import { remplacerAnnees } from "@/lib/content/annee";
 import conseils from "@/content/conseils.json";
 import type { SiteContent } from "@/lib/content/schema";
 
@@ -22,8 +23,10 @@ export async function generateMetadata({
   params: Promise<Params>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const a = conseils.articles.find((x) => x.slug === slug);
-  if (!a) return {};
+  const brut = conseils.articles.find((x) => x.slug === slug);
+  if (!brut) return {};
+  // {annee}, {annee_suivante}, {annee_cible} -> années réelles (lib/content/annee.ts)
+  const a = remplacerAnnees(brut);
   return {
     title: a.metaTitle,
     description: a.metaDescription,
@@ -52,8 +55,9 @@ export default async function ConseilArticle({
   params: Promise<Params>;
 }) {
   const { slug } = await params;
-  const article = conseils.articles.find((x) => x.slug === slug);
-  if (!article) notFound();
+  const brut = conseils.articles.find((x) => x.slug === slug);
+  if (!brut) notFound();
+  const article = remplacerAnnees(brut);
   const content = await getContent();
   const html = renderPage("conseils", {
     ...content,

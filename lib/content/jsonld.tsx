@@ -308,7 +308,7 @@ export function articleJsonLd(c: SiteContent, article: any): object[] {
       headline: article.title,
       description: article.metaDescription || article.excerpt,
       datePublished: article.datePublished,
-      dateModified: article.datePublished,
+      dateModified: article.dateModified || article.datePublished,
       inLanguage: "fr-FR",
       author: { "@type": "Organization", name: c.meta.siteName, url: SITE_URL },
       publisher: {
@@ -321,7 +321,10 @@ export function articleJsonLd(c: SiteContent, article: any): object[] {
           height: 253,
         },
       },
-      image: abs(c.meta.ogImage),
+      // La photo d'en-tête de l'article d'abord (c'est elle que la page montre).
+      image: article.cover
+        ? [abs(article.cover), abs(c.meta.ogImage)]
+        : abs(c.meta.ogImage),
       mainEntityOfPage: url,
       url,
     },
