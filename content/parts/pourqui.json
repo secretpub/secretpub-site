@@ -78,8 +78,8 @@
             "primary": true
           },
           {
-            "label": "Voir le catalogue",
-            "href": "/catalogue",
+            "label": "Voir la boutique",
+            "href": "https://boutique.secretpub.fr",
             "type": "ghost",
             "ghost": true
           }
@@ -108,8 +108,8 @@
             "primary": true
           },
           {
-            "label": "Voir le catalogue",
-            "href": "/catalogue",
+            "label": "Voir la boutique",
+            "href": "https://boutique.secretpub.fr",
             "type": "ghost",
             "ghost": true
           }
