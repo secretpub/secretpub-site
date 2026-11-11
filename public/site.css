@@ -128,7 +128,7 @@ ul { margin: 0; padding: 0; }
   }
   .btn-primary:hover { animation-play-state: paused; }
 }
-/* bouton Catalogue : contour lumineux (repris de la maquette d'origine) */
+/* bouton secondaire « Demander un devis » de l'en-tête : contour lumineux (repris de la maquette d'origine) */
 .btn-glow {
   background: transparent;
   color: var(--ink);
@@ -285,7 +285,7 @@ ul { margin: 0; padding: 0; }
 }
 @media (max-width: 900px) { .brand-badge { display: none; } }
 
-/* CTA "Demander un devis" : aspiration de lumière (attire l'œil vers l'action) */
+/* CTA mis en avant « Boutique » (11/11/2026) : aspiration de lumière (attire l'œil vers l'action) */
 .header-cta .btn-primary { position: relative; overflow: visible; isolation: isolate; }
 .header-cta .btn-primary::before {
   content: ""; position: absolute; inset: -16px; border-radius: 999px; z-index: -1; pointer-events: none;
