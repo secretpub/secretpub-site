@@ -2769,9 +2769,17 @@ html { scroll-padding-top: 88px; }
 .about-fact .n { font-family: var(--display); font-weight: 800; font-size: clamp(30px, 3.2vw, 40px); color: var(--green-deep); letter-spacing: -0.03em; line-height: 1; }
 .about-fact .l { margin-top: 8px; font-size: 14.5px; color: var(--muted); line-height: 1.45; }
 .about-cta { text-align: center; margin: clamp(26px, 3vw, 38px) 0 0; }
-.about-real { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: clamp(14px, 1.6vw, 20px); margin-top: clamp(28px, 3vw, 40px); }
+.about-real { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(14px, 1.6vw, 20px); margin-top: clamp(28px, 3vw, 40px); }
 .about-real figure { margin: 0; background: var(--white); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
 .about-real img { width: 100%; height: auto; aspect-ratio: 4 / 3; }
 .about-real figcaption { padding: 14px 16px 16px; font-size: 14.5px; color: var(--muted); }
 .about-real figcaption strong { display: block; color: var(--ink); font-family: var(--display); font-weight: 700; font-size: 16px; margin-bottom: 2px; }
-@media (max-width: 560px) { .about-facts { grid-template-columns: repeat(2, 1fr); } .about-fact { padding: 18px 12px; } .about-fact .l { font-size: 13.5px; } }
+/* Cartes centrées (bloc atelier, façon de travailler) : pas de case vide à droite sur grand écran */
+.mp-grid-center { grid-template-columns: repeat(auto-fit, minmax(250px, 320px)); justify-content: center; }
+@media (max-width: 900px) { .about-real { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 700px) { .mp-grid-center { grid-template-columns: 1fr; } }
+@media (max-width: 560px) {
+  .about-facts { grid-template-columns: repeat(2, 1fr); } .about-fact { padding: 18px 12px; } .about-fact .l { font-size: 13.5px; }
+  .about-fact:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .about-real { grid-template-columns: 1fr; }
+}

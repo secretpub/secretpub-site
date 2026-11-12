@@ -30,6 +30,10 @@ export const metadata: Metadata = {
   keywords: [
     "SecretPub",
     "enseigne Valence",
+    "enseigniste Valence",
+    "enseigne lumineuse Valence",
+    "enseigne façade commerce",
+    "enseigne Drôme-Ardèche",
     "signalétique Valence",
     "imprimerie Valence",
     "impression grand format",

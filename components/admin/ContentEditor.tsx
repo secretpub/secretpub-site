@@ -39,6 +39,10 @@ const METIER_PAGE_LABELS: Record<string, string> = {
   "textile-personnalise": "Page métier : Textile",
   "objets-publicitaires": "Page métier : Objets publicitaires",
   packaging: "Page métier : Packaging",
+  "enseigniste-valence": "Page enseigne : Enseigniste à Valence",
+  "enseigne-lumineuse-valence": "Page enseigne : Enseigne lumineuse",
+  "enseigne-facade-commerce-valence": "Page enseigne : Enseigne de façade",
+  "enseigne-drome-ardeche": "Page enseigne : Drôme-Ardèche",
 };
 
 function getAt(obj: any, path: string[]): any {
