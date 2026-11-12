@@ -379,7 +379,7 @@
       "href": "/#contact"
     }
   ],
-  "headerCtaLabel": "Je commande",
+  "headerCtaLabel": "Demander un devis",
   "hero": {
     "video": "/assets/hero-bureau-2026-1080.mp4",
     "videoMobile": "/assets/hero-bureau-2026-720.mp4",
@@ -396,14 +396,14 @@
         "actions": [
           {
             "class": "btn btn-primary btn-lg",
-            "href": "#contact",
-            "label": "Demander un devis",
+            "href": "https://boutique.secretpub.fr",
+            "label": "Voir la boutique",
             "arrow": true
           },
           {
             "class": "btn btn-ghost-hero btn-lg",
             "href": "#realisations",
-            "label": "Voir nos réalisations",
+            "label": "Voir les réalisations",
             "arrow": false
           }
         ]

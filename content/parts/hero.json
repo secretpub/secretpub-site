@@ -12,14 +12,14 @@
         "actions": [
           {
             "class": "btn btn-primary btn-lg",
-            "href": "#contact",
-            "label": "Demander un devis",
+            "href": "https://boutique.secretpub.fr",
+            "label": "Voir la boutique",
             "arrow": true
           },
           {
             "class": "btn btn-ghost-hero btn-lg",
             "href": "#realisations",
-            "label": "Voir nos réalisations",
+            "label": "Voir les réalisations",
             "arrow": false
           }
         ]
