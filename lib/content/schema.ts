@@ -171,7 +171,8 @@ export interface MetierPage {
     items: MetierPageDuo[];
   };
   secteurs: { title: string; intro: string; items: MetierPageDuo[] };
-  process: {
+  /** Ancienne méthode en 4 étapes : plus affichée depuis le 12/11/2026 (bloc commun « atelier »). */
+  process?: {
     eyebrow: string;
     title: string;
     intro: string;
@@ -236,7 +237,8 @@ export interface SiteContent {
     scarcityLabel: string;
     perks: string[];
   };
-  methode: {
+  /** Ancienne section « Méthode » de l'accueil : retirée le 12/11/2026. */
+  methode?: {
     eyebrow: string;
     title: string;
     steps: MethodeStep[];

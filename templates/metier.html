@@ -106,28 +106,29 @@
   </div>
 </section>
 
-<!-- PROCESS / MÉTHODE -->
-<section class="section mp-alt" data-screen-label="Méthode">
+<!-- ATELIER ET RÉSEAU : remplace la méthode en 4 étapes, retirée le 12/11/2026 à la demande d'Isaac
+     (contenu commun à toutes les pages métier : clé « atelier » du contenu). -->
+{{#atelier}}
+<section class="section mp-alt" id="atelier" data-screen-label="Atelier et réseau">
   <div class="wrap">
     <div class="mp-head reveal">
-      <span class="mp-head-num">03 · {{page.process.eyebrow}}</span>
-      <h2>{{page.process.title}}</h2>
-      <p class="lead">{{page.process.intro}}</p>
+      <span class="mp-head-num">03 · {{eyebrow}}</span>
+      <h2>{{title}}</h2>
+      <p class="lead">{{intro}}</p>
     </div>
-    <div class="mp-flow reveal">
-      {{#page.process.steps}}
-      <div class="mp-step">
-        <span class="mp-step-n">{{n}}</span>
-        <div class="mp-step-body">
-          <h3>{{title}}</h3>
-          <p>{{desc}}</p>
-        </div>
-      </div>
-      {{/page.process.steps}}
+    <div class="mp-grid mp-grid-2 reveal">
+      {{#items}}
+      <article class="mp-card">
+        <span class="mp-card-dot" data-cat="{{page.cat}}" aria-hidden="true"></span>
+        <h3>{{title}}</h3>
+        <p>{{desc}}</p>
+      </article>
+      {{/items}}
     </div>
+    <p class="mp-note reveal">{{note}}</p>
   </div>
 </section>
-
+{{/atelier}}
 <!-- AVANTAGES -->
 <section class="section" data-screen-label="Avantages">
   <div class="wrap">

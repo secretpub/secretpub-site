@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "SecretPub : signalétique, print et textile",
     short_name: "SecretPub",
     description:
-      "Toute votre communication physique, un seul partenaire. Signalétique, print, textile, goodies et packaging, de l'étude à la pose.",
+      "Toute votre communication physique, un seul partenaire. Signalétique, print, textile, goodies et packaging, fabriqués sur mesure.",
     start_url: "/",
     display: "standalone",
     background_color: "#0b0d0c",

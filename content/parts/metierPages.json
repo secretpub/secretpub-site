@@ -11,14 +11,14 @@
       "hero": {
         "crumb": "Signalétique",
         "eyebrow": "Signalétique et enseignes",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Valence</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Valence</span>, fabriquées sur mesure",
         "sub": "Enseignes, totems, vitrophanie, adhésifs et panneaux de chantier. On conçoit, on fabrique et on installe votre visibilité extérieure à Valence, dans la Drôme et partout en France."
       },
       "intro": {
         "eyebrow": "Votre visibilité, installée",
         "title": "Une seule équipe pour rendre votre point de vente visible dehors",
         "leadHtml": "On ne vous livre pas un carton d’adhésifs à poser vous-même : <b>on installe votre signalétique sur site, prête à durer.</b>",
-        "bodyHtml": "<p>La signalétique, c’est tout ce qui rend votre commerce, votre bureau ou votre chantier visible de l’extérieur. Enseigne de façade, totem sur un parking, vitrophanie sur votre vitrine, adhésifs et stickers sur vos supports ou bâche sur un échafaudage : chaque support est étudié pour son emplacement, fabriqué dans des matériaux garantis extérieur et monté par nos soins. On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production ; on s’occupe du reste.</p><p>Basés au 31 Rue Jean Jullien Davin à Valence, on intervient dans toute la Drôme, en Auvergne-Rhône-Alpes et partout en France. Un seul interlocuteur pilote votre projet du premier croquis à l’installation finale, avec la même exigence que vous soyez un commerce indépendant ou un réseau à équiper à l’identique sur plusieurs sites.</p>"
+        "bodyHtml": "<p>La signalétique, c’est tout ce qui rend votre commerce, votre bureau ou votre chantier visible de l’extérieur. Enseigne de façade, totem sur un parking, vitrophanie sur votre vitrine, adhésifs et stickers sur vos supports ou bâche sur un échafaudage : chaque support est étudié pour son emplacement, fabriqué dans des matériaux garantis extérieur et monté par nos soins. On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production ; on s’occupe du reste.</p><p>Basés au 31 Rue Jean Jullien Davin à Valence, on intervient dans toute la Drôme, en Auvergne-Rhône-Alpes et partout en France. Un seul interlocuteur pilote votre projet, avec la même exigence que vous soyez un commerce indépendant ou un réseau à équiper à l’identique sur plusieurs sites.</p>"
       },
       "prestations": {
         "eyebrow": "Ce qu’on fabrique et pose",
@@ -86,33 +86,6 @@
           {
             "title": "Bureaux et espaces d’accueil",
             "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
           }
         ]
       },
@@ -271,33 +244,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Comment ça marche",
-        "title": "De votre fichier au support livré",
-        "intro": "Une méthode simple, cadrée et sans mauvaise surprise, du tirage à la distribution.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et première réponse",
-            "desc": "Vous nous dites ce dont vous avez besoin. On vous répond une première fois sous 24 h avec un conseil clair sur formats, papiers, finitions et volumes."
-          },
-          {
-            "n": "02",
-            "title": "Devis et bon à tirer",
-            "desc": "On vous envoie un devis détaillé puis un bon à tirer à valider avant production. Les délais dépendent du projet : support, quantité, finitions."
-          },
-          {
-            "n": "03",
-            "title": "Production en volume",
-            "desc": "Nous imprimons vos grandes séries avec des couleurs calibrées et contrôlons chaque finition, campagne nationale comprise."
-          },
-          {
-            "n": "04",
-            "title": "Stockage et distribution",
-            "desc": "Nous stockons, conditionnons et distribuons vers tous vos points de vente ou un site unique, à Valence, dans la Drôme ou partout en France."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi SecretPub",
         "items": [
@@ -450,33 +396,6 @@
           {
             "title": "PME et commerces",
             "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De votre logo à la tenue livrée",
-        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et conseil",
-            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et réassort",
-            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
           }
         ]
       },
@@ -635,33 +554,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De l’idée à la livraison",
-        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et sélection",
-            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
-          },
-          {
-            "n": "02",
-            "title": "Personnalisation et bon à tirer",
-            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et multi-sites",
-            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi SecretPub",
         "items": [
@@ -814,33 +706,6 @@
           {
             "title": "Franchises et réseaux",
             "desc": "Un emballage homogène sur tous les points de vente, piloté depuis le siège, pour une image identique partout en France."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment on travaille",
-        "title": "De l'idée à la livraison, sans intermédiaire",
-        "intro": "Une production maîtrisée de bout en bout, avec des réponses rapides et une seule équipe en face de vous.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et conseil",
-            "desc": "Vous nous parlez de votre produit et de vos usages. On vous conseille sur les formats, matériaux et finitions adaptés à votre budget."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "Nous vous envoyons un bon à tirer à valider avant production. Vous contrôlez le visuel et les dimensions avant tout lancement, sans mauvaise surprise."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "Nous produisons votre packaging en interne, avec des couleurs fidèles à votre charte et un contrôle qualité à chaque étape."
-          },
-          {
-            "n": "04",
-            "title": "Livraison partout en France",
-            "desc": "Nous livrons vos emballages à Valence, dans la Drôme et sur tous vos points de vente, réseaux multi-sites compris."
           }
         ]
       },

@@ -222,7 +222,7 @@
     ]
   },
   "footer": {
-    "about": "Un seul partenaire, pour tout ce qui porte votre image. De la conception à la pose, partout en France.",
+    "about": "Un seul partenaire, pour tout ce qui porte votre image. Partout en France.",
     "columns": [
       {
         "title": "Services",
@@ -343,7 +343,7 @@
   "meta": {
     "siteName": "SecretPub",
     "title": "SecretPub | Agence de communication et de publicité à Valence",
-    "description": "SecretPub, agence de communication et de publicité à Valence. Enseignes, print, textile et goodies conçus, fabriqués et posés, de l'étude à la pose.",
+    "description": "SecretPub, agence de communication et de publicité à Valence. Enseignes, print, textile et goodies conçus et fabriqués sur mesure.",
     "ogImage": "/assets/og-cover.jpg",
     "catalogueUrl": "https://boutique.secretpub.fr",
     "phoneDisplay": "09 83 80 93 12",
@@ -444,33 +444,6 @@
       }
     ]
   },
-  "methode": {
-    "eyebrow": "Méthode",
-    "title": "4 étapes, zéro surprise.",
-    "steps": [
-      {
-        "n": "1",
-        "title": "Étude",
-        "descHtml": "On part de vos plans, de vos photos et de vos contraintes réelles. Pas de devis au doigt mouillé."
-      },
-      {
-        "n": "2",
-        "title": "Proposition et BAT",
-        "descHtml": "Vous voyez exactement ce qui sera produit. Rien ne part sans votre validation."
-      },
-      {
-        "n": "3",
-        "title": "Production et réalisation",
-        "descHtml": "Profitez de plus de 10 ans d'expertise : un savoir-faire rodé qui vous garantit un résultat fiable, à chaque commande."
-      },
-      {
-        "n": "4",
-        "title": "Pose et contrôle",
-        "descHtml": "Des équipes habilitées posent, photographient et vérifient. Le chantier est terminé quand c'est impeccable."
-      }
-    ],
-    "note": "Du commerce indépendant au réseau de 90 points de vente, la méthode ne change jamais : étude rigoureuse, BAT validé, production maîtrisée, pose contrôlée. La même exigence à chaque chantier. C'est ce qui fait la satisfaction de nos clients."
-  },
   "metierPages": {
     "signaletique": {
       "slug": "signaletique",
@@ -483,14 +456,14 @@
       "hero": {
         "crumb": "Signalétique",
         "eyebrow": "Signalétique et enseignes",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Valence</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Valence</span>, fabriquées sur mesure",
         "sub": "Enseignes, totems, vitrophanie, adhésifs, panneaux publicitaires et de chantier. On conçoit, on fabrique et on installe votre visibilité extérieure à Valence, dans la Drôme et partout en France."
       },
       "intro": {
         "eyebrow": "Votre visibilité, installée",
         "title": "Une seule équipe pour rendre votre point de vente visible dehors",
         "leadHtml": "On ne vous livre pas un carton d’adhésifs à poser vous-même : <b>on installe votre signalétique sur site, prête à durer.</b>",
-        "bodyHtml": "<p>La signalétique, c’est tout ce qui rend votre commerce, votre bureau ou votre chantier visible de l’extérieur. Enseigne de façade, totem sur un parking, vitrophanie sur votre vitrine, adhésifs et stickers sur vos supports ou bâche sur un échafaudage : chaque support est étudié pour son emplacement, fabriqué dans des matériaux garantis extérieur et monté par nos soins. On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production ; on s’occupe du reste.</p><p>Basés au 31 Rue Jean Jullien Davin à Valence, on intervient dans toute la Drôme, en Auvergne-Rhône-Alpes et partout en France. Un seul interlocuteur pilote votre projet du premier croquis à l’installation finale, avec la même exigence que vous soyez un commerce indépendant ou un réseau à équiper à l’identique sur plusieurs sites.</p>"
+        "bodyHtml": "<p>La signalétique, c’est tout ce qui rend votre commerce, votre bureau ou votre chantier visible de l’extérieur. Enseigne de façade, totem sur un parking, vitrophanie sur votre vitrine, adhésifs et stickers sur vos supports ou bâche sur un échafaudage : chaque support est étudié pour son emplacement, fabriqué dans des matériaux garantis extérieur et monté par nos soins. On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production ; on s’occupe du reste.</p><p>Basés au 31 Rue Jean Jullien Davin à Valence, on intervient dans toute la Drôme, en Auvergne-Rhône-Alpes et partout en France. Un seul interlocuteur pilote votre projet, avec la même exigence que vous soyez un commerce indépendant ou un réseau à équiper à l’identique sur plusieurs sites.</p>"
       },
       "prestations": {
         "eyebrow": "Ce qu’on fabrique et pose",
@@ -566,33 +539,6 @@
           {
             "title": "Bureaux et espaces d’accueil",
             "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
           }
         ]
       },
@@ -813,33 +759,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Comment ça marche",
-        "title": "De votre fichier au support livré",
-        "intro": "Une méthode simple, cadrée et sans mauvaise surprise, du tirage à la distribution.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et première réponse",
-            "desc": "Vous nous dites ce dont vous avez besoin. On vous répond une première fois sous 24 h avec un conseil clair sur formats, papiers, finitions et volumes."
-          },
-          {
-            "n": "02",
-            "title": "Devis et bon à tirer",
-            "desc": "On vous envoie un devis détaillé puis un bon à tirer à valider avant production. Les délais dépendent du projet : support, quantité, finitions."
-          },
-          {
-            "n": "03",
-            "title": "Production en volume",
-            "desc": "Nous imprimons vos grandes séries avec des couleurs calibrées et contrôlons chaque finition, campagne nationale comprise."
-          },
-          {
-            "n": "04",
-            "title": "Stockage et distribution",
-            "desc": "Nous stockons, conditionnons et distribuons vers tous vos points de vente ou un site unique, à Valence, dans la Drôme ou partout en France."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi SecretPub",
         "items": [
@@ -1002,33 +921,6 @@
           {
             "title": "PME et commerces",
             "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De votre logo à la tenue livrée",
-        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et conseil",
-            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et réassort",
-            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
           }
         ]
       },
@@ -1251,33 +1143,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De l’idée à la livraison",
-        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et sélection",
-            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
-          },
-          {
-            "n": "02",
-            "title": "Personnalisation et bon à tirer",
-            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et multi-sites",
-            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi SecretPub",
         "items": [
@@ -1493,33 +1358,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Comment on travaille",
-        "title": "De l'idée à la livraison",
-        "intro": "Une production maîtrisée de bout en bout, avec des réponses rapides et une seule équipe en face de vous.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et conseil",
-            "desc": "Vous nous parlez de votre produit et de vos usages. On vous conseille sur les formats, matériaux et finitions adaptés à votre budget."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "Nous vous envoyons un bon à tirer à valider avant production. Vous contrôlez le visuel et les dimensions avant tout lancement, sans mauvaise surprise."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "Nous produisons votre packaging, avec des couleurs fidèles à votre charte et un contrôle qualité à chaque étape."
-          },
-          {
-            "n": "04",
-            "title": "Livraison partout en France",
-            "desc": "Nous livrons vos emballages à Valence, dans la Drôme et sur tous vos points de vente, réseaux multi-sites compris."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi choisir SecretPub pour votre packaging",
         "items": [
@@ -1607,14 +1445,14 @@
       "hero": {
         "crumb": "Signalétique Romans-sur-Isère",
         "eyebrow": "Signalétique et enseignes à Romans-sur-Isère",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Romans-sur-Isère</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Romans-sur-Isère</span>, fabriquées sur mesure",
         "sub": "Enseignes, totems, vitrophanie et adhésifs pour les commerces et entreprises de Romans-sur-Isère. On conçoit, on fabrique et on pose, avec un seul interlocuteur."
       },
       "intro": {
         "eyebrow": "Votre visibilité, installée",
         "title": "Votre commerce romanais visible de la rue au premier coup d'œil",
         "leadHtml": "À Romans-sur-Isère, on ne vous livre pas un carton d'adhésifs à poser vous-même : <b>on installe votre signalétique sur place, prête à l'emploi.</b>",
-        "bodyHtml": "<p>Du centre-ville commerçant aux boutiques de Marques Avenue, en passant par les zones d'activité du nord de Romans, chaque enseigne doit tenir dehors et se voir de loin. Ville de la chaussure et de la maroquinerie, Romans compte beaucoup de commerces de détail et d'ateliers pour qui la vitrine est le premier vendeur.</p><p>Notre atelier est à Valence, à 20 minutes : on prend les cotes sur votre façade romanaise, on fabrique, puis nos équipes viennent poser. Un seul interlocuteur de l'étude à la pose.</p>"
+        "bodyHtml": "<p>Du centre-ville commerçant aux boutiques de Marques Avenue, en passant par les zones d'activité du nord de Romans, chaque enseigne doit tenir dehors et se voir de loin. Ville de la chaussure et de la maroquinerie, Romans compte beaucoup de commerces de détail et d'ateliers pour qui la vitrine est le premier vendeur.</p><p>Notre atelier est à Valence, à 20 minutes : on prend les cotes sur votre façade romanaise, on fabrique, puis nos équipes viennent poser. Un seul interlocuteur suit votre projet.</p>"
       },
       "prestations": {
         "eyebrow": "Ce qu’on fabrique et pose",
@@ -1686,33 +1524,6 @@
           {
             "title": "Bureaux et espaces d’accueil",
             "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
           }
         ]
       },
@@ -1820,14 +1631,14 @@
       "hero": {
         "crumb": "Signalétique Montélimar",
         "eyebrow": "Signalétique et enseignes à Montélimar",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Montélimar</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Montélimar</span>, fabriquées sur mesure",
         "sub": "Enseignes, totems, vitrophanie et panneaux pour les commerces, zones d'activité et sites touristiques de Montélimar. Étude, fabrication et pose par nos équipes."
       },
       "intro": {
         "eyebrow": "Votre visibilité, installée",
         "title": "Une signalétique qui capte le flux, du centre-ville à l'A7",
         "leadHtml": "À Montélimar, on installe votre signalétique sur site, prête à être vue : <b>enseigne de façade, totem d'accès, habillage de vitrine.</b>",
-        "bodyHtml": "<p>Porte de la Provence et carrefour de l'A7, Montélimar voit passer un flux énorme de visiteurs. Entre le centre-ville commerçant, les zones commerciales des Portes de Provence et l'axe autoroutier, une enseigne bien pensée et bien placée fait la différence sur la fréquentation.</p><p>De notre atelier de Valence, on descend à Montélimar pour prendre les cotes et poser. Vous avez un seul interlocuteur, du premier croquis jusqu'à l'installation.</p>"
+        "bodyHtml": "<p>Porte de la Provence et carrefour de l'A7, Montélimar voit passer un flux énorme de visiteurs. Entre le centre-ville commerçant, les zones commerciales des Portes de Provence et l'axe autoroutier, une enseigne bien pensée et bien placée fait la différence sur la fréquentation.</p><p>De notre atelier de Valence, on descend à Montélimar pour prendre les cotes et poser. Vous gardez un seul interlocuteur pour tout le projet.</p>"
       },
       "prestations": {
         "eyebrow": "Ce qu’on fabrique et pose",
@@ -1902,33 +1713,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi nous confier votre signalétique",
         "items": [
@@ -1975,7 +1759,7 @@
           },
           {
             "q": "Posez-vous l'enseigne et les panneaux à Montélimar ?",
-            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Montélimar pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur, de l'étude à l'installation."
+            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Montélimar pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur suit votre projet de bout en bout."
           }
         ]
       },
@@ -2033,8 +1817,8 @@
       "hero": {
         "crumb": "Signalétique Grenoble",
         "eyebrow": "Signalétique et enseignes à Grenoble",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Grenoble</span>, de l’étude à la pose",
-        "sub": "Enseignes, signalétique intérieure, vitrophanie et totems pour les commerces, bureaux et sièges de la métropole grenobloise. De l'étude à la pose."
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Grenoble</span>, fabriquées sur mesure",
+        "sub": "Enseignes, signalétique intérieure, vitrophanie et totems pour les commerces, bureaux et sièges de la métropole grenobloise."
       },
       "intro": {
         "eyebrow": "Votre visibilité, installée",
@@ -2081,7 +1865,7 @@
           },
           {
             "title": "Pose et installation d'enseigne",
-            "desc": "De la prise de cotes à la pose finale, on gère l'installation de votre enseigne à Grenoble : façade, totem ou enseigne drapeau, ancrés pour tenir dehors et raccordés proprement."
+            "desc": "Si vous le souhaitez, on organise aussi l'installation de votre enseigne à Grenoble : façade, totem ou enseigne drapeau, ancrés pour tenir dehors et raccordés proprement."
           }
         ]
       },
@@ -2112,33 +1896,6 @@
           {
             "title": "Bureaux et espaces d’accueil",
             "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
           }
         ]
       },
@@ -2188,7 +1945,7 @@
           },
           {
             "q": "Posez-vous l'enseigne et les panneaux à Grenoble ?",
-            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Grenoble pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur, de l'étude à l'installation."
+            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Grenoble pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur suit votre projet de bout en bout."
           }
         ]
       },
@@ -2246,14 +2003,14 @@
       "hero": {
         "crumb": "Signalétique Avignon",
         "eyebrow": "Signalétique et enseignes à Avignon",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Avignon</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Avignon</span>, fabriquées sur mesure",
         "sub": "Enseignes, vitrophanie, totems et panneaux pour les commerces, restaurants et sites du Grand Avignon. Étude, fabrication et pose par nos équipes."
       },
       "intro": {
         "eyebrow": "Votre visibilité, installée",
         "title": "Une enseigne à la hauteur du passage, des remparts aux zones commerciales",
         "leadHtml": "À Avignon, on installe votre signalétique prête à l'emploi : <b>enseigne de façade, habillage de vitrine, totem d'accès.</b>",
-        "bodyHtml": "<p>Cité des Papes, ville de festival et destination touristique majeure, Avignon vit du passage. Des commerces intra-muros aux zones commerciales de Cap Sud et Mistral 7, une enseigne soignée et lisible attire l'œil dans un environnement très concurrentiel.</p><p>Depuis notre atelier de Valence, on descend sur le Grand Avignon pour relever les cotes et poser. Un seul interlocuteur, de la conception du visuel jusqu'à l'installation sur votre façade.</p>"
+        "bodyHtml": "<p>Cité des Papes, ville de festival et destination touristique majeure, Avignon vit du passage. Des commerces intra-muros aux zones commerciales de Cap Sud et Mistral 7, une enseigne soignée et lisible attire l'œil dans un environnement très concurrentiel.</p><p>Depuis notre atelier de Valence, on descend sur le Grand Avignon pour relever les cotes et poser. Un seul interlocuteur suit votre projet de bout en bout.</p>"
       },
       "prestations": {
         "eyebrow": "Ce qu’on fabrique et pose",
@@ -2294,7 +2051,7 @@
           },
           {
             "title": "Pose et installation d'enseigne",
-            "desc": "De la prise de cotes à la pose finale, on gère l'installation de votre enseigne à Avignon : façade, totem ou enseigne drapeau, ancrés pour tenir dehors et raccordés proprement."
+            "desc": "Si vous le souhaitez, on organise aussi l'installation de votre enseigne à Avignon : façade, totem ou enseigne drapeau, ancrés pour tenir dehors et raccordés proprement."
           }
         ]
       },
@@ -2325,33 +2082,6 @@
           {
             "title": "Bureaux et espaces d’accueil",
             "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
           }
         ]
       },
@@ -2459,14 +2189,14 @@
       "hero": {
         "crumb": "Signalétique Bourg-lès-Valence",
         "eyebrow": "Signalétique et enseignes à Bourg-lès-Valence",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Bourg-lès-Valence</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Bourg-lès-Valence</span>, fabriquées sur mesure",
         "sub": "Enseignes, totems, vitrophanie et adhésifs pour les commerces et entreprises de Bourg-lès-Valence. On conçoit, on fabrique et on pose, à deux pas."
       },
       "intro": {
         "eyebrow": "Votre visibilité, installée",
         "title": "Votre enseigne posée sans quitter l'agglo",
         "leadHtml": "À Bourg-lès-Valence, on installe votre signalétique sur place, prête à l'emploi : <b>enseigne, totem, habillage de vitrine.</b>",
-        "bodyHtml": "<p>Dans le prolongement direct de Valence, Bourg-lès-Valence concentre commerces de proximité et entreprises sur ses zones d'activité comme Mauboule ou les Îles. Une enseigne nette et une vitrine habillée, c'est ce qui transforme un local en adresse repérable.</p><p>Notre atelier est à quelques minutes : relevé de cotes sur votre façade, fabrication, puis pose par nos équipes. Un seul interlocuteur, du croquis à l'installation.</p>"
+        "bodyHtml": "<p>Dans le prolongement direct de Valence, Bourg-lès-Valence concentre commerces de proximité et entreprises sur ses zones d'activité comme Mauboule ou les Îles. Une enseigne nette et une vitrine habillée, c'est ce qui transforme un local en adresse repérable.</p><p>Notre atelier est à quelques minutes : relevé de cotes sur votre façade, fabrication, puis pose par nos équipes. Un seul interlocuteur pour tout le projet.</p>"
       },
       "prestations": {
         "eyebrow": "Ce qu’on fabrique et pose",
@@ -2538,33 +2268,6 @@
           {
             "title": "Bureaux et espaces d’accueil",
             "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
           }
         ]
       },
@@ -2672,7 +2375,7 @@
       "hero": {
         "crumb": "Signalétique Guilherand-Granges",
         "eyebrow": "Signalétique et enseignes à Guilherand-Granges",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Guilherand-Granges</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Guilherand-Granges</span>, fabriquées sur mesure",
         "sub": "Enseignes, totems, vitrophanie et adhésifs pour les commerces de Guilherand-Granges. Étude, fabrication et pose par nos équipes, juste de l'autre côté du Rhône."
       },
       "intro": {
@@ -2751,33 +2454,6 @@
           {
             "title": "Bureaux et espaces d’accueil",
             "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
           }
         ]
       },
@@ -2885,14 +2561,14 @@
       "hero": {
         "crumb": "Signalétique Tournon-sur-Rhône",
         "eyebrow": "Signalétique et enseignes à Tournon-sur-Rhône",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Tournon-sur-Rhône</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Tournon-sur-Rhône</span>, fabriquées sur mesure",
         "sub": "Enseignes, vitrophanie, totems et panneaux pour les commerces, caves et sites touristiques de Tournon-sur-Rhône. Étude, fabrication et pose par nos équipes."
       },
       "intro": {
         "eyebrow": "Votre visibilité, installée",
         "title": "Une enseigne à la hauteur d'un centre historique touristique",
         "leadHtml": "À Tournon-sur-Rhône, on installe votre signalétique sur mesure : <b>enseigne de façade, habillage de vitrine, signalétique de cave ou de site.</b>",
-        "bodyHtml": "<p>Au pied de son château et face au vignoble de l'Hermitage à Tain, Tournon-sur-Rhône vit du tourisme, du vin et de son centre historique. Commerces, caves, restaurants et sites patrimoniaux ont besoin d'une signalétique lisible et soignée, souvent en secteur sensible.</p><p>Depuis Valence, à 20 minutes, on relève les cotes sur place, on fabrique et on pose. Un seul interlocuteur, de l'étude à l'installation.</p>"
+        "bodyHtml": "<p>Au pied de son château et face au vignoble de l'Hermitage à Tain, Tournon-sur-Rhône vit du tourisme, du vin et de son centre historique. Commerces, caves, restaurants et sites patrimoniaux ont besoin d'une signalétique lisible et soignée, souvent en secteur sensible.</p><p>Depuis Valence, à 20 minutes, on relève les cotes sur place, on fabrique et on pose. Un seul interlocuteur suit votre projet de bout en bout.</p>"
       },
       "prestations": {
         "eyebrow": "Ce qu’on fabrique et pose",
@@ -2964,33 +2640,6 @@
           {
             "title": "Bureaux et espaces d’accueil",
             "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
           }
         ]
       },
@@ -3098,14 +2747,14 @@
       "hero": {
         "crumb": "Signalétique Annonay",
         "eyebrow": "Signalétique et enseignes à Annonay",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Annonay</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Annonay</span>, fabriquées sur mesure",
         "sub": "Enseignes, totems, panneaux et vitrophanie pour les commerces, industries et PME d'Annonay. Étude, fabrication et pose par nos équipes."
       },
       "intro": {
         "eyebrow": "Votre visibilité, installée",
         "title": "De la vitrine du centre au panneau de site industriel",
         "leadHtml": "À Annonay, on conçoit et on pose votre signalétique complète : <b>enseigne, totem, panneaux de site et habillage de vitrine.</b>",
-        "bodyHtml": "<p>Ville industrielle du nord Ardèche, berceau des frères Montgolfier et terre de grands sites de production, Annonay mêle commerces de centre-ville et zones industrielles. Enseignes de façade, mais aussi signalétique de site, panneaux de sécurité et totems d'accès y sont très demandés.</p><p>Depuis Valence, nos équipes se déplacent sur Annonay pour relever, fabriquer et poser. Un seul interlocuteur du projet à l'installation.</p>"
+        "bodyHtml": "<p>Ville industrielle du nord Ardèche, berceau des frères Montgolfier et terre de grands sites de production, Annonay mêle commerces de centre-ville et zones industrielles. Enseignes de façade, mais aussi signalétique de site, panneaux de sécurité et totems d'accès y sont très demandés.</p><p>Depuis Valence, nos équipes se déplacent sur Annonay pour relever, fabriquer et poser. Un seul interlocuteur pour tout le projet.</p>"
       },
       "prestations": {
         "eyebrow": "Ce qu’on fabrique et pose",
@@ -3180,33 +2829,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi nous confier votre signalétique",
         "items": [
@@ -3253,7 +2875,7 @@
           },
           {
             "q": "Posez-vous l'enseigne et les panneaux à Annonay ?",
-            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Annonay pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur, de l'étude à l'installation."
+            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Annonay pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur suit votre projet de bout en bout."
           }
         ]
       },
@@ -3311,8 +2933,8 @@
       "hero": {
         "crumb": "Signalétique Lyon",
         "eyebrow": "Signalétique et enseignes à Lyon",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Lyon</span>, de l’étude à la pose",
-        "sub": "Enseignes, signalétique intérieure, vitrophanie et totems pour les commerces, sièges et réseaux de la métropole lyonnaise. De l'étude à la pose."
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Lyon</span>, fabriquées sur mesure",
+        "sub": "Enseignes, signalétique intérieure, vitrophanie et totems pour les commerces, sièges et réseaux de la métropole lyonnaise."
       },
       "intro": {
         "eyebrow": "Votre visibilité, installée",
@@ -3359,7 +2981,7 @@
           },
           {
             "title": "Pose et installation d'enseigne",
-            "desc": "De la prise de cotes à la pose finale, on gère l'installation de votre enseigne à Lyon : façade, totem ou enseigne drapeau, ancrés pour tenir dehors et raccordés proprement."
+            "desc": "Si vous le souhaitez, on organise aussi l'installation de votre enseigne à Lyon : façade, totem ou enseigne drapeau, ancrés pour tenir dehors et raccordés proprement."
           }
         ]
       },
@@ -3390,33 +3012,6 @@
           {
             "title": "Bureaux et espaces d’accueil",
             "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
           }
         ]
       },
@@ -3466,7 +3061,7 @@
           },
           {
             "q": "Posez-vous l'enseigne et les panneaux à Lyon ?",
-            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Lyon pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur, de l'étude à l'installation."
+            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Lyon pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur suit votre projet de bout en bout."
           }
         ]
       },
@@ -3524,14 +3119,14 @@
       "hero": {
         "crumb": "Signalétique Aubenas",
         "eyebrow": "Signalétique et enseignes à Aubenas",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Aubenas</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Aubenas</span>, fabriquées sur mesure",
         "sub": "Enseignes, vitrophanie, totems et panneaux pour les commerces, hôtels et sites touristiques d'Aubenas. Étude, fabrication et pose par nos équipes."
       },
       "intro": {
         "eyebrow": "Votre visibilité, installée",
         "title": "Une enseigne qui accroche, porte des Cévennes",
         "leadHtml": "À Aubenas, on installe votre signalétique prête à l'emploi : <b>enseigne de façade, habillage de vitrine, totem d'accès.</b>",
-        "bodyHtml": "<p>Porte de la montagne ardéchoise et pôle commercial du sud Ardèche, Aubenas vit du commerce de proximité et d'un tourisme fort. Son centre ancien, son marché et ses zones commerciales concentrent une clientèle de passage qu'une enseigne soignée capte au premier regard.</p><p>Depuis Valence, nos équipes se déplacent sur Aubenas pour relever, fabriquer et poser. Un seul interlocuteur, de l'étude à l'installation.</p>"
+        "bodyHtml": "<p>Porte de la montagne ardéchoise et pôle commercial du sud Ardèche, Aubenas vit du commerce de proximité et d'un tourisme fort. Son centre ancien, son marché et ses zones commerciales concentrent une clientèle de passage qu'une enseigne soignée capte au premier regard.</p><p>Depuis Valence, nos équipes se déplacent sur Aubenas pour relever, fabriquer et poser. Un seul interlocuteur suit votre projet de bout en bout.</p>"
       },
       "prestations": {
         "eyebrow": "Ce qu’on fabrique et pose",
@@ -3606,33 +3201,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi nous confier votre signalétique",
         "items": [
@@ -3679,7 +3247,7 @@
           },
           {
             "q": "Assurez-vous l'installation de l'enseigne à Aubenas ?",
-            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Aubenas pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur, de l'étude à l'installation."
+            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Aubenas pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur suit votre projet de bout en bout."
           }
         ]
       },
@@ -3737,14 +3305,14 @@
       "hero": {
         "crumb": "Signalétique Pierrelatte",
         "eyebrow": "Signalétique et enseignes à Pierrelatte",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Pierrelatte</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Pierrelatte</span>, fabriquées sur mesure",
         "sub": "Enseignes, totems, panneaux et vitrophanie pour les commerces, industries et sites du Tricastin. Étude, fabrication et pose par nos équipes."
       },
       "intro": {
         "eyebrow": "Votre visibilité, installée",
         "title": "De la vitrine du centre au panneau de site du Tricastin",
         "leadHtml": "À Pierrelatte, on conçoit et on pose votre signalétique complète : <b>enseigne, totem, panneaux de site et habillage de vitrine.</b>",
-        "bodyHtml": "<p>Au cœur du Tricastin, sur l'axe de la vallée du Rhône, Pierrelatte mêle commerces, agriculture et un tissu industriel dense. Enseignes de façade, mais aussi signalétique de site, panneaux de sécurité et totems d'accès y sont très demandés par les entreprises.</p><p>Depuis Valence, sur l'axe A7, nos équipes descendent sur Pierrelatte pour relever, fabriquer et poser. Un seul interlocuteur du projet à l'installation.</p>"
+        "bodyHtml": "<p>Au cœur du Tricastin, sur l'axe de la vallée du Rhône, Pierrelatte mêle commerces, agriculture et un tissu industriel dense. Enseignes de façade, mais aussi signalétique de site, panneaux de sécurité et totems d'accès y sont très demandés par les entreprises.</p><p>Depuis Valence, sur l'axe A7, nos équipes descendent sur Pierrelatte pour relever, fabriquer et poser. Un seul interlocuteur pour tout le projet.</p>"
       },
       "prestations": {
         "eyebrow": "Ce qu’on fabrique et pose",
@@ -3819,33 +3387,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi nous confier votre signalétique",
         "items": [
@@ -3892,7 +3433,7 @@
           },
           {
             "q": "Assurez-vous l'installation de l'enseigne à Pierrelatte ?",
-            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Pierrelatte pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur, de l'étude à l'installation."
+            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Pierrelatte pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur suit votre projet de bout en bout."
           }
         ]
       },
@@ -3950,7 +3491,7 @@
       "hero": {
         "crumb": "Signalétique Bourg-de-Péage",
         "eyebrow": "Signalétique et enseignes à Bourg-de-Péage",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Bourg-de-Péage</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Bourg-de-Péage</span>, fabriquées sur mesure",
         "sub": "Enseignes, totems, vitrophanie et adhésifs pour les commerces et entreprises de Bourg-de-Péage. On conçoit, on fabrique et on pose, tout près."
       },
       "intro": {
@@ -4029,33 +3570,6 @@
           {
             "title": "Bureaux et espaces d’accueil",
             "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
           }
         ]
       },
@@ -4163,14 +3677,14 @@
       "hero": {
         "crumb": "Signalétique Vienne",
         "eyebrow": "Signalétique et enseignes à Vienne",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Vienne</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Vienne</span>, fabriquées sur mesure",
         "sub": "Enseignes, vitrophanie, totems et panneaux pour les commerces, sites et entreprises de Vienne. Étude, fabrication et pose par nos équipes."
       },
       "intro": {
         "eyebrow": "Votre visibilité, installée",
         "title": "Une enseigne à la hauteur d'une ville de passage et de patrimoine",
         "leadHtml": "À Vienne, on installe votre signalétique sur mesure : <b>enseigne de façade, habillage de vitrine, totem d'accès.</b>",
-        "bodyHtml": "<p>Entre Lyon et Valence sur l'axe rhodanien, Vienne conjugue patrimoine romain, tourisme et un tissu commercial dense en centre-ville comme en zones d'activité. Une enseigne lisible et soignée y capte une clientèle nombreuse et de passage.</p><p>Depuis Valence, sur l'axe A7, nos équipes se déplacent sur Vienne pour relever, fabriquer et poser. Un seul interlocuteur, de l'étude à l'installation.</p>"
+        "bodyHtml": "<p>Entre Lyon et Valence sur l'axe rhodanien, Vienne conjugue patrimoine romain, tourisme et un tissu commercial dense en centre-ville comme en zones d'activité. Une enseigne lisible et soignée y capte une clientèle nombreuse et de passage.</p><p>Depuis Valence, sur l'axe A7, nos équipes se déplacent sur Vienne pour relever, fabriquer et poser. Un seul interlocuteur suit votre projet de bout en bout.</p>"
       },
       "prestations": {
         "eyebrow": "Ce qu’on fabrique et pose",
@@ -4245,33 +3759,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi nous confier votre signalétique",
         "items": [
@@ -4318,7 +3805,7 @@
           },
           {
             "q": "Assurez-vous l'installation de l'enseigne à Vienne ?",
-            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Vienne pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur, de l'étude à l'installation."
+            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Vienne pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur suit votre projet de bout en bout."
           }
         ]
       },
@@ -4376,7 +3863,7 @@
       "hero": {
         "crumb": "Signalétique Portes-lès-Valence",
         "eyebrow": "Signalétique et enseignes à Portes-lès-Valence",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Portes-lès-Valence</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Portes-lès-Valence</span>, fabriquées sur mesure",
         "sub": "Enseignes, totems, marquage de façade ou de véhicules : nous fabriquons à Valence et nous posons chez vous, à dix minutes de l'atelier."
       },
       "intro": {
@@ -4455,33 +3942,6 @@
           {
             "title": "Bureaux et espaces d’accueil",
             "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
           }
         ]
       },
@@ -4589,7 +4049,7 @@
       "hero": {
         "crumb": "Signalétique Livron-sur-Drôme",
         "eyebrow": "Signalétique et enseignes à Livron-sur-Drôme",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Livron-sur-Drôme</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Livron-sur-Drôme</span>, fabriquées sur mesure",
         "sub": "Sur un axe où tout le monde passe vite, votre enseigne doit faire mouche en deux secondes. Nous la concevons, la fabriquons à Valence et la posons chez vous."
       },
       "intro": {
@@ -4668,33 +4128,6 @@
           {
             "title": "Bureaux et espaces d’accueil",
             "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
           }
         ]
       },
@@ -4802,7 +4235,7 @@
       "hero": {
         "crumb": "Signalétique Crest",
         "eyebrow": "Signalétique et enseignes à Crest",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Crest</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Crest</span>, fabriquées sur mesure",
         "sub": "Sous la Tour, une enseigne réussie respecte la pierre. Nous concevons des façades qui attirent l'œil sans dénaturer le centre ancien."
       },
       "intro": {
@@ -4881,33 +4314,6 @@
           {
             "title": "Bureaux et espaces d’accueil",
             "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
           }
         ]
       },
@@ -5015,7 +4421,7 @@
       "hero": {
         "crumb": "Signalétique Die",
         "eyebrow": "Signalétique et enseignes à Die",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Die</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Die</span>, fabriquées sur mesure",
         "sub": "Du centre ancien aux domaines de Clairette, nous équipons le Diois en enseignes et signalétique qui tiennent le climat de moyenne montagne."
       },
       "intro": {
@@ -5063,7 +4469,7 @@
           },
           {
             "title": "Pose et installation d'enseigne",
-            "desc": "De la prise de cotes à la pose finale, on gère l'installation de votre enseigne à Die : façade, totem ou enseigne drapeau, ancrés pour tenir dehors et raccordés proprement."
+            "desc": "Si vous le souhaitez, on organise aussi l'installation de votre enseigne à Die : façade, totem ou enseigne drapeau, ancrés pour tenir dehors et raccordés proprement."
           }
         ]
       },
@@ -5094,33 +4500,6 @@
           {
             "title": "Bureaux et espaces d’accueil",
             "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
           }
         ]
       },
@@ -5170,7 +4549,7 @@
           },
           {
             "q": "Posez-vous l'enseigne et les panneaux à Die ?",
-            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Die pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur, de l'étude à l'installation."
+            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Die pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur suit votre projet de bout en bout."
           }
         ]
       },
@@ -5228,7 +4607,7 @@
       "hero": {
         "crumb": "Signalétique Nyons",
         "eyebrow": "Signalétique et enseignes à Nyons",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Nyons</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Nyons</span>, fabriquées sur mesure",
         "sub": "Place des Arcades, moulins, boutiques de producteurs : nous habillons les façades nyonsaises avec des enseignes qui respectent l'esprit provençal et encaissent le soleil."
       },
       "intro": {
@@ -5310,33 +4689,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi nous confier votre signalétique",
         "items": [
@@ -5353,8 +4705,8 @@
             "desc": "Lettres découpées, drapeaux en métal, tons naturels : nous concevons des façades qui s'accordent avec la pierre et les enduits du centre."
           },
           {
-            "title": "De l'étude à la pose",
-            "desc": "Maquette, dossier mairie, fabrication, installation : un seul interlocuteur du premier croquis au dernier coup de visseuse."
+            "title": "Un seul interlocuteur",
+            "desc": "Maquette, dossier mairie et fabrication : un seul interlocuteur suit votre projet, et la pose peut être organisée selon vos besoins."
           }
         ]
       },
@@ -5383,7 +4735,7 @@
           },
           {
             "q": "Assurez-vous l'installation de l'enseigne à Nyons ?",
-            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Nyons pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur, de l'étude à l'installation."
+            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Nyons pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur suit votre projet de bout en bout."
           }
         ]
       },
@@ -5441,7 +4793,7 @@
       "hero": {
         "crumb": "Signalétique Tain-l'Hermitage",
         "eyebrow": "Signalétique et enseignes à Tain-l'Hermitage",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Tain-l'Hermitage</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Tain-l'Hermitage</span>, fabriquées sur mesure",
         "sub": "Caves, boutiques de dégustation, commerces des quais : nous créons des enseignes à la hauteur d'une ville que le monde entier vient visiter pour son vin et son chocolat."
       },
       "intro": {
@@ -5520,33 +4872,6 @@
           {
             "title": "Bureaux et espaces d’accueil",
             "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
           }
         ]
       },
@@ -5654,7 +4979,7 @@
       "hero": {
         "crumb": "Signalétique Privas",
         "eyebrow": "Signalétique et enseignes à Privas",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Privas</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Privas</span>, fabriquées sur mesure",
         "sub": "Préfecture oblige, Privas mêle commerces, administrations et PME : nous équipons les trois en enseignes et signalétique, fabrication à Valence, pose sur place."
       },
       "intro": {
@@ -5733,33 +5058,6 @@
           {
             "title": "Bureaux et espaces d’accueil",
             "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
           }
         ]
       },
@@ -5867,7 +5165,7 @@
       "hero": {
         "crumb": "Signalétique Villeurbanne",
         "eyebrow": "Signalétique et enseignes à Villeurbanne",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Villeurbanne</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Villeurbanne</span>, fabriquées sur mesure",
         "sub": "Votre local est cours Émile Zola, aux Gratte-Ciel ou dans un immeuble de bureaux du Tonkin ? Nous concevons et fabriquons à Valence, et nous venons poser chez vous."
       },
       "intro": {
@@ -5949,33 +5247,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi nous confier votre signalétique",
         "items": [
@@ -6022,7 +5293,7 @@
           },
           {
             "q": "Assurez-vous l'installation de l'enseigne à Villeurbanne ?",
-            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Villeurbanne pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur, de l'étude à l'installation."
+            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Villeurbanne pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur suit votre projet de bout en bout."
           }
         ]
       },
@@ -6075,12 +5346,12 @@
       "navLabel": "Signalétique Saint-Étienne",
       "meta": {
         "title": "Signalétique et enseignes à Saint-Étienne | SecretPub",
-        "description": "Signalétique et enseignes à Saint-Étienne : SecretPub conçoit, fabrique et pose vos enseignes, vitrines et signalétique intérieure, de l'étude à la pose."
+        "description": "Signalétique et enseignes à Saint-Étienne : SecretPub conçoit et fabrique vos enseignes, vitrines et signalétique intérieure, et organise la pose quand votre projet le demande."
       },
       "hero": {
         "crumb": "Signalétique Saint-Étienne",
         "eyebrow": "Signalétique et enseignes à Saint-Étienne",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Saint-Étienne</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Saint-Étienne</span>, fabriquées sur mesure",
         "sub": "Dans la ville du design, une enseigne bâclée se remarque tout de suite. Nous concevons, fabriquons et posons la vôtre, de la vitrine du centre-ville au bâtiment industriel."
       },
       "intro": {
@@ -6162,33 +5433,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi nous confier votre signalétique",
         "items": [
@@ -6235,7 +5479,7 @@
           },
           {
             "q": "Posez-vous l'enseigne et les panneaux à Saint-Étienne ?",
-            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Saint-Étienne pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur, de l'étude à l'installation."
+            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Saint-Étienne pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur suit votre projet de bout en bout."
           }
         ]
       },
@@ -6293,7 +5537,7 @@
       "hero": {
         "crumb": "Signalétique Bourgoin-Jallieu",
         "eyebrow": "Signalétique et enseignes à Bourgoin-Jallieu",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Bourgoin-Jallieu</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Bourgoin-Jallieu</span>, fabriquées sur mesure",
         "sub": "Totems d'entrée de site, lettres sur bardage, signalétique de flux : nous équipons les entreprises du Nord-Isère depuis notre atelier de Valence."
       },
       "intro": {
@@ -6375,33 +5619,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi nous confier votre signalétique",
         "items": [
@@ -6448,7 +5665,7 @@
           },
           {
             "q": "Posez-vous l'enseigne et les panneaux à Bourgoin-Jallieu ?",
-            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Bourgoin-Jallieu pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur, de l'étude à l'installation."
+            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Bourgoin-Jallieu pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur suit votre projet de bout en bout."
           }
         ]
       },
@@ -6501,12 +5718,12 @@
       "navLabel": "Signalétique Annecy",
       "meta": {
         "title": "Signalétique et enseignes à Annecy | SecretPub",
-        "description": "Signalétique et enseignes à Annecy : lettres découpées, enseignes soignées pour commerces, hôtels et PME. SecretPub, de l'étude à la pose, depuis Valence."
+        "description": "Signalétique et enseignes à Annecy : lettres découpées, enseignes soignées pour commerces, hôtels et PME. SecretPub, depuis Valence."
       },
       "hero": {
         "crumb": "Signalétique Annecy",
         "eyebrow": "Signalétique et enseignes à Annecy",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Annecy</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Annecy</span>, fabriquées sur mesure",
         "sub": "Entre la vieille ville et les zones d'activité du bassin annécien, nous réalisons des enseignes à la hauteur de l'image que renvoie Annecy : soignées, durables, posées proprement."
       },
       "intro": {
@@ -6554,7 +5771,7 @@
           },
           {
             "title": "Pose et installation d'enseigne",
-            "desc": "De la prise de cotes à la pose finale, on gère l'installation de votre enseigne à Annecy : façade, totem ou enseigne drapeau, ancrés pour tenir dehors et raccordés proprement."
+            "desc": "Si vous le souhaitez, on organise aussi l'installation de votre enseigne à Annecy : façade, totem ou enseigne drapeau, ancrés pour tenir dehors et raccordés proprement."
           }
         ]
       },
@@ -6585,33 +5802,6 @@
           {
             "title": "Bureaux et espaces d’accueil",
             "desc": "Signalétique intérieure et directionnelle, adhésifs et plaques pour guider vos visiteurs et habiller vos locaux à vos couleurs."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
           }
         ]
       },
@@ -6719,7 +5909,7 @@
       "hero": {
         "crumb": "Signalétique Chambéry",
         "eyebrow": "Signalétique et enseignes à Chambéry",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Chambéry</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Chambéry</span>, fabriquées sur mesure",
         "sub": "Du centre historique aux zones de Bissy et de la Cassine, nous concevons, fabriquons et posons enseignes et signalétique pour les entreprises chambériennes."
       },
       "intro": {
@@ -6801,33 +5991,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi nous confier votre signalétique",
         "items": [
@@ -6874,7 +6037,7 @@
           },
           {
             "q": "Assurez-vous l'installation de l'enseigne à Chambéry ?",
-            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Chambéry pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur, de l'étude à l'installation."
+            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Chambéry pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur suit votre projet de bout en bout."
           }
         ]
       },
@@ -6932,7 +6095,7 @@
       "hero": {
         "crumb": "Signalétique Orange",
         "eyebrow": "Signalétique et enseignes à Orange",
-        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Orange</span>, de l’étude à la pose",
+        "h1Html": "<span class=\"mark\">Signalétique et enseignes à Orange</span>, fabriquées sur mesure",
         "sub": "À une heure de notre atelier par l'A7, nous équipons commerces, hôtels et entreprises d'Orange en enseignes et signalétique, du centre ancien aux zones du Coudoulet."
       },
       "intro": {
@@ -7014,33 +6177,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "De l’étude à la pose, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, aucune mauvaise surprise le jour de l’installation.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Étude et prise de cotes",
-            "desc": "On étudie votre emplacement, on prend les cotes sur site et on vérifie la faisabilité technique avant de lancer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production : vous visualisez le rendu exact et vous validez avant fabrication."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication maîtrisée",
-            "desc": "On fabrique dans des matériaux garantis extérieur (dibond, PVC, aluminium, vinyle) pour que ça tienne dans le temps."
-          },
-          {
-            "n": "04",
-            "title": "Pose clés en main",
-            "desc": "On installe sur site, proprement et en sécurité. Vous récupérez une signalétique posée, prête à travailler pour vous."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi nous confier votre signalétique",
         "items": [
@@ -7087,7 +6223,7 @@
           },
           {
             "q": "Posez-vous l'enseigne et les panneaux à Orange ?",
-            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Orange pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur, de l'étude à l'installation."
+            "a": "Bien sûr. On ne fait pas que fabriquer : on se déplace à Orange pour poser l'enseigne et les panneaux publicitaires, prendre les cotes en amont et raccorder l'éclairage. Un seul interlocuteur suit votre projet de bout en bout."
           }
         ]
       },
@@ -7220,33 +6356,6 @@
           {
             "title": "PME et commerces",
             "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De votre logo à la tenue livrée",
-        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et conseil",
-            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et réassort",
-            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
           }
         ]
       },
@@ -7474,33 +6583,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De l’idée à la livraison",
-        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et sélection",
-            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
-          },
-          {
-            "n": "02",
-            "title": "Personnalisation et bon à tirer",
-            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et multi-sites",
-            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi SecretPub",
         "items": [
@@ -7718,33 +6800,6 @@
           {
             "title": "PME et commerces",
             "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De votre logo à la tenue livrée",
-        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et conseil",
-            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et réassort",
-            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
           }
         ]
       },
@@ -7972,33 +7027,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De l’idée à la livraison",
-        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et sélection",
-            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
-          },
-          {
-            "n": "02",
-            "title": "Personnalisation et bon à tirer",
-            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et multi-sites",
-            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi SecretPub",
         "items": [
@@ -8216,33 +7244,6 @@
           {
             "title": "PME et commerces",
             "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De votre logo à la tenue livrée",
-        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et conseil",
-            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et réassort",
-            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
           }
         ]
       },
@@ -8470,33 +7471,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De l’idée à la livraison",
-        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et sélection",
-            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
-          },
-          {
-            "n": "02",
-            "title": "Personnalisation et bon à tirer",
-            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et multi-sites",
-            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi SecretPub",
         "items": [
@@ -8714,33 +7688,6 @@
           {
             "title": "PME et commerces",
             "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De votre logo à la tenue livrée",
-        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et conseil",
-            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et réassort",
-            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
           }
         ]
       },
@@ -8968,33 +7915,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De l’idée à la livraison",
-        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et sélection",
-            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
-          },
-          {
-            "n": "02",
-            "title": "Personnalisation et bon à tirer",
-            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et multi-sites",
-            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi SecretPub",
         "items": [
@@ -9212,33 +8132,6 @@
           {
             "title": "PME et commerces",
             "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De votre logo à la tenue livrée",
-        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et conseil",
-            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et réassort",
-            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
           }
         ]
       },
@@ -9466,33 +8359,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De l’idée à la livraison",
-        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et sélection",
-            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
-          },
-          {
-            "n": "02",
-            "title": "Personnalisation et bon à tirer",
-            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et multi-sites",
-            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi SecretPub",
         "items": [
@@ -9710,33 +8576,6 @@
           {
             "title": "PME et commerces",
             "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De votre logo à la tenue livrée",
-        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et conseil",
-            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et réassort",
-            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
           }
         ]
       },
@@ -9964,33 +8803,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De l’idée à la livraison",
-        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et sélection",
-            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
-          },
-          {
-            "n": "02",
-            "title": "Personnalisation et bon à tirer",
-            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et multi-sites",
-            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi SecretPub",
         "items": [
@@ -10208,33 +9020,6 @@
           {
             "title": "PME et commerces",
             "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De votre logo à la tenue livrée",
-        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et conseil",
-            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et réassort",
-            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
           }
         ]
       },
@@ -10462,33 +9247,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De l’idée à la livraison",
-        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et sélection",
-            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
-          },
-          {
-            "n": "02",
-            "title": "Personnalisation et bon à tirer",
-            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et multi-sites",
-            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi SecretPub",
         "items": [
@@ -10706,33 +9464,6 @@
           {
             "title": "PME et commerces",
             "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De votre logo à la tenue livrée",
-        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et conseil",
-            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et réassort",
-            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
           }
         ]
       },
@@ -10960,33 +9691,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De l’idée à la livraison",
-        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et sélection",
-            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
-          },
-          {
-            "n": "02",
-            "title": "Personnalisation et bon à tirer",
-            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et multi-sites",
-            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi SecretPub",
         "items": [
@@ -11204,33 +9908,6 @@
           {
             "title": "PME et commerces",
             "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De votre logo à la tenue livrée",
-        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et conseil",
-            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et réassort",
-            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
           }
         ]
       },
@@ -11458,33 +10135,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De l’idée à la livraison",
-        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et sélection",
-            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
-          },
-          {
-            "n": "02",
-            "title": "Personnalisation et bon à tirer",
-            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et multi-sites",
-            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi SecretPub",
         "items": [
@@ -11702,33 +10352,6 @@
           {
             "title": "PME et commerces",
             "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De votre logo à la tenue livrée",
-        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et conseil",
-            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et réassort",
-            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
           }
         ]
       },
@@ -11956,33 +10579,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De l’idée à la livraison",
-        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et sélection",
-            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
-          },
-          {
-            "n": "02",
-            "title": "Personnalisation et bon à tirer",
-            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et multi-sites",
-            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi SecretPub",
         "items": [
@@ -12200,33 +10796,6 @@
           {
             "title": "PME et commerces",
             "desc": "Tenues d'accueil et textiles événementiels pour vos équipes, salons et opérations commerciales."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De votre logo à la tenue livrée",
-        "intro": "Une méthode simple et cadrée, pour que vos vêtements arrivent prêts à porter, sans mauvaise surprise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et conseil",
-            "desc": "On cerne l'usage, les quantités et votre charte, puis on vous conseille le bon vêtement et la bonne technique de marquage."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer à valider",
-            "desc": "On vous envoie un bon à tirer avec l'emplacement et le rendu du logo, à valider avant tout lancement. Les délais dépendent ensuite du projet : support, quantité, finitions."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "Broderie, flocage, sérigraphie ou DTF : on produit en maîtrisant la qualité, pour un marquage net qui tient au lavage."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et réassort",
-            "desc": "On vous livre les tenues prêtes à porter, à Valence ou partout en France, et on gère facilement vos réassorts."
           }
         ]
       },
@@ -12454,33 +11023,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Notre méthode",
-        "title": "De l’idée à la livraison",
-        "intro": "Un parcours simple et cadré, avec un seul interlocuteur du premier échange jusqu’à la remise.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Brief et sélection",
-            "desc": "On cerne votre besoin, votre budget et votre occasion, puis on vous propose les objets utiles les mieux adaptés."
-          },
-          {
-            "n": "02",
-            "title": "Personnalisation et bon à tirer",
-            "desc": "On applique votre logo à votre charte et on vous envoie un bon à tirer à valider avant production, pour partir sur le bon visuel."
-          },
-          {
-            "n": "03",
-            "title": "Production maîtrisée",
-            "desc": "On lance la fabrication en gardant l’œil sur les couleurs et les finitions, pour un rendu fidèle sur chaque objet."
-          },
-          {
-            "n": "04",
-            "title": "Livraison et multi-sites",
-            "desc": "On livre à Valence ou partout en France, et on répartit vos goodies sur tous les points de vente d’un réseau."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi SecretPub",
         "items": [
@@ -12698,33 +11240,6 @@
           {
             "title": "Réseaux de services et concessions",
             "desc": "Agences, garages, points de service : des tenues qui portent votre marque partout de la même façon."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment on déploie",
-        "title": "Du cadrage au réassort, sans surcharge pour le siège",
-        "intro": "Un standard verrouillé une fois, puis des commandes simples pour chaque point de vente.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Cadrage du standard textile",
-            "desc": "On définit avec le siège les tenues par métier, les tailles, les techniques de marquage et la charte à respecter sur tout le réseau."
-          },
-          {
-            "n": "02",
-            "title": "Bon à tirer de référence",
-            "desc": "On produit un bon à tirer validé une fois par le siège : il devient la référence pour toutes les commandes des points de vente."
-          },
-          {
-            "n": "03",
-            "title": "Espace de commande et déploiement",
-            "desc": "On ouvre un espace de commande à votre charte, on équipe les magasins existants, puis chaque nouvelle ouverture en quelques clics."
-          },
-          {
-            "n": "04",
-            "title": "Réassort et suivi dans la durée",
-            "desc": "Réassort à la demande, suivi des tailles, facturation selon votre organisation. Un interlocuteur dédié à votre réseau dans le temps."
           }
         ]
       },
@@ -12955,33 +11470,6 @@
           }
         ]
       },
-      "process": {
-        "eyebrow": "Comment on déploie",
-        "title": "Une sélection cadrée une fois, des commandes simples ensuite",
-        "intro": "On verrouille la gamme au siège, puis chaque point de vente commande dans ce cadre.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Cadrage de la sélection",
-            "desc": "On définit avec le siège la gamme d'objets, les welcome packs et les budgets par occasion, calés sur votre charte."
-          },
-          {
-            "n": "02",
-            "title": "Rendu de référence",
-            "desc": "On valide un rendu de référence pour chaque objet : il fait foi pour toutes les commandes des points de vente."
-          },
-          {
-            "n": "03",
-            "title": "Espace de commande et déploiement",
-            "desc": "On ouvre un espace de commande à votre charte, on équipe les sites existants, puis chaque nouvelle ouverture en quelques clics."
-          },
-          {
-            "n": "04",
-            "title": "Réassort et suivi",
-            "desc": "Réassort à la demande, gestion des références, facturation selon votre organisation. Un interlocuteur dédié dans le temps."
-          }
-        ]
-      },
       "avantages": {
         "title": "Pourquoi les réseaux nous confient leurs objets",
         "items": [
@@ -13119,7 +11607,7 @@
       "hero": {
         "crumb": "Stores bannes",
         "eyebrow": "Stores bannes et lambrequins imprimés",
-        "h1Html": "<span class=\"mark\">Stores bannes personnalisés</span>, du lambrequin imprimé à la pose",
+        "h1Html": "<span class=\"mark\">Stores bannes personnalisés</span>, lambrequin imprimé et toile sur mesure",
         "sub": "Fabrication sur mesure, motorisation, toile et lambrequin imprimés à votre charte, pose par nos équipes. Le store devient une enseigne : celle qu'on lit depuis le trottoir d'en face."
       },
       "intro": {
@@ -13186,33 +11674,6 @@
           {
             "title": "Franchises et réseaux",
             "desc": "Un cahier des charges, N adresses, le même store et le même lambrequin partout, déployés site par site."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "Du relevé à la mise en service, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, et rien qui se découvre le jour de la pose.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Relevé et faisabilité",
-            "desc": "On mesure la façade, on vérifie le support (linteau, bandeau, maçonnerie) et la hauteur libre au-dessus du trottoir avant de proposer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "BAT inséré sur votre façade",
-            "desc": "Première réponse sous 24 h, puis un bon à tirer monté sur la photo réelle de votre devanture : vous voyez le store déployé, le lambrequin et le rendu du texte avant de valider."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication et impression",
-            "desc": "Armature laquée, toile acrylique teintée masse, lambrequin imprimé et cousu en atelier. Tout part monté et repéré pour aller vite sur site."
-          },
-          {
-            "n": "04",
-            "title": "Pose et mise en service",
-            "desc": "Pose, réglage de l'inclinaison, essai moteur et réglage du capteur de vent. On repart quand le store fonctionne devant vous."
           }
         ]
       },
@@ -13333,7 +11794,7 @@
       "hero": {
         "crumb": "Stores bannes Paris",
         "eyebrow": "Stores bannes personnalisés à Paris",
-        "h1Html": "<span class=\"mark\">Stores bannes personnalisés à Paris</span>, du lambrequin à la pose",
+        "h1Html": "<span class=\"mark\">Stores bannes personnalisés à Paris</span>, lambrequin et toile sur mesure",
         "sub": "Terrasses de café, boulangeries, boutiques de pied d'immeuble : on fabrique le store aux cotes de votre devanture parisienne, on imprime le lambrequin à votre charte et on pose en une journée."
       },
       "intro": {
@@ -13400,33 +11861,6 @@
           {
             "title": "Réseaux et franchises parisiennes",
             "desc": "Plusieurs adresses dans Paris et en petite couronne, équipées à l'identique, avec un planning de pose regroupé pour limiter les déplacements."
-          }
-        ]
-      },
-      "process": {
-        "eyebrow": "Comment ça se passe",
-        "title": "Du relevé à la mise en service, en 4 étapes",
-        "intro": "Un déroulé clair, un seul interlocuteur, et rien qui se découvre le jour de la pose.",
-        "steps": [
-          {
-            "n": "01",
-            "title": "Relevé et faisabilité",
-            "desc": "On mesure la façade, on vérifie le support (linteau, bandeau, maçonnerie) et la hauteur libre au-dessus du trottoir avant de proposer quoi que ce soit."
-          },
-          {
-            "n": "02",
-            "title": "BAT inséré sur votre façade",
-            "desc": "Première réponse sous 24 h, puis un bon à tirer monté sur la photo réelle de votre devanture : vous voyez le store déployé, le lambrequin et le rendu du texte avant de valider."
-          },
-          {
-            "n": "03",
-            "title": "Fabrication et impression",
-            "desc": "Armature laquée, toile acrylique teintée masse, lambrequin imprimé et cousu en atelier. Tout part monté et repéré pour aller vite sur site."
-          },
-          {
-            "n": "04",
-            "title": "Pose et mise en service",
-            "desc": "Pose, réglage de l'inclinaison, essai moteur et réglage du capteur de vent. On repart quand le store fonctionne devant vous."
           }
         ]
       },
@@ -13536,7 +11970,7 @@
       {
         "cat": "signa",
         "title": "Signalétique",
-        "descHtml": "Enseignes, totems, oriflammes et stands garantis extérieur. De l'étude à la pose, on rend votre point de vente visible de loin.",
+        "descHtml": "Enseignes, totems, oriflammes et stands garantis extérieur. On rend votre point de vente visible de loin, avec des supports fabriqués sur mesure.",
         "linkLabel": "Voir nos réalisations signalétique",
         "img": "/assets/signaletique-products-opt.webp",
         "alt": "Réalisations signalétique SecretPub : enseigne ronde, kakémono roll-up, oriflamme et stand pliant noirs floqués SecretPub",
@@ -13655,7 +12089,7 @@
         "chipLabelHtml": "Établissement unique",
         "chipIconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3.5 9 5 4h14l1.5 5\"/><path d=\"M4.5 9.5V20h15V9.5\"/><path d=\"M3.5 9h17\"/><path d=\"M9.5 20v-5h5v5\"/></svg>",
         "title": "Commerçant, restaurateur, PME",
-        "desc": "Une enseigne qui dure, des imprimés soignés, des tenues à votre image. Un seul interlocuteur, de l'étude à la pose.",
+        "desc": "Une enseigne qui dure, des imprimés soignés, des tenues à votre image. Un seul interlocuteur pour tout votre projet.",
         "img": "/assets/hero-showroom-opt.jpg",
         "alt": "Photo établissement unique",
         "list": [

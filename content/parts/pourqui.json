@@ -61,7 +61,7 @@
         "chipLabelHtml": "Établissement unique",
         "chipIconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3.5 9 5 4h14l1.5 5\"/><path d=\"M4.5 9.5V20h15V9.5\"/><path d=\"M3.5 9h17\"/><path d=\"M9.5 20v-5h5v5\"/></svg>",
         "title": "Commerçant, restaurateur, PME",
-        "desc": "Une enseigne qui dure, des imprimés soignés, des tenues à votre image. Un seul interlocuteur, de l'étude à la pose.",
+        "desc": "Une enseigne qui dure, des imprimés soignés, des tenues à votre image. Un seul interlocuteur pour tout votre projet.",
         "img": "/assets/hero-showroom-opt.jpg",
         "alt": "Photo établissement unique",
         "list": [

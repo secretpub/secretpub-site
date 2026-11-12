@@ -1,22 +1,19 @@
-<!-- MÉTHODE (blanc, numéros géants) -->
-<section class="section methode" id="methode" data-screen-label="Méthode">
+<!-- QUI SOMMES-NOUS (aperçu). Remplace la méthode en 4 étapes, retirée le 12/11/2026 à la demande d'Isaac.
+     L'id « methode » est gardé : le bouton flottant « Demander un devis » (site.js) et les anciens liens /#methode s'en servent. -->
+{{#about.teaser}}
+<section class="section methode apropos" id="methode" data-screen-label="Qui sommes-nous">
   <div class="wrap">
     <div class="section-head reveal center">
-      <span class="eyebrow">{{methode.eyebrow}}</span>
-      <h2>{{methode.title}}</h2>
+      <span class="eyebrow">{{eyebrow}}</span>
+      <h2>{{title}}</h2>
+      <p class="lead">{{lead}}</p>
     </div>
-    <div class="steps" id="methodeSteps">
-      <div class="steps-line" aria-hidden="true"><i></i></div>
-      {{#methode.steps}}
-      <div class="step">
-        <span class="step-badge">{{n}}</span>
-        <div class="step-card">
-          <h3>{{{title}}}</h3>
-          <p>{{{descHtml}}}</p>
-        </div>
-      </div>
-      {{/methode.steps}}
+    <div class="about-facts reveal">
+      {{#facts}}
+      <div class="about-fact"><div class="n">{{n}}</div><div class="l">{{label}}</div></div>
+      {{/facts}}
     </div>
-    <p class="methode-note reveal">{{methode.note}}</p>
+    <p class="about-cta reveal"><a class="btn btn-primary btn-lg" href="/qui-sommes-nous">{{ctaLabel}} <span class="arr">→</span></a></p>
   </div>
 </section>
+{{/about.teaser}}

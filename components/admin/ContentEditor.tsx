@@ -20,7 +20,6 @@ const SECTION_LABELS: Record<string, string> = {
   secteurs: "Secteurs",
   pourqui: "Pour qui (cartes)",
   waitlist: "Liste d'attente réseaux",
-  methode: "Méthode",
   france: "Couverture France",
   faq: "FAQ",
   contact: "Contact",
@@ -175,7 +174,7 @@ export default function ContentEditor({ initial }: { initial: SiteContent }) {
           const homeKeys = [
             "meta", "nav", "headerCtaLabel", "hero", "trust", "clients",
             "metiersSocle", "metiersComplement", "realisations", "secteurs",
-            "pourqui", "waitlist", "methode", "france", "faq", "contact", "footer",
+            "pourqui", "waitlist", "france", "faq", "contact", "footer",
           ];
           const groups: { title: string; match: (k: string) => boolean }[] = [
             { title: "🏠 Page d'accueil", match: (k) => homeKeys.includes(k) },
