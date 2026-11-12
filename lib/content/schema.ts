@@ -281,6 +281,11 @@ export interface SiteContent {
     socials: LinkItem[];
   };
   metierPages?: Record<string, MetierPage>;
+  /** Page « Qui sommes-nous » et son aperçu sur l'accueil (12/11/2026). Structure libre. */
+  about?: {
+    meta?: { title: string; description: string };
+    [key: string]: unknown;
+  };
   /** Bloc commun « Atelier et réseau » des pages métier et de Qui sommes-nous (12/11/2026). */
   atelier?: {
     eyebrow: string;

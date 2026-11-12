@@ -2762,3 +2762,16 @@ html { scroll-padding-top: 88px; }
 
 /* Bloc « Atelier et réseau » des pages métier (12/11/2026) : note sous les cartes */
 .mp-note { max-width: 74ch; margin: clamp(22px, 2.6vw, 32px) auto 0; text-align: center; color: var(--muted); font-size: 15.5px; line-height: 1.6; }
+
+/* Qui sommes-nous (12/11/2026) : chiffres clés, aperçu sur l'accueil, réalisations */
+.about-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: clamp(12px, 1.6vw, 18px); max-width: 1000px; margin: clamp(30px, 4vw, 48px) auto 0; }
+.about-fact { background: var(--white); border: 1px solid var(--line); border-radius: 18px; padding: 22px 18px; text-align: center; }
+.about-fact .n { font-family: var(--display); font-weight: 800; font-size: clamp(30px, 3.2vw, 40px); color: var(--green-deep); letter-spacing: -0.03em; line-height: 1; }
+.about-fact .l { margin-top: 8px; font-size: 14.5px; color: var(--muted); line-height: 1.45; }
+.about-cta { text-align: center; margin: clamp(26px, 3vw, 38px) 0 0; }
+.about-real { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: clamp(14px, 1.6vw, 20px); margin-top: clamp(28px, 3vw, 40px); }
+.about-real figure { margin: 0; background: var(--white); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
+.about-real img { width: 100%; height: auto; aspect-ratio: 4 / 3; }
+.about-real figcaption { padding: 14px 16px 16px; font-size: 14.5px; color: var(--muted); }
+.about-real figcaption strong { display: block; color: var(--ink); font-family: var(--display); font-weight: 700; font-size: 16px; margin-bottom: 2px; }
+@media (max-width: 560px) { .about-facts { grid-template-columns: repeat(2, 1fr); } .about-fact { padding: 18px 12px; } .about-fact .l { font-size: 13.5px; } }

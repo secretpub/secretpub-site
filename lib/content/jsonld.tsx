@@ -4,6 +4,7 @@ import type { SiteContent } from "./schema";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://secretpub.fr";
 const BIZ_ID = SITE_URL + "#business";
+const ORG_ID = SITE_URL + "#organization";
 
 /** Zone desservie déclarée aux moteurs et aux IA : Valence, sa couronne
  *  (Drôme + Ardèche), les grandes villes d'Auvergne-Rhône-Alpes, et Paris /
@@ -374,6 +375,75 @@ export function conseilsIndexJsonLd(c: SiteContent, articles: any[]): object[] {
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL },
         { "@type": "ListItem", position: 2, name: "Conseils", item: abs("/conseils") },
+      ],
+    },
+  ];
+}
+
+/** Page « Qui sommes-nous » : AboutPage + Organization (NOSTILE FACTORY, nom
+ *  commercial SecretPub) + LocalBusiness (l'atelier et l'accueil de Valence). */
+export function aboutJsonLd(c: SiteContent): object[] {
+  const url = abs("/qui-sommes-nous");
+  const about = (c as any).about || {};
+  const biz = localBusiness(c);
+  const description = about.meta?.description || c.meta.description;
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "@id": url + "#page",
+      url,
+      name: about.meta?.title || "Qui sommes-nous",
+      description,
+      inLanguage: "fr-FR",
+      isPartOf: { "@id": SITE_URL + "#website" },
+      about: { "@id": ORG_ID },
+      mainEntity: { "@id": ORG_ID },
+      breadcrumb: { "@id": url + "#breadcrumb" },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": ORG_ID,
+      name: c.meta.siteName,
+      legalName: biz.legalName,
+      alternateName: biz.alternateName,
+      url: SITE_URL,
+      logo: biz.logo,
+      image: biz.image,
+      description,
+      slogan: biz.slogan,
+      foundingDate: biz.foundingDate,
+      foundingLocation: {
+        "@type": "Place",
+        address: { "@type": "PostalAddress", addressLocality: "Valence", postalCode: "26000", addressCountry: "FR" },
+      },
+      address: biz.address,
+      location: { "@id": BIZ_ID },
+      telephone: biz.telephone,
+      email: biz.email,
+      vatID: biz.vatID,
+      identifier: biz.identifier,
+      knowsAbout: biz.knowsAbout,
+      areaServed: { "@type": "Country", name: "France" },
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer service",
+        telephone: biz.telephone,
+        email: biz.email,
+        areaServed: "FR",
+        availableLanguage: ["French"],
+      },
+      ...(biz.sameAs ? { sameAs: biz.sameAs } : {}),
+    },
+    { "@context": "https://schema.org", ...biz },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": url + "#breadcrumb",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "Qui sommes-nous", item: url },
       ],
     },
   ];

@@ -1,0 +1,253 @@
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-inner">
+    <a class="brand" href="/" aria-label="SecretPub, retour à l'accueil">
+      <img src="/assets/logo-full.png" alt="Logo SecretPub, signalétique, print et textile à Valence" />
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      {{#nav}}
+      <div class="nav-item"><a href="{{href}}">{{label}}</a></div>
+      {{/nav}}
+    </nav>
+    <div class="header-cta">
+      <a href="/#contact" class="btn btn-glow">{{headerCtaLabel}}</a>
+      <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-primary">Voir la boutique <span class="ext" aria-hidden="true">↗</span></a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    </div>
+  </div>
+</header>
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="menu-close" id="menuClose" aria-label="Fermer le menu">×</button>
+  {{#nav}}
+  <a href="{{href}}">{{label}}</a>
+  {{/nav}}
+  <a href="{{meta.catalogueUrl}}" target="_blank" rel="noopener" class="btn btn-primary">Voir la boutique <span class="ext" aria-hidden="true">↗</span></a>
+  <a href="/#contact" class="btn btn-glow">{{headerCtaLabel}}</a>
+  <div class="mm-contact">
+    <a class="mm-tel" href="{{meta.phoneHref}}">{{meta.phoneDisplay}}</a>
+    <address class="mm-addr">{{meta.addressLine}}</address>
+  </div>
+</div>
+
+<main id="main">
+<!-- QUI SOMMES-NOUS (12/11/2026) : faits vérifiés seulement, aucun nom de personne ni d'atelier -->
+<section class="page-hero mp-hero" data-screen-label="Hero Qui sommes-nous">
+  <div class="wrap">
+    <nav class="crumb" aria-label="Fil d'Ariane"><a href="/">Accueil</a> <span>/</span> <span>{{about.hero.crumb}}</span></nav>
+    <span class="eyebrow" style="margin-top: 22px;">{{about.hero.eyebrow}}</span>
+    <h1>{{{about.hero.h1Html}}}</h1>
+    <p class="hero-sub">{{about.hero.sub}}</p>
+    <p class="mp-hero-trust">
+      <span class="mp-stars" aria-hidden="true">★★★★★</span>
+      <strong>{{meta.ratingValue}}/5</strong> sur {{meta.reviewCount}} avis Google · Valence et toute la France · première réponse sous 24 h
+    </p>
+    <div class="hero-actions">
+      <a href="/#contact" class="btn btn-primary btn-lg">Demander un devis <span class="arr">→</span></a>
+      <a href="/#realisations" class="btn btn-ghost-dark btn-lg">Voir nos réalisations</a>
+    </div>
+  </div>
+</section>
+
+<!-- NOTRE HISTOIRE -->
+<section class="section" id="histoire" data-screen-label="Notre histoire">
+  <div class="wrap">
+    <div class="mp-head reveal">
+      <span class="mp-head-num">01 · {{about.histoire.eyebrow}}</span>
+      <h2>{{about.histoire.title}}</h2>
+    </div>
+    <div class="mp-prose reveal">
+      {{{about.histoire.bodyHtml}}}
+    </div>
+    <div class="about-facts reveal">
+      {{#about.chiffres}}
+      <div class="about-fact"><div class="n">{{n}}</div><div class="l">{{label}}</div></div>
+      {{/about.chiffres}}
+    </div>
+  </div>
+</section>
+
+<!-- NOS ATELIERS (bloc commun « Atelier et réseau ») -->
+{{#atelier}}
+<section class="section mp-alt" id="ateliers" data-screen-label="Nos ateliers">
+  <div class="wrap">
+    <div class="mp-head reveal">
+      <span class="mp-head-num">02 · {{eyebrow}}</span>
+      <h2>{{title}}</h2>
+      <p class="lead">{{intro}}</p>
+    </div>
+    <div class="mp-grid mp-grid-2 reveal">
+      {{#items}}
+      <article class="mp-card">
+        <span class="mp-card-dot" aria-hidden="true"></span>
+        <h3>{{title}}</h3>
+        <p>{{desc}}</p>
+      </article>
+      {{/items}}
+    </div>
+    <p class="mp-note reveal">{{note}}</p>
+  </div>
+</section>
+{{/atelier}}
+
+<!-- NOTRE FAÇON DE TRAVAILLER -->
+<section class="section" data-screen-label="Notre façon de travailler">
+  <div class="wrap">
+    <div class="mp-head reveal">
+      <span class="mp-head-num">03 · {{about.valeurs.eyebrow}}</span>
+      <h2>{{about.valeurs.title}}</h2>
+    </div>
+    <div class="mp-grid mp-grid-adv reveal">
+      {{#about.valeurs.items}}
+      <article class="mp-card mp-card-adv">
+        <span class="mp-check" aria-hidden="true">✓</span>
+        <h3>{{title}}</h3>
+        <p>{{desc}}</p>
+      </article>
+      {{/about.valeurs.items}}
+    </div>
+  </div>
+</section>
+
+<!-- NOTRE ÉQUIPE -->
+<section class="section mp-alt" id="equipe" data-screen-label="Notre équipe">
+  <div class="wrap">
+    <div class="mp-head reveal">
+      <span class="mp-head-num">04 · {{about.equipe.eyebrow}}</span>
+      <h2>{{about.equipe.title}}</h2>
+    </div>
+    <div class="mp-prose reveal">
+      {{{about.equipe.bodyHtml}}}
+    </div>
+  </div>
+</section>
+
+<!-- RÉALISATIONS (les mêmes que sur l'accueil, déjà publiques) -->
+{{#aboutRealisations.length}}
+<section class="section" data-screen-label="Nos réalisations">
+  <div class="wrap">
+    <div class="mp-head reveal">
+      <span class="mp-head-num">05 · {{about.realisations.eyebrow}}</span>
+      <h2>{{about.realisations.title}}</h2>
+      <p class="lead">{{about.realisations.intro}}</p>
+    </div>
+    <div class="about-real reveal">
+      {{#aboutRealisations}}
+      <figure>
+        <img class="ph" src="{{mainPhoto.src}}" alt="{{cap}}, {{catLabel}}" loading="lazy" />
+        <figcaption><strong>{{cap}}</strong>{{catLabel}}</figcaption>
+      </figure>
+      {{/aboutRealisations}}
+    </div>
+    <p class="about-cta reveal"><a class="btn btn-ghost-dark btn-lg" href="/#realisations">{{about.realisations.ctaLabel}} <span class="arr">→</span></a></p>
+  </div>
+</section>
+{{/aboutRealisations.length}}
+
+<!-- NOS SAVOIR-FAIRE (maillage interne) -->
+<section class="section mp-alt" data-screen-label="Nos savoir-faire">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Nos savoir-faire</span>
+      <h2>{{about.savoirFaire.title}}</h2>
+    </div>
+    <div class="mp-related reveal">
+      {{#about.savoirFaire.items}}
+      <a class="mp-related-link" href="{{href}}">{{label}} <span class="arr">→</span></a>
+      {{/about.savoirFaire.items}}
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-band grainy pp" data-screen-label="CTA devis">
+  <div class="wrap">
+    <h2>{{about.cta.title}}</h2>
+    <p>{{about.cta.body}}</p>
+    <div class="hero-actions">
+      <a href="/#contact" class="btn btn-white btn-lg">{{about.cta.primaryLabel}} <span class="arr">→</span></a>
+      <a href="{{meta.phoneHref}}" class="btn btn-ghost btn-lg">{{meta.phoneDisplay}}</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="foot-brand">
+        <a class="brand" href="/" aria-label="SecretPub, retour à l'accueil"><img src="/assets/logo-full.png" alt="SecretPub : signalétique, print et textile à Valence" /></a>
+        <p class="about">{{footer.about}}</p>
+        <address class="foot-contact">
+          <a href="{{meta.phoneHref}}">{{meta.phoneDisplay}}</a>
+          <a href="mailto:{{meta.email}}">{{meta.email}}</a>
+          <span>{{meta.addressLine}}</span>
+        </address>
+      </div>
+      {{#footer.columns}}
+      <nav class="foot-col" aria-label="{{title}}">
+        <h5>{{title}}</h5>
+        {{#links}}
+        <a href="{{href}}">{{label}}</a>
+        {{/links}}
+      </nav>
+      {{/footer.columns}}
+    </div>
+
+    <div class="footer-cities">
+      <div class="fc-title">Signalétique, imprimerie et textile personnalisé partout en France</div>
+      <p class="fc-intro">SecretPub possède un atelier à Valence, dans la Drôme, et plusieurs ateliers partout en France. Nous concevons et fabriquons enseignes et signalétique, supports imprimés, PLV et grand format, textile professionnel, objets publicitaires et packaging pour les commerces, restaurants, PME, franchises et réseaux multi-sites, à Valence et dans toute la France.</p>
+      <ul class="fc-list" aria-label="Villes d'intervention">
+        <li><strong><a href="/signaletique">Valence</a></strong></li>
+        <li><a href="/signaletique-bourg-de-peage">Bourg-de-Péage</a></li>
+        <li><a href="/signaletique-tournon-sur-rhone">Tournon-sur-Rhône</a></li>
+        <li><a href="/signaletique-annonay">Annonay</a></li>
+        <li><a href="/signaletique-romans-sur-isere">Romans-sur-Isère</a></li>
+        <li><a href="/signaletique-montelimar">Montélimar</a></li>
+        <li><a href="/signaletique-bourg-les-valence">Bourg-lès-Valence</a></li>
+        <li><a href="/signaletique-portes-les-valence">Portes-lès-Valence</a></li>
+        <li><a href="/signaletique-guilherand-granges">Guilherand-Granges</a></li>
+        <li><a href="/signaletique-livron-sur-drome">Livron-sur-Drôme</a></li>
+        <li><a href="/signaletique-crest">Crest</a></li>
+        <li><a href="/signaletique-die">Die</a></li>
+        <li><a href="/signaletique-nyons">Nyons</a></li>
+        <li><a href="/signaletique-pierrelatte">Pierrelatte</a></li>
+        <li><a href="/signaletique-tain-l-hermitage">Tain-l'Hermitage</a></li>
+        <li><a href="/signaletique-privas">Privas</a></li>
+        <li><a href="/signaletique-aubenas">Aubenas</a></li>
+        <li><a href="/signaletique-lyon">Lyon</a></li>
+        <li><a href="/signaletique-villeurbanne">Villeurbanne</a></li>
+        <li><a href="/signaletique-grenoble">Grenoble</a></li>
+        <li><a href="/signaletique-saint-etienne">Saint-Étienne</a></li>
+        <li><a href="/signaletique-vienne">Vienne</a></li>
+        <li><a href="/signaletique-bourgoin-jallieu">Bourgoin-Jallieu</a></li>
+        <li><a href="/signaletique-annecy">Annecy</a></li>
+        <li><a href="/signaletique-chambery">Chambéry</a></li>
+        <li><a href="/signaletique-avignon">Avignon</a></li>
+        <li><a href="/signaletique-orange">Orange</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="foot-copy">
+        <span>{{footer.copyright}}</span>
+      </div>
+      <nav class="foot-legal" aria-label="Informations légales">
+        <a href="/qui-sommes-nous">Qui sommes-nous</a>
+        <a href="/conseils">Conseils</a>
+        <a href="/mentions-legales">Mentions légales</a>
+        <a href="/mentions-legales#confidentialite">Confidentialité</a>
+        <a href="/#faq">Questions fréquentes</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <div class="socials">
+        {{#footer.socials}}
+        <a href="{{href}}" target="_blank" rel="noopener" aria-label="{{label}}">{{{iconHtml}}}</a>
+        {{/footer.socials}}
+      </div>
+    </div>
+  </div>
+</footer>

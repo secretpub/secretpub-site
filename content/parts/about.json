@@ -1,0 +1,128 @@
+{
+  "about": {
+    "meta": {
+      "title": "Qui sommes-nous ? SecretPub, à Valence depuis 2015",
+      "description": "SecretPub (NOSTILE FACTORY), créée à Valence en 2015 : un atelier à Valence, des ateliers partout en France, plus de 100 avis 5/5 et des réseaux jusqu'à 90 sites."
+    },
+    "teaser": {
+      "eyebrow": "Qui sommes-nous",
+      "title": "Une équipe dédiée, depuis 2015.",
+      "lead": "SecretPub, c'est NOSTILE FACTORY : une société créée à Valence en 2015, qui fabrique les enseignes, les imprimés, le textile et les objets publicitaires des professionnels, du commerce indépendant aux réseaux qui comptent jusqu'à 90 établissements.",
+      "facts": [
+        {
+          "n": "2015",
+          "label": "création à Valence"
+        },
+        {
+          "n": "100+",
+          "label": "avis Google à 5/5"
+        },
+        {
+          "n": "90",
+          "label": "établissements dans un même réseau"
+        }
+      ],
+      "ctaLabel": "Découvrir notre histoire"
+    },
+    "hero": {
+      "crumb": "Qui sommes-nous",
+      "eyebrow": "Qui sommes-nous",
+      "h1Html": "Qui sommes-nous ? <span class=\"mark\">SecretPub</span>, à Valence depuis 2015",
+      "sub": "Derrière SecretPub, il y a NOSTILE FACTORY, une société créée en 2015. Nous fabriquons les enseignes, la signalétique, les imprimés, le textile et les objets publicitaires des professionnels, avec un atelier à Valence et plusieurs ateliers partout en France."
+    },
+    "histoire": {
+      "eyebrow": "Notre histoire",
+      "title": "Rendre les professionnels visibles, simplement",
+      "bodyHtml": "<p>SecretPub est née à Valence en 2015, avec une société, NOSTILE FACTORY, et une idée simple : un commerçant, un artisan ou un dirigeant de PME ne devrait pas avoir à multiplier les prestataires pour tout ce qui porte son image. L'enseigne, les cartes de visite, les tenues de l'équipe, les goodies d'un salon : un seul interlocuteur peut tout suivre, avec la même exigence.</p><p>Ce principe n'a pas changé. Ce qui a changé, c'est l'échelle. Nous accompagnons toujours le commerce de quartier, et nous équipons aussi des réseaux qui comptent jusqu'à 90 établissements, avec la même charte d'un site à l'autre.</p><p>Pour suivre ces volumes sans rien perdre en qualité, SecretPub s'appuie sur son atelier de Valence et sur plusieurs ateliers répartis sur tout le territoire national. C'est ce maillage qui nous permet de répondre aux grosses commandes comme aux finitions sur mesure.</p>"
+    },
+    "chiffres": [
+      {
+        "n": "2015",
+        "label": "création de NOSTILE FACTORY, à Valence"
+      },
+      {
+        "n": "100+",
+        "label": "avis Google, avec une note de 5/5"
+      },
+      {
+        "n": "90",
+        "label": "établissements équipés dans un même réseau"
+      },
+      {
+        "n": "24 h",
+        "label": "pour une première réponse"
+      }
+    ],
+    "valeurs": {
+      "eyebrow": "Notre façon de travailler",
+      "title": "Ce qui ne change pas, d'un projet à l'autre",
+      "items": [
+        {
+          "title": "Un seul interlocuteur",
+          "desc": "Une personne suit votre dossier et vous répond. Vous n'avez pas à coordonner plusieurs prestataires."
+        },
+        {
+          "title": "Le bon à tirer avant tout",
+          "desc": "Rien ne part en production sans votre validation du rendu exact."
+        },
+        {
+          "title": "Une réponse sous 24 h",
+          "desc": "Une première réponse rapide, puis un devis clair."
+        },
+        {
+          "title": "La même charte partout",
+          "desc": "Pour les réseaux, des supports identiques d'un site à l'autre, quel que soit le nombre d'établissements."
+        }
+      ]
+    },
+    "equipe": {
+      "eyebrow": "Notre équipe",
+      "title": "Une équipe dédiée à votre image",
+      "bodyHtml": "<p>Conseil, création graphique, suivi des commandes, production et livraison : chez SecretPub, une équipe dédiée accompagne chaque client, du commerce indépendant au siège d'un réseau. Vous savez toujours à qui vous adresser, et votre interlocuteur connaît votre dossier.</p><p>Notre accueil se trouve dans notre atelier, au 31 rue Jean Jullien Davin, à Valence. Vous pouvez y passer pour parler de votre projet de vive voix.</p>"
+    },
+    "realisations": {
+      "eyebrow": "Nos réalisations",
+      "title": "Quelques projets de nos clients",
+      "intro": "Enseignes, vitrophanie, textile, objets : un aperçu de ce que nous fabriquons pour nos clients.",
+      "ctaLabel": "Voir toutes les réalisations"
+    },
+    "savoirFaire": {
+      "title": "Nos savoir-faire",
+      "items": [
+        {
+          "label": "Enseigniste à Valence",
+          "href": "/enseigniste-valence"
+        },
+        {
+          "label": "Signalétique et enseignes",
+          "href": "/signaletique"
+        },
+        {
+          "label": "Imprimerie",
+          "href": "/imprimerie"
+        },
+        {
+          "label": "Textile personnalisé",
+          "href": "/textile-personnalise"
+        },
+        {
+          "label": "Objets publicitaires",
+          "href": "/objets-publicitaires"
+        },
+        {
+          "label": "Packaging",
+          "href": "/packaging"
+        },
+        {
+          "label": "Nos conseils",
+          "href": "/conseils"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Parlons de votre projet",
+      "body": "Une enseigne, des imprimés, des tenues ou tout un réseau à équiper : nous vous répondons une première fois sous 24 h.",
+      "primaryLabel": "Demander un devis"
+    }
+  }
+}

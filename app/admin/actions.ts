@@ -28,6 +28,7 @@ export async function saveContent(
   revalidatePath("/");
   revalidatePath("/espace-de-commande");
   revalidatePath("/reseaux-franchises");
+  revalidatePath("/qui-sommes-nous");
   return { ok: true };
 }
 

@@ -18,6 +18,7 @@ export async function POST(req: NextRequest) {
   revalidatePath("/");
   revalidatePath("/espace-de-commande");
   revalidatePath("/reseaux-franchises");
+  revalidatePath("/qui-sommes-nous");
   for (const slug of [
     "signaletique",
     "imprimerie",

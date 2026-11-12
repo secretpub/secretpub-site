@@ -27,6 +27,7 @@ const SECTION_LABELS: Record<string, string> = {
   espace: "Page : Espace de commande",
   reseaux: "Page : Réseaux (masquée)",
   atelier: "Bloc « Atelier et réseau » (pages métier)",
+  about: "Page : Qui sommes-nous",
   mobile: "📱 Mobile (responsive)",
 };
 const SECTION_ORDER = Object.keys(SECTION_LABELS);
@@ -179,7 +180,7 @@ export default function ContentEditor({ initial }: { initial: SiteContent }) {
           ];
           const groups: { title: string; match: (k: string) => boolean }[] = [
             { title: "🏠 Page d'accueil", match: (k) => homeKeys.includes(k) },
-            { title: "📄 Autres pages", match: (k) => k === "espace" || k === "reseaux" || k === "atelier" || k.startsWith("metierPages.") },
+            { title: "📄 Autres pages", match: (k) => k === "espace" || k === "reseaux" || k === "atelier" || k === "about" || k.startsWith("metierPages.") },
             { title: "📱 Mobile", match: (k) => k === "mobile" },
           ];
           const used = new Set<string>();
