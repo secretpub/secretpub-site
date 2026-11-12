@@ -39,9 +39,13 @@ pourqui, waitlist, methode, france, faq, contact, footer`. Voir `lib/content/sch
 - Solution de commande = **« votre espace de commande SecretPub »**. Jamais « Plug&Print ».
 - Vert d'action `#40AB3F`. Pas de dégradé rose/violet/bleu visible.
 - Pas de tiret cadratin, pas d'esperluette dans le texte visible (écrire « et »).
-- Pas de vocabulaire interne (orchestrateur, sous-traitance, réseau de partenaires),
-  jamais « fabriqué dans nos ateliers ». Formule : « production maîtrisée de bout en bout,
-  contrôle qualité interne ».
+- Pas de vocabulaire interne (orchestrateur, sous-traitance, réseau de partenaires). Formule :
+  « production maîtrisée de bout en bout, contrôle qualité interne ».
+- Ateliers (Isaac, 12/11/2026) : dire que SecretPub possède un atelier à Valence (31 rue Jean
+  Jullien Davin) et plusieurs ateliers sur tout le territoire national, un maillage qui répond aux
+  gros volumes et aux finitions sur mesure. Ne jamais nommer un atelier ni une ville d'atelier.
+- Pose : jamais promise de façon systématique (« possible selon le projet »). Plus jamais de
+  « de l'étude / de l'idée à la pose » ni de méthode en 4 étapes.
 - Deux versions : « version point de vente » / « version réseau » (jamais lite/premium).
 
 ## SEO à conserver

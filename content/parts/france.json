@@ -1,28 +1,28 @@
 {
   "france": {
-    "eyebrow": "Couverture nationale",
-    "title": "Partout en France, comme à Valence.",
-    "lead": "Envois, conditionnement, distribution et pose : nous gérons toute la logistique de votre communication physique, site par site, dans toute la France.",
+    "eyebrow": "Atelier et réseau",
+    "title": "Un atelier à Valence, des ateliers partout en France.",
+    "lead": "SecretPub possède un atelier à Valence et plusieurs ateliers sur tout le territoire national. Ce maillage serré nous permet de répondre aux gros volumes de commande comme aux finitions sur mesure, puis de livrer chaque site, partout en France.",
     "services": [
       {
-        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 6h11v9H2z\"/><path d=\"M13 9h4l3 3v3h-7z\"/><circle cx=\"6.5\" cy=\"18\" r=\"1.6\"/><circle cx=\"17\" cy=\"18\" r=\"1.6\"/></svg>",
-        "title": "Envois",
-        "desc": "Expéditions suivies, partout en France."
+        "title": "Atelier à Valence",
+        "desc": "Accueil, conseil et contrôle qualité.",
+        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21V9l6 4V9l6 4V5h6v16z\"/><path d=\"M7 17h2M12 17h2M17 17h2\"/></svg>"
       },
       {
-        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 8 12 3 3 8l9 5 9-5z\"/><path d=\"M3 8v8l9 5 9-5V8\"/><path d=\"M12 13v8\"/></svg>",
-        "title": "Conditionnement",
-        "desc": "Colisage prêt à poser, site par site."
+        "title": "Ateliers en France",
+        "desc": "Un maillage national, au plus près de vos sites.",
+        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"6\" cy=\"19\" r=\"2\"/><circle cx=\"18\" cy=\"5\" r=\"2\"/><path d=\"M8 19h7a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h7\"/></svg>"
       },
       {
-        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"6\" cy=\"19\" r=\"2\"/><circle cx=\"18\" cy=\"5\" r=\"2\"/><path d=\"M8 19h7a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h7\"/></svg>",
-        "title": "Distribution",
-        "desc": "Tournées coordonnées, multi-sites."
+        "title": "Gros volumes",
+        "desc": "Des séries pour tout un réseau, délais tenus.",
+        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 8 12 3 3 8l9 5 9-5z\"/><path d=\"M3 8v8l9 5 9-5V8\"/><path d=\"M12 13v8\"/></svg>"
       },
       {
-        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8 6.2 21l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.1-2.1z\"/></svg>",
-        "title": "Pose",
-        "desc": "Équipes habilitées sur tout le territoire."
+        "title": "Finitions sur mesure",
+        "desc": "Découpe, relief, lumière, broderie, marquage.",
+        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8 6.2 21l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.1-2.1z\"/></svg>"
       }
     ],
     "stats": [

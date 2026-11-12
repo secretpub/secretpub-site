@@ -281,6 +281,14 @@ export interface SiteContent {
     socials: LinkItem[];
   };
   metierPages?: Record<string, MetierPage>;
+  /** Bloc commun « Atelier et réseau » des pages métier et de Qui sommes-nous (12/11/2026). */
+  atelier?: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    items: MetierPageDuo[];
+    note: string;
+  };
   /** Réglages responsive mobile (clé -> valeur en px). Voir lib/content/mobile.ts */
   mobile?: Record<string, number>;
 }

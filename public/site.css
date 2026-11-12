@@ -2759,3 +2759,6 @@ html { scroll-padding-top: 88px; }
   .float-cta.show::before { animation: ctaSuck 2.4s ease-in-out infinite; }
   .float-cta.show::after { animation: ctaHalo 2.4s ease-out infinite; }
 }
+
+/* Bloc « Atelier et réseau » des pages métier (12/11/2026) : note sous les cartes */
+.mp-note { max-width: 74ch; margin: clamp(22px, 2.6vw, 32px) auto 0; text-align: center; color: var(--muted); font-size: 15.5px; line-height: 1.6; }

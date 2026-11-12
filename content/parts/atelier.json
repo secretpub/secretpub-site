@@ -1,0 +1,26 @@
+{
+  "atelier": {
+    "eyebrow": "Atelier et réseau",
+    "title": "Un atelier à Valence, des ateliers partout en France",
+    "intro": "SecretPub possède un atelier à Valence et plusieurs ateliers sur tout le territoire national. Ce maillage, pensé pour que chaque atelier complète les autres, nous permet de répondre aux gros volumes de commande comme aux finitions sur mesure.",
+    "items": [
+      {
+        "title": "Notre atelier de Valence",
+        "desc": "Accueil, conseil, préparation des fichiers et contrôle qualité, au 31 rue Jean Jullien Davin. Un lieu où nous rencontrer et un interlocuteur qui connaît votre dossier."
+      },
+      {
+        "title": "Un maillage national",
+        "desc": "Plusieurs ateliers répartis en France : chaque commande est produite là où elle sera la mieux faite, au plus près de vos sites."
+      },
+      {
+        "title": "Les gros volumes",
+        "desc": "Une série pour tout un réseau, jusqu'à 90 établissements : la production se répartit entre nos ateliers pour tenir vos délais."
+      },
+      {
+        "title": "Les finitions sur mesure",
+        "desc": "Découpe à la forme, relief, éclairage, broderie, marquage, conditionnement site par site : chaque finition est réalisée dans l'atelier équipé pour elle."
+      }
+    ],
+    "note": "Livraison partout en France. La pose peut être organisée selon votre projet : nous en parlons ensemble dès le devis."
+  }
+}

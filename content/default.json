@@ -222,7 +222,7 @@
     ]
   },
   "footer": {
-    "about": "Un seul partenaire, pour tout ce qui porte votre image. Partout en France.",
+    "about": "Un seul partenaire pour tout ce qui porte votre image. Un atelier à Valence et des ateliers partout en France.",
     "columns": [
       {
         "title": "Services",
@@ -304,29 +304,29 @@
     ]
   },
   "france": {
-    "eyebrow": "Couverture nationale",
-    "title": "Partout en France, comme à Valence.",
-    "lead": "Envois, conditionnement, distribution et pose : nous gérons toute la logistique de votre communication physique, site par site, dans toute la France.",
+    "eyebrow": "Atelier et réseau",
+    "title": "Un atelier à Valence, des ateliers partout en France.",
+    "lead": "SecretPub possède un atelier à Valence et plusieurs ateliers sur tout le territoire national. Ce maillage serré nous permet de répondre aux gros volumes de commande comme aux finitions sur mesure, puis de livrer chaque site, partout en France.",
     "services": [
       {
-        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 6h11v9H2z\"/><path d=\"M13 9h4l3 3v3h-7z\"/><circle cx=\"6.5\" cy=\"18\" r=\"1.6\"/><circle cx=\"17\" cy=\"18\" r=\"1.6\"/></svg>",
-        "title": "Envois",
-        "desc": "Expéditions suivies, partout en France."
+        "title": "Atelier à Valence",
+        "desc": "Accueil, conseil et contrôle qualité.",
+        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21V9l6 4V9l6 4V5h6v16z\"/><path d=\"M7 17h2M12 17h2M17 17h2\"/></svg>"
       },
       {
-        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 8 12 3 3 8l9 5 9-5z\"/><path d=\"M3 8v8l9 5 9-5V8\"/><path d=\"M12 13v8\"/></svg>",
-        "title": "Conditionnement",
-        "desc": "Colisage prêt à poser, site par site."
+        "title": "Ateliers en France",
+        "desc": "Un maillage national, au plus près de vos sites.",
+        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"6\" cy=\"19\" r=\"2\"/><circle cx=\"18\" cy=\"5\" r=\"2\"/><path d=\"M8 19h7a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h7\"/></svg>"
       },
       {
-        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"6\" cy=\"19\" r=\"2\"/><circle cx=\"18\" cy=\"5\" r=\"2\"/><path d=\"M8 19h7a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h7\"/></svg>",
-        "title": "Distribution",
-        "desc": "Tournées coordonnées, multi-sites."
+        "title": "Gros volumes",
+        "desc": "Des séries pour tout un réseau, délais tenus.",
+        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 8 12 3 3 8l9 5 9-5z\"/><path d=\"M3 8v8l9 5 9-5V8\"/><path d=\"M12 13v8\"/></svg>"
       },
       {
-        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8 6.2 21l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.1-2.1z\"/></svg>",
-        "title": "Pose",
-        "desc": "Équipes habilitées sur tout le territoire."
+        "title": "Finitions sur mesure",
+        "desc": "Découpe, relief, lumière, broderie, marquage.",
+        "iconHtml": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8 6.2 21l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.1-2.1z\"/></svg>"
       }
     ],
     "stats": [
@@ -463,7 +463,7 @@
         "eyebrow": "Votre visibilité, installée",
         "title": "Une seule équipe pour rendre votre point de vente visible dehors",
         "leadHtml": "On ne vous livre pas un carton d’adhésifs à poser vous-même : <b>on installe votre signalétique sur site, prête à durer.</b>",
-        "bodyHtml": "<p>La signalétique, c’est tout ce qui rend votre commerce, votre bureau ou votre chantier visible de l’extérieur. Enseigne de façade, totem sur un parking, vitrophanie sur votre vitrine, adhésifs et stickers sur vos supports ou bâche sur un échafaudage : chaque support est étudié pour son emplacement, fabriqué dans des matériaux garantis extérieur et monté par nos soins. On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production ; on s’occupe du reste.</p><p>Basés au 31 Rue Jean Jullien Davin à Valence, on intervient dans toute la Drôme, en Auvergne-Rhône-Alpes et partout en France. Un seul interlocuteur pilote votre projet, avec la même exigence que vous soyez un commerce indépendant ou un réseau à équiper à l’identique sur plusieurs sites.</p>"
+        "bodyHtml": "<p>La signalétique, c’est tout ce qui rend votre commerce, votre bureau ou votre chantier visible de l’extérieur. Enseigne de façade, totem sur un parking, vitrophanie sur votre vitrine, adhésifs et stickers sur vos supports ou bâche sur un échafaudage : chaque support est étudié pour son emplacement, fabriqué dans des matériaux garantis extérieur et monté par nos soins. On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production ; on s’occupe du reste.</p><p>Basés au 31 Rue Jean Jullien Davin à Valence, on intervient dans toute la Drôme, en Auvergne-Rhône-Alpes et partout en France. Un seul interlocuteur pilote votre projet, avec la même exigence que vous soyez un commerce indépendant ou un réseau à équiper à l’identique sur plusieurs sites.</p><p>SecretPub possède un atelier à Valence et plusieurs ateliers sur tout le territoire national. Ce maillage nous permet de répondre aux gros volumes de commande, comme les enseignes de tout un réseau, et aux finitions sur mesure.</p>"
       },
       "prestations": {
         "eyebrow": "Ce qu’on fabrique et pose",
@@ -688,7 +688,7 @@
         "eyebrow": "Votre imprimeur de proximité",
         "title": "L’imprimeur du papier et du carton, taillé pour le volume",
         "leadHtml": "<b>Un seul partenaire</b> pour concevoir, imprimer en grande série, stocker, conditionner et distribuer tous vos supports de communication et de vente.",
-        "bodyHtml": "<p>Basés au 31 Rue Jean Jullien Davin à Valence, nous imprimons vos cartes de visite, flyers, brochures, affiches, menus, stickers et grands formats en tirages importants, avec la même exigence sur les grandes séries et les campagnes nationales. Couleurs calibrées, papiers sélectionnés, finitions maîtrisées : chaque support ressemble à votre marque et donne envie de vous lire.</p><p>Parce que nous maîtrisons la production de bout en bout, vous n’avez qu’un seul interlocuteur pour toute votre communication physique. Nous imprimons en volume, nous stockons pour vous, nous conditionnons (mise sous pli, colisage, kits par point de vente) et nous distribuons vers tous vos points de vente ou vers un site unique, partout en France. On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production ; ensuite les délais (devis détaillé, BAT, production, livraison) dépendent du projet : support, quantité, finitions. Signalétique, textile, objets publicitaires ou packaging : tout se pilote avec un seul interlocuteur, avec la même exigence.</p>"
+        "bodyHtml": "<p>Basés au 31 Rue Jean Jullien Davin à Valence, nous imprimons vos cartes de visite, flyers, brochures, affiches, menus, stickers et grands formats en tirages importants, avec la même exigence sur les grandes séries et les campagnes nationales. Couleurs calibrées, papiers sélectionnés, finitions maîtrisées : chaque support ressemble à votre marque et donne envie de vous lire.</p><p>Parce que nous maîtrisons la production de bout en bout, vous n’avez qu’un seul interlocuteur pour toute votre communication physique. Nous imprimons en volume, nous stockons pour vous, nous conditionnons (mise sous pli, colisage, kits par point de vente) et nous distribuons vers tous vos points de vente ou vers un site unique, partout en France. On vous répond une première fois sous 24 h, puis on vous envoie un bon à tirer à valider avant production ; ensuite les délais (devis détaillé, BAT, production, livraison) dépendent du projet : support, quantité, finitions. Signalétique, textile, objets publicitaires ou packaging : tout se pilote avec un seul interlocuteur, avec la même exigence.</p><p>SecretPub possède un atelier à Valence et plusieurs ateliers sur tout le territoire national. Ce maillage nous permet d'imprimer de gros volumes dans les délais, avec des finitions sur mesure : découpe, pelliculage, façonnage et conditionnement site par site.</p>"
       },
       "prestations": {
         "eyebrow": "Nos prestations",
@@ -853,7 +853,7 @@
         "eyebrow": "Le métier",
         "title": "Des vêtements portés tous les jours, marqués comme il faut",
         "leadHtml": "Votre équipe porte vos couleurs : <b>autant que la tenue tienne, et que le logo reste net après des dizaines de lavages</b>.",
-        "bodyHtml": "<p>Le textile personnalisé, ce n'est pas juste imprimer un logo sur un t-shirt. C'est choisir le bon vêtement pour l'usage, la bonne technique de marquage pour le visuel et la quantité, et une qualité qui supporte le terrain, la cuisine ou le chantier. Broderie pour un rendu durable et haut de gamme, flocage pour les petites séries, sérigraphie pour les grandes quantités, impression numérique DTF pour les visuels détaillés en couleurs : on vous oriente vers ce qui vous convient vraiment.</p><p>Basés à Valence, dans la Drôme, on est votre interlocuteur unique du t-shirt d'accueil à l'habillage complet d'un réseau. On vous répond une première fois sous 24 h, on vous envoie un bon à tirer à valider avant production, et on maîtrise la fabrication de bout en bout, pour des tenues homogènes sur tous vos sites. Un seul partenaire pour le textile, la signalétique, le print, les objets et le packaging : une seule charte, une seule facture, un seul contact.</p>"
+        "bodyHtml": "<p>Le textile personnalisé, ce n'est pas juste imprimer un logo sur un t-shirt. C'est choisir le bon vêtement pour l'usage, la bonne technique de marquage pour le visuel et la quantité, et une qualité qui supporte le terrain, la cuisine ou le chantier. Broderie pour un rendu durable et haut de gamme, flocage pour les petites séries, sérigraphie pour les grandes quantités, impression numérique DTF pour les visuels détaillés en couleurs : on vous oriente vers ce qui vous convient vraiment.</p><p>Basés à Valence, dans la Drôme, on est votre interlocuteur unique du t-shirt d'accueil à l'habillage complet d'un réseau. On vous répond une première fois sous 24 h, on vous envoie un bon à tirer à valider avant production, et on maîtrise la fabrication de bout en bout, pour des tenues homogènes sur tous vos sites. Un seul partenaire pour le textile, la signalétique, le print, les objets et le packaging : une seule charte, une seule facture, un seul contact.</p><p>SecretPub possède un atelier à Valence et plusieurs ateliers sur tout le territoire national. Ce maillage nous permet de marquer de gros volumes de vêtements, en broderie, flocage ou sérigraphie, avec des finitions sur mesure.</p>"
       },
       "prestations": {
         "eyebrow": "Nos prestations",
@@ -1072,7 +1072,7 @@
         "eyebrow": "Le cadeau qui dure",
         "title": "L’objet qu’on offre et qu’on garde",
         "leadHtml": "Un bon objet publicitaire, c’est <b>votre marque qui vit au quotidien</b>, longtemps après le premier contact.",
-        "bodyHtml": "<p>Un mug sur un bureau, une gourde en réunion, un tote bag dans la rue : l’objet publicitaire prolonge votre présence bien au-delà d’un flyer. Chez SecretPub, à Valence, nous choisissons avec vous des goodies vraiment utiles, personnalisés à votre logo, que vos clients et vos équipes gardent parce qu’ils s’en servent. Cadeaux d’affaires, welcome packs, objets de salon : chaque pièce fait circuler votre image et reste vue longtemps.</p><p>Vous avez un seul interlocuteur pour tout : le choix des objets, la personnalisation, la production maîtrisée et la livraison. Comme nous gérons aussi votre <a href=\"/signaletique\">signalétique</a>, votre <a href=\"/imprimerie\">print</a> et votre <a href=\"/textile-personnalise\">textile</a>, tout sort à la même charte, sans écart de couleur ni de logo. Ici, on parle de l’objet qu’on distribue et qu’on offre (sac, mug, stylo), pas du vêtement porté par l’équipe, qui relève du textile. Basés dans la Drôme, nous livrons à Valence, en Auvergne-Rhône-Alpes et partout en France, et pour les réseaux multi-sites nous assurons les mêmes goodies sur tous vos points de vente.</p>"
+        "bodyHtml": "<p>Un mug sur un bureau, une gourde en réunion, un tote bag dans la rue : l’objet publicitaire prolonge votre présence bien au-delà d’un flyer. Chez SecretPub, à Valence, nous choisissons avec vous des goodies vraiment utiles, personnalisés à votre logo, que vos clients et vos équipes gardent parce qu’ils s’en servent. Cadeaux d’affaires, welcome packs, objets de salon : chaque pièce fait circuler votre image et reste vue longtemps.</p><p>Vous avez un seul interlocuteur pour tout : le choix des objets, la personnalisation, la production maîtrisée et la livraison. Comme nous gérons aussi votre <a href=\"/signaletique\">signalétique</a>, votre <a href=\"/imprimerie\">print</a> et votre <a href=\"/textile-personnalise\">textile</a>, tout sort à la même charte, sans écart de couleur ni de logo. Ici, on parle de l’objet qu’on distribue et qu’on offre (sac, mug, stylo), pas du vêtement porté par l’équipe, qui relève du textile. Basés dans la Drôme, nous livrons à Valence, en Auvergne-Rhône-Alpes et partout en France, et pour les réseaux multi-sites nous assurons les mêmes goodies sur tous vos points de vente.</p><p>SecretPub possède un atelier à Valence et plusieurs ateliers sur tout le territoire national. Ce maillage nous permet de répondre aux grandes séries comme aux petites quantités soignées, avec des marquages et des finitions sur mesure.</p>"
       },
       "prestations": {
         "eyebrow": "Ce que nous personnalisons",
@@ -1287,7 +1287,7 @@
         "eyebrow": "L'emballage qui entoure le produit",
         "title": "Le premier contact avec votre produit se joue sur l'emballage",
         "leadHtml": "Votre packaging est la <b>première chose que touche votre client</b>, faites-en un moment qui reste.",
-        "bodyHtml": "<p>Chez SecretPub, à Valence, nous créons tout ce qui entoure votre produit : boîtes et étuis sur-mesure, sacs papier et kraft, gobelets et emballages alimentaires, papier de soie, étiquettes, sleeves et coffrets premium. Du kraft simple pour l'emporter au format haut de gamme pour vos éditions limitées, chaque emballage porte votre marque et prolonge l'expérience d'achat, en boutique comme à la réception d'un colis e-commerce.</p><p>Un seul interlocuteur pour toute votre communication physique, c'est notre force. Nous concevons, produisons et livrons votre packaging avec la même charte que votre enseigne, vos flyers et vos textiles, pour une image cohérente sur tous les supports. Basés dans la Drôme, nous accompagnons les commerces et restaurants de Valence et d'Auvergne-Rhône-Alpes, et livrons partout en France, y compris les réseaux multi-sites.</p>"
+        "bodyHtml": "<p>Chez SecretPub, à Valence, nous créons tout ce qui entoure votre produit : boîtes et étuis sur-mesure, sacs papier et kraft, gobelets et emballages alimentaires, papier de soie, étiquettes, sleeves et coffrets premium. Du kraft simple pour l'emporter au format haut de gamme pour vos éditions limitées, chaque emballage porte votre marque et prolonge l'expérience d'achat, en boutique comme à la réception d'un colis e-commerce.</p><p>Un seul interlocuteur pour toute votre communication physique, c'est notre force. Nous concevons, produisons et livrons votre packaging avec la même charte que votre enseigne, vos flyers et vos textiles, pour une image cohérente sur tous les supports. Basés dans la Drôme, nous accompagnons les commerces et restaurants de Valence et d'Auvergne-Rhône-Alpes, et livrons partout en France, y compris les réseaux multi-sites.</p><p>SecretPub possède un atelier à Valence et plusieurs ateliers sur tout le territoire national. Ce maillage nous permet de produire de gros volumes d'emballages, avec des formats et des finitions sur mesure.</p>"
       },
       "prestations": {
         "eyebrow": "Ce que nous produisons",
@@ -12812,5 +12812,29 @@
       "Tarifs préférentiels garantis",
       "Onboarding prioritaire et espace à votre charte"
     ]
+  },
+  "atelier": {
+    "eyebrow": "Atelier et réseau",
+    "title": "Un atelier à Valence, des ateliers partout en France",
+    "intro": "SecretPub possède un atelier à Valence et plusieurs ateliers sur tout le territoire national. Ce maillage, pensé pour que chaque atelier complète les autres, nous permet de répondre aux gros volumes de commande comme aux finitions sur mesure.",
+    "items": [
+      {
+        "title": "Notre atelier de Valence",
+        "desc": "Accueil, conseil, préparation des fichiers et contrôle qualité, au 31 rue Jean Jullien Davin. Un lieu où nous rencontrer et un interlocuteur qui connaît votre dossier."
+      },
+      {
+        "title": "Un maillage national",
+        "desc": "Plusieurs ateliers répartis en France : chaque commande est produite là où elle sera la mieux faite, au plus près de vos sites."
+      },
+      {
+        "title": "Les gros volumes",
+        "desc": "Une série pour tout un réseau, jusqu'à 90 établissements : la production se répartit entre nos ateliers pour tenir vos délais."
+      },
+      {
+        "title": "Les finitions sur mesure",
+        "desc": "Découpe à la forme, relief, éclairage, broderie, marquage, conditionnement site par site : chaque finition est réalisée dans l'atelier équipé pour elle."
+      }
+    ],
+    "note": "Livraison partout en France. La pose peut être organisée selon votre projet : nous en parlons ensemble dès le devis."
   }
 }
